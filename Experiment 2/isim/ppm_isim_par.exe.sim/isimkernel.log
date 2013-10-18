@@ -1,0 +1,12 @@
+Command line:
+   ppm_isim_par.exe
+     -simmode  gui
+     -sdfmax  /ppm/=netgen/par/ppm_timesim.sdf
+     -sdfroot  /
+     -simrunnum  0
+     -socket  55109
+
+Fri Oct 04 13:53:08 2013
+
+
+ Elaboration Time: 3.33842 sec
