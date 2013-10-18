@@ -1,0 +1,23 @@
+ISim log file
+Running: S:\CS2204\Lab 5 - Exp1_2\Ppm\ppm_isim_par.exe -gui -sdfmax /ppm/=netgen/par/ppm_timesim.sdf -sdfroot / -tclbatch isim.cmd -wdb S:/CS2204/Lab 5 - Exp1_2/Ppm/ppm_isim_par.wdb 
+ISim M.81d (signature 0x12940baa)
+----------------------------------------------------------------------
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to 'C:\.Xilinx\license.lic'.
+INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+WARNING:Security:43 - No license file was found in the standard Xilinx license directory.
+WARNING:Security:44 - No license file was found.
+       Please run the Xilinx License Configuration Manager
+       (xlcm or "Manage Xilinx Licenses")
+       to assist in obtaining a license.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+INFO: SDF backannotation was successful with SDF file netgen/par/ppm_timesim.sdf, for root module /ppm/.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
