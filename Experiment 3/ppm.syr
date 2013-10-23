@@ -1,0 +1,1470 @@
+Release 12.4 - xst M.81d (lin)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: ppm.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ppm.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ppm"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : ppm
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/atomic/Documents/Code/TeamGold/Experiment 3/u74_157.vhf" in Library work.
+Architecture behavioral of Entity m2_1e_mxilinx_u74_157 is up to date.
+Architecture behavioral of Entity u74_157 is up to date.
+Compiling vhdl file "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEGEN.vhf" in Library work.
+Architecture behavioral of Entity comp4_mxilinx_codegen is up to date.
+Architecture behavioral of Entity fd4ce_mxilinx_codegen is up to date.
+Architecture behavioral of Entity codegen is up to date.
+Compiling vhdl file "/home/atomic/Documents/Code/TeamGold/Experiment 3/ZERODISPLAY.vhf" in Library work.
+Architecture behavioral of Entity zerodisplay is up to date.
+Compiling vhdl file "/home/atomic/Documents/Code/TeamGold/Experiment 3/LARGESTDISP.vhf" in Library work.
+Architecture behavioral of Entity compm4_mxilinx_largestdisp is up to date.
+Architecture behavioral of Entity largestdisp is up to date.
+Compiling vhdl file "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEDISC.vhf" in Library work.
+Architecture behavioral of Entity fd4ce_mxilinx_codedisc is up to date.
+Architecture behavioral of Entity comp4_mxilinx_codedisc is up to date.
+Architecture behavioral of Entity codedisc is up to date.
+Compiling vhdl file "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" in Library work.
+Architecture behavioral of Entity d2_4e_mxilinx_ppm is up to date.
+Architecture behavioral of Entity add4_mxilinx_ppm is up to date.
+Architecture behavioral of Entity m2_1_mxilinx_ppm is up to date.
+Architecture behavioral of Entity add8_mxilinx_ppm is up to date.
+Architecture behavioral of Entity m2_1e_mxilinx_ppm is up to date.
+Architecture behavioral of Entity m4_1e_mxilinx_ppm is up to date.
+Architecture behavioral of Entity x74_153_muser_ppm is up to date.
+Architecture behavioral of Entity u74_157_muser_ppm is up to date.
+Architecture behavioral of Entity comp4_mxilinx_ppm is up to date.
+Architecture behavioral of Entity fd4ce_mxilinx_ppm is up to date.
+Architecture behavioral of Entity ftce_mxilinx_ppm is up to date.
+Architecture behavioral of Entity cb16ce_mxilinx_ppm is up to date.
+Architecture behavioral of Entity cb2ce_mxilinx_ppm is up to date.
+Architecture behavioral of Entity fd8ce_mxilinx_ppm is up to date.
+Architecture behavioral of Entity cd4ce_mxilinx_ppm is up to date.
+Architecture behavioral of Entity d3_8e_mxilinx_ppm is up to date.
+Architecture behavioral of Entity ftclex_mxilinx_ppm is up to date.
+Architecture behavioral of Entity cb4cle_mxilinx_ppm is up to date.
+Architecture behavioral of Entity m8_1e_mxilinx_ppm is up to date.
+Architecture behavioral of Entity ppm is up to date.
+Compiling vhdl file "/home/atomic/Documents/Code/TeamGold/Experiment 3/X74_153.vhf" in Library work.
+Architecture behavioral of Entity m2_1e_mxilinx_x74_153 is up to date.
+Architecture behavioral of Entity m2_1_mxilinx_x74_153 is up to date.
+Architecture behavioral of Entity x74_153 is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ppm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CODEGEN> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CB2CE_MXILINX_ppm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CB4CLE_MXILINX_ppm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <D3_8E_MXILINX_ppm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CB16CE_MXILINX_ppm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FD4CE_MXILINX_ppm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <u74_157_MUSER_ppm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <X74_153_MUSER_ppm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <D2_4E_MXILINX_ppm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <M4_1E_MXILINX_ppm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <M8_1E_MXILINX_ppm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FD8CE_MXILINX_ppm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CD4CE_MXILINX_ppm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ADD4_MXILINX_ppm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <COMP4_MXILINX_ppm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <M2_1E_MXILINX_ppm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ADD8_MXILINX_ppm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <M2_1_MXILINX_ppm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FD4CE_MXILINX_CODEGEN> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <COMP4_MXILINX_CODEGEN> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <u74_157> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FTCE_MXILINX_ppm> in library <work> (architecture <behavioral>) with generics.
+	INIT = '0'
+
+Analyzing hierarchy for entity <FTCLEX_MXILINX_ppm> in library <work> (architecture <behavioral>) with generics.
+	INIT = '0'
+
+Analyzing hierarchy for entity <M2_1E_MXILINX_u74_157> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <M2_1_MXILINX_ppm> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ppm> in library <work> (Architecture <behavioral>).
+    Set user-defined property "DRIVE =  12" for instance <ADD_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <ADD_BUF> in unit <ppm>.
+    Set user-defined property "SLEW =  SLOW" for instance <ADD_BUF> in unit <ppm>.
+    Set user-defined property "DRIVE =  12" for instance <CA_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CA_BUF> in unit <ppm>.
+    Set user-defined property "SLEW =  SLOW" for instance <CA_BUF> in unit <ppm>.
+    Set user-defined property "DRIVE =  12" for instance <CB_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CB_BUF> in unit <ppm>.
+    Set user-defined property "SLEW =  SLOW" for instance <CB_BUF> in unit <ppm>.
+    Set user-defined property "DRIVE =  12" for instance <CC_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CC_BUF> in unit <ppm>.
+    Set user-defined property "SLEW =  SLOW" for instance <CC_BUF> in unit <ppm>.
+    Set user-defined property "DRIVE =  12" for instance <CD_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CD_BUF> in unit <ppm>.
+    Set user-defined property "SLEW =  SLOW" for instance <CD_BUF> in unit <ppm>.
+    Set user-defined property "DRIVE =  12" for instance <CE_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CE_BUF> in unit <ppm>.
+    Set user-defined property "SLEW =  SLOW" for instance <CE_BUF> in unit <ppm>.
+    Set user-defined property "DRIVE =  12" for instance <CF_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CF_BUF> in unit <ppm>.
+    Set user-defined property "SLEW =  SLOW" for instance <CF_BUF> in unit <ppm>.
+    Set user-defined property "DRIVE =  12" for instance <CG_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CG_BUF> in unit <ppm>.
+    Set user-defined property "SLEW =  SLOW" for instance <CG_BUF> in unit <ppm>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <CLOCK_BUF> in unit <ppm>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <CLOCK_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CLOCK_BUF> in unit <ppm>.
+    Set user-defined property "DRIVE =  12" for instance <DISPEN0_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <DISPEN0_BUF> in unit <ppm>.
+    Set user-defined property "SLEW =  SLOW" for instance <DISPEN0_BUF> in unit <ppm>.
+    Set user-defined property "DRIVE =  12" for instance <DISPEN1_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <DISPEN1_BUF> in unit <ppm>.
+    Set user-defined property "SLEW =  SLOW" for instance <DISPEN1_BUF> in unit <ppm>.
+    Set user-defined property "DRIVE =  12" for instance <DISPEN2_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <DISPEN2_BUF> in unit <ppm>.
+    Set user-defined property "SLEW =  SLOW" for instance <DISPEN2_BUF> in unit <ppm>.
+    Set user-defined property "DRIVE =  12" for instance <DISPEN3_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <DISPEN3_BUF> in unit <ppm>.
+    Set user-defined property "SLEW =  SLOW" for instance <DISPEN3_BUF> in unit <ppm>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <P1ADD_BUF> in unit <ppm>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <P1ADD_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <P1ADD_BUF> in unit <ppm>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <P1PLAY_BUF> in unit <ppm>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <P1PLAY_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <P1PLAY_BUF> in unit <ppm>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <P1SEL0_BUF> in unit <ppm>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <P1SEL0_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <P1SEL0_BUF> in unit <ppm>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <P1SEL1_BUF> in unit <ppm>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <P1SEL1_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <P1SEL1_BUF> in unit <ppm>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <P1SEL2_BUF> in unit <ppm>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <P1SEL2_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <P1SEL2_BUF> in unit <ppm>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <P1SEL3_BUF> in unit <ppm>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <P1SEL3_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <P1SEL3_BUF> in unit <ppm>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <P2PLAY_BUF> in unit <ppm>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <P2PLAY_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <P2PLAY_BUF> in unit <ppm>.
+    Set user-defined property "DRIVE =  12" for instance <RD0_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <RD0_BUF> in unit <ppm>.
+    Set user-defined property "SLEW =  SLOW" for instance <RD0_BUF> in unit <ppm>.
+    Set user-defined property "DRIVE =  12" for instance <RD1_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <RD1_BUF> in unit <ppm>.
+    Set user-defined property "SLEW =  SLOW" for instance <RD1_BUF> in unit <ppm>.
+    Set user-defined property "DRIVE =  12" for instance <RD2_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <RD2_BUF> in unit <ppm>.
+    Set user-defined property "SLEW =  SLOW" for instance <RD2_BUF> in unit <ppm>.
+    Set user-defined property "DRIVE =  12" for instance <RD3_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <RD3_BUF> in unit <ppm>.
+    Set user-defined property "SLEW =  SLOW" for instance <RD3_BUF> in unit <ppm>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <RESET_BUF> in unit <ppm>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <RESET_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <RESET_BUF> in unit <ppm>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <SHPTS_BUF> in unit <ppm>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <SHPTS_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <SHPTS_BUF> in unit <ppm>.
+    Set user-defined property "DRIVE =  12" for instance <STR0_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <STR0_BUF> in unit <ppm>.
+    Set user-defined property "SLEW =  SLOW" for instance <STR0_BUF> in unit <ppm>.
+    Set user-defined property "DRIVE =  12" for instance <STR1_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <STR1_BUF> in unit <ppm>.
+    Set user-defined property "SLEW =  SLOW" for instance <STR1_BUF> in unit <ppm>.
+    Set user-defined property "DRIVE =  12" for instance <STR2_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <STR2_BUF> in unit <ppm>.
+    Set user-defined property "SLEW =  SLOW" for instance <STR2_BUF> in unit <ppm>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <TRD1_BUF> in unit <ppm>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <TRD1_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <TRD1_BUF> in unit <ppm>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <TRD2_BUF> in unit <ppm>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <TRD2_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <TRD2_BUF> in unit <ppm>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <TRD3_BUF> in unit <ppm>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <TRD3_BUF> in unit <ppm>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <TRD3_BUF> in unit <ppm>.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3396: Unconnected output port 'CEO' of component 'CB2CE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3396: Unconnected output port 'Q0' of component 'CB2CE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3396: Unconnected output port 'Q1' of component 'CB2CE_MXILINX_ppm'.
+    Set user-defined property "HU_SET =  U6_59" for instance <U6> in unit <ppm>.
+    Set user-defined property "INIT =  0" for instance <U19> in unit <ppm>.
+    Set user-defined property "INIT =  0" for instance <U20> in unit <ppm>.
+    Set user-defined property "INIT =  0" for instance <U21> in unit <ppm>.
+    Set user-defined property "INIT =  0" for instance <U28> in unit <ppm>.
+    Set user-defined property "INIT =  0" for instance <U43> in unit <ppm>.
+    Set user-defined property "INIT =  0" for instance <U50> in unit <ppm>.
+    Set user-defined property "INIT =  0" for instance <U55> in unit <ppm>.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3717: Unconnected output port 'CEO' of component 'CB4CLE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3717: Unconnected output port 'Q3' of component 'CB4CLE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3717: Unconnected output port 'TC' of component 'CB4CLE_MXILINX_ppm'.
+    Set user-defined property "HU_SET =  U64_40" for instance <U64> in unit <ppm>.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3733: Unconnected output port 'D7' of component 'D3_8E_MXILINX_ppm'.
+    Set user-defined property "HU_SET =  U65_41" for instance <U65> in unit <ppm>.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3747: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3747: Unconnected output port 'TC' of component 'CB16CE_MXILINX_ppm'.
+    Set user-defined property "HU_SET =  U66_60" for instance <U66> in unit <ppm>.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3755: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3755: Unconnected output port 'TC' of component 'CB16CE_MXILINX_ppm'.
+    Set user-defined property "HU_SET =  U67_61" for instance <U67> in unit <ppm>.
+    Set user-defined property "INIT =  0" for instance <U68> in unit <ppm>.
+    Set user-defined property "HU_SET =  U69_62" for instance <U69> in unit <ppm>.
+    Set user-defined property "INIT =  0" for instance <U71> in unit <ppm>.
+    Set user-defined property "INIT =  0" for instance <U72> in unit <ppm>.
+    Set user-defined property "INIT =  0" for instance <U73> in unit <ppm>.
+    Set user-defined property "INIT =  0" for instance <U74> in unit <ppm>.
+    Set user-defined property "INIT =  0" for instance <U76> in unit <ppm>.
+    Set user-defined property "INIT =  0" for instance <U77> in unit <ppm>.
+    Set user-defined property "INIT =  0" for instance <U78> in unit <ppm>.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3923: Unconnected output port 'CEO' of component 'CB2CE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3923: Unconnected output port 'TC' of component 'CB2CE_MXILINX_ppm'.
+    Set user-defined property "HU_SET =  U86_42" for instance <U86> in unit <ppm>.
+    Set user-defined property "HU_SET =  U91_43" for instance <U91> in unit <ppm>.
+    Set user-defined property "HU_SET =  U100_47" for instance <U100> in unit <ppm>.
+    Set user-defined property "HU_SET =  U101_46" for instance <U101> in unit <ppm>.
+    Set user-defined property "HU_SET =  U102_45" for instance <U102> in unit <ppm>.
+    Set user-defined property "HU_SET =  U103_44" for instance <U103> in unit <ppm>.
+    Set user-defined property "INIT =  2812" for instance <U104> in unit <ppm>.
+    Set user-defined property "INIT =  D860" for instance <U105> in unit <ppm>.
+    Set user-defined property "INIT =  D004" for instance <U106> in unit <ppm>.
+    Set user-defined property "INIT =  8692" for instance <U107> in unit <ppm>.
+    Set user-defined property "INIT =  02BA" for instance <U108> in unit <ppm>.
+    Set user-defined property "INIT =  208E" for instance <U109> in unit <ppm>.
+    Set user-defined property "INIT =  1083" for instance <U110> in unit <ppm>.
+    Set user-defined property "HU_SET =  U112_39" for instance <U112> in unit <ppm>.
+    Set user-defined property "HU_SET =  U113_55" for instance <U113> in unit <ppm>.
+    Set user-defined property "HU_SET =  U114_56" for instance <U114> in unit <ppm>.
+    Set user-defined property "HU_SET =  U115_57" for instance <U115> in unit <ppm>.
+    Set user-defined property "HU_SET =  U116_58" for instance <U116> in unit <ppm>.
+    Set user-defined property "HU_SET =  U117_52" for instance <U117> in unit <ppm>.
+    Set user-defined property "HU_SET =  U118_53" for instance <U118> in unit <ppm>.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4196: Unconnected output port 'CEO' of component 'CD4CE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4196: Unconnected output port 'TC' of component 'CD4CE_MXILINX_ppm'.
+    Set user-defined property "HU_SET =  U119_51" for instance <U119> in unit <ppm>.
+    Set user-defined property "HU_SET =  U120_50" for instance <U120> in unit <ppm>.
+    Set user-defined property "HU_SET =  U121_49" for instance <U121> in unit <ppm>.
+    Set user-defined property "HU_SET =  U122_48" for instance <U122> in unit <ppm>.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4274: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
+    Set user-defined property "HU_SET =  U148_65" for instance <U148> in unit <ppm>.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4291: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
+    Set user-defined property "HU_SET =  U149_64" for instance <U149> in unit <ppm>.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4308: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
+    Set user-defined property "HU_SET =  U151_63" for instance <U151> in unit <ppm>.
+    Set user-defined property "HU_SET =  U155_54" for instance <U155> in unit <ppm>.
+    Set user-defined property "HU_SET =  U159_68" for instance <U159> in unit <ppm>.
+    Set user-defined property "HU_SET =  U160_69" for instance <U160> in unit <ppm>.
+    Set user-defined property "HU_SET =  U161_67" for instance <U161> in unit <ppm>.
+    Set user-defined property "HU_SET =  U162_66" for instance <U162> in unit <ppm>.
+    Set user-defined property "HU_SET =  U169_71" for instance <U169> in unit <ppm>.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4509: Unconnected output port 'CO' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4509: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4509: Unconnected output port 'S2' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4509: Unconnected output port 'S3' of component 'ADD4_MXILINX_ppm'.
+    Set user-defined property "HU_SET =  U171_72" for instance <U171> in unit <ppm>.
+    Set user-defined property "HU_SET =  U176_70" for instance <U176> in unit <ppm>.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4618: Unconnected output port 'OFL' of component 'ADD8_MXILINX_ppm'.
+    Set user-defined property "HU_SET =  U181_74" for instance <U181> in unit <ppm>.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4626: Unconnected output port 'OFL' of component 'ADD8_MXILINX_ppm'.
+    Set user-defined property "HU_SET =  U182_73" for instance <U182> in unit <ppm>.
+    Set user-defined property "HU_SET =  U272_75" for instance <U272> in unit <ppm>.
+    Set user-defined property "HU_SET =  U273_76" for instance <U273> in unit <ppm>.
+    Set user-defined property "HU_SET =  U274_77" for instance <U274> in unit <ppm>.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4730: Unconnected output port 'CO' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4730: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
+    Set user-defined property "HU_SET =  U288_78" for instance <U288> in unit <ppm>.
+    Set user-defined property "HU_SET =  U298_79" for instance <U298> in unit <ppm>.
+Entity <ppm> analyzed. Unit <ppm> generated.
+
+Analyzing Entity <CODEGEN> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  U123_8" for instance <U123> in unit <CODEGEN>.
+    Set user-defined property "HU_SET =  U126_7" for instance <U126> in unit <CODEGEN>.
+    Set user-defined property "HU_SET =  U127_10" for instance <U127> in unit <CODEGEN>.
+    Set user-defined property "HU_SET =  U128_11" for instance <U128> in unit <CODEGEN>.
+    Set user-defined property "HU_SET =  U129_9" for instance <U129> in unit <CODEGEN>.
+    Set user-defined property "HU_SET =  U130_12" for instance <U130> in unit <CODEGEN>.
+Entity <CODEGEN> analyzed. Unit <CODEGEN> generated.
+
+Analyzing Entity <FD4CE_MXILINX_CODEGEN> in library <work> (Architecture <behavioral>).
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD4CE_MXILINX_CODEGEN>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD4CE_MXILINX_CODEGEN>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD4CE_MXILINX_CODEGEN>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD4CE_MXILINX_CODEGEN>.
+Entity <FD4CE_MXILINX_CODEGEN> analyzed. Unit <FD4CE_MXILINX_CODEGEN> generated.
+
+Analyzing Entity <COMP4_MXILINX_CODEGEN> in library <work> (Architecture <behavioral>).
+Entity <COMP4_MXILINX_CODEGEN> analyzed. Unit <COMP4_MXILINX_CODEGEN> generated.
+
+Analyzing Entity <u74_157> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_114_0" for instance <XLXI_114> in unit <u74_157>.
+    Set user-defined property "HU_SET =  XLXI_115_1" for instance <XLXI_115> in unit <u74_157>.
+    Set user-defined property "HU_SET =  XLXI_116_2" for instance <XLXI_116> in unit <u74_157>.
+    Set user-defined property "HU_SET =  XLXI_117_3" for instance <XLXI_117> in unit <u74_157>.
+Entity <u74_157> analyzed. Unit <u74_157> generated.
+
+Analyzing Entity <M2_1E_MXILINX_u74_157> in library <work> (Architecture <behavioral>).
+Entity <M2_1E_MXILINX_u74_157> analyzed. Unit <M2_1E_MXILINX_u74_157> generated.
+
+Analyzing Entity <CB2CE_MXILINX_ppm> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_Q0_28" for instance <I_Q0> in unit <CB2CE_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_Q1_29" for instance <I_Q1> in unit <CB2CE_MXILINX_ppm>.
+Entity <CB2CE_MXILINX_ppm> analyzed. Unit <CB2CE_MXILINX_ppm> generated.
+
+Analyzing generic Entity <FTCE_MXILINX_ppm> in library <work> (Architecture <behavioral>).
+	INIT = '0'
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_ppm>.
+Entity <FTCE_MXILINX_ppm> analyzed. Unit <FTCE_MXILINX_ppm> generated.
+
+Analyzing Entity <CB4CLE_MXILINX_ppm> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_Q0_31" for instance <I_Q0> in unit <CB4CLE_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_Q1_32" for instance <I_Q1> in unit <CB4CLE_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_Q2_33" for instance <I_Q2> in unit <CB4CLE_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_Q3_34" for instance <I_Q3> in unit <CB4CLE_MXILINX_ppm>.
+Entity <CB4CLE_MXILINX_ppm> analyzed. Unit <CB4CLE_MXILINX_ppm> generated.
+
+Analyzing generic Entity <FTCLEX_MXILINX_ppm> in library <work> (Architecture <behavioral>).
+	INIT = '0'
+    Set user-defined property "HU_SET =  I_36_30_30" for instance <I_36_30> in unit <FTCLEX_MXILINX_ppm>.
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_ppm>.
+Entity <FTCLEX_MXILINX_ppm> analyzed. Unit <FTCLEX_MXILINX_ppm> generated.
+
+Analyzing Entity <D3_8E_MXILINX_ppm> in library <work> (Architecture <behavioral>).
+Entity <D3_8E_MXILINX_ppm> analyzed. Unit <D3_8E_MXILINX_ppm> generated.
+
+Analyzing Entity <CB16CE_MXILINX_ppm> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_Q0_13" for instance <I_Q0> in unit <CB16CE_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_Q1_12" for instance <I_Q1> in unit <CB16CE_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_Q2_15" for instance <I_Q2> in unit <CB16CE_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_Q3_14" for instance <I_Q3> in unit <CB16CE_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_Q4_19" for instance <I_Q4> in unit <CB16CE_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_Q5_18" for instance <I_Q5> in unit <CB16CE_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_Q6_17" for instance <I_Q6> in unit <CB16CE_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_Q7_16" for instance <I_Q7> in unit <CB16CE_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_Q8_20" for instance <I_Q8> in unit <CB16CE_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_Q9_21" for instance <I_Q9> in unit <CB16CE_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_Q10_22" for instance <I_Q10> in unit <CB16CE_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_Q11_23" for instance <I_Q11> in unit <CB16CE_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_Q12_24" for instance <I_Q12> in unit <CB16CE_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_Q13_25" for instance <I_Q13> in unit <CB16CE_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_Q14_26" for instance <I_Q14> in unit <CB16CE_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_Q15_27" for instance <I_Q15> in unit <CB16CE_MXILINX_ppm>.
+Entity <CB16CE_MXILINX_ppm> analyzed. Unit <CB16CE_MXILINX_ppm> generated.
+
+Analyzing Entity <FD4CE_MXILINX_ppm> in library <work> (Architecture <behavioral>).
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD4CE_MXILINX_ppm>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD4CE_MXILINX_ppm>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD4CE_MXILINX_ppm>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD4CE_MXILINX_ppm>.
+Entity <FD4CE_MXILINX_ppm> analyzed. Unit <FD4CE_MXILINX_ppm> generated.
+
+Analyzing Entity <u74_157_MUSER_ppm> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_114_8" for instance <XLXI_114> in unit <u74_157_MUSER_ppm>.
+    Set user-defined property "HU_SET =  XLXI_115_9" for instance <XLXI_115> in unit <u74_157_MUSER_ppm>.
+    Set user-defined property "HU_SET =  XLXI_116_10" for instance <XLXI_116> in unit <u74_157_MUSER_ppm>.
+    Set user-defined property "HU_SET =  XLXI_117_11" for instance <XLXI_117> in unit <u74_157_MUSER_ppm>.
+Entity <u74_157_MUSER_ppm> analyzed. Unit <u74_157_MUSER_ppm> generated.
+
+Analyzing Entity <X74_153_MUSER_ppm> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_1_2" for instance <XLXI_1> in unit <X74_153_MUSER_ppm>.
+    Set user-defined property "HU_SET =  XLXI_2_3" for instance <XLXI_2> in unit <X74_153_MUSER_ppm>.
+    Set user-defined property "HU_SET =  XLXI_3_4" for instance <XLXI_3> in unit <X74_153_MUSER_ppm>.
+    Set user-defined property "HU_SET =  XLXI_4_5" for instance <XLXI_4> in unit <X74_153_MUSER_ppm>.
+    Set user-defined property "HU_SET =  XLXI_5_6" for instance <XLXI_5> in unit <X74_153_MUSER_ppm>.
+    Set user-defined property "HU_SET =  XLXI_6_7" for instance <XLXI_6> in unit <X74_153_MUSER_ppm>.
+Entity <X74_153_MUSER_ppm> analyzed. Unit <X74_153_MUSER_ppm> generated.
+
+Analyzing Entity <D2_4E_MXILINX_ppm> in library <work> (Architecture <behavioral>).
+Entity <D2_4E_MXILINX_ppm> analyzed. Unit <D2_4E_MXILINX_ppm> generated.
+
+Analyzing Entity <M4_1E_MXILINX_ppm> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_M01_1" for instance <I_M01> in unit <M4_1E_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_M23_0" for instance <I_M23> in unit <M4_1E_MXILINX_ppm>.
+Entity <M4_1E_MXILINX_ppm> analyzed. Unit <M4_1E_MXILINX_ppm> generated.
+
+Analyzing Entity <M8_1E_MXILINX_ppm> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_M01_38" for instance <I_M01> in unit <M8_1E_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_M23_37" for instance <I_M23> in unit <M8_1E_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_M45_36" for instance <I_M45> in unit <M8_1E_MXILINX_ppm>.
+    Set user-defined property "HU_SET =  I_M67_35" for instance <I_M67> in unit <M8_1E_MXILINX_ppm>.
+Entity <M8_1E_MXILINX_ppm> analyzed. Unit <M8_1E_MXILINX_ppm> generated.
+
+Analyzing Entity <FD8CE_MXILINX_ppm> in library <work> (Architecture <behavioral>).
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <FD8CE_MXILINX_ppm>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <FD8CE_MXILINX_ppm>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <FD8CE_MXILINX_ppm>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <FD8CE_MXILINX_ppm>.
+    Set user-defined property "INIT =  0" for instance <I_Q4> in unit <FD8CE_MXILINX_ppm>.
+    Set user-defined property "INIT =  0" for instance <I_Q5> in unit <FD8CE_MXILINX_ppm>.
+    Set user-defined property "INIT =  0" for instance <I_Q6> in unit <FD8CE_MXILINX_ppm>.
+    Set user-defined property "INIT =  0" for instance <I_Q7> in unit <FD8CE_MXILINX_ppm>.
+Entity <FD8CE_MXILINX_ppm> analyzed. Unit <FD8CE_MXILINX_ppm> generated.
+
+Analyzing Entity <CD4CE_MXILINX_ppm> in library <work> (Architecture <behavioral>).
+    Set user-defined property "INIT =  0" for instance <I_Q0> in unit <CD4CE_MXILINX_ppm>.
+    Set user-defined property "INIT =  0" for instance <I_Q1> in unit <CD4CE_MXILINX_ppm>.
+    Set user-defined property "INIT =  0" for instance <I_Q2> in unit <CD4CE_MXILINX_ppm>.
+    Set user-defined property "INIT =  0" for instance <I_Q3> in unit <CD4CE_MXILINX_ppm>.
+Entity <CD4CE_MXILINX_ppm> analyzed. Unit <CD4CE_MXILINX_ppm> generated.
+
+Analyzing Entity <ADD4_MXILINX_ppm> in library <work> (Architecture <behavioral>).
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_55> in unit <ADD4_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_58> in unit <ADD4_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_62> in unit <ADD4_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_111> in unit <ADD4_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_175> in unit <ADD4_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_178> in unit <ADD4_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_182> in unit <ADD4_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_206> in unit <ADD4_MXILINX_ppm>.
+Entity <ADD4_MXILINX_ppm> analyzed. Unit <ADD4_MXILINX_ppm> generated.
+
+Analyzing Entity <COMP4_MXILINX_ppm> in library <work> (Architecture <behavioral>).
+Entity <COMP4_MXILINX_ppm> analyzed. Unit <COMP4_MXILINX_ppm> generated.
+
+Analyzing Entity <M2_1E_MXILINX_ppm> in library <work> (Architecture <behavioral>).
+Entity <M2_1E_MXILINX_ppm> analyzed. Unit <M2_1E_MXILINX_ppm> generated.
+
+Analyzing Entity <ADD8_MXILINX_ppm> in library <work> (Architecture <behavioral>).
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_16> in unit <ADD8_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_17> in unit <ADD8_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_18> in unit <ADD8_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_19> in unit <ADD8_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y2" for instance <I_36_20> in unit <ADD8_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y2" for instance <I_36_21> in unit <ADD8_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y3" for instance <I_36_22> in unit <ADD8_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y3" for instance <I_36_23> in unit <ADD8_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_55> in unit <ADD8_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_58> in unit <ADD8_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_62> in unit <ADD8_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y2" for instance <I_36_63> in unit <ADD8_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y3" for instance <I_36_64> in unit <ADD8_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y3" for instance <I_36_107> in unit <ADD8_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y2" for instance <I_36_110> in unit <ADD8_MXILINX_ppm>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_111> in unit <ADD8_MXILINX_ppm>.
+Entity <ADD8_MXILINX_ppm> analyzed. Unit <ADD8_MXILINX_ppm> generated.
+
+Analyzing Entity <M2_1_MXILINX_ppm> in library <work> (Architecture <behavioral>).
+Entity <M2_1_MXILINX_ppm> analyzed. Unit <M2_1_MXILINX_ppm> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <D3_8E_MXILINX_ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+Unit <D3_8E_MXILINX_ppm> synthesized.
+
+
+Synthesizing Unit <FD4CE_MXILINX_ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+Unit <FD4CE_MXILINX_ppm> synthesized.
+
+
+Synthesizing Unit <D2_4E_MXILINX_ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+Unit <D2_4E_MXILINX_ppm> synthesized.
+
+
+Synthesizing Unit <FD8CE_MXILINX_ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+Unit <FD8CE_MXILINX_ppm> synthesized.
+
+
+Synthesizing Unit <CD4CE_MXILINX_ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+Unit <CD4CE_MXILINX_ppm> synthesized.
+
+
+Synthesizing Unit <ADD4_MXILINX_ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <ADD4_MXILINX_ppm> synthesized.
+
+
+Synthesizing Unit <COMP4_MXILINX_ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+Unit <COMP4_MXILINX_ppm> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+Unit <M2_1E_MXILINX_ppm> synthesized.
+
+
+Synthesizing Unit <ADD8_MXILINX_ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <ADD8_MXILINX_ppm> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+Unit <M2_1_MXILINX_ppm> synthesized.
+
+
+Synthesizing Unit <FD4CE_MXILINX_CODEGEN>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEGEN.vhf".
+Unit <FD4CE_MXILINX_CODEGEN> synthesized.
+
+
+Synthesizing Unit <COMP4_MXILINX_CODEGEN>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEGEN.vhf".
+Unit <COMP4_MXILINX_CODEGEN> synthesized.
+
+
+Synthesizing Unit <M2_1E_MXILINX_u74_157>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/u74_157.vhf".
+Unit <M2_1E_MXILINX_u74_157> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+Unit <FTCE_MXILINX_ppm> synthesized.
+
+
+Synthesizing Unit <CB2CE_MXILINX_ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+Unit <CB2CE_MXILINX_ppm> synthesized.
+
+
+Synthesizing Unit <CB16CE_MXILINX_ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+Unit <CB16CE_MXILINX_ppm> synthesized.
+
+
+Synthesizing Unit <u74_157_MUSER_ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+Unit <u74_157_MUSER_ppm> synthesized.
+
+
+Synthesizing Unit <X74_153_MUSER_ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+Unit <X74_153_MUSER_ppm> synthesized.
+
+
+Synthesizing Unit <M4_1E_MXILINX_ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+Unit <M4_1E_MXILINX_ppm> synthesized.
+
+
+Synthesizing Unit <M8_1E_MXILINX_ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+Unit <M8_1E_MXILINX_ppm> synthesized.
+
+
+Synthesizing Unit <u74_157>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/u74_157.vhf".
+Unit <u74_157> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+Unit <FTCLEX_MXILINX_ppm> synthesized.
+
+
+Synthesizing Unit <CODEGEN>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEGEN.vhf".
+Unit <CODEGEN> synthesized.
+
+
+Synthesizing Unit <CB4CLE_MXILINX_ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+Unit <CB4CLE_MXILINX_ppm> synthesized.
+
+
+Synthesizing Unit <ppm>.
+    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+WARNING:Xst:646 - Signal <XLXN_88> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <XLXN_11261> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <RDC0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <QA<14:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Q<15:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Q<4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Q<2>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <P2STURN> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <CLEARP2FFS> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <ppm> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 115
+ Flip-Flops                                            : 115
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ppm> ...
+
+Optimizing unit <D3_8E_MXILINX_ppm> ...
+
+Optimizing unit <FD4CE_MXILINX_ppm> ...
+
+Optimizing unit <D2_4E_MXILINX_ppm> ...
+
+Optimizing unit <FD8CE_MXILINX_ppm> ...
+
+Optimizing unit <CD4CE_MXILINX_ppm> ...
+
+Optimizing unit <ADD4_MXILINX_ppm> ...
+
+Optimizing unit <COMP4_MXILINX_ppm> ...
+
+Optimizing unit <M2_1E_MXILINX_ppm> ...
+
+Optimizing unit <ADD8_MXILINX_ppm> ...
+
+Optimizing unit <M2_1_MXILINX_ppm> ...
+
+Optimizing unit <FD4CE_MXILINX_CODEGEN> ...
+
+Optimizing unit <COMP4_MXILINX_CODEGEN> ...
+
+Optimizing unit <M2_1E_MXILINX_u74_157> ...
+
+Optimizing unit <FTCE_MXILINX_ppm> ...
+
+Optimizing unit <CB2CE_MXILINX_ppm> ...
+
+Optimizing unit <CB16CE_MXILINX_ppm> ...
+
+Optimizing unit <X74_153_MUSER_ppm> ...
+
+Optimizing unit <M4_1E_MXILINX_ppm> ...
+
+Optimizing unit <M8_1E_MXILINX_ppm> ...
+
+Optimizing unit <FTCLEX_MXILINX_ppm> ...
+
+Optimizing unit <CODEGEN> ...
+
+Optimizing unit <CB4CLE_MXILINX_ppm> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ppm, actual ratio is 2.
+WARNING:Xst:387 - The KEEP property attached to the net <U288/I0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U288/I1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U288/I2> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U171/I0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U151/I0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U151/I1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U151/I2> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U151/I3> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U149/I0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U149/I1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U149/I2> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U149/I3> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U148/I0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U148/I1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U148/I2> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U148/I3> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U182/I0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U182/I1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U182/I2> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U182/I3> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U182/I4> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U182/I5> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U182/I6> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U181/I0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U181/I1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U181/I2> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U181/I3> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U181/I4> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U181/I5> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U181/I6> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <U181/I7> may hinder timing optimization.
+   You may achieve better results by removing this property
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 115
+ Flip-Flops                                            : 115
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ppm.ngr
+Top Level Output File Name         : ppm
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 32
+
+Cell Usage :
+# BELS                             : 752
+#      AND2                        : 99
+#      AND2B1                      : 54
+#      AND3                        : 82
+#      AND3B1                      : 74
+#      AND3B2                      : 8
+#      AND4                        : 18
+#      AND4B1                      : 3
+#      AND4B2                      : 4
+#      AND4B3                      : 1
+#      AND5                        : 6
+#      BUF                         : 12
+#      GND                         : 8
+#      INV                         : 31
+#      MUXCY                       : 7
+#      MUXCY_D                     : 7
+#      MUXCY_L                     : 22
+#      MUXF5                       : 6
+#      MUXF5_L                     : 2
+#      MUXF6                       : 1
+#      OR2                         : 130
+#      OR2B1                       : 7
+#      OR3                         : 5
+#      OR4                         : 5
+#      VCC                         : 6
+#      XNOR2                       : 32
+#      XOR2                        : 86
+#      XORCY                       : 36
+# FlipFlops/Latches                : 115
+#      FDC                         : 10
+#      FDCE                        : 105
+# Clock Buffers                    : 4
+#      BUFG                        : 4
+# IO Buffers                       : 32
+#      IBUF                        : 13
+#      OBUF                        : 19
+# Logical                          : 12
+#      NAND2                       : 4
+#      NOR2                        : 2
+#      NOR3                        : 2
+#      NOR4                        : 4
+# Others                           : 43
+#      FMAP                        : 36
+#      ROM16X1                     : 7
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       57  out of   4656     1%  
+ Number of Slice Flip Flops:            114  out of   9312     1%  
+ Number of 4 input LUTs:                 38  out of   9312     0%  
+    Number used as ROMs:                  7
+ Number of IOs:                          32
+ Number of bonded IOBs:                  32  out of    232    13%  
+    IOB Flip Flops:                       1
+ Number of GCLKs:                         4  out of     24    16%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+U67/I_Q3/Q                         | BUFG                   | 5     |
+U67/I_Q6/Q                         | BUFG                   | 70    |
+U67/I_Q1/Q                         | BUFG                   | 6     |
+U67/I_Q0/Q                         | NONE(U86/I_Q1/I_36_35) | 2     |
+U66/I_Q15/Q                        | NONE(U67/I_Q15/I_36_35)| 16    |
+CLOCK_NP2B                         | IBUF+BUFG              | 16    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+P2ADD(XLXI_1309:G)                 | NONE(U119/I_Q0)        | 44    |
+CLEAR(CLEAR_BUF:O)                 | NONE(U113/I_Q0)        | 33    |
+CLRRDREGS(U22:O)                   | NONE(M1/U123/I_Q0)     | 22    |
+CLFF(U2:O)                         | NONE(U68)              | 5     |
+RESET_NP2B                         | IBUF                   | 4     |
+U65/D1(U65/I_36_36:O)              | NONE(U19)              | 3     |
+CLPXNSDFF(U43:Q)                   | NONE(U50)              | 2     |
+CLRTOPLAY(U41:O)                   | NONE(U28)              | 1     |
+INT_NET11(U42:O)                   | NONE(U43)              | 1     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 37.077ns (Maximum Frequency: 26.971MHz)
+   Minimum input arrival time before clock: 36.869ns
+   Maximum output required time after clock: 15.121ns
+   Maximum combinational path delay: 14.005ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U67/I_Q3/Q'
+  Clock period: 1.162ns (frequency: 860.622MHz)
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               1.162ns (Levels of Logic = 0)
+  Source:            U19 (FF)
+  Destination:       U20 (FF)
+  Source Clock:      U67/I_Q3/Q rising
+  Destination Clock: U67/I_Q3/Q rising
+
+  Data Path: U19 to U20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.380  U19 (XLXN_10471)
+     FDC:D                     0.268          U20
+    ----------------------------------------
+    Total                      1.162ns (0.782ns logic, 0.380ns route)
+                                       (67.3% logic, 32.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U67/I_Q6/Q'
+  Clock period: 37.077ns (frequency: 26.971MHz)
+  Total number of paths / destination ports: 72605055 / 128
+-------------------------------------------------------------------------
+Delay:               37.077ns (Levels of Logic = 55)
+  Source:            U64/I_Q2/I_36_35 (FF)
+  Destination:       U71 (FF)
+  Source Clock:      U67/I_Q6/Q rising
+  Destination Clock: U67/I_Q6/Q rising
+
+  Data Path: U64/I_Q2/I_36_35 to U71
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            13   0.514   0.836  I_36_35 (Q)
+     end scope: 'I_Q2'
+     end scope: 'U64'
+     BUF:I->O             25   0.612   1.071  SELPLYR_BUF (SELPLYR)
+     AND2:I1->O            8   0.612   0.643  U124 (XLXN_1346)
+     begin scope: 'U125/XLXI_114'
+     AND3:I2->O            1   0.612   0.357  I_36_30 (M1)
+     OR2:I0->O             6   0.612   0.569  I_36_38 (O)
+     end scope: 'U125/XLXI_114'
+     begin scope: 'U288'
+     XOR2:I0->O            1   0.612   0.000  I_36_239 (I0)
+     MUXCY_L:S->LO         1   0.404   0.000  I_36_111 (C0)
+     MUXCY_L:CI->LO        1   0.052   0.000  I_36_55 (C1)
+     MUXCY_D:CI->LO        1   0.399   0.000  I_36_62 (C2)
+     XORCY:CI->O           6   0.699   0.569  I_36_75 (S3)
+     end scope: 'U288'
+     AND3B2:I2->O          1   0.612   0.357  U279 (XLXN_11291)
+     OR4:I3->O             1   0.612   0.357  U283 (NPDISP15)
+     begin scope: 'U156/XLXI_4'
+     AND2:I0->O            1   0.612   0.357  I_36_9 (M1)
+     OR2:I0->O             1   0.612   0.357  I_36_8 (O)
+     end scope: 'U156/XLXI_4'
+     begin scope: 'U156/XLXI_6'
+     AND3:I0->O            1   0.612   0.357  I_36_30 (M1)
+     OR2:I0->O             1   0.612   0.357  I_36_38 (O)
+     end scope: 'U156/XLXI_6'
+     begin scope: 'U158/XLXI_117'
+     AND3:I0->O            1   0.612   0.357  I_36_30 (M1)
+     OR2:I0->O            15   0.612   0.864  I_36_38 (O)
+     end scope: 'U158/XLXI_117'
+     begin scope: 'U162'
+     XNOR2:I1->O           1   0.612   0.357  I_36_34 (AB3)
+     AND4:I0->O            3   0.612   0.451  I_36_32 (EQ)
+     end scope: 'U162'
+     BUF:I->O              2   0.612   0.380  RDP3EQ2_BUF (RDP3EQ2)
+     AND2:I0->O            2   0.612   0.380  U163 (RDP3EQ1)
+     AND2:I0->O            1   0.612   0.357  U164 (RDP3EQ0)
+     begin scope: 'U170/XLXI_2'
+     AND2:I0->O            1   0.612   0.357  I_36_9 (M1)
+     OR2:I0->O             1   0.612   0.357  I_36_8 (O)
+     end scope: 'U170/XLXI_2'
+     begin scope: 'U170/XLXI_5'
+     AND3:I0->O            1   0.612   0.357  I_36_30 (M1)
+     OR2:I0->O             1   0.612   0.000  I_36_38 (O)
+     end scope: 'U170/XLXI_5'
+     begin scope: 'U171'
+     XORCY:CI->O          21   0.699   0.959  I_36_73 (S0)
+     end scope: 'U171'
+     begin scope: 'U174/XLXI_2'
+     AND2B1:I0->O          1   0.612   0.357  I_36_7 (M0)
+     OR2:I1->O             1   0.612   0.357  I_36_8 (O)
+     end scope: 'U174/XLXI_2'
+     begin scope: 'U174/XLXI_5'
+     AND3:I0->O            1   0.612   0.357  I_36_30 (M1)
+     OR2:I0->O             1   0.612   0.357  I_36_38 (O)
+     end scope: 'U174/XLXI_5'
+     begin scope: 'U182'
+     XOR2:I0->O            1   0.612   0.000  I_36_230 (I2)
+     MUXCY_L:S->LO         1   0.404   0.000  I_36_62 (C2)
+     MUXCY_L:CI->LO        1   0.051   0.000  I_36_58 (C3)
+     MUXCY_L:CI->LO        1   0.051   0.000  I_36_63 (C4)
+     XORCY:CI->O           1   0.699   0.357  I_36_77 (S<5>)
+     end scope: 'U182'
+     begin scope: 'U181'
+     XOR2:I1->O            1   0.612   0.000  I_36_223 (I5)
+     MUXCY_L:S->LO         1   0.404   0.000  I_36_110 (C5)
+     MUXCY_D:CI->LO        1   0.399   0.000  I_36_107 (C6)
+     MUXCY:CI->O           2   0.399   0.380  I_36_64 (CO)
+     end scope: 'U181'
+     OR2:I1->O             1   0.612   0.357  U180 (PTOVF)
+     FDCE:D                    0.268          U71
+    ----------------------------------------
+    Total                     37.077ns (23.192ns logic, 13.885ns route)
+                                       (62.6% logic, 37.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U67/I_Q1/Q'
+  Clock period: 4.291ns (frequency: 233.057MHz)
+  Total number of paths / destination ports: 13 / 4
+-------------------------------------------------------------------------
+Delay:               4.291ns (Levels of Logic = 3)
+  Source:            U119/I_Q3 (FF)
+  Destination:       U119/I_Q3 (FF)
+  Source Clock:      U67/I_Q1/Q rising
+  Destination Clock: U67/I_Q1/Q rising
+
+  Data Path: U119/I_Q3 to U119/I_Q3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   0.514   0.602  I_Q3 (Q3)
+     AND2:I0->O            1   0.612   0.357  I_36_88 (AO3A)
+     OR2:I0->O             1   0.612   0.357  I_36_75 (OX3)
+     XOR2:I1->O            1   0.612   0.357  I_36_73 (D3)
+     FDCE:D                    0.268          I_Q3
+    ----------------------------------------
+    Total                      4.291ns (2.618ns logic, 1.673ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U67/I_Q0/Q'
+  Clock period: 2.773ns (frequency: 360.659MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               2.773ns (Levels of Logic = 2)
+  Source:            U86/I_Q0/I_36_35 (FF)
+  Destination:       U86/I_Q1/I_36_35 (FF)
+  Source Clock:      U67/I_Q0/Q rising
+  Destination Clock: U67/I_Q0/Q rising
+
+  Data Path: U86/I_Q0/I_36_35 to U86/I_Q1/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            23   0.514   1.022  I_36_35 (Q)
+     end scope: 'I_Q0'
+     begin scope: 'I_Q1'
+     XOR2:I0->O            1   0.612   0.357  I_36_32 (TQ)
+     FDCE:D                    0.268          I_36_35
+    ----------------------------------------
+    Total                      2.773ns (1.394ns logic, 1.379ns route)
+                                       (50.3% logic, 49.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U66/I_Q15/Q'
+  Clock period: 6.772ns (frequency: 147.668MHz)
+  Total number of paths / destination ports: 136 / 16
+-------------------------------------------------------------------------
+Delay:               6.772ns (Levels of Logic = 6)
+  Source:            U67/I_Q0/I_36_35 (FF)
+  Destination:       U67/I_Q15/I_36_35 (FF)
+  Source Clock:      U66/I_Q15/Q rising
+  Destination Clock: U66/I_Q15/Q rising
+
+  Data Path: U67/I_Q0/I_36_35 to U67/I_Q15/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   0.514   0.602  I_36_35 (Q)
+     end scope: 'I_Q0'
+     AND4:I3->O            5   0.612   0.538  I_36_10 (T4)
+     AND5:I4->O            5   0.612   0.538  I_36_14 (T8)
+     AND5:I4->O            5   0.612   0.538  I_36_29 (T12)
+     AND2:I1->O            1   0.612   0.357  I_36_23 (T13)
+     begin scope: 'I_Q13'
+     XOR2:I0->O            1   0.612   0.357  I_36_32 (TQ)
+     FDCE:D                    0.268          I_36_35
+    ----------------------------------------
+    Total                      6.772ns (3.842ns logic, 2.930ns route)
+                                       (56.7% logic, 43.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLOCK_NP2B'
+  Clock period: 6.708ns (frequency: 149.071MHz)
+  Total number of paths / destination ports: 136 / 16
+-------------------------------------------------------------------------
+Delay:               6.708ns (Levels of Logic = 6)
+  Source:            U66/I_Q0/I_36_35 (FF)
+  Destination:       U66/I_Q15/I_36_35 (FF)
+  Source Clock:      CLOCK_NP2B rising
+  Destination Clock: CLOCK_NP2B rising
+
+  Data Path: U66/I_Q0/I_36_35 to U66/I_Q15/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.514   0.538  I_36_35 (Q)
+     end scope: 'I_Q0'
+     AND4:I3->O            5   0.612   0.538  I_36_10 (T4)
+     AND5:I4->O            5   0.612   0.538  I_36_14 (T8)
+     AND5:I4->O            5   0.612   0.538  I_36_29 (T12)
+     AND2:I1->O            1   0.612   0.357  I_36_23 (T13)
+     begin scope: 'I_Q13'
+     XOR2:I0->O            1   0.612   0.357  I_36_32 (TQ)
+     FDCE:D                    0.268          I_36_35
+    ----------------------------------------
+    Total                      6.708ns (3.842ns logic, 2.866ns route)
+                                       (57.3% logic, 42.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U67/I_Q3/Q'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 2)
+  Source:            RESET_NP2B (PAD)
+  Destination:       U19 (FF)
+  Destination Clock: U67/I_Q3/Q rising
+
+  Data Path: RESET_NP2B to U19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.106   0.538  RESET_BUF (RESET)
+     BUF:I->O             34   0.612   1.073  CLEAR_BUF (CLEAR)
+     FDC:D                     0.268          U19
+    ----------------------------------------
+    Total                      3.597ns (1.986ns logic, 1.611ns route)
+                                       (55.2% logic, 44.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U67/I_Q6/Q'
+  Total number of paths / destination ports: 40736067 / 61
+-------------------------------------------------------------------------
+Offset:              36.869ns (Levels of Logic = 55)
+  Source:            P1SEL1_NP2B (PAD)
+  Destination:       U71 (FF)
+  Destination Clock: U67/I_Q6/Q rising
+
+  Data Path: P1SEL1_NP2B to U71
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   1.106   0.750  P1SEL1_BUF (P1SEL<1>)
+     OR4:I1->O             1   0.612   0.357  U123 (XLXN_1347)
+     AND2:I0->O            8   0.612   0.643  U124 (XLXN_1346)
+     begin scope: 'U125/XLXI_114'
+     AND3:I2->O            1   0.612   0.357  I_36_30 (M1)
+     OR2:I0->O             6   0.612   0.569  I_36_38 (O)
+     end scope: 'U125/XLXI_114'
+     begin scope: 'U288'
+     XOR2:I0->O            1   0.612   0.000  I_36_239 (I0)
+     MUXCY_L:S->LO         1   0.404   0.000  I_36_111 (C0)
+     MUXCY_L:CI->LO        1   0.052   0.000  I_36_55 (C1)
+     MUXCY_D:CI->LO        1   0.399   0.000  I_36_62 (C2)
+     XORCY:CI->O           6   0.699   0.569  I_36_75 (S3)
+     end scope: 'U288'
+     AND3B2:I2->O          1   0.612   0.357  U279 (XLXN_11291)
+     OR4:I3->O             1   0.612   0.357  U283 (NPDISP15)
+     begin scope: 'U156/XLXI_4'
+     AND2:I0->O            1   0.612   0.357  I_36_9 (M1)
+     OR2:I0->O             1   0.612   0.357  I_36_8 (O)
+     end scope: 'U156/XLXI_4'
+     begin scope: 'U156/XLXI_6'
+     AND3:I0->O            1   0.612   0.357  I_36_30 (M1)
+     OR2:I0->O             1   0.612   0.357  I_36_38 (O)
+     end scope: 'U156/XLXI_6'
+     begin scope: 'U158/XLXI_117'
+     AND3:I0->O            1   0.612   0.357  I_36_30 (M1)
+     OR2:I0->O            15   0.612   0.864  I_36_38 (O)
+     end scope: 'U158/XLXI_117'
+     begin scope: 'U162'
+     XNOR2:I1->O           1   0.612   0.357  I_36_34 (AB3)
+     AND4:I0->O            3   0.612   0.451  I_36_32 (EQ)
+     end scope: 'U162'
+     BUF:I->O              2   0.612   0.380  RDP3EQ2_BUF (RDP3EQ2)
+     AND2:I0->O            2   0.612   0.380  U163 (RDP3EQ1)
+     AND2:I0->O            1   0.612   0.357  U164 (RDP3EQ0)
+     begin scope: 'U170/XLXI_2'
+     AND2:I0->O            1   0.612   0.357  I_36_9 (M1)
+     OR2:I0->O             1   0.612   0.357  I_36_8 (O)
+     end scope: 'U170/XLXI_2'
+     begin scope: 'U170/XLXI_5'
+     AND3:I0->O            1   0.612   0.357  I_36_30 (M1)
+     OR2:I0->O             1   0.612   0.000  I_36_38 (O)
+     end scope: 'U170/XLXI_5'
+     begin scope: 'U171'
+     XORCY:CI->O          21   0.699   0.959  I_36_73 (S0)
+     end scope: 'U171'
+     begin scope: 'U174/XLXI_2'
+     AND2B1:I0->O          1   0.612   0.357  I_36_7 (M0)
+     OR2:I1->O             1   0.612   0.357  I_36_8 (O)
+     end scope: 'U174/XLXI_2'
+     begin scope: 'U174/XLXI_5'
+     AND3:I0->O            1   0.612   0.357  I_36_30 (M1)
+     OR2:I0->O             1   0.612   0.357  I_36_38 (O)
+     end scope: 'U174/XLXI_5'
+     begin scope: 'U182'
+     XOR2:I0->O            1   0.612   0.000  I_36_230 (I2)
+     MUXCY_L:S->LO         1   0.404   0.000  I_36_62 (C2)
+     MUXCY_L:CI->LO        1   0.051   0.000  I_36_58 (C3)
+     MUXCY_L:CI->LO        1   0.051   0.000  I_36_63 (C4)
+     XORCY:CI->O           1   0.699   0.357  I_36_77 (S<5>)
+     end scope: 'U182'
+     begin scope: 'U181'
+     XOR2:I1->O            1   0.612   0.000  I_36_223 (I5)
+     MUXCY_L:S->LO         1   0.404   0.000  I_36_110 (C5)
+     MUXCY_D:CI->LO        1   0.399   0.000  I_36_107 (C6)
+     MUXCY:CI->O           2   0.399   0.380  I_36_64 (CO)
+     end scope: 'U181'
+     OR2:I1->O             1   0.612   0.357  U180 (PTOVF)
+     FDCE:D                    0.268          U71
+    ----------------------------------------
+    Total                     36.869ns (23.784ns logic, 13.085ns route)
+                                       (64.5% logic, 35.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U67/I_Q1/Q'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.873ns (Levels of Logic = 1)
+  Source:            P1PLAY_NP2B (PAD)
+  Destination:       U76 (FF)
+  Destination Clock: U67/I_Q1/Q rising
+
+  Data Path: P1PLAY_NP2B to U76
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.106   0.499  P1PLAY_BUF (P1PLAY)
+     FDC:D                     0.268          U76
+    ----------------------------------------
+    Total                      1.873ns (1.374ns logic, 0.499ns route)
+                                       (73.4% logic, 26.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U67/I_Q6/Q'
+  Total number of paths / destination ports: 1277 / 40
+-------------------------------------------------------------------------
+Offset:              15.121ns (Levels of Logic = 13)
+  Source:            U64/I_Q0/I_36_35 (FF)
+  Destination:       A1_NB2P (PAD)
+  Source Clock:      U67/I_Q6/Q rising
+
+  Data Path: U64/I_Q0/I_36_35 to A1_NB2P
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            14   0.514   0.850  I_36_35 (Q)
+     end scope: 'I_Q0'
+     end scope: 'U64'
+     begin scope: 'U65'
+     AND4B2:I2->O          9   0.612   0.697  I_36_36 (D1)
+     end scope: 'U65'
+     AND2:I1->O            1   0.612   0.357  U25 (XLXN_9714)
+     OR3:I2->O             1   0.612   0.357  U24 (XLXN_9551)
+     AND2B1:I1->O         10   0.612   0.750  U23 (ADD)
+     AND2:I0->O            2   0.612   0.380  U37 (INT_NET2)
+     AND2B1:I0->O          1   0.612   0.357  U35 (BPDS)
+     OR2B1:I0->O           1   0.612   0.357  U88 (XLXN_203)
+     AND2:I0->O            4   0.612   0.499  U89 (INT_NET0)
+     OR2B1:I1->O           1   0.612   0.357  U92 (XLXN_181)
+     NAND2:I1->O           1   0.612   0.357  U93 (DISPEN<0>)
+     OBUF:I->O                 3.169          DISPEN0_BUF (A4_NB2P)
+    ----------------------------------------
+    Total                     15.121ns (9.803ns logic, 5.318ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U66/I_Q15/Q'
+  Total number of paths / destination ports: 12 / 4
+-------------------------------------------------------------------------
+Offset:              8.239ns (Levels of Logic = 6)
+  Source:            U67/I_Q7/I_36_35 (FF)
+  Destination:       A1_NB2P (PAD)
+  Source Clock:      U66/I_Q15/Q rising
+
+  Data Path: U67/I_Q7/I_36_35 to A1_NB2P
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.514   0.538  I_36_35 (Q)
+     end scope: 'I_Q7'
+     end scope: 'U67'
+     OR2B1:I1->O           1   0.612   0.357  U88 (XLXN_203)
+     AND2:I0->O            4   0.612   0.499  U89 (INT_NET0)
+     OR2B1:I1->O           1   0.612   0.357  U92 (XLXN_181)
+     NAND2:I1->O           1   0.612   0.357  U93 (DISPEN<0>)
+     OBUF:I->O                 3.169          DISPEN0_BUF (A4_NB2P)
+    ----------------------------------------
+    Total                      8.239ns (6.131ns logic, 2.108ns route)
+                                       (74.4% logic, 25.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U67/I_Q0/Q'
+  Total number of paths / destination ports: 148 / 32
+-------------------------------------------------------------------------
+Offset:              6.643ns (Levels of Logic = 5)
+  Source:            U86/I_Q0/I_36_35 (FF)
+  Destination:       A1_NB2P (PAD)
+  Source Clock:      U67/I_Q0/Q rising
+
+  Data Path: U86/I_Q0/I_36_35 to A1_NB2P
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            23   0.514   1.022  I_36_35 (Q)
+     end scope: 'I_Q0'
+     end scope: 'U86'
+     begin scope: 'U91'
+     AND3:I1->O            1   0.612   0.357  I_36_30 (D3)
+     end scope: 'U91'
+     NAND2:I0->O           1   0.612   0.357  U99 (DISPEN<3>)
+     OBUF:I->O                 3.169          DISPEN3_BUF (A1_NB2P)
+    ----------------------------------------
+    Total                      6.643ns (4.907ns logic, 1.736ns route)
+                                       (73.9% logic, 26.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1516 / 44
+-------------------------------------------------------------------------
+Delay:               14.005ns (Levels of Logic = 11)
+  Source:            P1ADD_NP2B (PAD)
+  Destination:       A1_NB2P (PAD)
+
+  Data Path: P1ADD_NP2B to A1_NB2P
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.106   0.451  P1ADD_BUF (P1ADD)
+     AND2:I0->O            1   0.612   0.357  U25 (XLXN_9714)
+     OR3:I2->O             1   0.612   0.357  U24 (XLXN_9551)
+     AND2B1:I1->O         10   0.612   0.750  U23 (ADD)
+     AND2:I0->O            2   0.612   0.380  U37 (INT_NET2)
+     AND2B1:I0->O          1   0.612   0.357  U35 (BPDS)
+     OR2B1:I0->O           1   0.612   0.357  U88 (XLXN_203)
+     AND2:I0->O            4   0.612   0.499  U89 (INT_NET0)
+     OR2B1:I1->O           1   0.612   0.357  U92 (XLXN_181)
+     NAND2:I1->O           1   0.612   0.357  U93 (DISPEN<0>)
+     OBUF:I->O                 3.169          DISPEN0_BUF (A4_NB2P)
+    ----------------------------------------
+    Total                     14.005ns (9.783ns logic, 4.222ns route)
+                                       (69.9% logic, 30.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.32 secs
+ 
+--> 
+
+
+Total memory usage is 170624 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   68 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
