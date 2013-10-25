@@ -3039,8 +3039,8 @@
             <blockpin signalname="P2ADD" name="G" />
         </block>
         <block symbolname="d2_4e" name="U298">
-            <blockpin signalname="ZERODISP0" name="A0" />
-            <blockpin signalname="ZERODISP1" name="A1" />
+            <blockpin signalname="ZERODISP1" name="A0" />
+            <blockpin signalname="ZERODISP0" name="A1" />
             <blockpin signalname="XLXN_11578" name="E" />
             <blockpin signalname="P2SEL0" name="D0" />
             <blockpin signalname="P2SEL1" name="D1" />
@@ -8534,15 +8534,6 @@
         <text style="fontsize:40;fontname:Arial" x="3524" y="2852">Decision Making Subblock</text>
         <rect width="632" x="1276" y="3252" height="76" />
         <rect width="516" x="3500" y="2816" height="76" />
-        <branch name="ZERODISP0">
-            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4288" y="1424" type="branch" />
-            <wire x2="4315" y1="1424" y2="1424" x1="4288" />
-            <wire x2="4464" y1="1424" y2="1424" x1="4315" />
-        </branch>
-        <branch name="ZERODISP1">
-            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4288" y="1488" type="branch" />
-            <wire x2="4464" y1="1488" y2="1488" x1="4288" />
-        </branch>
         <branch name="P2SEL1">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5120" y="1488" type="branch" />
             <wire x2="5120" y1="1488" y2="1488" x1="4848" />
@@ -8558,6 +8549,14 @@
         <branch name="P2SEL0">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5120" y="1424" type="branch" />
             <wire x2="5120" y1="1424" y2="1424" x1="4848" />
+        </branch>
+        <branch name="ZERODISP1">
+            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4288" y="1424" type="branch" />
+            <wire x2="4464" y1="1424" y2="1424" x1="4288" />
+        </branch>
+        <branch name="ZERODISP0">
+            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4288" y="1488" type="branch" />
+            <wire x2="4464" y1="1488" y2="1488" x1="4288" />
         </branch>
     </sheet>
 </drawing>

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ppm.vhf
--- /___/   /\     Timestamp : 10/25/2013 13:25:10
+-- /___/   /\     Timestamp : 10/25/2013 13:31:06
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -4799,8 +4799,8 @@ begin
                 O=>ZERODISP1);
    
    U298 : D2_4E_MXILINX_ppm
-      port map (A0=>ZERODISP0,
-                A1=>ZERODISP1,
+      port map (A0=>ZERODISP1,
+                A1=>ZERODISP0,
                 E=>XLXN_11578,
                 D0=>P2SEL0,
                 D1=>P2SEL1,
