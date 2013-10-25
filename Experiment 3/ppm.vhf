@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ppm.vhf
--- /___/   /\     Timestamp : 10/25/2013 13:07:29
+-- /___/   /\     Timestamp : 10/25/2013 13:25:10
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -4802,10 +4802,10 @@ begin
       port map (A0=>ZERODISP0,
                 A1=>ZERODISP1,
                 E=>XLXN_11578,
-                D0=>P2SEL3,
-                D1=>P2SEL2,
-                D2=>P2SEL1,
-                D3=>P2SEL0);
+                D0=>P2SEL0,
+                D1=>P2SEL1,
+                D2=>P2SEL2,
+                D3=>P2SEL3);
    
    U299 : INV
       port map (I=>APOSZERO,
