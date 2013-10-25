@@ -1,4 +1,4 @@
-Release 12.4 - xst M.81d (lin)
+Release 12.4 - xst M.81d (lin64)
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 --> 
 Parameter TMPDIR set to xst/projnav.tmp
@@ -124,26 +124,46 @@ Architecture behavioral of Entity fd4ce_mxilinx_codedisc is up to date.
 Architecture behavioral of Entity comp4_mxilinx_codedisc is up to date.
 Architecture behavioral of Entity codedisc is up to date.
 Compiling vhdl file "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" in Library work.
-Architecture behavioral of Entity d2_4e_mxilinx_ppm is up to date.
-Architecture behavioral of Entity add4_mxilinx_ppm is up to date.
-Architecture behavioral of Entity m2_1_mxilinx_ppm is up to date.
-Architecture behavioral of Entity add8_mxilinx_ppm is up to date.
-Architecture behavioral of Entity m2_1e_mxilinx_ppm is up to date.
-Architecture behavioral of Entity m4_1e_mxilinx_ppm is up to date.
-Architecture behavioral of Entity x74_153_muser_ppm is up to date.
-Architecture behavioral of Entity u74_157_muser_ppm is up to date.
-Architecture behavioral of Entity comp4_mxilinx_ppm is up to date.
-Architecture behavioral of Entity fd4ce_mxilinx_ppm is up to date.
-Architecture behavioral of Entity ftce_mxilinx_ppm is up to date.
-Architecture behavioral of Entity cb16ce_mxilinx_ppm is up to date.
-Architecture behavioral of Entity cb2ce_mxilinx_ppm is up to date.
-Architecture behavioral of Entity fd8ce_mxilinx_ppm is up to date.
-Architecture behavioral of Entity cd4ce_mxilinx_ppm is up to date.
-Architecture behavioral of Entity d3_8e_mxilinx_ppm is up to date.
-Architecture behavioral of Entity ftclex_mxilinx_ppm is up to date.
-Architecture behavioral of Entity cb4cle_mxilinx_ppm is up to date.
-Architecture behavioral of Entity m8_1e_mxilinx_ppm is up to date.
-Architecture behavioral of Entity ppm is up to date.
+Entity <d2_4e_mxilinx_ppm> compiled.
+Entity <d2_4e_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <add4_mxilinx_ppm> compiled.
+Entity <add4_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <m2_1_mxilinx_ppm> compiled.
+Entity <m2_1_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <add8_mxilinx_ppm> compiled.
+Entity <add8_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <m2_1e_mxilinx_ppm> compiled.
+Entity <m2_1e_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <m4_1e_mxilinx_ppm> compiled.
+Entity <m4_1e_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <x74_153_muser_ppm> compiled.
+Entity <x74_153_muser_ppm> (Architecture <behavioral>) compiled.
+Entity <u74_157_muser_ppm> compiled.
+Entity <u74_157_muser_ppm> (Architecture <behavioral>) compiled.
+Entity <comp4_mxilinx_ppm> compiled.
+Entity <comp4_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <fd4ce_mxilinx_ppm> compiled.
+Entity <fd4ce_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <ftce_mxilinx_ppm> compiled.
+Entity <ftce_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <cb16ce_mxilinx_ppm> compiled.
+Entity <cb16ce_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <cb2ce_mxilinx_ppm> compiled.
+Entity <cb2ce_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <fd8ce_mxilinx_ppm> compiled.
+Entity <fd8ce_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <cd4ce_mxilinx_ppm> compiled.
+Entity <cd4ce_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <d3_8e_mxilinx_ppm> compiled.
+Entity <d3_8e_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <ftclex_mxilinx_ppm> compiled.
+Entity <ftclex_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <cb4cle_mxilinx_ppm> compiled.
+Entity <cb4cle_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <m8_1e_mxilinx_ppm> compiled.
+Entity <m8_1e_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <ppm> compiled.
+Entity <ppm> (Architecture <behavioral>) compiled.
 Compiling vhdl file "/home/atomic/Documents/Code/TeamGold/Experiment 3/X74_153.vhf" in Library work.
 Architecture behavioral of Entity m2_1e_mxilinx_x74_153 is up to date.
 Architecture behavioral of Entity m2_1_mxilinx_x74_153 is up to date.
@@ -1456,13 +1476,13 @@ Delay:               14.005ns (Levels of Logic = 11)
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.32 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.00 secs
  
 --> 
 
 
-Total memory usage is 170624 kilobytes
+Total memory usage is 376216 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   68 (   0 filtered)

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<document OS="lin" product="ISE" version="12.4">
+<document OS="lin64" product="ISE" version="12.4">
 
   <!--The data in this file is primarily intended for consumption by Xilinx tools.
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Wed Oct 23 04:30:38 2013">
+  <application stringID="Xst" timeStamp="Fri Oct 25 13:07:32 2013">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -16,7 +16,7 @@
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="LD_LIBRARY_PATH"/>
-          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/ISE//lib/lin:/opt/Xilinx/12.4/ISE_DS/common/lib/lin:/opt/Xilinx/12.4/ISE_DS/ISE/lib/lin:/opt/Xilinx/12.4/ISE_DS/EDK/lib/lin"/>
+          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/ISE//lib/lin64:/opt/Xilinx/12.4/ISE_DS/common/lib/lin64:/opt/Xilinx/12.4/ISE_DS/ISE/lib/lin64:/opt/Xilinx/12.4/ISE_DS/EDK/lib/lin64"/>
         </row>
         <row stringID="row" value="2">
           <item stringID="variable" value="XILINX_EDK"/>
@@ -24,7 +24,7 @@
         </row>
         <row stringID="row" value="3">
           <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/ISE//bin/lin:/opt/Xilinx/12.4/ISE_DS/common/bin/lin:/opt/Xilinx/12.4/ISE_DS/PlanAhead/bin:/opt/Xilinx/12.4/ISE_DS/ISE/bin/lin:/opt/Xilinx/12.4/ISE_DS/ISE/sysgen/util:/opt/Xilinx/12.4/ISE_DS/EDK/bin/lin:/home/atomic/.rvm/gems/ruby-1.9.3-p194/bin:/home/atomic/.rvm/gems/ruby-1.9.3-p194@global/bin:/home/atomic/.rvm/rubies/ruby-1.9.3-p194/bin:/home/atomic/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"/>
+          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/ISE//bin/lin64:/opt/Xilinx/12.4/ISE_DS/common/bin/lin64:/opt/Xilinx/12.4/ISE_DS/PlanAhead/bin:/opt/Xilinx/12.4/ISE_DS/ISE/bin/lin64:/opt/Xilinx/12.4/ISE_DS/ISE/sysgen/util:/opt/Xilinx/12.4/ISE_DS/EDK/bin/lin64:/home/atomic/.rvm/gems/ruby-1.9.3-p194/bin:/home/atomic/.rvm/gems/ruby-1.9.3-p194@global/bin:/home/atomic/.rvm/rubies/ruby-1.9.3-p194/bin:/home/atomic/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"/>
         </row>
         <row stringID="row" value="4">
           <item stringID="variable" value="XILINX_PLANAHEAD"/>

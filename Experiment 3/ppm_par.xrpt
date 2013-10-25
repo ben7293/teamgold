@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<document OS="lin" product="ISE" version="12.4">
+<document OS="lin64" product="ISE" version="12.4">
 
   <!--The data in this file is primarily intended for consumption by Xilinx tools.
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Wed Oct 23 04:30:52 2013">
+  <application stringID="par" timeStamp="Fri Oct 25 13:07:42 2013">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -16,7 +16,7 @@
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="LD_LIBRARY_PATH"/>
-          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/ISE//lib/lin:/opt/Xilinx/12.4/ISE_DS/common/lib/lin:/opt/Xilinx/12.4/ISE_DS/ISE/lib/lin:/opt/Xilinx/12.4/ISE_DS/EDK/lib/lin"/>
+          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/ISE//lib/lin64:/opt/Xilinx/12.4/ISE_DS/common/lib/lin64:/opt/Xilinx/12.4/ISE_DS/ISE/lib/lin64:/opt/Xilinx/12.4/ISE_DS/EDK/lib/lin64"/>
         </row>
         <row stringID="row" value="2">
           <item stringID="variable" value="XILINX_EDK"/>
@@ -24,7 +24,7 @@
         </row>
         <row stringID="row" value="3">
           <item stringID="variable" value="PATH"/>
-          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/ISE//bin/lin:/opt/Xilinx/12.4/ISE_DS/common/bin/lin:/opt/Xilinx/12.4/ISE_DS/PlanAhead/bin:/opt/Xilinx/12.4/ISE_DS/ISE/bin/lin:/opt/Xilinx/12.4/ISE_DS/ISE/sysgen/util:/opt/Xilinx/12.4/ISE_DS/EDK/bin/lin:/home/atomic/.rvm/gems/ruby-1.9.3-p194/bin:/home/atomic/.rvm/gems/ruby-1.9.3-p194@global/bin:/home/atomic/.rvm/rubies/ruby-1.9.3-p194/bin:/home/atomic/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"/>
+          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/ISE//bin/lin64:/opt/Xilinx/12.4/ISE_DS/common/bin/lin64:/opt/Xilinx/12.4/ISE_DS/PlanAhead/bin:/opt/Xilinx/12.4/ISE_DS/ISE/bin/lin64:/opt/Xilinx/12.4/ISE_DS/ISE/sysgen/util:/opt/Xilinx/12.4/ISE_DS/EDK/bin/lin64:/home/atomic/.rvm/gems/ruby-1.9.3-p194/bin:/home/atomic/.rvm/gems/ruby-1.9.3-p194@global/bin:/home/atomic/.rvm/rubies/ruby-1.9.3-p194/bin:/home/atomic/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"/>
         </row>
         <row stringID="row" value="4">
           <item stringID="variable" value="XILINX_PLANAHEAD"/>
@@ -62,12 +62,12 @@
     </task>
     <task stringID="PAR_PAR">
       <section stringID="PAR_DESIGN_SUMMARY">
-        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="16 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="16 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="11 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="11 secs "/>
         <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
         <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
-        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="17 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="17 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="12 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="12 secs "/>
       </section>
     </task>
     <task stringID="PAR_par">
@@ -87,8 +87,8 @@
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X1Y10"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
             <item dataType="float" label="Fanout" stringID="FANOUT" value="45.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.054000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.163000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.056000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.165000"/>
           </row>
           <row stringID="row" value="2">
             <item label="Clock Net" stringID="CLOCK_NET" value="P2CLK"/>
@@ -96,8 +96,8 @@
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X1Y0"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
             <item dataType="float" label="Fanout" stringID="FANOUT" value="5.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.056000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.161000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.053000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.156000"/>
           </row>
           <row stringID="row" value="3">
             <item label="Clock Net" stringID="CLOCK_NET" value="CLOCK"/>
@@ -105,8 +105,8 @@
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X2Y11"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
             <item dataType="float" label="Fanout" stringID="FANOUT" value="16.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.018000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.147000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.004000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.114000"/>
           </row>
           <row stringID="row" value="4">
             <item label="Clock Net" stringID="CLOCK_NET" value="RDCLK"/>
@@ -114,7 +114,7 @@
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X2Y1"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
             <item dataType="float" label="Fanout" stringID="FANOUT" value="5.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.051000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.050000"/>
             <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="0.164000"/>
           </row>
           <row stringID="row" value="5">
@@ -122,16 +122,16 @@
             <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="Local"/>
             <item dataType="float" label="Fanout" stringID="FANOUT" value="9.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.013000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.724000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.014000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.750000"/>
           </row>
           <row stringID="row" value="6">
             <item label="Clock Net" stringID="CLOCK_NET" value="Q&lt;0>"/>
             <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="Local"/>
             <item dataType="float" label="Fanout" stringID="FANOUT" value="7.000000"/>
-            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.003000"/>
-            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="1.755000"/>
+            <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.000000"/>
+            <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="2.163000"/>
           </row>
         </table>
       </section>
