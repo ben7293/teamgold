@@ -12,7 +12,7 @@ Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: ppm.prj
@@ -1477,12 +1477,12 @@ Delay:               14.005ns (Levels of Logic = 11)
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.99 secs
+Total CPU time to Xst completion: 3.97 secs
  
 --> 
 
 
-Total memory usage is 376224 kilobytes
+Total memory usage is 376220 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   68 (   0 filtered)
