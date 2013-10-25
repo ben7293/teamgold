@@ -21,214 +21,214 @@ FL "//rh227srv.labs.poly.edu/users/btsai01/CS2204/Lab 5 - Exp1_2/Ppm/u74_157.vhf
 FL "//rh227srv.labs.poly.edu/users/btsai01/CS2204/Lab 5 - Exp1_2/Ppm/X74_153.vhf" 2013/10/04.13:41:50 M.81d
 FL "//rh227srv.labs.poly.edu/users/btsai01/CS2204/Lab 5 - Exp1_2/Ppm/ZERODISPLAY.vhf" 2013/10/04.12:56:47 M.81d
 FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEDISC.vhf" 2013/10/04.12:56:47 M.81d
-EN work/FD4CE_MXILINX_CODEDISC 1382722647 \
+EN work/FD4CE_MXILINX_CODEDISC 1382722867 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEDISC.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/FD4CE_MXILINX_CODEDISC/BEHAVIORAL 1382722648 \
+AR work/FD4CE_MXILINX_CODEDISC/BEHAVIORAL 1382722868 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEDISC.vhf" \
-      EN work/FD4CE_MXILINX_CODEDISC 1382722647 CP FDCE
-EN work/COMP4_MXILINX_CODEDISC 1382722649 \
-      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEDISC.vhf" \
-      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
-      PH unisim/VCOMPONENTS 1290154108
-AR work/COMP4_MXILINX_CODEDISC/BEHAVIORAL 1382722650 \
-      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEDISC.vhf" \
-      EN work/COMP4_MXILINX_CODEDISC 1382722649 CP AND4 CP XNOR2
-EN work/CODEDISC 1382722651 \
+      EN work/FD4CE_MXILINX_CODEDISC 1382722867 CP FDCE
+EN work/COMP4_MXILINX_CODEDISC 1382722869 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEDISC.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/CODEDISC/BEHAVIORAL 1382722652 \
+AR work/COMP4_MXILINX_CODEDISC/BEHAVIORAL 1382722870 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEDISC.vhf" \
-      EN work/CODEDISC 1382722651 CP OR5 CP AND2 CP FD4CE_MXILINX_CODEDISC CP OR4 \
+      EN work/COMP4_MXILINX_CODEDISC 1382722869 CP AND4 CP XNOR2
+EN work/CODEDISC 1382722871 \
+      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEDISC.vhf" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/CODEDISC/BEHAVIORAL 1382722872 \
+      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEDISC.vhf" \
+      EN work/CODEDISC 1382722871 CP OR5 CP AND2 CP FD4CE_MXILINX_CODEDISC CP OR4 \
       CP OR2 CP u74_157 CP COMP4_MXILINX_CODEDISC CP GND
 FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEGEN.vhf" 2013/10/04.12:56:47 M.81d
-EN work/COMP4_MXILINX_CODEGEN 1382722635 \
+EN work/COMP4_MXILINX_CODEGEN 1382722855 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEGEN.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/COMP4_MXILINX_CODEGEN/BEHAVIORAL 1382722636 \
+AR work/COMP4_MXILINX_CODEGEN/BEHAVIORAL 1382722856 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEGEN.vhf" \
-      EN work/COMP4_MXILINX_CODEGEN 1382722635 CP AND4 CP XNOR2
-EN work/FD4CE_MXILINX_CODEGEN 1382722637 \
-      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEGEN.vhf" \
-      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
-      PH unisim/VCOMPONENTS 1290154108
-AR work/FD4CE_MXILINX_CODEGEN/BEHAVIORAL 1382722638 \
-      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEGEN.vhf" \
-      EN work/FD4CE_MXILINX_CODEGEN 1382722637 CP FDCE
-EN work/CODEGEN 1382722639 \
+      EN work/COMP4_MXILINX_CODEGEN 1382722855 CP AND4 CP XNOR2
+EN work/FD4CE_MXILINX_CODEGEN 1382722857 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEGEN.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/CODEGEN/BEHAVIORAL 1382722640 \
+AR work/FD4CE_MXILINX_CODEGEN/BEHAVIORAL 1382722858 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEGEN.vhf" \
-      EN work/CODEGEN 1382722639 CP NOR3 CP OR2 CP FD4CE_MXILINX_CODEGEN \
+      EN work/FD4CE_MXILINX_CODEGEN 1382722857 CP FDCE
+EN work/CODEGEN 1382722859 \
+      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEGEN.vhf" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/CODEGEN/BEHAVIORAL 1382722860 \
+      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEGEN.vhf" \
+      EN work/CODEGEN 1382722859 CP NOR3 CP OR2 CP FD4CE_MXILINX_CODEGEN \
       CP COMP4_MXILINX_CODEGEN CP AND3 CP NOR2 CP AND2 CP u74_157 CP AND2B1
 FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/LARGESTDISP.vhf" 2013/10/04.12:56:47 M.81d
-EN work/COMPM4_MXILINX_LARGESTDISP 1382722643 \
+EN work/COMPM4_MXILINX_LARGESTDISP 1382722863 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/LARGESTDISP.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/COMPM4_MXILINX_LARGESTDISP/BEHAVIORAL 1382722644 \
+AR work/COMPM4_MXILINX_LARGESTDISP/BEHAVIORAL 1382722864 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/LARGESTDISP.vhf" \
-      EN work/COMPM4_MXILINX_LARGESTDISP 1382722643 CP AND2 CP NOR2 CP AND2B1 CP OR2 \
+      EN work/COMPM4_MXILINX_LARGESTDISP 1382722863 CP AND2 CP NOR2 CP AND2B1 CP OR2 \
       CP XNOR2 CP AND3B1
-EN work/LARGESTDISP 1382722645 \
+EN work/LARGESTDISP 1382722865 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/LARGESTDISP.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/LARGESTDISP/BEHAVIORAL 1382722646 \
+AR work/LARGESTDISP/BEHAVIORAL 1382722866 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/LARGESTDISP.vhf" \
-      EN work/LARGESTDISP 1382722645 CP COMPM4_MXILINX_LARGESTDISP CP u74_157 \
+      EN work/LARGESTDISP 1382722865 CP COMPM4_MXILINX_LARGESTDISP CP u74_157 \
       CP AND2B1 CP AND2 CP OR2 CP GND
-FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" 2013/10/25.13:37:09 M.81d
-EN work/D2_4E_MXILINX_ppm 1382722653 \
+FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" 2013/10/25.13:40:49 M.81d
+EN work/D2_4E_MXILINX_ppm 1382722873 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/D2_4E_MXILINX_ppm/BEHAVIORAL 1382722654 \
+AR work/D2_4E_MXILINX_ppm/BEHAVIORAL 1382722874 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      EN work/D2_4E_MXILINX_ppm 1382722653 CP AND3 CP AND3B1 CP AND3B2
-EN work/ADD4_MXILINX_ppm 1382722655 \
+      EN work/D2_4E_MXILINX_ppm 1382722873 CP AND3 CP AND3B1 CP AND3B2
+EN work/ADD4_MXILINX_ppm 1382722875 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/ADD4_MXILINX_ppm/BEHAVIORAL 1382722656 \
+AR work/ADD4_MXILINX_ppm/BEHAVIORAL 1382722876 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      EN work/ADD4_MXILINX_ppm 1382722655 CP MUXCY_L CP MUXCY CP MUXCY_D CP XORCY \
+      EN work/ADD4_MXILINX_ppm 1382722875 CP MUXCY_L CP MUXCY CP MUXCY_D CP XORCY \
       CP FMAP CP XOR2
-EN work/M2_1_MXILINX_ppm 1382722657 \
+EN work/M2_1_MXILINX_ppm 1382722877 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/M2_1_MXILINX_ppm/BEHAVIORAL 1382722658 \
+AR work/M2_1_MXILINX_ppm/BEHAVIORAL 1382722878 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      EN work/M2_1_MXILINX_ppm 1382722657 CP AND2B1 CP OR2 CP AND2
-EN work/ADD8_MXILINX_ppm 1382722659 \
+      EN work/M2_1_MXILINX_ppm 1382722877 CP AND2B1 CP OR2 CP AND2
+EN work/ADD8_MXILINX_ppm 1382722879 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/ADD8_MXILINX_ppm/BEHAVIORAL 1382722660 \
+AR work/ADD8_MXILINX_ppm/BEHAVIORAL 1382722880 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      EN work/ADD8_MXILINX_ppm 1382722659 CP FMAP CP MUXCY_L CP MUXCY CP XORCY \
+      EN work/ADD8_MXILINX_ppm 1382722879 CP FMAP CP MUXCY_L CP MUXCY CP XORCY \
       CP MUXCY_D CP XOR2
-EN work/M2_1E_MXILINX_ppm 1382722661 \
+EN work/M2_1E_MXILINX_ppm 1382722881 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/M2_1E_MXILINX_ppm/BEHAVIORAL 1382722662 \
+AR work/M2_1E_MXILINX_ppm/BEHAVIORAL 1382722882 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      EN work/M2_1E_MXILINX_ppm 1382722661 CP AND3 CP AND3B1 CP OR2
-EN work/M4_1E_MXILINX_ppm 1382722663 \
-      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
-      PH unisim/VCOMPONENTS 1290154108
-AR work/M4_1E_MXILINX_ppm/BEHAVIORAL 1382722664 \
-      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      EN work/M4_1E_MXILINX_ppm 1382722663 CP M2_1E_MXILINX_ppm CP MUXF5
-EN work/X74_153_MUSER_ppm 1382722665 \
+      EN work/M2_1E_MXILINX_ppm 1382722881 CP AND3 CP AND3B1 CP OR2
+EN work/M4_1E_MXILINX_ppm 1382722883 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/X74_153_MUSER_ppm/BEHAVIORAL 1382722666 \
+AR work/M4_1E_MXILINX_ppm/BEHAVIORAL 1382722884 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      EN work/X74_153_MUSER_ppm 1382722665 CP M2_1_MXILINX_ppm \
+      EN work/M4_1E_MXILINX_ppm 1382722883 CP M2_1E_MXILINX_ppm CP MUXF5
+EN work/X74_153_MUSER_ppm 1382722885 \
+      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/X74_153_MUSER_ppm/BEHAVIORAL 1382722886 \
+      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
+      EN work/X74_153_MUSER_ppm 1382722885 CP M2_1_MXILINX_ppm \
       CP M2_1E_MXILINX_ppm CP INV
-EN work/u74_157_MUSER_ppm 1382722667 \
+EN work/u74_157_MUSER_ppm 1382722887 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/u74_157_MUSER_ppm/BEHAVIORAL 1382722668 \
+AR work/u74_157_MUSER_ppm/BEHAVIORAL 1382722888 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      EN work/u74_157_MUSER_ppm 1382722667 CP M2_1E_MXILINX_ppm CP INV
-EN work/COMP4_MXILINX_ppm 1382722669 \
-      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
-      PH unisim/VCOMPONENTS 1290154108
-AR work/COMP4_MXILINX_ppm/BEHAVIORAL 1382722670 \
-      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      EN work/COMP4_MXILINX_ppm 1382722669 CP AND4 CP XNOR2
-EN work/FD4CE_MXILINX_ppm 1382722671 \
+      EN work/u74_157_MUSER_ppm 1382722887 CP M2_1E_MXILINX_ppm CP INV
+EN work/COMP4_MXILINX_ppm 1382722889 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/FD4CE_MXILINX_ppm/BEHAVIORAL 1382722672 \
+AR work/COMP4_MXILINX_ppm/BEHAVIORAL 1382722890 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      EN work/FD4CE_MXILINX_ppm 1382722671 CP FDCE
-EN work/FTCE_MXILINX_ppm 1382722673 \
-      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
-      PH unisim/VCOMPONENTS 1290154108
-AR work/FTCE_MXILINX_ppm/BEHAVIORAL 1382722674 \
-      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      EN work/FTCE_MXILINX_ppm 1382722673 CP XOR2 CP FDCE
-EN work/CB16CE_MXILINX_ppm 1382722675 \
+      EN work/COMP4_MXILINX_ppm 1382722889 CP AND4 CP XNOR2
+EN work/FD4CE_MXILINX_ppm 1382722891 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/CB16CE_MXILINX_ppm/BEHAVIORAL 1382722676 \
+AR work/FD4CE_MXILINX_ppm/BEHAVIORAL 1382722892 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      EN work/CB16CE_MXILINX_ppm 1382722675 CP FTCE_MXILINX_ppm CP AND3 CP AND2 \
+      EN work/FD4CE_MXILINX_ppm 1382722891 CP FDCE
+EN work/FTCE_MXILINX_ppm 1382722893 \
+      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/FTCE_MXILINX_ppm/BEHAVIORAL 1382722894 \
+      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
+      EN work/FTCE_MXILINX_ppm 1382722893 CP XOR2 CP FDCE
+EN work/CB16CE_MXILINX_ppm 1382722895 \
+      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/CB16CE_MXILINX_ppm/BEHAVIORAL 1382722896 \
+      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
+      EN work/CB16CE_MXILINX_ppm 1382722895 CP FTCE_MXILINX_ppm CP AND3 CP AND2 \
       CP VCC CP AND4 CP AND5
-EN work/CB2CE_MXILINX_ppm 1382722677 \
+EN work/CB2CE_MXILINX_ppm 1382722897 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/CB2CE_MXILINX_ppm/BEHAVIORAL 1382722678 \
+AR work/CB2CE_MXILINX_ppm/BEHAVIORAL 1382722898 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      EN work/CB2CE_MXILINX_ppm 1382722677 CP FTCE_MXILINX_ppm CP AND2 CP VCC
-EN work/FD8CE_MXILINX_ppm 1382722679 \
-      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
-      PH unisim/VCOMPONENTS 1290154108
-AR work/FD8CE_MXILINX_ppm/BEHAVIORAL 1382722680 \
-      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      EN work/FD8CE_MXILINX_ppm 1382722679 CP FDCE
-EN work/CD4CE_MXILINX_ppm 1382722681 \
+      EN work/CB2CE_MXILINX_ppm 1382722897 CP FTCE_MXILINX_ppm CP AND2 CP VCC
+EN work/FD8CE_MXILINX_ppm 1382722899 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/CD4CE_MXILINX_ppm/BEHAVIORAL 1382722682 \
+AR work/FD8CE_MXILINX_ppm/BEHAVIORAL 1382722900 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      EN work/CD4CE_MXILINX_ppm 1382722681 CP FDCE CP AND3 CP XOR2 CP OR2 CP AND2 \
+      EN work/FD8CE_MXILINX_ppm 1382722899 CP FDCE
+EN work/CD4CE_MXILINX_ppm 1382722901 \
+      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/CD4CE_MXILINX_ppm/BEHAVIORAL 1382722902 \
+      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
+      EN work/CD4CE_MXILINX_ppm 1382722901 CP FDCE CP AND3 CP XOR2 CP OR2 CP AND2 \
       CP AND2B1 CP INV CP AND4B2
-EN work/D3_8E_MXILINX_ppm 1382722683 \
+EN work/D3_8E_MXILINX_ppm 1382722903 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/D3_8E_MXILINX_ppm/BEHAVIORAL 1382722684 \
+AR work/D3_8E_MXILINX_ppm/BEHAVIORAL 1382722904 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      EN work/D3_8E_MXILINX_ppm 1382722683 CP AND4 CP AND4B1 CP AND4B2 CP AND4B3
-EN work/FTCLEX_MXILINX_ppm 1382722685 \
-      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
-      PH unisim/VCOMPONENTS 1290154108
-AR work/FTCLEX_MXILINX_ppm/BEHAVIORAL 1382722686 \
-      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      EN work/FTCLEX_MXILINX_ppm 1382722685 CP M2_1_MXILINX_ppm CP XOR2 CP FDCE
-EN work/CB4CLE_MXILINX_ppm 1382722687 \
+      EN work/D3_8E_MXILINX_ppm 1382722903 CP AND4 CP AND4B1 CP AND4B2 CP AND4B3
+EN work/FTCLEX_MXILINX_ppm 1382722905 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/CB4CLE_MXILINX_ppm/BEHAVIORAL 1382722688 \
+AR work/FTCLEX_MXILINX_ppm/BEHAVIORAL 1382722906 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      EN work/CB4CLE_MXILINX_ppm 1382722687 CP FTCLEX_MXILINX_ppm CP VCC CP AND4 \
+      EN work/FTCLEX_MXILINX_ppm 1382722905 CP M2_1_MXILINX_ppm CP XOR2 CP FDCE
+EN work/CB4CLE_MXILINX_ppm 1382722907 \
+      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/CB4CLE_MXILINX_ppm/BEHAVIORAL 1382722908 \
+      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
+      EN work/CB4CLE_MXILINX_ppm 1382722907 CP FTCLEX_MXILINX_ppm CP VCC CP AND4 \
       CP AND2 CP AND3 CP OR2
-EN work/M8_1E_MXILINX_ppm 1382722689 \
+EN work/M8_1E_MXILINX_ppm 1382722909 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/M8_1E_MXILINX_ppm/BEHAVIORAL 1382722690 \
+AR work/M8_1E_MXILINX_ppm/BEHAVIORAL 1382722910 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
-      EN work/M8_1E_MXILINX_ppm 1382722689 CP M2_1E_MXILINX_ppm CP MUXF5_L CP MUXF6
-EN work/ppm 1382722691 \
+      EN work/M8_1E_MXILINX_ppm 1382722909 CP M2_1E_MXILINX_ppm CP MUXF5_L CP MUXF6
+EN work/ppm 1382722911 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/ppm/BEHAVIORAL 1382722692 \
-      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" EN work/ppm 1382722691 \
+AR work/ppm/BEHAVIORAL 1382722912 \
+      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" EN work/ppm 1382722911 \
       CP OBUF CP BUF CP IBUF CP BUFG CP CODEGEN CP OR2 CP AND2B1 CP AND2 CP AND3B1 \
       CP CB2CE_MXILINX_ppm CP FDC CP OR3 CP AND3B2 CP FDCE CP OR4 CP NOR2 CP AND3 \
       CP CB4CLE_MXILINX_ppm CP D3_8E_MXILINX_ppm CP CB16CE_MXILINX_ppm \
@@ -238,51 +238,51 @@ AR work/ppm/BEHAVIORAL 1382722692 \
       CP ADD4_MXILINX_ppm CP COMP4_MXILINX_ppm CP M2_1E_MXILINX_ppm \
       CP ADD8_MXILINX_ppm CP M2_1_MXILINX_ppm CP NOR4 CP VCC CP GND
 FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/u74_157.vhf" 2013/10/04.13:49:29 M.81d
-EN work/M2_1E_MXILINX_u74_157 1382722631 \
+EN work/M2_1E_MXILINX_u74_157 1382722851 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/u74_157.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/M2_1E_MXILINX_u74_157/BEHAVIORAL 1382722632 \
+AR work/M2_1E_MXILINX_u74_157/BEHAVIORAL 1382722852 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/u74_157.vhf" \
-      EN work/M2_1E_MXILINX_u74_157 1382722631 CP AND3 CP AND3B1 CP OR2
-EN work/u74_157 1382722633 \
+      EN work/M2_1E_MXILINX_u74_157 1382722851 CP AND3 CP AND3B1 CP OR2
+EN work/u74_157 1382722853 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/u74_157.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/u74_157/BEHAVIORAL 1382722634 \
+AR work/u74_157/BEHAVIORAL 1382722854 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/u74_157.vhf" \
-      EN work/u74_157 1382722633 CP M2_1E_MXILINX_u74_157 CP INV
+      EN work/u74_157 1382722853 CP M2_1E_MXILINX_u74_157 CP INV
 FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/X74_153.vhf" 2013/10/04.13:41:50 M.81d
-EN work/M2_1E_MXILINX_X74_153 1382722693 \
+EN work/M2_1E_MXILINX_X74_153 1382722913 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/X74_153.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/M2_1E_MXILINX_X74_153/BEHAVIORAL 1382722694 \
+AR work/M2_1E_MXILINX_X74_153/BEHAVIORAL 1382722914 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/X74_153.vhf" \
-      EN work/M2_1E_MXILINX_X74_153 1382722693 CP AND3 CP AND3B1 CP OR2
-EN work/M2_1_MXILINX_X74_153 1382722695 \
-      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/X74_153.vhf" \
-      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
-      PH unisim/VCOMPONENTS 1290154108
-AR work/M2_1_MXILINX_X74_153/BEHAVIORAL 1382722696 \
-      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/X74_153.vhf" \
-      EN work/M2_1_MXILINX_X74_153 1382722695 CP AND2B1 CP OR2 CP AND2
-EN work/X74_153 1382722697 \
+      EN work/M2_1E_MXILINX_X74_153 1382722913 CP AND3 CP AND3B1 CP OR2
+EN work/M2_1_MXILINX_X74_153 1382722915 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/X74_153.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/X74_153/BEHAVIORAL 1382722698 \
+AR work/M2_1_MXILINX_X74_153/BEHAVIORAL 1382722916 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/X74_153.vhf" \
-      EN work/X74_153 1382722697 CP M2_1_MXILINX_X74_153 CP M2_1E_MXILINX_X74_153 \
+      EN work/M2_1_MXILINX_X74_153 1382722915 CP AND2B1 CP OR2 CP AND2
+EN work/X74_153 1382722917 \
+      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/X74_153.vhf" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/X74_153/BEHAVIORAL 1382722918 \
+      FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/X74_153.vhf" \
+      EN work/X74_153 1382722917 CP M2_1_MXILINX_X74_153 CP M2_1E_MXILINX_X74_153 \
       CP INV
 FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ZERODISPLAY.vhf" 2013/10/04.12:56:47 M.81d
-EN work/ZERODISPLAY 1382722641 \
+EN work/ZERODISPLAY 1382722861 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ZERODISPLAY.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/ZERODISPLAY/BEHAVIORAL 1382722642 \
+AR work/ZERODISPLAY/BEHAVIORAL 1382722862 \
       FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ZERODISPLAY.vhf" \
-      EN work/ZERODISPLAY 1382722641 CP NOR4 CP OR4 CP AND2B2 CP AND2B1 CP OR2
+      EN work/ZERODISPLAY 1382722861 CP NOR4 CP OR4 CP AND2B2 CP AND2B1 CP OR2
 FL "D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/CODEDISC.vhf" 2013/10/04.12:56:47 M.81d
 FL "D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/CODEGEN.vhf" 2013/10/04.12:56:47 M.81d
 FL "D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/LARGESTDISP.vhf" 2013/10/04.12:56:47 M.81d
