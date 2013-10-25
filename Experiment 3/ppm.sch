@@ -3042,10 +3042,10 @@
             <blockpin signalname="ZERODISP0" name="A0" />
             <blockpin signalname="ZERODISP1" name="A1" />
             <blockpin signalname="XLXN_11578" name="E" />
-            <blockpin signalname="P2SEL3" name="D0" />
-            <blockpin signalname="P2SEL2" name="D1" />
-            <blockpin signalname="P2SEL1" name="D2" />
-            <blockpin signalname="P2SEL0" name="D3" />
+            <blockpin signalname="P2SEL0" name="D0" />
+            <blockpin signalname="P2SEL1" name="D1" />
+            <blockpin signalname="P2SEL2" name="D2" />
+            <blockpin signalname="P2SEL3" name="D3" />
         </block>
         <block symbolname="vcc" name="XLXI_1311">
             <blockpin signalname="XLXN_11578" name="P" />
@@ -8517,23 +8517,6 @@
             <wire x2="4304" y1="1616" y2="1616" x1="4288" />
             <wire x2="4464" y1="1616" y2="1616" x1="4304" />
         </branch>
-        <branch name="P2SEL3">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5104" y="1424" type="branch" />
-            <wire x2="5088" y1="1424" y2="1424" x1="4848" />
-            <wire x2="5104" y1="1424" y2="1424" x1="5088" />
-        </branch>
-        <branch name="P2SEL2">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5104" y="1488" type="branch" />
-            <wire x2="5104" y1="1488" y2="1488" x1="4848" />
-        </branch>
-        <branch name="P2SEL1">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5104" y="1552" type="branch" />
-            <wire x2="5104" y1="1552" y2="1552" x1="4848" />
-        </branch>
-        <branch name="P2SEL0">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5104" y="1616" type="branch" />
-            <wire x2="5104" y1="1616" y2="1616" x1="4848" />
-        </branch>
         <instance x="4464" y="1744" name="U298" orien="R0">
             <attrtext style="fontsize:40;fontname:Arial;textcolor:rgb(0,128,0)" attrname="InstName" x="192" y="-16" type="instance" />
         </instance>
@@ -8559,6 +8542,22 @@
         <branch name="ZERODISP1">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4288" y="1488" type="branch" />
             <wire x2="4464" y1="1488" y2="1488" x1="4288" />
+        </branch>
+        <branch name="P2SEL1">
+            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5120" y="1488" type="branch" />
+            <wire x2="5120" y1="1488" y2="1488" x1="4848" />
+        </branch>
+        <branch name="P2SEL2">
+            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5120" y="1552" type="branch" />
+            <wire x2="5120" y1="1552" y2="1552" x1="4848" />
+        </branch>
+        <branch name="P2SEL3">
+            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5120" y="1616" type="branch" />
+            <wire x2="5120" y1="1616" y2="1616" x1="4848" />
+        </branch>
+        <branch name="P2SEL0">
+            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5120" y="1424" type="branch" />
+            <wire x2="5120" y1="1424" y2="1424" x1="4848" />
         </branch>
     </sheet>
 </drawing>
