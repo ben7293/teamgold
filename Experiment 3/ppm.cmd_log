@@ -439,3 +439,21 @@ map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map
 par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
 bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.xst" -ofn "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 "ppm.ngc" ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.xst" -ofn "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 "ppm.ngc" ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.xst" -ofn "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 "ppm.ngc" ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 

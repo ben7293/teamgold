@@ -1,13 +1,13 @@
-Release 12.4 - Bitgen M.81d (lin64)
+Release 12.4 - Bitgen M.81d (nt64)
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 Loading device for application Rf_Device from file '3s500e.nph' in environment
-/opt/Xilinx/12.4/ISE_DS/ISE/.
+C:\Xilinx\12.4\ISE_DS\ISE\.
    "ppm" is an NCD, version 3.2, device xc3s500e, package fg320, speed -5
 Opened constraints file ppm.pcf.
 
-Fri Oct 25 14:17:37 2013
+Fri Oct 25 16:42:35 2013
 
-/opt/Xilinx/12.4/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:1 -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g StartUpClk:JtagClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:No -g DriveDone:No ppm.ncd 
+C:\Xilinx\12.4\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:1 -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g StartUpClk:JtagClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:No -g DriveDone:No ppm.ncd 
 
 Summary of Bitgen Options:
 +----------------------+----------------------+

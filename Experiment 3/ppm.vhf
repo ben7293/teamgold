@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ppm.vhf
--- /___/   /\     Timestamp : 10/25/2013 14:17:10
+-- /___/   /\     Timestamp : 10/25/2013 16:41:51
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" -w "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.sch"
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" -w "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.sch"
 --Design Name: ppm
 --Device: spartan3e
 --Purpose:
@@ -2677,7 +2677,6 @@ architecture BEHAVIORAL of ppm is
    signal XLXN_11314       : std_logic;
    signal XLXN_11315       : std_logic;
    signal XLXN_11316       : std_logic;
-   signal XLXN_11370       : std_logic;
    signal XLXN_11411       : std_logic;
    signal XLXN_11412       : std_logic;
    signal XLXN_11451       : std_logic;
@@ -2685,6 +2684,7 @@ architecture BEHAVIORAL of ppm is
    signal XLXN_11470       : std_logic;
    signal XLXN_11472       : std_logic;
    signal XLXN_11578       : std_logic;
+   signal XLXN_11629       : std_logic;
    signal ZERODISP0        : std_logic;
    signal ZERODISP1        : std_logic;
    component OBUF
@@ -4731,12 +4731,12 @@ begin
       port map (A0=>RD0,
                 A1=>RD1,
                 A2=>RD2,
-                A3=>XLXN_11370,
+                A3=>XLXN_11629,
                 B0=>DISP12,
                 B1=>DISP13,
                 B2=>DISP14,
-                B3=>XLXN_11370,
-                CI=>XLXN_11370,
+                B3=>XLXN_11629,
+                CI=>XLXN_11629,
                 CO=>open,
                 OFL=>open,
                 S0=>NPDISP12,
@@ -4782,7 +4782,7 @@ begin
    U294 : OR2
       port map (I0=>XLXN_11451,
                 I1=>XLXN_11463,
-                O=>ZERODISP0);
+                O=>ZERODISP1);
    
    U295 : AND2
       port map (I0=>XLXN_11470,
@@ -4796,7 +4796,7 @@ begin
    U297 : OR2
       port map (I0=>XLXN_11463,
                 I1=>XLXN_11472,
-                O=>ZERODISP1);
+                O=>ZERODISP0);
    
    U298 : D2_4E_MXILINX_ppm
       port map (A0=>ZERODISP1,
@@ -4959,7 +4959,7 @@ begin
       port map (G=>XLXN_7);
    
    XLXI_1267 : GND
-      port map (G=>XLXN_11370);
+      port map (G=>XLXN_11629);
    
    XLXI_1298 : GND
       port map (G=>P2CODE7);

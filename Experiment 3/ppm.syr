@@ -1,21 +1,18 @@
-Release 12.4 - xst M.81d (lin64)
+Release 12.4 - xst M.81d (nt64)
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
---> 
-Parameter TMPDIR set to xst/projnav.tmp
+--> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.09 secs
  
---> 
-Parameter xsthdpdir set to xst
+--> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.09 secs
  
---> 
-Reading design: ppm.prj
+--> Reading design: ppm.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -107,23 +104,23 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/home/atomic/Documents/Code/TeamGold/Experiment 3/u74_157.vhf" in Library work.
+Compiling vhdl file "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/u74_157.vhf" in Library work.
 Architecture behavioral of Entity m2_1e_mxilinx_u74_157 is up to date.
 Architecture behavioral of Entity u74_157 is up to date.
-Compiling vhdl file "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEGEN.vhf" in Library work.
+Compiling vhdl file "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEGEN.vhf" in Library work.
 Architecture behavioral of Entity comp4_mxilinx_codegen is up to date.
 Architecture behavioral of Entity fd4ce_mxilinx_codegen is up to date.
 Architecture behavioral of Entity codegen is up to date.
-Compiling vhdl file "/home/atomic/Documents/Code/TeamGold/Experiment 3/ZERODISPLAY.vhf" in Library work.
+Compiling vhdl file "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ZERODISPLAY.vhf" in Library work.
 Architecture behavioral of Entity zerodisplay is up to date.
-Compiling vhdl file "/home/atomic/Documents/Code/TeamGold/Experiment 3/LARGESTDISP.vhf" in Library work.
+Compiling vhdl file "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/LARGESTDISP.vhf" in Library work.
 Architecture behavioral of Entity compm4_mxilinx_largestdisp is up to date.
 Architecture behavioral of Entity largestdisp is up to date.
-Compiling vhdl file "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEDISC.vhf" in Library work.
+Compiling vhdl file "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEDISC.vhf" in Library work.
 Architecture behavioral of Entity fd4ce_mxilinx_codedisc is up to date.
 Architecture behavioral of Entity comp4_mxilinx_codedisc is up to date.
 Architecture behavioral of Entity codedisc is up to date.
-Compiling vhdl file "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" in Library work.
+Compiling vhdl file "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" in Library work.
 Entity <d2_4e_mxilinx_ppm> compiled.
 Entity <d2_4e_mxilinx_ppm> (Architecture <behavioral>) compiled.
 Entity <add4_mxilinx_ppm> compiled.
@@ -164,7 +161,7 @@ Entity <m8_1e_mxilinx_ppm> compiled.
 Entity <m8_1e_mxilinx_ppm> (Architecture <behavioral>) compiled.
 Entity <ppm> compiled.
 Entity <ppm> (Architecture <behavioral>) compiled.
-Compiling vhdl file "/home/atomic/Documents/Code/TeamGold/Experiment 3/X74_153.vhf" in Library work.
+Compiling vhdl file "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/X74_153.vhf" in Library work.
 Architecture behavioral of Entity m2_1e_mxilinx_x74_153 is up to date.
 Architecture behavioral of Entity m2_1_mxilinx_x74_153 is up to date.
 Architecture behavioral of Entity x74_153 is up to date.
@@ -327,9 +324,9 @@ Analyzing Entity <ppm> in library <work> (Architecture <behavioral>).
     Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <TRD3_BUF> in unit <ppm>.
     Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <TRD3_BUF> in unit <ppm>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <TRD3_BUF> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3396: Unconnected output port 'CEO' of component 'CB2CE_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3396: Unconnected output port 'Q0' of component 'CB2CE_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3396: Unconnected output port 'Q1' of component 'CB2CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3396: Unconnected output port 'CEO' of component 'CB2CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3396: Unconnected output port 'Q0' of component 'CB2CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3396: Unconnected output port 'Q1' of component 'CB2CE_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U6_59" for instance <U6> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U19> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U20> in unit <ppm>.
@@ -338,17 +335,17 @@ WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" li
     Set user-defined property "INIT =  0" for instance <U43> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U50> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U55> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3717: Unconnected output port 'CEO' of component 'CB4CLE_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3717: Unconnected output port 'Q3' of component 'CB4CLE_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3717: Unconnected output port 'TC' of component 'CB4CLE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3717: Unconnected output port 'CEO' of component 'CB4CLE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3717: Unconnected output port 'Q3' of component 'CB4CLE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3717: Unconnected output port 'TC' of component 'CB4CLE_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U64_40" for instance <U64> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3733: Unconnected output port 'D7' of component 'D3_8E_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3733: Unconnected output port 'D7' of component 'D3_8E_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U65_41" for instance <U65> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3747: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3747: Unconnected output port 'TC' of component 'CB16CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3747: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3747: Unconnected output port 'TC' of component 'CB16CE_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U66_60" for instance <U66> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3755: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3755: Unconnected output port 'TC' of component 'CB16CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3755: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3755: Unconnected output port 'TC' of component 'CB16CE_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U67_61" for instance <U67> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U68> in unit <ppm>.
     Set user-defined property "HU_SET =  U69_62" for instance <U69> in unit <ppm>.
@@ -359,8 +356,8 @@ WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" li
     Set user-defined property "INIT =  0" for instance <U76> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U77> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U78> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3923: Unconnected output port 'CEO' of component 'CB2CE_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 3923: Unconnected output port 'TC' of component 'CB2CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3923: Unconnected output port 'CEO' of component 'CB2CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3923: Unconnected output port 'TC' of component 'CB2CE_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U86_42" for instance <U86> in unit <ppm>.
     Set user-defined property "HU_SET =  U91_43" for instance <U91> in unit <ppm>.
     Set user-defined property "HU_SET =  U100_47" for instance <U100> in unit <ppm>.
@@ -381,17 +378,17 @@ WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" li
     Set user-defined property "HU_SET =  U116_58" for instance <U116> in unit <ppm>.
     Set user-defined property "HU_SET =  U117_52" for instance <U117> in unit <ppm>.
     Set user-defined property "HU_SET =  U118_53" for instance <U118> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4196: Unconnected output port 'CEO' of component 'CD4CE_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4196: Unconnected output port 'TC' of component 'CD4CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4196: Unconnected output port 'CEO' of component 'CD4CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4196: Unconnected output port 'TC' of component 'CD4CE_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U119_51" for instance <U119> in unit <ppm>.
     Set user-defined property "HU_SET =  U120_50" for instance <U120> in unit <ppm>.
     Set user-defined property "HU_SET =  U121_49" for instance <U121> in unit <ppm>.
     Set user-defined property "HU_SET =  U122_48" for instance <U122> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4274: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4274: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U148_65" for instance <U148> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4291: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4291: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U149_64" for instance <U149> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4308: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4308: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U151_63" for instance <U151> in unit <ppm>.
     Set user-defined property "HU_SET =  U155_54" for instance <U155> in unit <ppm>.
     Set user-defined property "HU_SET =  U159_68" for instance <U159> in unit <ppm>.
@@ -399,21 +396,21 @@ WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" li
     Set user-defined property "HU_SET =  U161_67" for instance <U161> in unit <ppm>.
     Set user-defined property "HU_SET =  U162_66" for instance <U162> in unit <ppm>.
     Set user-defined property "HU_SET =  U169_71" for instance <U169> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4509: Unconnected output port 'CO' of component 'ADD4_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4509: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4509: Unconnected output port 'S2' of component 'ADD4_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4509: Unconnected output port 'S3' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4509: Unconnected output port 'CO' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4509: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4509: Unconnected output port 'S2' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4509: Unconnected output port 'S3' of component 'ADD4_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U171_72" for instance <U171> in unit <ppm>.
     Set user-defined property "HU_SET =  U176_70" for instance <U176> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4618: Unconnected output port 'OFL' of component 'ADD8_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4618: Unconnected output port 'OFL' of component 'ADD8_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U181_74" for instance <U181> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4626: Unconnected output port 'OFL' of component 'ADD8_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4626: Unconnected output port 'OFL' of component 'ADD8_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U182_73" for instance <U182> in unit <ppm>.
     Set user-defined property "HU_SET =  U272_75" for instance <U272> in unit <ppm>.
     Set user-defined property "HU_SET =  U273_76" for instance <U273> in unit <ppm>.
     Set user-defined property "HU_SET =  U274_77" for instance <U274> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4730: Unconnected output port 'CO' of component 'ADD4_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" line 4730: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4730: Unconnected output port 'CO' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4730: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U288_78" for instance <U288> in unit <ppm>.
     Set user-defined property "HU_SET =  U298_79" for instance <U298> in unit <ppm>.
 Entity <ppm> analyzed. Unit <ppm> generated.
@@ -597,129 +594,129 @@ Entity <M2_1_MXILINX_ppm> analyzed. Unit <M2_1_MXILINX_ppm> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <D3_8E_MXILINX_ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 Unit <D3_8E_MXILINX_ppm> synthesized.
 
 
 Synthesizing Unit <FD4CE_MXILINX_ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 Unit <FD4CE_MXILINX_ppm> synthesized.
 
 
 Synthesizing Unit <D2_4E_MXILINX_ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 Unit <D2_4E_MXILINX_ppm> synthesized.
 
 
 Synthesizing Unit <FD8CE_MXILINX_ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 Unit <FD8CE_MXILINX_ppm> synthesized.
 
 
 Synthesizing Unit <CD4CE_MXILINX_ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 Unit <CD4CE_MXILINX_ppm> synthesized.
 
 
 Synthesizing Unit <ADD4_MXILINX_ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 Unit <ADD4_MXILINX_ppm> synthesized.
 
 
 Synthesizing Unit <COMP4_MXILINX_ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 Unit <COMP4_MXILINX_ppm> synthesized.
 
 
 Synthesizing Unit <M2_1E_MXILINX_ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 Unit <M2_1E_MXILINX_ppm> synthesized.
 
 
 Synthesizing Unit <ADD8_MXILINX_ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 Unit <ADD8_MXILINX_ppm> synthesized.
 
 
 Synthesizing Unit <M2_1_MXILINX_ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 Unit <M2_1_MXILINX_ppm> synthesized.
 
 
 Synthesizing Unit <FD4CE_MXILINX_CODEGEN>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEGEN.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEGEN.vhf".
 Unit <FD4CE_MXILINX_CODEGEN> synthesized.
 
 
 Synthesizing Unit <COMP4_MXILINX_CODEGEN>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEGEN.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEGEN.vhf".
 Unit <COMP4_MXILINX_CODEGEN> synthesized.
 
 
 Synthesizing Unit <M2_1E_MXILINX_u74_157>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/u74_157.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/u74_157.vhf".
 Unit <M2_1E_MXILINX_u74_157> synthesized.
 
 
 Synthesizing Unit <FTCE_MXILINX_ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 Unit <FTCE_MXILINX_ppm> synthesized.
 
 
 Synthesizing Unit <CB2CE_MXILINX_ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 Unit <CB2CE_MXILINX_ppm> synthesized.
 
 
 Synthesizing Unit <CB16CE_MXILINX_ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 Unit <CB16CE_MXILINX_ppm> synthesized.
 
 
 Synthesizing Unit <u74_157_MUSER_ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 Unit <u74_157_MUSER_ppm> synthesized.
 
 
 Synthesizing Unit <X74_153_MUSER_ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 Unit <X74_153_MUSER_ppm> synthesized.
 
 
 Synthesizing Unit <M4_1E_MXILINX_ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 Unit <M4_1E_MXILINX_ppm> synthesized.
 
 
 Synthesizing Unit <M8_1E_MXILINX_ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 Unit <M8_1E_MXILINX_ppm> synthesized.
 
 
 Synthesizing Unit <u74_157>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/u74_157.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/u74_157.vhf".
 Unit <u74_157> synthesized.
 
 
 Synthesizing Unit <FTCLEX_MXILINX_ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 Unit <FTCLEX_MXILINX_ppm> synthesized.
 
 
 Synthesizing Unit <CODEGEN>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEGEN.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEGEN.vhf".
 Unit <CODEGEN> synthesized.
 
 
 Synthesizing Unit <CB4CLE_MXILINX_ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 Unit <CB4CLE_MXILINX_ppm> synthesized.
 
 
 Synthesizing Unit <ppm>.
-    Related source file is "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf".
+    Related source file is "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf".
 WARNING:Xst:646 - Signal <XLXN_88> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <XLXN_11261> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <RDC0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -1476,13 +1473,12 @@ Delay:               14.005ns (Levels of Logic = 11)
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.35 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.88 secs
  
 --> 
 
-
-Total memory usage is 376216 kilobytes
+Total memory usage is 283564 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   68 (   0 filtered)

@@ -425,7 +425,6 @@
         <signal name="APOSZERO" />
         <signal name="ZERODISP0" />
         <signal name="ZERODISP1" />
-        <signal name="XLXN_11370" />
         <signal name="XLXN_11411" />
         <signal name="XLXN_11451" />
         <signal name="XLXN_11463" />
@@ -433,6 +432,7 @@
         <signal name="XLXN_11470" />
         <signal name="XLXN_11412" />
         <signal name="XLXN_11578" />
+        <signal name="XLXN_11629" />
         <port polarity="Input" name="P1ADD_NP2B" />
         <port polarity="Input" name="TRD1_NP2B" />
         <port polarity="Input" name="TRD2_NP2B" />
@@ -2934,18 +2934,18 @@
             <blockpin signalname="PD3PRD" name="O" />
         </block>
         <block symbolname="gnd" name="XLXI_1267">
-            <blockpin signalname="XLXN_11370" name="G" />
+            <blockpin signalname="XLXN_11629" name="G" />
         </block>
         <block symbolname="add4" name="U288">
             <blockpin signalname="RD0" name="A0" />
             <blockpin signalname="RD1" name="A1" />
             <blockpin signalname="RD2" name="A2" />
-            <blockpin signalname="XLXN_11370" name="A3" />
+            <blockpin signalname="XLXN_11629" name="A3" />
             <blockpin signalname="DISP12" name="B0" />
             <blockpin signalname="DISP13" name="B1" />
             <blockpin signalname="DISP14" name="B2" />
-            <blockpin signalname="XLXN_11370" name="B3" />
-            <blockpin signalname="XLXN_11370" name="CI" />
+            <blockpin signalname="XLXN_11629" name="B3" />
+            <blockpin signalname="XLXN_11629" name="CI" />
             <blockpin name="CO" />
             <blockpin name="OFL" />
             <blockpin signalname="NPDISP12" name="S0" />
@@ -2984,7 +2984,7 @@
         <block symbolname="or2" name="U294">
             <blockpin signalname="XLXN_11451" name="I0" />
             <blockpin signalname="XLXN_11463" name="I1" />
-            <blockpin signalname="ZERODISP0" name="O" />
+            <blockpin signalname="ZERODISP1" name="O" />
         </block>
         <block symbolname="inv" name="U296">
             <blockpin signalname="XLXN_11472" name="I" />
@@ -2993,7 +2993,7 @@
         <block symbolname="or2" name="U297">
             <blockpin signalname="XLXN_11463" name="I0" />
             <blockpin signalname="XLXN_11472" name="I1" />
-            <blockpin signalname="ZERODISP1" name="O" />
+            <blockpin signalname="ZERODISP0" name="O" />
         </block>
         <block symbolname="or4" name="U293">
             <blockpin signalname="XLXN_11463" name="I0" />
@@ -6084,21 +6084,18 @@
         </branch>
         <branch name="DISPSEL0">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="1664" y="720" type="branch" />
-            <wire x2="1680" y1="720" y2="720" x1="1664" />
-            <wire x2="1840" y1="720" y2="720" x1="1680" />
+            <wire x2="1840" y1="720" y2="720" x1="1664" />
         </branch>
         <instance x="4288" y="2464" name="P1SKIP_BUF" orien="R90">
             <attrtext style="alignment:VLEFT;fontsize:36;fontname:Arial;textcolor:rgb(0,128,0)" attrname="InstName" x="208" y="40" type="instance" />
         </instance>
         <branch name="P1SKIP">
             <attrtext style="alignment:HARD-LEFT" attrname="Name" x="4320" y="2864" type="branch" />
-            <wire x2="4320" y1="2688" y2="2848" x1="4320" />
-            <wire x2="4320" y1="2848" y2="2864" x1="4320" />
+            <wire x2="4320" y1="2688" y2="2864" x1="4320" />
         </branch>
         <branch name="P2PLAYSYNCH">
             <attrtext style="alignment:HARD-LEFT" attrname="Name" x="4320" y="2304" type="branch" />
-            <wire x2="4320" y1="2304" y2="2320" x1="4320" />
-            <wire x2="4320" y1="2320" y2="2464" x1="4320" />
+            <wire x2="4320" y1="2304" y2="2464" x1="4320" />
         </branch>
         <instance x="656" y="3840" name="U280" orien="R0">
             <attrtext style="fontsize:60;fontname:Arial;textcolor:rgb(0,128,0)" attrname="InstName" x="48" y="24" type="instance" />
@@ -6114,8 +6111,7 @@
         </instance>
         <branch name="XLXN_11291">
             <wire x2="1328" y1="3440" y2="3440" x1="912" />
-            <wire x2="1328" y1="3440" y2="3744" x1="1328" />
-            <wire x2="1328" y1="3744" y2="3760" x1="1328" />
+            <wire x2="1328" y1="3440" y2="3760" x1="1328" />
         </branch>
         <branch name="XLXN_11292">
             <wire x2="1120" y1="3712" y2="3712" x1="912" />
@@ -6138,8 +6134,7 @@
         </branch>
         <branch name="DISP15">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="528" y="3648" type="branch" />
-            <wire x2="551" y1="3648" y2="3648" x1="528" />
-            <wire x2="656" y1="3648" y2="3648" x1="551" />
+            <wire x2="656" y1="3648" y2="3648" x1="528" />
         </branch>
         <branch name="RD3">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="528" y="3936" type="branch" />
@@ -6175,21 +6170,15 @@
         </branch>
         <branch name="RD3">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="368" y="3504" type="branch" />
-            <wire x2="384" y1="3504" y2="3504" x1="368" />
-            <wire x2="470" y1="3504" y2="3504" x1="384" />
-            <wire x2="656" y1="3504" y2="3504" x1="470" />
+            <wire x2="656" y1="3504" y2="3504" x1="368" />
         </branch>
         <branch name="DISP15">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="432" y="3440" type="branch" />
-            <wire x2="448" y1="3440" y2="3440" x1="432" />
-            <wire x2="560" y1="3440" y2="3440" x1="448" />
-            <wire x2="656" y1="3440" y2="3440" x1="560" />
+            <wire x2="656" y1="3440" y2="3440" x1="432" />
         </branch>
         <branch name="C3">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="528" y="3376" type="branch" />
-            <wire x2="544" y1="3376" y2="3376" x1="528" />
-            <wire x2="563" y1="3376" y2="3376" x1="544" />
-            <wire x2="656" y1="3376" y2="3376" x1="563" />
+            <wire x2="656" y1="3376" y2="3376" x1="528" />
         </branch>
         <instance x="656" y="3568" name="U279" orien="R0">
             <attrtext style="fontsize:60;fontname:Arial;textcolor:rgb(0,128,0)" attrname="InstName" x="48" y="24" type="instance" />
@@ -6246,61 +6235,58 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="448" y="5120" type="branch" />
             <wire x2="656" y1="5120" y2="5120" x1="448" />
         </branch>
-        <instance x="1936" y="3984" name="XLXI_1267" orien="R0" />
-        <instance x="2432" y="4688" name="U288" orien="R0">
+        <instance x="2224" y="3984" name="U288" orien="R90">
             <attrtext style="fontsize:60;fontname:Arial;textcolor:rgb(0,128,0)" attrname="InstName" x="240" y="0" type="instance" />
         </instance>
-        <branch name="XLXN_11370">
-            <wire x2="2352" y1="3856" y2="3856" x1="2000" />
-            <wire x2="2432" y1="3856" y2="3856" x1="2352" />
-            <wire x2="2352" y1="3856" y2="4176" x1="2352" />
-            <wire x2="2352" y1="4176" y2="4496" x1="2352" />
-            <wire x2="2432" y1="4496" y2="4496" x1="2352" />
-            <wire x2="2432" y1="4176" y2="4176" x1="2352" />
-        </branch>
-        <branch name="C3">
-            <attrtext style="alignment:SOFT-BCENTER" attrname="Name" x="3088" y="4336" type="branch" />
-            <wire x2="3088" y1="4336" y2="4336" x1="2880" />
-            <wire x2="3200" y1="4336" y2="4336" x1="3088" />
-        </branch>
-        <branch name="NPDISP14">
-            <attrtext style="alignment:SOFT-BCENTER" attrname="Name" x="2999" y="4272" type="branch" />
-            <wire x2="2999" y1="4272" y2="4272" x1="2880" />
-            <wire x2="3120" y1="4272" y2="4272" x1="2999" />
-        </branch>
-        <branch name="NPDISP13">
-            <attrtext style="alignment:SOFT-BCENTER" attrname="Name" x="2955" y="4208" type="branch" />
-            <wire x2="2955" y1="4208" y2="4208" x1="2880" />
-            <wire x2="3040" y1="4208" y2="4208" x1="2955" />
-        </branch>
-        <branch name="NPDISP12">
-            <attrtext style="alignment:SOFT-BCENTER" attrname="Name" x="2926" y="4144" type="branch" />
-            <wire x2="2926" y1="4144" y2="4144" x1="2880" />
-            <wire x2="2960" y1="4144" y2="4144" x1="2926" />
-        </branch>
         <branch name="DISP14">
-            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="2160" y="4432" type="branch" />
-            <wire x2="2432" y1="4432" y2="4432" x1="2160" />
+            <attrtext style="alignment:SOFT-VLEFT" attrname="Name" x="2480" y="3728" type="branch" />
+            <wire x2="2480" y1="3728" y2="3984" x1="2480" />
         </branch>
         <branch name="DISP13">
-            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="2240" y="4368" type="branch" />
-            <wire x2="2432" y1="4368" y2="4368" x1="2240" />
+            <attrtext style="alignment:SOFT-VLEFT" attrname="Name" x="2544" y="3776" type="branch" />
+            <wire x2="2544" y1="3776" y2="3984" x1="2544" />
         </branch>
         <branch name="DISP12">
-            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="2320" y="4304" type="branch" />
-            <wire x2="2432" y1="4304" y2="4304" x1="2320" />
+            <attrtext style="alignment:SOFT-VLEFT" attrname="Name" x="2608" y="3840" type="branch" />
+            <wire x2="2608" y1="3840" y2="3984" x1="2608" />
         </branch>
         <branch name="RD2">
-            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="2160" y="4112" type="branch" />
-            <wire x2="2432" y1="4112" y2="4112" x1="2160" />
+            <attrtext style="alignment:SOFT-VLEFT" attrname="Name" x="2800" y="3728" type="branch" />
+            <wire x2="2800" y1="3728" y2="3984" x1="2800" />
         </branch>
         <branch name="RD1">
-            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="2240" y="4048" type="branch" />
-            <wire x2="2432" y1="4048" y2="4048" x1="2240" />
+            <attrtext style="alignment:SOFT-VLEFT" attrname="Name" x="2864" y="3776" type="branch" />
+            <wire x2="2864" y1="3776" y2="3984" x1="2864" />
         </branch>
         <branch name="RD0">
-            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="2320" y="3984" type="branch" />
-            <wire x2="2432" y1="3984" y2="3984" x1="2320" />
+            <attrtext style="alignment:SOFT-VLEFT" attrname="Name" x="2928" y="3840" type="branch" />
+            <wire x2="2928" y1="3840" y2="3984" x1="2928" />
+        </branch>
+        <branch name="C3">
+            <attrtext style="alignment:SOFT-VRIGHT" attrname="Name" x="2576" y="4672" type="branch" />
+            <wire x2="2576" y1="4432" y2="4672" x1="2576" />
+        </branch>
+        <branch name="NPDISP14">
+            <attrtext style="alignment:SOFT-VRIGHT" attrname="Name" x="2640" y="4640" type="branch" />
+            <wire x2="2640" y1="4432" y2="4640" x1="2640" />
+        </branch>
+        <branch name="NPDISP13">
+            <attrtext style="alignment:SOFT-VRIGHT" attrname="Name" x="2704" y="4592" type="branch" />
+            <wire x2="2704" y1="4432" y2="4592" x1="2704" />
+        </branch>
+        <branch name="NPDISP12">
+            <attrtext style="alignment:SOFT-VRIGHT" attrname="Name" x="2768" y="4512" type="branch" />
+            <wire x2="2768" y1="4432" y2="4512" x1="2768" />
+        </branch>
+        <instance x="3424" y="3872" name="XLXI_1267" orien="R270" />
+        <branch name="XLXN_11629">
+            <wire x2="2416" y1="3888" y2="3984" x1="2416" />
+            <wire x2="2736" y1="3888" y2="3888" x1="2416" />
+            <wire x2="3056" y1="3888" y2="3888" x1="2736" />
+            <wire x2="3056" y1="3888" y2="3984" x1="3056" />
+            <wire x2="2736" y1="3888" y2="3984" x1="2736" />
+            <wire x2="3296" y1="3808" y2="3808" x1="3056" />
+            <wire x2="3056" y1="3808" y2="3888" x1="3056" />
         </branch>
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">
@@ -8326,16 +8312,6 @@
         <instance x="1600" y="2512" name="U296" orien="R0">
             <attrtext style="fontsize:40;fontname:Arial;textcolor:rgb(0,128,0)" attrname="InstName" x="176" y="24" type="instance" />
         </instance>
-        <branch name="ZERODISP0">
-            <attrtext style="alignment:HARD-BCENTER" attrname="Name" x="2592" y="2112" type="branch" />
-            <wire x2="2592" y1="2112" y2="2112" x1="2496" />
-        </branch>
-        <branch name="ZERODISP1">
-            <attrtext style="alignment:HARD-BCENTER" attrname="Name" x="2592" y="2256" type="branch" />
-            <wire x2="2384" y1="2608" y2="2608" x1="2288" />
-            <wire x2="2384" y1="2256" y2="2608" x1="2384" />
-            <wire x2="2592" y1="2256" y2="2256" x1="2384" />
-        </branch>
         <instance x="2032" y="2704" name="U297" orien="R0">
             <attrtext style="fontsize:40;fontname:Arial;textcolor:rgb(0,128,0)" attrname="InstName" x="160" y="-24" type="instance" />
         </instance>
@@ -8550,6 +8526,14 @@
         <branch name="DISP0">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="1120" y="2736" type="branch" />
             <wire x2="1264" y1="2736" y2="2736" x1="1120" />
+        </branch>
+        <branch name="ZERODISP1">
+            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="2672" y="2112" type="branch" />
+            <wire x2="2672" y1="2112" y2="2112" x1="2496" />
+        </branch>
+        <branch name="ZERODISP0">
+            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="2672" y="2608" type="branch" />
+            <wire x2="2672" y1="2608" y2="2608" x1="2288" />
         </branch>
     </sheet>
 </drawing>
