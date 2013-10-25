@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ppm.vhf
--- /___/   /\     Timestamp : 10/25/2013 13:40:48
+-- /___/   /\     Timestamp : 10/25/2013 14:17:10
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -4745,31 +4745,31 @@ begin
                 S3=>C3);
    
    U289 : NOR4
-      port map (I0=>DISP3,
-                I1=>DISP2,
-                I2=>DISP1,
-                I3=>DISP0,
+      port map (I0=>DISP12,
+                I1=>DISP13,
+                I2=>DISP14,
+                I3=>DISP15,
                 O=>XLXN_11411);
    
    U290 : NOR4
-      port map (I0=>DISP7,
-                I1=>DISP6,
-                I2=>DISP5,
-                I3=>DISP4,
+      port map (I0=>DISP8,
+                I1=>DISP9,
+                I2=>DISP10,
+                I3=>DISP11,
                 O=>XLXN_11412);
    
    U291 : NOR4
-      port map (I0=>DISP11,
-                I1=>DISP10,
-                I2=>DISP9,
-                I3=>DISP8,
+      port map (I0=>DISP4,
+                I1=>DISP5,
+                I2=>DISP6,
+                I3=>DISP7,
                 O=>XLXN_11472);
    
    U292 : NOR4
-      port map (I0=>DISP15,
-                I1=>DISP14,
-                I2=>DISP13,
-                I3=>DISP12,
+      port map (I0=>DISP0,
+                I1=>DISP1,
+                I2=>DISP2,
+                I3=>DISP3,
                 O=>XLXN_11463);
    
    U293 : OR4
