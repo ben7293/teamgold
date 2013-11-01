@@ -1,7 +1,7 @@
 Release 12.4 par M.81d (lin64)
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
-AtomicLinux::  Fri Nov 01 12:50:13 2013
+AtomicLinux::  Fri Nov 01 13:13:53 2013
 
 par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
 
@@ -95,7 +95,7 @@ Phase 10.5  Local Placement Optimization
 Phase 10.5  Local Placement Optimization (Checksum:3b0d46be) REAL time: 5 secs 
 
 Total REAL time to Placer completion: 5 secs 
-Total CPU  time to Placer completion: 4 secs 
+Total CPU  time to Placer completion: 5 secs 
 Writing design to file ppm.ncd
 
 

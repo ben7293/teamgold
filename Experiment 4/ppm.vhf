@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ppm.vhf
--- /___/   /\     Timestamp : 11/01/2013 12:49:10
+-- /___/   /\     Timestamp : 11/01/2013 13:13:41
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -2888,6 +2888,8 @@ architecture BEHAVIORAL of ppm is
    signal XLXN_11725       : std_logic;
    signal XLXN_11726       : std_logic;
    signal XLXN_11727       : std_logic;
+   signal XLXN_11734       : std_logic;
+   signal XLXN_11736       : std_logic;
    signal ZERODISP0        : std_logic;
    signal ZERODISP1        : std_logic;
    component OBUF
@@ -5026,13 +5028,13 @@ begin
                 B2=>XLXN_11706,
                 B3=>XLXN_11707,
                 GT=>open,
-                LT=>LRGDISPPOS1);
+                LT=>XLXN_11734);
    
    U303 : M2_1_MXILINX_ppm
       port map (D0=>P1LRGDISP,
                 D1=>P3LRGDISP,
                 S0=>LRGDISPPOS1,
-                O=>LRGDISPPOS0);
+                O=>XLXN_11736);
    
    U304 : u74_157_MUSER_ppm
       port map (A1=>LRGDISPPOS0,
@@ -5254,6 +5256,14 @@ begin
    
    XLXI_1333 : VCC
       port map (P=>P2PLAYED);
+   
+   XLXI_1334 : INV
+      port map (I=>XLXN_11734,
+                O=>LRGDISPPOS1);
+   
+   XLXI_1335 : INV
+      port map (I=>XLXN_11736,
+                O=>LRGDISPPOS0);
    
 end BEHAVIORAL;
 

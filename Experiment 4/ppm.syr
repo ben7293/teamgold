@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 Reading design: ppm.prj
@@ -124,27 +124,48 @@ Architecture behavioral of Entity fd4ce_mxilinx_codedisc is up to date.
 Architecture behavioral of Entity comp4_mxilinx_codedisc is up to date.
 Architecture behavioral of Entity codedisc is up to date.
 Compiling vhdl file "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" in Library work.
-Architecture behavioral of Entity m2_1e_mxilinx_ppm is up to date.
-Architecture behavioral of Entity u74_157_muser_ppm is up to date.
-Architecture behavioral of Entity compm4_mxilinx_ppm is up to date.
-Architecture behavioral of Entity m2_1_mxilinx_ppm is up to date.
-Architecture behavioral of Entity d2_4e_mxilinx_ppm is up to date.
-Architecture behavioral of Entity add8_mxilinx_ppm is up to date.
-Architecture behavioral of Entity add4_mxilinx_ppm is up to date.
-Architecture behavioral of Entity m4_1e_mxilinx_ppm is up to date.
-Architecture behavioral of Entity x74_153_muser_ppm is up to date.
-Architecture behavioral of Entity comp4_mxilinx_ppm is up to date.
-Architecture behavioral of Entity fd4ce_mxilinx_ppm is up to date.
-Architecture behavioral of Entity ftce_mxilinx_ppm is up to date.
-Architecture behavioral of Entity cb16ce_mxilinx_ppm is up to date.
-Architecture behavioral of Entity cb2ce_mxilinx_ppm is up to date.
-Architecture behavioral of Entity fd8ce_mxilinx_ppm is up to date.
-Architecture behavioral of Entity cd4ce_mxilinx_ppm is up to date.
-Architecture behavioral of Entity d3_8e_mxilinx_ppm is up to date.
-Architecture behavioral of Entity ftclex_mxilinx_ppm is up to date.
-Architecture behavioral of Entity cb4cle_mxilinx_ppm is up to date.
-Architecture behavioral of Entity m8_1e_mxilinx_ppm is up to date.
-Architecture behavioral of Entity ppm is up to date.
+Entity <m2_1e_mxilinx_ppm> compiled.
+Entity <m2_1e_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <u74_157_muser_ppm> compiled.
+Entity <u74_157_muser_ppm> (Architecture <behavioral>) compiled.
+Entity <compm4_mxilinx_ppm> compiled.
+Entity <compm4_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <m2_1_mxilinx_ppm> compiled.
+Entity <m2_1_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <d2_4e_mxilinx_ppm> compiled.
+Entity <d2_4e_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <add8_mxilinx_ppm> compiled.
+Entity <add8_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <add4_mxilinx_ppm> compiled.
+Entity <add4_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <m4_1e_mxilinx_ppm> compiled.
+Entity <m4_1e_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <x74_153_muser_ppm> compiled.
+Entity <x74_153_muser_ppm> (Architecture <behavioral>) compiled.
+Entity <comp4_mxilinx_ppm> compiled.
+Entity <comp4_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <fd4ce_mxilinx_ppm> compiled.
+Entity <fd4ce_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <ftce_mxilinx_ppm> compiled.
+Entity <ftce_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <cb16ce_mxilinx_ppm> compiled.
+Entity <cb16ce_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <cb2ce_mxilinx_ppm> compiled.
+Entity <cb2ce_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <fd8ce_mxilinx_ppm> compiled.
+Entity <fd8ce_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <cd4ce_mxilinx_ppm> compiled.
+Entity <cd4ce_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <d3_8e_mxilinx_ppm> compiled.
+Entity <d3_8e_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <ftclex_mxilinx_ppm> compiled.
+Entity <ftclex_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <cb4cle_mxilinx_ppm> compiled.
+Entity <cb4cle_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <m8_1e_mxilinx_ppm> compiled.
+Entity <m8_1e_mxilinx_ppm> (Architecture <behavioral>) compiled.
+Entity <ppm> compiled.
+Entity <ppm> (Architecture <behavioral>) compiled.
 Compiling vhdl file "/home/atomic/Documents/Code/TeamGold/Experiment 4/X74_153.vhf" in Library work.
 Architecture behavioral of Entity m2_1e_mxilinx_x74_153 is up to date.
 Architecture behavioral of Entity m2_1_mxilinx_x74_153 is up to date.
@@ -310,9 +331,9 @@ Analyzing Entity <ppm> in library <work> (Architecture <behavioral>).
     Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <TRD3_BUF> in unit <ppm>.
     Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <TRD3_BUF> in unit <ppm>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <TRD3_BUF> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3609: Unconnected output port 'CEO' of component 'CB2CE_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3609: Unconnected output port 'Q0' of component 'CB2CE_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3609: Unconnected output port 'Q1' of component 'CB2CE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3611: Unconnected output port 'CEO' of component 'CB2CE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3611: Unconnected output port 'Q0' of component 'CB2CE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3611: Unconnected output port 'Q1' of component 'CB2CE_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U6_59" for instance <U6> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U19> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U20> in unit <ppm>.
@@ -321,17 +342,17 @@ WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" li
     Set user-defined property "INIT =  0" for instance <U43> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U50> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U55> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3930: Unconnected output port 'CEO' of component 'CB4CLE_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3930: Unconnected output port 'Q3' of component 'CB4CLE_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3930: Unconnected output port 'TC' of component 'CB4CLE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3932: Unconnected output port 'CEO' of component 'CB4CLE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3932: Unconnected output port 'Q3' of component 'CB4CLE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3932: Unconnected output port 'TC' of component 'CB4CLE_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U64_40" for instance <U64> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3946: Unconnected output port 'D7' of component 'D3_8E_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3948: Unconnected output port 'D7' of component 'D3_8E_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U65_41" for instance <U65> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3960: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3960: Unconnected output port 'TC' of component 'CB16CE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3962: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3962: Unconnected output port 'TC' of component 'CB16CE_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U66_60" for instance <U66> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3968: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3968: Unconnected output port 'TC' of component 'CB16CE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3970: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 3970: Unconnected output port 'TC' of component 'CB16CE_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U67_61" for instance <U67> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U68> in unit <ppm>.
     Set user-defined property "HU_SET =  U69_62" for instance <U69> in unit <ppm>.
@@ -342,8 +363,8 @@ WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" li
     Set user-defined property "INIT =  0" for instance <U76> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U77> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U78> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4136: Unconnected output port 'CEO' of component 'CB2CE_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4136: Unconnected output port 'TC' of component 'CB2CE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4138: Unconnected output port 'CEO' of component 'CB2CE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4138: Unconnected output port 'TC' of component 'CB2CE_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U86_42" for instance <U86> in unit <ppm>.
     Set user-defined property "HU_SET =  U91_43" for instance <U91> in unit <ppm>.
     Set user-defined property "HU_SET =  U100_47" for instance <U100> in unit <ppm>.
@@ -364,13 +385,13 @@ WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" li
     Set user-defined property "HU_SET =  U116_58" for instance <U116> in unit <ppm>.
     Set user-defined property "HU_SET =  U117_52" for instance <U117> in unit <ppm>.
     Set user-defined property "HU_SET =  U118_53" for instance <U118> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4409: Unconnected output port 'CEO' of component 'CD4CE_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4409: Unconnected output port 'TC' of component 'CD4CE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4411: Unconnected output port 'CEO' of component 'CD4CE_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4411: Unconnected output port 'TC' of component 'CD4CE_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U119_51" for instance <U119> in unit <ppm>.
     Set user-defined property "HU_SET =  U120_50" for instance <U120> in unit <ppm>.
     Set user-defined property "HU_SET =  U121_49" for instance <U121> in unit <ppm>.
     Set user-defined property "HU_SET =  U122_48" for instance <U122> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4487: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4489: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U151_63" for instance <U151> in unit <ppm>.
     Set user-defined property "HU_SET =  U155_54" for instance <U155> in unit <ppm>.
     Set user-defined property "HU_SET =  U159_66" for instance <U159> in unit <ppm>.
@@ -378,28 +399,28 @@ WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" li
     Set user-defined property "HU_SET =  U161_65" for instance <U161> in unit <ppm>.
     Set user-defined property "HU_SET =  U162_64" for instance <U162> in unit <ppm>.
     Set user-defined property "HU_SET =  U169_69" for instance <U169> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4688: Unconnected output port 'CO' of component 'ADD4_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4688: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4688: Unconnected output port 'S2' of component 'ADD4_MXILINX_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4688: Unconnected output port 'S3' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4690: Unconnected output port 'CO' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4690: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4690: Unconnected output port 'S2' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4690: Unconnected output port 'S3' of component 'ADD4_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U171_70" for instance <U171> in unit <ppm>.
     Set user-defined property "HU_SET =  U176_68" for instance <U176> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4797: Unconnected output port 'OFL' of component 'ADD8_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4799: Unconnected output port 'OFL' of component 'ADD8_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U181_72" for instance <U181> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4805: Unconnected output port 'OFL' of component 'ADD8_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4807: Unconnected output port 'OFL' of component 'ADD8_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U182_71" for instance <U182> in unit <ppm>.
     Set user-defined property "HU_SET =  U272_73" for instance <U272> in unit <ppm>.
     Set user-defined property "HU_SET =  U273_74" for instance <U273> in unit <ppm>.
     Set user-defined property "HU_SET =  U274_75" for instance <U274> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4963: Unconnected output port 'GT' of component 'COMPM4_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4965: Unconnected output port 'GT' of component 'COMPM4_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U298_77" for instance <U298> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4975: Unconnected output port 'GT' of component 'COMPM4_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 4977: Unconnected output port 'GT' of component 'COMPM4_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U299_78" for instance <U299> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 5019: Unconnected output port 'GT' of component 'COMPM4_MXILINX_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 5021: Unconnected output port 'GT' of component 'COMPM4_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U302_80" for instance <U302> in unit <ppm>.
     Set user-defined property "HU_SET =  U303_79" for instance <U303> in unit <ppm>.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 5037: Unconnected output port 'Y3' of component 'u74_157_MUSER_ppm'.
-WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 5037: Unconnected output port 'Y4' of component 'u74_157_MUSER_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 5039: Unconnected output port 'Y3' of component 'u74_157_MUSER_ppm'.
+WARNING:Xst:753 - "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" line 5039: Unconnected output port 'Y4' of component 'u74_157_MUSER_ppm'.
     Set user-defined property "HU_SET =  U305_76" for instance <U305> in unit <ppm>.
 Entity <ppm> analyzed. Unit <ppm> generated.
 
@@ -887,7 +908,7 @@ Design Statistics
 # IOs                              : 32
 
 Cell Usage :
-# BELS                             : 805
+# BELS                             : 807
 #      AND2                        : 106
 #      AND2B1                      : 67
 #      AND3                        : 94
@@ -900,7 +921,7 @@ Cell Usage :
 #      AND5                        : 6
 #      BUF                         : 11
 #      GND                         : 5
-#      INV                         : 34
+#      INV                         : 36
 #      MUXCY                       : 4
 #      MUXCY_D                     : 4
 #      MUXCY_L                     : 16
@@ -940,7 +961,7 @@ Selected Device : 3s500efg320-5
 
  Number of Slices:                       57  out of   4656     1%  
  Number of Slice Flip Flops:            114  out of   9312     1%  
- Number of 4 input LUTs:                 41  out of   9312     0%  
+ Number of 4 input LUTs:                 43  out of   9312     0%  
     Number used as ROMs:                  7
  Number of IOs:                          32
  Number of bonded IOBs:                  32  out of    232    13%  
@@ -997,7 +1018,7 @@ Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 50.300ns (Maximum Frequency: 19.881MHz)
+   Minimum period: 52.238ns (Maximum Frequency: 19.143MHz)
    Minimum input arrival time before clock: 34.602ns
    Maximum output required time after clock: 17.067ns
    Maximum combinational path delay: 14.005ns
@@ -1029,10 +1050,10 @@ Delay:               1.162ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'U67/I_Q6/Q'
-  Clock period: 50.300ns (frequency: 19.881MHz)
+  Clock period: 52.238ns (frequency: 19.143MHz)
   Total number of paths / destination ports: 8832341914 / 128
 -------------------------------------------------------------------------
-Delay:               50.300ns (Levels of Logic = 71)
+Delay:               52.238ns (Levels of Logic = 73)
   Source:            U113/I_Q3 (FF)
   Destination:       U71 (FF)
   Source Clock:      U67/I_Q6/Q rising
@@ -1062,12 +1083,14 @@ Delay:               50.300ns (Levels of Logic = 71)
      OR2:I1->O             2   0.612   0.380  I_36_19 (GTB)
      NOR2:I0->O            2   0.612   0.380  I_36_3 (EQ2_3)
      AND2:I0->O            1   0.612   0.357  I_36_2 (LTA)
-     OR2:I1->O             3   0.612   0.451  I_36_11 (LT)
+     OR2:I1->O             1   0.612   0.357  I_36_11 (LT)
      end scope: 'U302'
+     INV:I->O              3   0.612   0.451  XLXI_1334 (LRGDISPPOS1)
      begin scope: 'U303'
      AND2B1:I0->O          1   0.612   0.357  I_36_7 (M0)
      OR2:I1->O             1   0.612   0.357  I_36_8 (O)
      end scope: 'U303'
+     INV:I->O              1   0.612   0.357  XLXI_1335 (LRGDISPPOS0)
      begin scope: 'U304/XLXI_114'
      AND3B1:I2->O          1   0.612   0.357  I_36_31 (M0)
      OR2:I1->O             4   0.612   0.499  I_36_38 (O)
@@ -1134,7 +1157,7 @@ Delay:               50.300ns (Levels of Logic = 71)
      OR2:I1->O             1   0.612   0.357  U180 (PTOVF)
      FDCE:D                    0.268          U71
     ----------------------------------------
-    Total                     50.300ns (30.818ns logic, 19.482ns route)
+    Total                     52.238ns (32.042ns logic, 20.196ns route)
                                        (61.3% logic, 38.7% route)
 
 =========================================================================
@@ -1477,12 +1500,12 @@ Delay:               14.005ns (Levels of Logic = 11)
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.07 secs
+Total CPU time to Xst completion: 4.11 secs
  
 --> 
 
 
-Total memory usage is 377460 kilobytes
+Total memory usage is 377544 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   72 (   0 filtered)

@@ -451,6 +451,8 @@
         <signal name="P2POSSEL0" />
         <signal name="P1LRGDISP" />
         <signal name="P3LRGDISP" />
+        <signal name="XLXN_11734" />
+        <signal name="XLXN_11736" />
         <port polarity="Input" name="P1ADD_NP2B" />
         <port polarity="Input" name="TRD1_NP2B" />
         <port polarity="Input" name="TRD2_NP2B" />
@@ -3052,7 +3054,7 @@
             <blockpin signalname="P1LRGDISP" name="D0" />
             <blockpin signalname="P3LRGDISP" name="D1" />
             <blockpin signalname="LRGDISPPOS1" name="S0" />
-            <blockpin signalname="LRGDISPPOS0" name="O" />
+            <blockpin signalname="XLXN_11736" name="O" />
         </block>
         <block symbolname="u74_157" name="U304">
             <blockpin signalname="APOSZERO" name="S" />
@@ -3099,7 +3101,7 @@
             <blockpin signalname="XLXN_11706" name="B2" />
             <blockpin signalname="XLXN_11707" name="B3" />
             <blockpin name="GT" />
-            <blockpin signalname="LRGDISPPOS1" name="LT" />
+            <blockpin signalname="XLXN_11734" name="LT" />
         </block>
         <block symbolname="gnd" name="XLXI_1328">
             <blockpin signalname="XLXN_11725" name="G" />
@@ -3132,6 +3134,14 @@
         </block>
         <block symbolname="vcc" name="XLXI_1333">
             <blockpin signalname="P2PLAYED" name="P" />
+        </block>
+        <block symbolname="inv" name="XLXI_1334">
+            <blockpin signalname="XLXN_11734" name="I" />
+            <blockpin signalname="LRGDISPPOS1" name="O" />
+        </block>
+        <block symbolname="inv" name="XLXI_1335">
+            <blockpin signalname="XLXN_11736" name="I" />
+            <blockpin signalname="LRGDISPPOS0" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -8671,10 +8681,6 @@
         <instance x="2400" y="4096" name="U303" orien="R0">
             <attrtext style="fontsize:40;fontname:Arial;textcolor:rgb(0,128,0)" attrname="InstName" x="224" y="-36" type="instance" />
         </instance>
-        <branch name="LRGDISPPOS0">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="2880" y="3968" type="branch" />
-            <wire x2="2880" y1="3968" y2="3968" x1="2720" />
-        </branch>
         <branch name="LRGDISPPOS1">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="2208" y="4064" type="branch" />
             <wire x2="2400" y1="4064" y2="4064" x1="2208" />
@@ -8749,11 +8755,6 @@
             <wire x2="2288" y1="3792" y2="3792" x1="1984" />
             <wire x2="2288" y1="3232" y2="3792" x1="2288" />
             <wire x2="2512" y1="3232" y2="3232" x1="2288" />
-        </branch>
-        <branch name="LRGDISPPOS1">
-            <attrtext style="alignment:SOFT-BCENTER" attrname="Name" x="2999" y="3040" type="branch" />
-            <wire x2="2999" y1="3040" y2="3040" x1="2896" />
-            <wire x2="3008" y1="3040" y2="3040" x1="2999" />
         </branch>
         <instance x="1328" y="3728" name="XLXI_1328" orien="R90" />
         <instance x="1344" y="2880" name="XLXI_1329" orien="R90" />
@@ -8869,5 +8870,25 @@
         </branch>
         <instance x="4608" y="1904" name="XLXI_1332" orien="R0" />
         <instance x="4432" y="2112" name="XLXI_1333" orien="R270" />
+        <instance x="3008" y="3152" name="XLXI_1334" orien="R0" />
+        <branch name="XLXN_11734">
+            <wire x2="2944" y1="3040" y2="3040" x1="2896" />
+            <wire x2="2944" y1="3040" y2="3120" x1="2944" />
+            <wire x2="3008" y1="3120" y2="3120" x1="2944" />
+        </branch>
+        <branch name="LRGDISPPOS1">
+            <attrtext style="alignment:SOFT-BCENTER" attrname="Name" x="3339" y="3120" type="branch" />
+            <wire x2="3339" y1="3120" y2="3120" x1="3232" />
+            <wire x2="3360" y1="3120" y2="3120" x1="3339" />
+        </branch>
+        <branch name="XLXN_11736">
+            <wire x2="2752" y1="3968" y2="3968" x1="2720" />
+        </branch>
+        <instance x="2752" y="4000" name="XLXI_1335" orien="R0" />
+        <branch name="LRGDISPPOS0">
+            <attrtext style="alignment:SOFT-BCENTER" attrname="Name" x="3054" y="3968" type="branch" />
+            <wire x2="3054" y1="3968" y2="3968" x1="2976" />
+            <wire x2="3136" y1="3968" y2="3968" x1="3054" />
+        </branch>
     </sheet>
 </drawing>

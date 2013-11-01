@@ -5,85 +5,85 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3609</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3611</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3609</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q0</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3611</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q0</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3609</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q1</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3611</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q1</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3930</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3932</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3930</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q3</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3932</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q3</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3930</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3932</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3946</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D7</arg>&apos; of component &apos;<arg fmt="%s" index="4">D3_8E_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3948</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D7</arg>&apos; of component &apos;<arg fmt="%s" index="4">D3_8E_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3960</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3962</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3960</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3962</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3968</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3970</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3968</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">3970</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4136</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4138</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4136</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4138</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4409</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CD4CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4411</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CD4CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4409</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CD4CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4411</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CD4CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4487</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4489</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4688</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CO</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4690</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CO</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4688</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4690</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4688</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S2</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4690</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S2</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4688</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S3</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4690</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S3</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4797</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD8_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4799</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD8_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4805</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD8_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4807</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD8_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4963</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">GT</arg>&apos; of component &apos;<arg fmt="%s" index="4">COMPM4_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4965</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">GT</arg>&apos; of component &apos;<arg fmt="%s" index="4">COMPM4_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4975</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">GT</arg>&apos; of component &apos;<arg fmt="%s" index="4">COMPM4_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4977</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">GT</arg>&apos; of component &apos;<arg fmt="%s" index="4">COMPM4_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5019</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">GT</arg>&apos; of component &apos;<arg fmt="%s" index="4">COMPM4_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5021</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">GT</arg>&apos; of component &apos;<arg fmt="%s" index="4">COMPM4_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5037</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Y3</arg>&apos; of component &apos;<arg fmt="%s" index="4">u74_157_MUSER_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5039</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Y3</arg>&apos; of component &apos;<arg fmt="%s" index="4">u74_157_MUSER_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5037</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Y4</arg>&apos; of component &apos;<arg fmt="%s" index="4">u74_157_MUSER_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5039</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Y4</arg>&apos; of component &apos;<arg fmt="%s" index="4">u74_157_MUSER_ppm</arg>&apos;.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">dummy</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
