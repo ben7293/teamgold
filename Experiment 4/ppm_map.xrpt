@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Fri Nov  1 13:13:53 2013">
+  <application stringID="Map" timeStamp="Fri Nov  1 13:18:55 2013">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -69,7 +69,7 @@
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="0"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="389092"/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="389124"/>
         <item stringID="MAP_TOTAL_REAL_TIME" value="1 secs "/>
         <item stringID="MAP_TOTAL_CPU_TIME" value="1 secs "/>
       </section>
@@ -82,8 +82,8 @@
         <item dataType="int" stringID="MAP_LUTS_PER_SLICE" value="2"/>
         <item AVAILABLE="2328" dataType="int" stringID="MAP_NUM_SLICEM" value="0"/>
         <item AVAILABLE="2328" dataType="int" stringID="MAP_NUM_SLICEL" value="0"/>
-        <item dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="298"/>
-        <item dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="196"/>
+        <item dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="303"/>
+        <item dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="199"/>
         <item dataType="int" label="Number of Slices containing unrelated logic" stringID="MAP_NUM_SLICE_UNRELATED" value="0"/>
       </section>
       <section stringID="MAP_IOB_REPORTING">
@@ -119,7 +119,7 @@
       </section>
       <section stringID="MAP_MACRO_RPM_REPORTING">
         <item dataType="int" stringID="MAP_HARD_MACROS" value="0"/>
-        <item dataType="int" stringID="MAP_RPMS" value="35"/>
+        <item dataType="int" stringID="MAP_RPMS" value="36"/>
       </section>
       <section stringID="MAP_IOB_PROPERTIES">
         <table stringID="MAP_IOB_TABLE">
@@ -400,7 +400,7 @@
       </section>
       <section stringID="MAP_RPM_MACROS">
         <section stringID="MAP_SHAPE_SECTION">
-          <item dataType="int" stringID="MAP_NUM_SHAPE" value="U86/U86_I_Q1_29"/>
+          <item dataType="int" stringID="MAP_NUM_SHAPE" value="XLXI_1336_81"/>
         </section>
       </section>
       <section stringID="MAP_GUIDE_REPORT"/>

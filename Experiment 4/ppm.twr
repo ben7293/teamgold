@@ -43,60 +43,60 @@ Clock to Setup on destination clock CLOCK_NP2B
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLOCK_NP2B     |    5.443|         |         |         |
+CLOCK_NP2B     |    5.699|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-P1ADD_NP2B     |A1_NB2P        |   12.284|
-P1ADD_NP2B     |A2_NB2P        |   12.479|
-P1ADD_NP2B     |A3_NB2P        |   12.715|
-P1ADD_NP2B     |A4_NB2P        |   11.694|
-P1ADD_NP2B     |ADD_NB2P       |    8.185|
-P1ADD_NP2B     |RD0_NB2P       |    7.001|
-P1PLAY_NP2B    |CA_NB2P        |   14.920|
-P1PLAY_NP2B    |CB_NB2P        |   14.088|
-P1PLAY_NP2B    |CC_NB2P        |   13.847|
-P1PLAY_NP2B    |CD_NB2P        |   14.041|
-P1PLAY_NP2B    |CE_NB2P        |   13.643|
-P1PLAY_NP2B    |CF_NB2P        |   14.280|
-P1PLAY_NP2B    |CG_NB2P        |   14.191|
-P1SEL0_NP2B    |RD0_NB2P       |   11.110|
-P1SEL0_NP2B    |RD1_NB2P       |   11.228|
-P1SEL0_NP2B    |RD2_NB2P       |   12.088|
-P1SEL0_NP2B    |RD3_NB2P       |    8.979|
-P1SEL1_NP2B    |RD0_NB2P       |   11.127|
-P1SEL1_NP2B    |RD1_NB2P       |   11.245|
-P1SEL1_NP2B    |RD2_NB2P       |   12.105|
-P1SEL1_NP2B    |RD3_NB2P       |    8.996|
-P1SEL2_NP2B    |RD0_NB2P       |   10.302|
-P1SEL2_NP2B    |RD1_NB2P       |   10.420|
-P1SEL2_NP2B    |RD2_NB2P       |   11.280|
-P1SEL2_NP2B    |RD3_NB2P       |    8.171|
-P1SEL3_NP2B    |RD0_NB2P       |   10.580|
-P1SEL3_NP2B    |RD1_NB2P       |   10.698|
-P1SEL3_NP2B    |RD2_NB2P       |   11.558|
-P1SEL3_NP2B    |RD3_NB2P       |    8.449|
-SHPTS_NP2B     |A1_NB2P        |    9.901|
-SHPTS_NP2B     |A2_NB2P        |   10.096|
-SHPTS_NP2B     |A3_NB2P        |   10.332|
-SHPTS_NP2B     |A4_NB2P        |    9.311|
-SHPTS_NP2B     |CA_NB2P        |   15.825|
-SHPTS_NP2B     |CB_NB2P        |   14.993|
-SHPTS_NP2B     |CC_NB2P        |   14.752|
-SHPTS_NP2B     |CD_NB2P        |   14.946|
-SHPTS_NP2B     |CE_NB2P        |   14.436|
-SHPTS_NP2B     |CF_NB2P        |   15.043|
-SHPTS_NP2B     |CG_NB2P        |   14.990|
-TRD1_NP2B      |RD1_NB2P       |    7.176|
-TRD2_NP2B      |RD2_NB2P       |    8.394|
-TRD3_NP2B      |RD3_NB2P       |    8.169|
+P1ADD_NP2B     |A1_NB2P        |   13.427|
+P1ADD_NP2B     |A2_NB2P        |   13.441|
+P1ADD_NP2B     |A3_NB2P        |   12.787|
+P1ADD_NP2B     |A4_NB2P        |   12.684|
+P1ADD_NP2B     |ADD_NB2P       |    9.031|
+P1ADD_NP2B     |RD0_NB2P       |    8.372|
+P1PLAY_NP2B    |CA_NB2P        |   13.062|
+P1PLAY_NP2B    |CB_NB2P        |   12.400|
+P1PLAY_NP2B    |CC_NB2P        |   12.853|
+P1PLAY_NP2B    |CD_NB2P        |   12.805|
+P1PLAY_NP2B    |CE_NB2P        |   12.364|
+P1PLAY_NP2B    |CF_NB2P        |   12.758|
+P1PLAY_NP2B    |CG_NB2P        |   12.678|
+P1SEL0_NP2B    |RD0_NB2P       |    9.704|
+P1SEL0_NP2B    |RD1_NB2P       |   10.002|
+P1SEL0_NP2B    |RD2_NB2P       |   11.768|
+P1SEL0_NP2B    |RD3_NB2P       |   10.394|
+P1SEL1_NP2B    |RD0_NB2P       |    9.013|
+P1SEL1_NP2B    |RD1_NB2P       |    9.311|
+P1SEL1_NP2B    |RD2_NB2P       |   11.077|
+P1SEL1_NP2B    |RD3_NB2P       |    9.703|
+P1SEL2_NP2B    |RD0_NB2P       |    9.068|
+P1SEL2_NP2B    |RD1_NB2P       |    9.366|
+P1SEL2_NP2B    |RD2_NB2P       |   11.132|
+P1SEL2_NP2B    |RD3_NB2P       |    9.758|
+P1SEL3_NP2B    |RD0_NB2P       |    9.396|
+P1SEL3_NP2B    |RD1_NB2P       |    9.694|
+P1SEL3_NP2B    |RD2_NB2P       |   11.460|
+P1SEL3_NP2B    |RD3_NB2P       |   10.086|
+SHPTS_NP2B     |A1_NB2P        |    9.208|
+SHPTS_NP2B     |A2_NB2P        |    9.222|
+SHPTS_NP2B     |A3_NB2P        |    8.568|
+SHPTS_NP2B     |A4_NB2P        |    8.465|
+SHPTS_NP2B     |CA_NB2P        |   15.432|
+SHPTS_NP2B     |CB_NB2P        |   14.116|
+SHPTS_NP2B     |CC_NB2P        |   14.664|
+SHPTS_NP2B     |CD_NB2P        |   14.555|
+SHPTS_NP2B     |CE_NB2P        |   14.701|
+SHPTS_NP2B     |CF_NB2P        |   15.095|
+SHPTS_NP2B     |CG_NB2P        |   15.048|
+TRD1_NP2B      |RD1_NB2P       |    8.258|
+TRD2_NP2B      |RD2_NB2P       |    9.673|
+TRD3_NP2B      |RD3_NB2P       |    8.375|
 ---------------+---------------+---------+
 
 
-Analysis completed Fri Nov  1 13:14:11 2013 
+Analysis completed Fri Nov  1 13:19:10 2013 
 --------------------------------------------------------------------------------
 
 Trace Settings:

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ppm.vhf
--- /___/   /\     Timestamp : 11/01/2013 13:13:41
+-- /___/   /\     Timestamp : 11/01/2013 13:18:38
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -18,6 +18,203 @@
 --    This vhdl netlist is translated from an ECS schematic. It can be 
 --    synthesized and simulated, but it should not be modified. 
 --
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity ADD4_MXILINX_ppm is
+   port ( A0  : in    std_logic; 
+          A1  : in    std_logic; 
+          A2  : in    std_logic; 
+          A3  : in    std_logic; 
+          B0  : in    std_logic; 
+          B1  : in    std_logic; 
+          B2  : in    std_logic; 
+          B3  : in    std_logic; 
+          CI  : in    std_logic; 
+          CO  : out   std_logic; 
+          OFL : out   std_logic; 
+          S0  : out   std_logic; 
+          S1  : out   std_logic; 
+          S2  : out   std_logic; 
+          S3  : out   std_logic);
+end ADD4_MXILINX_ppm;
+
+architecture BEHAVIORAL of ADD4_MXILINX_ppm is
+   attribute BOX_TYPE   : string ;
+   attribute RLOC       : string ;
+   signal C0       : std_logic;
+   signal C1       : std_logic;
+   signal C2       : std_logic;
+   signal C2O      : std_logic;
+   signal dummy    : std_logic;
+   signal I0       : std_logic;
+   signal I1       : std_logic;
+   signal I2       : std_logic;
+   signal I3       : std_logic;
+   signal CO_DUMMY : std_logic;
+   component MUXCY_L
+      port ( CI : in    std_logic; 
+             DI : in    std_logic; 
+             S  : in    std_logic; 
+             LO : out   std_logic);
+   end component;
+   attribute BOX_TYPE of MUXCY_L : component is "BLACK_BOX";
+   
+   component MUXCY
+      port ( CI : in    std_logic; 
+             DI : in    std_logic; 
+             S  : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of MUXCY : component is "BLACK_BOX";
+   
+   component MUXCY_D
+      port ( CI : in    std_logic; 
+             DI : in    std_logic; 
+             S  : in    std_logic; 
+             LO : out   std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of MUXCY_D : component is "BLACK_BOX";
+   
+   component XORCY
+      port ( CI : in    std_logic; 
+             LI : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of XORCY : component is "BLACK_BOX";
+   
+   component FMAP
+      port ( I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             I3 : in    std_logic; 
+             I4 : in    std_logic; 
+             O  : in    std_logic);
+   end component;
+   attribute BOX_TYPE of FMAP : component is "BLACK_BOX";
+   
+   component XOR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of XOR2 : component is "BLACK_BOX";
+   
+   attribute RLOC of I_36_55 : label is "X0Y0";
+   attribute RLOC of I_36_58 : label is "X0Y1";
+   attribute RLOC of I_36_62 : label is "X0Y1";
+   attribute RLOC of I_36_111 : label is "X0Y0";
+   attribute RLOC of I_36_175 : label is "X0Y0";
+   attribute RLOC of I_36_178 : label is "X0Y0";
+   attribute RLOC of I_36_182 : label is "X0Y1";
+   attribute RLOC of I_36_206 : label is "X0Y1";
+begin
+   CO <= CO_DUMMY;
+   I_36_55 : MUXCY_L
+      port map (CI=>C0,
+                DI=>A1,
+                S=>I1,
+                LO=>C1);
+   
+   I_36_58 : MUXCY
+      port map (CI=>C2,
+                DI=>A3,
+                S=>I3,
+                O=>CO_DUMMY);
+   
+   I_36_62 : MUXCY_D
+      port map (CI=>C1,
+                DI=>A2,
+                S=>I2,
+                LO=>C2,
+                O=>C2O);
+   
+   I_36_73 : XORCY
+      port map (CI=>CI,
+                LI=>I0,
+                O=>S0);
+   
+   I_36_74 : XORCY
+      port map (CI=>C0,
+                LI=>I1,
+                O=>S1);
+   
+   I_36_75 : XORCY
+      port map (CI=>C2,
+                LI=>I3,
+                O=>S3);
+   
+   I_36_76 : XORCY
+      port map (CI=>C1,
+                LI=>I2,
+                O=>S2);
+   
+   I_36_111 : MUXCY_L
+      port map (CI=>CI,
+                DI=>A0,
+                S=>I0,
+                LO=>C0);
+   
+   I_36_175 : FMAP
+      port map (I1=>A1,
+                I2=>B1,
+                I3=>dummy,
+                I4=>dummy,
+                O=>I1);
+   
+   I_36_178 : FMAP
+      port map (I1=>A0,
+                I2=>B0,
+                I3=>dummy,
+                I4=>dummy,
+                O=>I0);
+   
+   I_36_182 : FMAP
+      port map (I1=>A2,
+                I2=>B2,
+                I3=>dummy,
+                I4=>dummy,
+                O=>I2);
+   
+   I_36_206 : FMAP
+      port map (I1=>A3,
+                I2=>B3,
+                I3=>dummy,
+                I4=>dummy,
+                O=>I3);
+   
+   I_36_239 : XOR2
+      port map (I0=>A0,
+                I1=>B0,
+                O=>I0);
+   
+   I_36_240 : XOR2
+      port map (I0=>A1,
+                I1=>B1,
+                O=>I1);
+   
+   I_36_241 : XOR2
+      port map (I0=>A2,
+                I1=>B2,
+                O=>I2);
+   
+   I_36_242 : XOR2
+      port map (I0=>A3,
+                I1=>B3,
+                O=>I3);
+   
+   I_36_259 : XOR2
+      port map (I0=>C2O,
+                I1=>CO_DUMMY,
+                O=>OFL);
+   
+end BEHAVIORAL;
+
+
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -767,203 +964,6 @@ begin
    
    I_36_239 : XOR2
       port map (I0=>C6O,
-                I1=>CO_DUMMY,
-                O=>OFL);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity ADD4_MXILINX_ppm is
-   port ( A0  : in    std_logic; 
-          A1  : in    std_logic; 
-          A2  : in    std_logic; 
-          A3  : in    std_logic; 
-          B0  : in    std_logic; 
-          B1  : in    std_logic; 
-          B2  : in    std_logic; 
-          B3  : in    std_logic; 
-          CI  : in    std_logic; 
-          CO  : out   std_logic; 
-          OFL : out   std_logic; 
-          S0  : out   std_logic; 
-          S1  : out   std_logic; 
-          S2  : out   std_logic; 
-          S3  : out   std_logic);
-end ADD4_MXILINX_ppm;
-
-architecture BEHAVIORAL of ADD4_MXILINX_ppm is
-   attribute BOX_TYPE   : string ;
-   attribute RLOC       : string ;
-   signal C0       : std_logic;
-   signal C1       : std_logic;
-   signal C2       : std_logic;
-   signal C2O      : std_logic;
-   signal dummy    : std_logic;
-   signal I0       : std_logic;
-   signal I1       : std_logic;
-   signal I2       : std_logic;
-   signal I3       : std_logic;
-   signal CO_DUMMY : std_logic;
-   component MUXCY_L
-      port ( CI : in    std_logic; 
-             DI : in    std_logic; 
-             S  : in    std_logic; 
-             LO : out   std_logic);
-   end component;
-   attribute BOX_TYPE of MUXCY_L : component is "BLACK_BOX";
-   
-   component MUXCY
-      port ( CI : in    std_logic; 
-             DI : in    std_logic; 
-             S  : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of MUXCY : component is "BLACK_BOX";
-   
-   component MUXCY_D
-      port ( CI : in    std_logic; 
-             DI : in    std_logic; 
-             S  : in    std_logic; 
-             LO : out   std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of MUXCY_D : component is "BLACK_BOX";
-   
-   component XORCY
-      port ( CI : in    std_logic; 
-             LI : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of XORCY : component is "BLACK_BOX";
-   
-   component FMAP
-      port ( I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             I4 : in    std_logic; 
-             O  : in    std_logic);
-   end component;
-   attribute BOX_TYPE of FMAP : component is "BLACK_BOX";
-   
-   component XOR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of XOR2 : component is "BLACK_BOX";
-   
-   attribute RLOC of I_36_55 : label is "X0Y0";
-   attribute RLOC of I_36_58 : label is "X0Y1";
-   attribute RLOC of I_36_62 : label is "X0Y1";
-   attribute RLOC of I_36_111 : label is "X0Y0";
-   attribute RLOC of I_36_175 : label is "X0Y0";
-   attribute RLOC of I_36_178 : label is "X0Y0";
-   attribute RLOC of I_36_182 : label is "X0Y1";
-   attribute RLOC of I_36_206 : label is "X0Y1";
-begin
-   CO <= CO_DUMMY;
-   I_36_55 : MUXCY_L
-      port map (CI=>C0,
-                DI=>A1,
-                S=>I1,
-                LO=>C1);
-   
-   I_36_58 : MUXCY
-      port map (CI=>C2,
-                DI=>A3,
-                S=>I3,
-                O=>CO_DUMMY);
-   
-   I_36_62 : MUXCY_D
-      port map (CI=>C1,
-                DI=>A2,
-                S=>I2,
-                LO=>C2,
-                O=>C2O);
-   
-   I_36_73 : XORCY
-      port map (CI=>CI,
-                LI=>I0,
-                O=>S0);
-   
-   I_36_74 : XORCY
-      port map (CI=>C0,
-                LI=>I1,
-                O=>S1);
-   
-   I_36_75 : XORCY
-      port map (CI=>C2,
-                LI=>I3,
-                O=>S3);
-   
-   I_36_76 : XORCY
-      port map (CI=>C1,
-                LI=>I2,
-                O=>S2);
-   
-   I_36_111 : MUXCY_L
-      port map (CI=>CI,
-                DI=>A0,
-                S=>I0,
-                LO=>C0);
-   
-   I_36_175 : FMAP
-      port map (I1=>A1,
-                I2=>B1,
-                I3=>dummy,
-                I4=>dummy,
-                O=>I1);
-   
-   I_36_178 : FMAP
-      port map (I1=>A0,
-                I2=>B0,
-                I3=>dummy,
-                I4=>dummy,
-                O=>I0);
-   
-   I_36_182 : FMAP
-      port map (I1=>A2,
-                I2=>B2,
-                I3=>dummy,
-                I4=>dummy,
-                O=>I2);
-   
-   I_36_206 : FMAP
-      port map (I1=>A3,
-                I2=>B3,
-                I3=>dummy,
-                I4=>dummy,
-                O=>I3);
-   
-   I_36_239 : XOR2
-      port map (I0=>A0,
-                I1=>B0,
-                O=>I0);
-   
-   I_36_240 : XOR2
-      port map (I0=>A1,
-                I1=>B1,
-                O=>I1);
-   
-   I_36_241 : XOR2
-      port map (I0=>A2,
-                I1=>B2,
-                O=>I2);
-   
-   I_36_242 : XOR2
-      port map (I0=>A3,
-                I1=>B3,
-                O=>I3);
-   
-   I_36_259 : XOR2
-      port map (I0=>C2O,
                 I1=>CO_DUMMY,
                 O=>OFL);
    
@@ -2888,8 +2888,6 @@ architecture BEHAVIORAL of ppm is
    signal XLXN_11725       : std_logic;
    signal XLXN_11726       : std_logic;
    signal XLXN_11727       : std_logic;
-   signal XLXN_11734       : std_logic;
-   signal XLXN_11736       : std_logic;
    signal ZERODISP0        : std_logic;
    signal ZERODISP1        : std_logic;
    component OBUF
@@ -3364,6 +3362,7 @@ architecture BEHAVIORAL of ppm is
    attribute HU_SET of U302 : label is "U302_80";
    attribute HU_SET of U303 : label is "U303_79";
    attribute HU_SET of U305 : label is "U305_76";
+   attribute HU_SET of XLXI_1336 : label is "XLXI_1336_81";
 begin
    ADD_BUF : OBUF
       port map (I=>ADD,
@@ -5028,13 +5027,13 @@ begin
                 B2=>XLXN_11706,
                 B3=>XLXN_11707,
                 GT=>open,
-                LT=>XLXN_11734);
+                LT=>LRGDISPPOS1);
    
    U303 : M2_1_MXILINX_ppm
       port map (D0=>P1LRGDISP,
                 D1=>P3LRGDISP,
                 S0=>LRGDISPPOS1,
-                O=>XLXN_11736);
+                O=>LRGDISPPOS0);
    
    U304 : u74_157_MUSER_ppm
       port map (A1=>LRGDISPPOS0,
@@ -5257,13 +5256,22 @@ begin
    XLXI_1333 : VCC
       port map (P=>P2PLAYED);
    
-   XLXI_1334 : INV
-      port map (I=>XLXN_11734,
-                O=>LRGDISPPOS1);
-   
-   XLXI_1335 : INV
-      port map (I=>XLXN_11736,
-                O=>LRGDISPPOS0);
+   XLXI_1336 : ADD4_MXILINX_ppm
+      port map (A0=>RD0,
+                A1=>RD1,
+                A2=>RD2,
+                A3=>XLXN_11629,
+                B0=>DISP12,
+                B1=>DISP13,
+                B2=>DISP14,
+                B3=>XLXN_11629,
+                CI=>XLXN_11629,
+                CO=>open,
+                OFL=>open,
+                S0=>NPDISP12,
+                S1=>NPDISP13,
+                S2=>NPDISP14,
+                S3=>C3);
    
 end BEHAVIORAL;
 

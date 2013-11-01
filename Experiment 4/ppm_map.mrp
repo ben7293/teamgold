@@ -9,7 +9,7 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.52.76.2 $
-Mapped Date    : Fri Nov  1 13:13:51 2013
+Mapped Date    : Fri Nov  1 13:18:54 2013
 
 Design Summary
 --------------
@@ -17,19 +17,19 @@ Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
   Number of Slice Flip Flops:           105 out of   9,312    1%
-  Number of 4 input LUTs:               298 out of   9,312    3%
+  Number of 4 input LUTs:               303 out of   9,312    3%
 Logic Distribution:
-  Number of occupied Slices:            196 out of   4,656    4%
-    Number of Slices containing only related logic:     196 out of     196 100%
-    Number of Slices containing unrelated logic:          0 out of     196   0%
+  Number of occupied Slices:            199 out of   4,656    4%
+    Number of Slices containing only related logic:     199 out of     199 100%
+    Number of Slices containing unrelated logic:          0 out of     199   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         298 out of   9,312    3%
+  Total Number of 4 input LUTs:         303 out of   9,312    3%
   Number of bonded IOBs:                 32 out of     232   13%
     IOB Flip Flops:                       1
   Number of BUFGMUXs:                     4 out of      24   16%
 
-  Number of RPM macros:           35
-Average Fanout of Non-Clock Nets:                2.97
+  Number of RPM macros:           36
+Average Fanout of Non-Clock Nets:                2.95
 
 Peak Memory Usage:  380 MB
 Total REAL time to MAP completion:  1 secs 
@@ -78,13 +78,13 @@ Section 2 - Warnings
 Section 3 - Informational
 -------------------------
 INFO:LIT:243 - Logical network U65/D7 has no load.
-INFO:LIT:395 - The above info message is repeated 17 more times for the
+INFO:LIT:395 - The above info message is repeated 18 more times for the
    following (max. 5 shown):
    U119/CEO,
+   XLXI_1336/OFL,
    U171/OFL,
    U171/S2,
-   U171/S3,
-   U151/OFL
+   U171/S3
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -93,9 +93,9 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-  80 block(s) removed
-  82 block(s) optimized away
-  78 signal(s) removed
+  83 block(s) removed
+  76 block(s) optimized away
+  81 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -116,6 +116,10 @@ The signal "U65/D7" is sourceless and has been removed.
 The signal "U119/CEO" is sourceless and has been removed.
 The signal "U119/TC" is sourceless and has been removed.
  Sourceless block "U119/I_36_99" (AND) removed.
+The signal "XLXI_1336/CO" is sourceless and has been removed.
+ Sourceless block "XLXI_1336/I_36_259" (XOR) removed.
+  The signal "XLXI_1336/OFL" is sourceless and has been removed.
+The signal "XLXI_1336/dummy" is sourceless and has been removed.
 The signal "U171/C2O" is sourceless and has been removed.
  Sourceless block "U171/I_36_259" (XOR) removed.
   The signal "U171/OFL" is sourceless and has been removed.
@@ -267,7 +271,9 @@ Unused block "U65/I_36_30" (AND) removed.
 Unused block "U66/I_36_22" (AND) removed.
 Unused block "U67/I_36_14" (AND) removed.
 Unused block "U86/I_36_37" (AND) removed.
+Unused block "XLXI_1336/XST_GND" (ZERO) removed.
 Unused block "U171/I_36_55" (MUX) removed.
+Unused block "XLXI_1336/I_36_58" (MUX) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
@@ -284,7 +290,6 @@ OR2 		U155/I_M01/I_36_38
 AND2B1 		U156/XLXI_1/I_36_7
 OR2 		U156/XLXI_1/I_36_8
 AND2 		U156/XLXI_1/I_36_9
-AND2 		U156/XLXI_2/I_36_9
 AND2B1 		U156/XLXI_3/I_36_7
 OR2 		U156/XLXI_3/I_36_8
 AND2 		U156/XLXI_3/I_36_9
@@ -295,11 +300,9 @@ INV 		U156/XLXI_8
 AND2B1 		U157/XLXI_1/I_36_7
 OR2 		U157/XLXI_1/I_36_8
 AND2 		U157/XLXI_1/I_36_9
-AND2 		U157/XLXI_2/I_36_9
 AND2B1 		U157/XLXI_3/I_36_7
 OR2 		U157/XLXI_3/I_36_8
 AND2 		U157/XLXI_3/I_36_9
-AND2 		U157/XLXI_4/I_36_9
 AND3B1 		U157/XLXI_5/I_36_31
 AND3B1 		U157/XLXI_6/I_36_31
 INV 		U157/XLXI_7
@@ -320,10 +323,6 @@ INV 		U174/XLXI_7
 INV 		U174/XLXI_8
 INV 		U178/XLXI_118
 INV 		U179/XLXI_118
-AND3B2 		U279
-AND3 		U282
-AND2 		U284
-AND2 		U286
 INV 		U300/XLXI_118
 INV 		U301/XLXI_118
 INV 		U304/XLXI_118
@@ -353,6 +352,7 @@ INV 		U85/XLXI_8
 VCC 		U86/I_36_47
 GND 		XLXI_1331
 VCC 		XLXI_1333
+XOR2 		XLXI_1336/I_36_242
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.
@@ -435,6 +435,7 @@ U67/U67_I_Q6_17
 U67/U67_I_Q7_16                         
 U86/U86_I_Q0_28                         
 U86/U86_I_Q1_29                         
+XLXI_1336_81                            
 
 Section 8 - Guide Report
 ------------------------

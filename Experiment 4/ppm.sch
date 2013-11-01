@@ -3054,7 +3054,7 @@
             <blockpin signalname="P1LRGDISP" name="D0" />
             <blockpin signalname="P3LRGDISP" name="D1" />
             <blockpin signalname="LRGDISPPOS1" name="S0" />
-            <blockpin signalname="XLXN_11736" name="O" />
+            <blockpin signalname="LRGDISPPOS0" name="O" />
         </block>
         <block symbolname="u74_157" name="U304">
             <blockpin signalname="APOSZERO" name="S" />
@@ -3101,7 +3101,7 @@
             <blockpin signalname="XLXN_11706" name="B2" />
             <blockpin signalname="XLXN_11707" name="B3" />
             <blockpin name="GT" />
-            <blockpin signalname="XLXN_11734" name="LT" />
+            <blockpin signalname="LRGDISPPOS1" name="LT" />
         </block>
         <block symbolname="gnd" name="XLXI_1328">
             <blockpin signalname="XLXN_11725" name="G" />
@@ -3135,13 +3135,22 @@
         <block symbolname="vcc" name="XLXI_1333">
             <blockpin signalname="P2PLAYED" name="P" />
         </block>
-        <block symbolname="inv" name="XLXI_1334">
-            <blockpin signalname="XLXN_11734" name="I" />
-            <blockpin signalname="LRGDISPPOS1" name="O" />
-        </block>
-        <block symbolname="inv" name="XLXI_1335">
-            <blockpin signalname="XLXN_11736" name="I" />
-            <blockpin signalname="LRGDISPPOS0" name="O" />
+        <block symbolname="add4" name="XLXI_1336">
+            <blockpin signalname="RD0" name="A0" />
+            <blockpin signalname="RD1" name="A1" />
+            <blockpin signalname="RD2" name="A2" />
+            <blockpin signalname="XLXN_11629" name="A3" />
+            <blockpin signalname="DISP12" name="B0" />
+            <blockpin signalname="DISP13" name="B1" />
+            <blockpin signalname="DISP14" name="B2" />
+            <blockpin signalname="XLXN_11629" name="B3" />
+            <blockpin signalname="XLXN_11629" name="CI" />
+            <blockpin name="CO" />
+            <blockpin name="OFL" />
+            <blockpin signalname="NPDISP12" name="S0" />
+            <blockpin signalname="NPDISP13" name="S1" />
+            <blockpin signalname="NPDISP14" name="S2" />
+            <blockpin signalname="C3" name="S3" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -6374,6 +6383,7 @@
             <wire x2="3296" y1="3808" y2="3808" x1="3056" />
             <wire x2="3056" y1="3808" y2="3888" x1="3056" />
         </branch>
+        <instance x="2224" y="3984" name="XLXI_1336" orien="R90" />
     </sheet>
     <sheet sheetnum="4" width="7040" height="5440">
         <branch name="RDC3">
@@ -8870,23 +8880,19 @@
         </branch>
         <instance x="4608" y="1904" name="XLXI_1332" orien="R0" />
         <instance x="4432" y="2112" name="XLXI_1333" orien="R270" />
-        <instance x="3008" y="3152" name="XLXI_1334" orien="R0" />
-        <branch name="XLXN_11734">
+        <branch name="LRGDISPPOS1">
+            <attrtext style="alignment:SOFT-BCENTER" attrname="Name" x="3339" y="3120" type="branch" />
             <wire x2="2944" y1="3040" y2="3040" x1="2896" />
             <wire x2="2944" y1="3040" y2="3120" x1="2944" />
             <wire x2="3008" y1="3120" y2="3120" x1="2944" />
-        </branch>
-        <branch name="LRGDISPPOS1">
-            <attrtext style="alignment:SOFT-BCENTER" attrname="Name" x="3339" y="3120" type="branch" />
+            <wire x2="3232" y1="3120" y2="3120" x1="3008" />
             <wire x2="3339" y1="3120" y2="3120" x1="3232" />
             <wire x2="3360" y1="3120" y2="3120" x1="3339" />
         </branch>
-        <branch name="XLXN_11736">
-            <wire x2="2752" y1="3968" y2="3968" x1="2720" />
-        </branch>
-        <instance x="2752" y="4000" name="XLXI_1335" orien="R0" />
         <branch name="LRGDISPPOS0">
             <attrtext style="alignment:SOFT-BCENTER" attrname="Name" x="3054" y="3968" type="branch" />
+            <wire x2="2752" y1="3968" y2="3968" x1="2720" />
+            <wire x2="2976" y1="3968" y2="3968" x1="2752" />
             <wire x2="3054" y1="3968" y2="3968" x1="2976" />
             <wire x2="3136" y1="3968" y2="3968" x1="3054" />
         </branch>
