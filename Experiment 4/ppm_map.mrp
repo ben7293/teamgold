@@ -1,4 +1,4 @@
-Release 12.4 Map M.81d (nt64)
+Release 12.4 Map M.81d (lin64)
 Xilinx Mapping Report File for Design 'ppm'
 
 Design Information
@@ -9,7 +9,7 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.52.76.2 $
-Mapped Date    : Fri Oct 25 16:42:10 2013
+Mapped Date    : Fri Nov  1 12:39:14 2013
 
 Design Summary
 --------------
@@ -17,21 +17,21 @@ Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
   Number of Slice Flip Flops:           105 out of   9,312    1%
-  Number of 4 input LUTs:               290 out of   9,312    3%
+  Number of 4 input LUTs:               298 out of   9,312    3%
 Logic Distribution:
-  Number of occupied Slices:            195 out of   4,656    4%
-    Number of Slices containing only related logic:     195 out of     195 100%
-    Number of Slices containing unrelated logic:          0 out of     195   0%
+  Number of occupied Slices:            197 out of   4,656    4%
+    Number of Slices containing only related logic:     197 out of     197 100%
+    Number of Slices containing unrelated logic:          0 out of     197   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         290 out of   9,312    3%
+  Total Number of 4 input LUTs:         298 out of   9,312    3%
   Number of bonded IOBs:                 32 out of     232   13%
     IOB Flip Flops:                       1
   Number of BUFGMUXs:                     4 out of      24   16%
 
-  Number of RPM macros:           38
-Average Fanout of Non-Clock Nets:                2.89
+  Number of RPM macros:           35
+Average Fanout of Non-Clock Nets:                2.98
 
-Peak Memory Usage:  237 MB
+Peak Memory Usage:  380 MB
 Total REAL time to MAP completion:  1 secs 
 Total CPU time to MAP completion:   1 secs 
 
@@ -78,13 +78,13 @@ Section 2 - Warnings
 Section 3 - Informational
 -------------------------
 INFO:LIT:243 - Logical network U65/D7 has no load.
-INFO:LIT:395 - The above info message is repeated 15 more times for the
+INFO:LIT:395 - The above info message is repeated 17 more times for the
    following (max. 5 shown):
    U119/CEO,
-   U288/OFL,
    U171/OFL,
    U171/S2,
-   U171/S3
+   U171/S3,
+   U151/OFL
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -93,9 +93,9 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-  66 block(s) removed
-  54 block(s) optimized away
-  64 signal(s) removed
+  80 block(s) removed
+  82 block(s) optimized away
+  78 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -116,10 +116,6 @@ The signal "U65/D7" is sourceless and has been removed.
 The signal "U119/CEO" is sourceless and has been removed.
 The signal "U119/TC" is sourceless and has been removed.
  Sourceless block "U119/I_36_99" (AND) removed.
-The signal "U288/CO" is sourceless and has been removed.
- Sourceless block "U288/I_36_259" (XOR) removed.
-  The signal "U288/OFL" is sourceless and has been removed.
-The signal "U288/dummy" is sourceless and has been removed.
 The signal "U171/C2O" is sourceless and has been removed.
  Sourceless block "U171/I_36_259" (XOR) removed.
   The signal "U171/OFL" is sourceless and has been removed.
@@ -136,14 +132,42 @@ The signal "U171/dummy" is sourceless and has been removed.
 The signal "U171/I_36_55/O" is sourceless and has been removed.
 The signal "U151/OFL" is sourceless and has been removed.
 The signal "U151/dummy" is sourceless and has been removed.
-The signal "U149/OFL" is sourceless and has been removed.
-The signal "U149/dummy" is sourceless and has been removed.
-The signal "U148/OFL" is sourceless and has been removed.
-The signal "U148/dummy" is sourceless and has been removed.
+The signal "U304/XLXI_117/M0" is sourceless and has been removed.
+ Sourceless block "U304/XLXI_117/I_36_38" (OR) removed.
+  The signal "U304/XLXI_117/O" is sourceless and has been removed.
+The signal "U304/XLXI_117/M1" is sourceless and has been removed.
+The signal "U304/XLXI_116/M0" is sourceless and has been removed.
+ Sourceless block "U304/XLXI_116/I_36_38" (OR) removed.
+  The signal "U304/XLXI_116/O" is sourceless and has been removed.
+The signal "U304/XLXI_116/M1" is sourceless and has been removed.
 The signal "U182/OFL" is sourceless and has been removed.
 The signal "U182/dummy" is sourceless and has been removed.
 The signal "U181/OFL" is sourceless and has been removed.
 The signal "U181/dummy" is sourceless and has been removed.
+The signal "U302/GE0_1" is sourceless and has been removed.
+ Sourceless block "U302/I_36_18" (OR) removed.
+  The signal "U302/GT0_1" is sourceless and has been removed.
+   Sourceless block "U302/I_36_1" (AND) removed.
+    The signal "U302/GTA" is sourceless and has been removed.
+     Sourceless block "U302/I_36_12" (OR) removed.
+      The signal "U302/GT" is sourceless and has been removed.
+The signal "U302/GT_1" is sourceless and has been removed.
+The signal "U299/GE0_1" is sourceless and has been removed.
+ Sourceless block "U299/I_36_18" (OR) removed.
+  The signal "U299/GT0_1" is sourceless and has been removed.
+   Sourceless block "U299/I_36_1" (AND) removed.
+    The signal "U299/GTA" is sourceless and has been removed.
+     Sourceless block "U299/I_36_12" (OR) removed.
+      The signal "U299/GT" is sourceless and has been removed.
+The signal "U299/GT_1" is sourceless and has been removed.
+The signal "U298/GE0_1" is sourceless and has been removed.
+ Sourceless block "U298/I_36_18" (OR) removed.
+  The signal "U298/GT0_1" is sourceless and has been removed.
+   Sourceless block "U298/I_36_1" (AND) removed.
+    The signal "U298/GTA" is sourceless and has been removed.
+     Sourceless block "U298/I_36_12" (OR) removed.
+      The signal "U298/GT" is sourceless and has been removed.
+The signal "U298/GT_1" is sourceless and has been removed.
 The signal "U86/CEO" is sourceless and has been removed.
 The signal "U86/TC" is sourceless and has been removed.
  Sourceless block "U86/I_36_52" (AND) removed.
@@ -217,10 +241,6 @@ The signal "U64/Q3" is sourceless and has been removed.
 The signal "U64/T3" is sourceless and has been removed.
 The signal "U64/I_Q3/I_36_30/M1" is sourceless and has been removed.
 Unused block "U119/I_36_105" (AND) removed.
-Unused block "U148/I_36_259" (XOR) removed.
-Unused block "U148/XST_GND" (ZERO) removed.
-Unused block "U149/I_36_259" (XOR) removed.
-Unused block "U149/XST_GND" (ZERO) removed.
 Unused block "U151/I_36_259" (XOR) removed.
 Unused block "U151/XST_GND" (ZERO) removed.
 Unused block "U171/I_36_241" (XOR) removed.
@@ -230,7 +250,16 @@ Unused block "U181/I_36_239" (XOR) removed.
 Unused block "U181/XST_GND" (ZERO) removed.
 Unused block "U182/I_36_239" (XOR) removed.
 Unused block "U182/XST_GND" (ZERO) removed.
-Unused block "U288/XST_GND" (ZERO) removed.
+Unused block "U298/I_36_16" (AND) removed.
+Unused block "U298/I_36_9" (AND) removed.
+Unused block "U299/I_36_16" (AND) removed.
+Unused block "U299/I_36_9" (AND) removed.
+Unused block "U302/I_36_16" (AND) removed.
+Unused block "U302/I_36_9" (AND) removed.
+Unused block "U304/XLXI_116/I_36_30" (AND) removed.
+Unused block "U304/XLXI_116/I_36_31" (AND) removed.
+Unused block "U304/XLXI_117/I_36_30" (AND) removed.
+Unused block "U304/XLXI_117/I_36_31" (AND) removed.
 Unused block "U6/I_36_52" (AND) removed.
 Unused block "U64/I_36_99" (AND) removed.
 Unused block "U64/I_Q3/I_36_30/I_36_9" (AND) removed.
@@ -239,7 +268,6 @@ Unused block "U66/I_36_22" (AND) removed.
 Unused block "U67/I_36_14" (AND) removed.
 Unused block "U86/I_36_37" (AND) removed.
 Unused block "U171/I_36_55" (MUX) removed.
-Unused block "U288/I_36_58" (MUX) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
@@ -250,8 +278,30 @@ AND3B1 		U112/I_M67/I_36_31
 OR2 		U112/I_M67/I_36_38
 INV 		U125/XLXI_118
 INV 		U152/XLXI_118
+AND3 		U155/I_M01/I_36_30
+AND3B1 		U155/I_M01/I_36_31
+OR2 		U155/I_M01/I_36_38
+AND2B1 		U156/XLXI_1/I_36_7
+OR2 		U156/XLXI_1/I_36_8
+AND2 		U156/XLXI_1/I_36_9
+AND2 		U156/XLXI_2/I_36_9
+AND2B1 		U156/XLXI_3/I_36_7
+OR2 		U156/XLXI_3/I_36_8
+AND2 		U156/XLXI_3/I_36_9
+AND3B1 		U156/XLXI_5/I_36_31
+AND3B1 		U156/XLXI_6/I_36_31
 INV 		U156/XLXI_7
 INV 		U156/XLXI_8
+AND2B1 		U157/XLXI_1/I_36_7
+OR2 		U157/XLXI_1/I_36_8
+AND2 		U157/XLXI_1/I_36_9
+AND2 		U157/XLXI_2/I_36_9
+AND2B1 		U157/XLXI_3/I_36_7
+OR2 		U157/XLXI_3/I_36_8
+AND2 		U157/XLXI_3/I_36_9
+AND2 		U157/XLXI_4/I_36_9
+AND3B1 		U157/XLXI_5/I_36_31
+AND3B1 		U157/XLXI_6/I_36_31
 INV 		U157/XLXI_7
 INV 		U157/XLXI_8
 INV 		U158/XLXI_118
@@ -271,8 +321,14 @@ INV 		U174/XLXI_8
 INV 		U178/XLXI_118
 INV 		U179/XLXI_118
 AND2 		U26
-XOR2 		U288/I_36_242
+AND3B2 		U279
+AND3 		U282
+AND2 		U284
+AND2 		U286
 AND2 		U30
+INV 		U300/XLXI_118
+INV 		U301/XLXI_118
+INV 		U304/XLXI_118
 VCC 		U6/I_36_47
 VCC 		U64/I_36_59
 VCC 		U66/I_36_9
@@ -295,8 +351,8 @@ AND2 		U85/XLXI_4/I_36_9
 INV 		U85/XLXI_7
 INV 		U85/XLXI_8
 VCC 		U86/I_36_47
-GND 		XLXI_1309
 VCC 		XLXI_1311
+GND 		XLXI_1330
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.
@@ -344,13 +400,10 @@ Section 6 - IOB Properties
 
 Section 7 - RPMs
 ----------------
-U148_65                                 
-U149_64                                 
 U151_63                                 
-U171_72                                 
-U181_74                                 
-U182_73                                 
-U288_78                                 
+U171_70                                 
+U181_72                                 
+U182_71                                 
 U6/U6_I_Q0_28                           
 U6/U6_I_Q1_29                           
 U64/U64_I_Q0_31                         

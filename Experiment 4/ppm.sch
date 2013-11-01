@@ -2966,8 +2966,8 @@
             <blockpin signalname="P2ADD" name="G" />
         </block>
         <block symbolname="d2_4e" name="U305">
-            <blockpin signalname="P2POSSEL0" name="A0" />
-            <blockpin signalname="P2POSSEL1" name="A1" />
+            <blockpin signalname="P2POSSEL1" name="A0" />
+            <blockpin signalname="P2POSSEL0" name="A1" />
             <blockpin signalname="XLXN_11578" name="E" />
             <blockpin signalname="P2SEL3" name="D0" />
             <blockpin signalname="P2SEL2" name="D1" />
@@ -8868,11 +8868,11 @@
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1184" y="3536" type="branch" />
             <wire x2="1184" y1="3536" y2="3536" x1="1104" />
         </branch>
-        <branch name="P2POSSEL0">
+        <branch name="P2POSSEL1">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4288" y="1424" type="branch" />
             <wire x2="4464" y1="1424" y2="1424" x1="4288" />
         </branch>
-        <branch name="P2POSSEL1">
+        <branch name="P2POSSEL0">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4288" y="1488" type="branch" />
             <wire x2="4464" y1="1488" y2="1488" x1="4288" />
         </branch>

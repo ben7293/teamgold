@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<document OS="nt64" product="ISE" version="12.4">
+<document OS="lin64" product="ISE" version="12.4">
 
   <!--The data in this file is primarily intended for consumption by Xilinx tools.
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Fri Oct 25 16:42:12 2013">
+  <application stringID="Map" timeStamp="Fri Nov  1 12:39:15 2013">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
-          <item stringID="variable" value="Path"/>
-          <item stringID="value" value="C:\Xilinx\12.4\ISE_DS\ISE\\lib\nt64;C:\Xilinx\12.4\ISE_DS\ISE\\bin\nt64;C:\Xilinx\12.4\ISE_DS\PlanAhead\bin;C:\Xilinx\12.4\ISE_DS\ISE\bin\nt64;C:\Xilinx\12.4\ISE_DS\ISE\lib\nt64;C:\Xilinx\12.4\ISE_DS\EDK\bin\nt64;C:\Xilinx\12.4\ISE_DS\EDK\lib\nt64;C:\Xilinx\12.4\ISE_DS\common\bin\nt64;C:\Xilinx\12.4\ISE_DS\common\lib\nt64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\PharosSystems\Core;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\"/>
+          <item stringID="variable" value="XILINX_DSP"/>
+          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/ISE"/>
         </row>
         <row stringID="row" value="1">
-          <item stringID="variable" value="PATHEXT"/>
-          <item stringID="value" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
+          <item stringID="variable" value="LD_LIBRARY_PATH"/>
+          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/ISE//lib/lin64:/opt/Xilinx/12.4/ISE_DS/common/lib/lin64:/opt/Xilinx/12.4/ISE_DS/ISE/lib/lin64:/opt/Xilinx/12.4/ISE_DS/EDK/lib/lin64"/>
         </row>
         <row stringID="row" value="2">
-          <item stringID="variable" value="XILINX"/>
-          <item stringID="value" value="C:\Xilinx\12.4\ISE_DS\ISE\"/>
+          <item stringID="variable" value="XILINX_EDK"/>
+          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/EDK"/>
         </row>
         <row stringID="row" value="3">
-          <item stringID="variable" value="XILINX_DSP"/>
-          <item stringID="value" value="C:\Xilinx\12.4\ISE_DS\ISE"/>
+          <item stringID="variable" value="PATH"/>
+          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/ISE//bin/lin64:/opt/Xilinx/12.4/ISE_DS/common/bin/lin64:/opt/Xilinx/12.4/ISE_DS/PlanAhead/bin:/opt/Xilinx/12.4/ISE_DS/ISE/bin/lin64:/opt/Xilinx/12.4/ISE_DS/ISE/sysgen/util:/opt/Xilinx/12.4/ISE_DS/EDK/bin/lin64:/home/atomic/.rvm/gems/ruby-1.9.3-p194/bin:/home/atomic/.rvm/gems/ruby-1.9.3-p194@global/bin:/home/atomic/.rvm/rubies/ruby-1.9.3-p194/bin:/home/atomic/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"/>
         </row>
         <row stringID="row" value="4">
-          <item stringID="variable" value="XILINX_EDK"/>
-          <item stringID="value" value="C:\Xilinx\12.4\ISE_DS\EDK"/>
+          <item stringID="variable" value="XILINX_PLANAHEAD"/>
+          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/PlanAhead"/>
         </row>
         <row stringID="row" value="5">
-          <item stringID="variable" value="XILINX_PLANAHEAD"/>
-          <item stringID="value" value="C:\Xilinx\12.4\ISE_DS\PlanAhead"/>
+          <item stringID="variable" value="XILINX"/>
+          <item stringID="value" value="/opt/Xilinx/12.4/ISE_DS/ISE/"/>
         </row>
       </table>
       <item stringID="User_EnvOs" value="OS Information">
-        <item stringID="User_EnvOsname" value="Microsoft "/>
-        <item stringID="User_EnvOsrelease" value="Service Pack 1  (build 7601)"/>
+        <item stringID="User_EnvOsname" value="LinuxMint"/>
+        <item stringID="User_EnvOsrelease" value="Linux Mint 15 Olivia"/>
       </item>
-      <item stringID="User_EnvHost" value="Benson-HP"/>
+      <item stringID="User_EnvHost" value="AtomicLinux"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Core(TM) i5-3317U CPU @ 1.70GHz"/>
-          <item stringID="speed" value="1696 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM) i7-3612QM CPU @ 2.10GHz"/>
+          <item stringID="speed" value="1200.000 MHz"/>
         </row>
       </table>
     </section>
@@ -69,7 +69,7 @@
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="0"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="242544"/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="389100"/>
         <item stringID="MAP_TOTAL_REAL_TIME" value="1 secs "/>
         <item stringID="MAP_TOTAL_CPU_TIME" value="1 secs "/>
       </section>
@@ -82,8 +82,8 @@
         <item dataType="int" stringID="MAP_LUTS_PER_SLICE" value="2"/>
         <item AVAILABLE="2328" dataType="int" stringID="MAP_NUM_SLICEM" value="0"/>
         <item AVAILABLE="2328" dataType="int" stringID="MAP_NUM_SLICEL" value="0"/>
-        <item dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="290"/>
-        <item dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="195"/>
+        <item dataType="int" label="Number of 4 input LUTs" stringID="MAP_NUM_4_INPUT_LUT" value="298"/>
+        <item dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="197"/>
         <item dataType="int" label="Number of Slices containing unrelated logic" stringID="MAP_NUM_SLICE_UNRELATED" value="0"/>
       </section>
       <section stringID="MAP_IOB_REPORTING">
@@ -119,7 +119,7 @@
       </section>
       <section stringID="MAP_MACRO_RPM_REPORTING">
         <item dataType="int" stringID="MAP_HARD_MACROS" value="0"/>
-        <item dataType="int" stringID="MAP_RPMS" value="38"/>
+        <item dataType="int" stringID="MAP_RPMS" value="35"/>
       </section>
       <section stringID="MAP_IOB_PROPERTIES">
         <table stringID="MAP_IOB_TABLE">

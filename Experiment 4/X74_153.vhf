@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : X74_153.vhf
--- /___/   /\     Timestamp : 10/04/2013 13:41:49
+-- /___/   /\     Timestamp : 11/01/2013 12:38:15
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "S:/CS2204/Lab 5 - Exp1_2/Ppm/X74_153.vhf" -w "S:/CS2204/Lab 5 - Exp1_2/Ppm/X74_153.sch"
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "/home/atomic/Documents/Code/TeamGold/Experiment 4/X74_153.vhf" -w "/home/atomic/Documents/Code/TeamGold/Experiment 4/X74_153.sch"
 --Design Name: X74_153
 --Device: spartan3e
 --Purpose:
@@ -193,12 +193,12 @@ architecture BEHAVIORAL of X74_153 is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_0";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_1";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_2";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_3";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_4";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_5";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_85";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_86";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_87";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_88";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_89";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_90";
 begin
    XLXI_1 : M2_1_MXILINX_X74_153
       port map (D0=>I1C0,

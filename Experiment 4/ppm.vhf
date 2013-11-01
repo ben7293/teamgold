@@ -7,17 +7,405 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ppm.vhf
--- /___/   /\     Timestamp : 10/25/2013 16:41:51
+-- /___/   /\     Timestamp : 11/01/2013 12:38:14
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" -w "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.sch"
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.vhf" -w "/home/atomic/Documents/Code/TeamGold/Experiment 4/ppm.sch"
 --Design Name: ppm
 --Device: spartan3e
 --Purpose:
 --    This vhdl netlist is translated from an ECS schematic. It can be 
 --    synthesized and simulated, but it should not be modified. 
 --
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity M2_1E_MXILINX_ppm is
+   port ( D0 : in    std_logic; 
+          D1 : in    std_logic; 
+          E  : in    std_logic; 
+          S0 : in    std_logic; 
+          O  : out   std_logic);
+end M2_1E_MXILINX_ppm;
+
+architecture BEHAVIORAL of M2_1E_MXILINX_ppm is
+   attribute BOX_TYPE   : string ;
+   signal M0 : std_logic;
+   signal M1 : std_logic;
+   component AND3
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND3 : component is "BLACK_BOX";
+   
+   component AND3B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND3B1 : component is "BLACK_BOX";
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+begin
+   I_36_30 : AND3
+      port map (I0=>D1,
+                I1=>E,
+                I2=>S0,
+                O=>M1);
+   
+   I_36_31 : AND3B1
+      port map (I0=>S0,
+                I1=>E,
+                I2=>D0,
+                O=>M0);
+   
+   I_36_38 : OR2
+      port map (I0=>M1,
+                I1=>M0,
+                O=>O);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity u74_157_MUSER_ppm is
+   port ( A1 : in    std_logic; 
+          A2 : in    std_logic; 
+          A3 : in    std_logic; 
+          A4 : in    std_logic; 
+          B1 : in    std_logic; 
+          B2 : in    std_logic; 
+          B3 : in    std_logic; 
+          B4 : in    std_logic; 
+          G  : in    std_logic; 
+          S  : in    std_logic; 
+          Y1 : out   std_logic; 
+          Y2 : out   std_logic; 
+          Y3 : out   std_logic; 
+          Y4 : out   std_logic);
+end u74_157_MUSER_ppm;
+
+architecture BEHAVIORAL of u74_157_MUSER_ppm is
+   attribute HU_SET     : string ;
+   attribute BOX_TYPE   : string ;
+   signal XLXN_196 : std_logic;
+   component M2_1E_MXILINX_ppm
+      port ( D0 : in    std_logic; 
+             D1 : in    std_logic; 
+             E  : in    std_logic; 
+             S0 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   
+   component INV
+      port ( I : in    std_logic; 
+             O : out   std_logic);
+   end component;
+   attribute BOX_TYPE of INV : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_114 : label is "XLXI_114_0";
+   attribute HU_SET of XLXI_115 : label is "XLXI_115_1";
+   attribute HU_SET of XLXI_116 : label is "XLXI_116_2";
+   attribute HU_SET of XLXI_117 : label is "XLXI_117_3";
+begin
+   XLXI_114 : M2_1E_MXILINX_ppm
+      port map (D0=>A1,
+                D1=>B1,
+                E=>XLXN_196,
+                S0=>S,
+                O=>Y1);
+   
+   XLXI_115 : M2_1E_MXILINX_ppm
+      port map (D0=>A2,
+                D1=>B2,
+                E=>XLXN_196,
+                S0=>S,
+                O=>Y2);
+   
+   XLXI_116 : M2_1E_MXILINX_ppm
+      port map (D0=>A3,
+                D1=>B3,
+                E=>XLXN_196,
+                S0=>S,
+                O=>Y3);
+   
+   XLXI_117 : M2_1E_MXILINX_ppm
+      port map (D0=>A4,
+                D1=>B4,
+                E=>XLXN_196,
+                S0=>S,
+                O=>Y4);
+   
+   XLXI_118 : INV
+      port map (I=>G,
+                O=>XLXN_196);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity COMPM4_MXILINX_ppm is
+   port ( A0 : in    std_logic; 
+          A1 : in    std_logic; 
+          A2 : in    std_logic; 
+          A3 : in    std_logic; 
+          B0 : in    std_logic; 
+          B1 : in    std_logic; 
+          B2 : in    std_logic; 
+          B3 : in    std_logic; 
+          GT : out   std_logic; 
+          LT : out   std_logic);
+end COMPM4_MXILINX_ppm;
+
+architecture BEHAVIORAL of COMPM4_MXILINX_ppm is
+   attribute BOX_TYPE   : string ;
+   signal EQ_1  : std_logic;
+   signal EQ_3  : std_logic;
+   signal EQ2_3 : std_logic;
+   signal GE0_1 : std_logic;
+   signal GE2_3 : std_logic;
+   signal GTA   : std_logic;
+   signal GTB   : std_logic;
+   signal GT_1  : std_logic;
+   signal GT_3  : std_logic;
+   signal GT0_1 : std_logic;
+   signal LE0_1 : std_logic;
+   signal LE2_3 : std_logic;
+   signal LTA   : std_logic;
+   signal LTB   : std_logic;
+   signal LT_1  : std_logic;
+   signal LT_3  : std_logic;
+   signal LT0_1 : std_logic;
+   component AND2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   
+   component NOR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of NOR2 : component is "BLACK_BOX";
+   
+   component AND2B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   component XNOR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of XNOR2 : component is "BLACK_BOX";
+   
+   component AND3B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND3B1 : component is "BLACK_BOX";
+   
+begin
+   I_36_1 : AND2
+      port map (I0=>GT0_1,
+                I1=>EQ2_3,
+                O=>GTA);
+   
+   I_36_2 : AND2
+      port map (I0=>EQ2_3,
+                I1=>LT0_1,
+                O=>LTA);
+   
+   I_36_3 : NOR2
+      port map (I0=>GTB,
+                I1=>LTB,
+                O=>EQ2_3);
+   
+   I_36_4 : AND2B1
+      port map (I0=>A3,
+                I1=>B3,
+                O=>LT_3);
+   
+   I_36_5 : OR2
+      port map (I0=>LT_1,
+                I1=>LE0_1,
+                O=>LT0_1);
+   
+   I_36_6 : AND2B1
+      port map (I0=>B3,
+                I1=>A3,
+                O=>GT_3);
+   
+   I_36_7 : AND2B1
+      port map (I0=>A1,
+                I1=>B1,
+                O=>LT_1);
+   
+   I_36_8 : XNOR2
+      port map (I0=>A3,
+                I1=>B3,
+                O=>EQ_3);
+   
+   I_36_9 : AND2B1
+      port map (I0=>B1,
+                I1=>A1,
+                O=>GT_1);
+   
+   I_36_11 : OR2
+      port map (I0=>LTB,
+                I1=>LTA,
+                O=>LT);
+   
+   I_36_12 : OR2
+      port map (I0=>GTB,
+                I1=>GTA,
+                O=>GT);
+   
+   I_36_13 : XNOR2
+      port map (I0=>A1,
+                I1=>B1,
+                O=>EQ_1);
+   
+   I_36_14 : AND3B1
+      port map (I0=>B2,
+                I1=>EQ_3,
+                I2=>A2,
+                O=>GE2_3);
+   
+   I_36_15 : AND3B1
+      port map (I0=>A2,
+                I1=>EQ_3,
+                I2=>B2,
+                O=>LE2_3);
+   
+   I_36_16 : AND3B1
+      port map (I0=>B0,
+                I1=>EQ_1,
+                I2=>A0,
+                O=>GE0_1);
+   
+   I_36_17 : AND3B1
+      port map (I0=>A0,
+                I1=>EQ_1,
+                I2=>B0,
+                O=>LE0_1);
+   
+   I_36_18 : OR2
+      port map (I0=>GT_1,
+                I1=>GE0_1,
+                O=>GT0_1);
+   
+   I_36_19 : OR2
+      port map (I0=>GT_3,
+                I1=>GE2_3,
+                O=>GTB);
+   
+   I_36_20 : OR2
+      port map (I0=>LT_3,
+                I1=>LE2_3,
+                O=>LTB);
+   
+end BEHAVIORAL;
+
+
+
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+
+entity M2_1_MXILINX_ppm is
+   port ( D0 : in    std_logic; 
+          D1 : in    std_logic; 
+          S0 : in    std_logic; 
+          O  : out   std_logic);
+end M2_1_MXILINX_ppm;
+
+architecture BEHAVIORAL of M2_1_MXILINX_ppm is
+   attribute BOX_TYPE   : string ;
+   signal M0 : std_logic;
+   signal M1 : std_logic;
+   component AND2B1
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
+   
+   component OR2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   
+   component AND2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   
+begin
+   I_36_7 : AND2B1
+      port map (I0=>S0,
+                I1=>D0,
+                O=>M0);
+   
+   I_36_8 : OR2
+      port map (I0=>M1,
+                I1=>M0,
+                O=>O);
+   
+   I_36_9 : AND2
+      port map (I0=>D1,
+                I1=>S0,
+                O=>M1);
+   
+end BEHAVIORAL;
+
+
 
 library ieee;
 use ieee.std_logic_1164.ALL;
@@ -85,261 +473,6 @@ begin
                 I1=>A1,
                 I2=>E,
                 O=>D0);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity ADD4_MXILINX_ppm is
-   port ( A0  : in    std_logic; 
-          A1  : in    std_logic; 
-          A2  : in    std_logic; 
-          A3  : in    std_logic; 
-          B0  : in    std_logic; 
-          B1  : in    std_logic; 
-          B2  : in    std_logic; 
-          B3  : in    std_logic; 
-          CI  : in    std_logic; 
-          CO  : out   std_logic; 
-          OFL : out   std_logic; 
-          S0  : out   std_logic; 
-          S1  : out   std_logic; 
-          S2  : out   std_logic; 
-          S3  : out   std_logic);
-end ADD4_MXILINX_ppm;
-
-architecture BEHAVIORAL of ADD4_MXILINX_ppm is
-   attribute BOX_TYPE   : string ;
-   attribute RLOC       : string ;
-   signal C0       : std_logic;
-   signal C1       : std_logic;
-   signal C2       : std_logic;
-   signal C2O      : std_logic;
-   signal dummy    : std_logic;
-   signal I0       : std_logic;
-   signal I1       : std_logic;
-   signal I2       : std_logic;
-   signal I3       : std_logic;
-   signal CO_DUMMY : std_logic;
-   component MUXCY_L
-      port ( CI : in    std_logic; 
-             DI : in    std_logic; 
-             S  : in    std_logic; 
-             LO : out   std_logic);
-   end component;
-   attribute BOX_TYPE of MUXCY_L : component is "BLACK_BOX";
-   
-   component MUXCY
-      port ( CI : in    std_logic; 
-             DI : in    std_logic; 
-             S  : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of MUXCY : component is "BLACK_BOX";
-   
-   component MUXCY_D
-      port ( CI : in    std_logic; 
-             DI : in    std_logic; 
-             S  : in    std_logic; 
-             LO : out   std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of MUXCY_D : component is "BLACK_BOX";
-   
-   component XORCY
-      port ( CI : in    std_logic; 
-             LI : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of XORCY : component is "BLACK_BOX";
-   
-   component FMAP
-      port ( I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             I4 : in    std_logic; 
-             O  : in    std_logic);
-   end component;
-   attribute BOX_TYPE of FMAP : component is "BLACK_BOX";
-   
-   component XOR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of XOR2 : component is "BLACK_BOX";
-   
-   attribute RLOC of I_36_55 : label is "X0Y0";
-   attribute RLOC of I_36_58 : label is "X0Y1";
-   attribute RLOC of I_36_62 : label is "X0Y1";
-   attribute RLOC of I_36_111 : label is "X0Y0";
-   attribute RLOC of I_36_175 : label is "X0Y0";
-   attribute RLOC of I_36_178 : label is "X0Y0";
-   attribute RLOC of I_36_182 : label is "X0Y1";
-   attribute RLOC of I_36_206 : label is "X0Y1";
-begin
-   CO <= CO_DUMMY;
-   I_36_55 : MUXCY_L
-      port map (CI=>C0,
-                DI=>A1,
-                S=>I1,
-                LO=>C1);
-   
-   I_36_58 : MUXCY
-      port map (CI=>C2,
-                DI=>A3,
-                S=>I3,
-                O=>CO_DUMMY);
-   
-   I_36_62 : MUXCY_D
-      port map (CI=>C1,
-                DI=>A2,
-                S=>I2,
-                LO=>C2,
-                O=>C2O);
-   
-   I_36_73 : XORCY
-      port map (CI=>CI,
-                LI=>I0,
-                O=>S0);
-   
-   I_36_74 : XORCY
-      port map (CI=>C0,
-                LI=>I1,
-                O=>S1);
-   
-   I_36_75 : XORCY
-      port map (CI=>C2,
-                LI=>I3,
-                O=>S3);
-   
-   I_36_76 : XORCY
-      port map (CI=>C1,
-                LI=>I2,
-                O=>S2);
-   
-   I_36_111 : MUXCY_L
-      port map (CI=>CI,
-                DI=>A0,
-                S=>I0,
-                LO=>C0);
-   
-   I_36_175 : FMAP
-      port map (I1=>A1,
-                I2=>B1,
-                I3=>dummy,
-                I4=>dummy,
-                O=>I1);
-   
-   I_36_178 : FMAP
-      port map (I1=>A0,
-                I2=>B0,
-                I3=>dummy,
-                I4=>dummy,
-                O=>I0);
-   
-   I_36_182 : FMAP
-      port map (I1=>A2,
-                I2=>B2,
-                I3=>dummy,
-                I4=>dummy,
-                O=>I2);
-   
-   I_36_206 : FMAP
-      port map (I1=>A3,
-                I2=>B3,
-                I3=>dummy,
-                I4=>dummy,
-                O=>I3);
-   
-   I_36_239 : XOR2
-      port map (I0=>A0,
-                I1=>B0,
-                O=>I0);
-   
-   I_36_240 : XOR2
-      port map (I0=>A1,
-                I1=>B1,
-                O=>I1);
-   
-   I_36_241 : XOR2
-      port map (I0=>A2,
-                I1=>B2,
-                O=>I2);
-   
-   I_36_242 : XOR2
-      port map (I0=>A3,
-                I1=>B3,
-                O=>I3);
-   
-   I_36_259 : XOR2
-      port map (I0=>C2O,
-                I1=>CO_DUMMY,
-                O=>OFL);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity M2_1_MXILINX_ppm is
-   port ( D0 : in    std_logic; 
-          D1 : in    std_logic; 
-          S0 : in    std_logic; 
-          O  : out   std_logic);
-end M2_1_MXILINX_ppm;
-
-architecture BEHAVIORAL of M2_1_MXILINX_ppm is
-   attribute BOX_TYPE   : string ;
-   signal M0 : std_logic;
-   signal M1 : std_logic;
-   component AND2B1
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2B1 : component is "BLACK_BOX";
-   
-   component OR2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
-   
-   component AND2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
-   
-begin
-   I_36_7 : AND2B1
-      port map (I0=>S0,
-                I1=>D0,
-                O=>M0);
-   
-   I_36_8 : OR2
-      port map (I0=>M1,
-                I1=>M0,
-                O=>O);
-   
-   I_36_9 : AND2
-      port map (I0=>D1,
-                I1=>S0,
-                O=>M1);
    
 end BEHAVIORAL;
 
@@ -647,58 +780,192 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity M2_1E_MXILINX_ppm is
-   port ( D0 : in    std_logic; 
-          D1 : in    std_logic; 
-          E  : in    std_logic; 
-          S0 : in    std_logic; 
-          O  : out   std_logic);
-end M2_1E_MXILINX_ppm;
+entity ADD4_MXILINX_ppm is
+   port ( A0  : in    std_logic; 
+          A1  : in    std_logic; 
+          A2  : in    std_logic; 
+          A3  : in    std_logic; 
+          B0  : in    std_logic; 
+          B1  : in    std_logic; 
+          B2  : in    std_logic; 
+          B3  : in    std_logic; 
+          CI  : in    std_logic; 
+          CO  : out   std_logic; 
+          OFL : out   std_logic; 
+          S0  : out   std_logic; 
+          S1  : out   std_logic; 
+          S2  : out   std_logic; 
+          S3  : out   std_logic);
+end ADD4_MXILINX_ppm;
 
-architecture BEHAVIORAL of M2_1E_MXILINX_ppm is
+architecture BEHAVIORAL of ADD4_MXILINX_ppm is
    attribute BOX_TYPE   : string ;
-   signal M0 : std_logic;
-   signal M1 : std_logic;
-   component AND3
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
+   attribute RLOC       : string ;
+   signal C0       : std_logic;
+   signal C1       : std_logic;
+   signal C2       : std_logic;
+   signal C2O      : std_logic;
+   signal dummy    : std_logic;
+   signal I0       : std_logic;
+   signal I1       : std_logic;
+   signal I2       : std_logic;
+   signal I3       : std_logic;
+   signal CO_DUMMY : std_logic;
+   component MUXCY_L
+      port ( CI : in    std_logic; 
+             DI : in    std_logic; 
+             S  : in    std_logic; 
+             LO : out   std_logic);
+   end component;
+   attribute BOX_TYPE of MUXCY_L : component is "BLACK_BOX";
+   
+   component MUXCY
+      port ( CI : in    std_logic; 
+             DI : in    std_logic; 
+             S  : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of MUXCY : component is "BLACK_BOX";
+   
+   component MUXCY_D
+      port ( CI : in    std_logic; 
+             DI : in    std_logic; 
+             S  : in    std_logic; 
+             LO : out   std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of MUXCY_D : component is "BLACK_BOX";
+   
+   component XORCY
+      port ( CI : in    std_logic; 
+             LI : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of XORCY : component is "BLACK_BOX";
+   
+   component FMAP
+      port ( I1 : in    std_logic; 
              I2 : in    std_logic; 
-             O  : out   std_logic);
+             I3 : in    std_logic; 
+             I4 : in    std_logic; 
+             O  : in    std_logic);
    end component;
-   attribute BOX_TYPE of AND3 : component is "BLACK_BOX";
+   attribute BOX_TYPE of FMAP : component is "BLACK_BOX";
    
-   component AND3B1
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND3B1 : component is "BLACK_BOX";
-   
-   component OR2
+   component XOR2
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
              O  : out   std_logic);
    end component;
-   attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
+   attribute BOX_TYPE of XOR2 : component is "BLACK_BOX";
    
+   attribute RLOC of I_36_55 : label is "X0Y0";
+   attribute RLOC of I_36_58 : label is "X0Y1";
+   attribute RLOC of I_36_62 : label is "X0Y1";
+   attribute RLOC of I_36_111 : label is "X0Y0";
+   attribute RLOC of I_36_175 : label is "X0Y0";
+   attribute RLOC of I_36_178 : label is "X0Y0";
+   attribute RLOC of I_36_182 : label is "X0Y1";
+   attribute RLOC of I_36_206 : label is "X0Y1";
 begin
-   I_36_30 : AND3
-      port map (I0=>D1,
-                I1=>E,
-                I2=>S0,
-                O=>M1);
+   CO <= CO_DUMMY;
+   I_36_55 : MUXCY_L
+      port map (CI=>C0,
+                DI=>A1,
+                S=>I1,
+                LO=>C1);
    
-   I_36_31 : AND3B1
-      port map (I0=>S0,
-                I1=>E,
-                I2=>D0,
-                O=>M0);
+   I_36_58 : MUXCY
+      port map (CI=>C2,
+                DI=>A3,
+                S=>I3,
+                O=>CO_DUMMY);
    
-   I_36_38 : OR2
-      port map (I0=>M1,
-                I1=>M0,
-                O=>O);
+   I_36_62 : MUXCY_D
+      port map (CI=>C1,
+                DI=>A2,
+                S=>I2,
+                LO=>C2,
+                O=>C2O);
+   
+   I_36_73 : XORCY
+      port map (CI=>CI,
+                LI=>I0,
+                O=>S0);
+   
+   I_36_74 : XORCY
+      port map (CI=>C0,
+                LI=>I1,
+                O=>S1);
+   
+   I_36_75 : XORCY
+      port map (CI=>C2,
+                LI=>I3,
+                O=>S3);
+   
+   I_36_76 : XORCY
+      port map (CI=>C1,
+                LI=>I2,
+                O=>S2);
+   
+   I_36_111 : MUXCY_L
+      port map (CI=>CI,
+                DI=>A0,
+                S=>I0,
+                LO=>C0);
+   
+   I_36_175 : FMAP
+      port map (I1=>A1,
+                I2=>B1,
+                I3=>dummy,
+                I4=>dummy,
+                O=>I1);
+   
+   I_36_178 : FMAP
+      port map (I1=>A0,
+                I2=>B0,
+                I3=>dummy,
+                I4=>dummy,
+                O=>I0);
+   
+   I_36_182 : FMAP
+      port map (I1=>A2,
+                I2=>B2,
+                I3=>dummy,
+                I4=>dummy,
+                O=>I2);
+   
+   I_36_206 : FMAP
+      port map (I1=>A3,
+                I2=>B3,
+                I3=>dummy,
+                I4=>dummy,
+                O=>I3);
+   
+   I_36_239 : XOR2
+      port map (I0=>A0,
+                I1=>B0,
+                O=>I0);
+   
+   I_36_240 : XOR2
+      port map (I0=>A1,
+                I1=>B1,
+                O=>I1);
+   
+   I_36_241 : XOR2
+      port map (I0=>A2,
+                I1=>B2,
+                O=>I2);
+   
+   I_36_242 : XOR2
+      port map (I0=>A3,
+                I1=>B3,
+                O=>I3);
+   
+   I_36_259 : XOR2
+      port map (I0=>C2O,
+                I1=>CO_DUMMY,
+                O=>OFL);
    
 end BEHAVIORAL;
 
@@ -742,8 +1009,8 @@ architecture BEHAVIORAL of M4_1E_MXILINX_ppm is
    end component;
    attribute BOX_TYPE of MUXF5 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_M01 : label is "I_M01_1";
-   attribute HU_SET of I_M23 : label is "I_M23_0";
+   attribute HU_SET of I_M01 : label is "I_M01_5";
+   attribute HU_SET of I_M23 : label is "I_M23_4";
 begin
    I_M01 : M2_1E_MXILINX_ppm
       port map (D0=>D0,
@@ -822,12 +1089,12 @@ architecture BEHAVIORAL of X74_153_MUSER_ppm is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_2";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_3";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_4";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_5";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_6";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_7";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_6";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_7";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_8";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_9";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_10";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_11";
 begin
    XLXI_1 : M2_1_MXILINX_ppm
       port map (D0=>I1C0,
@@ -874,88 +1141,6 @@ begin
    XLXI_8 : INV
       port map (I=>G2,
                 O=>XLXN_15);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
-entity u74_157_MUSER_ppm is
-   port ( A1 : in    std_logic; 
-          A2 : in    std_logic; 
-          A3 : in    std_logic; 
-          A4 : in    std_logic; 
-          B1 : in    std_logic; 
-          B2 : in    std_logic; 
-          B3 : in    std_logic; 
-          B4 : in    std_logic; 
-          G  : in    std_logic; 
-          S  : in    std_logic; 
-          Y1 : out   std_logic; 
-          Y2 : out   std_logic; 
-          Y3 : out   std_logic; 
-          Y4 : out   std_logic);
-end u74_157_MUSER_ppm;
-
-architecture BEHAVIORAL of u74_157_MUSER_ppm is
-   attribute HU_SET     : string ;
-   attribute BOX_TYPE   : string ;
-   signal XLXN_196 : std_logic;
-   component M2_1E_MXILINX_ppm
-      port ( D0 : in    std_logic; 
-             D1 : in    std_logic; 
-             E  : in    std_logic; 
-             S0 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   
-   component INV
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of INV : component is "BLACK_BOX";
-   
-   attribute HU_SET of XLXI_114 : label is "XLXI_114_8";
-   attribute HU_SET of XLXI_115 : label is "XLXI_115_9";
-   attribute HU_SET of XLXI_116 : label is "XLXI_116_10";
-   attribute HU_SET of XLXI_117 : label is "XLXI_117_11";
-begin
-   XLXI_114 : M2_1E_MXILINX_ppm
-      port map (D0=>A1,
-                D1=>B1,
-                E=>XLXN_196,
-                S0=>S,
-                O=>Y1);
-   
-   XLXI_115 : M2_1E_MXILINX_ppm
-      port map (D0=>A2,
-                D1=>B2,
-                E=>XLXN_196,
-                S0=>S,
-                O=>Y2);
-   
-   XLXI_116 : M2_1E_MXILINX_ppm
-      port map (D0=>A3,
-                D1=>B3,
-                E=>XLXN_196,
-                S0=>S,
-                O=>Y3);
-   
-   XLXI_117 : M2_1E_MXILINX_ppm
-      port map (D0=>A4,
-                D1=>B4,
-                E=>XLXN_196,
-                S0=>S,
-                O=>Y4);
-   
-   XLXI_118 : INV
-      port map (I=>G,
-                O=>XLXN_196);
    
 end BEHAVIORAL;
 
@@ -2436,6 +2621,8 @@ architecture BEHAVIORAL of ppm is
    signal LPTOVF           : std_logic;
    signal LP1NSD           : std_logic;
    signal LP2NSD           : std_logic;
+   signal LRGDISPPOS0      : std_logic;
+   signal LRGDISPPOS1      : std_logic;
    signal MC0              : std_logic;
    signal MC1              : std_logic;
    signal NEXTPLAY         : std_logic;
@@ -2475,6 +2662,7 @@ architecture BEHAVIORAL of ppm is
    signal PT               : std_logic_vector (7 downto 0);
    signal PTOVF            : std_logic;
    signal P1ADD            : std_logic;
+   signal P1LRGDISP        : std_logic;
    signal P1PLAY           : std_logic;
    signal P1PLAYED         : std_logic;
    signal P1PLAYSYNCH      : std_logic;
@@ -2494,6 +2682,8 @@ architecture BEHAVIORAL of ppm is
    signal P2PLAY           : std_logic;
    signal P2PLAYED         : std_logic;
    signal P2PLAYSYNCH      : std_logic;
+   signal P2POSSEL0        : std_logic;
+   signal P2POSSEL1        : std_logic;
    signal P2PT             : std_logic_vector (7 downto 0);
    signal P2SEL0           : std_logic;
    signal P2SEL1           : std_logic;
@@ -2501,6 +2691,7 @@ architecture BEHAVIORAL of ppm is
    signal P2SEL3           : std_logic;
    signal P2SKIP           : std_logic;
    signal P2STURN          : std_logic;
+   signal P3LRGDISP        : std_logic;
    signal Q                : std_logic_vector (15 downto 0);
    signal QA               : std_logic_vector (15 downto 0);
    signal RDCLK            : std_logic;
@@ -2685,6 +2876,18 @@ architecture BEHAVIORAL of ppm is
    signal XLXN_11472       : std_logic;
    signal XLXN_11578       : std_logic;
    signal XLXN_11629       : std_logic;
+   signal XLXN_11700       : std_logic;
+   signal XLXN_11701       : std_logic;
+   signal XLXN_11702       : std_logic;
+   signal XLXN_11703       : std_logic;
+   signal XLXN_11704       : std_logic;
+   signal XLXN_11705       : std_logic;
+   signal XLXN_11706       : std_logic;
+   signal XLXN_11707       : std_logic;
+   signal XLXN_11724       : std_logic;
+   signal XLXN_11725       : std_logic;
+   signal XLXN_11726       : std_logic;
+   signal XLXN_11727       : std_logic;
    signal ZERODISP0        : std_logic;
    signal ZERODISP1        : std_logic;
    component OBUF
@@ -3087,6 +3290,19 @@ architecture BEHAVIORAL of ppm is
    end component;
    attribute BOX_TYPE of NOR4 : component is "BLACK_BOX";
    
+   component COMPM4_MXILINX_ppm
+      port ( A0 : in    std_logic; 
+             A1 : in    std_logic; 
+             A2 : in    std_logic; 
+             A3 : in    std_logic; 
+             B0 : in    std_logic; 
+             B1 : in    std_logic; 
+             B2 : in    std_logic; 
+             B3 : in    std_logic; 
+             GT : out   std_logic; 
+             LT : out   std_logic);
+   end component;
+   
    component VCC
       port ( P : out   std_logic);
    end component;
@@ -3127,24 +3343,25 @@ architecture BEHAVIORAL of ppm is
    attribute HU_SET of U120 : label is "U120_50";
    attribute HU_SET of U121 : label is "U121_49";
    attribute HU_SET of U122 : label is "U122_48";
-   attribute HU_SET of U148 : label is "U148_65";
-   attribute HU_SET of U149 : label is "U149_64";
    attribute HU_SET of U151 : label is "U151_63";
    attribute HU_SET of U155 : label is "U155_54";
-   attribute HU_SET of U159 : label is "U159_68";
-   attribute HU_SET of U160 : label is "U160_69";
-   attribute HU_SET of U161 : label is "U161_67";
-   attribute HU_SET of U162 : label is "U162_66";
-   attribute HU_SET of U169 : label is "U169_71";
-   attribute HU_SET of U171 : label is "U171_72";
-   attribute HU_SET of U176 : label is "U176_70";
-   attribute HU_SET of U181 : label is "U181_74";
-   attribute HU_SET of U182 : label is "U182_73";
-   attribute HU_SET of U272 : label is "U272_75";
-   attribute HU_SET of U273 : label is "U273_76";
-   attribute HU_SET of U274 : label is "U274_77";
-   attribute HU_SET of U288 : label is "U288_78";
-   attribute HU_SET of U298 : label is "U298_79";
+   attribute HU_SET of U159 : label is "U159_66";
+   attribute HU_SET of U160 : label is "U160_67";
+   attribute HU_SET of U161 : label is "U161_65";
+   attribute HU_SET of U162 : label is "U162_64";
+   attribute HU_SET of U169 : label is "U169_69";
+   attribute HU_SET of U171 : label is "U171_70";
+   attribute HU_SET of U176 : label is "U176_68";
+   attribute HU_SET of U181 : label is "U181_72";
+   attribute HU_SET of U182 : label is "U182_71";
+   attribute HU_SET of U272 : label is "U272_73";
+   attribute HU_SET of U273 : label is "U273_74";
+   attribute HU_SET of U274 : label is "U274_75";
+   attribute HU_SET of U298 : label is "U298_77";
+   attribute HU_SET of U299 : label is "U299_78";
+   attribute HU_SET of U302 : label is "U302_80";
+   attribute HU_SET of U303 : label is "U303_79";
+   attribute HU_SET of U305 : label is "U305_76";
 begin
    ADD_BUF : OBUF
       port map (I=>ADD,
@@ -4271,40 +4488,6 @@ begin
                 Y3=>RD2,
                 Y4=>RD3);
    
-   U148 : ADD4_MXILINX_ppm
-      port map (A0=>RD0,
-                A1=>RD1,
-                A2=>RD2,
-                A3=>RD3,
-                B0=>DISP4,
-                B1=>DISP5,
-                B2=>DISP6,
-                B3=>DISP7,
-                CI=>XLXN_11259,
-                CO=>PD1PRD,
-                OFL=>open,
-                S0=>NPDISP4,
-                S1=>NPDISP5,
-                S2=>NPDISP6,
-                S3=>NPDISP7);
-   
-   U149 : ADD4_MXILINX_ppm
-      port map (A0=>RD0,
-                A1=>RD1,
-                A2=>RD2,
-                A3=>RD3,
-                B0=>DISP0,
-                B1=>DISP1,
-                B2=>DISP2,
-                B3=>DISP3,
-                CI=>XLXN_11260,
-                CO=>PD0PRD,
-                OFL=>open,
-                S0=>NPDISP0,
-                S1=>NPDISP1,
-                S2=>NPDISP2,
-                S3=>NPDISP3);
-   
    U151 : ADD4_MXILINX_ppm
       port map (A0=>RD0,
                 A1=>RD1,
@@ -4727,23 +4910,6 @@ begin
                 I2=>XLXN_11314,
                 O=>PD3PRD);
    
-   U288 : ADD4_MXILINX_ppm
-      port map (A0=>RD0,
-                A1=>RD1,
-                A2=>RD2,
-                A3=>XLXN_11629,
-                B0=>DISP12,
-                B1=>DISP13,
-                B2=>DISP14,
-                B3=>XLXN_11629,
-                CI=>XLXN_11629,
-                CO=>open,
-                OFL=>open,
-                S0=>NPDISP12,
-                S1=>NPDISP13,
-                S2=>NPDISP14,
-                S3=>C3);
-   
    U289 : NOR4
       port map (I0=>DISP12,
                 I1=>DISP13,
@@ -4798,16 +4964,106 @@ begin
                 I1=>XLXN_11472,
                 O=>ZERODISP0);
    
-   U298 : D2_4E_MXILINX_ppm
-      port map (A0=>ZERODISP1,
-                A1=>ZERODISP0,
+   U298 : COMPM4_MXILINX_ppm
+      port map (A0=>DISP0,
+                A1=>DISP1,
+                A2=>DISP2,
+                A3=>DISP3,
+                B0=>DISP4,
+                B1=>DISP5,
+                B2=>DISP6,
+                B3=>DISP7,
+                GT=>open,
+                LT=>P1LRGDISP);
+   
+   U299 : COMPM4_MXILINX_ppm
+      port map (A0=>DISP8,
+                A1=>DISP9,
+                A2=>DISP10,
+                A3=>DISP11,
+                B0=>DISP12,
+                B1=>DISP13,
+                B2=>DISP14,
+                B3=>DISP15,
+                GT=>open,
+                LT=>P3LRGDISP);
+   
+   U300 : u74_157_MUSER_ppm
+      port map (A1=>DISP0,
+                A2=>DISP1,
+                A3=>DISP2,
+                A4=>DISP3,
+                B1=>DISP4,
+                B2=>DISP5,
+                B3=>DISP6,
+                B4=>DISP7,
+                G=>XLXN_11724,
+                S=>P1LRGDISP,
+                Y1=>XLXN_11700,
+                Y2=>XLXN_11701,
+                Y3=>XLXN_11702,
+                Y4=>XLXN_11703);
+   
+   U301 : u74_157_MUSER_ppm
+      port map (A1=>DISP8,
+                A2=>DISP9,
+                A3=>DISP10,
+                A4=>DISP11,
+                B1=>DISP12,
+                B2=>DISP13,
+                B3=>DISP14,
+                B4=>DISP15,
+                G=>XLXN_11725,
+                S=>P3LRGDISP,
+                Y1=>XLXN_11704,
+                Y2=>XLXN_11705,
+                Y3=>XLXN_11706,
+                Y4=>XLXN_11707);
+   
+   U302 : COMPM4_MXILINX_ppm
+      port map (A0=>XLXN_11700,
+                A1=>XLXN_11701,
+                A2=>XLXN_11702,
+                A3=>XLXN_11703,
+                B0=>XLXN_11704,
+                B1=>XLXN_11705,
+                B2=>XLXN_11706,
+                B3=>XLXN_11707,
+                GT=>open,
+                LT=>LRGDISPPOS1);
+   
+   U303 : M2_1_MXILINX_ppm
+      port map (D0=>P1LRGDISP,
+                D1=>P3LRGDISP,
+                S0=>LRGDISPPOS1,
+                O=>LRGDISPPOS0);
+   
+   U304 : u74_157_MUSER_ppm
+      port map (A1=>LRGDISPPOS0,
+                A2=>LRGDISPPOS1,
+                A3=>XLXN_11727,
+                A4=>XLXN_11727,
+                B1=>ZERODISP0,
+                B2=>ZERODISP1,
+                B3=>XLXN_11726,
+                B4=>XLXN_11727,
+                G=>XLXN_11727,
+                S=>APOSZERO,
+                Y1=>P2POSSEL0,
+                Y2=>P2POSSEL1,
+                Y3=>open,
+                Y4=>open);
+   
+   U305 : D2_4E_MXILINX_ppm
+      port map (A0=>P2POSSEL1,
+                A1=>P2POSSEL0,
                 E=>XLXN_11578,
                 D0=>P2SEL3,
                 D1=>P2SEL2,
                 D2=>P2SEL1,
                 D3=>P2SEL0);
    
-   U299 : INV
+   U306 : INV
       port map (I=>APOSZERO,
                 O=>P2SKIP);
    
@@ -4990,6 +5246,15 @@ begin
    
    XLXI_1311 : VCC
       port map (P=>XLXN_11578);
+   
+   XLXI_1328 : GND
+      port map (G=>XLXN_11725);
+   
+   XLXI_1329 : GND
+      port map (G=>XLXN_11724);
+   
+   XLXI_1330 : GND
+      port map (G=>XLXN_11726);
    
 end BEHAVIORAL;
 

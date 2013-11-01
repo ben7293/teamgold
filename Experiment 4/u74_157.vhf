@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : u74_157.vhf
--- /___/   /\     Timestamp : 10/04/2013 13:49:28
+-- /___/   /\     Timestamp : 11/01/2013 12:38:15
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "S:/CS2204/Lab 5 - Exp1_2/Ppm/u74_157.vhf" -w "S:/CS2204/Lab 5 - Exp1_2/Ppm/u74_157.sch"
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "/home/atomic/Documents/Code/TeamGold/Experiment 4/u74_157.vhf" -w "/home/atomic/Documents/Code/TeamGold/Experiment 4/u74_157.sch"
 --Design Name: u74_157
 --Device: spartan3e
 --Purpose:
@@ -123,10 +123,10 @@ architecture BEHAVIORAL of u74_157 is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_114 : label is "XLXI_114_0";
-   attribute HU_SET of XLXI_115 : label is "XLXI_115_1";
-   attribute HU_SET of XLXI_116 : label is "XLXI_116_2";
-   attribute HU_SET of XLXI_117 : label is "XLXI_117_3";
+   attribute HU_SET of XLXI_114 : label is "XLXI_114_81";
+   attribute HU_SET of XLXI_115 : label is "XLXI_115_82";
+   attribute HU_SET of XLXI_116 : label is "XLXI_116_83";
+   attribute HU_SET of XLXI_117 : label is "XLXI_117_84";
 begin
    XLXI_114 : M2_1E_MXILINX_u74_157
       port map (D0=>A1,
