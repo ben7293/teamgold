@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ppm.vhf
--- /___/   /\     Timestamp : 11/01/2013 12:38:14
+-- /___/   /\     Timestamp : 11/01/2013 12:49:10
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -3488,10 +3488,6 @@ begin
       port map (I=>Q(3),
                 O=>P2CLK);
    
-   P2PLAYED_BUF : BUF
-      port map (I=>APOSZERO,
-                O=>P2PLAYED);
-   
    P2PLAY_BUF : IBUF
       port map (I=>P2PLAY_NP2B,
                 O=>P2PLAY);
@@ -5063,10 +5059,6 @@ begin
                 D2=>P2SEL1,
                 D3=>P2SEL0);
    
-   U306 : INV
-      port map (I=>APOSZERO,
-                O=>P2SKIP);
-   
    XLXI_24 : VCC
       port map (P=>XLXN_1361);
    
@@ -5241,9 +5233,6 @@ begin
    XLXI_1305 : GND
       port map (G=>P2CODE0);
    
-   XLXI_1309 : GND
-      port map (G=>P2ADD);
-   
    XLXI_1311 : VCC
       port map (P=>XLXN_11578);
    
@@ -5255,6 +5244,16 @@ begin
    
    XLXI_1330 : GND
       port map (G=>XLXN_11726);
+   
+   XLXI_1331 : GND
+      port map (G=>P2SKIP);
+   
+   XLXI_1332 : INV
+      port map (I=>APOSZERO,
+                O=>P2ADD);
+   
+   XLXI_1333 : VCC
+      port map (P=>P2PLAYED);
    
 end BEHAVIORAL;
 

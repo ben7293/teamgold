@@ -2958,13 +2958,6 @@
         <block symbolname="gnd" name="XLXI_1305">
             <blockpin signalname="P2CODE0" name="G" />
         </block>
-        <block symbolname="inv" name="U306">
-            <blockpin signalname="APOSZERO" name="I" />
-            <blockpin signalname="P2SKIP" name="O" />
-        </block>
-        <block symbolname="gnd" name="XLXI_1309">
-            <blockpin signalname="P2ADD" name="G" />
-        </block>
         <block symbolname="d2_4e" name="U305">
             <blockpin signalname="P2POSSEL1" name="A0" />
             <blockpin signalname="P2POSSEL0" name="A1" />
@@ -2976,10 +2969,6 @@
         </block>
         <block symbolname="vcc" name="XLXI_1311">
             <blockpin signalname="XLXN_11578" name="P" />
-        </block>
-        <block symbolname="buf" name="P2PLAYED_BUF">
-            <blockpin signalname="APOSZERO" name="I" />
-            <blockpin signalname="P2PLAYED" name="O" />
         </block>
         <block symbolname="nor4" name="U291">
             <blockpin signalname="DISP4" name="I0" />
@@ -3133,6 +3122,16 @@
             <blockpin signalname="DISP6" name="B3" />
             <blockpin signalname="DISP5" name="B2" />
             <blockpin signalname="DISP2" name="A3" />
+        </block>
+        <block symbolname="gnd" name="XLXI_1331">
+            <blockpin signalname="P2SKIP" name="G" />
+        </block>
+        <block symbolname="inv" name="XLXI_1332">
+            <blockpin signalname="APOSZERO" name="I" />
+            <blockpin signalname="P2ADD" name="O" />
+        </block>
+        <block symbolname="vcc" name="XLXI_1333">
+            <blockpin signalname="P2PLAYED" name="P" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -8392,25 +8391,19 @@
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="4960" y="3120" type="branch" />
             <wire x2="4960" y1="3120" y2="3120" x1="4528" />
         </branch>
-        <instance x="4592" y="2272" name="U306" orien="R0">
-            <attrtext style="fontsize:40;fontname:Arial;textcolor:rgb(0,128,0)" attrname="InstName" x="112" y="72" type="instance" />
-        </instance>
         <branch name="P2SKIP">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5008" y="2240" type="branch" />
+            <wire x2="4816" y1="2240" y2="2240" x1="4496" />
             <wire x2="5008" y1="2240" y2="2240" x1="4816" />
-        </branch>
-        <branch name="APOSZERO">
-            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4464" y="2240" type="branch" />
-            <wire x2="4592" y1="2240" y2="2240" x1="4464" />
         </branch>
         <branch name="P2PLAYED">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="2048" type="branch" />
+            <wire x2="4816" y1="2048" y2="2048" x1="4432" />
             <wire x2="5040" y1="2048" y2="2048" x1="4816" />
         </branch>
-        <instance x="4336" y="1808" name="XLXI_1309" orien="R90" />
         <branch name="P2ADD">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5040" y="1872" type="branch" />
-            <wire x2="5040" y1="1872" y2="1872" x1="4464" />
+            <wire x2="5040" y1="1872" y2="1872" x1="4832" />
         </branch>
         <branch name="XLXN_11578">
             <wire x2="4464" y1="1616" y2="1616" x1="4288" />
@@ -8419,13 +8412,6 @@
             <attrtext style="fontsize:40;fontname:Arial;textcolor:rgb(0,128,0)" attrname="InstName" x="192" y="-16" type="instance" />
         </instance>
         <instance x="4352" y="1616" name="XLXI_1311" orien="R180" />
-        <branch name="APOSZERO">
-            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4432" y="2048" type="branch" />
-            <wire x2="4592" y1="2048" y2="2048" x1="4432" />
-        </branch>
-        <instance x="4592" y="2080" name="P2PLAYED_BUF" orien="R0">
-            <attrtext style="fontsize:40;fontname:Arial;textcolor:rgb(0,128,0)" attrname="InstName" x="0" y="40" type="instance" />
-        </instance>
         <line x2="3176" y1="956" y2="3760" x1="3176" />
         <branch name="P2SEL2">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="5120" y="1488" type="branch" />
@@ -8876,5 +8862,12 @@
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4288" y="1488" type="branch" />
             <wire x2="4464" y1="1488" y2="1488" x1="4288" />
         </branch>
+        <instance x="4368" y="2176" name="XLXI_1331" orien="R90" />
+        <branch name="APOSZERO">
+            <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="4432" y="1872" type="branch" />
+            <wire x2="4608" y1="1872" y2="1872" x1="4432" />
+        </branch>
+        <instance x="4608" y="1904" name="XLXI_1332" orien="R0" />
+        <instance x="4432" y="2112" name="XLXI_1333" orien="R270" />
     </sheet>
 </drawing>

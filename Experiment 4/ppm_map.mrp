@@ -9,7 +9,7 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.52.76.2 $
-Mapped Date    : Fri Nov  1 12:39:14 2013
+Mapped Date    : Fri Nov  1 12:50:11 2013
 
 Design Summary
 --------------
@@ -19,9 +19,9 @@ Logic Utilization:
   Number of Slice Flip Flops:           105 out of   9,312    1%
   Number of 4 input LUTs:               298 out of   9,312    3%
 Logic Distribution:
-  Number of occupied Slices:            197 out of   4,656    4%
-    Number of Slices containing only related logic:     197 out of     197 100%
-    Number of Slices containing unrelated logic:          0 out of     197   0%
+  Number of occupied Slices:            196 out of   4,656    4%
+    Number of Slices containing only related logic:     196 out of     196 100%
+    Number of Slices containing unrelated logic:          0 out of     196   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
   Total Number of 4 input LUTs:         298 out of   9,312    3%
   Number of bonded IOBs:                 32 out of     232   13%
@@ -29,7 +29,7 @@ Logic Distribution:
   Number of BUFGMUXs:                     4 out of      24   16%
 
   Number of RPM macros:           35
-Average Fanout of Non-Clock Nets:                2.98
+Average Fanout of Non-Clock Nets:                2.97
 
 Peak Memory Usage:  380 MB
 Total REAL time to MAP completion:  1 secs 
@@ -320,17 +320,17 @@ INV 		U174/XLXI_7
 INV 		U174/XLXI_8
 INV 		U178/XLXI_118
 INV 		U179/XLXI_118
-AND2 		U26
 AND3B2 		U279
 AND3 		U282
 AND2 		U284
 AND2 		U286
-AND2 		U30
 INV 		U300/XLXI_118
 INV 		U301/XLXI_118
 INV 		U304/XLXI_118
+AND2 		U52
 VCC 		U6/I_36_47
 VCC 		U64/I_36_59
+AND2 		U64/I_Q1/I_36_30/I_36_9
 VCC 		U66/I_36_9
 VCC 		U67/I_36_9
 INV 		U81/XLXI_118
@@ -351,8 +351,8 @@ AND2 		U85/XLXI_4/I_36_9
 INV 		U85/XLXI_7
 INV 		U85/XLXI_8
 VCC 		U86/I_36_47
-VCC 		XLXI_1311
-GND 		XLXI_1330
+GND 		XLXI_1331
+VCC 		XLXI_1333
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.
