@@ -1,4 +1,4 @@
-V3 248
+V3 261
 FL //rh227srv.labs.poly.edu/users/btsai01/CS2204/exp1/Ppm/CODEDISC.vhf 2011/08/17.17:22:19 M.81d
 FL //rh227srv.labs.poly.edu/users/btsai01/CS2204/exp1/Ppm/CODEGEN.vhf 2011/08/17.17:22:19 M.81d
 FL //rh227srv.labs.poly.edu/users/btsai01/CS2204/exp1/Ppm/LARGESTDISP.vhf 2011/08/17.17:22:19 M.81d
@@ -20,223 +20,253 @@ FL "//rh227srv.labs.poly.edu/users/btsai01/CS2204/Lab 5 - Exp1_2/Ppm/ppm.vhf" 20
 FL "//rh227srv.labs.poly.edu/users/btsai01/CS2204/Lab 5 - Exp1_2/Ppm/u74_157.vhf" 2013/10/04.13:49:29 M.81d
 FL "//rh227srv.labs.poly.edu/users/btsai01/CS2204/Lab 5 - Exp1_2/Ppm/X74_153.vhf" 2013/10/04.13:41:50 M.81d
 FL "//rh227srv.labs.poly.edu/users/btsai01/CS2204/Lab 5 - Exp1_2/Ppm/ZERODISPLAY.vhf" 2013/10/04.12:56:47 M.81d
-FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEDISC.vhf" 2013/10/04.12:56:47 M.81d
-FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/CODEGEN.vhf" 2013/10/04.12:56:47 M.81d
-FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/LARGESTDISP.vhf" 2013/10/04.12:56:47 M.81d
-FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ppm.vhf" 2013/10/25.14:17:11 M.81d
-FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/u74_157.vhf" 2013/10/04.13:49:29 M.81d
-FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/X74_153.vhf" 2013/10/04.13:41:50 M.81d
-FL "/home/atomic/Documents/Code/TeamGold/Experiment 3/ZERODISPLAY.vhf" 2013/10/04.12:56:47 M.81d
-FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEDISC.vhf" 2013/10/25.13:30:08 M.81d
-EN work/FD4CE_MXILINX_CODEDISC 1382733734 \
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/Experiment 3/CODEDISC.vhf" 2013/10/25.13:30:07 M.81d
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/Experiment 3/CODEGEN.vhf" 2013/10/25.13:30:07 M.81d
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/Experiment 3/LARGESTDISP.vhf" 2013/10/25.13:30:07 M.81d
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/Experiment 3/ppm.vhf" 2013/11/02.04:37:48 M.81d
+EN work/COMPM8_MXILINX_ppm 1383381737 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/Experiment 3/ppm.vhf" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/COMPM8_MXILINX_ppm/BEHAVIORAL 1383381738 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/Experiment 3/ppm.vhf" \
+      EN work/COMPM8_MXILINX_ppm 1383381737 CP AND2B1 CP OR4 CP NOR2 CP AND3 CP OR2 \
+      CP AND3B1 CP XNOR2 CP AND2 CP AND4
+EN work/CB4CE_MXILINX_ppm 1383381741 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/Experiment 3/ppm.vhf" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/CB4CE_MXILINX_ppm/BEHAVIORAL 1383381742 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/Experiment 3/ppm.vhf" \
+      EN work/CB4CE_MXILINX_ppm 1383381741 CP FTCE_MXILINX_ppm CP AND4 CP AND3 \
+      CP AND2 CP VCC
+EN work/COMPM2_MXILINX_ppm 1383381743 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/Experiment 3/ppm.vhf" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/COMPM2_MXILINX_ppm/BEHAVIORAL 1383381744 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/Experiment 3/ppm.vhf" \
+      EN work/COMPM2_MXILINX_ppm 1383381743 CP AND3B1 CP XNOR2 CP AND2B1 CP OR2
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/Experiment 3/u74_157.vhf" 2013/11/01.13:26:03 M.81d
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/Experiment 3/X74_153.vhf" 2013/11/01.13:26:03 M.81d
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/Experiment 3/ZERODISPLAY.vhf" 2013/10/25.13:30:07 M.81d
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/CODEDISC.vhf" 2013/10/25.13:30:07 M.81d
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/CODEGEN.vhf" 2013/10/25.13:30:07 M.81d
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/LARGESTDISP.vhf" 2013/10/25.13:30:07 M.81d
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf" 2013/11/01.13:26:09 M.81d
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/u74_157.vhf" 2013/11/01.13:26:03 M.81d
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/X74_153.vhf" 2013/11/01.13:26:03 M.81d
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ZERODISPLAY.vhf" 2013/10/25.13:30:07 M.81d
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEDISC.vhf" 2013/10/25.12:30:07 M.81d
+EN work/FD4CE_MXILINX_CODEDISC 1383927440 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEDISC.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/FD4CE_MXILINX_CODEDISC/BEHAVIORAL 1382733735 \
+AR work/FD4CE_MXILINX_CODEDISC/BEHAVIORAL 1383927441 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEDISC.vhf" \
-      EN work/FD4CE_MXILINX_CODEDISC 1382733734 CP FDCE
-EN work/COMP4_MXILINX_CODEDISC 1382733736 \
-      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEDISC.vhf" \
-      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
-      PH unisim/VCOMPONENTS 1290154108
-AR work/COMP4_MXILINX_CODEDISC/BEHAVIORAL 1382733737 \
-      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEDISC.vhf" \
-      EN work/COMP4_MXILINX_CODEDISC 1382733736 CP AND4 CP XNOR2
-EN work/CODEDISC 1382733738 \
+      EN work/FD4CE_MXILINX_CODEDISC 1383927440 CP FDCE
+EN work/COMP4_MXILINX_CODEDISC 1383927442 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEDISC.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/CODEDISC/BEHAVIORAL 1382733739 \
+AR work/COMP4_MXILINX_CODEDISC/BEHAVIORAL 1383927443 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEDISC.vhf" \
-      EN work/CODEDISC 1382733738 CP OR5 CP AND2 CP FD4CE_MXILINX_CODEDISC CP OR4 \
+      EN work/COMP4_MXILINX_CODEDISC 1383927442 CP AND4 CP XNOR2
+EN work/CODEDISC 1383927444 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEDISC.vhf" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/CODEDISC/BEHAVIORAL 1383927445 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEDISC.vhf" \
+      EN work/CODEDISC 1383927444 CP OR5 CP AND2 CP FD4CE_MXILINX_CODEDISC CP OR4 \
       CP OR2 CP u74_157 CP COMP4_MXILINX_CODEDISC CP GND
-FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEGEN.vhf" 2013/10/25.13:30:08 M.81d
-EN work/COMP4_MXILINX_CODEGEN 1382733722 \
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEGEN.vhf" 2013/10/25.12:30:07 M.81d
+EN work/COMP4_MXILINX_CODEGEN 1383927428 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEGEN.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/COMP4_MXILINX_CODEGEN/BEHAVIORAL 1382733723 \
+AR work/COMP4_MXILINX_CODEGEN/BEHAVIORAL 1383927429 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEGEN.vhf" \
-      EN work/COMP4_MXILINX_CODEGEN 1382733722 CP AND4 CP XNOR2
-EN work/FD4CE_MXILINX_CODEGEN 1382733724 \
-      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEGEN.vhf" \
-      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
-      PH unisim/VCOMPONENTS 1290154108
-AR work/FD4CE_MXILINX_CODEGEN/BEHAVIORAL 1382733725 \
-      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEGEN.vhf" \
-      EN work/FD4CE_MXILINX_CODEGEN 1382733724 CP FDCE
-EN work/CODEGEN 1382733726 \
+      EN work/COMP4_MXILINX_CODEGEN 1383927428 CP AND4 CP XNOR2
+EN work/FD4CE_MXILINX_CODEGEN 1383927430 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEGEN.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/CODEGEN/BEHAVIORAL 1382733727 \
+AR work/FD4CE_MXILINX_CODEGEN/BEHAVIORAL 1383927431 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEGEN.vhf" \
-      EN work/CODEGEN 1382733726 CP NOR3 CP OR2 CP FD4CE_MXILINX_CODEGEN \
+      EN work/FD4CE_MXILINX_CODEGEN 1383927430 CP FDCE
+EN work/CODEGEN 1383927432 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEGEN.vhf" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/CODEGEN/BEHAVIORAL 1383927433 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/CODEGEN.vhf" \
+      EN work/CODEGEN 1383927432 CP NOR3 CP OR2 CP FD4CE_MXILINX_CODEGEN \
       CP COMP4_MXILINX_CODEGEN CP AND3 CP NOR2 CP AND2 CP u74_157 CP AND2B1
-FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/LARGESTDISP.vhf" 2013/10/25.13:30:08 M.81d
-EN work/COMPM4_MXILINX_LARGESTDISP 1382733730 \
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/LARGESTDISP.vhf" 2013/10/25.12:30:07 M.81d
+EN work/COMPM4_MXILINX_LARGESTDISP 1383927436 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/LARGESTDISP.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/COMPM4_MXILINX_LARGESTDISP/BEHAVIORAL 1382733731 \
+AR work/COMPM4_MXILINX_LARGESTDISP/BEHAVIORAL 1383927437 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/LARGESTDISP.vhf" \
-      EN work/COMPM4_MXILINX_LARGESTDISP 1382733730 CP AND2 CP NOR2 CP AND2B1 CP OR2 \
+      EN work/COMPM4_MXILINX_LARGESTDISP 1383927436 CP AND2 CP NOR2 CP AND2B1 CP OR2 \
       CP XNOR2 CP AND3B1
-EN work/LARGESTDISP 1382733732 \
+EN work/LARGESTDISP 1383927438 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/LARGESTDISP.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/LARGESTDISP/BEHAVIORAL 1382733733 \
+AR work/LARGESTDISP/BEHAVIORAL 1383927439 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/LARGESTDISP.vhf" \
-      EN work/LARGESTDISP 1382733732 CP COMPM4_MXILINX_LARGESTDISP CP u74_157 \
+      EN work/LARGESTDISP 1383927438 CP COMPM4_MXILINX_LARGESTDISP CP u74_157 \
       CP AND2B1 CP AND2 CP OR2 CP GND
-FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" 2013/10/25.16:41:55 M.81d
-EN work/D2_4E_MXILINX_ppm 1382733740 \
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" 2013/11/08.11:17:01 M.81d
+EN work/D2_4E_MXILINX_ppm 1383927446 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/D2_4E_MXILINX_ppm/BEHAVIORAL 1382733741 \
+AR work/D2_4E_MXILINX_ppm/BEHAVIORAL 1383927447 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/D2_4E_MXILINX_ppm 1382733740 CP AND3 CP AND3B1 CP AND3B2
-EN work/ADD4_MXILINX_ppm 1382733742 \
+      EN work/D2_4E_MXILINX_ppm 1383927446 CP AND3 CP AND3B1 CP AND3B2
+EN work/ADD4_MXILINX_ppm 1383927448 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/ADD4_MXILINX_ppm/BEHAVIORAL 1382733743 \
+AR work/ADD4_MXILINX_ppm/BEHAVIORAL 1383927449 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/ADD4_MXILINX_ppm 1382733742 CP MUXCY_L CP MUXCY CP MUXCY_D CP XORCY \
+      EN work/ADD4_MXILINX_ppm 1383927448 CP MUXCY_L CP MUXCY CP MUXCY_D CP XORCY \
       CP FMAP CP XOR2
-EN work/M2_1_MXILINX_ppm 1382733744 \
+EN work/M2_1_MXILINX_ppm 1383927450 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/M2_1_MXILINX_ppm/BEHAVIORAL 1382733745 \
+AR work/M2_1_MXILINX_ppm/BEHAVIORAL 1383927451 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/M2_1_MXILINX_ppm 1382733744 CP AND2B1 CP OR2 CP AND2
-EN work/ADD8_MXILINX_ppm 1382733746 \
+      EN work/M2_1_MXILINX_ppm 1383927450 CP AND2B1 CP OR2 CP AND2
+EN work/ADD8_MXILINX_ppm 1383927452 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/ADD8_MXILINX_ppm/BEHAVIORAL 1382733747 \
+AR work/ADD8_MXILINX_ppm/BEHAVIORAL 1383927453 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/ADD8_MXILINX_ppm 1382733746 CP FMAP CP MUXCY_L CP MUXCY CP XORCY \
+      EN work/ADD8_MXILINX_ppm 1383927452 CP FMAP CP MUXCY_L CP MUXCY CP XORCY \
       CP MUXCY_D CP XOR2
-EN work/M2_1E_MXILINX_ppm 1382733748 \
+EN work/M2_1E_MXILINX_ppm 1383927454 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/M2_1E_MXILINX_ppm/BEHAVIORAL 1382733749 \
+AR work/M2_1E_MXILINX_ppm/BEHAVIORAL 1383927455 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/M2_1E_MXILINX_ppm 1382733748 CP AND3 CP AND3B1 CP OR2
-EN work/M4_1E_MXILINX_ppm 1382733750 \
-      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
-      PH unisim/VCOMPONENTS 1290154108
-AR work/M4_1E_MXILINX_ppm/BEHAVIORAL 1382733751 \
-      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/M4_1E_MXILINX_ppm 1382733750 CP M2_1E_MXILINX_ppm CP MUXF5
-EN work/X74_153_MUSER_ppm 1382733752 \
+      EN work/M2_1E_MXILINX_ppm 1383927454 CP AND3 CP AND3B1 CP OR2
+EN work/M4_1E_MXILINX_ppm 1383927456 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/X74_153_MUSER_ppm/BEHAVIORAL 1382733753 \
+AR work/M4_1E_MXILINX_ppm/BEHAVIORAL 1383927457 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/X74_153_MUSER_ppm 1382733752 CP M2_1_MXILINX_ppm \
+      EN work/M4_1E_MXILINX_ppm 1383927456 CP M2_1E_MXILINX_ppm CP MUXF5
+EN work/X74_153_MUSER_ppm 1383927458 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/X74_153_MUSER_ppm/BEHAVIORAL 1383927459 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
+      EN work/X74_153_MUSER_ppm 1383927458 CP M2_1_MXILINX_ppm \
       CP M2_1E_MXILINX_ppm CP INV
-EN work/u74_157_MUSER_ppm 1382733754 \
+EN work/u74_157_MUSER_ppm 1383927460 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/u74_157_MUSER_ppm/BEHAVIORAL 1382733755 \
+AR work/u74_157_MUSER_ppm/BEHAVIORAL 1383927461 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/u74_157_MUSER_ppm 1382733754 CP M2_1E_MXILINX_ppm CP INV
-EN work/COMP4_MXILINX_ppm 1382733756 \
-      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
-      PH unisim/VCOMPONENTS 1290154108
-AR work/COMP4_MXILINX_ppm/BEHAVIORAL 1382733757 \
-      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/COMP4_MXILINX_ppm 1382733756 CP AND4 CP XNOR2
-EN work/FD4CE_MXILINX_ppm 1382733758 \
+      EN work/u74_157_MUSER_ppm 1383927460 CP M2_1E_MXILINX_ppm CP INV
+EN work/COMP4_MXILINX_ppm 1383927462 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/FD4CE_MXILINX_ppm/BEHAVIORAL 1382733759 \
+AR work/COMP4_MXILINX_ppm/BEHAVIORAL 1383927463 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/FD4CE_MXILINX_ppm 1382733758 CP FDCE
-EN work/FTCE_MXILINX_ppm 1382733760 \
-      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
-      PH unisim/VCOMPONENTS 1290154108
-AR work/FTCE_MXILINX_ppm/BEHAVIORAL 1382733761 \
-      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/FTCE_MXILINX_ppm 1382733760 CP XOR2 CP FDCE
-EN work/CB16CE_MXILINX_ppm 1382733762 \
+      EN work/COMP4_MXILINX_ppm 1383927462 CP AND4 CP XNOR2
+EN work/FD4CE_MXILINX_ppm 1383927464 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/CB16CE_MXILINX_ppm/BEHAVIORAL 1382733763 \
+AR work/FD4CE_MXILINX_ppm/BEHAVIORAL 1383927465 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/CB16CE_MXILINX_ppm 1382733762 CP FTCE_MXILINX_ppm CP AND3 CP AND2 \
+      EN work/FD4CE_MXILINX_ppm 1383927464 CP FDCE
+EN work/FTCE_MXILINX_ppm 1383927466 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/FTCE_MXILINX_ppm/BEHAVIORAL 1383927467 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
+      EN work/FTCE_MXILINX_ppm 1383927466 CP XOR2 CP FDCE
+EN work/CB16CE_MXILINX_ppm 1383927468 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/CB16CE_MXILINX_ppm/BEHAVIORAL 1383927469 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
+      EN work/CB16CE_MXILINX_ppm 1383927468 CP FTCE_MXILINX_ppm CP AND3 CP AND2 \
       CP VCC CP AND4 CP AND5
-EN work/CB2CE_MXILINX_ppm 1382733764 \
+EN work/CB2CE_MXILINX_ppm 1383927470 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/CB2CE_MXILINX_ppm/BEHAVIORAL 1382733765 \
+AR work/CB2CE_MXILINX_ppm/BEHAVIORAL 1383927471 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/CB2CE_MXILINX_ppm 1382733764 CP FTCE_MXILINX_ppm CP AND2 CP VCC
-EN work/FD8CE_MXILINX_ppm 1382733766 \
-      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
-      PH unisim/VCOMPONENTS 1290154108
-AR work/FD8CE_MXILINX_ppm/BEHAVIORAL 1382733767 \
-      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/FD8CE_MXILINX_ppm 1382733766 CP FDCE
-EN work/CD4CE_MXILINX_ppm 1382733768 \
+      EN work/CB2CE_MXILINX_ppm 1383927470 CP FTCE_MXILINX_ppm CP AND2 CP VCC
+EN work/FD8CE_MXILINX_ppm 1383927472 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/CD4CE_MXILINX_ppm/BEHAVIORAL 1382733769 \
+AR work/FD8CE_MXILINX_ppm/BEHAVIORAL 1383927473 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/CD4CE_MXILINX_ppm 1382733768 CP FDCE CP AND3 CP XOR2 CP OR2 CP AND2 \
+      EN work/FD8CE_MXILINX_ppm 1383927472 CP FDCE
+EN work/CD4CE_MXILINX_ppm 1383927474 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/CD4CE_MXILINX_ppm/BEHAVIORAL 1383927475 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
+      EN work/CD4CE_MXILINX_ppm 1383927474 CP FDCE CP AND3 CP XOR2 CP OR2 CP AND2 \
       CP AND2B1 CP INV CP AND4B2
-EN work/D3_8E_MXILINX_ppm 1382733770 \
+EN work/D3_8E_MXILINX_ppm 1383927476 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/D3_8E_MXILINX_ppm/BEHAVIORAL 1382733771 \
+AR work/D3_8E_MXILINX_ppm/BEHAVIORAL 1383927477 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/D3_8E_MXILINX_ppm 1382733770 CP AND4 CP AND4B1 CP AND4B2 CP AND4B3
-EN work/FTCLEX_MXILINX_ppm 1382733772 \
-      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
-      PH unisim/VCOMPONENTS 1290154108
-AR work/FTCLEX_MXILINX_ppm/BEHAVIORAL 1382733773 \
-      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/FTCLEX_MXILINX_ppm 1382733772 CP M2_1_MXILINX_ppm CP XOR2 CP FDCE
-EN work/CB4CLE_MXILINX_ppm 1382733774 \
+      EN work/D3_8E_MXILINX_ppm 1383927476 CP AND4 CP AND4B1 CP AND4B2 CP AND4B3
+EN work/FTCLEX_MXILINX_ppm 1383927478 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/CB4CLE_MXILINX_ppm/BEHAVIORAL 1382733775 \
+AR work/FTCLEX_MXILINX_ppm/BEHAVIORAL 1383927479 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/CB4CLE_MXILINX_ppm 1382733774 CP FTCLEX_MXILINX_ppm CP VCC CP AND4 \
+      EN work/FTCLEX_MXILINX_ppm 1383927478 CP M2_1_MXILINX_ppm CP XOR2 CP FDCE
+EN work/CB4CLE_MXILINX_ppm 1383927480 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/CB4CLE_MXILINX_ppm/BEHAVIORAL 1383927481 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
+      EN work/CB4CLE_MXILINX_ppm 1383927480 CP FTCLEX_MXILINX_ppm CP VCC CP AND4 \
       CP AND2 CP AND3 CP OR2
-EN work/M8_1E_MXILINX_ppm 1382733776 \
+EN work/M8_1E_MXILINX_ppm 1383927482 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/M8_1E_MXILINX_ppm/BEHAVIORAL 1382733777 \
+AR work/M8_1E_MXILINX_ppm/BEHAVIORAL 1383927483 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/M8_1E_MXILINX_ppm 1382733776 CP M2_1E_MXILINX_ppm CP MUXF5_L CP MUXF6
-EN work/ppm 1382733778 \
+      EN work/M8_1E_MXILINX_ppm 1383927482 CP M2_1E_MXILINX_ppm CP MUXF5_L CP MUXF6
+EN work/ppm 1383927484 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/ppm/BEHAVIORAL 1382733779 \
+AR work/ppm/BEHAVIORAL 1383927485 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" \
-      EN work/ppm 1382733778 CP OBUF CP BUF CP IBUF CP BUFG CP CODEGEN CP OR2 CP AND2B1 \
+      EN work/ppm 1383927484 CP OBUF CP BUF CP IBUF CP BUFG CP CODEGEN CP OR2 CP AND2B1 \
       CP AND2 CP AND3B1 CP CB2CE_MXILINX_ppm CP FDC CP OR3 CP AND3B2 CP FDCE CP OR4 \
       CP NOR2 CP AND3 CP CB4CLE_MXILINX_ppm CP D3_8E_MXILINX_ppm \
       CP CB16CE_MXILINX_ppm CP FD4CE_MXILINX_ppm CP u74_157_MUSER_ppm \
@@ -244,53 +274,53 @@ AR work/ppm/BEHAVIORAL 1382733779 \
       CP M4_1E_MXILINX_ppm CP ROM16X1 CP INV CP M8_1E_MXILINX_ppm \
       CP FD8CE_MXILINX_ppm CP CD4CE_MXILINX_ppm CP ADD4_MXILINX_ppm \
       CP COMP4_MXILINX_ppm CP M2_1E_MXILINX_ppm CP ADD8_MXILINX_ppm \
-      CP M2_1_MXILINX_ppm CP NOR4 CP VCC CP GND
-FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/u74_157.vhf" 2013/10/25.15:26:13 M.81d
-EN work/M2_1E_MXILINX_u74_157 1382733718 \
+      CP M2_1_MXILINX_ppm CP VCC CP GND CP NOR4 CP AND2B2
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/u74_157.vhf" 2013/11/01.12:26:03 M.81d
+EN work/M2_1E_MXILINX_u74_157 1383927424 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/u74_157.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/M2_1E_MXILINX_u74_157/BEHAVIORAL 1382733719 \
+AR work/M2_1E_MXILINX_u74_157/BEHAVIORAL 1383927425 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/u74_157.vhf" \
-      EN work/M2_1E_MXILINX_u74_157 1382733718 CP AND3 CP AND3B1 CP OR2
-EN work/u74_157 1382733720 \
+      EN work/M2_1E_MXILINX_u74_157 1383927424 CP AND3 CP AND3B1 CP OR2
+EN work/u74_157 1383927426 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/u74_157.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/u74_157/BEHAVIORAL 1382733721 \
+AR work/u74_157/BEHAVIORAL 1383927427 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/u74_157.vhf" \
-      EN work/u74_157 1382733720 CP M2_1E_MXILINX_u74_157 CP INV
-FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/X74_153.vhf" 2013/10/25.15:26:13 M.81d
-EN work/M2_1E_MXILINX_X74_153 1382733780 \
+      EN work/u74_157 1383927426 CP M2_1E_MXILINX_u74_157 CP INV
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/X74_153.vhf" 2013/11/01.12:26:03 M.81d
+EN work/M2_1E_MXILINX_X74_153 1383927486 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/X74_153.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/M2_1E_MXILINX_X74_153/BEHAVIORAL 1382733781 \
+AR work/M2_1E_MXILINX_X74_153/BEHAVIORAL 1383927487 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/X74_153.vhf" \
-      EN work/M2_1E_MXILINX_X74_153 1382733780 CP AND3 CP AND3B1 CP OR2
-EN work/M2_1_MXILINX_X74_153 1382733782 \
-      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/X74_153.vhf" \
-      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
-      PH unisim/VCOMPONENTS 1290154108
-AR work/M2_1_MXILINX_X74_153/BEHAVIORAL 1382733783 \
-      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/X74_153.vhf" \
-      EN work/M2_1_MXILINX_X74_153 1382733782 CP AND2B1 CP OR2 CP AND2
-EN work/X74_153 1382733784 \
+      EN work/M2_1E_MXILINX_X74_153 1383927486 CP AND3 CP AND3B1 CP OR2
+EN work/M2_1_MXILINX_X74_153 1383927488 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/X74_153.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/X74_153/BEHAVIORAL 1382733785 \
+AR work/M2_1_MXILINX_X74_153/BEHAVIORAL 1383927489 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/X74_153.vhf" \
-      EN work/X74_153 1382733784 CP M2_1_MXILINX_X74_153 CP M2_1E_MXILINX_X74_153 \
+      EN work/M2_1_MXILINX_X74_153 1383927488 CP AND2B1 CP OR2 CP AND2
+EN work/X74_153 1383927490 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/X74_153.vhf" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
+      PH unisim/VCOMPONENTS 1290154108
+AR work/X74_153/BEHAVIORAL 1383927491 \
+      FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/X74_153.vhf" \
+      EN work/X74_153 1383927490 CP M2_1_MXILINX_X74_153 CP M2_1E_MXILINX_X74_153 \
       CP INV
-FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ZERODISPLAY.vhf" 2013/10/25.13:30:08 M.81d
-EN work/ZERODISPLAY 1382733728 \
+FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ZERODISPLAY.vhf" 2013/10/25.12:30:07 M.81d
+EN work/ZERODISPLAY 1383927434 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ZERODISPLAY.vhf" \
       PB ieee/std_logic_1164 1290154108 PB ieee/NUMERIC_STD 1290154109 LB UNISIM \
       PH unisim/VCOMPONENTS 1290154108
-AR work/ZERODISPLAY/BEHAVIORAL 1382733729 \
+AR work/ZERODISPLAY/BEHAVIORAL 1383927435 \
       FL "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ZERODISPLAY.vhf" \
-      EN work/ZERODISPLAY 1382733728 CP NOR4 CP OR4 CP AND2B2 CP AND2B1 CP OR2
+      EN work/ZERODISPLAY 1383927434 CP NOR4 CP OR4 CP AND2B2 CP AND2B1 CP OR2
 FL "D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/CODEDISC.vhf" 2013/10/04.12:56:47 M.81d
 FL "D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/CODEGEN.vhf" 2013/10/04.12:56:47 M.81d
 FL "D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/LARGESTDISP.vhf" 2013/10/04.12:56:47 M.81d

@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : X74_153.vhf
--- /___/   /\     Timestamp : 10/04/2013 13:41:49
+-- /___/   /\     Timestamp : 11/01/2013 13:26:03
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "S:/CS2204/Lab 5 - Exp1_2/Ppm/X74_153.vhf" -w "S:/CS2204/Lab 5 - Exp1_2/Ppm/X74_153.sch"
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/X74_153.vhf" -w "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/X74_153.sch"
 --Design Name: X74_153
 --Device: spartan3e
 --Purpose:

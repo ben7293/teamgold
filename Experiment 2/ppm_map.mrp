@@ -9,7 +9,7 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.52.76.2 $
-Mapped Date    : Wed Oct 16 19:56:23 2013
+Mapped Date    : Sat Nov 02 02:10:36 2013
 
 Design Summary
 --------------
@@ -31,9 +31,9 @@ Logic Distribution:
   Number of RPM macros:           45
 Average Fanout of Non-Clock Nets:                3.04
 
-Peak Memory Usage:  242 MB
-Total REAL time to MAP completion:  1 secs 
-Total CPU time to MAP completion:   1 secs 
+Peak Memory Usage:  238 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   2 secs 
 
 NOTES:
 
@@ -437,51 +437,51 @@ Section 6 - IOB Properties
 
 Section 7 - RPMs
 ----------------
-U148_84                                 
-U149_83                                 
-U151_82                                 
-U171_91                                 
-U181_93                                 
-U182_92                                 
-U190_75                                 
-U195/U195_I_Q0_28                       
-U195/U195_I_Q1_29                       
-U269/U269_I_Q0_30                       
-U269/U269_I_Q1_31                       
-U269/U269_I_Q2_32                       
-U269/U269_I_Q3_33                       
-U288_97                                 
-U6/U6_I_Q0_28                           
-U6/U6_I_Q1_29                           
-U64/U64_I_Q0_35                         
-U64/U64_I_Q1_36                         
-U64/U64_I_Q2_37                         
-U66/U66_I_Q0_13                         
-U66/U66_I_Q10_22                        
-U66/U66_I_Q11_23                        
-U66/U66_I_Q12_24                        
-U66/U66_I_Q13_25                        
-U66/U66_I_Q14_26                        
-U66/U66_I_Q15_27                        
-U66/U66_I_Q1_12                         
-U66/U66_I_Q2_15                         
-U66/U66_I_Q3_14                         
-U66/U66_I_Q4_19                         
-U66/U66_I_Q5_18                         
-U66/U66_I_Q6_17                         
-U66/U66_I_Q7_16                         
-U66/U66_I_Q8_20                         
-U66/U66_I_Q9_21                         
-U67/U67_I_Q0_13                         
-U67/U67_I_Q1_12                         
-U67/U67_I_Q2_15                         
-U67/U67_I_Q3_14                         
-U67/U67_I_Q4_19                         
-U67/U67_I_Q5_18                         
-U67/U67_I_Q6_17                         
-U67/U67_I_Q7_16                         
-U86/U86_I_Q0_28                         
-U86/U86_I_Q1_29                         
+U148_94                                 
+U149_93                                 
+U151_92                                 
+U171_101                                
+U181_103                                
+U182_102                                
+U190_85                                 
+U195/U195_I_Q0_38                       
+U195/U195_I_Q1_39                       
+U269/U269_I_Q0_40                       
+U269/U269_I_Q1_41                       
+U269/U269_I_Q2_42                       
+U269/U269_I_Q3_43                       
+U288_107                                
+U6/U6_I_Q0_38                           
+U6/U6_I_Q1_39                           
+U64/U64_I_Q0_45                         
+U64/U64_I_Q1_46                         
+U64/U64_I_Q2_47                         
+U66/U66_I_Q0_23                         
+U66/U66_I_Q10_32                        
+U66/U66_I_Q11_33                        
+U66/U66_I_Q12_34                        
+U66/U66_I_Q13_35                        
+U66/U66_I_Q14_36                        
+U66/U66_I_Q15_37                        
+U66/U66_I_Q1_22                         
+U66/U66_I_Q2_25                         
+U66/U66_I_Q3_24                         
+U66/U66_I_Q4_29                         
+U66/U66_I_Q5_28                         
+U66/U66_I_Q6_27                         
+U66/U66_I_Q7_26                         
+U66/U66_I_Q8_30                         
+U66/U66_I_Q9_31                         
+U67/U67_I_Q0_23                         
+U67/U67_I_Q1_22                         
+U67/U67_I_Q2_25                         
+U67/U67_I_Q3_24                         
+U67/U67_I_Q4_29                         
+U67/U67_I_Q5_28                         
+U67/U67_I_Q6_27                         
+U67/U67_I_Q7_26                         
+U86/U86_I_Q0_38                         
+U86/U86_I_Q1_39                         
 
 Section 8 - Guide Report
 ------------------------

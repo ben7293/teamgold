@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ppm.vhf
--- /___/   /\     Timestamp : 10/25/2013 16:41:51
+-- /___/   /\     Timestamp : 11/08/2013 11:16:58
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -2468,6 +2468,10 @@ architecture BEHAVIORAL of ppm is
    signal PD1PRD           : std_logic;
    signal PD2PRD           : std_logic;
    signal PD3PRD           : std_logic;
+   signal POS0Z            : std_logic;
+   signal POS1Z            : std_logic;
+   signal POS2Z            : std_logic;
+   signal POS3Z            : std_logic;
    signal PSEL0            : std_logic;
    signal PSEL1            : std_logic;
    signal PSEL2            : std_logic;
@@ -2677,14 +2681,10 @@ architecture BEHAVIORAL of ppm is
    signal XLXN_11314       : std_logic;
    signal XLXN_11315       : std_logic;
    signal XLXN_11316       : std_logic;
-   signal XLXN_11411       : std_logic;
-   signal XLXN_11412       : std_logic;
-   signal XLXN_11451       : std_logic;
-   signal XLXN_11463       : std_logic;
-   signal XLXN_11470       : std_logic;
-   signal XLXN_11472       : std_logic;
-   signal XLXN_11578       : std_logic;
-   signal XLXN_11629       : std_logic;
+   signal XLXN_11413       : std_logic;
+   signal XLXN_11554       : std_logic;
+   signal XLXN_11555       : std_logic;
+   signal XLXN_11593       : std_logic;
    signal ZERODISP0        : std_logic;
    signal ZERODISP1        : std_logic;
    component OBUF
@@ -3078,15 +3078,6 @@ architecture BEHAVIORAL of ppm is
              O  : out   std_logic);
    end component;
    
-   component NOR4
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of NOR4 : component is "BLACK_BOX";
-   
    component VCC
       port ( P : out   std_logic);
    end component;
@@ -3096,6 +3087,22 @@ architecture BEHAVIORAL of ppm is
       port ( G : out   std_logic);
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
+   
+   component NOR4
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             I3 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of NOR4 : component is "BLACK_BOX";
+   
+   component AND2B2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2B2 : component is "BLACK_BOX";
    
    attribute HU_SET of U6 : label is "U6_59";
    attribute HU_SET of U64 : label is "U64_40";
@@ -3144,7 +3151,7 @@ architecture BEHAVIORAL of ppm is
    attribute HU_SET of U273 : label is "U273_76";
    attribute HU_SET of U274 : label is "U274_77";
    attribute HU_SET of U288 : label is "U288_78";
-   attribute HU_SET of U298 : label is "U298_79";
+   attribute HU_SET of XLXI_1320 : label is "XLXI_1320_79";
 begin
    ADD_BUF : OBUF
       port map (I=>ADD,
@@ -3270,10 +3277,6 @@ begin
    P2CLK_BUFG : BUFG
       port map (I=>Q(3),
                 O=>P2CLK);
-   
-   P2PLAYED_BUF : BUF
-      port map (I=>APOSZERO,
-                O=>P2PLAYED);
    
    P2PLAY_BUF : IBUF
       port map (I=>P2PLAY_NP2B,
@@ -4731,85 +4734,18 @@ begin
       port map (A0=>RD0,
                 A1=>RD1,
                 A2=>RD2,
-                A3=>XLXN_11629,
+                A3=>XLXN_11413,
                 B0=>DISP12,
                 B1=>DISP13,
                 B2=>DISP14,
-                B3=>XLXN_11629,
-                CI=>XLXN_11629,
+                B3=>XLXN_11413,
+                CI=>XLXN_11413,
                 CO=>open,
                 OFL=>open,
                 S0=>NPDISP12,
                 S1=>NPDISP13,
                 S2=>NPDISP14,
                 S3=>C3);
-   
-   U289 : NOR4
-      port map (I0=>DISP12,
-                I1=>DISP13,
-                I2=>DISP14,
-                I3=>DISP15,
-                O=>XLXN_11411);
-   
-   U290 : NOR4
-      port map (I0=>DISP8,
-                I1=>DISP9,
-                I2=>DISP10,
-                I3=>DISP11,
-                O=>XLXN_11412);
-   
-   U291 : NOR4
-      port map (I0=>DISP4,
-                I1=>DISP5,
-                I2=>DISP6,
-                I3=>DISP7,
-                O=>XLXN_11472);
-   
-   U292 : NOR4
-      port map (I0=>DISP0,
-                I1=>DISP1,
-                I2=>DISP2,
-                I3=>DISP3,
-                O=>XLXN_11463);
-   
-   U293 : OR4
-      port map (I0=>XLXN_11463,
-                I1=>XLXN_11472,
-                I2=>XLXN_11412,
-                I3=>XLXN_11411,
-                O=>APOSZERO);
-   
-   U294 : OR2
-      port map (I0=>XLXN_11451,
-                I1=>XLXN_11463,
-                O=>ZERODISP1);
-   
-   U295 : AND2
-      port map (I0=>XLXN_11470,
-                I1=>XLXN_11412,
-                O=>XLXN_11451);
-   
-   U296 : INV
-      port map (I=>XLXN_11472,
-                O=>XLXN_11470);
-   
-   U297 : OR2
-      port map (I0=>XLXN_11463,
-                I1=>XLXN_11472,
-                O=>ZERODISP0);
-   
-   U298 : D2_4E_MXILINX_ppm
-      port map (A0=>ZERODISP1,
-                A1=>ZERODISP0,
-                E=>XLXN_11578,
-                D0=>P2SEL3,
-                D1=>P2SEL2,
-                D2=>P2SEL1,
-                D3=>P2SEL0);
-   
-   U299 : INV
-      port map (I=>APOSZERO,
-                O=>P2SKIP);
    
    XLXI_24 : VCC
       port map (P=>XLXN_1361);
@@ -4958,38 +4894,110 @@ begin
    XLXI_1241 : GND
       port map (G=>XLXN_7);
    
-   XLXI_1267 : GND
-      port map (G=>XLXN_11629);
+   XLXI_1273 : GND
+      port map (G=>XLXN_11413);
    
-   XLXI_1298 : GND
-      port map (G=>P2CODE7);
+   XLXI_1274 : NOR4
+      port map (I0=>DISP0,
+                I1=>DISP1,
+                I2=>DISP2,
+                I3=>DISP3,
+                O=>POS0Z);
    
-   XLXI_1299 : GND
-      port map (G=>P2CODE6);
+   XLXI_1275 : NOR4
+      port map (I0=>DISP8,
+                I1=>DISP9,
+                I2=>DISP10,
+                I3=>DISP11,
+                O=>POS2Z);
    
-   XLXI_1300 : GND
-      port map (G=>P2CODE5);
+   XLXI_1276 : NOR4
+      port map (I0=>DISP4,
+                I1=>DISP5,
+                I2=>DISP6,
+                I3=>DISP7,
+                O=>POS1Z);
    
-   XLXI_1301 : GND
-      port map (G=>P2CODE4);
+   XLXI_1277 : NOR4
+      port map (I0=>DISP12,
+                I1=>DISP13,
+                I2=>DISP14,
+                I3=>DISP15,
+                O=>POS3Z);
    
-   XLXI_1302 : GND
-      port map (G=>P2CODE3);
+   XLXI_1283 : OR4
+      port map (I0=>POS3Z,
+                I1=>POS2Z,
+                I2=>POS1Z,
+                I3=>POS0Z,
+                O=>APOSZERO);
    
-   XLXI_1303 : GND
-      port map (G=>P2CODE2);
+   XLXI_1307 : AND2B2
+      port map (I0=>POS1Z,
+                I1=>POS0Z,
+                O=>ZERODISP1);
    
-   XLXI_1304 : GND
-      port map (G=>P2CODE1);
+   XLXI_1308 : AND2B2
+      port map (I0=>POS0Z,
+                I1=>POS2Z,
+                O=>XLXN_11554);
    
-   XLXI_1305 : GND
-      port map (G=>P2CODE0);
+   XLXI_1309 : AND2B1
+      port map (I0=>POS0Z,
+                I1=>POS1Z,
+                O=>XLXN_11555);
    
-   XLXI_1309 : GND
+   XLXI_1310 : OR2
+      port map (I0=>XLXN_11555,
+                I1=>XLXN_11554,
+                O=>ZERODISP0);
+   
+   XLXI_1320 : D2_4E_MXILINX_ppm
+      port map (A0=>ZERODISP0,
+                A1=>ZERODISP1,
+                E=>XLXN_11593,
+                D0=>P2SEL0,
+                D1=>P2SEL1,
+                D2=>P2SEL2,
+                D3=>P2SEL3);
+   
+   XLXI_1321 : INV
+      port map (I=>APOSZERO,
+                O=>P2SKIP);
+   
+   XLXI_1322 : VCC
+      port map (P=>XLXN_11593);
+   
+   XLXI_1323 : GND
       port map (G=>P2ADD);
    
-   XLXI_1311 : VCC
-      port map (P=>XLXN_11578);
+   XLXI_1326 : BUF
+      port map (I=>APOSZERO,
+                O=>P2PLAYED);
+   
+   XLXI_1335 : GND
+      port map (G=>P2CODE7);
+   
+   XLXI_1336 : GND
+      port map (G=>P2CODE6);
+   
+   XLXI_1339 : GND
+      port map (G=>P2CODE5);
+   
+   XLXI_1340 : GND
+      port map (G=>P2CODE4);
+   
+   XLXI_1341 : GND
+      port map (G=>P2CODE3);
+   
+   XLXI_1342 : GND
+      port map (G=>P2CODE2);
+   
+   XLXI_1343 : GND
+      port map (G=>P2CODE1);
+   
+   XLXI_1344 : GND
+      port map (G=>P2CODE0);
    
 end BEHAVIORAL;
 

@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/atomic/Documents/Code/TeamGold/Experiment 2/netgen/par/ppm_timesim.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/netgen/par/ppm_timesim.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

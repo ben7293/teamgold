@@ -2,7 +2,7 @@
 Release 12.4 Trace  (nt64)
 Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
-D:\Xilinx\12.4\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+C:\Xilinx\12.4\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf
 
 Design file:              ppm.ncd
@@ -43,102 +43,102 @@ Clock to Setup on destination clock CLOCK_NP2B
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLOCK_NP2B     |    5.521|         |         |         |
+CLOCK_NP2B     |    5.744|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-P1ADD_NP2B     |A1_NB2P        |   22.196|
-P1ADD_NP2B     |A2_NB2P        |   23.096|
-P1ADD_NP2B     |A3_NB2P        |   22.954|
-P1ADD_NP2B     |A4_NB2P        |   22.176|
-P1ADD_NP2B     |ADD_NB2P       |   18.397|
-P1ADD_NP2B     |RD0_NB2P       |    6.654|
-P1PLAY_NP2B    |CA_NB2P        |   14.193|
-P1PLAY_NP2B    |CB_NB2P        |   12.887|
-P1PLAY_NP2B    |CC_NB2P        |   12.301|
-P1PLAY_NP2B    |CD_NB2P        |   12.313|
-P1PLAY_NP2B    |CE_NB2P        |   13.262|
-P1PLAY_NP2B    |CF_NB2P        |   13.896|
-P1PLAY_NP2B    |CG_NB2P        |   13.522|
-P1SEL0_NP2B    |A1_NB2P        |   24.294|
-P1SEL0_NP2B    |A2_NB2P        |   25.194|
-P1SEL0_NP2B    |A3_NB2P        |   25.052|
-P1SEL0_NP2B    |A4_NB2P        |   24.274|
-P1SEL0_NP2B    |ADD_NB2P       |   20.495|
-P1SEL0_NP2B    |RD0_NB2P       |    8.746|
-P1SEL0_NP2B    |RD1_NB2P       |    9.949|
-P1SEL0_NP2B    |RD2_NB2P       |   10.283|
-P1SEL0_NP2B    |RD3_NB2P       |    8.637|
-P1SEL1_NP2B    |A1_NB2P        |   23.861|
-P1SEL1_NP2B    |A2_NB2P        |   24.761|
-P1SEL1_NP2B    |A3_NB2P        |   24.619|
-P1SEL1_NP2B    |A4_NB2P        |   23.841|
-P1SEL1_NP2B    |ADD_NB2P       |   20.062|
-P1SEL1_NP2B    |RD0_NB2P       |    8.313|
-P1SEL1_NP2B    |RD1_NB2P       |    9.516|
-P1SEL1_NP2B    |RD2_NB2P       |    9.850|
-P1SEL1_NP2B    |RD3_NB2P       |    8.204|
-P1SEL2_NP2B    |A1_NB2P        |   24.717|
-P1SEL2_NP2B    |A2_NB2P        |   25.617|
-P1SEL2_NP2B    |A3_NB2P        |   25.475|
-P1SEL2_NP2B    |A4_NB2P        |   24.697|
-P1SEL2_NP2B    |ADD_NB2P       |   20.918|
-P1SEL2_NP2B    |RD0_NB2P       |    9.169|
-P1SEL2_NP2B    |RD1_NB2P       |   10.372|
-P1SEL2_NP2B    |RD2_NB2P       |   10.706|
-P1SEL2_NP2B    |RD3_NB2P       |    9.060|
-P1SEL3_NP2B    |A1_NB2P        |   24.536|
-P1SEL3_NP2B    |A2_NB2P        |   25.436|
-P1SEL3_NP2B    |A3_NB2P        |   25.294|
-P1SEL3_NP2B    |A4_NB2P        |   24.516|
-P1SEL3_NP2B    |ADD_NB2P       |   20.737|
-P1SEL3_NP2B    |RD0_NB2P       |    8.988|
-P1SEL3_NP2B    |RD1_NB2P       |   10.191|
-P1SEL3_NP2B    |RD2_NB2P       |   10.525|
-P1SEL3_NP2B    |RD3_NB2P       |    8.879|
-SHPTS_NP2B     |A1_NB2P        |    9.024|
-SHPTS_NP2B     |A2_NB2P        |    9.924|
-SHPTS_NP2B     |A3_NB2P        |    9.782|
-SHPTS_NP2B     |A4_NB2P        |    9.004|
-SHPTS_NP2B     |CA_NB2P        |   15.672|
-SHPTS_NP2B     |CB_NB2P        |   14.366|
-SHPTS_NP2B     |CC_NB2P        |   13.863|
-SHPTS_NP2B     |CD_NB2P        |   13.814|
-SHPTS_NP2B     |CE_NB2P        |   14.741|
-SHPTS_NP2B     |CF_NB2P        |   15.375|
-SHPTS_NP2B     |CG_NB2P        |   15.001|
-TRD1_NP2B      |A1_NB2P        |   21.964|
-TRD1_NP2B      |A2_NB2P        |   22.864|
-TRD1_NP2B      |A3_NB2P        |   22.722|
-TRD1_NP2B      |A4_NB2P        |   21.944|
-TRD1_NP2B      |ADD_NB2P       |   18.165|
-TRD1_NP2B      |RD1_NB2P       |    7.619|
-TRD2_NP2B      |A1_NB2P        |   22.240|
-TRD2_NP2B      |A2_NB2P        |   23.140|
-TRD2_NP2B      |A3_NB2P        |   22.998|
-TRD2_NP2B      |A4_NB2P        |   22.220|
-TRD2_NP2B      |ADD_NB2P       |   18.441|
-TRD2_NP2B      |RD2_NB2P       |    9.536|
-TRD3_NP2B      |A1_NB2P        |   21.776|
-TRD3_NP2B      |A2_NB2P        |   22.676|
-TRD3_NP2B      |A3_NB2P        |   22.534|
-TRD3_NP2B      |A4_NB2P        |   21.756|
-TRD3_NP2B      |ADD_NB2P       |   17.977|
-TRD3_NP2B      |RD3_NB2P       |    7.302|
+P1ADD_NP2B     |A1_NB2P        |   24.524|
+P1ADD_NP2B     |A2_NB2P        |   24.488|
+P1ADD_NP2B     |A3_NB2P        |   24.374|
+P1ADD_NP2B     |A4_NB2P        |   23.285|
+P1ADD_NP2B     |ADD_NB2P       |   19.285|
+P1ADD_NP2B     |RD0_NB2P       |    7.293|
+P1PLAY_NP2B    |CA_NB2P        |   14.540|
+P1PLAY_NP2B    |CB_NB2P        |   14.264|
+P1PLAY_NP2B    |CC_NB2P        |   13.946|
+P1PLAY_NP2B    |CD_NB2P        |   13.689|
+P1PLAY_NP2B    |CE_NB2P        |   13.538|
+P1PLAY_NP2B    |CF_NB2P        |   13.811|
+P1PLAY_NP2B    |CG_NB2P        |   13.491|
+P1SEL0_NP2B    |A1_NB2P        |   27.136|
+P1SEL0_NP2B    |A2_NB2P        |   27.100|
+P1SEL0_NP2B    |A3_NB2P        |   26.986|
+P1SEL0_NP2B    |A4_NB2P        |   25.897|
+P1SEL0_NP2B    |ADD_NB2P       |   21.897|
+P1SEL0_NP2B    |RD0_NB2P       |    9.905|
+P1SEL0_NP2B    |RD1_NB2P       |   10.556|
+P1SEL0_NP2B    |RD2_NB2P       |   10.377|
+P1SEL0_NP2B    |RD3_NB2P       |    9.386|
+P1SEL1_NP2B    |A1_NB2P        |   27.121|
+P1SEL1_NP2B    |A2_NB2P        |   27.085|
+P1SEL1_NP2B    |A3_NB2P        |   26.971|
+P1SEL1_NP2B    |A4_NB2P        |   25.882|
+P1SEL1_NP2B    |ADD_NB2P       |   21.882|
+P1SEL1_NP2B    |RD0_NB2P       |    9.890|
+P1SEL1_NP2B    |RD1_NB2P       |   10.541|
+P1SEL1_NP2B    |RD2_NB2P       |   10.362|
+P1SEL1_NP2B    |RD3_NB2P       |    9.371|
+P1SEL2_NP2B    |A1_NB2P        |   27.577|
+P1SEL2_NP2B    |A2_NB2P        |   27.541|
+P1SEL2_NP2B    |A3_NB2P        |   27.427|
+P1SEL2_NP2B    |A4_NB2P        |   26.338|
+P1SEL2_NP2B    |ADD_NB2P       |   22.338|
+P1SEL2_NP2B    |RD0_NB2P       |   10.346|
+P1SEL2_NP2B    |RD1_NB2P       |   10.997|
+P1SEL2_NP2B    |RD2_NB2P       |   10.818|
+P1SEL2_NP2B    |RD3_NB2P       |    9.827|
+P1SEL3_NP2B    |A1_NB2P        |   27.467|
+P1SEL3_NP2B    |A2_NB2P        |   27.431|
+P1SEL3_NP2B    |A3_NB2P        |   27.317|
+P1SEL3_NP2B    |A4_NB2P        |   26.228|
+P1SEL3_NP2B    |ADD_NB2P       |   22.228|
+P1SEL3_NP2B    |RD0_NB2P       |   10.236|
+P1SEL3_NP2B    |RD1_NB2P       |   10.887|
+P1SEL3_NP2B    |RD2_NB2P       |   10.708|
+P1SEL3_NP2B    |RD3_NB2P       |    9.717|
+SHPTS_NP2B     |A1_NB2P        |    9.763|
+SHPTS_NP2B     |A2_NB2P        |    9.727|
+SHPTS_NP2B     |A3_NB2P        |    9.613|
+SHPTS_NP2B     |A4_NB2P        |    8.524|
+SHPTS_NP2B     |CA_NB2P        |   16.492|
+SHPTS_NP2B     |CB_NB2P        |   16.069|
+SHPTS_NP2B     |CC_NB2P        |   15.751|
+SHPTS_NP2B     |CD_NB2P        |   15.528|
+SHPTS_NP2B     |CE_NB2P        |   15.524|
+SHPTS_NP2B     |CF_NB2P        |   16.154|
+SHPTS_NP2B     |CG_NB2P        |   15.834|
+TRD1_NP2B      |A1_NB2P        |   23.682|
+TRD1_NP2B      |A2_NB2P        |   23.646|
+TRD1_NP2B      |A3_NB2P        |   23.532|
+TRD1_NP2B      |A4_NB2P        |   22.443|
+TRD1_NP2B      |ADD_NB2P       |   18.443|
+TRD1_NP2B      |RD1_NB2P       |    7.657|
+TRD2_NP2B      |A1_NB2P        |   23.348|
+TRD2_NP2B      |A2_NB2P        |   23.312|
+TRD2_NP2B      |A3_NB2P        |   23.198|
+TRD2_NP2B      |A4_NB2P        |   22.109|
+TRD2_NP2B      |ADD_NB2P       |   18.109|
+TRD2_NP2B      |RD2_NB2P       |    9.526|
+TRD3_NP2B      |A1_NB2P        |   23.194|
+TRD3_NP2B      |A2_NB2P        |   23.158|
+TRD3_NP2B      |A3_NB2P        |   23.044|
+TRD3_NP2B      |A4_NB2P        |   21.955|
+TRD3_NP2B      |ADD_NB2P       |   17.955|
+TRD3_NP2B      |RD3_NB2P       |    8.165|
 ---------------+---------------+---------+
 
 
-Analysis completed Wed Oct 16 19:56:40 2013 
+Analysis completed Sat Nov 02 02:11:01 2013 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 167 MB
+Peak Memory Usage: 163 MB
 
 
 

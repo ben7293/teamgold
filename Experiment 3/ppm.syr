@@ -324,9 +324,9 @@ Analyzing Entity <ppm> in library <work> (Architecture <behavioral>).
     Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <TRD3_BUF> in unit <ppm>.
     Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <TRD3_BUF> in unit <ppm>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <TRD3_BUF> in unit <ppm>.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3396: Unconnected output port 'CEO' of component 'CB2CE_MXILINX_ppm'.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3396: Unconnected output port 'Q0' of component 'CB2CE_MXILINX_ppm'.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3396: Unconnected output port 'Q1' of component 'CB2CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3399: Unconnected output port 'CEO' of component 'CB2CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3399: Unconnected output port 'Q0' of component 'CB2CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3399: Unconnected output port 'Q1' of component 'CB2CE_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U6_59" for instance <U6> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U19> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U20> in unit <ppm>.
@@ -335,17 +335,17 @@ WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Exp
     Set user-defined property "INIT =  0" for instance <U43> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U50> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U55> in unit <ppm>.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3717: Unconnected output port 'CEO' of component 'CB4CLE_MXILINX_ppm'.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3717: Unconnected output port 'Q3' of component 'CB4CLE_MXILINX_ppm'.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3717: Unconnected output port 'TC' of component 'CB4CLE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3720: Unconnected output port 'CEO' of component 'CB4CLE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3720: Unconnected output port 'Q3' of component 'CB4CLE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3720: Unconnected output port 'TC' of component 'CB4CLE_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U64_40" for instance <U64> in unit <ppm>.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3733: Unconnected output port 'D7' of component 'D3_8E_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3736: Unconnected output port 'D7' of component 'D3_8E_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U65_41" for instance <U65> in unit <ppm>.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3747: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_ppm'.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3747: Unconnected output port 'TC' of component 'CB16CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3750: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3750: Unconnected output port 'TC' of component 'CB16CE_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U66_60" for instance <U66> in unit <ppm>.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3755: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_ppm'.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3755: Unconnected output port 'TC' of component 'CB16CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3758: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3758: Unconnected output port 'TC' of component 'CB16CE_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U67_61" for instance <U67> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U68> in unit <ppm>.
     Set user-defined property "HU_SET =  U69_62" for instance <U69> in unit <ppm>.
@@ -356,8 +356,8 @@ WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Exp
     Set user-defined property "INIT =  0" for instance <U76> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U77> in unit <ppm>.
     Set user-defined property "INIT =  0" for instance <U78> in unit <ppm>.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3923: Unconnected output port 'CEO' of component 'CB2CE_MXILINX_ppm'.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3923: Unconnected output port 'TC' of component 'CB2CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3926: Unconnected output port 'CEO' of component 'CB2CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 3926: Unconnected output port 'TC' of component 'CB2CE_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U86_42" for instance <U86> in unit <ppm>.
     Set user-defined property "HU_SET =  U91_43" for instance <U91> in unit <ppm>.
     Set user-defined property "HU_SET =  U100_47" for instance <U100> in unit <ppm>.
@@ -378,17 +378,17 @@ WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Exp
     Set user-defined property "HU_SET =  U116_58" for instance <U116> in unit <ppm>.
     Set user-defined property "HU_SET =  U117_52" for instance <U117> in unit <ppm>.
     Set user-defined property "HU_SET =  U118_53" for instance <U118> in unit <ppm>.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4196: Unconnected output port 'CEO' of component 'CD4CE_MXILINX_ppm'.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4196: Unconnected output port 'TC' of component 'CD4CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4199: Unconnected output port 'CEO' of component 'CD4CE_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4199: Unconnected output port 'TC' of component 'CD4CE_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U119_51" for instance <U119> in unit <ppm>.
     Set user-defined property "HU_SET =  U120_50" for instance <U120> in unit <ppm>.
     Set user-defined property "HU_SET =  U121_49" for instance <U121> in unit <ppm>.
     Set user-defined property "HU_SET =  U122_48" for instance <U122> in unit <ppm>.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4274: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4277: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U148_65" for instance <U148> in unit <ppm>.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4291: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4294: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U149_64" for instance <U149> in unit <ppm>.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4308: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4311: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U151_63" for instance <U151> in unit <ppm>.
     Set user-defined property "HU_SET =  U155_54" for instance <U155> in unit <ppm>.
     Set user-defined property "HU_SET =  U159_68" for instance <U159> in unit <ppm>.
@@ -396,23 +396,23 @@ WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Exp
     Set user-defined property "HU_SET =  U161_67" for instance <U161> in unit <ppm>.
     Set user-defined property "HU_SET =  U162_66" for instance <U162> in unit <ppm>.
     Set user-defined property "HU_SET =  U169_71" for instance <U169> in unit <ppm>.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4509: Unconnected output port 'CO' of component 'ADD4_MXILINX_ppm'.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4509: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4509: Unconnected output port 'S2' of component 'ADD4_MXILINX_ppm'.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4509: Unconnected output port 'S3' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4512: Unconnected output port 'CO' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4512: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4512: Unconnected output port 'S2' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4512: Unconnected output port 'S3' of component 'ADD4_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U171_72" for instance <U171> in unit <ppm>.
     Set user-defined property "HU_SET =  U176_70" for instance <U176> in unit <ppm>.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4618: Unconnected output port 'OFL' of component 'ADD8_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4621: Unconnected output port 'OFL' of component 'ADD8_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U181_74" for instance <U181> in unit <ppm>.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4626: Unconnected output port 'OFL' of component 'ADD8_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4629: Unconnected output port 'OFL' of component 'ADD8_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U182_73" for instance <U182> in unit <ppm>.
     Set user-defined property "HU_SET =  U272_75" for instance <U272> in unit <ppm>.
     Set user-defined property "HU_SET =  U273_76" for instance <U273> in unit <ppm>.
     Set user-defined property "HU_SET =  U274_77" for instance <U274> in unit <ppm>.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4730: Unconnected output port 'CO' of component 'ADD4_MXILINX_ppm'.
-WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4730: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4733: Unconnected output port 'CO' of component 'ADD4_MXILINX_ppm'.
+WARNING:Xst:753 - "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 3/ppm.vhf" line 4733: Unconnected output port 'OFL' of component 'ADD4_MXILINX_ppm'.
     Set user-defined property "HU_SET =  U288_78" for instance <U288> in unit <ppm>.
-    Set user-defined property "HU_SET =  U298_79" for instance <U298> in unit <ppm>.
+    Set user-defined property "HU_SET =  XLXI_1320_79" for instance <XLXI_1320> in unit <ppm>.
 Entity <ppm> analyzed. Unit <ppm> generated.
 
 Analyzing Entity <CODEGEN> in library <work> (Architecture <behavioral>).
@@ -435,10 +435,10 @@ Analyzing Entity <COMP4_MXILINX_CODEGEN> in library <work> (Architecture <behavi
 Entity <COMP4_MXILINX_CODEGEN> analyzed. Unit <COMP4_MXILINX_CODEGEN> generated.
 
 Analyzing Entity <u74_157> in library <work> (Architecture <behavioral>).
-    Set user-defined property "HU_SET =  XLXI_114_0" for instance <XLXI_114> in unit <u74_157>.
-    Set user-defined property "HU_SET =  XLXI_115_1" for instance <XLXI_115> in unit <u74_157>.
-    Set user-defined property "HU_SET =  XLXI_116_2" for instance <XLXI_116> in unit <u74_157>.
-    Set user-defined property "HU_SET =  XLXI_117_3" for instance <XLXI_117> in unit <u74_157>.
+    Set user-defined property "HU_SET =  XLXI_114_6" for instance <XLXI_114> in unit <u74_157>.
+    Set user-defined property "HU_SET =  XLXI_115_7" for instance <XLXI_115> in unit <u74_157>.
+    Set user-defined property "HU_SET =  XLXI_116_8" for instance <XLXI_116> in unit <u74_157>.
+    Set user-defined property "HU_SET =  XLXI_117_9" for instance <XLXI_117> in unit <u74_157>.
 Entity <u74_157> analyzed. Unit <u74_157> generated.
 
 Analyzing Entity <M2_1E_MXILINX_u74_157> in library <work> (Architecture <behavioral>).
@@ -902,8 +902,9 @@ Design Statistics
 
 Cell Usage :
 # BELS                             : 752
-#      AND2                        : 99
-#      AND2B1                      : 54
+#      AND2                        : 98
+#      AND2B1                      : 55
+#      AND2B2                      : 2
 #      AND3                        : 82
 #      AND3B1                      : 74
 #      AND3B2                      : 8
@@ -914,14 +915,14 @@ Cell Usage :
 #      AND5                        : 6
 #      BUF                         : 12
 #      GND                         : 8
-#      INV                         : 31
+#      INV                         : 30
 #      MUXCY                       : 7
 #      MUXCY_D                     : 7
 #      MUXCY_L                     : 22
 #      MUXF5                       : 6
 #      MUXF5_L                     : 2
 #      MUXF6                       : 1
-#      OR2                         : 130
+#      OR2                         : 129
 #      OR2B1                       : 7
 #      OR3                         : 5
 #      OR4                         : 5
@@ -954,7 +955,7 @@ Selected Device : 3s500efg320-5
 
  Number of Slices:                       57  out of   4656     1%  
  Number of Slice Flip Flops:            114  out of   9312     1%  
- Number of 4 input LUTs:                 38  out of   9312     0%  
+ Number of 4 input LUTs:                 37  out of   9312     0%  
     Number used as ROMs:                  7
  Number of IOs:                          32
  Number of bonded IOBs:                  32  out of    232    13%  
@@ -996,7 +997,7 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-P2ADD(XLXI_1309:G)                 | NONE(U119/I_Q0)        | 44    |
+P2CODE0(XLXI_1344:G)               | NONE(U119/I_Q0)        | 44    |
 CLEAR(CLEAR_BUF:O)                 | NONE(U113/I_Q0)        | 33    |
 CLRRDREGS(U22:O)                   | NONE(M1/U123/I_Q0)     | 22    |
 CLFF(U2:O)                         | NONE(U68)              | 5     |
@@ -1044,7 +1045,7 @@ Delay:               1.162ns (Levels of Logic = 0)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'U67/I_Q6/Q'
   Clock period: 37.077ns (frequency: 26.971MHz)
-  Total number of paths / destination ports: 72605055 / 128
+  Total number of paths / destination ports: 82049783 / 128
 -------------------------------------------------------------------------
 Delay:               37.077ns (Levels of Logic = 55)
   Source:            U64/I_Q2/I_36_35 (FF)
@@ -1474,11 +1475,11 @@ Delay:               14.005ns (Levels of Logic = 11)
 
 
 Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.88 secs
+Total CPU time to Xst completion: 7.00 secs
  
 --> 
 
-Total memory usage is 283564 kilobytes
+Total memory usage is 283948 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   68 (   0 filtered)

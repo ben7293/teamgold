@@ -5,127 +5,127 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4289</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4289</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4289</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q0</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4289</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q0</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4289</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q1</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4289</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q1</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4610</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4610</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4610</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q3</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4610</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q3</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4610</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4610</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CLE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4626</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D7</arg>&apos; of component &apos;<arg fmt="%s" index="4">D3_8E_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4626</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D7</arg>&apos; of component &apos;<arg fmt="%s" index="4">D3_8E_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4640</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4640</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4640</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4640</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4648</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4648</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4648</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4648</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4816</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4816</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4816</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">4816</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5089</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CD4CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5089</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CD4CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5089</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CD4CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5089</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CD4CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5167</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5167</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5184</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5184</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5201</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5201</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5402</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CO</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5402</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CO</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5402</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5402</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5402</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S2</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5402</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S2</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5402</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S3</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5402</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S3</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5511</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD8_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5511</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD8_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5519</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD8_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5519</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD8_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5534</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">LT</arg>&apos; of component &apos;<arg fmt="%s" index="4">COMPM8_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5534</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">LT</arg>&apos; of component &apos;<arg fmt="%s" index="4">COMPM8_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5540</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q3</arg>&apos; of component &apos;<arg fmt="%s" index="4">FD4CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5540</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q3</arg>&apos; of component &apos;<arg fmt="%s" index="4">FD4CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5560</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">LT</arg>&apos; of component &apos;<arg fmt="%s" index="4">COMPM2_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5560</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">LT</arg>&apos; of component &apos;<arg fmt="%s" index="4">COMPM2_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5593</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD8_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5593</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD8_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5593</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD8_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5593</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD8_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5601</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">LT</arg>&apos; of component &apos;<arg fmt="%s" index="4">COMPM8_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5601</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">LT</arg>&apos; of component &apos;<arg fmt="%s" index="4">COMPM8_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5625</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5625</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5625</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q0</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5625</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q0</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5625</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q1</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5625</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q1</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB2CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5891</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5891</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5891</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CE_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">5891</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">TC</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB4CE_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">6009</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CO</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">6009</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CO</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">6009</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf</arg>&quot; line <arg fmt="%d" index="2">6009</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADD4_MXILINX_ppm</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/LARGESTDISP.vhf</arg>&quot; line <arg fmt="%d" index="2">313</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">GT</arg>&apos; of component &apos;<arg fmt="%s" index="4">COMPM4_MXILINX_LARGESTDISP</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/LARGESTDISP.vhf</arg>&quot; line <arg fmt="%d" index="2">313</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">GT</arg>&apos; of component &apos;<arg fmt="%s" index="4">COMPM4_MXILINX_LARGESTDISP</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/LARGESTDISP.vhf</arg>&quot; line <arg fmt="%d" index="2">325</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">GT</arg>&apos; of component &apos;<arg fmt="%s" index="4">COMPM4_MXILINX_LARGESTDISP</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/LARGESTDISP.vhf</arg>&quot; line <arg fmt="%d" index="2">325</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">GT</arg>&apos; of component &apos;<arg fmt="%s" index="4">COMPM4_MXILINX_LARGESTDISP</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/LARGESTDISP.vhf</arg>&quot; line <arg fmt="%d" index="2">369</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">GT</arg>&apos; of component &apos;<arg fmt="%s" index="4">COMPM4_MXILINX_LARGESTDISP</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/LARGESTDISP.vhf</arg>&quot; line <arg fmt="%d" index="2">369</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">GT</arg>&apos; of component &apos;<arg fmt="%s" index="4">COMPM4_MXILINX_LARGESTDISP</arg>&apos;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/CODEDISC.vhf</arg>&quot; line <arg fmt="%d" index="2">425</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q3</arg>&apos; of component &apos;<arg fmt="%s" index="4">FD4CE_MXILINX_CODEDISC</arg>&apos;.
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/CODEDISC.vhf</arg>&quot; line <arg fmt="%d" index="2">425</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q3</arg>&apos; of component &apos;<arg fmt="%s" index="4">FD4CE_MXILINX_CODEDISC</arg>&apos;.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">dummy</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.

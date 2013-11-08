@@ -9,7 +9,7 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -5
 Mapper Version : spartan3e -- $Revision: 1.52.76.2 $
-Mapped Date    : Fri Oct 25 16:42:10 2013
+Mapped Date    : Fri Nov 08 11:17:16 2013
 
 Design Summary
 --------------
@@ -19,9 +19,9 @@ Logic Utilization:
   Number of Slice Flip Flops:           105 out of   9,312    1%
   Number of 4 input LUTs:               290 out of   9,312    3%
 Logic Distribution:
-  Number of occupied Slices:            195 out of   4,656    4%
-    Number of Slices containing only related logic:     195 out of     195 100%
-    Number of Slices containing unrelated logic:          0 out of     195   0%
+  Number of occupied Slices:            194 out of   4,656    4%
+    Number of Slices containing only related logic:     194 out of     194 100%
+    Number of Slices containing unrelated logic:          0 out of     194   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
   Total Number of 4 input LUTs:         290 out of   9,312    3%
   Number of bonded IOBs:                 32 out of     232   13%
@@ -295,8 +295,8 @@ AND2 		U85/XLXI_4/I_36_9
 INV 		U85/XLXI_7
 INV 		U85/XLXI_8
 VCC 		U86/I_36_47
-GND 		XLXI_1309
-VCC 		XLXI_1311
+VCC 		XLXI_1322
+GND 		XLXI_1344
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.

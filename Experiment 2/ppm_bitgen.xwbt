@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=S:\CS2204\exp1\Ppm\ppm.ncd
-OUTFILE=S:\CS2204\exp1\Ppm\ppm.bit
+INFILE=C:\Users\Benson\SkyDrive\Poly\Fall 13\CS2204\teamgold.git\Experiment 2\ppm.ncd
+OUTFILE=C:\Users\Benson\SkyDrive\Poly\Fall 13\CS2204\teamgold.git\Experiment 2\ppm.bit
 FAMILY=Spartan3E
 PART=xc3s500e-5fg320
-WORKINGDIR=S:\CS2204\exp1\Ppm
-LICENSE=ISE
-USER_INFO=174150315_206649904_323
+WORKINGDIR=C:\Users\Benson\SkyDrive\Poly\Fall 13\CS2204\teamgold.git\Experiment 2
+LICENSE=WebPack
+USER_INFO=0_0_932

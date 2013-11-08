@@ -1,0 +1,30 @@
+Command line:
+   ppm_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53824
+
+Sat Nov 02 04:44:10 2013
+
+
+ Elaboration Time: 0.1248 sec
+
+ Current Memory Usage: 523.284 Meg
+
+ Total Signals          : 6802
+ Total Nets             : 1467
+ Total Signal Drivers   : 1366
+ Total Blocks           : 1418
+ Total Primitive Blocks : 1196
+ Total Processes        : 1390
+ Total Traceable Variables  : 450
+ Total Scalar Nets and Variables : 7158
+Total Line Count : 2168
+Total Line Count : 2168
+
+ Total Simulation Time: 0.390002 sec
+
+ Current Memory Usage: 523.284 Meg
+
+Sat Nov 02 04:46:13 2013
+

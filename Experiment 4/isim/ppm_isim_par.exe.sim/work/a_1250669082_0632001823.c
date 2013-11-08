@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x141a37e9 */
+/* This file is designed for use with ISim build 0x12940baa */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"

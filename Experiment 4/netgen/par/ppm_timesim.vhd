@@ -7,17 +7,17 @@
 -- \   \   \/     Version: M.81d
 --  \   \         Application: netgen
 --  /   /         Filename: ppm_timesim.vhd
--- /___/   /\     Timestamp: Wed Oct 23 03:28:58 2013
+-- /___/   /\     Timestamp: Wed Oct 16 19:56:43 2013
 -- \   \  /  \ 
 --  \___\/\___\
 --             
 -- Command	: -intstyle ise -s 5 -pcf ppm.pcf -rpw 100 -tpw 0 -ar Structure -tm ppm -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim ppm.ncd ppm_timesim.vhd 
 -- Device	: 3s500efg320-5 (PRODUCTION 1.27 2010-11-18)
 -- Input file	: ppm.ncd
--- Output file	: /home/atomic/Documents/Code/TeamGold/Experiment 3/netgen/par/ppm_timesim.vhd
+-- Output file	: D:\SkyDrive\Poly\Fall 13\CS2204\Term Project\Lab 5 - Exp1_2\Ppm\netgen\par\ppm_timesim.vhd
 -- # of Entities	: 1
 -- Design Name	: ppm
--- Xilinx	: /opt/Xilinx/12.4/ISE_DS/ISE/
+-- Xilinx	: D:\Xilinx\12.4\ISE_DS\ISE\
 --             
 -- Purpose:    
 --     This VHDL netlist is a verification model and uses simulation 
@@ -342,7 +342,7 @@ architecture Structure of ppm is
   signal DISPSEL0 : STD_LOGIC; 
   signal U159_AB0_0 : STD_LOGIC; 
   signal U83_XLXN_1_0 : STD_LOGIC; 
-  signal M2_PD0PD1LT_0 : STD_LOGIC; 
+  signal M2_PD0PD1LT : STD_LOGIC; 
   signal M2_U193_LT0_1_0 : STD_LOGIC; 
   signal M2_XLXN_1977_0 : STD_LOGIC; 
   signal P2SELCD3 : STD_LOGIC; 
@@ -356,13 +356,6 @@ architecture Structure of ppm is
   signal LRWDRDPOSSEL1 : STD_LOGIC; 
   signal XLXN_2346_0 : STD_LOGIC; 
   signal U244_XLXN_13_0 : STD_LOGIC; 
-  signal XLXN_11463_0 : STD_LOGIC; 
-  signal XLXN_11472_0 : STD_LOGIC; 
-  signal XLXN_11412 : STD_LOGIC; 
-  signal ZERODISP0_0 : STD_LOGIC; 
-  signal M2_U194_LT0_1_0 : STD_LOGIC; 
-  signal M2_U194_GE2_3_0 : STD_LOGIC; 
-  signal XLXN_11411 : STD_LOGIC; 
   signal M1_CDEQBRWD1 : STD_LOGIC; 
   signal M1_U128_AB3_0 : STD_LOGIC; 
   signal M1_U128_AB2_0 : STD_LOGIC; 
@@ -393,6 +386,8 @@ architecture Structure of ppm is
   signal P2PLAYSYNCH_0 : STD_LOGIC; 
   signal S6 : STD_LOGIC; 
   signal U244_XLXN_14 : STD_LOGIC; 
+  signal M3_POS0ZERO : STD_LOGIC; 
+  signal M3_POS1ZERO_0 : STD_LOGIC; 
   signal LRGDISPPOS1_0 : STD_LOGIC; 
   signal U228_AB2_0 : STD_LOGIC; 
   signal U228_AB1_0 : STD_LOGIC; 
@@ -401,11 +396,16 @@ architecture Structure of ppm is
   signal M2_XLXN_2016_0 : STD_LOGIC; 
   signal M2_XLXN_2001_0 : STD_LOGIC; 
   signal M2_XLXN_2014 : STD_LOGIC; 
-  signal M2_PD2PD3LT_0 : STD_LOGIC; 
+  signal M2_PD2PD3LT : STD_LOGIC; 
   signal M2_U197_LT0_1_0 : STD_LOGIC; 
+  signal ZERODISP0_0 : STD_LOGIC; 
   signal LRGDISPPOS0 : STD_LOGIC; 
   signal U244_XLXN_2_0 : STD_LOGIC; 
   signal U191_LE4_5_0 : STD_LOGIC; 
+  signal U159_AB1_0 : STD_LOGIC; 
+  signal M3_POS3ZERO_0 : STD_LOGIC; 
+  signal M3_POS2ZERO : STD_LOGIC; 
+  signal M2_U194_LT0_1_0 : STD_LOGIC; 
   signal R0D3 : STD_LOGIC; 
   signal STDISP1_0 : STD_LOGIC; 
   signal M4_STCODE1_0 : STD_LOGIC; 
@@ -417,7 +417,6 @@ architecture Structure of ppm is
   signal P2CODE6 : STD_LOGIC; 
   signal P2CODE5 : STD_LOGIC; 
   signal M4_CODEPOS1_0 : STD_LOGIC; 
-  signal U159_AB1_0 : STD_LOGIC; 
   signal U83_XLXN_13_0 : STD_LOGIC; 
   signal U174_XLXN_1 : STD_LOGIC; 
   signal M1_U129_AB1_0 : STD_LOGIC; 
@@ -482,27 +481,24 @@ architecture Structure of ppm is
   signal INT_NET1_0 : STD_LOGIC; 
   signal S3P1PLAYSYNCHADJ : STD_LOGIC; 
   signal CLKEN : STD_LOGIC; 
-  signal U191_EQ6_7 : STD_LOGIC; 
-  signal U191_GE4_5 : STD_LOGIC; 
-  signal U191_GTC_0 : STD_LOGIC; 
   signal XLXN_10962 : STD_LOGIC; 
   signal XLXN_10958 : STD_LOGIC; 
   signal XLXN_10960 : STD_LOGIC; 
   signal INT_NET0 : STD_LOGIC; 
   signal XLXN_197_0 : STD_LOGIC; 
   signal XLXN_199_0 : STD_LOGIC; 
-  signal M2_XLXN_2000_0 : STD_LOGIC; 
-  signal M2_U193_GE2_3_0 : STD_LOGIC; 
-  signal M2_U193_LE2_3 : STD_LOGIC; 
   signal M2_U193_LTB_0 : STD_LOGIC; 
-  signal M2_U193_GTB : STD_LOGIC; 
+  signal M2_U193_GTB_0 : STD_LOGIC; 
+  signal M2_XLXN_2000_0 : STD_LOGIC; 
+  signal M2_U193_GE2_3 : STD_LOGIC; 
+  signal M2_U193_LE2_3 : STD_LOGIC; 
   signal U84_XLXN_13_0 : STD_LOGIC; 
-  signal M2_U197_EQ_3 : STD_LOGIC; 
   signal M2_U197_LE2_3_0 : STD_LOGIC; 
+  signal M2_XLXN_1979_0 : STD_LOGIC; 
   signal M2_U197_LTB_0 : STD_LOGIC; 
+  signal M2_U197_EQ_3 : STD_LOGIC; 
   signal M2_U197_GTB : STD_LOGIC; 
   signal M2_U197_GE2_3_0 : STD_LOGIC; 
-  signal M2_XLXN_1979 : STD_LOGIC; 
   signal M1_U130_AB0 : STD_LOGIC; 
   signal U85_XLXN_2 : STD_LOGIC; 
   signal U84_XLXN_14 : STD_LOGIC; 
@@ -516,9 +512,10 @@ architecture Structure of ppm is
   signal NPSELDISP2 : STD_LOGIC; 
   signal XLXN_2304 : STD_LOGIC; 
   signal U191_GE6_7_0 : STD_LOGIC; 
-  signal M2_U194_LE2_3 : STD_LOGIC; 
   signal M2_U194_LTB_0 : STD_LOGIC; 
-  signal M2_U194_GTB : STD_LOGIC; 
+  signal M2_U194_GTB_0 : STD_LOGIC; 
+  signal M2_U194_GE2_3 : STD_LOGIC; 
+  signal M2_U194_LE2_3 : STD_LOGIC; 
   signal U159_AB2_0 : STD_LOGIC; 
   signal U82_XLXN_1_0 : STD_LOGIC; 
   signal M1_U127_AB2_0 : STD_LOGIC; 
@@ -528,12 +525,15 @@ architecture Structure of ppm is
   signal U82_XLXN_2 : STD_LOGIC; 
   signal U183_GE2_3 : STD_LOGIC; 
   signal U183_EQ2_3_0 : STD_LOGIC; 
+  signal U191_EQ4_5_0 : STD_LOGIC; 
+  signal U191_EQ6_7 : STD_LOGIC; 
+  signal U191_GE4_5 : STD_LOGIC; 
+  signal U191_GTB_0 : STD_LOGIC; 
+  signal U191_GTC_0 : STD_LOGIC; 
   signal U191_GE2_3 : STD_LOGIC; 
   signal U191_EQ2_3_0 : STD_LOGIC; 
-  signal U191_EQ4_5_0 : STD_LOGIC; 
   signal U191_GTA_0 : STD_LOGIC; 
   signal U191_GTD_0 : STD_LOGIC; 
-  signal U191_GTB_0 : STD_LOGIC; 
   signal U183_GT4_5 : STD_LOGIC; 
   signal U183_GTC_0 : STD_LOGIC; 
   signal P2S4 : STD_LOGIC; 
@@ -947,8 +947,6 @@ architecture Structure of ppm is
   signal STR1_NB2P_O : STD_LOGIC; 
   signal CF_NB2P_O : STD_LOGIC; 
   signal P2PLAY_NP2B_INBUF : STD_LOGIC; 
-  signal P2PLAY_NP2B_IFF_ICLK1INV_4639 : STD_LOGIC; 
-  signal P2PLAY_NP2B_IFF_IDDRIN_MUX_4637 : STD_LOGIC; 
   signal STR2_NB2P_O : STD_LOGIC; 
   signal CG_NB2P_O : STD_LOGIC; 
   signal SHPTS_NP2B_INBUF : STD_LOGIC; 
@@ -1082,12 +1080,14 @@ architecture Structure of ppm is
   signal RWD_1_pack_2 : STD_LOGIC; 
   signal LARGESTRWD_1_CLKINV_5456 : STD_LOGIC; 
   signal LARGESTRWD_1_CEINV_5455 : STD_LOGIC; 
+  signal LARGESTRWD_1_FFY_RSTAND_5471 : STD_LOGIC; 
   signal M1_ENCODERWDMUX : STD_LOGIC; 
   signal LPSEL0_DYMUX_5504 : STD_LOGIC; 
   signal LPSEL0_GYMUX_5503 : STD_LOGIC; 
   signal PSEL0_pack_2 : STD_LOGIC; 
   signal LPSEL0_CLKINV_5494 : STD_LOGIC; 
   signal LPSEL0_CEINV_5493 : STD_LOGIC; 
+  signal LPSEL2_FFY_RST : STD_LOGIC; 
   signal ENCPSEL1 : STD_LOGIC; 
   signal LPSEL2_DYMUX_5542 : STD_LOGIC; 
   signal PSEL2 : STD_LOGIC; 
@@ -1183,14 +1183,6 @@ architecture Structure of ppm is
   signal U156_XLXN_13 : STD_LOGIC; 
   signal XLXN_2346 : STD_LOGIC; 
   signal U244_XLXN_13 : STD_LOGIC; 
-  signal ZERODISP0 : STD_LOGIC; 
-  signal XLXN_11412_pack_1 : STD_LOGIC; 
-  signal M2_U194_LT0_1 : STD_LOGIC; 
-  signal XLXN_11472 : STD_LOGIC; 
-  signal M2_U194_GE2_3 : STD_LOGIC; 
-  signal XLXN_11463 : STD_LOGIC; 
-  signal APOSZERO : STD_LOGIC; 
-  signal XLXN_11411_pack_1 : STD_LOGIC; 
   signal M1_XLXN_1539 : STD_LOGIC; 
   signal M1_CDEQBRWD1_pack_1 : STD_LOGIC; 
   signal M1_U130_AB2 : STD_LOGIC; 
@@ -1211,12 +1203,12 @@ architecture Structure of ppm is
   signal U82_XLXN_14_pack_1 : STD_LOGIC; 
   signal NPSELDISP0 : STD_LOGIC; 
   signal U157_XLXN_2_pack_1 : STD_LOGIC; 
-  signal LARGESTRWD_4_DXMUX_6878 : STD_LOGIC; 
-  signal LARGESTRWD_4_FXMUX_6877 : STD_LOGIC; 
+  signal LARGESTRWD_4_DXMUX_6782 : STD_LOGIC; 
+  signal LARGESTRWD_4_FXMUX_6781 : STD_LOGIC; 
   signal RWD_4_Q : STD_LOGIC; 
   signal U173_XLXN_2_pack_2 : STD_LOGIC; 
-  signal LARGESTRWD_4_CLKINV_6861 : STD_LOGIC; 
-  signal LARGESTRWD_4_CEINV_6860 : STD_LOGIC; 
+  signal LARGESTRWD_4_CLKINV_6765 : STD_LOGIC; 
+  signal LARGESTRWD_4_CEINV_6764 : STD_LOGIC; 
   signal M4_U221_AB2 : STD_LOGIC; 
   signal U160_AB2 : STD_LOGIC; 
   signal M4_U221_AB1 : STD_LOGIC; 
@@ -1229,11 +1221,11 @@ architecture Structure of ppm is
   signal CLEARP2FFS : STD_LOGIC; 
   signal XLXN_2310 : STD_LOGIC; 
   signal U244_XLXN_14_pack_1 : STD_LOGIC; 
-  signal XLXN_2186_DXMUX_7060 : STD_LOGIC; 
+  signal XLXN_2186_DXMUX_6964 : STD_LOGIC; 
   signal ADJCODE : STD_LOGIC; 
   signal U228_AB0_pack_1 : STD_LOGIC; 
-  signal XLXN_2186_CLKINV_7042 : STD_LOGIC; 
-  signal XLXN_2186_CEINV_7041 : STD_LOGIC; 
+  signal XLXN_2186_CLKINV_6946 : STD_LOGIC; 
+  signal XLXN_2186_CEINV_6945 : STD_LOGIC; 
   signal U85_XLXN_1 : STD_LOGIC; 
   signal DISPSEL0_pack_1 : STD_LOGIC; 
   signal M2_U197_LT0_1 : STD_LOGIC; 
@@ -1241,6 +1233,14 @@ architecture Structure of ppm is
   signal U244_XLXN_2 : STD_LOGIC; 
   signal LRGDISPPOS0_pack_1 : STD_LOGIC; 
   signal U191_LE4_5 : STD_LOGIC; 
+  signal U159_AB1 : STD_LOGIC; 
+  signal M3_POS1ZERO : STD_LOGIC; 
+  signal APOSZERO : STD_LOGIC; 
+  signal M3_POS0ZERO_pack_1 : STD_LOGIC; 
+  signal M2_U194_LT0_1 : STD_LOGIC; 
+  signal M3_POS3ZERO : STD_LOGIC; 
+  signal ZERODISP0 : STD_LOGIC; 
+  signal M3_POS2ZERO_pack_1 : STD_LOGIC; 
   signal PD3PRD : STD_LOGIC; 
   signal RD3_pack_1 : STD_LOGIC; 
   signal STDISP1 : STD_LOGIC; 
@@ -1250,8 +1250,8 @@ architecture Structure of ppm is
   signal M4_CODEPOS0 : STD_LOGIC; 
   signal M4_CODEPOS1 : STD_LOGIC; 
   signal CODEKNOWN : STD_LOGIC; 
-  signal U159_AB1 : STD_LOGIC; 
   signal U83_XLXN_13 : STD_LOGIC; 
+  signal LARGESTRWD_2_FFX_RST : STD_LOGIC; 
   signal LARGESTRWD_2_DXMUX_7327 : STD_LOGIC; 
   signal LARGESTRWD_2_FXMUX_7326 : STD_LOGIC; 
   signal RWD_2_Q : STD_LOGIC; 
@@ -1262,6 +1262,8 @@ architecture Structure of ppm is
   signal M2_XLXN_2001 : STD_LOGIC; 
   signal U156_XLXN_2 : STD_LOGIC; 
   signal U157_XLXN_13 : STD_LOGIC; 
+  signal M1_CODE3_FFY_RST : STD_LOGIC; 
+  signal M1_CODE3_FFX_RST : STD_LOGIC; 
   signal M1_CODE3_DXMUX_7403 : STD_LOGIC; 
   signal M1_CODE3_DYMUX_7394 : STD_LOGIC; 
   signal M1_CODE3_SRINV_7392 : STD_LOGIC; 
@@ -1321,6 +1323,7 @@ architecture Structure of ppm is
   signal DISP11_SRINV_7796 : STD_LOGIC; 
   signal DISP11_CLKINV_7795 : STD_LOGIC; 
   signal DISP11_CEINV_7794 : STD_LOGIC; 
+  signal R0D3_FFX_RST : STD_LOGIC; 
   signal R0D3_DXMUX_7835 : STD_LOGIC; 
   signal R0D3_DYMUX_7826 : STD_LOGIC; 
   signal R0D3_SRINV_7824 : STD_LOGIC; 
@@ -1345,6 +1348,7 @@ architecture Structure of ppm is
   signal U161_AB0_pack_1 : STD_LOGIC; 
   signal U183_GTB : STD_LOGIC; 
   signal U183_EQ4_5_pack_1 : STD_LOGIC; 
+  signal DISP13_FFX_RST : STD_LOGIC; 
   signal DISP13_DXMUX_8038 : STD_LOGIC; 
   signal DISP13_FXMUX_8037 : STD_LOGIC; 
   signal BRWD1 : STD_LOGIC; 
@@ -1355,6 +1359,7 @@ architecture Structure of ppm is
   signal U183_GT2_3 : STD_LOGIC; 
   signal U191_LE2_3 : STD_LOGIC; 
   signal U191_GT2_3 : STD_LOGIC; 
+  signal DISP5_FFX_RST : STD_LOGIC; 
   signal DISP5_DXMUX_8114 : STD_LOGIC; 
   signal DISP5_DYMUX_8105 : STD_LOGIC; 
   signal DISP5_SRINV_8103 : STD_LOGIC; 
@@ -1432,69 +1437,69 @@ architecture Structure of ppm is
   signal P2PLAYSYNCH : STD_LOGIC; 
   signal U64_OR_CE_L : STD_LOGIC; 
   signal CLKEN_pack_2 : STD_LOGIC; 
-  signal U191_GTC : STD_LOGIC; 
-  signal XLXN_10962_DYMUX_8843 : STD_LOGIC; 
-  signal XLXN_10962_CLKINV_8841 : STD_LOGIC; 
-  signal XLXN_10958_DYMUX_8852 : STD_LOGIC; 
-  signal XLXN_10958_CLKINV_8850 : STD_LOGIC; 
-  signal XLXN_10960_DYMUX_8861 : STD_LOGIC; 
-  signal XLXN_10960_CLKINV_8859 : STD_LOGIC; 
+  signal XLXN_10962_DYMUX_8819 : STD_LOGIC; 
+  signal XLXN_10962_CLKINV_8817 : STD_LOGIC; 
+  signal XLXN_10958_DYMUX_8828 : STD_LOGIC; 
+  signal XLXN_10958_CLKINV_8826 : STD_LOGIC; 
+  signal XLXN_10960_DYMUX_8837 : STD_LOGIC; 
+  signal XLXN_10960_CLKINV_8835 : STD_LOGIC; 
   signal P1PLAYSYNCH : STD_LOGIC; 
   signal INT_NET0_pack_1 : STD_LOGIC; 
-  signal DISP1_DXMUX_8957 : STD_LOGIC; 
-  signal DISP1_DYMUX_8948 : STD_LOGIC; 
-  signal DISP1_SRINV_8946 : STD_LOGIC; 
-  signal DISP1_CLKINV_8945 : STD_LOGIC; 
-  signal DISP1_CEINV_8944 : STD_LOGIC; 
-  signal DISP3_DXMUX_8985 : STD_LOGIC; 
-  signal DISP3_DYMUX_8976 : STD_LOGIC; 
-  signal DISP3_SRINV_8974 : STD_LOGIC; 
-  signal DISP3_CLKINV_8973 : STD_LOGIC; 
-  signal DISP3_CEINV_8972 : STD_LOGIC; 
-  signal P2CODE5_DXMUX_9013 : STD_LOGIC; 
-  signal P2CODE5_DYMUX_9004 : STD_LOGIC; 
-  signal P2CODE5_SRINV_9002 : STD_LOGIC; 
-  signal P2CODE5_CLKINV_9001 : STD_LOGIC; 
-  signal P2CODE5_CEINV_9000 : STD_LOGIC; 
-  signal P2CODE7_DXMUX_9041 : STD_LOGIC; 
-  signal P2CODE7_DYMUX_9032 : STD_LOGIC; 
-  signal P2CODE7_SRINV_9030 : STD_LOGIC; 
-  signal P2CODE7_CLKINV_9029 : STD_LOGIC; 
-  signal P2CODE7_CEINV_9028 : STD_LOGIC; 
+  signal DISP1_DXMUX_8933 : STD_LOGIC; 
+  signal DISP1_DYMUX_8924 : STD_LOGIC; 
+  signal DISP1_SRINV_8922 : STD_LOGIC; 
+  signal DISP1_CLKINV_8921 : STD_LOGIC; 
+  signal DISP1_CEINV_8920 : STD_LOGIC; 
+  signal DISP3_DXMUX_8961 : STD_LOGIC; 
+  signal DISP3_DYMUX_8952 : STD_LOGIC; 
+  signal DISP3_SRINV_8950 : STD_LOGIC; 
+  signal DISP3_CLKINV_8949 : STD_LOGIC; 
+  signal DISP3_CEINV_8948 : STD_LOGIC; 
+  signal P2CODE5_DXMUX_8989 : STD_LOGIC; 
+  signal P2CODE5_DYMUX_8980 : STD_LOGIC; 
+  signal P2CODE5_SRINV_8978 : STD_LOGIC; 
+  signal P2CODE5_CLKINV_8977 : STD_LOGIC; 
+  signal P2CODE5_CEINV_8976 : STD_LOGIC; 
+  signal P2CODE7_DXMUX_9017 : STD_LOGIC; 
+  signal P2CODE7_DYMUX_9008 : STD_LOGIC; 
+  signal P2CODE7_SRINV_9006 : STD_LOGIC; 
+  signal P2CODE7_CLKINV_9005 : STD_LOGIC; 
+  signal P2CODE7_CEINV_9004 : STD_LOGIC; 
   signal M2_XLXN_2000 : STD_LOGIC; 
-  signal M2_U193_GE2_3 : STD_LOGIC; 
+  signal M2_PD0PD1LT_pack_1 : STD_LOGIC; 
+  signal M2_U193_GTB : STD_LOGIC; 
+  signal M2_U193_GE2_3_pack_3 : STD_LOGIC; 
   signal M2_U193_LTB : STD_LOGIC; 
   signal M2_U193_LE2_3_pack_3 : STD_LOGIC; 
-  signal M2_PD0PD1LT : STD_LOGIC; 
-  signal M2_U193_GTB_pack_1 : STD_LOGIC; 
   signal U84_XLXN_13 : STD_LOGIC; 
+  signal M2_U197_LTB : STD_LOGIC; 
   signal M2_U197_LE2_3 : STD_LOGIC; 
   signal LRGDISPPOS1 : STD_LOGIC; 
   signal M2_U197_GTB_pack_1 : STD_LOGIC; 
   signal U228_AB1 : STD_LOGIC; 
   signal P2SELCD1_pack_1 : STD_LOGIC; 
-  signal P2PT_1_DXMUX_9225 : STD_LOGIC; 
-  signal P2PT_1_DYMUX_9216 : STD_LOGIC; 
-  signal P2PT_1_SRINV_9214 : STD_LOGIC; 
-  signal P2PT_1_CLKINV_9213 : STD_LOGIC; 
-  signal P2PT_1_CEINV_9212 : STD_LOGIC; 
-  signal P2PT_3_DXMUX_9253 : STD_LOGIC; 
-  signal P2PT_3_DYMUX_9244 : STD_LOGIC; 
-  signal P2PT_3_SRINV_9242 : STD_LOGIC; 
-  signal P2PT_3_CLKINV_9241 : STD_LOGIC; 
-  signal P2PT_3_CEINV_9240 : STD_LOGIC; 
-  signal P2PT_5_DXMUX_9281 : STD_LOGIC; 
-  signal P2PT_5_DYMUX_9272 : STD_LOGIC; 
-  signal P2PT_5_SRINV_9270 : STD_LOGIC; 
-  signal P2PT_5_CLKINV_9269 : STD_LOGIC; 
-  signal P2PT_5_CEINV_9268 : STD_LOGIC; 
-  signal P2PT_7_DXMUX_9309 : STD_LOGIC; 
-  signal P2PT_7_DYMUX_9300 : STD_LOGIC; 
-  signal P2PT_7_SRINV_9298 : STD_LOGIC; 
-  signal P2PT_7_CLKINV_9297 : STD_LOGIC; 
-  signal P2PT_7_CEINV_9296 : STD_LOGIC; 
-  signal U119_Q0_DYMUX_9322 : STD_LOGIC; 
-  signal U119_Q0_CLKINV_9320 : STD_LOGIC; 
+  signal P2PT_1_DXMUX_9213 : STD_LOGIC; 
+  signal P2PT_1_DYMUX_9204 : STD_LOGIC; 
+  signal P2PT_1_SRINV_9202 : STD_LOGIC; 
+  signal P2PT_1_CLKINV_9201 : STD_LOGIC; 
+  signal P2PT_1_CEINV_9200 : STD_LOGIC; 
+  signal P2PT_3_DXMUX_9241 : STD_LOGIC; 
+  signal P2PT_3_DYMUX_9232 : STD_LOGIC; 
+  signal P2PT_3_SRINV_9230 : STD_LOGIC; 
+  signal P2PT_3_CLKINV_9229 : STD_LOGIC; 
+  signal P2PT_3_CEINV_9228 : STD_LOGIC; 
+  signal P2PT_5_DXMUX_9269 : STD_LOGIC; 
+  signal P2PT_5_DYMUX_9260 : STD_LOGIC; 
+  signal P2PT_5_SRINV_9258 : STD_LOGIC; 
+  signal P2PT_5_CLKINV_9257 : STD_LOGIC; 
+  signal P2PT_5_CEINV_9256 : STD_LOGIC; 
+  signal P2PT_7_DXMUX_9297 : STD_LOGIC; 
+  signal P2PT_7_DYMUX_9288 : STD_LOGIC; 
+  signal P2PT_7_SRINV_9286 : STD_LOGIC; 
+  signal P2PT_7_CLKINV_9285 : STD_LOGIC; 
+  signal P2PT_7_CEINV_9284 : STD_LOGIC; 
+  signal U119_Q0_DYMUX_9310 : STD_LOGIC; 
+  signal U119_Q0_CLKINV_9308 : STD_LOGIC; 
   signal M1_CDEQPD1 : STD_LOGIC; 
   signal M1_U130_AB0_pack_1 : STD_LOGIC; 
   signal U101_I_M01_M0 : STD_LOGIC; 
@@ -1507,42 +1512,42 @@ architecture Structure of ppm is
   signal U162_AB3 : STD_LOGIC; 
   signal EQ2 : STD_LOGIC; 
   signal U162_AB0_pack_1 : STD_LOGIC; 
-  signal U66_Q_6_DXMUX_9520 : STD_LOGIC; 
+  signal U66_Q_6_DXMUX_9508 : STD_LOGIC; 
   signal U66_I_Q6_TQ : STD_LOGIC; 
   signal U66_T4_pack_2 : STD_LOGIC; 
-  signal U66_Q_6_CLKINV_9505 : STD_LOGIC; 
-  signal U66_Q_7_DXMUX_9550 : STD_LOGIC; 
+  signal U66_Q_6_CLKINV_9493 : STD_LOGIC; 
+  signal U66_Q_7_DXMUX_9538 : STD_LOGIC; 
   signal U66_I_Q7_TQ : STD_LOGIC; 
   signal U66_T7_pack_2 : STD_LOGIC; 
-  signal U66_Q_7_CLKINV_9533 : STD_LOGIC; 
+  signal U66_Q_7_CLKINV_9521 : STD_LOGIC; 
   signal P2ADD : STD_LOGIC; 
   signal XLXN_2340_pack_1 : STD_LOGIC; 
-  signal M2_U197_LTB : STD_LOGIC; 
-  signal M2_XLXN_1979_pack_1 : STD_LOGIC; 
-  signal QA_15_DXMUX_9628 : STD_LOGIC; 
+  signal QA_15_DXMUX_9592 : STD_LOGIC; 
   signal U66_I_Q15_TQ : STD_LOGIC; 
   signal U66_T15_pack_2 : STD_LOGIC; 
-  signal QA_15_CLKINV_9611 : STD_LOGIC; 
-  signal U66_Q_11_DXMUX_9658 : STD_LOGIC; 
+  signal QA_15_CLKINV_9575 : STD_LOGIC; 
+  signal U66_Q_11_DXMUX_9622 : STD_LOGIC; 
   signal U66_I_Q11_TQ : STD_LOGIC; 
   signal U66_T11_pack_2 : STD_LOGIC; 
-  signal U66_Q_11_CLKINV_9641 : STD_LOGIC; 
-  signal DISP14_DXMUX_9693 : STD_LOGIC; 
-  signal DISP14_FXMUX_9692 : STD_LOGIC; 
+  signal U66_Q_11_CLKINV_9605 : STD_LOGIC; 
+  signal DISP14_DXMUX_9657 : STD_LOGIC; 
+  signal DISP14_FXMUX_9656 : STD_LOGIC; 
   signal BRWD2 : STD_LOGIC; 
   signal NPSELDISP2_pack_1 : STD_LOGIC; 
-  signal DISP14_CLKINV_9675 : STD_LOGIC; 
-  signal DISP14_CEINV_9674 : STD_LOGIC; 
+  signal DISP14_CLKINV_9639 : STD_LOGIC; 
+  signal DISP14_CEINV_9638 : STD_LOGIC; 
   signal XLXN_2309 : STD_LOGIC; 
   signal XLXN_2304_pack_1 : STD_LOGIC; 
   signal U191_GE6_7 : STD_LOGIC; 
   signal M2_U197_GE2_3 : STD_LOGIC; 
   signal M2_U197_EQ_3_pack_1 : STD_LOGIC; 
   signal RD1 : STD_LOGIC; 
+  signal M2_XLXN_1979 : STD_LOGIC; 
+  signal M2_PD2PD3LT_pack_1 : STD_LOGIC; 
+  signal M2_U194_GTB : STD_LOGIC; 
+  signal M2_U194_GE2_3_pack_3 : STD_LOGIC; 
   signal M2_U194_LTB : STD_LOGIC; 
   signal M2_U194_LE2_3_pack_3 : STD_LOGIC; 
-  signal M2_PD2PD3LT : STD_LOGIC; 
-  signal M2_U194_GTB_pack_1 : STD_LOGIC; 
   signal U228_AB2 : STD_LOGIC; 
   signal P2SELCD2_pack_1 : STD_LOGIC; 
   signal U159_AB2 : STD_LOGIC; 
@@ -1550,29 +1555,31 @@ architecture Structure of ppm is
   signal M1_U127_AB2 : STD_LOGIC; 
   signal M1_CDEQBRWD0 : STD_LOGIC; 
   signal M1_U127_AB0_pack_1 : STD_LOGIC; 
-  signal LRWDRDPOSSEL1_DXMUX_9937 : STD_LOGIC; 
-  signal LRWDRDPOSSEL1_DYMUX_9928 : STD_LOGIC; 
-  signal LRWDRDPOSSEL1_SRINV_9926 : STD_LOGIC; 
-  signal LRWDRDPOSSEL1_CLKINV_9925 : STD_LOGIC; 
-  signal LRWDRDPOSSEL1_CEINV_9924 : STD_LOGIC; 
-  signal LRWDRDADD_DYMUX_9954 : STD_LOGIC; 
-  signal LRWDRDADD_CLKINV_9951 : STD_LOGIC; 
-  signal LRWDRDADD_CEINV_9950 : STD_LOGIC; 
+  signal LRWDRDPOSSEL1_DXMUX_9925 : STD_LOGIC; 
+  signal LRWDRDPOSSEL1_DYMUX_9916 : STD_LOGIC; 
+  signal LRWDRDPOSSEL1_SRINV_9914 : STD_LOGIC; 
+  signal LRWDRDPOSSEL1_CLKINV_9913 : STD_LOGIC; 
+  signal LRWDRDPOSSEL1_CEINV_9912 : STD_LOGIC; 
+  signal LRWDRDADD_DYMUX_9942 : STD_LOGIC; 
+  signal LRWDRDADD_CLKINV_9939 : STD_LOGIC; 
+  signal LRWDRDADD_CEINV_9938 : STD_LOGIC; 
   signal U103_I_M23_M0 : STD_LOGIC; 
   signal U103_I_M23_M1 : STD_LOGIC; 
   signal U100_I_M01_M0 : STD_LOGIC; 
   signal U85_XLXN_14_pack_1 : STD_LOGIC; 
-  signal LARGESTRWD_3_DXMUX_10041 : STD_LOGIC; 
-  signal LARGESTRWD_3_FXMUX_10040 : STD_LOGIC; 
+  signal LARGESTRWD_3_DXMUX_10029 : STD_LOGIC; 
+  signal LARGESTRWD_3_FXMUX_10028 : STD_LOGIC; 
   signal RWD_3_Q : STD_LOGIC; 
   signal U174_XLXI_6_M0_pack_1 : STD_LOGIC; 
-  signal LARGESTRWD_3_CLKINV_10023 : STD_LOGIC; 
-  signal LARGESTRWD_3_CEINV_10022 : STD_LOGIC; 
+  signal LARGESTRWD_3_CLKINV_10011 : STD_LOGIC; 
+  signal LARGESTRWD_3_CEINV_10010 : STD_LOGIC; 
   signal U103_I_M01_M1 : STD_LOGIC; 
   signal U82_XLXN_2_pack_1 : STD_LOGIC; 
   signal M2_XLXN_2016 : STD_LOGIC; 
   signal U183_EQ2_3 : STD_LOGIC; 
   signal U183_GE2_3_pack_3 : STD_LOGIC; 
+  signal U191_GTB : STD_LOGIC; 
+  signal U191_GTC : STD_LOGIC; 
   signal U191_EQ2_3 : STD_LOGIC; 
   signal U191_GE2_3_pack_3 : STD_LOGIC; 
   signal U191_GTA : STD_LOGIC; 
@@ -1588,18 +1595,17 @@ architecture Structure of ppm is
   signal TESTP2SEL0 : STD_LOGIC; 
   signal P2S4_pack_1 : STD_LOGIC; 
   signal U191_GTD : STD_LOGIC; 
-  signal Q_6_DXMUX_10315 : STD_LOGIC; 
+  signal Q_6_DXMUX_10327 : STD_LOGIC; 
   signal U67_I_Q6_TQ : STD_LOGIC; 
   signal U67_T4_pack_2 : STD_LOGIC; 
-  signal Q_6_CLKINV_10300 : STD_LOGIC; 
+  signal Q_6_CLKINV_10312 : STD_LOGIC; 
   signal U183_GE6_7 : STD_LOGIC; 
-  signal Q_7_DXMUX_10357 : STD_LOGIC; 
+  signal Q_7_DXMUX_10369 : STD_LOGIC; 
   signal U67_I_Q7_TQ : STD_LOGIC; 
   signal U67_T7_pack_2 : STD_LOGIC; 
-  signal Q_7_CLKINV_10340 : STD_LOGIC; 
+  signal Q_7_CLKINV_10352 : STD_LOGIC; 
   signal RWDGTRDLARGEST : STD_LOGIC; 
   signal U183_GTA_pack_1 : STD_LOGIC; 
-  signal U191_GTB : STD_LOGIC; 
   signal XLXN_197 : STD_LOGIC; 
   signal XLXN_199 : STD_LOGIC; 
   signal DISP15_DXMUX_10452 : STD_LOGIC; 
@@ -1608,6 +1614,8 @@ architecture Structure of ppm is
   signal NPSELDISP3_pack_1 : STD_LOGIC; 
   signal DISP15_CLKINV_10434 : STD_LOGIC; 
   signal DISP15_CEINV_10433 : STD_LOGIC; 
+  signal DISP12_FFY_RSTAND_5164 : STD_LOGIC; 
+  signal BRWDEQCD_FFY_RSTAND_5240 : STD_LOGIC; 
   signal STR2_FFY_RSTAND_3889 : STD_LOGIC; 
   signal P2STR3_FFY_RSTAND_3946 : STD_LOGIC; 
   signal U195_Q0_FFY_RSTAND_3970 : STD_LOGIC; 
@@ -1619,36 +1627,32 @@ architecture Structure of ppm is
   signal STR1_FFY_RSTAND_4358 : STD_LOGIC; 
   signal P2STR2_FFY_RSTAND_4450 : STD_LOGIC; 
   signal U6_Q1_FFY_RSTAND_4515 : STD_LOGIC; 
-  signal LPSEL0_FFY_RSTAND_5510 : STD_LOGIC; 
-  signal LPSEL2_FFY_RSTAND_5548 : STD_LOGIC; 
-  signal LARGESTRWD_5_FFY_RSTAND_5587 : STD_LOGIC; 
-  signal LARGESTRWD_6_FFY_RSTAND_5624 : STD_LOGIC; 
+  signal P2PLAY_NP2B_IFF_ICLK1INV_4639 : STD_LOGIC; 
+  signal P2PLAY_NP2B_IFF_IDDRIN_MUX_4637 : STD_LOGIC; 
   signal LPDPRD_FFX_RSTAND_5045 : STD_LOGIC; 
-  signal DISP12_FFY_RSTAND_5164 : STD_LOGIC; 
-  signal BRWDEQCD_FFY_RSTAND_5240 : STD_LOGIC; 
-  signal LARGESTRWD_2_FFX_RSTAND_7333 : STD_LOGIC; 
   signal LP1NSD_FFY_RSTAND_5279 : STD_LOGIC; 
   signal CLPXNSDFF_FFY_RSTAND_5315 : STD_LOGIC; 
   signal LPTOVF_FFY_RSTAND_5348 : STD_LOGIC; 
   signal LARGESTRWD_0_FFY_RSTAND_5430 : STD_LOGIC; 
-  signal LARGESTRWD_1_FFY_RSTAND_5471 : STD_LOGIC; 
+  signal LPSEL0_FFY_RSTAND_5510 : STD_LOGIC; 
+  signal LARGESTRWD_5_FFY_RSTAND_5587 : STD_LOGIC; 
+  signal LARGESTRWD_6_FFY_RSTAND_5624 : STD_LOGIC; 
   signal LNSDADD_FFY_RSTAND_5858 : STD_LOGIC; 
   signal LPSEL3_FFX_RSTAND_6053 : STD_LOGIC; 
   signal LPSEL1_FFX_RSTAND_6164 : STD_LOGIC; 
-  signal LARGESTRWD_4_FFX_RSTAND_6884 : STD_LOGIC; 
-  signal LARGESTRWD_3_FFX_RSTAND_10047 : STD_LOGIC; 
-  signal XLXN_2186_FFX_RSTAND_7066 : STD_LOGIC; 
-  signal DISP13_FFX_RSTAND_8044 : STD_LOGIC; 
+  signal LARGESTRWD_4_FFX_RSTAND_6788 : STD_LOGIC; 
+  signal XLXN_2186_FFX_RSTAND_6970 : STD_LOGIC; 
   signal XLXN_11102_FFY_RSTAND_8306 : STD_LOGIC; 
   signal DIGEQCDPOSSEL0_FFY_RSTAND_8359 : STD_LOGIC; 
   signal DIGEQCDADD_FFY_RSTAND_8424 : STD_LOGIC; 
   signal XLXN_156_FFY_RSTAND_8633 : STD_LOGIC; 
   signal LP2NSD_FFY_RSTAND_8734 : STD_LOGIC; 
-  signal LRWDRDADD_FFY_RSTAND_9960 : STD_LOGIC; 
-  signal DISP14_FFX_RSTAND_9699 : STD_LOGIC; 
+  signal DISP14_FFX_RSTAND_9663 : STD_LOGIC; 
+  signal LRWDRDADD_FFY_RSTAND_9948 : STD_LOGIC; 
+  signal LARGESTRWD_3_FFX_RSTAND_10035 : STD_LOGIC; 
   signal DISP15_FFX_RSTAND_10458 : STD_LOGIC; 
-  signal GND : STD_LOGIC; 
   signal VCC : STD_LOGIC; 
+  signal GND : STD_LOGIC; 
   signal TOTRWD : STD_LOGIC_VECTOR ( 7 downto 0 ); 
   signal P1PT : STD_LOGIC_VECTOR ( 7 downto 0 ); 
   signal LARGESTRWD : STD_LOGIC_VECTOR ( 6 downto 0 ); 
@@ -1664,7 +1668,7 @@ architecture Structure of ppm is
 begin
   P1PT_0_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y54",
+      LOC => "SLICE_X50Y44",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1673,7 +1677,7 @@ begin
     );
   P1PT_0_FXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y54",
+      LOC => "SLICE_X50Y44",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1682,7 +1686,7 @@ begin
     );
   P1PT_0_XORF : X_XOR2
     generic map(
-      LOC => "SLICE_X47Y54"
+      LOC => "SLICE_X50Y44"
     )
     port map (
       I0 => P1PT_0_CYINIT_3076,
@@ -1691,7 +1695,7 @@ begin
     );
   P1PT_0_CYMUXF : X_MUX2
     generic map(
-      LOC => "SLICE_X47Y54"
+      LOC => "SLICE_X50Y44"
     )
     port map (
       IA => P1PT_0_CY0F_3075,
@@ -1701,7 +1705,7 @@ begin
     );
   P1PT_0_CYINIT : X_BUF
     generic map(
-      LOC => "SLICE_X47Y54",
+      LOC => "SLICE_X50Y44",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1710,7 +1714,7 @@ begin
     );
   P1PT_0_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X47Y54",
+      LOC => "SLICE_X50Y44",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1719,7 +1723,7 @@ begin
     );
   P1PT_0_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X47Y54",
+      LOC => "SLICE_X50Y44",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1728,7 +1732,7 @@ begin
     );
   P1PT_0_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y54",
+      LOC => "SLICE_X50Y44",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1737,7 +1741,7 @@ begin
     );
   P1PT_0_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y54",
+      LOC => "SLICE_X50Y44",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1746,7 +1750,7 @@ begin
     );
   P1PT_0_GYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y54",
+      LOC => "SLICE_X50Y44",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1755,7 +1759,7 @@ begin
     );
   P1PT_0_XORG : X_XOR2
     generic map(
-      LOC => "SLICE_X47Y54"
+      LOC => "SLICE_X50Y44"
     )
     port map (
       I0 => U181_I_36_111_O,
@@ -1764,7 +1768,7 @@ begin
     );
   P1PT_0_COUTUSED : X_BUF
     generic map(
-      LOC => "SLICE_X47Y54",
+      LOC => "SLICE_X50Y44",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1773,7 +1777,7 @@ begin
     );
   P1PT_0_CYMUXG : X_MUX2
     generic map(
-      LOC => "SLICE_X47Y54"
+      LOC => "SLICE_X50Y44"
     )
     port map (
       IA => P1PT_0_CY0G_3052,
@@ -1783,7 +1787,7 @@ begin
     );
   P1PT_0_CY0G : X_BUF
     generic map(
-      LOC => "SLICE_X47Y54",
+      LOC => "SLICE_X50Y44",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1792,7 +1796,7 @@ begin
     );
   P1PT_0_CYSELG : X_BUF
     generic map(
-      LOC => "SLICE_X47Y54",
+      LOC => "SLICE_X50Y44",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1801,7 +1805,7 @@ begin
     );
   P1PT_0_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y54",
+      LOC => "SLICE_X50Y44",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1810,7 +1814,7 @@ begin
     );
   P1PT_0_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y54",
+      LOC => "SLICE_X50Y44",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1819,29 +1823,28 @@ begin
     );
   P1PT_0_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y54",
+      LOC => "SLICE_X50Y44",
       PATHPULSE => 694 ps
     )
     port map (
       I => STP1PT,
       O => P1PT_0_CEINV_3040
     );
-  U117_I_Q1 : X_FF
+  U181_I_36_228 : X_LUT4
     generic map(
-      LOC => "SLICE_X47Y54",
-      INIT => '0'
+      INIT => X"5A5A",
+      LOC => "SLICE_X50Y44"
     )
     port map (
-      I => P1PT_0_DYMUX_3057,
-      CE => P1PT_0_CEINV_3040,
-      CLK => P1PT_0_CLKINV_3041,
-      SET => GND,
-      RST => P1PT_0_SRINV_3042,
-      O => P1PT(1)
+      ADR0 => PT_0_0,
+      ADR1 => VCC,
+      ADR2 => TOTRWD(0),
+      ADR3 => VCC,
+      O => U181_I0
     );
   P1PT_2_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y55",
+      LOC => "SLICE_X50Y45",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1850,7 +1853,7 @@ begin
     );
   P1PT_2_FXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y55",
+      LOC => "SLICE_X50Y45",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1859,7 +1862,7 @@ begin
     );
   P1PT_2_XORF : X_XOR2
     generic map(
-      LOC => "SLICE_X47Y55"
+      LOC => "SLICE_X50Y45"
     )
     port map (
       I0 => P1PT_2_CYINIT_3139,
@@ -1868,7 +1871,7 @@ begin
     );
   P1PT_2_CYMUXF : X_MUX2
     generic map(
-      LOC => "SLICE_X47Y55"
+      LOC => "SLICE_X50Y45"
     )
     port map (
       IA => P1PT_2_CY0F_3138,
@@ -1878,7 +1881,7 @@ begin
     );
   P1PT_2_CYMUXF2 : X_MUX2
     generic map(
-      LOC => "SLICE_X47Y55"
+      LOC => "SLICE_X50Y45"
     )
     port map (
       IA => P1PT_2_CY0F_3138,
@@ -1888,7 +1891,7 @@ begin
     );
   P1PT_2_CYINIT : X_BUF
     generic map(
-      LOC => "SLICE_X47Y55",
+      LOC => "SLICE_X50Y45",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1897,7 +1900,7 @@ begin
     );
   P1PT_2_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X47Y55",
+      LOC => "SLICE_X50Y45",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1906,7 +1909,7 @@ begin
     );
   P1PT_2_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X47Y55",
+      LOC => "SLICE_X50Y45",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1915,7 +1918,7 @@ begin
     );
   P1PT_2_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y55",
+      LOC => "SLICE_X50Y45",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1924,7 +1927,7 @@ begin
     );
   P1PT_2_GYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y55",
+      LOC => "SLICE_X50Y45",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1933,7 +1936,7 @@ begin
     );
   P1PT_2_XORG : X_XOR2
     generic map(
-      LOC => "SLICE_X47Y55"
+      LOC => "SLICE_X50Y45"
     )
     port map (
       I0 => U181_I_36_62_O,
@@ -1942,7 +1945,7 @@ begin
     );
   P1PT_2_COUTUSED : X_BUF
     generic map(
-      LOC => "SLICE_X47Y55",
+      LOC => "SLICE_X50Y45",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1951,7 +1954,7 @@ begin
     );
   P1PT_2_FASTCARRY : X_BUF
     generic map(
-      LOC => "SLICE_X47Y55",
+      LOC => "SLICE_X50Y45",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1960,7 +1963,7 @@ begin
     );
   P1PT_2_CYAND : X_AND2
     generic map(
-      LOC => "SLICE_X47Y55"
+      LOC => "SLICE_X50Y45"
     )
     port map (
       I0 => P1PT_2_CYSELG_3104,
@@ -1969,7 +1972,7 @@ begin
     );
   P1PT_2_CYMUXFAST : X_MUX2
     generic map(
-      LOC => "SLICE_X47Y55"
+      LOC => "SLICE_X50Y45"
     )
     port map (
       IA => P1PT_2_CYMUXG2_3114,
@@ -1979,7 +1982,7 @@ begin
     );
   P1PT_2_CYMUXG2 : X_MUX2
     generic map(
-      LOC => "SLICE_X47Y55"
+      LOC => "SLICE_X50Y45"
     )
     port map (
       IA => P1PT_2_CY0G_3112,
@@ -1989,7 +1992,7 @@ begin
     );
   P1PT_2_CY0G : X_BUF
     generic map(
-      LOC => "SLICE_X47Y55",
+      LOC => "SLICE_X50Y45",
       PATHPULSE => 694 ps
     )
     port map (
@@ -1998,7 +2001,7 @@ begin
     );
   P1PT_2_CYSELG : X_BUF
     generic map(
-      LOC => "SLICE_X47Y55",
+      LOC => "SLICE_X50Y45",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2007,7 +2010,7 @@ begin
     );
   P1PT_2_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y55",
+      LOC => "SLICE_X50Y45",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2016,7 +2019,7 @@ begin
     );
   P1PT_2_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y55",
+      LOC => "SLICE_X50Y45",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2025,28 +2028,29 @@ begin
     );
   P1PT_2_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y55",
+      LOC => "SLICE_X50Y45",
       PATHPULSE => 694 ps
     )
     port map (
       I => STP1PT,
       O => P1PT_2_CEINV_3100
     );
-  U181_I_36_225 : X_LUT4
+  U117_I_Q3 : X_FF
     generic map(
-      INIT => X"55AA",
-      LOC => "SLICE_X47Y55"
+      LOC => "SLICE_X50Y45",
+      INIT => '0'
     )
     port map (
-      ADR0 => PT_3_0,
-      ADR1 => VCC,
-      ADR2 => VCC,
-      ADR3 => TOTRWD(3),
-      O => U181_I3
+      I => P1PT_2_DYMUX_3122,
+      CE => P1PT_2_CEINV_3100,
+      CLK => P1PT_2_CLKINV_3101,
+      SET => GND,
+      RST => P1PT_2_SRINV_3102,
+      O => P1PT(3)
     );
   P1PT_4_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y56",
+      LOC => "SLICE_X50Y46",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2055,7 +2059,7 @@ begin
     );
   P1PT_4_FXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y56",
+      LOC => "SLICE_X50Y46",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2064,7 +2068,7 @@ begin
     );
   P1PT_4_XORF : X_XOR2
     generic map(
-      LOC => "SLICE_X47Y56"
+      LOC => "SLICE_X50Y46"
     )
     port map (
       I0 => P1PT_4_CYINIT_3202,
@@ -2073,7 +2077,7 @@ begin
     );
   P1PT_4_CYMUXF : X_MUX2
     generic map(
-      LOC => "SLICE_X47Y56"
+      LOC => "SLICE_X50Y46"
     )
     port map (
       IA => P1PT_4_CY0F_3201,
@@ -2083,7 +2087,7 @@ begin
     );
   P1PT_4_CYMUXF2 : X_MUX2
     generic map(
-      LOC => "SLICE_X47Y56"
+      LOC => "SLICE_X50Y46"
     )
     port map (
       IA => P1PT_4_CY0F_3201,
@@ -2093,7 +2097,7 @@ begin
     );
   P1PT_4_CYINIT : X_BUF
     generic map(
-      LOC => "SLICE_X47Y56",
+      LOC => "SLICE_X50Y46",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2102,7 +2106,7 @@ begin
     );
   P1PT_4_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X47Y56",
+      LOC => "SLICE_X50Y46",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2111,7 +2115,7 @@ begin
     );
   P1PT_4_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X47Y56",
+      LOC => "SLICE_X50Y46",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2120,7 +2124,7 @@ begin
     );
   P1PT_4_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y56",
+      LOC => "SLICE_X50Y46",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2129,7 +2133,7 @@ begin
     );
   P1PT_4_GYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y56",
+      LOC => "SLICE_X50Y46",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2138,7 +2142,7 @@ begin
     );
   P1PT_4_XORG : X_XOR2
     generic map(
-      LOC => "SLICE_X47Y56"
+      LOC => "SLICE_X50Y46"
     )
     port map (
       I0 => U181_I_36_63_O,
@@ -2147,7 +2151,7 @@ begin
     );
   P1PT_4_COUTUSED : X_BUF
     generic map(
-      LOC => "SLICE_X47Y56",
+      LOC => "SLICE_X50Y46",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2156,7 +2160,7 @@ begin
     );
   P1PT_4_FASTCARRY : X_BUF
     generic map(
-      LOC => "SLICE_X47Y56",
+      LOC => "SLICE_X50Y46",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2165,7 +2169,7 @@ begin
     );
   P1PT_4_CYAND : X_AND2
     generic map(
-      LOC => "SLICE_X47Y56"
+      LOC => "SLICE_X50Y46"
     )
     port map (
       I0 => P1PT_4_CYSELG_3167,
@@ -2174,7 +2178,7 @@ begin
     );
   P1PT_4_CYMUXFAST : X_MUX2
     generic map(
-      LOC => "SLICE_X47Y56"
+      LOC => "SLICE_X50Y46"
     )
     port map (
       IA => P1PT_4_CYMUXG2_3177,
@@ -2184,7 +2188,7 @@ begin
     );
   P1PT_4_CYMUXG2 : X_MUX2
     generic map(
-      LOC => "SLICE_X47Y56"
+      LOC => "SLICE_X50Y46"
     )
     port map (
       IA => P1PT_4_CY0G_3175,
@@ -2194,7 +2198,7 @@ begin
     );
   P1PT_4_CY0G : X_BUF
     generic map(
-      LOC => "SLICE_X47Y56",
+      LOC => "SLICE_X50Y46",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2203,7 +2207,7 @@ begin
     );
   P1PT_4_CYSELG : X_BUF
     generic map(
-      LOC => "SLICE_X47Y56",
+      LOC => "SLICE_X50Y46",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2212,7 +2216,7 @@ begin
     );
   P1PT_4_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y56",
+      LOC => "SLICE_X50Y46",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2221,7 +2225,7 @@ begin
     );
   P1PT_4_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y56",
+      LOC => "SLICE_X50Y46",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2230,28 +2234,16 @@ begin
     );
   P1PT_4_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y56",
+      LOC => "SLICE_X50Y46",
       PATHPULSE => 694 ps
     )
     port map (
       I => STP1PT,
       O => P1PT_4_CEINV_3163
     );
-  U181_I_36_223 : X_LUT4
-    generic map(
-      INIT => X"3C3C",
-      LOC => "SLICE_X47Y56"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => PT_5_0,
-      ADR2 => TOTRWD(5),
-      ADR3 => VCC,
-      O => U181_I5
-    );
   P1PT_6_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y57",
+      LOC => "SLICE_X50Y47",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2260,7 +2252,7 @@ begin
     );
   P1PT_6_FXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y57",
+      LOC => "SLICE_X50Y47",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2269,7 +2261,7 @@ begin
     );
   P1PT_6_XORF : X_XOR2
     generic map(
-      LOC => "SLICE_X47Y57"
+      LOC => "SLICE_X50Y47"
     )
     port map (
       I0 => P1PT_6_CYINIT_3265,
@@ -2278,7 +2270,7 @@ begin
     );
   P1PT_6_CYMUXF : X_MUX2
     generic map(
-      LOC => "SLICE_X47Y57"
+      LOC => "SLICE_X50Y47"
     )
     port map (
       IA => P1PT_6_CY0F_3264,
@@ -2288,7 +2280,7 @@ begin
     );
   P1PT_6_CYMUXF2 : X_MUX2
     generic map(
-      LOC => "SLICE_X47Y57"
+      LOC => "SLICE_X50Y47"
     )
     port map (
       IA => P1PT_6_CY0F_3264,
@@ -2298,7 +2290,7 @@ begin
     );
   P1PT_6_CYINIT : X_BUF
     generic map(
-      LOC => "SLICE_X47Y57",
+      LOC => "SLICE_X50Y47",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2307,7 +2299,7 @@ begin
     );
   P1PT_6_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X47Y57",
+      LOC => "SLICE_X50Y47",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2316,7 +2308,7 @@ begin
     );
   P1PT_6_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X47Y57",
+      LOC => "SLICE_X50Y47",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2325,7 +2317,7 @@ begin
     );
   P1PT_6_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y57",
+      LOC => "SLICE_X50Y47",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2334,7 +2326,7 @@ begin
     );
   P1PT_6_GYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y57",
+      LOC => "SLICE_X50Y47",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2343,7 +2335,7 @@ begin
     );
   P1PT_6_XORG : X_XOR2
     generic map(
-      LOC => "SLICE_X47Y57"
+      LOC => "SLICE_X50Y47"
     )
     port map (
       I0 => U181_C6O,
@@ -2352,7 +2344,7 @@ begin
     );
   P1PT_6_COUTUSED : X_BUF
     generic map(
-      LOC => "SLICE_X47Y57",
+      LOC => "SLICE_X50Y47",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2361,7 +2353,7 @@ begin
     );
   P1PT_6_FASTCARRY : X_BUF
     generic map(
-      LOC => "SLICE_X47Y57",
+      LOC => "SLICE_X50Y47",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2370,7 +2362,7 @@ begin
     );
   P1PT_6_CYAND : X_AND2
     generic map(
-      LOC => "SLICE_X47Y57"
+      LOC => "SLICE_X50Y47"
     )
     port map (
       I0 => P1PT_6_CYSELG_3230,
@@ -2379,7 +2371,7 @@ begin
     );
   P1PT_6_CYMUXFAST : X_MUX2
     generic map(
-      LOC => "SLICE_X47Y57"
+      LOC => "SLICE_X50Y47"
     )
     port map (
       IA => P1PT_6_CYMUXG2_3240,
@@ -2389,7 +2381,7 @@ begin
     );
   P1PT_6_CYMUXG2 : X_MUX2
     generic map(
-      LOC => "SLICE_X47Y57"
+      LOC => "SLICE_X50Y47"
     )
     port map (
       IA => P1PT_6_CY0G_3238,
@@ -2399,7 +2391,7 @@ begin
     );
   P1PT_6_CY0G : X_BUF
     generic map(
-      LOC => "SLICE_X47Y57",
+      LOC => "SLICE_X50Y47",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2408,7 +2400,7 @@ begin
     );
   P1PT_6_CYSELG : X_BUF
     generic map(
-      LOC => "SLICE_X47Y57",
+      LOC => "SLICE_X50Y47",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2417,7 +2409,7 @@ begin
     );
   P1PT_6_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y57",
+      LOC => "SLICE_X50Y47",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2426,7 +2418,7 @@ begin
     );
   P1PT_6_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y57",
+      LOC => "SLICE_X50Y47",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2435,28 +2427,16 @@ begin
     );
   P1PT_6_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y57",
+      LOC => "SLICE_X50Y47",
       PATHPULSE => 694 ps
     )
     port map (
       I => STP1PT,
       O => P1PT_6_CEINV_3226
     );
-  U181_I_36_221 : X_LUT4
-    generic map(
-      INIT => X"33CC",
-      LOC => "SLICE_X47Y57"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => PT_7_0,
-      ADR2 => VCC,
-      ADR3 => TOTRWD(7),
-      O => U181_I7
-    );
   U190_I_36_55_O_CYMUXF : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y32"
+      LOC => "SLICE_X51Y29"
     )
     port map (
       IA => U190_I_36_55_O_CY0F_3304,
@@ -2466,7 +2446,7 @@ begin
     );
   U190_I_36_55_O_CYINIT : X_BUF
     generic map(
-      LOC => "SLICE_X45Y32",
+      LOC => "SLICE_X51Y29",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2475,7 +2455,7 @@ begin
     );
   U190_I_36_55_O_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X45Y32",
+      LOC => "SLICE_X51Y29",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2484,7 +2464,7 @@ begin
     );
   U190_I_36_55_O_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X45Y32",
+      LOC => "SLICE_X51Y29",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2493,7 +2473,7 @@ begin
     );
   U190_I_36_55_O_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X45Y32",
+      LOC => "SLICE_X51Y29",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2502,7 +2482,7 @@ begin
     );
   U190_I_36_55_O_CYMUXG : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y32"
+      LOC => "SLICE_X51Y29"
     )
     port map (
       IA => U190_I_36_55_O_CY0G_3291,
@@ -2512,7 +2492,7 @@ begin
     );
   U190_I_36_55_O_CY0G : X_BUF
     generic map(
-      LOC => "SLICE_X45Y32",
+      LOC => "SLICE_X51Y29",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2521,28 +2501,28 @@ begin
     );
   U190_I_36_55_O_CYSELG : X_BUF
     generic map(
-      LOC => "SLICE_X45Y32",
+      LOC => "SLICE_X51Y29",
       PATHPULSE => 694 ps
     )
     port map (
       I => U190_I1,
       O => U190_I_36_55_O_CYSELG_3283
     );
-  U190_I_36_229 : X_LUT4
+  U190_I_36_230 : X_LUT4
     generic map(
-      INIT => X"55AA",
-      LOC => "SLICE_X45Y32"
+      INIT => X"6666",
+      LOC => "SLICE_X51Y30"
     )
     port map (
-      ADR0 => LARGESTRWD(1),
-      ADR1 => VCC,
+      ADR0 => LARGESTRWD(2),
+      ADR1 => P2PT(2),
       ADR2 => VCC,
-      ADR3 => P2PT(1),
-      O => U190_I1
+      ADR3 => VCC,
+      O => U190_I2
     );
   U190_I_36_58_O_CYMUXF2 : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y33"
+      LOC => "SLICE_X51Y30"
     )
     port map (
       IA => U190_I_36_58_O_CY0F_3336,
@@ -2552,7 +2532,7 @@ begin
     );
   U190_I_36_58_O_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X45Y33",
+      LOC => "SLICE_X51Y30",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2561,7 +2541,7 @@ begin
     );
   U190_I_36_58_O_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X45Y33",
+      LOC => "SLICE_X51Y30",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2570,7 +2550,7 @@ begin
     );
   U190_I_36_58_O_FASTCARRY : X_BUF
     generic map(
-      LOC => "SLICE_X45Y33",
+      LOC => "SLICE_X51Y30",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2579,7 +2559,7 @@ begin
     );
   U190_I_36_58_O_CYAND : X_AND2
     generic map(
-      LOC => "SLICE_X45Y33"
+      LOC => "SLICE_X51Y30"
     )
     port map (
       I0 => U190_I_36_58_O_CYSELG_3313,
@@ -2588,7 +2568,7 @@ begin
     );
   U190_I_36_58_O_CYMUXFAST : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y33"
+      LOC => "SLICE_X51Y30"
     )
     port map (
       IA => U190_I_36_58_O_CYMUXG2_3323,
@@ -2598,7 +2578,7 @@ begin
     );
   U190_I_36_58_O_CYMUXG2 : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y33"
+      LOC => "SLICE_X51Y30"
     )
     port map (
       IA => U190_I_36_58_O_CY0G_3321,
@@ -2608,7 +2588,7 @@ begin
     );
   U190_I_36_58_O_CY0G : X_BUF
     generic map(
-      LOC => "SLICE_X45Y33",
+      LOC => "SLICE_X51Y30",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2617,28 +2597,16 @@ begin
     );
   U190_I_36_58_O_CYSELG : X_BUF
     generic map(
-      LOC => "SLICE_X45Y33",
+      LOC => "SLICE_X51Y30",
       PATHPULSE => 694 ps
     )
     port map (
       I => U190_I3,
       O => U190_I_36_58_O_CYSELG_3313
     );
-  U190_I_36_225 : X_LUT4
-    generic map(
-      INIT => X"3C3C",
-      LOC => "SLICE_X45Y33"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => LARGESTRWD(3),
-      ADR2 => P2PT(3),
-      ADR3 => VCC,
-      O => U190_I3
-    );
   U190_I_36_110_O_CYMUXF2 : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y34"
+      LOC => "SLICE_X51Y31"
     )
     port map (
       IA => U190_I_36_110_O_CY0F_3367,
@@ -2648,7 +2616,7 @@ begin
     );
   U190_I_36_110_O_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X45Y34",
+      LOC => "SLICE_X51Y31",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2657,7 +2625,7 @@ begin
     );
   U190_I_36_110_O_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X45Y34",
+      LOC => "SLICE_X51Y31",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2666,7 +2634,7 @@ begin
     );
   U190_I_36_110_O_FASTCARRY : X_BUF
     generic map(
-      LOC => "SLICE_X45Y34",
+      LOC => "SLICE_X51Y31",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2675,7 +2643,7 @@ begin
     );
   U190_I_36_110_O_CYAND : X_AND2
     generic map(
-      LOC => "SLICE_X45Y34"
+      LOC => "SLICE_X51Y31"
     )
     port map (
       I0 => U190_I_36_110_O_CYSELG_3344,
@@ -2684,7 +2652,7 @@ begin
     );
   U190_I_36_110_O_CYMUXFAST : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y34"
+      LOC => "SLICE_X51Y31"
     )
     port map (
       IA => U190_I_36_110_O_CYMUXG2_3354,
@@ -2694,7 +2662,7 @@ begin
     );
   U190_I_36_110_O_CYMUXG2 : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y34"
+      LOC => "SLICE_X51Y31"
     )
     port map (
       IA => U190_I_36_110_O_CY0G_3352,
@@ -2704,7 +2672,7 @@ begin
     );
   U190_I_36_110_O_CY0G : X_BUF
     generic map(
-      LOC => "SLICE_X45Y34",
+      LOC => "SLICE_X51Y31",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2713,35 +2681,35 @@ begin
     );
   U190_I_36_110_O_CYSELG : X_BUF
     generic map(
-      LOC => "SLICE_X45Y34",
+      LOC => "SLICE_X51Y31",
       PATHPULSE => 694 ps
     )
     port map (
       I => U190_I5,
       O => U190_I_36_110_O_CYSELG_3344
     );
-  U190_I_36_223 : X_LUT4
+  U190_I_36_222 : X_LUT4
     generic map(
-      INIT => X"3C3C",
-      LOC => "SLICE_X45Y34"
+      INIT => X"6666",
+      LOC => "SLICE_X51Y32"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => LARGESTRWD(5),
-      ADR2 => P2PT(5),
+      ADR0 => P2PT(6),
+      ADR1 => LARGESTRWD(6),
+      ADR2 => VCC,
       ADR3 => VCC,
-      O => U190_I5
+      O => U190_I6
     );
   LRGRWDWINSGAME_LOGIC_ZERO : X_ZERO
     generic map(
-      LOC => "SLICE_X45Y35"
+      LOC => "SLICE_X51Y32"
     )
     port map (
       O => LRGRWDWINSGAME_LOGIC_ZERO_3383
     );
   LRGRWDWINSGAME_CYMUXF2 : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y35"
+      LOC => "SLICE_X51Y32"
     )
     port map (
       IA => LRGRWDWINSGAME_CY0F_3398,
@@ -2751,7 +2719,7 @@ begin
     );
   LRGRWDWINSGAME_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X45Y35",
+      LOC => "SLICE_X51Y32",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2760,7 +2728,7 @@ begin
     );
   LRGRWDWINSGAME_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X45Y35",
+      LOC => "SLICE_X51Y32",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2769,7 +2737,7 @@ begin
     );
   LRGRWDWINSGAME_COUTUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y35",
+      LOC => "SLICE_X51Y32",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2778,7 +2746,7 @@ begin
     );
   LRGRWDWINSGAME_FASTCARRY : X_BUF
     generic map(
-      LOC => "SLICE_X45Y35",
+      LOC => "SLICE_X51Y32",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2787,7 +2755,7 @@ begin
     );
   LRGRWDWINSGAME_CYAND : X_AND2
     generic map(
-      LOC => "SLICE_X45Y35"
+      LOC => "SLICE_X51Y32"
     )
     port map (
       I0 => LRGRWDWINSGAME_CYSELG_3374,
@@ -2796,7 +2764,7 @@ begin
     );
   LRGRWDWINSGAME_CYMUXFAST : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y35"
+      LOC => "SLICE_X51Y32"
     )
     port map (
       IA => LRGRWDWINSGAME_CYMUXG2_3385,
@@ -2806,7 +2774,7 @@ begin
     );
   LRGRWDWINSGAME_CYMUXG2 : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y35"
+      LOC => "SLICE_X51Y32"
     )
     port map (
       IA => LRGRWDWINSGAME_LOGIC_ZERO_3383,
@@ -2816,28 +2784,16 @@ begin
     );
   LRGRWDWINSGAME_CYSELG : X_BUF
     generic map(
-      LOC => "SLICE_X45Y35",
+      LOC => "SLICE_X51Y32",
       PATHPULSE => 694 ps
     )
     port map (
       I => U190_I7,
       O => LRGRWDWINSGAME_CYSELG_3374
     );
-  U190_I_36_221 : X_LUT4
-    generic map(
-      INIT => X"FF00",
-      LOC => "SLICE_X45Y35"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => VCC,
-      ADR2 => VCC,
-      ADR3 => P2PT(7),
-      O => U190_I7
-    );
   NPDISP4_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y18",
+      LOC => "SLICE_X65Y16",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2846,7 +2802,7 @@ begin
     );
   NPDISP4_XORF : X_XOR2
     generic map(
-      LOC => "SLICE_X65Y18"
+      LOC => "SLICE_X65Y16"
     )
     port map (
       I0 => NPDISP4_CYINIT_3432,
@@ -2855,7 +2811,7 @@ begin
     );
   NPDISP4_CYMUXF : X_MUX2
     generic map(
-      LOC => "SLICE_X65Y18"
+      LOC => "SLICE_X65Y16"
     )
     port map (
       IA => NPDISP4_CY0F_3431,
@@ -2865,7 +2821,7 @@ begin
     );
   NPDISP4_CYINIT : X_BUF
     generic map(
-      LOC => "SLICE_X65Y18",
+      LOC => "SLICE_X65Y16",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2874,7 +2830,7 @@ begin
     );
   NPDISP4_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X65Y18",
+      LOC => "SLICE_X65Y16",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2883,7 +2839,7 @@ begin
     );
   NPDISP4_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X65Y18",
+      LOC => "SLICE_X65Y16",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2892,7 +2848,7 @@ begin
     );
   NPDISP4_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X65Y18",
+      LOC => "SLICE_X65Y16",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2901,7 +2857,7 @@ begin
     );
   NPDISP4_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y18",
+      LOC => "SLICE_X65Y16",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2910,7 +2866,7 @@ begin
     );
   NPDISP4_XORG : X_XOR2
     generic map(
-      LOC => "SLICE_X65Y18"
+      LOC => "SLICE_X65Y16"
     )
     port map (
       I0 => U148_I_36_111_O,
@@ -2919,7 +2875,7 @@ begin
     );
   NPDISP4_COUTUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y18",
+      LOC => "SLICE_X65Y16",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2928,7 +2884,7 @@ begin
     );
   NPDISP4_CYMUXG : X_MUX2
     generic map(
-      LOC => "SLICE_X65Y18"
+      LOC => "SLICE_X65Y16"
     )
     port map (
       IA => NPDISP4_CY0G_3416,
@@ -2938,7 +2894,7 @@ begin
     );
   NPDISP4_CY0G : X_BUF
     generic map(
-      LOC => "SLICE_X65Y18",
+      LOC => "SLICE_X65Y16",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2947,28 +2903,16 @@ begin
     );
   NPDISP4_CYSELG : X_BUF
     generic map(
-      LOC => "SLICE_X65Y18",
+      LOC => "SLICE_X65Y16",
       PATHPULSE => 694 ps
     )
     port map (
       I => U148_I1,
       O => NPDISP4_CYSELG_3408
     );
-  U148_I_36_240 : X_LUT4
-    generic map(
-      INIT => X"6666",
-      LOC => "SLICE_X65Y18"
-    )
-    port map (
-      ADR0 => DISP5,
-      ADR1 => RD1_0,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => U148_I1
-    );
   NPDISP6_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y19",
+      LOC => "SLICE_X65Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -2977,7 +2921,7 @@ begin
     );
   NPDISP6_XORF : X_XOR2
     generic map(
-      LOC => "SLICE_X65Y19"
+      LOC => "SLICE_X65Y17"
     )
     port map (
       I0 => NPDISP6_CYINIT_3471,
@@ -2986,7 +2930,7 @@ begin
     );
   NPDISP6_CYMUXF : X_MUX2
     generic map(
-      LOC => "SLICE_X65Y19"
+      LOC => "SLICE_X65Y17"
     )
     port map (
       IA => NPDISP6_CY0F_3470,
@@ -2996,7 +2940,7 @@ begin
     );
   NPDISP6_CYMUXF2 : X_MUX2
     generic map(
-      LOC => "SLICE_X65Y19"
+      LOC => "SLICE_X65Y17"
     )
     port map (
       IA => NPDISP6_CY0F_3470,
@@ -3006,7 +2950,7 @@ begin
     );
   NPDISP6_CYINIT : X_BUF
     generic map(
-      LOC => "SLICE_X65Y19",
+      LOC => "SLICE_X65Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3015,7 +2959,7 @@ begin
     );
   NPDISP6_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X65Y19",
+      LOC => "SLICE_X65Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3024,7 +2968,7 @@ begin
     );
   NPDISP6_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X65Y19",
+      LOC => "SLICE_X65Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3033,7 +2977,7 @@ begin
     );
   NPDISP6_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y19",
+      LOC => "SLICE_X65Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3042,7 +2986,7 @@ begin
     );
   NPDISP6_XORG : X_XOR2
     generic map(
-      LOC => "SLICE_X65Y19"
+      LOC => "SLICE_X65Y17"
     )
     port map (
       I0 => U148_C2O,
@@ -3051,7 +2995,7 @@ begin
     );
   NPDISP6_COUTUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y19",
+      LOC => "SLICE_X65Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3060,7 +3004,7 @@ begin
     );
   NPDISP6_FASTCARRY : X_BUF
     generic map(
-      LOC => "SLICE_X65Y19",
+      LOC => "SLICE_X65Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3069,7 +3013,7 @@ begin
     );
   NPDISP6_CYAND : X_AND2
     generic map(
-      LOC => "SLICE_X65Y19"
+      LOC => "SLICE_X65Y17"
     )
     port map (
       I0 => NPDISP6_CYSELG_3444,
@@ -3078,7 +3022,7 @@ begin
     );
   NPDISP6_CYMUXFAST : X_MUX2
     generic map(
-      LOC => "SLICE_X65Y19"
+      LOC => "SLICE_X65Y17"
     )
     port map (
       IA => NPDISP6_CYMUXG2_3454,
@@ -3088,7 +3032,7 @@ begin
     );
   NPDISP6_CYMUXG2 : X_MUX2
     generic map(
-      LOC => "SLICE_X65Y19"
+      LOC => "SLICE_X65Y17"
     )
     port map (
       IA => NPDISP6_CY0G_3452,
@@ -3098,7 +3042,7 @@ begin
     );
   NPDISP6_CY0G : X_BUF
     generic map(
-      LOC => "SLICE_X65Y19",
+      LOC => "SLICE_X65Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3107,7 +3051,7 @@ begin
     );
   NPDISP6_CYSELG : X_BUF
     generic map(
-      LOC => "SLICE_X65Y19",
+      LOC => "SLICE_X65Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3117,18 +3061,18 @@ begin
   U148_I_36_242 : X_LUT4
     generic map(
       INIT => X"6666",
-      LOC => "SLICE_X65Y19"
+      LOC => "SLICE_X65Y17"
     )
     port map (
-      ADR0 => RD3,
-      ADR1 => DISP7,
+      ADR0 => DISP7,
+      ADR1 => RD3,
       ADR2 => VCC,
       ADR3 => VCC,
       O => U148_I3
     );
   TOTRWD_0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y42",
+      LOC => "SLICE_X51Y38",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3137,7 +3081,7 @@ begin
     );
   TOTRWD_0_XORF : X_XOR2
     generic map(
-      LOC => "SLICE_X45Y42"
+      LOC => "SLICE_X51Y38"
     )
     port map (
       I0 => TOTRWD_0_CYINIT_3507,
@@ -3146,7 +3090,7 @@ begin
     );
   TOTRWD_0_CYMUXF : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y42"
+      LOC => "SLICE_X51Y38"
     )
     port map (
       IA => TOTRWD_0_CY0F_3506,
@@ -3156,7 +3100,7 @@ begin
     );
   TOTRWD_0_CYINIT : X_BUF
     generic map(
-      LOC => "SLICE_X45Y42",
+      LOC => "SLICE_X51Y38",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3165,7 +3109,7 @@ begin
     );
   TOTRWD_0_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X45Y42",
+      LOC => "SLICE_X51Y38",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3174,7 +3118,7 @@ begin
     );
   TOTRWD_0_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X45Y42",
+      LOC => "SLICE_X51Y38",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3183,7 +3127,7 @@ begin
     );
   TOTRWD_0_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X45Y42",
+      LOC => "SLICE_X51Y38",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3192,7 +3136,7 @@ begin
     );
   TOTRWD_0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y42",
+      LOC => "SLICE_X51Y38",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3201,7 +3145,7 @@ begin
     );
   TOTRWD_0_XORG : X_XOR2
     generic map(
-      LOC => "SLICE_X45Y42"
+      LOC => "SLICE_X51Y38"
     )
     port map (
       I0 => U182_I_36_111_O,
@@ -3210,7 +3154,7 @@ begin
     );
   TOTRWD_0_COUTUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y42",
+      LOC => "SLICE_X51Y38",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3219,7 +3163,7 @@ begin
     );
   TOTRWD_0_CYMUXG : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y42"
+      LOC => "SLICE_X51Y38"
     )
     port map (
       IA => TOTRWD_0_CY0G_3493,
@@ -3229,7 +3173,7 @@ begin
     );
   TOTRWD_0_CY0G : X_BUF
     generic map(
-      LOC => "SLICE_X45Y42",
+      LOC => "SLICE_X51Y38",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3238,28 +3182,28 @@ begin
     );
   TOTRWD_0_CYSELG : X_BUF
     generic map(
-      LOC => "SLICE_X45Y42",
+      LOC => "SLICE_X51Y38",
       PATHPULSE => 694 ps
     )
     port map (
       I => U182_I1,
       O => TOTRWD_0_CYSELG_3487
     );
-  U182_I_36_229 : X_LUT4
+  U182_I_36_228 : X_LUT4
     generic map(
-      INIT => X"C6CC",
-      LOC => "SLICE_X45Y42"
+      INIT => X"A6AA",
+      LOC => "SLICE_X51Y38"
     )
     port map (
-      ADR0 => M1_CODE1,
-      ADR1 => RWD_1_Q,
+      ADR0 => RWD_0_0,
+      ADR1 => M1_CODE0,
       ADR2 => M1_ENCODERWDMUX_0,
       ADR3 => M1_CODERWDMUXSEL1_0,
-      O => U182_I1
+      O => U182_I0
     );
   TOTRWD_2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y43",
+      LOC => "SLICE_X51Y39",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3268,7 +3212,7 @@ begin
     );
   TOTRWD_2_XORF : X_XOR2
     generic map(
-      LOC => "SLICE_X45Y43"
+      LOC => "SLICE_X51Y39"
     )
     port map (
       I0 => TOTRWD_2_CYINIT_3546,
@@ -3277,7 +3221,7 @@ begin
     );
   TOTRWD_2_CYMUXF : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y43"
+      LOC => "SLICE_X51Y39"
     )
     port map (
       IA => TOTRWD_2_CY0F_3545,
@@ -3287,7 +3231,7 @@ begin
     );
   TOTRWD_2_CYMUXF2 : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y43"
+      LOC => "SLICE_X51Y39"
     )
     port map (
       IA => TOTRWD_2_CY0F_3545,
@@ -3297,7 +3241,7 @@ begin
     );
   TOTRWD_2_CYINIT : X_BUF
     generic map(
-      LOC => "SLICE_X45Y43",
+      LOC => "SLICE_X51Y39",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3306,7 +3250,7 @@ begin
     );
   TOTRWD_2_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X45Y43",
+      LOC => "SLICE_X51Y39",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3315,7 +3259,7 @@ begin
     );
   TOTRWD_2_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X45Y43",
+      LOC => "SLICE_X51Y39",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3324,7 +3268,7 @@ begin
     );
   TOTRWD_2_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y43",
+      LOC => "SLICE_X51Y39",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3333,7 +3277,7 @@ begin
     );
   TOTRWD_2_XORG : X_XOR2
     generic map(
-      LOC => "SLICE_X45Y43"
+      LOC => "SLICE_X51Y39"
     )
     port map (
       I0 => U182_I_36_62_O,
@@ -3342,7 +3286,7 @@ begin
     );
   TOTRWD_2_COUTUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y43",
+      LOC => "SLICE_X51Y39",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3351,7 +3295,7 @@ begin
     );
   TOTRWD_2_FASTCARRY : X_BUF
     generic map(
-      LOC => "SLICE_X45Y43",
+      LOC => "SLICE_X51Y39",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3360,7 +3304,7 @@ begin
     );
   TOTRWD_2_CYAND : X_AND2
     generic map(
-      LOC => "SLICE_X45Y43"
+      LOC => "SLICE_X51Y39"
     )
     port map (
       I0 => TOTRWD_2_CYSELG_3521,
@@ -3369,7 +3313,7 @@ begin
     );
   TOTRWD_2_CYMUXFAST : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y43"
+      LOC => "SLICE_X51Y39"
     )
     port map (
       IA => TOTRWD_2_CYMUXG2_3531,
@@ -3379,7 +3323,7 @@ begin
     );
   TOTRWD_2_CYMUXG2 : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y43"
+      LOC => "SLICE_X51Y39"
     )
     port map (
       IA => TOTRWD_2_CY0G_3529,
@@ -3389,7 +3333,7 @@ begin
     );
   TOTRWD_2_CY0G : X_BUF
     generic map(
-      LOC => "SLICE_X45Y43",
+      LOC => "SLICE_X51Y39",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3398,28 +3342,16 @@ begin
     );
   TOTRWD_2_CYSELG : X_BUF
     generic map(
-      LOC => "SLICE_X45Y43",
+      LOC => "SLICE_X51Y39",
       PATHPULSE => 694 ps
     )
     port map (
       I => U182_I3,
       O => TOTRWD_2_CYSELG_3521
     );
-  U182_I_36_225 : X_LUT4
-    generic map(
-      INIT => X"6666",
-      LOC => "SLICE_X45Y43"
-    )
-    port map (
-      ADR0 => RWD_3_0,
-      ADR1 => CODERWD_3_0,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => U182_I3
-    );
   TOTRWD_4_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y44",
+      LOC => "SLICE_X51Y40",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3428,7 +3360,7 @@ begin
     );
   TOTRWD_4_XORF : X_XOR2
     generic map(
-      LOC => "SLICE_X45Y44"
+      LOC => "SLICE_X51Y40"
     )
     port map (
       I0 => TOTRWD_4_CYINIT_3585,
@@ -3437,7 +3369,7 @@ begin
     );
   TOTRWD_4_CYMUXF : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y44"
+      LOC => "SLICE_X51Y40"
     )
     port map (
       IA => TOTRWD_4_CY0F_3584,
@@ -3447,7 +3379,7 @@ begin
     );
   TOTRWD_4_CYMUXF2 : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y44"
+      LOC => "SLICE_X51Y40"
     )
     port map (
       IA => TOTRWD_4_CY0F_3584,
@@ -3457,7 +3389,7 @@ begin
     );
   TOTRWD_4_CYINIT : X_BUF
     generic map(
-      LOC => "SLICE_X45Y44",
+      LOC => "SLICE_X51Y40",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3466,7 +3398,7 @@ begin
     );
   TOTRWD_4_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X45Y44",
+      LOC => "SLICE_X51Y40",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3475,7 +3407,7 @@ begin
     );
   TOTRWD_4_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X45Y44",
+      LOC => "SLICE_X51Y40",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3484,7 +3416,7 @@ begin
     );
   TOTRWD_4_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y44",
+      LOC => "SLICE_X51Y40",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3493,7 +3425,7 @@ begin
     );
   TOTRWD_4_XORG : X_XOR2
     generic map(
-      LOC => "SLICE_X45Y44"
+      LOC => "SLICE_X51Y40"
     )
     port map (
       I0 => U182_I_36_63_O,
@@ -3502,7 +3434,7 @@ begin
     );
   TOTRWD_4_COUTUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y44",
+      LOC => "SLICE_X51Y40",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3511,7 +3443,7 @@ begin
     );
   TOTRWD_4_FASTCARRY : X_BUF
     generic map(
-      LOC => "SLICE_X45Y44",
+      LOC => "SLICE_X51Y40",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3520,7 +3452,7 @@ begin
     );
   TOTRWD_4_CYAND : X_AND2
     generic map(
-      LOC => "SLICE_X45Y44"
+      LOC => "SLICE_X51Y40"
     )
     port map (
       I0 => TOTRWD_4_CYSELG_3558,
@@ -3529,7 +3461,7 @@ begin
     );
   TOTRWD_4_CYMUXFAST : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y44"
+      LOC => "SLICE_X51Y40"
     )
     port map (
       IA => TOTRWD_4_CYMUXG2_3568,
@@ -3539,7 +3471,7 @@ begin
     );
   TOTRWD_4_CYMUXG2 : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y44"
+      LOC => "SLICE_X51Y40"
     )
     port map (
       IA => TOTRWD_4_CY0G_3566,
@@ -3549,7 +3481,7 @@ begin
     );
   TOTRWD_4_CY0G : X_BUF
     generic map(
-      LOC => "SLICE_X45Y44",
+      LOC => "SLICE_X51Y40",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3558,35 +3490,23 @@ begin
     );
   TOTRWD_4_CYSELG : X_BUF
     generic map(
-      LOC => "SLICE_X45Y44",
+      LOC => "SLICE_X51Y40",
       PATHPULSE => 694 ps
     )
     port map (
       I => U182_I5,
       O => TOTRWD_4_CYSELG_3558
     );
-  U182_I_36_223 : X_LUT4
-    generic map(
-      INIT => X"5A5A",
-      LOC => "SLICE_X45Y44"
-    )
-    port map (
-      ADR0 => U173_XLXI_6_M1,
-      ADR1 => VCC,
-      ADR2 => CODERWD_5_0,
-      ADR3 => VCC,
-      O => U182_I5
-    );
   TOTRWD_6_LOGIC_ZERO : X_ZERO
     generic map(
-      LOC => "SLICE_X45Y45"
+      LOC => "SLICE_X51Y41"
     )
     port map (
       O => TOTRWD_6_LOGIC_ZERO_3605
     );
   TOTRWD_6_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y45",
+      LOC => "SLICE_X51Y41",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3595,7 +3515,7 @@ begin
     );
   TOTRWD_6_XORF : X_XOR2
     generic map(
-      LOC => "SLICE_X45Y45"
+      LOC => "SLICE_X51Y41"
     )
     port map (
       I0 => TOTRWD_6_CYINIT_3624,
@@ -3604,7 +3524,7 @@ begin
     );
   TOTRWD_6_CYMUXF : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y45"
+      LOC => "SLICE_X51Y41"
     )
     port map (
       IA => TOTRWD_6_CY0F_3623,
@@ -3614,7 +3534,7 @@ begin
     );
   TOTRWD_6_CYMUXF2 : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y45"
+      LOC => "SLICE_X51Y41"
     )
     port map (
       IA => TOTRWD_6_CY0F_3623,
@@ -3624,7 +3544,7 @@ begin
     );
   TOTRWD_6_CYINIT : X_BUF
     generic map(
-      LOC => "SLICE_X45Y45",
+      LOC => "SLICE_X51Y41",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3633,7 +3553,7 @@ begin
     );
   TOTRWD_6_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X45Y45",
+      LOC => "SLICE_X51Y41",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3642,7 +3562,7 @@ begin
     );
   TOTRWD_6_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X45Y45",
+      LOC => "SLICE_X51Y41",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3651,7 +3571,7 @@ begin
     );
   TOTRWD_6_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y45",
+      LOC => "SLICE_X51Y41",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3660,7 +3580,7 @@ begin
     );
   TOTRWD_6_XORG : X_XOR2
     generic map(
-      LOC => "SLICE_X45Y45"
+      LOC => "SLICE_X51Y41"
     )
     port map (
       I0 => U182_C6O,
@@ -3669,7 +3589,7 @@ begin
     );
   TOTRWD_6_COUTUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y45",
+      LOC => "SLICE_X51Y41",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3678,7 +3598,7 @@ begin
     );
   TOTRWD_6_FASTCARRY : X_BUF
     generic map(
-      LOC => "SLICE_X45Y45",
+      LOC => "SLICE_X51Y41",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3687,7 +3607,7 @@ begin
     );
   TOTRWD_6_CYAND : X_AND2
     generic map(
-      LOC => "SLICE_X45Y45"
+      LOC => "SLICE_X51Y41"
     )
     port map (
       I0 => TOTRWD_6_CYSELG_3598,
@@ -3696,7 +3616,7 @@ begin
     );
   TOTRWD_6_CYMUXFAST : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y45"
+      LOC => "SLICE_X51Y41"
     )
     port map (
       IA => TOTRWD_6_CYMUXG2_3607,
@@ -3706,7 +3626,7 @@ begin
     );
   TOTRWD_6_CYMUXG2 : X_MUX2
     generic map(
-      LOC => "SLICE_X45Y45"
+      LOC => "SLICE_X51Y41"
     )
     port map (
       IA => TOTRWD_6_LOGIC_ZERO_3605,
@@ -3716,7 +3636,7 @@ begin
     );
   TOTRWD_6_CYSELG : X_BUF
     generic map(
-      LOC => "SLICE_X45Y45",
+      LOC => "SLICE_X51Y41",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3725,19 +3645,19 @@ begin
     );
   U182_I_36_221 : X_LUT4
     generic map(
-      INIT => X"00C0",
-      LOC => "SLICE_X45Y45"
+      INIT => X"3000",
+      LOC => "SLICE_X51Y41"
     )
     port map (
       ADR0 => VCC,
-      ADR1 => M1_CODE7,
+      ADR1 => M1_ENCODERWDMUX_0,
       ADR2 => M1_CODERWDMUXSEL1_0,
-      ADR3 => M1_ENCODERWDMUX_0,
+      ADR3 => M1_CODE7,
       O => U182_I7
     );
   NPDISP8_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y10",
+      LOC => "SLICE_X66Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3746,7 +3666,7 @@ begin
     );
   NPDISP8_XORF : X_XOR2
     generic map(
-      LOC => "SLICE_X64Y10"
+      LOC => "SLICE_X66Y20"
     )
     port map (
       I0 => NPDISP8_CYINIT_3660,
@@ -3755,7 +3675,7 @@ begin
     );
   NPDISP8_CYMUXF : X_MUX2
     generic map(
-      LOC => "SLICE_X64Y10"
+      LOC => "SLICE_X66Y20"
     )
     port map (
       IA => NPDISP8_CY0F_3659,
@@ -3765,7 +3685,7 @@ begin
     );
   NPDISP8_CYINIT : X_BUF
     generic map(
-      LOC => "SLICE_X64Y10",
+      LOC => "SLICE_X66Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3774,7 +3694,7 @@ begin
     );
   NPDISP8_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X64Y10",
+      LOC => "SLICE_X66Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3783,7 +3703,7 @@ begin
     );
   NPDISP8_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X64Y10",
+      LOC => "SLICE_X66Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3792,7 +3712,7 @@ begin
     );
   NPDISP8_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y10",
+      LOC => "SLICE_X66Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3801,7 +3721,7 @@ begin
     );
   NPDISP8_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y10",
+      LOC => "SLICE_X66Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3810,7 +3730,7 @@ begin
     );
   NPDISP8_XORG : X_XOR2
     generic map(
-      LOC => "SLICE_X64Y10"
+      LOC => "SLICE_X66Y20"
     )
     port map (
       I0 => U151_I_36_111_O,
@@ -3819,7 +3739,7 @@ begin
     );
   NPDISP8_COUTUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y10",
+      LOC => "SLICE_X66Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3828,7 +3748,7 @@ begin
     );
   NPDISP8_CYMUXG : X_MUX2
     generic map(
-      LOC => "SLICE_X64Y10"
+      LOC => "SLICE_X66Y20"
     )
     port map (
       IA => NPDISP8_CY0G_3644,
@@ -3838,7 +3758,7 @@ begin
     );
   NPDISP8_CY0G : X_BUF
     generic map(
-      LOC => "SLICE_X64Y10",
+      LOC => "SLICE_X66Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3847,28 +3767,16 @@ begin
     );
   NPDISP8_CYSELG : X_BUF
     generic map(
-      LOC => "SLICE_X64Y10",
+      LOC => "SLICE_X66Y20",
       PATHPULSE => 694 ps
     )
     port map (
       I => U151_I1,
       O => NPDISP8_CYSELG_3636
     );
-  U151_I_36_240 : X_LUT4
-    generic map(
-      INIT => X"6666",
-      LOC => "SLICE_X64Y10"
-    )
-    port map (
-      ADR0 => RD1_0,
-      ADR1 => DISP9,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => U151_I1
-    );
   NPDISP10_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y11",
+      LOC => "SLICE_X66Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3877,7 +3785,7 @@ begin
     );
   NPDISP10_XORF : X_XOR2
     generic map(
-      LOC => "SLICE_X64Y11"
+      LOC => "SLICE_X66Y21"
     )
     port map (
       I0 => NPDISP10_CYINIT_3699,
@@ -3886,7 +3794,7 @@ begin
     );
   NPDISP10_CYMUXF : X_MUX2
     generic map(
-      LOC => "SLICE_X64Y11"
+      LOC => "SLICE_X66Y21"
     )
     port map (
       IA => NPDISP10_CY0F_3698,
@@ -3896,7 +3804,7 @@ begin
     );
   NPDISP10_CYMUXF2 : X_MUX2
     generic map(
-      LOC => "SLICE_X64Y11"
+      LOC => "SLICE_X66Y21"
     )
     port map (
       IA => NPDISP10_CY0F_3698,
@@ -3906,7 +3814,7 @@ begin
     );
   NPDISP10_CYINIT : X_BUF
     generic map(
-      LOC => "SLICE_X64Y11",
+      LOC => "SLICE_X66Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3915,7 +3823,7 @@ begin
     );
   NPDISP10_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X64Y11",
+      LOC => "SLICE_X66Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3924,7 +3832,7 @@ begin
     );
   NPDISP10_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X64Y11",
+      LOC => "SLICE_X66Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3933,7 +3841,7 @@ begin
     );
   NPDISP10_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y11",
+      LOC => "SLICE_X66Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3942,7 +3850,7 @@ begin
     );
   NPDISP10_XORG : X_XOR2
     generic map(
-      LOC => "SLICE_X64Y11"
+      LOC => "SLICE_X66Y21"
     )
     port map (
       I0 => U151_C2O,
@@ -3951,7 +3859,7 @@ begin
     );
   NPDISP10_COUTUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y11",
+      LOC => "SLICE_X66Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3960,7 +3868,7 @@ begin
     );
   NPDISP10_FASTCARRY : X_BUF
     generic map(
-      LOC => "SLICE_X64Y11",
+      LOC => "SLICE_X66Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -3969,7 +3877,7 @@ begin
     );
   NPDISP10_CYAND : X_AND2
     generic map(
-      LOC => "SLICE_X64Y11"
+      LOC => "SLICE_X66Y21"
     )
     port map (
       I0 => NPDISP10_CYSELG_3672,
@@ -3978,7 +3886,7 @@ begin
     );
   NPDISP10_CYMUXFAST : X_MUX2
     generic map(
-      LOC => "SLICE_X64Y11"
+      LOC => "SLICE_X66Y21"
     )
     port map (
       IA => NPDISP10_CYMUXG2_3682,
@@ -3988,7 +3896,7 @@ begin
     );
   NPDISP10_CYMUXG2 : X_MUX2
     generic map(
-      LOC => "SLICE_X64Y11"
+      LOC => "SLICE_X66Y21"
     )
     port map (
       IA => NPDISP10_CY0G_3680,
@@ -3998,7 +3906,7 @@ begin
     );
   NPDISP10_CY0G : X_BUF
     generic map(
-      LOC => "SLICE_X64Y11",
+      LOC => "SLICE_X66Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4007,28 +3915,16 @@ begin
     );
   NPDISP10_CYSELG : X_BUF
     generic map(
-      LOC => "SLICE_X64Y11",
+      LOC => "SLICE_X66Y21",
       PATHPULSE => 694 ps
     )
     port map (
       I => U151_I3,
       O => NPDISP10_CYSELG_3672
     );
-  U151_I_36_242 : X_LUT4
-    generic map(
-      INIT => X"6666",
-      LOC => "SLICE_X64Y11"
-    )
-    port map (
-      ADR0 => DISP11,
-      ADR1 => RD3,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => U151_I3
-    );
   NPDISP12_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y12",
+      LOC => "SLICE_X67Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4037,7 +3933,7 @@ begin
     );
   NPDISP12_XORF : X_XOR2
     generic map(
-      LOC => "SLICE_X64Y12"
+      LOC => "SLICE_X67Y20"
     )
     port map (
       I0 => NPDISP12_CYINIT_3735,
@@ -4046,7 +3942,7 @@ begin
     );
   NPDISP12_CYMUXF : X_MUX2
     generic map(
-      LOC => "SLICE_X64Y12"
+      LOC => "SLICE_X67Y20"
     )
     port map (
       IA => NPDISP12_CY0F_3734,
@@ -4056,7 +3952,7 @@ begin
     );
   NPDISP12_CYINIT : X_BUF
     generic map(
-      LOC => "SLICE_X64Y12",
+      LOC => "SLICE_X67Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4065,7 +3961,7 @@ begin
     );
   NPDISP12_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X64Y12",
+      LOC => "SLICE_X67Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4074,7 +3970,7 @@ begin
     );
   NPDISP12_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X64Y12",
+      LOC => "SLICE_X67Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4083,7 +3979,7 @@ begin
     );
   NPDISP12_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y12",
+      LOC => "SLICE_X67Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4092,7 +3988,7 @@ begin
     );
   NPDISP12_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y12",
+      LOC => "SLICE_X67Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4101,7 +3997,7 @@ begin
     );
   NPDISP12_XORG : X_XOR2
     generic map(
-      LOC => "SLICE_X64Y12"
+      LOC => "SLICE_X67Y20"
     )
     port map (
       I0 => U288_I_36_111_O,
@@ -4110,7 +4006,7 @@ begin
     );
   NPDISP12_CYMUXG : X_MUX2
     generic map(
-      LOC => "SLICE_X64Y12"
+      LOC => "SLICE_X67Y20"
     )
     port map (
       IA => NPDISP12_CY0G_3719,
@@ -4120,7 +4016,7 @@ begin
     );
   NPDISP12_CY0G : X_BUF
     generic map(
-      LOC => "SLICE_X64Y12",
+      LOC => "SLICE_X67Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4129,28 +4025,16 @@ begin
     );
   NPDISP12_CYSELG : X_BUF
     generic map(
-      LOC => "SLICE_X64Y12",
+      LOC => "SLICE_X67Y20",
       PATHPULSE => 694 ps
     )
     port map (
       I => U288_I1,
       O => NPDISP12_CYSELG_3711
     );
-  U288_I_36_240 : X_LUT4
-    generic map(
-      INIT => X"6666",
-      LOC => "SLICE_X64Y12"
-    )
-    port map (
-      ADR0 => RD1_0,
-      ADR1 => DISP13,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => U288_I1
-    );
   NPDISP14_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y13",
+      LOC => "SLICE_X67Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4159,7 +4043,7 @@ begin
     );
   NPDISP14_XORF : X_XOR2
     generic map(
-      LOC => "SLICE_X64Y13"
+      LOC => "SLICE_X67Y21"
     )
     port map (
       I0 => NPDISP14_CYINIT_3765,
@@ -4168,7 +4052,7 @@ begin
     );
   NPDISP14_CYMUXF : X_MUX2
     generic map(
-      LOC => "SLICE_X64Y13"
+      LOC => "SLICE_X67Y21"
     )
     port map (
       IA => NPDISP14_CY0F_3764,
@@ -4178,7 +4062,7 @@ begin
     );
   NPDISP14_CYINIT : X_BUF
     generic map(
-      LOC => "SLICE_X64Y13",
+      LOC => "SLICE_X67Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4187,7 +4071,7 @@ begin
     );
   NPDISP14_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X64Y13",
+      LOC => "SLICE_X67Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4196,7 +4080,7 @@ begin
     );
   NPDISP14_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X64Y13",
+      LOC => "SLICE_X67Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4205,28 +4089,16 @@ begin
     );
   NPDISP14_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y13",
+      LOC => "SLICE_X67Y21",
       PATHPULSE => 694 ps
     )
     port map (
       I => U161_AB2,
       O => U161_AB2_0
     );
-  U161_I_36_33 : X_LUT4
-    generic map(
-      INIT => X"CC33",
-      LOC => "SLICE_X64Y13"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => BRWD2_0,
-      ADR2 => VCC,
-      ADR3 => DISP14,
-      O => U161_AB2
-    );
   NPDISP0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y20",
+      LOC => "SLICE_X67Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4235,7 +4107,7 @@ begin
     );
   NPDISP0_XORF : X_XOR2
     generic map(
-      LOC => "SLICE_X65Y20"
+      LOC => "SLICE_X67Y17"
     )
     port map (
       I0 => NPDISP0_CYINIT_3801,
@@ -4244,7 +4116,7 @@ begin
     );
   NPDISP0_CYMUXF : X_MUX2
     generic map(
-      LOC => "SLICE_X65Y20"
+      LOC => "SLICE_X67Y17"
     )
     port map (
       IA => NPDISP0_CY0F_3800,
@@ -4254,7 +4126,7 @@ begin
     );
   NPDISP0_CYINIT : X_BUF
     generic map(
-      LOC => "SLICE_X65Y20",
+      LOC => "SLICE_X67Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4263,7 +4135,7 @@ begin
     );
   NPDISP0_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X65Y20",
+      LOC => "SLICE_X67Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4272,7 +4144,7 @@ begin
     );
   NPDISP0_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X65Y20",
+      LOC => "SLICE_X67Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4281,7 +4153,7 @@ begin
     );
   NPDISP0_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X65Y20",
+      LOC => "SLICE_X67Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4290,7 +4162,7 @@ begin
     );
   NPDISP0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y20",
+      LOC => "SLICE_X67Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4299,7 +4171,7 @@ begin
     );
   NPDISP0_XORG : X_XOR2
     generic map(
-      LOC => "SLICE_X65Y20"
+      LOC => "SLICE_X67Y17"
     )
     port map (
       I0 => U149_I_36_111_O,
@@ -4308,7 +4180,7 @@ begin
     );
   NPDISP0_COUTUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y20",
+      LOC => "SLICE_X67Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4317,7 +4189,7 @@ begin
     );
   NPDISP0_CYMUXG : X_MUX2
     generic map(
-      LOC => "SLICE_X65Y20"
+      LOC => "SLICE_X67Y17"
     )
     port map (
       IA => NPDISP0_CY0G_3785,
@@ -4327,7 +4199,7 @@ begin
     );
   NPDISP0_CY0G : X_BUF
     generic map(
-      LOC => "SLICE_X65Y20",
+      LOC => "SLICE_X67Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4336,7 +4208,7 @@ begin
     );
   NPDISP0_CYSELG : X_BUF
     generic map(
-      LOC => "SLICE_X65Y20",
+      LOC => "SLICE_X67Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4345,19 +4217,19 @@ begin
     );
   U149_I_36_240 : X_LUT4
     generic map(
-      INIT => X"5A5A",
-      LOC => "SLICE_X65Y20"
+      INIT => X"6666",
+      LOC => "SLICE_X67Y17"
     )
     port map (
       ADR0 => RD1_0,
-      ADR1 => VCC,
-      ADR2 => DISP1,
+      ADR1 => DISP1,
+      ADR2 => VCC,
       ADR3 => VCC,
       O => U149_I1
     );
   NPDISP2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y21",
+      LOC => "SLICE_X67Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4366,7 +4238,7 @@ begin
     );
   NPDISP2_XORF : X_XOR2
     generic map(
-      LOC => "SLICE_X65Y21"
+      LOC => "SLICE_X67Y18"
     )
     port map (
       I0 => NPDISP2_CYINIT_3840,
@@ -4375,7 +4247,7 @@ begin
     );
   NPDISP2_CYMUXF : X_MUX2
     generic map(
-      LOC => "SLICE_X65Y21"
+      LOC => "SLICE_X67Y18"
     )
     port map (
       IA => NPDISP2_CY0F_3839,
@@ -4385,7 +4257,7 @@ begin
     );
   NPDISP2_CYMUXF2 : X_MUX2
     generic map(
-      LOC => "SLICE_X65Y21"
+      LOC => "SLICE_X67Y18"
     )
     port map (
       IA => NPDISP2_CY0F_3839,
@@ -4395,7 +4267,7 @@ begin
     );
   NPDISP2_CYINIT : X_BUF
     generic map(
-      LOC => "SLICE_X65Y21",
+      LOC => "SLICE_X67Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4404,7 +4276,7 @@ begin
     );
   NPDISP2_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X65Y21",
+      LOC => "SLICE_X67Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4413,7 +4285,7 @@ begin
     );
   NPDISP2_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X65Y21",
+      LOC => "SLICE_X67Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4422,7 +4294,7 @@ begin
     );
   NPDISP2_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y21",
+      LOC => "SLICE_X67Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4431,7 +4303,7 @@ begin
     );
   NPDISP2_XORG : X_XOR2
     generic map(
-      LOC => "SLICE_X65Y21"
+      LOC => "SLICE_X67Y18"
     )
     port map (
       I0 => U149_C2O,
@@ -4440,7 +4312,7 @@ begin
     );
   NPDISP2_COUTUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y21",
+      LOC => "SLICE_X67Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4449,7 +4321,7 @@ begin
     );
   NPDISP2_FASTCARRY : X_BUF
     generic map(
-      LOC => "SLICE_X65Y21",
+      LOC => "SLICE_X67Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4458,7 +4330,7 @@ begin
     );
   NPDISP2_CYAND : X_AND2
     generic map(
-      LOC => "SLICE_X65Y21"
+      LOC => "SLICE_X67Y18"
     )
     port map (
       I0 => NPDISP2_CYSELG_3813,
@@ -4467,7 +4339,7 @@ begin
     );
   NPDISP2_CYMUXFAST : X_MUX2
     generic map(
-      LOC => "SLICE_X65Y21"
+      LOC => "SLICE_X67Y18"
     )
     port map (
       IA => NPDISP2_CYMUXG2_3823,
@@ -4477,7 +4349,7 @@ begin
     );
   NPDISP2_CYMUXG2 : X_MUX2
     generic map(
-      LOC => "SLICE_X65Y21"
+      LOC => "SLICE_X67Y18"
     )
     port map (
       IA => NPDISP2_CY0G_3821,
@@ -4487,7 +4359,7 @@ begin
     );
   NPDISP2_CY0G : X_BUF
     generic map(
-      LOC => "SLICE_X65Y21",
+      LOC => "SLICE_X67Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4496,28 +4368,16 @@ begin
     );
   NPDISP2_CYSELG : X_BUF
     generic map(
-      LOC => "SLICE_X65Y21",
+      LOC => "SLICE_X67Y18",
       PATHPULSE => 694 ps
     )
     port map (
       I => U149_I3,
       O => NPDISP2_CYSELG_3813
     );
-  U149_I_36_242 : X_LUT4
-    generic map(
-      INIT => X"6666",
-      LOC => "SLICE_X65Y21"
-    )
-    port map (
-      ADR0 => RD3,
-      ADR1 => DISP3,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => U149_I3
-    );
   U66_Q_5_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X19Y63",
+      LOC => "SLICE_X24Y71",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4526,28 +4386,16 @@ begin
     );
   U66_Q_5_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X19Y63",
+      LOC => "SLICE_X24Y71",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLOCK,
       O => U66_Q_5_CLKINV_3848
     );
-  U66_I_Q5_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"5FA0",
-      LOC => "SLICE_X19Y63"
-    )
-    port map (
-      ADR0 => U66_Q(4),
-      ADR1 => VCC,
-      ADR2 => U66_T4,
-      ADR3 => U66_Q(5),
-      O => U66_I_Q5_TQ
-    );
   STR2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y64",
+      LOC => "SLICE_X67Y62",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4556,7 +4404,7 @@ begin
     );
   STR2_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y64",
+      LOC => "SLICE_X67Y62",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4565,7 +4413,7 @@ begin
     );
   STR2_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y64",
+      LOC => "SLICE_X67Y62",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4574,28 +4422,16 @@ begin
     );
   STR2_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y64",
+      LOC => "SLICE_X67Y62",
       PATHPULSE => 694 ps
     )
     port map (
       I => U64_OR_CE_L_0,
       O => STR2_CEINV_3873
     );
-  U64_I_Q2_I_36_30_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"E4F4",
-      LOC => "SLICE_X64Y64"
-    )
-    port map (
-      ADR0 => LPTOVF,
-      ADR1 => S1S4S6COND,
-      ADR2 => U64_I_Q2_TQ_0,
-      ADR3 => S3S6COND_0,
-      O => U64_I_Q2_MD
-    );
   U66_Q_9_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X20Y67",
+      LOC => "SLICE_X26Y76",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4604,28 +4440,16 @@ begin
     );
   U66_Q_9_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X20Y67",
+      LOC => "SLICE_X26Y76",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLOCK,
       O => U66_Q_9_CLKINV_3904
     );
-  U66_I_Q9_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"7788",
-      LOC => "SLICE_X20Y67"
-    )
-    port map (
-      ADR0 => U66_Q(8),
-      ADR1 => U66_T8,
-      ADR2 => VCC,
-      ADR3 => U66_Q(9),
-      O => U66_I_Q9_TQ
-    );
   P2STR3_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X51Y22",
+      LOC => "SLICE_X52Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4634,7 +4458,7 @@ begin
     );
   P2STR3_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X51Y22",
+      LOC => "SLICE_X52Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4643,7 +4467,7 @@ begin
     );
   P2STR3_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X51Y22",
+      LOC => "SLICE_X52Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4652,7 +4476,7 @@ begin
     );
   P2STR3_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X51Y22",
+      LOC => "SLICE_X52Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4661,7 +4485,7 @@ begin
     );
   U195_Q0_DYMUX : X_INV
     generic map(
-      LOC => "SLICE_X49Y56",
+      LOC => "SLICE_X51Y65",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4670,7 +4494,7 @@ begin
     );
   U195_Q0_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X49Y56",
+      LOC => "SLICE_X51Y65",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4679,7 +4503,7 @@ begin
     );
   U195_Q0_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X49Y56",
+      LOC => "SLICE_X51Y65",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4688,7 +4512,7 @@ begin
     );
   Q_1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X39Y65",
+      LOC => "SLICE_X42Y70",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4697,28 +4521,16 @@ begin
     );
   Q_1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X39Y65",
+      LOC => "SLICE_X42Y70",
       PATHPULSE => 694 ps
     )
     port map (
       I => QA(15),
       O => Q_1_CLKINV_3976
     );
-  U67_I_Q1_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"33CC",
-      LOC => "SLICE_X39Y65"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => Q_0_Q,
-      ADR2 => VCC,
-      ADR3 => Q_1_Q,
-      O => U67_I_Q1_TQ
-    );
   Q_5_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X38Y64",
+      LOC => "SLICE_X44Y68",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4727,28 +4539,16 @@ begin
     );
   Q_5_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X38Y64",
+      LOC => "SLICE_X44Y68",
       PATHPULSE => 694 ps
     )
     port map (
       I => QA(15),
       O => Q_5_CLKINV_3995
     );
-  U67_I_Q5_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"7788",
-      LOC => "SLICE_X38Y64"
-    )
-    port map (
-      ADR0 => U67_T4,
-      ADR1 => U67_Q_4_Q,
-      ADR2 => VCC,
-      ADR3 => Q_5_Q,
-      O => U67_I_Q5_TQ
-    );
   MC0_DYMUX : X_INV
     generic map(
-      LOC => "SLICE_X55Y81",
+      LOC => "SLICE_X55Y87",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4757,7 +4557,7 @@ begin
     );
   MC0_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X55Y81",
+      LOC => "SLICE_X55Y87",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4766,7 +4566,7 @@ begin
     );
   U66_Q_2_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X18Y67",
+      LOC => "SLICE_X25Y75",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4775,28 +4575,16 @@ begin
     );
   U66_Q_2_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X18Y67",
+      LOC => "SLICE_X25Y75",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLOCK,
       O => U66_Q_2_CLKINV_4022
     );
-  U66_I_Q2_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"7788",
-      LOC => "SLICE_X18Y67"
-    )
-    port map (
-      ADR0 => U66_Q(1),
-      ADR1 => U66_Q(0),
-      ADR2 => VCC,
-      ADR3 => U66_Q(2),
-      O => U66_I_Q2_TQ
-    );
   U66_Q_12_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X24Y67",
+      LOC => "SLICE_X29Y75",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4805,28 +4593,16 @@ begin
     );
   U66_Q_12_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X24Y67",
+      LOC => "SLICE_X29Y75",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLOCK,
       O => U66_Q_12_CLKINV_4039
     );
-  U66_I_Q12_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"3C3C",
-      LOC => "SLICE_X24Y67"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => U66_T12,
-      ADR2 => U66_Q(12),
-      ADR3 => VCC,
-      O => U66_I_Q12_TQ
-    );
   P2STR0_DYMUX : X_INV
     generic map(
-      LOC => "SLICE_X50Y23",
+      LOC => "SLICE_X53Y8",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4835,7 +4611,7 @@ begin
     );
   P2STR0_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X50Y23",
+      LOC => "SLICE_X53Y8",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4844,7 +4620,7 @@ begin
     );
   P2STR0_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X50Y23",
+      LOC => "SLICE_X53Y8",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4853,7 +4629,7 @@ begin
     );
   U195_Q1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X51Y56",
+      LOC => "SLICE_X50Y65",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4862,7 +4638,7 @@ begin
     );
   U195_Q1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X51Y56",
+      LOC => "SLICE_X50Y65",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4871,7 +4647,7 @@ begin
     );
   U195_Q1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X51Y56",
+      LOC => "SLICE_X50Y65",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4880,7 +4656,7 @@ begin
     );
   U195_Q1_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X51Y56",
+      LOC => "SLICE_X50Y65",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4889,7 +4665,7 @@ begin
     );
   U67_Q_2_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X38Y63",
+      LOC => "SLICE_X42Y69",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4898,28 +4674,16 @@ begin
     );
   U67_Q_2_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X38Y63",
+      LOC => "SLICE_X42Y69",
       PATHPULSE => 694 ps
     )
     port map (
       I => QA(15),
       O => U67_Q_2_CLKINV_4113
     );
-  U67_I_Q2_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"7788",
-      LOC => "SLICE_X38Y63"
-    )
-    port map (
-      ADR0 => Q_0_Q,
-      ADR1 => Q_1_Q,
-      ADR2 => VCC,
-      ADR3 => U67_Q_2_Q,
-      O => U67_I_Q2_TQ
-    );
   MC1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y83",
+      LOC => "SLICE_X55Y89",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4928,7 +4692,7 @@ begin
     );
   MC1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X55Y83",
+      LOC => "SLICE_X55Y89",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4937,28 +4701,16 @@ begin
     );
   MC1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X55Y83",
+      LOC => "SLICE_X55Y89",
       PATHPULSE => 694 ps
     )
     port map (
       I => Q_0_Q,
       O => MC1_CLKINV_4135
     );
-  U86_I_Q1_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"55AA",
-      LOC => "SLICE_X55Y83"
-    )
-    port map (
-      ADR0 => MC1,
-      ADR1 => VCC,
-      ADR2 => VCC,
-      ADR3 => MC0,
-      O => U86_I_Q1_TQ
-    );
   U66_Q_3_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X19Y64",
+      LOC => "SLICE_X25Y73",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4967,28 +4719,16 @@ begin
     );
   U66_Q_3_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X19Y64",
+      LOC => "SLICE_X25Y73",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLOCK,
       O => U66_Q_3_CLKINV_4162
     );
-  U66_I_Q3_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"6AAA",
-      LOC => "SLICE_X19Y64"
-    )
-    port map (
-      ADR0 => U66_Q(3),
-      ADR1 => U66_Q(1),
-      ADR2 => U66_Q(2),
-      ADR3 => U66_Q(0),
-      O => U66_I_Q3_TQ
-    );
   STR0_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y65",
+      LOC => "SLICE_X66Y61",
       PATHPULSE => 694 ps
     )
     port map (
@@ -4997,7 +4737,7 @@ begin
     );
   STR0_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y65",
+      LOC => "SLICE_X66Y61",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5006,28 +4746,16 @@ begin
     );
   STR0_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y65",
+      LOC => "SLICE_X66Y61",
       PATHPULSE => 694 ps
     )
     port map (
       I => U64_OR_CE_L_0,
       O => STR0_CEINV_4186
     );
-  U64_I_Q0_I_36_30_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"5F0B",
-      LOC => "SLICE_X64Y65"
-    )
-    port map (
-      ADR0 => LPTOVF,
-      ADR1 => S1S4S6COND,
-      ADR2 => STR0,
-      ADR3 => S3S6COND_0,
-      O => U64_I_Q0_MD
-    );
   U66_Q_13_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X24Y66",
+      LOC => "SLICE_X27Y75",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5036,28 +4764,16 @@ begin
     );
   U66_Q_13_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X24Y66",
+      LOC => "SLICE_X27Y75",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLOCK,
       O => U66_Q_13_CLKINV_4217
     );
-  U66_I_Q13_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"6A6A",
-      LOC => "SLICE_X24Y66"
-    )
-    port map (
-      ADR0 => U66_Q(13),
-      ADR1 => U66_T12,
-      ADR2 => U66_Q(12),
-      ADR3 => VCC,
-      O => U66_I_Q13_TQ
-    );
   P2STR1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y13",
+      LOC => "SLICE_X55Y13",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5066,7 +4782,7 @@ begin
     );
   P2STR1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y13",
+      LOC => "SLICE_X55Y13",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5075,7 +4791,7 @@ begin
     );
   P2STR1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y13",
+      LOC => "SLICE_X55Y13",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5084,7 +4800,7 @@ begin
     );
   P2STR1_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y13",
+      LOC => "SLICE_X55Y13",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5093,7 +4809,7 @@ begin
     );
   Q_3_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X39Y63",
+      LOC => "SLICE_X44Y69",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5102,28 +4818,16 @@ begin
     );
   Q_3_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X39Y63",
+      LOC => "SLICE_X44Y69",
       PATHPULSE => 694 ps
     )
     port map (
       I => QA(15),
       O => Q_3_CLKINV_4274
     );
-  U67_I_Q3_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"7F80",
-      LOC => "SLICE_X39Y63"
-    )
-    port map (
-      ADR0 => U67_Q_2_Q,
-      ADR1 => Q_0_Q,
-      ADR2 => Q_1_Q,
-      ADR3 => Q_3_Q,
-      O => U67_I_Q3_TQ
-    );
   U6_Q0_DYMUX : X_INV
     generic map(
-      LOC => "SLICE_X54Y66",
+      LOC => "SLICE_X54Y68",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5132,7 +4836,7 @@ begin
     );
   U6_Q0_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X54Y66",
+      LOC => "SLICE_X54Y68",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5141,7 +4845,7 @@ begin
     );
   U6_Q0_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X54Y66",
+      LOC => "SLICE_X54Y68",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5150,7 +4854,7 @@ begin
     );
   U66_Q_0_DYMUX : X_INV
     generic map(
-      LOC => "SLICE_X19Y65",
+      LOC => "SLICE_X24Y74",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5159,7 +4863,7 @@ begin
     );
   U66_Q_0_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X19Y65",
+      LOC => "SLICE_X24Y74",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5168,7 +4872,7 @@ begin
     );
   U66_Q_4_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X18Y62",
+      LOC => "SLICE_X25Y71",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5177,28 +4881,16 @@ begin
     );
   U66_Q_4_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X18Y62",
+      LOC => "SLICE_X25Y71",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLOCK,
       O => U66_Q_4_CLKINV_4316
     );
-  U66_I_Q4_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"33CC",
-      LOC => "SLICE_X18Y62"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => U66_T4,
-      ADR2 => VCC,
-      ADR3 => U66_Q(4),
-      O => U66_I_Q4_TQ
-    );
   STR1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X65Y64",
+      LOC => "SLICE_X67Y61",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5207,7 +4899,7 @@ begin
     );
   STR1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X65Y64",
+      LOC => "SLICE_X67Y61",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5216,28 +4908,16 @@ begin
     );
   STR1_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X65Y64",
+      LOC => "SLICE_X67Y61",
       PATHPULSE => 694 ps
     )
     port map (
       I => U64_OR_CE_L_0,
       O => STR1_CEINV_4342
     );
-  U64_I_Q1_I_36_30_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"CC5A",
-      LOC => "SLICE_X65Y64"
-    )
-    port map (
-      ADR0 => STR0,
-      ADR1 => S4P2SKIP_0,
-      ADR2 => STR1,
-      ADR3 => XLXN_474_0,
-      O => U64_I_Q1_MD
-    );
   U66_Q_8_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X20Y66",
+      LOC => "SLICE_X26Y77",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5246,28 +4926,16 @@ begin
     );
   U66_Q_8_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X20Y66",
+      LOC => "SLICE_X26Y77",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLOCK,
       O => U66_Q_8_CLKINV_4372
     );
-  U66_I_Q8_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"6666",
-      LOC => "SLICE_X20Y66"
-    )
-    port map (
-      ADR0 => U66_Q(8),
-      ADR1 => U66_T8,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => U66_I_Q8_TQ
-    );
   U66_Q_10_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X23Y66",
+      LOC => "SLICE_X27Y77",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5276,28 +4944,16 @@ begin
     );
   U66_Q_10_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X23Y66",
+      LOC => "SLICE_X27Y77",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLOCK,
       O => U66_Q_10_CLKINV_4392
     );
-  U66_I_Q10_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"6AAA",
-      LOC => "SLICE_X23Y66"
-    )
-    port map (
-      ADR0 => U66_Q(10),
-      ADR1 => U66_Q(9),
-      ADR2 => U66_T8,
-      ADR3 => U66_Q(8),
-      O => U66_I_Q10_TQ
-    );
   U66_Q_14_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X25Y66",
+      LOC => "SLICE_X26Y75",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5306,28 +4962,16 @@ begin
     );
   U66_Q_14_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X25Y66",
+      LOC => "SLICE_X26Y75",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLOCK,
       O => U66_Q_14_CLKINV_4410
     );
-  U66_I_Q14_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"6AAA",
-      LOC => "SLICE_X25Y66"
-    )
-    port map (
-      ADR0 => U66_Q(14),
-      ADR1 => U66_Q(12),
-      ADR2 => U66_T12,
-      ADR3 => U66_Q(13),
-      O => U66_I_Q14_TQ
-    );
   P2STR2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y13",
+      LOC => "SLICE_X54Y3",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5336,7 +4980,7 @@ begin
     );
   P2STR2_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X53Y13",
+      LOC => "SLICE_X54Y3",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5345,7 +4989,7 @@ begin
     );
   P2STR2_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X53Y13",
+      LOC => "SLICE_X54Y3",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5354,7 +4998,7 @@ begin
     );
   P2STR2_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X53Y13",
+      LOC => "SLICE_X54Y3",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5363,7 +5007,7 @@ begin
     );
   Q_0_DYMUX : X_INV
     generic map(
-      LOC => "SLICE_X41Y65",
+      LOC => "SLICE_X42Y72",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5372,7 +5016,7 @@ begin
     );
   Q_0_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X41Y65",
+      LOC => "SLICE_X42Y72",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5381,7 +5025,7 @@ begin
     );
   U67_Q_4_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X40Y64",
+      LOC => "SLICE_X43Y69",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5390,28 +5034,16 @@ begin
     );
   U67_Q_4_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X40Y64",
+      LOC => "SLICE_X43Y69",
       PATHPULSE => 694 ps
     )
     port map (
       I => QA(15),
       O => U67_Q_4_CLKINV_4473
     );
-  U67_I_Q4_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"6666",
-      LOC => "SLICE_X40Y64"
-    )
-    port map (
-      ADR0 => U67_Q_4_Q,
-      ADR1 => U67_T4,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => U67_I_Q4_TQ
-    );
   U6_Q1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X54Y69",
+      LOC => "SLICE_X55Y69",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5420,7 +5052,7 @@ begin
     );
   U6_Q1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X54Y69",
+      LOC => "SLICE_X55Y69",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5429,7 +5061,7 @@ begin
     );
   U6_Q1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X54Y69",
+      LOC => "SLICE_X55Y69",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5438,7 +5070,7 @@ begin
     );
   U6_Q1_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X54Y69",
+      LOC => "SLICE_X55Y69",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5447,7 +5079,7 @@ begin
     );
   U66_Q_1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X19Y67",
+      LOC => "SLICE_X25Y70",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5456,28 +5088,16 @@ begin
     );
   U66_Q_1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X19Y67",
+      LOC => "SLICE_X25Y70",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLOCK,
       O => U66_Q_1_CLKINV_4529
     );
-  U66_I_Q1_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"33CC",
-      LOC => "SLICE_X19Y67"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => U66_Q(0),
-      ADR2 => VCC,
-      ADR3 => U66_Q(1),
-      O => U66_I_Q1_TQ
-    );
   P1PLAYED_F5USED : X_BUF
     generic map(
-      LOC => "SLICE_X67Y24",
+      LOC => "SLICE_X67Y32",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5486,7 +5106,7 @@ begin
     );
   P1PLAYED_F5MUX : X_MUX2
     generic map(
-      LOC => "SLICE_X67Y24"
+      LOC => "SLICE_X67Y32"
     )
     port map (
       IA => U112_I_M45_M0,
@@ -5496,7 +5116,7 @@ begin
     );
   P1PLAYED_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X67Y24",
+      LOC => "SLICE_X67Y32",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5505,7 +5125,7 @@ begin
     );
   P1PLAYED_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X67Y24",
+      LOC => "SLICE_X67Y32",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5514,7 +5134,7 @@ begin
     );
   P1PLAYED_F6MUX : X_MUX2
     generic map(
-      LOC => "SLICE_X67Y24"
+      LOC => "SLICE_X67Y32"
     )
     port map (
       IA => U112_I_M03_O,
@@ -5524,28 +5144,16 @@ begin
     );
   P1PLAYED_BYINV : X_BUF
     generic map(
-      LOC => "SLICE_X67Y24",
+      LOC => "SLICE_X67Y32",
       PATHPULSE => 694 ps
     )
     port map (
       I => P1SEL(3),
       O => P1PLAYED_BYINV_4551
     );
-  U112_I_M45_I_36_31 : X_LUT4
-    generic map(
-      INIT => X"000F",
-      LOC => "SLICE_X67Y24"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => VCC,
-      ADR2 => P1SEL(0),
-      ADR3 => P1SEL(1),
-      O => U112_I_M45_M0
-    );
   U112_I_M03_O_F5USED : X_BUF
     generic map(
-      LOC => "SLICE_X67Y25",
+      LOC => "SLICE_X67Y33",
       PATHPULSE => 694 ps
     )
     port map (
@@ -5554,7 +5162,7 @@ begin
     );
   U112_I_M03_O_F5MUX : X_MUX2
     generic map(
-      LOC => "SLICE_X67Y25"
+      LOC => "SLICE_X67Y33"
     )
     port map (
       IA => U112_M01,
@@ -5564,24 +5172,12 @@ begin
     );
   U112_I_M03_O_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X67Y25",
+      LOC => "SLICE_X67Y33",
       PATHPULSE => 694 ps
     )
     port map (
       I => P1SEL(2),
       O => U112_I_M03_O_BXINV_4588
-    );
-  U112_I_M01_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"0FF0",
-      LOC => "SLICE_X67Y25"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => VCC,
-      ADR2 => P1SEL(0),
-      ADR3 => P1SEL(1),
-      O => U112_M01
     );
   STR0_BUF : X_OBUF
     generic map(
@@ -5624,37 +5220,6 @@ begin
       I => P2PLAY_NP2B,
       O => P2PLAY_NP2B_INBUF
     );
-  U72 : X_FF
-    generic map(
-      LOC => "IPAD68",
-      INIT => '0'
-    )
-    port map (
-      I => P2PLAY_NP2B_IFF_IDDRIN_MUX_4637,
-      CE => VCC,
-      CLK => P2PLAY_NP2B_IFF_ICLK1INV_4639,
-      SET => GND,
-      RST => GND,
-      O => XLXN_10484
-    );
-  P2PLAY_NP2B_IFF_IDDRIN_MUX : X_BUF
-    generic map(
-      LOC => "IPAD68",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => P2PLAY_NP2B_INBUF,
-      O => P2PLAY_NP2B_IFF_IDDRIN_MUX_4637
-    );
-  P2PLAY_NP2B_IFF_ICLK1INV : X_BUF
-    generic map(
-      LOC => "IPAD68",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => RDCLK,
-      O => P2PLAY_NP2B_IFF_ICLK1INV_4639
-    );
   STR2_BUF : X_OBUF
     generic map(
       LOC => "PAD90"
@@ -5679,15 +5244,6 @@ begin
     port map (
       I => SHPTS_NP2B,
       O => SHPTS_NP2B_INBUF
-    );
-  SHPTS_NP2B_IFF_IMUX : X_BUF
-    generic map(
-      LOC => "IPAD59",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => SHPTS_NP2B_INBUF,
-      O => SHPTS
     );
   TRD1_BUF : X_BUF
     generic map(
@@ -5923,15 +5479,6 @@ begin
       I => P1SEL2_NP2B,
       O => P1SEL2_NP2B_INBUF
     );
-  P1SEL2_NP2B_IFF_IMUX : X_BUF
-    generic map(
-      LOC => "IPAD108",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => P1SEL2_NP2B_INBUF,
-      O => P1SEL(2)
-    );
   RD3_BUF : X_OBUF
     generic map(
       LOC => "PAD181"
@@ -5956,15 +5503,6 @@ begin
     port map (
       I => P1SEL3_NP2B,
       O => P1SEL3_NP2B_INBUF
-    );
-  P1SEL3_NP2B_IFF_IMUX : X_BUF
-    generic map(
-      LOC => "IPAD112",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => P1SEL3_NP2B_INBUF,
-      O => P1SEL(3)
     );
   CC_BUF : X_OBUF
     generic map(
@@ -6096,7 +5634,7 @@ begin
     );
   U66_T8_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X18Y65",
+      LOC => "SLICE_X24Y73",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6105,7 +5643,7 @@ begin
     );
   U66_T8_F5MUX : X_MUX2
     generic map(
-      LOC => "SLICE_X18Y65"
+      LOC => "SLICE_X24Y73"
     )
     port map (
       IA => U66_T8_G,
@@ -6115,7 +5653,7 @@ begin
     );
   U66_T8_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X18Y65",
+      LOC => "SLICE_X24Y73",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6124,7 +5662,7 @@ begin
     );
   U66_T12_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X23Y67",
+      LOC => "SLICE_X26Y74",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6133,7 +5671,7 @@ begin
     );
   U66_T12_F5MUX : X_MUX2
     generic map(
-      LOC => "SLICE_X23Y67"
+      LOC => "SLICE_X26Y74"
     )
     port map (
       IA => U66_T12_G,
@@ -6143,7 +5681,7 @@ begin
     );
   U66_T12_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X23Y67",
+      LOC => "SLICE_X26Y74",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6152,7 +5690,7 @@ begin
     );
   KSBUS_1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y62",
+      LOC => "SLICE_X66Y74",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6161,7 +5699,7 @@ begin
     );
   KSBUS_1_F5MUX : X_MUX2
     generic map(
-      LOC => "SLICE_X64Y62"
+      LOC => "SLICE_X66Y74"
     )
     port map (
       IA => U100_M01,
@@ -6171,28 +5709,16 @@ begin
     );
   KSBUS_1_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y62",
+      LOC => "SLICE_X66Y74",
       PATHPULSE => 694 ps
     )
     port map (
       I => MC1,
       O => KSBUS_1_BXINV_4922
     );
-  U100_I_M01_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"FAFA",
-      LOC => "SLICE_X64Y62"
-    )
-    port map (
-      ADR0 => U100_I_M01_M1_0,
-      ADR1 => VCC,
-      ADR2 => U100_I_M01_M0_0,
-      ADR3 => VCC,
-      O => U100_M01
-    );
   KSBUS_0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y75",
+      LOC => "SLICE_X64Y83",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6201,7 +5727,7 @@ begin
     );
   KSBUS_0_F5MUX : X_MUX2
     generic map(
-      LOC => "SLICE_X64Y75"
+      LOC => "SLICE_X64Y83"
     )
     port map (
       IA => U101_M01,
@@ -6211,28 +5737,16 @@ begin
     );
   KSBUS_0_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y75",
+      LOC => "SLICE_X64Y83",
       PATHPULSE => 694 ps
     )
     port map (
       I => MC1,
       O => KSBUS_0_BXINV_4947
     );
-  U101_I_M01_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"FFF0",
-      LOC => "SLICE_X64Y75"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => VCC,
-      ADR2 => U101_I_M01_M0_0,
-      ADR3 => U101_I_M01_M1_0,
-      O => U101_M01
-    );
   KSBUS_3_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X54Y71",
+      LOC => "SLICE_X59Y89",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6241,7 +5755,7 @@ begin
     );
   KSBUS_3_F5MUX : X_MUX2
     generic map(
-      LOC => "SLICE_X54Y71"
+      LOC => "SLICE_X59Y89"
     )
     port map (
       IA => U102_M01,
@@ -6251,28 +5765,16 @@ begin
     );
   KSBUS_3_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X54Y71",
+      LOC => "SLICE_X59Y89",
       PATHPULSE => 694 ps
     )
     port map (
       I => MC1,
       O => KSBUS_3_BXINV_4972
     );
-  U102_I_M01_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"FAFA",
-      LOC => "SLICE_X54Y71"
-    )
-    port map (
-      ADR0 => U102_I_M01_M1_0,
-      ADR1 => VCC,
-      ADR2 => U102_I_M01_M0_0,
-      ADR3 => VCC,
-      O => U102_M01
-    );
   KSBUS_2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X59Y88",
+      LOC => "SLICE_X65Y64",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6281,7 +5783,7 @@ begin
     );
   KSBUS_2_F5MUX : X_MUX2
     generic map(
-      LOC => "SLICE_X59Y88"
+      LOC => "SLICE_X65Y64"
     )
     port map (
       IA => U103_M01,
@@ -6291,28 +5793,40 @@ begin
     );
   KSBUS_2_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X59Y88",
+      LOC => "SLICE_X65Y64",
       PATHPULSE => 694 ps
     )
     port map (
       I => MC1,
       O => KSBUS_2_BXINV_4997
     );
-  U103_I_M01_I_36_38 : X_LUT4
+  U155_I_M01_I_36_38 : X_LUT4
     generic map(
-      INIT => X"EEEE",
-      LOC => "SLICE_X59Y88"
+      INIT => X"DD88",
+      LOC => "SLICE_X64Y20"
     )
     port map (
-      ADR0 => U103_I_M01_M1_0,
-      ADR1 => U103_I_M01_M0_0,
+      ADR0 => ENCPSEL0,
+      ADR1 => PD1PRD,
       ADR2 => VCC,
+      ADR3 => PD0PRD,
+      O => U155_M01
+    );
+  U155_I_M23_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"E4E4",
+      LOC => "SLICE_X64Y20"
+    )
+    port map (
+      ADR0 => ENCPSEL0,
+      ADR1 => PD2PRD,
+      ADR2 => PD3PRD_0,
       ADR3 => VCC,
-      O => U103_M01
+      O => U155_M23
     );
   LPDPRD_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y22",
+      LOC => "SLICE_X64Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6321,7 +5835,7 @@ begin
     );
   LPDPRD_F5MUX : X_MUX2
     generic map(
-      LOC => "SLICE_X64Y22"
+      LOC => "SLICE_X64Y20"
     )
     port map (
       IA => U155_M01,
@@ -6331,7 +5845,7 @@ begin
     );
   LPDPRD_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y22",
+      LOC => "SLICE_X64Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6340,7 +5854,7 @@ begin
     );
   LPDPRD_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y22",
+      LOC => "SLICE_X64Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6349,28 +5863,16 @@ begin
     );
   LPDPRD_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y22",
+      LOC => "SLICE_X64Y20",
       PATHPULSE => 694 ps
     )
     port map (
       I => S2ORS5_0,
       O => LPDPRD_CEINV_5019
     );
-  U155_I_M01_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"F0AA",
-      LOC => "SLICE_X64Y22"
-    )
-    port map (
-      ADR0 => PD0PRD,
-      ADR1 => VCC,
-      ADR2 => PD1PRD,
-      ADR3 => ENCPSEL0,
-      O => U155_M01
-    );
   UNENCNSD2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X54Y18",
+      LOC => "SLICE_X54Y19",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6379,7 +5881,7 @@ begin
     );
   UNENCNSD2_F5MUX : X_MUX2
     generic map(
-      LOC => "SLICE_X54Y18"
+      LOC => "SLICE_X54Y19"
     )
     port map (
       IA => U169_M01,
@@ -6389,28 +5891,16 @@ begin
     );
   UNENCNSD2_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X54Y18",
+      LOC => "SLICE_X54Y19",
       PATHPULSE => 694 ps
     )
     port map (
       I => ENCPSEL1_0,
       O => UNENCNSD2_BXINV_5062
     );
-  U169_I_M01_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"FA0A",
-      LOC => "SLICE_X54Y18"
-    )
-    port map (
-      ADR0 => EQ1,
-      ADR1 => VCC,
-      ADR2 => ENCPSEL0,
-      ADR3 => EQ0_0,
-      O => U169_M01
-    );
   M4_DUMMY_2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X47Y42",
+      LOC => "SLICE_X49Y39",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6419,7 +5909,7 @@ begin
     );
   M4_DUMMY_2_F5MUX : X_MUX2
     generic map(
-      LOC => "SLICE_X47Y42"
+      LOC => "SLICE_X49Y39"
     )
     port map (
       IA => LUT0_M4_U210_OUT,
@@ -6429,28 +5919,16 @@ begin
     );
   M4_DUMMY_2_BXINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y42",
+      LOC => "SLICE_X49Y39",
       PATHPULSE => 694 ps
     )
     port map (
       I => CODERWD(7),
       O => M4_DUMMY_2_BXINV_5084
     );
-  LUT0_M4_U210 : X_LUT4
-    generic map(
-      INIT => X"FFFE",
-      LOC => "SLICE_X47Y42"
-    )
-    port map (
-      ADR0 => CODERWD_6_0,
-      ADR1 => CODERWD_3_0,
-      ADR2 => CODERWD_5_0,
-      ADR3 => CODERWD_4_0,
-      O => LUT0_M4_U210_OUT
-    );
   M1_CODE1_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X53Y42",
+      LOC => "SLICE_X51Y42",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6459,7 +5937,7 @@ begin
     );
   M1_CODE1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X53Y42",
+      LOC => "SLICE_X51Y42",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6468,7 +5946,7 @@ begin
     );
   M1_CODE1_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X53Y42",
+      LOC => "SLICE_X51Y42",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6477,7 +5955,7 @@ begin
     );
   M1_CODE1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X53Y42",
+      LOC => "SLICE_X51Y42",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6486,7 +5964,7 @@ begin
     );
   M1_CODE1_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X53Y42",
+      LOC => "SLICE_X51Y42",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6495,7 +5973,7 @@ begin
     );
   DISP12_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y19",
+      LOC => "SLICE_X52Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6504,7 +5982,7 @@ begin
     );
   DISP12_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y19",
+      LOC => "SLICE_X52Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6513,7 +5991,7 @@ begin
     );
   DISP12_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y19",
+      LOC => "SLICE_X52Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6522,7 +6000,7 @@ begin
     );
   DISP12_GYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y19",
+      LOC => "SLICE_X52Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6531,7 +6009,7 @@ begin
     );
   DISP12_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y19",
+      LOC => "SLICE_X52Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6540,28 +6018,28 @@ begin
     );
   DISP12_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y19",
+      LOC => "SLICE_X52Y20",
       PATHPULSE => 694 ps
     )
     port map (
       I => STDISP3_0,
       O => DISP12_CEINV_5147
     );
-  U158_XLXI_114_I_36_38 : X_LUT4
+  U174_XLXI_6_I_36_30 : X_LUT4
     generic map(
-      INIT => X"B8B8",
-      LOC => "SLICE_X52Y19"
+      INIT => X"C0A0",
+      LOC => "SLICE_X52Y20"
     )
     port map (
-      ADR0 => NPSELDISP0_0,
-      ADR1 => ADD_0,
-      ADR2 => RD0_0,
-      ADR3 => VCC,
-      O => BRWD0_pack_1
+      ADR0 => BRWD1_0,
+      ADR1 => BRWD0,
+      ADR2 => U171_I_36_111_O,
+      ADR3 => NSD0,
+      O => U174_XLXI_6_M1
     );
   M1_CODE5_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X51Y43",
+      LOC => "SLICE_X48Y43",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6570,7 +6048,7 @@ begin
     );
   M1_CODE5_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X51Y43",
+      LOC => "SLICE_X48Y43",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6579,7 +6057,7 @@ begin
     );
   M1_CODE5_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X51Y43",
+      LOC => "SLICE_X48Y43",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6588,7 +6066,7 @@ begin
     );
   M1_CODE5_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X51Y43",
+      LOC => "SLICE_X48Y43",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6597,16 +6075,28 @@ begin
     );
   M1_CODE5_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X51Y43",
+      LOC => "SLICE_X48Y43",
       PATHPULSE => 694 ps
     )
     port map (
       I => GETCODE_0,
       O => M1_CODE5_CEINV_5183
     );
+  U258 : X_LUT4
+    generic map(
+      INIT => X"4000",
+      LOC => "SLICE_X53Y27"
+    )
+    port map (
+      ADR0 => P2STR3,
+      ADR1 => CODEKNOWN_0,
+      ADR2 => S4,
+      ADR3 => DIGEQCD,
+      O => STDIGEQCD_pack_1
+    );
   BRWDEQCD_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y35",
+      LOC => "SLICE_X53Y27",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6615,7 +6105,7 @@ begin
     );
   BRWDEQCD_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y35",
+      LOC => "SLICE_X53Y27",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6624,7 +6114,7 @@ begin
     );
   BRWDEQCD_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y35",
+      LOC => "SLICE_X53Y27",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6633,7 +6123,7 @@ begin
     );
   BRWDEQCD_GYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y35",
+      LOC => "SLICE_X53Y27",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6642,7 +6132,7 @@ begin
     );
   BRWDEQCD_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y35",
+      LOC => "SLICE_X53Y27",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6651,7 +6141,7 @@ begin
     );
   BRWDEQCD_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y35",
+      LOC => "SLICE_X53Y27",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6660,7 +6150,7 @@ begin
     );
   LP1NSD_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y58",
+      LOC => "SLICE_X65Y60",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6669,7 +6159,7 @@ begin
     );
   LP1NSD_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y58",
+      LOC => "SLICE_X65Y60",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6678,7 +6168,7 @@ begin
     );
   LP1NSD_GYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y58",
+      LOC => "SLICE_X65Y60",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6687,7 +6177,7 @@ begin
     );
   LP1NSD_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y58",
+      LOC => "SLICE_X65Y60",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6696,16 +6186,28 @@ begin
     );
   LP1NSD_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y58",
+      LOC => "SLICE_X65Y60",
       PATHPULSE => 694 ps
     )
     port map (
       I => S2,
       O => LP1NSD_CEINV_5261
     );
+  U32 : X_LUT4
+    generic map(
+      INIT => X"5510",
+      LOC => "SLICE_X54Y61"
+    )
+    port map (
+      ADR0 => LPTOVF,
+      ADR1 => S0,
+      ADR2 => NEXTPLAY,
+      ADR3 => CLRSHFTREG_0,
+      O => GRD
+    );
   CLPXNSDFF_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y66",
+      LOC => "SLICE_X54Y61",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6714,7 +6216,7 @@ begin
     );
   CLPXNSDFF_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X65Y66",
+      LOC => "SLICE_X54Y61",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6723,7 +6225,7 @@ begin
     );
   CLPXNSDFF_GYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X65Y66",
+      LOC => "SLICE_X54Y61",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6732,28 +6234,16 @@ begin
     );
   CLPXNSDFF_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X65Y66",
+      LOC => "SLICE_X54Y61",
       PATHPULSE => 694 ps
     )
     port map (
       I => SYSCLK,
       O => CLPXNSDFF_CLKINV_5300
     );
-  U41 : X_LUT4
-    generic map(
-      INIT => X"FFEE",
-      LOC => "SLICE_X65Y66"
-    )
-    port map (
-      ADR0 => S0,
-      ADR1 => S4P2SKIP_0,
-      ADR2 => VCC,
-      ADR3 => NEXTPLAY,
-      O => CLRTOPLAY
-    );
   LPTOVF_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X46Y57",
+      LOC => "SLICE_X51Y46",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6762,7 +6252,7 @@ begin
     );
   LPTOVF_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X46Y57",
+      LOC => "SLICE_X51Y46",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6771,7 +6261,7 @@ begin
     );
   LPTOVF_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X46Y57",
+      LOC => "SLICE_X51Y46",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6780,7 +6270,7 @@ begin
     );
   RDC2_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X41Y33",
+      LOC => "SLICE_X44Y34",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6789,7 +6279,7 @@ begin
     );
   RDC2_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X41Y33",
+      LOC => "SLICE_X44Y34",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6798,28 +6288,28 @@ begin
     );
   RDC2_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X41Y33",
+      LOC => "SLICE_X44Y34",
       PATHPULSE => 694 ps
     )
     port map (
       I => RDCLK,
       O => RDC2_CLKINV_5359
     );
-  U119_I_36_86 : X_LUT4
+  U119_I_36_73 : X_LUT4
     generic map(
-      INIT => X"F30C",
-      LOC => "SLICE_X41Y33"
+      INIT => X"0F80",
+      LOC => "SLICE_X45Y35"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => U119_Q0,
-      ADR2 => RDC3,
-      ADR3 => RDC1,
-      O => U119_D1
+      ADR0 => RDC2,
+      ADR1 => RDC1,
+      ADR2 => U119_Q0,
+      ADR3 => RDC3,
+      O => U119_D3
     );
   RDC3_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X40Y31",
+      LOC => "SLICE_X45Y35",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6828,28 +6318,16 @@ begin
     );
   RDC3_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X40Y31",
+      LOC => "SLICE_X45Y35",
       PATHPULSE => 694 ps
     )
     port map (
       I => RDCLK,
       O => RDC3_CLKINV_5390
     );
-  U119_I_36_73 : X_LUT4
-    generic map(
-      INIT => X"40AA",
-      LOC => "SLICE_X40Y31"
-    )
-    port map (
-      ADR0 => RDC3,
-      ADR1 => RDC1,
-      ADR2 => RDC2,
-      ADR3 => U119_Q0,
-      O => U119_D3
-    );
   LARGESTRWD_0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X44Y32",
+      LOC => "SLICE_X52Y32",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6858,7 +6336,7 @@ begin
     );
   LARGESTRWD_0_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X44Y32",
+      LOC => "SLICE_X52Y32",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6867,7 +6345,7 @@ begin
     );
   LARGESTRWD_0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X44Y32",
+      LOC => "SLICE_X52Y32",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6876,7 +6354,7 @@ begin
     );
   LARGESTRWD_0_GYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X44Y32",
+      LOC => "SLICE_X52Y32",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6885,7 +6363,7 @@ begin
     );
   LARGESTRWD_0_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X44Y32",
+      LOC => "SLICE_X52Y32",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6894,7 +6372,7 @@ begin
     );
   LARGESTRWD_0_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X44Y32",
+      LOC => "SLICE_X52Y32",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6903,7 +6381,7 @@ begin
     );
   LARGESTRWD_1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X44Y33",
+      LOC => "SLICE_X53Y28",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6912,7 +6390,7 @@ begin
     );
   LARGESTRWD_1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X44Y33",
+      LOC => "SLICE_X53Y28",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6921,7 +6399,7 @@ begin
     );
   LARGESTRWD_1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X44Y33",
+      LOC => "SLICE_X53Y28",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6930,7 +6408,7 @@ begin
     );
   LARGESTRWD_1_GYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X44Y33",
+      LOC => "SLICE_X53Y28",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6939,7 +6417,7 @@ begin
     );
   LARGESTRWD_1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X44Y33",
+      LOC => "SLICE_X53Y28",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6948,16 +6426,38 @@ begin
     );
   LARGESTRWD_1_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X44Y33",
+      LOC => "SLICE_X53Y28",
       PATHPULSE => 694 ps
     )
     port map (
       I => STNLRWDRD_0,
       O => LARGESTRWD_1_CEINV_5455
     );
+  U185_I_Q1 : X_FF
+    generic map(
+      LOC => "SLICE_X53Y28",
+      INIT => '0'
+    )
+    port map (
+      I => LARGESTRWD_1_DYMUX_5465,
+      CE => LARGESTRWD_1_CEINV_5455,
+      CLK => LARGESTRWD_1_CLKINV_5456,
+      SET => GND,
+      RST => LARGESTRWD_1_FFY_RSTAND_5471,
+      O => LARGESTRWD(1)
+    );
+  LARGESTRWD_1_FFY_RSTAND : X_BUF
+    generic map(
+      LOC => "SLICE_X53Y28",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => CLEARP2FFS_0,
+      O => LARGESTRWD_1_FFY_RSTAND_5471
+    );
   LPSEL0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y41",
+      LOC => "SLICE_X54Y43",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6966,7 +6466,7 @@ begin
     );
   LPSEL0_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X55Y41",
+      LOC => "SLICE_X54Y43",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6975,7 +6475,7 @@ begin
     );
   LPSEL0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y41",
+      LOC => "SLICE_X54Y43",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6984,7 +6484,7 @@ begin
     );
   LPSEL0_GYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X55Y41",
+      LOC => "SLICE_X54Y43",
       PATHPULSE => 694 ps
     )
     port map (
@@ -6993,7 +6493,7 @@ begin
     );
   LPSEL0_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X55Y41",
+      LOC => "SLICE_X54Y43",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7002,40 +6502,38 @@ begin
     );
   LPSEL0_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X55Y41",
+      LOC => "SLICE_X54Y43",
       PATHPULSE => 694 ps
     )
     port map (
       I => S2ORS5_0,
       O => LPSEL0_CEINV_5493
     );
-  U181_I_36_229 : X_LUT4
+  LPSEL2_FFY_RSTOR : X_BUF
     generic map(
-      INIT => X"3C3C",
-      LOC => "SLICE_X47Y54"
+      LOC => "SLICE_X65Y12",
+      PATHPULSE => 694 ps
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => PT_1_0,
-      ADR2 => TOTRWD(1),
-      ADR3 => VCC,
-      O => U181_I1
+      I => CLFF_0,
+      O => LPSEL2_FFY_RST
     );
-  U152_XLXI_114_I_36_38 : X_LUT4
+  U69_I_Q2 : X_FF
     generic map(
-      INIT => X"AAF0",
-      LOC => "SLICE_X55Y41"
+      LOC => "SLICE_X65Y12",
+      INIT => '0'
     )
     port map (
-      ADR0 => P2SEL0,
-      ADR1 => VCC,
-      ADR2 => P1SEL(0),
-      ADR3 => STR2,
-      O => PSEL0_pack_2
+      I => LPSEL2_DYMUX_5542,
+      CE => LPSEL2_CEINV_5531,
+      CLK => LPSEL2_CLKINV_5532,
+      SET => GND,
+      RST => LPSEL2_FFY_RST,
+      O => LPSEL2
     );
   LPSEL2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X67Y22",
+      LOC => "SLICE_X65Y12",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7044,7 +6542,7 @@ begin
     );
   LPSEL2_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X67Y22",
+      LOC => "SLICE_X65Y12",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7053,7 +6551,7 @@ begin
     );
   LPSEL2_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X67Y22",
+      LOC => "SLICE_X65Y12",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7062,28 +6560,16 @@ begin
     );
   LPSEL2_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X67Y22",
+      LOC => "SLICE_X65Y12",
       PATHPULSE => 694 ps
     )
     port map (
       I => S2ORS5_0,
       O => LPSEL2_CEINV_5531
     );
-  U152_XLXI_116_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"ACAC",
-      LOC => "SLICE_X67Y22"
-    )
-    port map (
-      ADR0 => P2SEL2,
-      ADR1 => P1SEL(2),
-      ADR2 => STR2,
-      ADR3 => VCC,
-      O => PSEL2
-    );
   LARGESTRWD_5_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X43Y27",
+      LOC => "SLICE_X49Y26",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7092,7 +6578,7 @@ begin
     );
   LARGESTRWD_5_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X43Y27",
+      LOC => "SLICE_X49Y26",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7101,7 +6587,7 @@ begin
     );
   LARGESTRWD_5_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X43Y27",
+      LOC => "SLICE_X49Y26",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7110,7 +6596,7 @@ begin
     );
   LARGESTRWD_5_GYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X43Y27",
+      LOC => "SLICE_X49Y26",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7119,7 +6605,7 @@ begin
     );
   LARGESTRWD_5_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X43Y27",
+      LOC => "SLICE_X49Y26",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7128,7 +6614,7 @@ begin
     );
   LARGESTRWD_5_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X43Y27",
+      LOC => "SLICE_X49Y26",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7137,7 +6623,7 @@ begin
     );
   LARGESTRWD_6_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X43Y29",
+      LOC => "SLICE_X49Y33",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7146,7 +6632,7 @@ begin
     );
   LARGESTRWD_6_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X43Y29",
+      LOC => "SLICE_X49Y33",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7155,7 +6641,7 @@ begin
     );
   LARGESTRWD_6_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X43Y29",
+      LOC => "SLICE_X49Y33",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7164,7 +6650,7 @@ begin
     );
   LARGESTRWD_6_GYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X43Y29",
+      LOC => "SLICE_X49Y33",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7173,7 +6659,7 @@ begin
     );
   LARGESTRWD_6_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X43Y29",
+      LOC => "SLICE_X49Y33",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7182,7 +6668,7 @@ begin
     );
   LARGESTRWD_6_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X43Y29",
+      LOC => "SLICE_X49Y33",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7191,7 +6677,7 @@ begin
     );
   S2ORS5_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y62",
+      LOC => "SLICE_X66Y62",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7200,28 +6686,16 @@ begin
     );
   S2ORS5_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y62",
+      LOC => "SLICE_X66Y62",
       PATHPULSE => 694 ps
     )
     port map (
       I => U64_I_Q2_TQ,
       O => U64_I_Q2_TQ_0
     );
-  U64_I_Q2_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"66AA",
-      LOC => "SLICE_X65Y62"
-    )
-    port map (
-      ADR0 => STR2,
-      ADR1 => STR1,
-      ADR2 => VCC,
-      ADR3 => STR0,
-      O => U64_I_Q2_TQ
-    );
   U191_LE6_7_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X44Y57",
+      LOC => "SLICE_X50Y52",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7230,76 +6704,28 @@ begin
     );
   U191_LE6_7_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X44Y57",
+      LOC => "SLICE_X50Y52",
       PATHPULSE => 694 ps
     )
     port map (
       I => PT(7),
       O => PT_7_0
     );
-  U178_XLXI_117_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"E2E2",
-      LOC => "SLICE_X44Y57"
-    )
-    port map (
-      ADR0 => P1PT(7),
-      ADR1 => STR2,
-      ADR2 => P2PT(7),
-      ADR3 => VCC,
-      O => PT(7)
-    );
   U110 : X_LUT4
     generic map(
-      INIT => X"0825",
-      LOC => "SLICE_X67Y76"
+      INIT => X"2109",
+      LOC => "SLICE_X64Y79"
     )
     port map (
       ADR0 => KSBUS(2),
-      ADR1 => KSBUS(0),
-      ADR2 => KSBUS(3),
-      ADR3 => KSBUS(1),
+      ADR1 => KSBUS(3),
+      ADR2 => KSBUS(1),
+      ADR3 => KSBUS(0),
       O => SBUS(0)
-    );
-  U104 : X_LUT4
-    generic map(
-      INIT => X"4086",
-      LOC => "SLICE_X67Y77"
-    )
-    port map (
-      ADR0 => KSBUS(2),
-      ADR1 => KSBUS(0),
-      ADR2 => KSBUS(3),
-      ADR3 => KSBUS(1),
-      O => SBUS(6)
-    );
-  U105 : X_LUT4
-    generic map(
-      INIT => X"9E80",
-      LOC => "SLICE_X66Y77"
-    )
-    port map (
-      ADR0 => KSBUS(1),
-      ADR1 => KSBUS(3),
-      ADR2 => KSBUS(0),
-      ADR3 => KSBUS(2),
-      O => SBUS(5)
-    );
-  U106 : X_LUT4
-    generic map(
-      INIT => X"8C02",
-      LOC => "SLICE_X66Y76"
-    )
-    port map (
-      ADR0 => KSBUS(1),
-      ADR1 => KSBUS(3),
-      ADR2 => KSBUS(0),
-      ADR3 => KSBUS(2),
-      O => SBUS(4)
     );
   RD2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y25",
+      LOC => "SLICE_X66Y34",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7308,28 +6734,28 @@ begin
     );
   RD2_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y25",
+      LOC => "SLICE_X66Y34",
       PATHPULSE => 694 ps
     )
     port map (
       I => XLXN_1347_pack_1,
       O => XLXN_1347
     );
-  U123 : X_LUT4
+  U125_XLXI_116_I_36_38 : X_LUT4
     generic map(
-      INIT => X"FFFE",
-      LOC => "SLICE_X55Y25"
+      INIT => X"ACCC",
+      LOC => "SLICE_X66Y34"
     )
     port map (
-      ADR0 => P1SEL(3),
-      ADR1 => P1SEL(2),
-      ADR2 => P1SEL(1),
-      ADR3 => P1SEL(0),
-      O => XLXN_1347_pack_1
+      ADR0 => TRD2,
+      ADR1 => R0D2,
+      ADR2 => STR2,
+      ADR3 => XLXN_1347,
+      O => RD2
     );
   LNSDPOSSEL1_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y10",
+      LOC => "SLICE_X55Y12",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7338,7 +6764,7 @@ begin
     );
   LNSDPOSSEL1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y10",
+      LOC => "SLICE_X55Y12",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7347,7 +6773,7 @@ begin
     );
   LNSDPOSSEL1_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y10",
+      LOC => "SLICE_X55Y12",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7356,7 +6782,7 @@ begin
     );
   LNSDPOSSEL1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y10",
+      LOC => "SLICE_X55Y12",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7365,7 +6791,7 @@ begin
     );
   LNSDPOSSEL1_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y10",
+      LOC => "SLICE_X55Y12",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7374,7 +6800,7 @@ begin
     );
   ACTION1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y21",
+      LOC => "SLICE_X53Y9",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7383,28 +6809,16 @@ begin
     );
   ACTION1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y21",
+      LOC => "SLICE_X53Y9",
       PATHPULSE => 694 ps
     )
     port map (
       I => LADJCODE_pack_1,
       O => LADJCODE
     );
-  U230 : X_LUT4
-    generic map(
-      INIT => X"AAA0",
-      LOC => "SLICE_X52Y21"
-    )
-    port map (
-      ADR0 => XLXN_2186,
-      ADR1 => VCC,
-      ADR2 => LARGESTNSD0,
-      ADR3 => LARGESTNSD1,
-      O => LADJCODE_pack_1
-    );
   LNSDADD_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X53Y11",
+      LOC => "SLICE_X54Y14",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7413,7 +6827,7 @@ begin
     );
   LNSDADD_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X53Y11",
+      LOC => "SLICE_X54Y14",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7422,7 +6836,7 @@ begin
     );
   LNSDADD_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X53Y11",
+      LOC => "SLICE_X54Y14",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7431,7 +6845,7 @@ begin
     );
   S4P2SKIP_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y28",
+      LOC => "SLICE_X55Y15",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7440,28 +6854,16 @@ begin
     );
   S4P2SKIP_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y28",
+      LOC => "SLICE_X55Y15",
       PATHPULSE => 694 ps
     )
     port map (
       I => RDPLAYABLE_pack_1,
       O => RDPLAYABLE
     );
-  U231 : X_LUT4
-    generic map(
-      INIT => X"FFFE",
-      LOC => "SLICE_X53Y28"
-    )
-    port map (
-      ADR0 => PLAYPOS0,
-      ADR1 => ACTION0_0,
-      ADR2 => PLAYPOS1_0,
-      ADR3 => ACTION4_0,
-      O => RDPLAYABLE_pack_1
-    );
   ACTION4_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y20",
+      LOC => "SLICE_X55Y9",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7470,28 +6872,16 @@ begin
     );
   ACTION4_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y20",
+      LOC => "SLICE_X55Y9",
       PATHPULSE => 694 ps
     )
     port map (
       I => NOWCNRD,
       O => NOWCNRD_0
     );
-  U240 : X_LUT4
-    generic map(
-      INIT => X"0011",
-      LOC => "SLICE_X53Y20"
-    )
-    port map (
-      ADR0 => BRWDEQCD,
-      ADR1 => LADJCODE,
-      ADR2 => VCC,
-      ADR3 => LRGRWDWINSGAME,
-      O => NOWCNRD
-    );
   U157_XLXN_1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X66Y14",
+      LOC => "SLICE_X64Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7500,28 +6890,16 @@ begin
     );
   U157_XLXN_1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X66Y14",
+      LOC => "SLICE_X64Y17",
       PATHPULSE => 694 ps
     )
     port map (
       I => ENCPSEL0_pack_1,
       O => ENCPSEL0
     );
-  U153 : X_LUT4
-    generic map(
-      INIT => X"FEF2",
-      LOC => "SLICE_X66Y14"
-    )
-    port map (
-      ADR0 => P1SEL(1),
-      ADR1 => STR2,
-      ADR2 => PSEL3_0,
-      ADR3 => P2SEL1,
-      O => ENCPSEL0_pack_1
-    );
   U244_XLXN_1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y10",
+      LOC => "SLICE_X55Y8",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7530,7 +6908,7 @@ begin
     );
   U244_XLXN_1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y10",
+      LOC => "SLICE_X55Y8",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7539,19 +6917,19 @@ begin
     );
   U233 : X_LUT4
     generic map(
-      INIT => X"ECEC",
-      LOC => "SLICE_X53Y10"
+      INIT => X"EECC",
+      LOC => "SLICE_X55Y8"
     )
     port map (
-      ADR0 => XLXN_2277,
+      ADR0 => NOWCNRD_0,
       ADR1 => ACTION1_0,
-      ADR2 => NOWCNRD_0,
-      ADR3 => VCC,
+      ADR2 => VCC,
+      ADR3 => XLXN_2277,
       O => PLAYPOS0_pack_1
     );
   PLAYPOS1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X48Y22",
+      LOC => "SLICE_X52Y14",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7560,28 +6938,16 @@ begin
     );
   PLAYPOS1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X48Y22",
+      LOC => "SLICE_X52Y14",
       PATHPULSE => 694 ps
     )
     port map (
       I => XLXN_2277_pack_2,
       O => XLXN_2277
     );
-  U241 : X_LUT4
-    generic map(
-      INIT => X"0200",
-      LOC => "SLICE_X48Y22"
-    )
-    port map (
-      ADR0 => P2PTGTP1PT,
-      ADR1 => ADJ_0,
-      ADR2 => INITPLAYONZERODISP_0,
-      ADR3 => PLAYONLRGSTDISP_0,
-      O => XLXN_2277_pack_2
-    );
   STDISP2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X54Y12",
+      LOC => "SLICE_X64Y13",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7590,49 +6956,25 @@ begin
     );
   STDISP2_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X54Y12",
+      LOC => "SLICE_X64Y13",
       PATHPULSE => 694 ps
     )
     port map (
       I => P2SEL2_pack_1,
       O => P2SEL2
     );
-  U250 : X_LUT4
-    generic map(
-      INIT => X"DCCC",
-      LOC => "SLICE_X54Y12"
-    )
-    port map (
-      ADR0 => XLXN_2309_0,
-      ADR1 => TESTP2SEL2_0,
-      ADR2 => XLXN_2310_0,
-      ADR3 => P2STR3,
-      O => P2SEL2_pack_1
-    );
   ACTION0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X48Y24",
+      LOC => "SLICE_X52Y13",
       PATHPULSE => 694 ps
     )
     port map (
       I => ACTION0,
       O => ACTION0_0
     );
-  U234 : X_LUT4
-    generic map(
-      INIT => X"F0F4",
-      LOC => "SLICE_X48Y24"
-    )
-    port map (
-      ADR0 => INITPLAYONZERODISP_0,
-      ADR1 => NOWCNRD_0,
-      ADR2 => LRGRWDWINSGAME,
-      ADR3 => P2PTGTP1PT,
-      O => ACTION0
-    );
   LPSEL3_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X55Y22",
+      LOC => "SLICE_X64Y5",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7641,7 +6983,7 @@ begin
     );
   LPSEL3_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y22",
+      LOC => "SLICE_X64Y5",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7650,7 +6992,7 @@ begin
     );
   LPSEL3_FXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X55Y22",
+      LOC => "SLICE_X64Y5",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7659,7 +7001,7 @@ begin
     );
   LPSEL3_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y22",
+      LOC => "SLICE_X64Y5",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7668,7 +7010,7 @@ begin
     );
   LPSEL3_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X55Y22",
+      LOC => "SLICE_X64Y5",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7677,28 +7019,16 @@ begin
     );
   LPSEL3_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X55Y22",
+      LOC => "SLICE_X64Y5",
       PATHPULSE => 694 ps
     )
     port map (
       I => S2ORS5_0,
       O => LPSEL3_CEINV_6029
     );
-  U251 : X_LUT4
-    generic map(
-      INIT => X"F8F0",
-      LOC => "SLICE_X55Y22"
-    )
-    port map (
-      ADR0 => XLXN_2310_0,
-      ADR1 => P2STR3,
-      ADR2 => TESTP2SEL3_0,
-      ADR3 => XLXN_2309_0,
-      O => P2SEL3_pack_1
-    );
   P2SELCD0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X50Y40",
+      LOC => "SLICE_X53Y38",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7707,28 +7037,28 @@ begin
     );
   P2SELCD0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X50Y40",
+      LOC => "SLICE_X53Y38",
       PATHPULSE => 694 ps
     )
     port map (
       I => TESTP2SEL1,
       O => TESTP2SEL1_0
     );
-  U263 : X_LUT4
+  M4_U211 : X_LUT4
     generic map(
-      INIT => X"000C",
-      LOC => "SLICE_X50Y40"
+      INIT => X"A808",
+      LOC => "SLICE_X55Y35"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => P2STR0,
-      ADR2 => P2STR3,
-      ADR3 => P2STR1,
-      O => TESTP2SEL1
+      ADR0 => M4_DUMMY_2,
+      ADR1 => P1SEL(0),
+      ADR2 => STR2,
+      ADR3 => P2SEL0,
+      O => M4_STCODE0
     );
   M4_STCODE0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X54Y40",
+      LOC => "SLICE_X55Y35",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7737,28 +7067,16 @@ begin
     );
   M4_STCODE0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X54Y40",
+      LOC => "SLICE_X55Y35",
       PATHPULSE => 694 ps
     )
     port map (
       I => P2SEL0_pack_1,
       O => P2SEL0
     );
-  U248 : X_LUT4
-    generic map(
-      INIT => X"F0F4",
-      LOC => "SLICE_X54Y40"
-    )
-    port map (
-      ADR0 => XLXN_2309_0,
-      ADR1 => P2STR3,
-      ADR2 => TESTP2SEL0_0,
-      ADR3 => XLXN_2310_0,
-      O => P2SEL0_pack_1
-    );
   U183_LE4_5_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X42Y27",
+      LOC => "SLICE_X49Y29",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7767,7 +7085,7 @@ begin
     );
   U183_LE4_5_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X42Y27",
+      LOC => "SLICE_X49Y29",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7777,18 +7095,18 @@ begin
   U192 : X_LUT4
     generic map(
       INIT => X"0001",
-      LOC => "SLICE_X42Y27"
+      LOC => "SLICE_X49Y29"
     )
     port map (
-      ADR0 => LARGESTRWD(5),
+      ADR0 => LARGESTRWD(3),
       ADR1 => LARGESTRWD(6),
-      ADR2 => LARGESTRWD(4),
-      ADR3 => LARGESTRWD(3),
+      ADR2 => LARGESTRWD(5),
+      ADR3 => LARGESTRWD(4),
       O => LRGRWDLTEIGHT
     );
   LPSEL1_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X54Y20",
+      LOC => "SLICE_X64Y16",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7797,7 +7115,7 @@ begin
     );
   LPSEL1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X54Y20",
+      LOC => "SLICE_X64Y16",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7806,7 +7124,7 @@ begin
     );
   LPSEL1_FXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X54Y20",
+      LOC => "SLICE_X64Y16",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7815,7 +7133,7 @@ begin
     );
   LPSEL1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X54Y20",
+      LOC => "SLICE_X64Y16",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7824,7 +7142,7 @@ begin
     );
   LPSEL1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X54Y20",
+      LOC => "SLICE_X64Y16",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7833,49 +7151,25 @@ begin
     );
   LPSEL1_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X54Y20",
+      LOC => "SLICE_X64Y16",
       PATHPULSE => 694 ps
     )
     port map (
       I => S2ORS5_0,
       O => LPSEL1_CEINV_6140
     );
-  U249 : X_LUT4
-    generic map(
-      INIT => X"BAAA",
-      LOC => "SLICE_X54Y20"
-    )
-    port map (
-      ADR0 => TESTP2SEL1_0,
-      ADR1 => XLXN_2310_0,
-      ADR2 => P2STR3,
-      ADR3 => XLXN_2309_0,
-      O => P2SEL1_pack_1
-    );
   PLAYONLRGSTDISP_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X49Y23",
+      LOC => "SLICE_X53Y16",
       PATHPULSE => 694 ps
     )
     port map (
       I => PLAYONLRGSTDISP,
       O => PLAYONLRGSTDISP_0
     );
-  U193 : X_LUT4
-    generic map(
-      INIT => X"CC00",
-      LOC => "SLICE_X49Y23"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => RDNOTZERO,
-      ADR2 => VCC,
-      ADR3 => LRGRWDLTEIGHT_0,
-      O => PLAYONLRGSTDISP
-    );
   XLXN_2072_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y22",
+      LOC => "SLICE_X53Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7884,28 +7178,16 @@ begin
     );
   XLXN_2072_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y22",
+      LOC => "SLICE_X53Y18",
       PATHPULSE => 694 ps
     )
     port map (
       I => STNLNSD,
       O => STNLNSD_0
     );
-  U259 : X_LUT4
-    generic map(
-      INIT => X"0A08",
-      LOC => "SLICE_X53Y22"
-    )
-    port map (
-      ADR0 => S4,
-      ADR1 => P2S0_0,
-      ADR2 => P2STR3,
-      ADR3 => NSDGTLARGEST_0,
-      O => STNLNSD
-    );
   U156_XLXN_14_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y12",
+      LOC => "SLICE_X67Y22",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7914,28 +7196,16 @@ begin
     );
   U156_XLXN_14_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y12",
+      LOC => "SLICE_X67Y22",
       PATHPULSE => 694 ps
     )
     port map (
       I => NPDISP15_pack_1,
       O => NPDISP15
     );
-  U283 : X_LUT4
-    generic map(
-      INIT => X"C33C",
-      LOC => "SLICE_X65Y12"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => DISP15,
-      ADR2 => RD3,
-      ADR3 => U288_C2O,
-      O => NPDISP15_pack_1
-    );
   INITPLAYONZERODISP_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y25",
+      LOC => "SLICE_X52Y16",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7944,49 +7214,25 @@ begin
     );
   INITPLAYONZERODISP_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y25",
+      LOC => "SLICE_X52Y16",
       PATHPULSE => 694 ps
     )
     port map (
       I => RDNOTZERO_pack_1,
       O => RDNOTZERO
     );
-  U196 : X_LUT4
-    generic map(
-      INIT => X"FFFE",
-      LOC => "SLICE_X53Y25"
-    )
-    port map (
-      ADR0 => RD3,
-      ADR1 => RD2_0,
-      ADR2 => RD1_0,
-      ADR3 => RD0_0,
-      O => RDNOTZERO_pack_1
-    );
   ADJ_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y23",
+      LOC => "SLICE_X52Y11",
       PATHPULSE => 694 ps
     )
     port map (
       I => ADJ,
       O => ADJ_0
     );
-  U189 : X_LUT4
-    generic map(
-      INIT => X"EEEE",
-      LOC => "SLICE_X52Y23"
-    )
-    port map (
-      ADR0 => LARGESTNSD0,
-      ADR1 => LARGESTNSD1,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => ADJ
-    );
   LARGESTNSD0_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y20",
+      LOC => "SLICE_X52Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -7995,7 +7241,7 @@ begin
     );
   LARGESTNSD0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y20",
+      LOC => "SLICE_X52Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8004,7 +7250,7 @@ begin
     );
   LARGESTNSD0_FXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y20",
+      LOC => "SLICE_X52Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8013,7 +7259,7 @@ begin
     );
   LARGESTNSD0_XORF : X_XOR2
     generic map(
-      LOC => "SLICE_X52Y20"
+      LOC => "SLICE_X52Y18"
     )
     port map (
       I0 => LARGESTNSD0_CYINIT_6308,
@@ -8022,7 +7268,7 @@ begin
     );
   LARGESTNSD0_CYMUXF : X_MUX2
     generic map(
-      LOC => "SLICE_X52Y20"
+      LOC => "SLICE_X52Y18"
     )
     port map (
       IA => LARGESTNSD0_CY0F_6307,
@@ -8032,7 +7278,7 @@ begin
     );
   LARGESTNSD0_CYINIT : X_BUF
     generic map(
-      LOC => "SLICE_X52Y20",
+      LOC => "SLICE_X52Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8041,7 +7287,7 @@ begin
     );
   LARGESTNSD0_CY0F : X_BUF
     generic map(
-      LOC => "SLICE_X52Y20",
+      LOC => "SLICE_X52Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8050,7 +7296,7 @@ begin
     );
   LARGESTNSD0_CYSELF : X_BUF
     generic map(
-      LOC => "SLICE_X52Y20",
+      LOC => "SLICE_X52Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8059,7 +7305,7 @@ begin
     );
   LARGESTNSD0_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y20",
+      LOC => "SLICE_X52Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8068,7 +7314,7 @@ begin
     );
   LARGESTNSD0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y20",
+      LOC => "SLICE_X52Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8077,7 +7323,7 @@ begin
     );
   LARGESTNSD0_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y20",
+      LOC => "SLICE_X52Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8086,7 +7332,7 @@ begin
     );
   LARGESTNSD0_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y20",
+      LOC => "SLICE_X52Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8095,28 +7341,16 @@ begin
     );
   LARGESTNSD0_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y20",
+      LOC => "SLICE_X52Y18",
       PATHPULSE => 694 ps
     )
     port map (
       I => STNLNSD_0,
       O => LARGESTNSD0_CEINV_6277
     );
-  U170_XLXI_6_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"ACAC",
-      LOC => "SLICE_X52Y20"
-    )
-    port map (
-      ADR0 => U170_XLXN_14_0,
-      ADR1 => U170_XLXN_13_0,
-      ADR2 => ENCPSEL1_0,
-      ADR3 => VCC,
-      O => UNENCNSD1_pack_2
-    );
   U159_AB0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y40",
+      LOC => "SLICE_X52Y23",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8125,28 +7359,16 @@ begin
     );
   U159_AB0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y40",
+      LOC => "SLICE_X52Y23",
       PATHPULSE => 694 ps
     )
     port map (
       I => U83_XLXN_1,
       O => U83_XLXN_1_0
     );
-  U83_XLXI_1_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"FC0C",
-      LOC => "SLICE_X64Y40"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => DISP4,
-      ADR2 => DISPSEL0,
-      ADR3 => P1PT(4),
-      O => U83_XLXN_1
-    );
   M2_U193_LT0_1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y22",
+      LOC => "SLICE_X64Y26",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8155,28 +7377,16 @@ begin
     );
   M2_U193_LT0_1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y22",
+      LOC => "SLICE_X64Y26",
       PATHPULSE => 694 ps
     )
     port map (
       I => M2_XLXN_1977,
       O => M2_XLXN_1977_0
     );
-  M2_U195_XLXI_114_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"E4E4",
-      LOC => "SLICE_X65Y22"
-    )
-    port map (
-      ADR0 => M2_PD0PD1LT_0,
-      ADR1 => DISP0,
-      ADR2 => DISP4,
-      ADR3 => VCC,
-      O => M2_XLXN_1977
-    );
   U228_AB3_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X50Y45",
+      LOC => "SLICE_X52Y38",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8185,28 +7395,16 @@ begin
     );
   U228_AB3_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X50Y45",
+      LOC => "SLICE_X52Y38",
       PATHPULSE => 694 ps
     )
     port map (
       I => P2SELCD3_pack_1,
       O => P2SELCD3
     );
-  M4_U220_XLXI_117_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"0A0C",
-      LOC => "SLICE_X50Y45"
-    )
-    port map (
-      ADR0 => P2CODE7,
-      ADR1 => P2CODE3,
-      ADR2 => P2STR1,
-      ADR3 => P2STR0,
-      O => P2SELCD3_pack_1
-    );
   M1_U130_AB3_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X49Y43",
+      LOC => "SLICE_X50Y51",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8215,28 +7413,16 @@ begin
     );
   M1_U130_AB3_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X49Y43",
+      LOC => "SLICE_X50Y51",
       PATHPULSE => 694 ps
     )
     port map (
       I => U82_XLXN_13,
       O => U82_XLXN_13_0
     );
-  U82_XLXI_3_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"EE44",
-      LOC => "SLICE_X49Y43"
-    )
-    port map (
-      ADR0 => DISPSEL0,
-      ADR1 => DISP7,
-      ADR2 => VCC,
-      ADR3 => P1PT(7),
-      O => U82_XLXN_13
-    );
   U170_XLXN_14_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y18",
+      LOC => "SLICE_X65Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8245,28 +7431,16 @@ begin
     );
   U170_XLXN_14_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y18",
+      LOC => "SLICE_X65Y18",
       PATHPULSE => 694 ps
     )
     port map (
       I => U156_XLXN_13,
       O => U156_XLXN_13_0
     );
-  U156_XLXI_3_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"AACC",
-      LOC => "SLICE_X64Y18"
-    )
-    port map (
-      ADR0 => NPDISP7,
-      ADR1 => NPDISP3,
-      ADR2 => VCC,
-      ADR3 => ENCPSEL0,
-      O => U156_XLXN_13
-    );
   XLXN_2346_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y11",
+      LOC => "SLICE_X54Y15",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8275,148 +7449,16 @@ begin
     );
   XLXN_2346_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y11",
+      LOC => "SLICE_X54Y15",
       PATHPULSE => 694 ps
     )
     port map (
       I => U244_XLXN_13,
       O => U244_XLXN_13_0
     );
-  U244_XLXI_3_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"B8B8",
-      LOC => "SLICE_X52Y11"
-    )
-    port map (
-      ADR0 => LNSDPOSSEL1,
-      ADR1 => PLAYPOS0,
-      ADR2 => LRWDRDPOSSEL1,
-      ADR3 => VCC,
-      O => U244_XLXN_13
-    );
-  ZERODISP0_XUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X64Y21",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => ZERODISP0,
-      O => ZERODISP0_0
-    );
-  ZERODISP0_YUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X64Y21",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => XLXN_11412_pack_1,
-      O => XLXN_11412
-    );
-  XLXI_1270 : X_LUT4
-    generic map(
-      INIT => X"0001",
-      LOC => "SLICE_X64Y21"
-    )
-    port map (
-      ADR0 => DISP6,
-      ADR1 => DISP4,
-      ADR2 => DISP7,
-      ADR3 => DISP5,
-      O => XLXN_11412_pack_1
-    );
-  M2_U194_LT0_1_XUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X65Y11",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => M2_U194_LT0_1,
-      O => M2_U194_LT0_1_0
-    );
-  M2_U194_LT0_1_YUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X65Y11",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => XLXN_11472,
-      O => XLXN_11472_0
-    );
-  XLXI_1271 : X_LUT4
-    generic map(
-      INIT => X"0001",
-      LOC => "SLICE_X65Y11"
-    )
-    port map (
-      ADR0 => DISP8,
-      ADR1 => DISP10,
-      ADR2 => DISP9,
-      ADR3 => DISP11,
-      O => XLXN_11472
-    );
-  M2_U194_GE2_3_XUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X64Y8",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => M2_U194_GE2_3,
-      O => M2_U194_GE2_3_0
-    );
-  M2_U194_GE2_3_YUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X64Y8",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => XLXN_11463,
-      O => XLXN_11463_0
-    );
-  XLXI_1272 : X_LUT4
-    generic map(
-      INIT => X"0001",
-      LOC => "SLICE_X64Y8"
-    )
-    port map (
-      ADR0 => DISP15,
-      ADR1 => DISP12,
-      ADR2 => DISP14,
-      ADR3 => DISP13,
-      O => XLXN_11463
-    );
-  APOSZERO_XUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X64Y23",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => APOSZERO,
-      O => APOSZERO_0
-    );
-  APOSZERO_YUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X64Y23",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => XLXN_11411_pack_1,
-      O => XLXN_11411
-    );
-  XLXI_1269 : X_LUT4
-    generic map(
-      INIT => X"0001",
-      LOC => "SLICE_X64Y23"
-    )
-    port map (
-      ADR0 => DISP1,
-      ADR1 => DISP2,
-      ADR2 => DISP0,
-      ADR3 => DISP3,
-      O => XLXN_11411_pack_1
-    );
   M1_XLXN_1539_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X50Y41",
+      LOC => "SLICE_X50Y40",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8425,28 +7467,16 @@ begin
     );
   M1_XLXN_1539_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X50Y41",
+      LOC => "SLICE_X50Y40",
       PATHPULSE => 694 ps
     )
     port map (
       I => M1_CDEQBRWD1_pack_1,
       O => M1_CDEQBRWD1
     );
-  M1_U128_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"8000",
-      LOC => "SLICE_X50Y41"
-    )
-    port map (
-      ADR0 => M1_U128_AB3_0,
-      ADR1 => M1_U128_AB2_0,
-      ADR2 => M1_U128_AB0_0,
-      ADR3 => M1_U128_AB1_0,
-      O => M1_CDEQBRWD1_pack_1
-    );
   M1_U130_AB2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X49Y41",
+      LOC => "SLICE_X48Y41",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8455,28 +7485,16 @@ begin
     );
   M1_U130_AB2_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X49Y41",
+      LOC => "SLICE_X48Y41",
       PATHPULSE => 694 ps
     )
     port map (
       I => M1_U128_AB2,
       O => M1_U128_AB2_0
     );
-  M1_U128_I_36_33 : X_LUT4
-    generic map(
-      INIT => X"A5A5",
-      LOC => "SLICE_X49Y41"
-    )
-    port map (
-      ADR0 => M1_CODE6,
-      ADR1 => VCC,
-      ADR2 => BRWD2_0,
-      ADR3 => VCC,
-      O => M1_U128_AB2
-    );
   M1_U130_AB1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X48Y40",
+      LOC => "SLICE_X51Y43",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8485,28 +7503,16 @@ begin
     );
   M1_U130_AB1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X48Y40",
+      LOC => "SLICE_X51Y43",
       PATHPULSE => 694 ps
     )
     port map (
       I => M1_U128_AB1,
       O => M1_U128_AB1_0
     );
-  M1_U128_I_36_42 : X_LUT4
-    generic map(
-      INIT => X"AA55",
-      LOC => "SLICE_X48Y40"
-    )
-    port map (
-      ADR0 => M1_CODE5,
-      ADR1 => VCC,
-      ADR2 => VCC,
-      ADR3 => BRWD1_0,
-      O => M1_U128_AB1
-    );
   M4_U221_AB3_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X51Y38",
+      LOC => "SLICE_X49Y36",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8515,28 +7521,16 @@ begin
     );
   M4_U221_AB3_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X51Y38",
+      LOC => "SLICE_X49Y36",
       PATHPULSE => 694 ps
     )
     port map (
       I => M1_U128_AB3,
       O => M1_U128_AB3_0
     );
-  M1_U128_I_36_34 : X_LUT4
-    generic map(
-      INIT => X"CC33",
-      LOC => "SLICE_X51Y38"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => BRWD3_0,
-      ADR2 => VCC,
-      ADR3 => M1_CODE7,
-      O => M1_U128_AB3
-    );
   CODERWD_4_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X48Y42",
+      LOC => "SLICE_X49Y40",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8545,28 +7539,16 @@ begin
     );
   CODERWD_4_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X48Y42",
+      LOC => "SLICE_X49Y40",
       PATHPULSE => 694 ps
     )
     port map (
       I => M1_U128_AB0,
       O => M1_U128_AB0_0
     );
-  M1_U128_I_36_43 : X_LUT4
-    generic map(
-      INIT => X"CC33",
-      LOC => "SLICE_X48Y42"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => M1_CODE4,
-      ADR2 => VCC,
-      ADR3 => BRWD0,
-      O => M1_U128_AB0
-    );
   U191_GT0_1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X46Y53",
+      LOC => "SLICE_X51Y49",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8575,49 +7557,25 @@ begin
     );
   U191_GT0_1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X46Y53",
+      LOC => "SLICE_X51Y49",
       PATHPULSE => 694 ps
     )
     port map (
       I => PT(0),
       O => PT_0_0
     );
-  U179_XLXI_114_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"BB88",
-      LOC => "SLICE_X46Y53"
-    )
-    port map (
-      ADR0 => P2PT(0),
-      ADR1 => STR2,
-      ADR2 => VCC,
-      ADR3 => P1PT(0),
-      O => PT(0)
-    );
   CODERWD_7_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X46Y43",
+      LOC => "SLICE_X49Y38",
       PATHPULSE => 694 ps
     )
     port map (
       I => CODERWD(3),
       O => CODERWD_3_0
     );
-  M1_U137_XLXI_114_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"3202",
-      LOC => "SLICE_X46Y43"
-    )
-    port map (
-      ADR0 => BRWD0,
-      ADR1 => M1_ENCODERWDMUX_0,
-      ADR2 => M1_CODERWDMUXSEL1_0,
-      ADR3 => M1_CODE3,
-      O => CODERWD(3)
-    );
   U101_I_M01_M1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X67Y70",
+      LOC => "SLICE_X53Y57",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8626,28 +7584,16 @@ begin
     );
   U101_I_M01_M1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X67Y70",
+      LOC => "SLICE_X53Y57",
       PATHPULSE => 694 ps
     )
     port map (
       I => U83_XLXN_2_pack_1,
       O => U83_XLXN_2
     );
-  U83_XLXI_2_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"E4E4",
-      LOC => "SLICE_X67Y70"
-    )
-    port map (
-      ADR0 => DISPSEL0,
-      ADR1 => R2D0,
-      ADR2 => P2CODE4,
-      ADR3 => VCC,
-      O => U83_XLXN_2_pack_1
-    );
   U100_I_M23_M0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y53",
+      LOC => "SLICE_X66Y71",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8656,28 +7602,16 @@ begin
     );
   U100_I_M23_M0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y53",
+      LOC => "SLICE_X66Y71",
       PATHPULSE => 694 ps
     )
     port map (
       I => U100_I_M23_M1,
       O => U100_I_M23_M1_0
     );
-  U100_I_M23_I_36_30 : X_LUT4
-    generic map(
-      INIT => X"B080",
-      LOC => "SLICE_X64Y53"
-    )
-    port map (
-      ADR0 => P2PT(5),
-      ADR1 => DISPSEL0,
-      ADR2 => MC0,
-      ADR3 => DISP13,
-      O => U100_I_M23_M1
-    );
   STDISP0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y41",
+      LOC => "SLICE_X54Y42",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8686,28 +7620,16 @@ begin
     );
   STDISP0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y41",
+      LOC => "SLICE_X54Y42",
       PATHPULSE => 694 ps
     )
     port map (
       I => M1_XLXN_1538,
       O => M1_XLXN_1538_0
     );
-  M1_U131 : X_LUT4
-    generic map(
-      INIT => X"C000",
-      LOC => "SLICE_X64Y41"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => S2ORS5_0,
-      ADR2 => PSEL0,
-      ADR3 => M1_CDEQBRWD0_0,
-      O => M1_XLXN_1538
-    );
   U102_I_M01_M1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X50Y54",
+      LOC => "SLICE_X54Y62",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8716,28 +7638,16 @@ begin
     );
   U102_I_M01_M1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X50Y54",
+      LOC => "SLICE_X54Y62",
       PATHPULSE => 694 ps
     )
     port map (
       I => U82_XLXN_14_pack_1,
       O => U82_XLXN_14
     );
-  U82_XLXI_4_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"F3C0",
-      LOC => "SLICE_X50Y54"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => DISPSEL0,
-      ADR2 => P2CODE7,
-      ADR3 => R2D3,
-      O => U82_XLXN_14_pack_1
-    );
   NPSELDISP0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X66Y12",
+      LOC => "SLICE_X65Y19",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8746,55 +7656,43 @@ begin
     );
   NPSELDISP0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X66Y12",
+      LOC => "SLICE_X65Y19",
       PATHPULSE => 694 ps
     )
     port map (
       I => U157_XLXN_2_pack_1,
       O => U157_XLXN_2
     );
-  U157_XLXI_2_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"CACA",
-      LOC => "SLICE_X66Y12"
-    )
-    port map (
-      ADR0 => NPDISP8,
-      ADR1 => NPDISP12,
-      ADR2 => ENCPSEL0,
-      ADR3 => VCC,
-      O => U157_XLXN_2_pack_1
-    );
   LARGESTRWD_4_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X42Y32",
+      LOC => "SLICE_X51Y33",
       PATHPULSE => 694 ps
     )
     port map (
-      I => LARGESTRWD_4_FXMUX_6877,
-      O => LARGESTRWD_4_DXMUX_6878
+      I => LARGESTRWD_4_FXMUX_6781,
+      O => LARGESTRWD_4_DXMUX_6782
     );
   LARGESTRWD_4_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X42Y32",
+      LOC => "SLICE_X51Y33",
       PATHPULSE => 694 ps
     )
     port map (
-      I => LARGESTRWD_4_FXMUX_6877,
+      I => LARGESTRWD_4_FXMUX_6781,
       O => RWD_4_0
     );
   LARGESTRWD_4_FXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X42Y32",
+      LOC => "SLICE_X51Y33",
       PATHPULSE => 694 ps
     )
     port map (
       I => RWD_4_Q,
-      O => LARGESTRWD_4_FXMUX_6877
+      O => LARGESTRWD_4_FXMUX_6781
     );
   LARGESTRWD_4_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X42Y32",
+      LOC => "SLICE_X51Y33",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8803,37 +7701,25 @@ begin
     );
   LARGESTRWD_4_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X42Y32",
+      LOC => "SLICE_X51Y33",
       PATHPULSE => 694 ps
     )
     port map (
       I => P2CLK,
-      O => LARGESTRWD_4_CLKINV_6861
+      O => LARGESTRWD_4_CLKINV_6765
     );
   LARGESTRWD_4_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X42Y32",
+      LOC => "SLICE_X51Y33",
       PATHPULSE => 694 ps
     )
     port map (
       I => STNLRWDRD_0,
-      O => LARGESTRWD_4_CEINV_6860
-    );
-  U173_XLXI_2_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"F5A0",
-      LOC => "SLICE_X42Y32"
-    )
-    port map (
-      ADR0 => NSD0,
-      ADR1 => VCC,
-      ADR2 => BRWD1_0,
-      ADR3 => BRWD2_0,
-      O => U173_XLXN_2_pack_2
+      O => LARGESTRWD_4_CEINV_6764
     );
   M4_U221_AB2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y34",
+      LOC => "SLICE_X52Y27",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8842,28 +7728,16 @@ begin
     );
   M4_U221_AB2_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y34",
+      LOC => "SLICE_X52Y27",
       PATHPULSE => 694 ps
     )
     port map (
       I => U160_AB2,
       O => U160_AB2_0
     );
-  U160_I_36_33 : X_LUT4
-    generic map(
-      INIT => X"CC33",
-      LOC => "SLICE_X53Y34"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => BRWD2_0,
-      ADR2 => VCC,
-      ADR3 => DISP2,
-      O => U160_AB2
-    );
   M4_U221_AB1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y34",
+      LOC => "SLICE_X52Y26",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8872,28 +7746,16 @@ begin
     );
   M4_U221_AB1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y34",
+      LOC => "SLICE_X52Y26",
       PATHPULSE => 694 ps
     )
     port map (
       I => U160_AB1,
       O => U160_AB1_0
     );
-  U160_I_36_42 : X_LUT4
-    generic map(
-      INIT => X"9999",
-      LOC => "SLICE_X52Y34"
-    )
-    port map (
-      ADR0 => BRWD1_0,
-      ADR1 => DISP1,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => U160_AB1
-    );
   M1_U127_AB3_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X54Y31",
+      LOC => "SLICE_X50Y33",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8902,28 +7764,16 @@ begin
     );
   M1_U127_AB3_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X54Y31",
+      LOC => "SLICE_X50Y33",
       PATHPULSE => 694 ps
     )
     port map (
       I => U160_AB3,
       O => U160_AB3_0
     );
-  U160_I_36_34 : X_LUT4
-    generic map(
-      INIT => X"9999",
-      LOC => "SLICE_X54Y31"
-    )
-    port map (
-      ADR0 => DISP3,
-      ADR1 => BRWD3_0,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => U160_AB3
-    );
   EQ0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y31",
+      LOC => "SLICE_X48Y26",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8932,49 +7782,25 @@ begin
     );
   EQ0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y31",
+      LOC => "SLICE_X48Y26",
       PATHPULSE => 694 ps
     )
     port map (
       I => U160_AB0_pack_1,
       O => U160_AB0
     );
-  U160_I_36_43 : X_LUT4
-    generic map(
-      INIT => X"9999",
-      LOC => "SLICE_X52Y31"
-    )
-    port map (
-      ADR0 => BRWD0,
-      ADR1 => DISP0,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => U160_AB0_pack_1
-    );
   INT_NET11_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y68",
+      LOC => "SLICE_X55Y63",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLEARP2FFS,
       O => CLEARP2FFS_0
     );
-  U1 : X_LUT4
-    generic map(
-      INIT => X"F8F0",
-      LOC => "SLICE_X64Y68"
-    )
-    port map (
-      ADR0 => P2PLAYSYNCH_0,
-      ADR1 => S6,
-      ADR2 => S1,
-      ADR3 => LP2NSD,
-      O => CLEARP2FFS
-    );
   XLXN_2310_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y10",
+      LOC => "SLICE_X55Y14",
       PATHPULSE => 694 ps
     )
     port map (
@@ -8983,37 +7809,25 @@ begin
     );
   XLXN_2310_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y10",
+      LOC => "SLICE_X55Y14",
       PATHPULSE => 694 ps
     )
     port map (
       I => U244_XLXN_14_pack_1,
       O => U244_XLXN_14
     );
-  U244_XLXI_4_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"CFCA",
-      LOC => "SLICE_X55Y10"
-    )
-    port map (
-      ADR0 => XLXN_11463_0,
-      ADR1 => LRGDISPPOS1_0,
-      ADR2 => PLAYPOS0,
-      ADR3 => XLXN_11472_0,
-      O => U244_XLXN_14_pack_1
-    );
   XLXN_2186_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X50Y43",
+      LOC => "SLICE_X52Y36",
       PATHPULSE => 694 ps
     )
     port map (
       I => ADJCODE,
-      O => XLXN_2186_DXMUX_7060
+      O => XLXN_2186_DXMUX_6964
     );
   XLXN_2186_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X50Y43",
+      LOC => "SLICE_X52Y36",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9022,25 +7836,25 @@ begin
     );
   XLXN_2186_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X50Y43",
+      LOC => "SLICE_X52Y36",
       PATHPULSE => 694 ps
     )
     port map (
       I => P2CLK,
-      O => XLXN_2186_CLKINV_7042
+      O => XLXN_2186_CLKINV_6946
     );
   XLXN_2186_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X50Y43",
+      LOC => "SLICE_X52Y36",
       PATHPULSE => 694 ps
     )
     port map (
       I => CODEKNOWN_0,
-      O => XLXN_2186_CEINV_7041
+      O => XLXN_2186_CEINV_6945
     );
   U85_XLXN_1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y77",
+      LOC => "SLICE_X53Y74",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9049,28 +7863,16 @@ begin
     );
   U85_XLXN_1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y77",
+      LOC => "SLICE_X53Y74",
       PATHPULSE => 694 ps
     )
     port map (
       I => DISPSEL0_pack_1,
       O => DISPSEL0
     );
-  U8 : X_LUT4
-    generic map(
-      INIT => X"CCCC",
-      LOC => "SLICE_X53Y77"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => SHPTS,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => DISPSEL0_pack_1
-    );
   M2_U197_LT0_1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y16",
+      LOC => "SLICE_X66Y25",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9079,28 +7881,16 @@ begin
     );
   M2_U197_LT0_1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y16",
+      LOC => "SLICE_X66Y25",
       PATHPULSE => 694 ps
     )
     port map (
       I => M2_XLXN_2014_pack_1,
       O => M2_XLXN_2014
     );
-  M2_U196_XLXI_115_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"FC0C",
-      LOC => "SLICE_X65Y16"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => DISP9,
-      ADR2 => M2_PD2PD3LT_0,
-      ADR3 => DISP13,
-      O => M2_XLXN_2014_pack_1
-    );
   U244_XLXN_2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X54Y9",
+      LOC => "SLICE_X61Y3",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9109,28 +7899,16 @@ begin
     );
   U244_XLXN_2_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X54Y9",
+      LOC => "SLICE_X61Y3",
       PATHPULSE => 694 ps
     )
     port map (
       I => LRGDISPPOS0_pack_1,
       O => LRGDISPPOS0
     );
-  M2_U200 : X_LUT4
-    generic map(
-      INIT => X"FA0A",
-      LOC => "SLICE_X54Y9"
-    )
-    port map (
-      ADR0 => M2_PD0PD1LT_0,
-      ADR1 => VCC,
-      ADR2 => LRGDISPPOS1_0,
-      ADR3 => M2_PD2PD3LT_0,
-      O => LRGDISPPOS0_pack_1
-    );
   U191_LE4_5_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X44Y50",
+      LOC => "SLICE_X51Y55",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9139,181 +7917,16 @@ begin
     );
   U191_LE4_5_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X44Y50",
+      LOC => "SLICE_X51Y55",
       PATHPULSE => 694 ps
     )
     port map (
       I => PT(4),
       O => PT_4_0
     );
-  U178_XLXI_114_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"EE22",
-      LOC => "SLICE_X44Y50"
-    )
-    port map (
-      ADR0 => P1PT(4),
-      ADR1 => STR2,
-      ADR2 => VCC,
-      ADR3 => P2PT(4),
-      O => PT(4)
-    );
-  PD3PRD_XUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X64Y24",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => PD3PRD,
-      O => PD3PRD_0
-    );
-  PD3PRD_YUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X64Y24",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => RD3_pack_1,
-      O => RD3
-    );
-  U125_XLXI_117_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"CAAA",
-      LOC => "SLICE_X64Y24"
-    )
-    port map (
-      ADR0 => R0D3,
-      ADR1 => TRD3,
-      ADR2 => STR2,
-      ADR3 => XLXN_1347,
-      O => RD3_pack_1
-    );
-  STDISP1_XUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X64Y36",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => STDISP1,
-      O => STDISP1_0
-    );
-  STDISP1_YUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X64Y36",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => M4_STCODE1,
-      O => M4_STCODE1_0
-    );
-  M4_U212 : X_LUT4
-    generic map(
-      INIT => X"E200",
-      LOC => "SLICE_X64Y36"
-    )
-    port map (
-      ADR0 => P1SEL(1),
-      ADR1 => STR2,
-      ADR2 => P2SEL1,
-      ADR3 => M4_DUMMY_2,
-      O => M4_STCODE1
-    );
-  M1_U129_AB2_XUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X52Y43",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => M1_U129_AB2,
-      O => M1_U129_AB2_0
-    );
-  M1_U129_AB2_YUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X52Y43",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => U84_XLXN_1,
-      O => U84_XLXN_1_0
-    );
-  U84_XLXI_1_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"AACC",
-      LOC => "SLICE_X52Y43"
-    )
-    port map (
-      ADR0 => P1PT(2),
-      ADR1 => DISP2,
-      ADR2 => VCC,
-      ADR3 => DISPSEL0,
-      O => U84_XLXN_1
-    );
-  M4_CODEPOS0_XUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X51Y45",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => M4_CODEPOS0,
-      O => M4_CODEPOS0_0
-    );
-  M4_U214 : X_LUT4
-    generic map(
-      INIT => X"FFFE",
-      LOC => "SLICE_X51Y45"
-    )
-    port map (
-      ADR0 => P2CODE3,
-      ADR1 => P2CODE2,
-      ADR2 => P2CODE0,
-      ADR3 => P2CODE1,
-      O => M4_CODEPOS0
-    );
-  M4_CODEPOS1_XUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X53Y47",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => M4_CODEPOS1,
-      O => M4_CODEPOS1_0
-    );
-  M4_U216 : X_LUT4
-    generic map(
-      INIT => X"FFFE",
-      LOC => "SLICE_X53Y47"
-    )
-    port map (
-      ADR0 => P2CODE7,
-      ADR1 => P2CODE6,
-      ADR2 => P2CODE4,
-      ADR3 => P2CODE5,
-      O => M4_CODEPOS1
-    );
-  CODEKNOWN_XUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X51Y41",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => CODEKNOWN,
-      O => CODEKNOWN_0
-    );
-  M4_U219 : X_LUT4
-    generic map(
-      INIT => X"EAC0",
-      LOC => "SLICE_X51Y41"
-    )
-    port map (
-      ADR0 => TESTP2SEL1_0,
-      ADR1 => TESTP2SEL0_0,
-      ADR2 => M4_CODEPOS0_0,
-      ADR3 => M4_CODEPOS1_0,
-      O => CODEKNOWN
-    );
   U159_AB1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y41",
+      LOC => "SLICE_X64Y19",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9322,7 +7935,196 @@ begin
     );
   U159_AB1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y41",
+      LOC => "SLICE_X64Y19",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => M3_POS1ZERO,
+      O => M3_POS1ZERO_0
+    );
+  APOSZERO_XUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X66Y15",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => APOSZERO,
+      O => APOSZERO_0
+    );
+  APOSZERO_YUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X66Y15",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => M3_POS0ZERO_pack_1,
+      O => M3_POS0ZERO
+    );
+  M2_U194_LT0_1_XUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X67Y15",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => M2_U194_LT0_1,
+      O => M2_U194_LT0_1_0
+    );
+  M2_U194_LT0_1_YUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X67Y15",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => M3_POS3ZERO,
+      O => M3_POS3ZERO_0
+    );
+  ZERODISP0_XUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X67Y13",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => ZERODISP0,
+      O => ZERODISP0_0
+    );
+  ZERODISP0_YUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X67Y13",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => M3_POS2ZERO_pack_1,
+      O => M3_POS2ZERO
+    );
+  PD3PRD_XUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X66Y35",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => PD3PRD,
+      O => PD3PRD_0
+    );
+  PD3PRD_YUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X66Y35",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => RD3_pack_1,
+      O => RD3
+    );
+  STDISP1_XUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X54Y37",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => STDISP1,
+      O => STDISP1_0
+    );
+  STDISP1_YUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X54Y37",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => M4_STCODE1,
+      O => M4_STCODE1_0
+    );
+  M1_U129_AB2_XUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X52Y42",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => M1_U129_AB2,
+      O => M1_U129_AB2_0
+    );
+  M1_U129_AB2_YUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X52Y42",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => U84_XLXN_1,
+      O => U84_XLXN_1_0
+    );
+  M4_CODEPOS0_XUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X52Y41",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => M4_CODEPOS0,
+      O => M4_CODEPOS0_0
+    );
+  M4_U216 : X_LUT4
+    generic map(
+      INIT => X"FFFE",
+      LOC => "SLICE_X53Y40"
+    )
+    port map (
+      ADR0 => P2CODE7,
+      ADR1 => P2CODE5,
+      ADR2 => P2CODE4,
+      ADR3 => P2CODE6,
+      O => M4_CODEPOS1
+    );
+  M4_CODEPOS1_XUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X53Y40",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => M4_CODEPOS1,
+      O => M4_CODEPOS1_0
+    );
+  M4_U219 : X_LUT4
+    generic map(
+      INIT => X"F888",
+      LOC => "SLICE_X52Y35"
+    )
+    port map (
+      ADR0 => TESTP2SEL1_0,
+      ADR1 => M4_CODEPOS1_0,
+      ADR2 => TESTP2SEL0_0,
+      ADR3 => M4_CODEPOS0_0,
+      O => CODEKNOWN
+    );
+  CODEKNOWN_XUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X52Y35",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => CODEKNOWN,
+      O => CODEKNOWN_0
+    );
+  U178_XLXI_115_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"FA50",
+      LOC => "SLICE_X51Y51"
+    )
+    port map (
+      ADR0 => STR2,
+      ADR1 => VCC,
+      ADR2 => P1PT(5),
+      ADR3 => P2PT(5),
+      O => PT(5)
+    );
+  PT_5_XUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X51Y51",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => PT(5),
+      O => PT_5_0
+    );
+  PT_5_YUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X51Y51",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9331,19 +8133,65 @@ begin
     );
   U83_XLXI_3_I_36_8 : X_LUT4
     generic map(
-      INIT => X"EE44",
-      LOC => "SLICE_X65Y41"
+      INIT => X"FA0A",
+      LOC => "SLICE_X51Y51"
     )
     port map (
-      ADR0 => DISPSEL0,
-      ADR1 => DISP5,
-      ADR2 => VCC,
+      ADR0 => DISP5,
+      ADR1 => VCC,
+      ADR2 => DISPSEL0,
       ADR3 => P1PT(5),
       O => U83_XLXN_13
     );
+  U174_XLXI_1_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"DD88",
+      LOC => "SLICE_X50Y30"
+    )
+    port map (
+      ADR0 => NSD0,
+      ADR1 => BRWD1_0,
+      ADR2 => VCC,
+      ADR3 => BRWD2_0,
+      O => U174_XLXN_1_pack_2
+    );
+  U174_XLXI_5_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"7340",
+      LOC => "SLICE_X50Y30"
+    )
+    port map (
+      ADR0 => NSD0,
+      ADR1 => U171_I_36_111_O,
+      ADR2 => BRWD0,
+      ADR3 => U174_XLXN_1,
+      O => RWD_2_Q
+    );
+  LARGESTRWD_2_FFX_RSTOR : X_BUF
+    generic map(
+      LOC => "SLICE_X50Y30",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => CLEARP2FFS_0,
+      O => LARGESTRWD_2_FFX_RST
+    );
+  U185_I_Q2 : X_FF
+    generic map(
+      LOC => "SLICE_X50Y30",
+      INIT => '0'
+    )
+    port map (
+      I => LARGESTRWD_2_DXMUX_7327,
+      CE => LARGESTRWD_2_CEINV_7309,
+      CLK => LARGESTRWD_2_CLKINV_7310,
+      SET => GND,
+      RST => LARGESTRWD_2_FFX_RST,
+      O => LARGESTRWD(2)
+    );
   LARGESTRWD_2_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y31",
+      LOC => "SLICE_X50Y30",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9352,7 +8200,7 @@ begin
     );
   LARGESTRWD_2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X47Y31",
+      LOC => "SLICE_X50Y30",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9361,7 +8209,7 @@ begin
     );
   LARGESTRWD_2_FXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y31",
+      LOC => "SLICE_X50Y30",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9370,7 +8218,7 @@ begin
     );
   LARGESTRWD_2_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X47Y31",
+      LOC => "SLICE_X50Y30",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9379,7 +8227,7 @@ begin
     );
   LARGESTRWD_2_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y31",
+      LOC => "SLICE_X50Y30",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9388,28 +8236,28 @@ begin
     );
   LARGESTRWD_2_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y31",
+      LOC => "SLICE_X50Y30",
       PATHPULSE => 694 ps
     )
     port map (
       I => STNLRWDRD_0,
       O => LARGESTRWD_2_CEINV_7309
     );
-  U174_XLXI_1_I_36_8 : X_LUT4
+  M1_U129_I_36_42 : X_LUT4
     generic map(
-      INIT => X"CFC0",
-      LOC => "SLICE_X47Y31"
+      INIT => X"C3C3",
+      LOC => "SLICE_X65Y32"
     )
     port map (
       ADR0 => VCC,
-      ADR1 => BRWD1_0,
-      ADR2 => NSD0,
-      ADR3 => BRWD2_0,
-      O => U174_XLXN_1_pack_2
+      ADR1 => DISP1,
+      ADR2 => M1_CODE1,
+      ADR3 => VCC,
+      O => M1_U129_AB1
     );
   M1_U129_AB1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y32",
+      LOC => "SLICE_X65Y32",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9418,7 +8266,7 @@ begin
     );
   M1_U129_AB1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y32",
+      LOC => "SLICE_X65Y32",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9427,19 +8275,31 @@ begin
     );
   M2_U195_XLXI_115_I_36_38 : X_LUT4
     generic map(
-      INIT => X"CACA",
-      LOC => "SLICE_X64Y32"
+      INIT => X"E4E4",
+      LOC => "SLICE_X65Y32"
     )
     port map (
-      ADR0 => DISP1,
-      ADR1 => DISP5,
-      ADR2 => M2_PD0PD1LT_0,
+      ADR0 => M2_PD0PD1LT,
+      ADR1 => DISP1,
+      ADR2 => DISP5,
       ADR3 => VCC,
       O => M2_XLXN_2001
     );
+  U156_XLXI_2_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"CCF0",
+      LOC => "SLICE_X66Y18"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => NPDISP14,
+      ADR2 => NPDISP10,
+      ADR3 => ENCPSEL0,
+      O => U156_XLXN_2
+    );
   U156_XLXN_2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y14",
+      LOC => "SLICE_X66Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9448,7 +8308,7 @@ begin
     );
   U156_XLXN_2_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y14",
+      LOC => "SLICE_X66Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9457,19 +8317,63 @@ begin
     );
   U157_XLXI_3_I_36_8 : X_LUT4
     generic map(
-      INIT => X"F3C0",
-      LOC => "SLICE_X64Y14"
+      INIT => X"CCAA",
+      LOC => "SLICE_X66Y18"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => ENCPSEL0,
-      ADR2 => NPDISP5,
-      ADR3 => NPDISP1,
+      ADR0 => NPDISP1,
+      ADR1 => NPDISP5,
+      ADR2 => VCC,
+      ADR3 => ENCPSEL0,
       O => U157_XLXN_13
+    );
+  M1_CODE3_FFY_RSTOR : X_BUF
+    generic map(
+      LOC => "SLICE_X50Y42",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => M1_CODE3_SRINV_7392,
+      O => M1_CODE3_FFY_RST
+    );
+  M1_U123_I_Q2 : X_FF
+    generic map(
+      LOC => "SLICE_X50Y42",
+      INIT => '0'
+    )
+    port map (
+      I => M1_CODE3_DYMUX_7394,
+      CE => M1_CODE3_CEINV_7390,
+      CLK => M1_CODE3_CLKINV_7391,
+      SET => GND,
+      RST => M1_CODE3_FFY_RST,
+      O => M1_CODE2
+    );
+  M1_CODE3_FFX_RSTOR : X_BUF
+    generic map(
+      LOC => "SLICE_X50Y42",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => M1_CODE3_SRINV_7392,
+      O => M1_CODE3_FFX_RST
+    );
+  M1_U123_I_Q3 : X_FF
+    generic map(
+      LOC => "SLICE_X50Y42",
+      INIT => '0'
+    )
+    port map (
+      I => M1_CODE3_DXMUX_7403,
+      CE => M1_CODE3_CEINV_7390,
+      CLK => M1_CODE3_CLKINV_7391,
+      SET => GND,
+      RST => M1_CODE3_FFX_RST,
+      O => M1_CODE3
     );
   M1_CODE3_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X51Y42",
+      LOC => "SLICE_X50Y42",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9478,7 +8382,7 @@ begin
     );
   M1_CODE3_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X51Y42",
+      LOC => "SLICE_X50Y42",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9487,7 +8391,7 @@ begin
     );
   M1_CODE3_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X51Y42",
+      LOC => "SLICE_X50Y42",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9496,7 +8400,7 @@ begin
     );
   M1_CODE3_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X51Y42",
+      LOC => "SLICE_X50Y42",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9505,7 +8409,7 @@ begin
     );
   M1_CODE3_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X51Y42",
+      LOC => "SLICE_X50Y42",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9514,7 +8418,7 @@ begin
     );
   U156_XLXN_1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y16",
+      LOC => "SLICE_X64Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9523,7 +8427,7 @@ begin
     );
   U156_XLXN_1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y16",
+      LOC => "SLICE_X64Y18",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9532,19 +8436,19 @@ begin
     );
   U170_XLXI_1_I_36_8 : X_LUT4
     generic map(
-      INIT => X"C800",
-      LOC => "SLICE_X64Y16"
+      INIT => X"A080",
+      LOC => "SLICE_X64Y18"
     )
     port map (
-      ADR0 => EQ1,
-      ADR1 => EQ2_0,
-      ADR2 => ENCPSEL0,
-      ADR3 => EQ3_0,
+      ADR0 => EQ3_0,
+      ADR1 => EQ1,
+      ADR2 => EQ2_0,
+      ADR3 => ENCPSEL0,
       O => U170_XLXN_1
     );
   R2D1_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X53Y59",
+      LOC => "SLICE_X50Y53",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9553,7 +8457,7 @@ begin
     );
   R2D1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X53Y59",
+      LOC => "SLICE_X50Y53",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9562,7 +8466,7 @@ begin
     );
   R2D1_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X53Y59",
+      LOC => "SLICE_X50Y53",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9571,7 +8475,7 @@ begin
     );
   R2D1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X53Y59",
+      LOC => "SLICE_X50Y53",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9580,7 +8484,7 @@ begin
     );
   R2D1_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X53Y59",
+      LOC => "SLICE_X50Y53",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9589,7 +8493,7 @@ begin
     );
   R2D3_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X50Y44",
+      LOC => "SLICE_X53Y47",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9598,7 +8502,7 @@ begin
     );
   R2D3_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X50Y44",
+      LOC => "SLICE_X53Y47",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9607,7 +8511,7 @@ begin
     );
   R2D3_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X50Y44",
+      LOC => "SLICE_X53Y47",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9616,7 +8520,7 @@ begin
     );
   R2D3_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X50Y44",
+      LOC => "SLICE_X53Y47",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9625,7 +8529,7 @@ begin
     );
   R2D3_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X50Y44",
+      LOC => "SLICE_X53Y47",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9634,7 +8538,7 @@ begin
     );
   M1_CODERWDMUXSEL1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y40",
+      LOC => "SLICE_X52Y43",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9643,28 +8547,16 @@ begin
     );
   M1_CODERWDMUXSEL1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y40",
+      LOC => "SLICE_X52Y43",
       PATHPULSE => 694 ps
     )
     port map (
       I => M1_CDEQPD0_pack_1,
       O => M1_CDEQPD0
     );
-  M1_U129_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"8000",
-      LOC => "SLICE_X53Y40"
-    )
-    port map (
-      ADR0 => M1_U129_AB3_0,
-      ADR1 => M1_U129_AB0_0,
-      ADR2 => M1_U129_AB2_0,
-      ADR3 => M1_U129_AB1_0,
-      O => M1_CDEQPD0_pack_1
-    );
   M2_XLXN_1999_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y21",
+      LOC => "SLICE_X52Y33",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9673,49 +8565,49 @@ begin
     );
   M2_XLXN_1999_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y21",
+      LOC => "SLICE_X52Y33",
       PATHPULSE => 694 ps
     )
     port map (
       I => M1_U129_AB3,
       O => M1_U129_AB3_0
     );
-  M1_U129_I_36_34 : X_LUT4
+  M2_U195_XLXI_117_I_36_38 : X_LUT4
     generic map(
-      INIT => X"CC33",
-      LOC => "SLICE_X55Y21"
+      INIT => X"AFA0",
+      LOC => "SLICE_X52Y33"
+    )
+    port map (
+      ADR0 => DISP7,
+      ADR1 => VCC,
+      ADR2 => M2_PD0PD1LT,
+      ADR3 => DISP3,
+      O => M2_XLXN_1999
+    );
+  M1_U129_I_36_43 : X_LUT4
+    generic map(
+      INIT => X"C3C3",
+      LOC => "SLICE_X53Y43"
     )
     port map (
       ADR0 => VCC,
-      ADR1 => M1_CODE3,
-      ADR2 => VCC,
-      ADR3 => DISP3,
-      O => M1_U129_AB3
+      ADR1 => M1_CODE0,
+      ADR2 => DISP0,
+      ADR3 => VCC,
+      O => M1_U129_AB0
     );
   M1_U129_AB0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y42",
+      LOC => "SLICE_X53Y43",
       PATHPULSE => 694 ps
     )
     port map (
       I => M1_U129_AB0,
       O => M1_U129_AB0_0
     );
-  M1_U129_I_36_43 : X_LUT4
-    generic map(
-      INIT => X"CC33",
-      LOC => "SLICE_X52Y42"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => M1_CODE0,
-      ADR2 => VCC,
-      ADR3 => DISP0,
-      O => M1_U129_AB0
-    );
   U85_XLXN_13_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y55",
+      LOC => "SLICE_X53Y49",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9724,28 +8616,16 @@ begin
     );
   U85_XLXN_13_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y55",
+      LOC => "SLICE_X53Y49",
       PATHPULSE => 694 ps
     )
     port map (
       I => PT(1),
       O => PT_1_0
     );
-  U179_XLXI_115_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"ACAC",
-      LOC => "SLICE_X53Y55"
-    )
-    port map (
-      ADR0 => P2PT(1),
-      ADR1 => P1PT(1),
-      ADR2 => STR2,
-      ADR3 => VCC,
-      O => PT(1)
-    );
   R1D1_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y51",
+      LOC => "SLICE_X52Y61",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9754,7 +8634,7 @@ begin
     );
   R1D1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y51",
+      LOC => "SLICE_X52Y61",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9763,7 +8643,7 @@ begin
     );
   R1D1_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y51",
+      LOC => "SLICE_X52Y61",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9772,7 +8652,7 @@ begin
     );
   R1D1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y51",
+      LOC => "SLICE_X52Y61",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9781,7 +8661,7 @@ begin
     );
   R1D1_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y51",
+      LOC => "SLICE_X52Y61",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9790,7 +8670,7 @@ begin
     );
   R1D3_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y52",
+      LOC => "SLICE_X55Y52",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9799,7 +8679,7 @@ begin
     );
   R1D3_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y52",
+      LOC => "SLICE_X55Y52",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9808,7 +8688,7 @@ begin
     );
   R1D3_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y52",
+      LOC => "SLICE_X55Y52",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9817,7 +8697,7 @@ begin
     );
   R1D3_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y52",
+      LOC => "SLICE_X55Y52",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9826,7 +8706,7 @@ begin
     );
   R1D3_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y52",
+      LOC => "SLICE_X55Y52",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9835,7 +8715,7 @@ begin
     );
   U103_I_M01_M0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y63",
+      LOC => "SLICE_X55Y61",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9844,24 +8724,24 @@ begin
     );
   U103_I_M01_M0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y63",
+      LOC => "SLICE_X55Y61",
       PATHPULSE => 694 ps
     )
     port map (
       I => U84_XLXN_2_pack_1,
       O => U84_XLXN_2
     );
-  U84_XLXI_2_I_36_8 : X_LUT4
+  U101_I_M23_I_36_31 : X_LUT4
     generic map(
-      INIT => X"FC0C",
-      LOC => "SLICE_X53Y63"
+      INIT => X"4540",
+      LOC => "SLICE_X64Y73"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => R1D2,
+      ADR0 => MC0,
+      ADR1 => P2PT(0),
       ADR2 => DISPSEL0,
-      ADR3 => P2CODE2,
-      O => U84_XLXN_2_pack_1
+      ADR3 => DISP8,
+      O => U101_I_M23_M0
     );
   U101_I_M23_M0_XUSED : X_BUF
     generic map(
@@ -9881,21 +8761,9 @@ begin
       I => U101_I_M23_M1,
       O => U101_I_M23_M1_0
     );
-  U101_I_M23_I_36_30 : X_LUT4
-    generic map(
-      INIT => X"A088",
-      LOC => "SLICE_X64Y73"
-    )
-    port map (
-      ADR0 => MC0,
-      ADR1 => DISP12,
-      ADR2 => P2PT(4),
-      ADR3 => DISPSEL0,
-      O => U101_I_M23_M1
-    );
   U100_I_M01_M1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y57",
+      LOC => "SLICE_X55Y59",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9904,28 +8772,16 @@ begin
     );
   U100_I_M01_M1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y57",
+      LOC => "SLICE_X55Y59",
       PATHPULSE => 694 ps
     )
     port map (
       I => U83_XLXN_14_pack_1,
       O => U83_XLXN_14
     );
-  U83_XLXI_4_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"FA50",
-      LOC => "SLICE_X65Y57"
-    )
-    port map (
-      ADR0 => DISPSEL0,
-      ADR1 => VCC,
-      ADR2 => R2D1,
-      ADR3 => P2CODE5,
-      O => U83_XLXN_14_pack_1
-    );
   M1_CODE7_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X49Y42",
+      LOC => "SLICE_X49Y41",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9934,7 +8790,7 @@ begin
     );
   M1_CODE7_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X49Y42",
+      LOC => "SLICE_X49Y41",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9943,7 +8799,7 @@ begin
     );
   M1_CODE7_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X49Y42",
+      LOC => "SLICE_X49Y41",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9952,7 +8808,7 @@ begin
     );
   M1_CODE7_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X49Y42",
+      LOC => "SLICE_X49Y41",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9961,7 +8817,7 @@ begin
     );
   M1_CODE7_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X49Y42",
+      LOC => "SLICE_X49Y41",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9970,7 +8826,7 @@ begin
     );
   DISP9_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y9",
+      LOC => "SLICE_X66Y13",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9979,7 +8835,7 @@ begin
     );
   DISP9_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y9",
+      LOC => "SLICE_X66Y13",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9988,7 +8844,7 @@ begin
     );
   DISP9_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y9",
+      LOC => "SLICE_X66Y13",
       PATHPULSE => 694 ps
     )
     port map (
@@ -9997,7 +8853,7 @@ begin
     );
   DISP9_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y9",
+      LOC => "SLICE_X66Y13",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10006,7 +8862,7 @@ begin
     );
   DISP9_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y9",
+      LOC => "SLICE_X66Y13",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10015,7 +8871,7 @@ begin
     );
   R0D1_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y50",
+      LOC => "SLICE_X53Y48",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10024,7 +8880,7 @@ begin
     );
   R0D1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y50",
+      LOC => "SLICE_X53Y48",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10033,7 +8889,7 @@ begin
     );
   R0D1_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y50",
+      LOC => "SLICE_X53Y48",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10042,7 +8898,7 @@ begin
     );
   R0D1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y50",
+      LOC => "SLICE_X53Y48",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10051,16 +8907,29 @@ begin
     );
   R0D1_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y50",
+      LOC => "SLICE_X53Y48",
       PATHPULSE => 694 ps
     )
     port map (
       I => GRD_0,
       O => R0D1_CEINV_7766
     );
+  U122_I_Q1 : X_FF
+    generic map(
+      LOC => "SLICE_X53Y48",
+      INIT => '0'
+    )
+    port map (
+      I => R0D1_DXMUX_7779,
+      CE => R0D1_CEINV_7766,
+      CLK => R0D1_CLKINV_7767,
+      SET => GND,
+      RST => R0D1_SRINV_7768,
+      O => R0D1
+    );
   DISP11_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y6",
+      LOC => "SLICE_X65Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10069,7 +8938,7 @@ begin
     );
   DISP11_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y6",
+      LOC => "SLICE_X65Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10078,7 +8947,7 @@ begin
     );
   DISP11_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y6",
+      LOC => "SLICE_X65Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10087,7 +8956,7 @@ begin
     );
   DISP11_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y6",
+      LOC => "SLICE_X65Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10096,16 +8965,38 @@ begin
     );
   DISP11_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y6",
+      LOC => "SLICE_X65Y21",
       PATHPULSE => 694 ps
     )
     port map (
       I => STDISP2_0,
       O => DISP11_CEINV_7794
     );
+  R0D3_FFX_RSTOR : X_BUF
+    generic map(
+      LOC => "SLICE_X55Y38",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => R0D3_SRINV_7824,
+      O => R0D3_FFX_RST
+    );
+  U122_I_Q3 : X_FF
+    generic map(
+      LOC => "SLICE_X55Y38",
+      INIT => '0'
+    )
+    port map (
+      I => R0D3_DXMUX_7835,
+      CE => R0D3_CEINV_7822,
+      CLK => R0D3_CLKINV_7823,
+      SET => GND,
+      RST => R0D3_FFX_RST,
+      O => R0D3
+    );
   R0D3_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y44",
+      LOC => "SLICE_X55Y38",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10114,7 +9005,7 @@ begin
     );
   R0D3_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y44",
+      LOC => "SLICE_X55Y38",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10123,7 +9014,7 @@ begin
     );
   R0D3_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y44",
+      LOC => "SLICE_X55Y38",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10132,7 +9023,7 @@ begin
     );
   R0D3_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y44",
+      LOC => "SLICE_X55Y38",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10141,7 +9032,7 @@ begin
     );
   R0D3_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y44",
+      LOC => "SLICE_X55Y38",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10150,7 +9041,7 @@ begin
     );
   P2CODE1_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y47",
+      LOC => "SLICE_X54Y40",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10159,7 +9050,7 @@ begin
     );
   P2CODE1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X52Y47",
+      LOC => "SLICE_X54Y40",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10168,7 +9059,7 @@ begin
     );
   P2CODE1_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y47",
+      LOC => "SLICE_X54Y40",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10177,7 +9068,7 @@ begin
     );
   P2CODE1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y47",
+      LOC => "SLICE_X54Y40",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10186,7 +9077,7 @@ begin
     );
   P2CODE1_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X52Y47",
+      LOC => "SLICE_X54Y40",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10195,7 +9086,7 @@ begin
     );
   P2CODE3_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X53Y46",
+      LOC => "SLICE_X55Y41",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10204,7 +9095,7 @@ begin
     );
   P2CODE3_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X53Y46",
+      LOC => "SLICE_X55Y41",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10213,7 +9104,7 @@ begin
     );
   P2CODE3_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X53Y46",
+      LOC => "SLICE_X55Y41",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10222,7 +9113,7 @@ begin
     );
   P2CODE3_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X53Y46",
+      LOC => "SLICE_X55Y41",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10231,7 +9122,7 @@ begin
     );
   P2CODE3_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X53Y46",
+      LOC => "SLICE_X55Y41",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10240,28 +9131,16 @@ begin
     );
   U157_XLXN_14_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X66Y13",
+      LOC => "SLICE_X66Y16",
       PATHPULSE => 694 ps
     )
     port map (
       I => U157_XLXN_14,
       O => U157_XLXN_14_0
     );
-  U157_XLXI_4_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"FC0C",
-      LOC => "SLICE_X66Y13"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => NPDISP9,
-      ADR2 => ENCPSEL0,
-      ADR3 => NPDISP13,
-      O => U157_XLXN_14
-    );
   M1_U127_AB1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y33",
+      LOC => "SLICE_X64Y32",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10270,28 +9149,16 @@ begin
     );
   M1_U127_AB1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y33",
+      LOC => "SLICE_X64Y32",
       PATHPULSE => 694 ps
     )
     port map (
       I => U161_AB1,
       O => U161_AB1_0
     );
-  U161_I_36_42 : X_LUT4
-    generic map(
-      INIT => X"9999",
-      LOC => "SLICE_X64Y33"
-    )
-    port map (
-      ADR0 => BRWD1_0,
-      ADR1 => DISP13,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => U161_AB1
-    );
   U159_AB3_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y24",
+      LOC => "SLICE_X66Y22",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10300,28 +9167,16 @@ begin
     );
   U159_AB3_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y24",
+      LOC => "SLICE_X66Y22",
       PATHPULSE => 694 ps
     )
     port map (
       I => U161_AB3,
       O => U161_AB3_0
     );
-  U161_I_36_34 : X_LUT4
-    generic map(
-      INIT => X"F00F",
-      LOC => "SLICE_X65Y24"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => VCC,
-      ADR2 => BRWD3_0,
-      ADR3 => DISP15,
-      O => U161_AB3
-    );
   EQ3_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y17",
+      LOC => "SLICE_X66Y23",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10330,28 +9185,16 @@ begin
     );
   EQ3_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y17",
+      LOC => "SLICE_X66Y23",
       PATHPULSE => 694 ps
     )
     port map (
       I => U161_AB0_pack_1,
       O => U161_AB0
     );
-  U161_I_36_43 : X_LUT4
-    generic map(
-      INIT => X"C3C3",
-      LOC => "SLICE_X65Y17"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => BRWD0,
-      ADR2 => DISP12,
-      ADR3 => VCC,
-      O => U161_AB0_pack_1
-    );
   U183_GTB_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X42Y28",
+      LOC => "SLICE_X48Y29",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10360,28 +9203,38 @@ begin
     );
   U183_GTB_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X42Y28",
+      LOC => "SLICE_X48Y29",
       PATHPULSE => 694 ps
     )
     port map (
       I => U183_EQ4_5_pack_1,
       O => U183_EQ4_5
     );
-  U183_I_36_4 : X_LUT4
+  DISP13_FFX_RSTOR : X_BUF
     generic map(
-      INIT => X"0401",
-      LOC => "SLICE_X42Y28"
+      LOC => "SLICE_X66Y17",
+      PATHPULSE => 694 ps
     )
     port map (
-      ADR0 => U183_LE4_5_0,
-      ADR1 => LARGESTRWD(5),
-      ADR2 => U183_GE4_5_0,
-      ADR3 => U173_XLXI_6_M1,
-      O => U183_EQ4_5_pack_1
+      I => RESET,
+      O => DISP13_FFX_RST
+    );
+  U113_I_Q1 : X_FF
+    generic map(
+      LOC => "SLICE_X66Y17",
+      INIT => '0'
+    )
+    port map (
+      I => DISP13_DXMUX_8038,
+      CE => DISP13_CEINV_8019,
+      CLK => DISP13_CLKINV_8020,
+      SET => GND,
+      RST => DISP13_FFX_RST,
+      O => DISP13
     );
   DISP13_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X65Y14",
+      LOC => "SLICE_X66Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10390,7 +9243,7 @@ begin
     );
   DISP13_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y14",
+      LOC => "SLICE_X66Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10399,7 +9252,7 @@ begin
     );
   DISP13_FXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X65Y14",
+      LOC => "SLICE_X66Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10408,7 +9261,7 @@ begin
     );
   DISP13_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y14",
+      LOC => "SLICE_X66Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10417,7 +9270,7 @@ begin
     );
   DISP13_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X65Y14",
+      LOC => "SLICE_X66Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10426,7 +9279,7 @@ begin
     );
   DISP13_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X65Y14",
+      LOC => "SLICE_X66Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10435,7 +9288,7 @@ begin
     );
   U183_LE2_3_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X46Y30",
+      LOC => "SLICE_X50Y29",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10444,28 +9297,16 @@ begin
     );
   U183_LE2_3_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X46Y30",
+      LOC => "SLICE_X50Y29",
       PATHPULSE => 694 ps
     )
     port map (
       I => U183_GT2_3,
       O => U183_GT2_3_0
     );
-  U183_I_36_7 : X_LUT4
-    generic map(
-      INIT => X"4D44",
-      LOC => "SLICE_X46Y30"
-    )
-    port map (
-      ADR0 => LARGESTRWD(3),
-      ADR1 => RWD_3_0,
-      ADR2 => LARGESTRWD(2),
-      ADR3 => RWD_2_0,
-      O => U183_GT2_3
-    );
   U191_LE2_3_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y52",
+      LOC => "SLICE_X51Y53",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10474,28 +9315,38 @@ begin
     );
   U191_LE2_3_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y52",
+      LOC => "SLICE_X51Y53",
       PATHPULSE => 694 ps
     )
     port map (
       I => U191_GT2_3,
       O => U191_GT2_3_0
     );
-  U191_I_36_7 : X_LUT4
+  DISP5_FFX_RSTOR : X_BUF
     generic map(
-      INIT => X"0C8E",
-      LOC => "SLICE_X45Y52"
+      LOC => "SLICE_X64Y36",
+      PATHPULSE => 694 ps
     )
     port map (
-      ADR0 => P2PT(2),
-      ADR1 => P2PT(3),
-      ADR2 => P1PT(3),
-      ADR3 => P1PT(2),
-      O => U191_GT2_3
+      I => DISP5_SRINV_8103,
+      O => DISP5_FFX_RST
+    );
+  U115_I_Q1 : X_FF
+    generic map(
+      LOC => "SLICE_X64Y36",
+      INIT => '0'
+    )
+    port map (
+      I => DISP5_DXMUX_8114,
+      CE => DISP5_CEINV_8101,
+      CLK => DISP5_CLKINV_8102,
+      SET => GND,
+      RST => DISP5_FFX_RST,
+      O => DISP5
     );
   DISP5_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y37",
+      LOC => "SLICE_X64Y36",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10504,7 +9355,7 @@ begin
     );
   DISP5_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y37",
+      LOC => "SLICE_X64Y36",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10513,7 +9364,7 @@ begin
     );
   DISP5_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y37",
+      LOC => "SLICE_X64Y36",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10522,7 +9373,7 @@ begin
     );
   DISP5_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y37",
+      LOC => "SLICE_X64Y36",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10531,7 +9382,7 @@ begin
     );
   DISP5_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y37",
+      LOC => "SLICE_X64Y36",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10540,7 +9391,7 @@ begin
     );
   S6P2PLAYSYNCHADJ_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y70",
+      LOC => "SLICE_X67Y63",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10549,28 +9400,16 @@ begin
     );
   S6P2PLAYSYNCHADJ_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y70",
+      LOC => "SLICE_X67Y63",
       PATHPULSE => 694 ps
     )
     port map (
       I => S6_pack_1,
       O => S6
     );
-  U65_I_36_31 : X_LUT4
-    generic map(
-      INIT => X"2020",
-      LOC => "SLICE_X64Y70"
-    )
-    port map (
-      ADR0 => STR2,
-      ADR1 => STR0,
-      ADR2 => STR1,
-      ADR3 => VCC,
-      O => S6_pack_1
-    );
   DISP7_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X65Y36",
+      LOC => "SLICE_X67Y36",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10579,7 +9418,7 @@ begin
     );
   DISP7_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X65Y36",
+      LOC => "SLICE_X67Y36",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10588,7 +9427,7 @@ begin
     );
   DISP7_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X65Y36",
+      LOC => "SLICE_X67Y36",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10597,7 +9436,7 @@ begin
     );
   DISP7_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X65Y36",
+      LOC => "SLICE_X67Y36",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10606,7 +9445,7 @@ begin
     );
   DISP7_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X65Y36",
+      LOC => "SLICE_X67Y36",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10615,7 +9454,7 @@ begin
     );
   DISPSEL1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y77",
+      LOC => "SLICE_X65Y69",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10624,28 +9463,16 @@ begin
     );
   DISPSEL1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y77",
+      LOC => "SLICE_X65Y69",
       PATHPULSE => 694 ps
     )
     port map (
       I => SHNXRDS_pack_2,
       O => SHNXRDS
     );
-  U10 : X_LUT4
-    generic map(
-      INIT => X"CC08",
-      LOC => "SLICE_X64Y77"
-    )
-    port map (
-      ADR0 => S3,
-      ADR1 => P1PLAY,
-      ADR2 => LP1NSD,
-      ADR3 => S1,
-      O => SHNXRDS_pack_2
-    );
   U162_AB2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y7",
+      LOC => "SLICE_X66Y12",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10654,28 +9481,16 @@ begin
     );
   U162_AB2_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y7",
+      LOC => "SLICE_X66Y12",
       PATHPULSE => 694 ps
     )
     port map (
       I => M2_XLXN_2012,
       O => M2_XLXN_2012_0
     );
-  M2_U196_XLXI_116_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"AFA0",
-      LOC => "SLICE_X65Y7"
-    )
-    port map (
-      ADR0 => DISP14,
-      ADR1 => VCC,
-      ADR2 => M2_PD2PD3LT_0,
-      ADR3 => DISP10,
-      O => M2_XLXN_2012
-    );
   STNLRWDRD_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X48Y29",
+      LOC => "SLICE_X53Y29",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10684,28 +9499,28 @@ begin
     );
   STNLRWDRD_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X48Y29",
+      LOC => "SLICE_X53Y29",
       PATHPULSE => 694 ps
     )
     port map (
       I => S4_pack_1,
       O => S4
     );
-  U65_I_36_33 : X_LUT4
+  U47 : X_LUT4
     generic map(
-      INIT => X"0300",
-      LOC => "SLICE_X48Y29"
+      INIT => X"00A0",
+      LOC => "SLICE_X66Y68"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => STR1,
-      ADR2 => STR0,
-      ADR3 => STR2,
-      O => S4_pack_1
+      ADR0 => P2PLAYSYNCH_0,
+      ADR1 => VCC,
+      ADR2 => S3,
+      ADR3 => LP1NSD,
+      O => S3P2PLAYSYNCH
     );
   S3P2PLAYSYNCH_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y69",
+      LOC => "SLICE_X66Y68",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10714,7 +9529,7 @@ begin
     );
   S3P2PLAYSYNCH_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y69",
+      LOC => "SLICE_X66Y68",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10723,19 +9538,19 @@ begin
     );
   U65_I_36_34 : X_LUT4
     generic map(
-      INIT => X"3000",
-      LOC => "SLICE_X64Y69"
+      INIT => X"00C0",
+      LOC => "SLICE_X66Y68"
     )
     port map (
       ADR0 => VCC,
-      ADR1 => STR2,
+      ADR1 => STR0,
       ADR2 => STR1,
-      ADR3 => STR0,
+      ADR3 => STR2,
       O => S3_pack_1
     );
   PT_2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y32",
+      LOC => "SLICE_X53Y30",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10744,28 +9559,16 @@ begin
     );
   PT_2_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y32",
+      LOC => "SLICE_X53Y30",
       PATHPULSE => 694 ps
     )
     port map (
       I => STDISP3,
       O => STDISP3_0
     );
-  U13 : X_LUT4
-    generic map(
-      INIT => X"88A0",
-      LOC => "SLICE_X52Y32"
-    )
-    port map (
-      ADR0 => S2ORS5_0,
-      ADR1 => P2SEL3,
-      ADR2 => P1SEL(3),
-      ADR3 => STR2,
-      O => STDISP3
-    );
   XLXN_11102_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X50Y47",
+      LOC => "SLICE_X51Y50",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10774,7 +9577,7 @@ begin
     );
   XLXN_11102_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X50Y47",
+      LOC => "SLICE_X51Y50",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10783,7 +9586,7 @@ begin
     );
   XLXN_9714_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y49",
+      LOC => "SLICE_X67Y49",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10792,49 +9595,37 @@ begin
     );
   XLXN_9714_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y49",
+      LOC => "SLICE_X67Y49",
       PATHPULSE => 694 ps
     )
     port map (
       I => S1_pack_1,
       O => S1
     );
-  U65_I_36_36 : X_LUT4
+  U22 : X_LUT4
     generic map(
-      INIT => X"0202",
-      LOC => "SLICE_X65Y49"
+      INIT => X"00A0",
+      LOC => "SLICE_X48Y53"
     )
     port map (
-      ADR0 => STR0,
-      ADR1 => STR2,
-      ADR2 => STR1,
-      ADR3 => VCC,
-      O => S1_pack_1
+      ADR0 => XLXN_10478,
+      ADR1 => VCC,
+      ADR2 => XLXN_10471,
+      ADR3 => XLXN_11102,
+      O => CLRRDREGS
     );
   CLRRDREGS_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X50Y46",
+      LOC => "SLICE_X48Y53",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLRRDREGS,
       O => CLRRDREGS_0
     );
-  U22 : X_LUT4
-    generic map(
-      INIT => X"0088",
-      LOC => "SLICE_X50Y46"
-    )
-    port map (
-      ADR0 => XLXN_10471,
-      ADR1 => XLXN_10478,
-      ADR2 => VCC,
-      ADR3 => XLXN_11102,
-      O => CLRRDREGS
-    );
   DIGEQCDPOSSEL0_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X53Y12",
+      LOC => "SLICE_X54Y5",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10843,7 +9634,7 @@ begin
     );
   DIGEQCDPOSSEL0_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X53Y12",
+      LOC => "SLICE_X54Y5",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10852,7 +9643,7 @@ begin
     );
   DIGEQCDPOSSEL0_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X53Y12",
+      LOC => "SLICE_X54Y5",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10861,7 +9652,7 @@ begin
     );
   CLRSHFTREG_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y71",
+      LOC => "SLICE_X55Y68",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10870,49 +9661,25 @@ begin
     );
   CLRSHFTREG_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y71",
+      LOC => "SLICE_X55Y68",
       PATHPULSE => 694 ps
     )
     port map (
       I => S0_pack_1,
       O => S0
     );
-  U65_I_36_37 : X_LUT4
-    generic map(
-      INIT => X"0005",
-      LOC => "SLICE_X55Y71"
-    )
-    port map (
-      ADR0 => STR0,
-      ADR1 => VCC,
-      ADR2 => STR2,
-      ADR3 => STR1,
-      O => S0_pack_1
-    );
   RD0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y48",
+      LOC => "SLICE_X66Y49",
       PATHPULSE => 694 ps
     )
     port map (
       I => RD0,
       O => RD0_0
     );
-  U31 : X_LUT4
-    generic map(
-      INIT => X"F888",
-      LOC => "SLICE_X65Y48"
-    )
-    port map (
-      ADR0 => S1P1PLAYED_0,
-      ADR1 => P1ADD,
-      ADR2 => P2ADD_0,
-      ADR3 => S4P2PLAYED_0,
-      O => INT_NET10
-    );
   DIGEQCDADD_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X53Y15",
+      LOC => "SLICE_X55Y16",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10921,7 +9688,7 @@ begin
     );
   DIGEQCDADD_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X53Y15",
+      LOC => "SLICE_X55Y16",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10930,7 +9697,7 @@ begin
     );
   DIGEQCDADD_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X53Y15",
+      LOC => "SLICE_X55Y16",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10939,7 +9706,7 @@ begin
     );
   CLFF_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y67",
+      LOC => "SLICE_X66Y65",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10948,28 +9715,16 @@ begin
     );
   CLFF_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y67",
+      LOC => "SLICE_X66Y65",
       PATHPULSE => 694 ps
     )
     port map (
       I => NEXTPLAY_pack_1,
       O => NEXTPLAY
     );
-  U40 : X_LUT4
-    generic map(
-      INIT => X"FFFE",
-      LOC => "SLICE_X65Y67"
-    )
-    port map (
-      ADR0 => S1P1SKIP_0,
-      ADR1 => S3P2PLAYSYNCH_0,
-      ADR2 => S3S6COND_0,
-      ADR3 => S6P2PLAYSYNCHADJ_0,
-      O => NEXTPLAY_pack_1
-    );
   ADD_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y46",
+      LOC => "SLICE_X67Y43",
       PATHPULSE => 694 ps
     )
     port map (
@@ -10978,28 +9733,28 @@ begin
     );
   ADD_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y46",
+      LOC => "SLICE_X67Y43",
       PATHPULSE => 694 ps
     )
     port map (
       I => XLXN_9551_pack_1,
       O => XLXN_9551
     );
-  U24 : X_LUT4
+  U70 : X_LUT4
     generic map(
-      INIT => X"FFF8",
-      LOC => "SLICE_X64Y46"
+      INIT => X"FCFC",
+      LOC => "SLICE_X50Y49"
     )
     port map (
-      ADR0 => P2ADD_0,
-      ADR1 => S4,
-      ADR2 => XLXN_151_0,
-      ADR3 => XLXN_9714_0,
-      O => XLXN_9551_pack_1
+      ADR0 => VCC,
+      ADR1 => STP2PT,
+      ADR2 => STP1PT,
+      ADR3 => VCC,
+      O => XLXN_74
     );
   XLXN_74_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X48Y56",
+      LOC => "SLICE_X50Y49",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11009,18 +9764,18 @@ begin
   U17 : X_LUT4
     generic map(
       INIT => X"0010",
-      LOC => "SLICE_X48Y56"
+      LOC => "SLICE_X50Y49"
     )
     port map (
       ADR0 => LPTOVF,
-      ADR1 => STR0,
+      ADR1 => STR2,
       ADR2 => STR1,
-      ADR3 => STR2,
+      ADR3 => STR0,
       O => STP1PT_pack_1
     );
   XLXN_2029_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X49Y57",
+      LOC => "SLICE_X51Y64",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11029,49 +9784,25 @@ begin
     );
   XLXN_2029_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X49Y57",
+      LOC => "SLICE_X51Y64",
       PATHPULSE => 694 ps
     )
     port map (
       I => STP2PT_pack_1,
       O => STP2PT
     );
-  U18 : X_LUT4
-    generic map(
-      INIT => X"0020",
-      LOC => "SLICE_X49Y57"
-    )
-    port map (
-      ADR0 => STR2,
-      ADR1 => STR1,
-      ADR2 => STR0,
-      ADR3 => LPTOVF,
-      O => STP2PT_pack_1
-    );
   UNENCNSD0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y19",
+      LOC => "SLICE_X55Y18",
       PATHPULSE => 694 ps
     )
     port map (
       I => U170_XLXN_2_pack_1,
       O => U170_XLXN_2
     );
-  U170_XLXI_2_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"8A00",
-      LOC => "SLICE_X64Y19"
-    )
-    port map (
-      ADR0 => EQ1,
-      ADR1 => EQ2_0,
-      ADR2 => ENCPSEL0,
-      ADR3 => EQ0_0,
-      O => U170_XLXN_2_pack_1
-    );
   XLXN_151_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y46",
+      LOC => "SLICE_X67Y46",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11080,28 +9811,16 @@ begin
     );
   XLXN_151_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y46",
+      LOC => "SLICE_X67Y46",
       PATHPULSE => 694 ps
     )
     port map (
       I => S4P2PLAYED,
       O => S4P2PLAYED_0
     );
-  U51 : X_LUT4
-    generic map(
-      INIT => X"C000",
-      LOC => "SLICE_X65Y46"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => RDPLAYABLE,
-      ADR2 => S4,
-      ADR3 => P2STR3,
-      O => S4P2PLAYED
-    );
   XLXN_10478_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X51Y47",
+      LOC => "SLICE_X49Y50",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11110,7 +9829,7 @@ begin
     );
   XLXN_10478_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X51Y47",
+      LOC => "SLICE_X49Y50",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11119,7 +9838,7 @@ begin
     );
   XLXN_10478_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X51Y47",
+      LOC => "SLICE_X49Y50",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11128,7 +9847,7 @@ begin
     );
   XLXN_10478_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X51Y47",
+      LOC => "SLICE_X49Y50",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11137,7 +9856,7 @@ begin
     );
   XLXN_460_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y68",
+      LOC => "SLICE_X66Y69",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11146,28 +9865,16 @@ begin
     );
   XLXN_460_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y68",
+      LOC => "SLICE_X66Y69",
       PATHPULSE => 694 ps
     )
     port map (
       I => S0P1PLAYSYNCH_pack_1,
       O => S0P1PLAYSYNCH
     );
-  U44 : X_LUT4
-    generic map(
-      INIT => X"8000",
-      LOC => "SLICE_X55Y68"
-    )
-    port map (
-      ADR0 => P1PLAYSYNCH_0,
-      ADR1 => U6_Q1,
-      ADR2 => S0,
-      ADR3 => U6_Q0,
-      O => S0P1PLAYSYNCH_pack_1
-    );
   XLXN_156_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y49",
+      LOC => "SLICE_X66Y48",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11176,7 +9883,7 @@ begin
     );
   XLXN_156_BYINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y49",
+      LOC => "SLICE_X66Y48",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11185,7 +9892,7 @@ begin
     );
   XLXN_156_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y49",
+      LOC => "SLICE_X66Y48",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11194,7 +9901,7 @@ begin
     );
   XLXN_156_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y49",
+      LOC => "SLICE_X66Y48",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11203,7 +9910,7 @@ begin
     );
   CENLD_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y67",
+      LOC => "SLICE_X67Y65",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11212,28 +9919,16 @@ begin
     );
   CENLD_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y67",
+      LOC => "SLICE_X67Y65",
       PATHPULSE => 694 ps
     )
     port map (
       I => S1S4S6COND_pack_1,
       O => S1S4S6COND
     );
-  U61 : X_LUT4
-    generic map(
-      INIT => X"FEFC",
-      LOC => "SLICE_X64Y67"
-    )
-    port map (
-      ADR0 => S1,
-      ADR1 => S6P2PLAYSYNCHADJ_0,
-      ADR2 => S4P2SKIP_0,
-      ADR3 => P2PLAYSYNCH_0,
-      O => S1S4S6COND_pack_1
-    );
   S1P1SKIP_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X66Y65",
+      LOC => "SLICE_X67Y66",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11242,49 +9937,25 @@ begin
     );
   S1P1SKIP_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X66Y65",
+      LOC => "SLICE_X67Y66",
       PATHPULSE => 694 ps
     )
     port map (
       I => S1P1PLAYED,
       O => S1P1PLAYED_0
     );
-  U45 : X_LUT4
-    generic map(
-      INIT => X"8888",
-      LOC => "SLICE_X66Y65"
-    )
-    port map (
-      ADR0 => S1,
-      ADR1 => P1PLAYED,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => S1P1PLAYED
-    );
   INT_NET2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y42",
+      LOC => "SLICE_X65Y41",
       PATHPULSE => 694 ps
     )
     port map (
       I => INT_NET2,
       O => INT_NET2_0
     );
-  U37 : X_LUT4
-    generic map(
-      INIT => X"8888",
-      LOC => "SLICE_X65Y42"
-    )
-    port map (
-      ADR0 => LPDPRD,
-      ADR1 => ADD_0,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => INT_NET2
-    );
   XLXN_201_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y78",
+      LOC => "SLICE_X64Y74",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11293,28 +9964,16 @@ begin
     );
   XLXN_201_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y78",
+      LOC => "SLICE_X64Y74",
       PATHPULSE => 694 ps
     )
     port map (
       I => INT_NET1,
       O => INT_NET1_0
     );
-  U38 : X_LUT4
-    generic map(
-      INIT => X"0032",
-      LOC => "SLICE_X65Y78"
-    )
-    port map (
-      ADR0 => S3,
-      ADR1 => SHPTS,
-      ADR2 => S6,
-      ADR3 => LPTOVF,
-      O => INT_NET1
-    );
   LP2NSD_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X67Y66",
+      LOC => "SLICE_X67Y60",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11323,7 +9982,7 @@ begin
     );
   LP2NSD_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X67Y66",
+      LOC => "SLICE_X67Y60",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11332,7 +9991,7 @@ begin
     );
   LP2NSD_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X67Y66",
+      LOC => "SLICE_X67Y60",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11341,7 +10000,7 @@ begin
     );
   S3S6COND_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y69",
+      LOC => "SLICE_X67Y68",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11350,28 +10009,16 @@ begin
     );
   S3S6COND_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y69",
+      LOC => "SLICE_X67Y68",
       PATHPULSE => 694 ps
     )
     port map (
       I => S3P1PLAYSYNCHADJ_pack_2,
       O => S3P1PLAYSYNCHADJ
     );
-  U48 : X_LUT4
-    generic map(
-      INIT => X"8080",
-      LOC => "SLICE_X65Y69"
-    )
-    port map (
-      ADR0 => P1PLAYSYNCH_0,
-      ADR1 => S3,
-      ADR2 => LP1NSD,
-      ADR3 => VCC,
-      O => S3P1PLAYSYNCHADJ_pack_2
-    );
   XLXN_10482_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X66Y64",
+      LOC => "SLICE_X66Y66",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11380,7 +10027,7 @@ begin
     );
   XLXN_10482_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X66Y64",
+      LOC => "SLICE_X66Y66",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11389,7 +10036,7 @@ begin
     );
   XLXN_10495_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X67Y65",
+      LOC => "SLICE_X66Y67",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11398,7 +10045,7 @@ begin
     );
   XLXN_10495_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X67Y65",
+      LOC => "SLICE_X66Y67",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11407,28 +10054,16 @@ begin
     );
   P2PLAYSYNCH_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X67Y64",
+      LOC => "SLICE_X67Y67",
       PATHPULSE => 694 ps
     )
     port map (
       I => P2PLAYSYNCH,
       O => P2PLAYSYNCH_0
     );
-  U75 : X_LUT4
-    generic map(
-      INIT => X"5000",
-      LOC => "SLICE_X67Y64"
-    )
-    port map (
-      ADR0 => XLXN_10495,
-      ADR1 => VCC,
-      ADR2 => XLXN_10482,
-      ADR3 => XLXN_10484,
-      O => P2PLAYSYNCH
-    );
   U64_OR_CE_L_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y66",
+      LOC => "SLICE_X67Y64",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11437,358 +10072,268 @@ begin
     );
   U64_OR_CE_L_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y66",
+      LOC => "SLICE_X67Y64",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLKEN_pack_2,
       O => CLKEN
     );
-  U59 : X_LUT4
-    generic map(
-      INIT => X"5554",
-      LOC => "SLICE_X64Y66"
-    )
-    port map (
-      ADR0 => LPTOVF,
-      ADR1 => CENLD_0,
-      ADR2 => XLXN_460_0,
-      ADR3 => S2ORS5_0,
-      O => CLKEN_pack_2
-    );
-  U191_GTC_XUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X47Y51",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => U191_GTC,
-      O => U191_GTC_0
-    );
-  U191_GTC_YUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X47Y51",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => PT(5),
-      O => PT_5_0
-    );
-  U178_XLXI_115_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"DD88",
-      LOC => "SLICE_X47Y51"
-    )
-    port map (
-      ADR0 => STR2,
-      ADR1 => P2PT(5),
-      ADR2 => VCC,
-      ADR3 => P1PT(5),
-      O => PT(5)
-    );
   XLXN_10962_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X55Y76",
+      LOC => "SLICE_X54Y70",
       PATHPULSE => 694 ps
     )
     port map (
       I => P1PLAY,
-      O => XLXN_10962_DYMUX_8843
+      O => XLXN_10962_DYMUX_8819
     );
   XLXN_10962_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X55Y76",
+      LOC => "SLICE_X54Y70",
       PATHPULSE => 694 ps
     )
     port map (
       I => RDCLK,
-      O => XLXN_10962_CLKINV_8841
+      O => XLXN_10962_CLKINV_8817
     );
   XLXN_10958_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X54Y75",
+      LOC => "SLICE_X54Y71",
       PATHPULSE => 694 ps
     )
     port map (
       I => XLXN_10962,
-      O => XLXN_10958_DYMUX_8852
+      O => XLXN_10958_DYMUX_8828
     );
   XLXN_10958_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X54Y75",
+      LOC => "SLICE_X54Y71",
       PATHPULSE => 694 ps
     )
     port map (
       I => P2CLK,
-      O => XLXN_10958_CLKINV_8850
+      O => XLXN_10958_CLKINV_8826
     );
   XLXN_10960_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X54Y74",
+      LOC => "SLICE_X55Y70",
       PATHPULSE => 694 ps
     )
     port map (
       I => XLXN_10958,
-      O => XLXN_10960_DYMUX_8861
+      O => XLXN_10960_DYMUX_8837
     );
   XLXN_10960_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X54Y74",
+      LOC => "SLICE_X55Y70",
       PATHPULSE => 694 ps
     )
     port map (
       I => SYSCLK,
-      O => XLXN_10960_CLKINV_8859
-    );
-  U95 : X_LUT4
-    generic map(
-      INIT => X"3F0F",
-      LOC => "SLICE_X64Y78"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => INT_NET0,
-      ADR2 => XLXN_197_0,
-      ADR3 => LPSEL1,
-      O => DISPEN(1)
+      O => XLXN_10960_CLKINV_8835
     );
   P1PLAYSYNCH_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y75",
+      LOC => "SLICE_X55Y71",
       PATHPULSE => 694 ps
     )
     port map (
       I => P1PLAYSYNCH,
       O => P1PLAYSYNCH_0
     );
-  U79 : X_LUT4
-    generic map(
-      INIT => X"00A0",
-      LOC => "SLICE_X55Y75"
-    )
-    port map (
-      ADR0 => XLXN_10958,
-      ADR1 => VCC,
-      ADR2 => XLXN_10962,
-      ADR3 => XLXN_10960,
-      O => P1PLAYSYNCH
-    );
-  U97 : X_LUT4
-    generic map(
-      INIT => X"2F2F",
-      LOC => "SLICE_X66Y81"
-    )
-    port map (
-      ADR0 => LPSEL2,
-      ADR1 => INT_NET0,
-      ADR2 => XLXN_199_0,
-      ADR3 => VCC,
-      O => DISPEN(2)
-    );
   DISPEN_0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y72",
+      LOC => "SLICE_X64Y75",
       PATHPULSE => 694 ps
     )
     port map (
       I => INT_NET0_pack_1,
       O => INT_NET0
     );
-  U89 : X_LUT4
-    generic map(
-      INIT => X"BBF3",
-      LOC => "SLICE_X55Y72"
-    )
-    port map (
-      ADR0 => Q_5_Q,
-      ADR1 => INT_NET1_0,
-      ADR2 => Q_7_Q,
-      ADR3 => INT_NET2_0,
-      O => INT_NET0_pack_1
-    );
   DISP1_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y30",
+      LOC => "SLICE_X65Y43",
       PATHPULSE => 694 ps
     )
     port map (
       I => BRWD1_0,
-      O => DISP1_DXMUX_8957
+      O => DISP1_DXMUX_8933
     );
   DISP1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y30",
+      LOC => "SLICE_X65Y43",
       PATHPULSE => 694 ps
     )
     port map (
       I => BRWD0,
-      O => DISP1_DYMUX_8948
+      O => DISP1_DYMUX_8924
     );
   DISP1_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y30",
+      LOC => "SLICE_X65Y43",
       PATHPULSE => 694 ps
     )
     port map (
       I => RESET,
-      O => DISP1_SRINV_8946
+      O => DISP1_SRINV_8922
     );
   DISP1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y30",
+      LOC => "SLICE_X65Y43",
       PATHPULSE => 694 ps
     )
     port map (
       I => SYSCLK,
-      O => DISP1_CLKINV_8945
+      O => DISP1_CLKINV_8921
     );
   DISP1_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y30",
+      LOC => "SLICE_X65Y43",
       PATHPULSE => 694 ps
     )
     port map (
       I => STDISP0_0,
-      O => DISP1_CEINV_8944
+      O => DISP1_CEINV_8920
     );
   DISP3_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y34",
+      LOC => "SLICE_X67Y35",
       PATHPULSE => 694 ps
     )
     port map (
       I => BRWD3_0,
-      O => DISP3_DXMUX_8985
+      O => DISP3_DXMUX_8961
     );
   DISP3_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y34",
+      LOC => "SLICE_X67Y35",
       PATHPULSE => 694 ps
     )
     port map (
       I => BRWD2_0,
-      O => DISP3_DYMUX_8976
+      O => DISP3_DYMUX_8952
     );
   DISP3_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y34",
+      LOC => "SLICE_X67Y35",
       PATHPULSE => 694 ps
     )
     port map (
       I => RESET,
-      O => DISP3_SRINV_8974
+      O => DISP3_SRINV_8950
     );
   DISP3_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y34",
+      LOC => "SLICE_X67Y35",
       PATHPULSE => 694 ps
     )
     port map (
       I => SYSCLK,
-      O => DISP3_CLKINV_8973
+      O => DISP3_CLKINV_8949
     );
   DISP3_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y34",
+      LOC => "SLICE_X67Y35",
       PATHPULSE => 694 ps
     )
     port map (
       I => STDISP0_0,
-      O => DISP3_CEINV_8972
+      O => DISP3_CEINV_8948
     );
   P2CODE5_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X54Y47",
+      LOC => "SLICE_X55Y40",
       PATHPULSE => 694 ps
     )
     port map (
       I => BRWD1_0,
-      O => P2CODE5_DXMUX_9013
+      O => P2CODE5_DXMUX_8989
     );
   P2CODE5_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X54Y47",
+      LOC => "SLICE_X55Y40",
       PATHPULSE => 694 ps
     )
     port map (
       I => BRWD0,
-      O => P2CODE5_DYMUX_9004
+      O => P2CODE5_DYMUX_8980
     );
   P2CODE5_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X54Y47",
+      LOC => "SLICE_X55Y40",
       PATHPULSE => 694 ps
     )
     port map (
       I => RESET,
-      O => P2CODE5_SRINV_9002
+      O => P2CODE5_SRINV_8978
     );
   P2CODE5_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X54Y47",
+      LOC => "SLICE_X55Y40",
       PATHPULSE => 694 ps
     )
     port map (
       I => SYSCLK,
-      O => P2CODE5_CLKINV_9001
+      O => P2CODE5_CLKINV_8977
     );
   P2CODE5_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X54Y47",
+      LOC => "SLICE_X55Y40",
       PATHPULSE => 694 ps
     )
     port map (
       I => M4_STCODE1_0,
-      O => P2CODE5_CEINV_9000
+      O => P2CODE5_CEINV_8976
     );
   P2CODE7_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X54Y46",
+      LOC => "SLICE_X55Y43",
       PATHPULSE => 694 ps
     )
     port map (
       I => BRWD3_0,
-      O => P2CODE7_DXMUX_9041
+      O => P2CODE7_DXMUX_9017
     );
   P2CODE7_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X54Y46",
+      LOC => "SLICE_X55Y43",
       PATHPULSE => 694 ps
     )
     port map (
       I => BRWD2_0,
-      O => P2CODE7_DYMUX_9032
+      O => P2CODE7_DYMUX_9008
     );
   P2CODE7_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X54Y46",
+      LOC => "SLICE_X55Y43",
       PATHPULSE => 694 ps
     )
     port map (
       I => RESET,
-      O => P2CODE7_SRINV_9030
+      O => P2CODE7_SRINV_9006
     );
   P2CODE7_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X54Y46",
+      LOC => "SLICE_X55Y43",
       PATHPULSE => 694 ps
     )
     port map (
       I => SYSCLK,
-      O => P2CODE7_CLKINV_9029
+      O => P2CODE7_CLKINV_9005
     );
   P2CODE7_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X54Y46",
+      LOC => "SLICE_X55Y43",
       PATHPULSE => 694 ps
     )
     port map (
       I => M4_STCODE1_0,
-      O => P2CODE7_CEINV_9028
+      O => P2CODE7_CEINV_9004
     );
   M2_XLXN_2000_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y20",
+      LOC => "SLICE_X67Y27",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11797,28 +10342,34 @@ begin
     );
   M2_XLXN_2000_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y20",
+      LOC => "SLICE_X67Y27",
       PATHPULSE => 694 ps
     )
     port map (
-      I => M2_U193_GE2_3,
-      O => M2_U193_GE2_3_0
+      I => M2_PD0PD1LT_pack_1,
+      O => M2_PD0PD1LT
     );
-  M2_U193_I_36_14 : X_LUT4
+  M2_U193_GTB_XUSED : X_BUF
     generic map(
-      INIT => X"4004",
-      LOC => "SLICE_X64Y20"
+      LOC => "SLICE_X67Y31",
+      PATHPULSE => 694 ps
     )
     port map (
-      ADR0 => DISP6,
-      ADR1 => DISP2,
-      ADR2 => DISP7,
-      ADR3 => DISP3,
+      I => M2_U193_GTB,
+      O => M2_U193_GTB_0
+    );
+  M2_U193_GTB_YUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X67Y31",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => M2_U193_GE2_3_pack_3,
       O => M2_U193_GE2_3
     );
   M2_U193_LTB_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X66Y20",
+      LOC => "SLICE_X66Y26",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11827,58 +10378,16 @@ begin
     );
   M2_U193_LTB_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X66Y20",
+      LOC => "SLICE_X66Y26",
       PATHPULSE => 694 ps
     )
     port map (
       I => M2_U193_LE2_3_pack_3,
       O => M2_U193_LE2_3
     );
-  M2_U193_I_36_15 : X_LUT4
-    generic map(
-      INIT => X"0082",
-      LOC => "SLICE_X66Y20"
-    )
-    port map (
-      ADR0 => DISP6,
-      ADR1 => DISP7,
-      ADR2 => DISP3,
-      ADR3 => DISP2,
-      O => M2_U193_LE2_3_pack_3
-    );
-  M2_PD0PD1LT_XUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X66Y21",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => M2_PD0PD1LT,
-      O => M2_PD0PD1LT_0
-    );
-  M2_PD0PD1LT_YUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X66Y21",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => M2_U193_GTB_pack_1,
-      O => M2_U193_GTB
-    );
-  M2_U193_I_36_19 : X_LUT4
-    generic map(
-      INIT => X"CFCC",
-      LOC => "SLICE_X66Y21"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => M2_U193_GE2_3_0,
-      ADR2 => DISP7,
-      ADR3 => DISP3,
-      O => M2_U193_GTB_pack_1
-    );
   PT_3_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X46Y54",
+      LOC => "SLICE_X51Y54",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11887,49 +10396,34 @@ begin
     );
   PT_3_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X46Y54",
+      LOC => "SLICE_X51Y54",
       PATHPULSE => 694 ps
     )
     port map (
       I => U84_XLXN_13,
       O => U84_XLXN_13_0
     );
-  U84_XLXI_3_I_36_8 : X_LUT4
+  M2_U197_LTB_XUSED : X_BUF
     generic map(
-      INIT => X"EE22",
-      LOC => "SLICE_X46Y54"
+      LOC => "SLICE_X64Y15",
+      PATHPULSE => 694 ps
     )
     port map (
-      ADR0 => DISP3,
-      ADR1 => DISPSEL0,
-      ADR2 => VCC,
-      ADR3 => P1PT(3),
-      O => U84_XLXN_13
+      I => M2_U197_LTB,
+      O => M2_U197_LTB_0
     );
   M2_U197_LE2_3_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X59Y3",
+      LOC => "SLICE_X65Y13",
       PATHPULSE => 694 ps
     )
     port map (
       I => M2_U197_LE2_3,
       O => M2_U197_LE2_3_0
     );
-  M2_U197_I_36_15 : X_LUT4
-    generic map(
-      INIT => X"00A0",
-      LOC => "SLICE_X59Y3"
-    )
-    port map (
-      ADR0 => M2_U197_EQ_3,
-      ADR1 => VCC,
-      ADR2 => M2_XLXN_2012_0,
-      ADR3 => M2_XLXN_2000_0,
-      O => M2_U197_LE2_3
-    );
   LRGDISPPOS1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X57Y3",
+      LOC => "SLICE_X65Y14",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11938,28 +10432,16 @@ begin
     );
   LRGDISPPOS1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X57Y3",
+      LOC => "SLICE_X65Y14",
       PATHPULSE => 694 ps
     )
     port map (
       I => M2_U197_GTB_pack_1,
       O => M2_U197_GTB
     );
-  M2_U197_I_36_19 : X_LUT4
-    generic map(
-      INIT => X"DDCC",
-      LOC => "SLICE_X57Y3"
-    )
-    port map (
-      ADR0 => M2_XLXN_1979,
-      ADR1 => M2_U197_GE2_3_0,
-      ADR2 => VCC,
-      ADR3 => M2_XLXN_1999_0,
-      O => M2_U197_GTB_pack_1
-    );
   U228_AB1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y46",
+      LOC => "SLICE_X52Y39",
       PATHPULSE => 694 ps
     )
     port map (
@@ -11968,226 +10450,214 @@ begin
     );
   U228_AB1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y46",
+      LOC => "SLICE_X52Y39",
       PATHPULSE => 694 ps
     )
     port map (
       I => P2SELCD1_pack_1,
       O => P2SELCD1
     );
-  M4_U220_XLXI_115_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"2230",
-      LOC => "SLICE_X52Y46"
-    )
-    port map (
-      ADR0 => P2CODE5,
-      ADR1 => P2STR1,
-      ADR2 => P2CODE1,
-      ADR3 => P2STR0,
-      O => P2SELCD1_pack_1
-    );
   P2PT_1_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X46Y55",
+      LOC => "SLICE_X49Y45",
       PATHPULSE => 694 ps
     )
     port map (
       I => P1PT_0_GYMUX_3056,
-      O => P2PT_1_DXMUX_9225
+      O => P2PT_1_DXMUX_9213
     );
   P2PT_1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X46Y55",
+      LOC => "SLICE_X49Y45",
       PATHPULSE => 694 ps
     )
     port map (
       I => P1PT_0_FXMUX_3078,
-      O => P2PT_1_DYMUX_9216
+      O => P2PT_1_DYMUX_9204
     );
   P2PT_1_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X46Y55",
+      LOC => "SLICE_X49Y45",
       PATHPULSE => 694 ps
     )
     port map (
       I => RESET,
-      O => P2PT_1_SRINV_9214
+      O => P2PT_1_SRINV_9202
     );
   P2PT_1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X46Y55",
+      LOC => "SLICE_X49Y45",
       PATHPULSE => 694 ps
     )
     port map (
       I => SYSCLK,
-      O => P2PT_1_CLKINV_9213
+      O => P2PT_1_CLKINV_9201
     );
   P2PT_1_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X46Y55",
+      LOC => "SLICE_X49Y45",
       PATHPULSE => 694 ps
     )
     port map (
       I => STP2PT,
-      O => P2PT_1_CEINV_9212
+      O => P2PT_1_CEINV_9200
     );
   P2PT_3_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X45Y54",
+      LOC => "SLICE_X51Y45",
       PATHPULSE => 694 ps
     )
     port map (
       I => P1PT_2_GYMUX_3121,
-      O => P2PT_3_DXMUX_9253
+      O => P2PT_3_DXMUX_9241
     );
   P2PT_3_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X45Y54",
+      LOC => "SLICE_X51Y45",
       PATHPULSE => 694 ps
     )
     port map (
       I => P1PT_2_FXMUX_3141,
-      O => P2PT_3_DYMUX_9244
+      O => P2PT_3_DYMUX_9232
     );
   P2PT_3_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X45Y54",
+      LOC => "SLICE_X51Y45",
       PATHPULSE => 694 ps
     )
     port map (
       I => RESET,
-      O => P2PT_3_SRINV_9242
+      O => P2PT_3_SRINV_9230
     );
   P2PT_3_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X45Y54",
+      LOC => "SLICE_X51Y45",
       PATHPULSE => 694 ps
     )
     port map (
       I => SYSCLK,
-      O => P2PT_3_CLKINV_9241
+      O => P2PT_3_CLKINV_9229
     );
   P2PT_3_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X45Y54",
+      LOC => "SLICE_X51Y45",
       PATHPULSE => 694 ps
     )
     port map (
       I => STP2PT,
-      O => P2PT_3_CEINV_9240
+      O => P2PT_3_CEINV_9228
     );
   P2PT_5_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X46Y56",
+      LOC => "SLICE_X50Y48",
       PATHPULSE => 694 ps
     )
     port map (
       I => P1PT_4_GYMUX_3184,
-      O => P2PT_5_DXMUX_9281
+      O => P2PT_5_DXMUX_9269
     );
   P2PT_5_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X46Y56",
+      LOC => "SLICE_X50Y48",
       PATHPULSE => 694 ps
     )
     port map (
       I => P1PT_4_FXMUX_3204,
-      O => P2PT_5_DYMUX_9272
+      O => P2PT_5_DYMUX_9260
     );
   P2PT_5_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X46Y56",
+      LOC => "SLICE_X50Y48",
       PATHPULSE => 694 ps
     )
     port map (
       I => RESET,
-      O => P2PT_5_SRINV_9270
+      O => P2PT_5_SRINV_9258
     );
   P2PT_5_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X46Y56",
+      LOC => "SLICE_X50Y48",
       PATHPULSE => 694 ps
     )
     port map (
       I => SYSCLK,
-      O => P2PT_5_CLKINV_9269
+      O => P2PT_5_CLKINV_9257
     );
   P2PT_5_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X46Y56",
+      LOC => "SLICE_X50Y48",
       PATHPULSE => 694 ps
     )
     port map (
       I => STP2PT,
-      O => P2PT_5_CEINV_9268
+      O => P2PT_5_CEINV_9256
     );
   P2PT_7_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y58",
+      LOC => "SLICE_X51Y47",
       PATHPULSE => 694 ps
     )
     port map (
       I => P1PT_6_GYMUX_3247,
-      O => P2PT_7_DXMUX_9309
+      O => P2PT_7_DXMUX_9297
     );
   P2PT_7_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X47Y58",
+      LOC => "SLICE_X51Y47",
       PATHPULSE => 694 ps
     )
     port map (
       I => P1PT_6_FXMUX_3267,
-      O => P2PT_7_DYMUX_9300
+      O => P2PT_7_DYMUX_9288
     );
   P2PT_7_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y58",
+      LOC => "SLICE_X51Y47",
       PATHPULSE => 694 ps
     )
     port map (
       I => RESET,
-      O => P2PT_7_SRINV_9298
+      O => P2PT_7_SRINV_9286
     );
   P2PT_7_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y58",
+      LOC => "SLICE_X51Y47",
       PATHPULSE => 694 ps
     )
     port map (
       I => SYSCLK,
-      O => P2PT_7_CLKINV_9297
+      O => P2PT_7_CLKINV_9285
     );
   P2PT_7_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X47Y58",
+      LOC => "SLICE_X51Y47",
       PATHPULSE => 694 ps
     )
     port map (
       I => STP2PT,
-      O => P2PT_7_CEINV_9296
+      O => P2PT_7_CEINV_9284
     );
   U119_Q0_DYMUX : X_INV
     generic map(
-      LOC => "SLICE_X41Y30",
+      LOC => "SLICE_X45Y37",
       PATHPULSE => 694 ps
     )
     port map (
       I => U119_Q0,
-      O => U119_Q0_DYMUX_9322
+      O => U119_Q0_DYMUX_9310
     );
   U119_Q0_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X41Y30",
+      LOC => "SLICE_X45Y37",
       PATHPULSE => 694 ps
     )
     port map (
       I => RDCLK,
-      O => U119_Q0_CLKINV_9320
+      O => U119_Q0_CLKINV_9308
     );
   M1_CDEQPD1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X49Y40",
+      LOC => "SLICE_X50Y43",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12196,28 +10666,16 @@ begin
     );
   M1_CDEQPD1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X49Y40",
+      LOC => "SLICE_X50Y43",
       PATHPULSE => 694 ps
     )
     port map (
       I => M1_U130_AB0_pack_1,
       O => M1_U130_AB0
     );
-  M1_U130_I_36_43 : X_LUT4
-    generic map(
-      INIT => X"9999",
-      LOC => "SLICE_X49Y40"
-    )
-    port map (
-      ADR0 => M1_CODE4,
-      ADR1 => DISP4,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => M1_U130_AB0_pack_1
-    );
   CODERWD_6_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X48Y43",
+      LOC => "SLICE_X48Y40",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12226,28 +10684,16 @@ begin
     );
   CODERWD_6_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X48Y43",
+      LOC => "SLICE_X48Y40",
       PATHPULSE => 694 ps
     )
     port map (
       I => CODERWD(5),
       O => CODERWD_5_0
     );
-  M1_U137_XLXI_116_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"2320",
-      LOC => "SLICE_X48Y43"
-    )
-    port map (
-      ADR0 => M1_CODE5,
-      ADR1 => M1_ENCODERWDMUX_0,
-      ADR2 => M1_CODERWDMUXSEL1_0,
-      ADR3 => BRWD2_0,
-      O => CODERWD(5)
-    );
   U101_I_M01_M0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y76",
+      LOC => "SLICE_X55Y72",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12256,28 +10702,16 @@ begin
     );
   U101_I_M01_M0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y76",
+      LOC => "SLICE_X55Y72",
       PATHPULSE => 694 ps
     )
     port map (
       I => U85_XLXN_2_pack_1,
       O => U85_XLXN_2
     );
-  U85_XLXI_2_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"CCAA",
-      LOC => "SLICE_X53Y76"
-    )
-    port map (
-      ADR0 => R1D0,
-      ADR1 => P2CODE0,
-      ADR2 => VCC,
-      ADR3 => DISPSEL0,
-      O => U85_XLXN_2_pack_1
-    );
   U102_I_M23_M0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y67",
+      LOC => "SLICE_X58Y88",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12286,28 +10720,16 @@ begin
     );
   U102_I_M23_M0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y67",
+      LOC => "SLICE_X58Y88",
       PATHPULSE => 694 ps
     )
     port map (
       I => U102_I_M23_M1,
       O => U102_I_M23_M1_0
     );
-  U102_I_M23_I_36_30 : X_LUT4
-    generic map(
-      INIT => X"C808",
-      LOC => "SLICE_X52Y67"
-    )
-    port map (
-      ADR0 => DISP15,
-      ADR1 => MC0,
-      ADR2 => DISPSEL0,
-      ADR3 => P2PT(7),
-      O => U102_I_M23_M1
-    );
   U102_I_M01_M0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y56",
+      LOC => "SLICE_X55Y58",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12316,70 +10738,34 @@ begin
     );
   U102_I_M01_M0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y56",
+      LOC => "SLICE_X55Y58",
       PATHPULSE => 694 ps
     )
     port map (
       I => U84_XLXN_14_pack_1,
       O => U84_XLXN_14
     );
-  U84_XLXI_4_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"AACC",
-      LOC => "SLICE_X53Y56"
-    )
-    port map (
-      ADR0 => P2CODE3,
-      ADR1 => R1D3,
-      ADR2 => VCC,
-      ADR3 => DISPSEL0,
-      O => U84_XLXN_14_pack_1
-    );
   U162_AB1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y9",
+      LOC => "SLICE_X55Y31",
       PATHPULSE => 694 ps
     )
     port map (
       I => U162_AB1,
       O => U162_AB1_0
     );
-  U162_I_36_42 : X_LUT4
-    generic map(
-      INIT => X"F00F",
-      LOC => "SLICE_X65Y9"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => VCC,
-      ADR2 => BRWD1_0,
-      ADR3 => DISP9,
-      O => U162_AB1
-    );
   U162_AB3_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y1",
+      LOC => "SLICE_X67Y16",
       PATHPULSE => 694 ps
     )
     port map (
       I => U162_AB3,
       O => U162_AB3_0
     );
-  U162_I_36_34 : X_LUT4
-    generic map(
-      INIT => X"9999",
-      LOC => "SLICE_X65Y1"
-    )
-    port map (
-      ADR0 => BRWD3_0,
-      ADR1 => DISP11,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => U162_AB3
-    );
   EQ2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X63Y1",
+      LOC => "SLICE_X66Y14",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12388,37 +10774,50 @@ begin
     );
   EQ2_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X63Y1",
+      LOC => "SLICE_X66Y14",
       PATHPULSE => 694 ps
     )
     port map (
       I => U162_AB0_pack_1,
       O => U162_AB0
     );
-  U162_I_36_43 : X_LUT4
+  U66_I_Q6_I_36_32 : X_LUT4
     generic map(
-      INIT => X"A5A5",
-      LOC => "SLICE_X63Y1"
+      INIT => X"6CCC",
+      LOC => "SLICE_X24Y72"
     )
     port map (
-      ADR0 => DISP8,
-      ADR1 => VCC,
-      ADR2 => BRWD0,
-      ADR3 => VCC,
-      O => U162_AB0_pack_1
+      ADR0 => U66_Q(5),
+      ADR1 => U66_Q(6),
+      ADR2 => U66_Q(4),
+      ADR3 => U66_T4,
+      O => U66_I_Q6_TQ
+    );
+  U66_I_Q6_I_36_35 : X_FF
+    generic map(
+      LOC => "SLICE_X24Y72",
+      INIT => '0'
+    )
+    port map (
+      I => U66_Q_6_DXMUX_9508,
+      CE => VCC,
+      CLK => U66_Q_6_CLKINV_9493,
+      SET => GND,
+      RST => GND,
+      O => U66_Q(6)
     );
   U66_Q_6_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X18Y64",
+      LOC => "SLICE_X24Y72",
       PATHPULSE => 694 ps
     )
     port map (
       I => U66_I_Q6_TQ,
-      O => U66_Q_6_DXMUX_9520
+      O => U66_Q_6_DXMUX_9508
     );
   U66_Q_6_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X18Y64",
+      LOC => "SLICE_X24Y72",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12427,37 +10826,74 @@ begin
     );
   U66_Q_6_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X18Y64",
+      LOC => "SLICE_X24Y72",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLOCK,
-      O => U66_Q_6_CLKINV_9505
+      O => U66_Q_6_CLKINV_9493
     );
   U66_I_36_10 : X_LUT4
     generic map(
       INIT => X"8000",
-      LOC => "SLICE_X18Y64"
+      LOC => "SLICE_X24Y72"
     )
     port map (
-      ADR0 => U66_Q(0),
+      ADR0 => U66_Q(3),
       ADR1 => U66_Q(2),
-      ADR2 => U66_Q(3),
+      ADR2 => U66_Q(0),
       ADR3 => U66_Q(1),
       O => U66_T4_pack_2
     );
+  U66_I_36_21 : X_LUT4
+    generic map(
+      INIT => X"8000",
+      LOC => "SLICE_X25Y72"
+    )
+    port map (
+      ADR0 => U66_T4,
+      ADR1 => U66_Q(4),
+      ADR2 => U66_Q(6),
+      ADR3 => U66_Q(5),
+      O => U66_T7_pack_2
+    );
+  U66_I_Q7_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"5A5A",
+      LOC => "SLICE_X25Y72"
+    )
+    port map (
+      ADR0 => U66_Q(7),
+      ADR1 => VCC,
+      ADR2 => U66_T7,
+      ADR3 => VCC,
+      O => U66_I_Q7_TQ
+    );
+  U66_I_Q7_I_36_35 : X_FF
+    generic map(
+      LOC => "SLICE_X25Y72",
+      INIT => '0'
+    )
+    port map (
+      I => U66_Q_7_DXMUX_9538,
+      CE => VCC,
+      CLK => U66_Q_7_CLKINV_9521,
+      SET => GND,
+      RST => GND,
+      O => U66_Q(7)
+    );
   U66_Q_7_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X18Y66",
+      LOC => "SLICE_X25Y72",
       PATHPULSE => 694 ps
     )
     port map (
       I => U66_I_Q7_TQ,
-      O => U66_Q_7_DXMUX_9550
+      O => U66_Q_7_DXMUX_9538
     );
   U66_Q_7_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X18Y66",
+      LOC => "SLICE_X25Y72",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12466,28 +10902,28 @@ begin
     );
   U66_Q_7_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X18Y66",
+      LOC => "SLICE_X25Y72",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLOCK,
-      O => U66_Q_7_CLKINV_9533
+      O => U66_Q_7_CLKINV_9521
     );
-  U66_I_36_21 : X_LUT4
+  U255 : X_LUT4
     generic map(
-      INIT => X"8000",
-      LOC => "SLICE_X18Y66"
+      INIT => X"FCFC",
+      LOC => "SLICE_X54Y17"
     )
     port map (
-      ADR0 => U66_Q(4),
-      ADR1 => U66_T4,
-      ADR2 => U66_Q(5),
-      ADR3 => U66_Q(6),
-      O => U66_T7_pack_2
+      ADR0 => VCC,
+      ADR1 => P2STR2,
+      ADR2 => XLXN_2340,
+      ADR3 => VCC,
+      O => P2ADD
     );
   P2ADD_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y14",
+      LOC => "SLICE_X54Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12496,7 +10932,7 @@ begin
     );
   P2ADD_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y14",
+      LOC => "SLICE_X54Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12505,58 +10941,65 @@ begin
     );
   U254_I_36_38 : X_LUT4
     generic map(
-      INIT => X"A0C0",
-      LOC => "SLICE_X53Y14"
+      INIT => X"E020",
+      LOC => "SLICE_X54Y17"
     )
     port map (
-      ADR0 => DIGEQCDADD,
-      ADR1 => XLXN_2346_0,
+      ADR0 => XLXN_2346_0,
+      ADR1 => ACTION4_0,
       ADR2 => P2STR3,
-      ADR3 => ACTION4_0,
+      ADR3 => DIGEQCDADD,
       O => XLXN_2340_pack_1
     );
-  M2_U197_LTB_XUSED : X_BUF
+  U66_I_36_25 : X_LUT4
     generic map(
-      LOC => "SLICE_X58Y3",
-      PATHPULSE => 694 ps
+      INIT => X"8000",
+      LOC => "SLICE_X27Y74"
     )
     port map (
-      I => M2_U197_LTB,
-      O => M2_U197_LTB_0
+      ADR0 => U66_Q(14),
+      ADR1 => U66_Q(12),
+      ADR2 => U66_Q(13),
+      ADR3 => U66_T12,
+      O => U66_T15_pack_2
     );
-  M2_U197_LTB_YUSED : X_BUF
+  U66_I_Q15_I_36_32 : X_LUT4
     generic map(
-      LOC => "SLICE_X58Y3",
-      PATHPULSE => 694 ps
+      INIT => X"3C3C",
+      LOC => "SLICE_X27Y74"
     )
     port map (
-      I => M2_XLXN_1979_pack_1,
-      O => M2_XLXN_1979
+      ADR0 => VCC,
+      ADR1 => QA(15),
+      ADR2 => U66_T15,
+      ADR3 => VCC,
+      O => U66_I_Q15_TQ
     );
-  M2_U196_XLXI_117_I_36_38 : X_LUT4
+  U66_I_Q15_I_36_35 : X_FF
     generic map(
-      INIT => X"EE22",
-      LOC => "SLICE_X58Y3"
+      LOC => "SLICE_X27Y74",
+      INIT => '0'
     )
     port map (
-      ADR0 => DISP11,
-      ADR1 => M2_PD2PD3LT_0,
-      ADR2 => VCC,
-      ADR3 => DISP15,
-      O => M2_XLXN_1979_pack_1
+      I => QA_15_DXMUX_9592,
+      CE => VCC,
+      CLK => QA_15_CLKINV_9575,
+      SET => GND,
+      RST => GND,
+      O => QA(15)
     );
   QA_15_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X22Y67",
+      LOC => "SLICE_X27Y74",
       PATHPULSE => 694 ps
     )
     port map (
       I => U66_I_Q15_TQ,
-      O => QA_15_DXMUX_9628
+      O => QA_15_DXMUX_9592
     );
   QA_15_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X22Y67",
+      LOC => "SLICE_X27Y74",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12565,37 +11008,62 @@ begin
     );
   QA_15_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X22Y67",
+      LOC => "SLICE_X27Y74",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLOCK,
-      O => QA_15_CLKINV_9611
+      O => QA_15_CLKINV_9575
     );
-  U66_I_36_25 : X_LUT4
+  U66_I_36_26 : X_LUT4
     generic map(
       INIT => X"8000",
-      LOC => "SLICE_X22Y67"
+      LOC => "SLICE_X27Y76"
     )
     port map (
-      ADR0 => U66_Q(13),
-      ADR1 => U66_Q(14),
-      ADR2 => U66_Q(12),
-      ADR3 => U66_T12,
-      O => U66_T15_pack_2
+      ADR0 => U66_T8,
+      ADR1 => U66_Q(8),
+      ADR2 => U66_Q(9),
+      ADR3 => U66_Q(10),
+      O => U66_T11_pack_2
+    );
+  U66_I_Q11_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"5A5A",
+      LOC => "SLICE_X27Y76"
+    )
+    port map (
+      ADR0 => U66_Q(11),
+      ADR1 => VCC,
+      ADR2 => U66_T11,
+      ADR3 => VCC,
+      O => U66_I_Q11_TQ
+    );
+  U66_I_Q11_I_36_35 : X_FF
+    generic map(
+      LOC => "SLICE_X27Y76",
+      INIT => '0'
+    )
+    port map (
+      I => U66_Q_11_DXMUX_9622,
+      CE => VCC,
+      CLK => U66_Q_11_CLKINV_9605,
+      SET => GND,
+      RST => GND,
+      O => U66_Q(11)
     );
   U66_Q_11_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X22Y66",
+      LOC => "SLICE_X27Y76",
       PATHPULSE => 694 ps
     )
     port map (
       I => U66_I_Q11_TQ,
-      O => U66_Q_11_DXMUX_9658
+      O => U66_Q_11_DXMUX_9622
     );
   U66_Q_11_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X22Y66",
+      LOC => "SLICE_X27Y76",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12604,55 +11072,55 @@ begin
     );
   U66_Q_11_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X22Y66",
+      LOC => "SLICE_X27Y76",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLOCK,
-      O => U66_Q_11_CLKINV_9641
+      O => U66_Q_11_CLKINV_9605
     );
-  U66_I_36_26 : X_LUT4
+  U158_XLXI_116_I_36_38 : X_LUT4
     generic map(
-      INIT => X"8000",
-      LOC => "SLICE_X22Y66"
+      INIT => X"E2E2",
+      LOC => "SLICE_X66Y19"
     )
     port map (
-      ADR0 => U66_Q(8),
-      ADR1 => U66_T8,
-      ADR2 => U66_Q(9),
-      ADR3 => U66_Q(10),
-      O => U66_T11_pack_2
+      ADR0 => RD2_0,
+      ADR1 => ADD_0,
+      ADR2 => NPSELDISP2,
+      ADR3 => VCC,
+      O => BRWD2
     );
   DISP14_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y15",
+      LOC => "SLICE_X66Y19",
       PATHPULSE => 694 ps
     )
     port map (
-      I => DISP14_FXMUX_9692,
-      O => DISP14_DXMUX_9693
+      I => DISP14_FXMUX_9656,
+      O => DISP14_DXMUX_9657
     );
   DISP14_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y15",
+      LOC => "SLICE_X66Y19",
       PATHPULSE => 694 ps
     )
     port map (
-      I => DISP14_FXMUX_9692,
+      I => DISP14_FXMUX_9656,
       O => BRWD2_0
     );
   DISP14_FXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X64Y15",
+      LOC => "SLICE_X66Y19",
       PATHPULSE => 694 ps
     )
     port map (
       I => BRWD2,
-      O => DISP14_FXMUX_9692
+      O => DISP14_FXMUX_9656
     );
   DISP14_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y15",
+      LOC => "SLICE_X66Y19",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12661,25 +11129,37 @@ begin
     );
   DISP14_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y15",
+      LOC => "SLICE_X66Y19",
       PATHPULSE => 694 ps
     )
     port map (
       I => SYSCLK,
-      O => DISP14_CLKINV_9675
+      O => DISP14_CLKINV_9639
     );
   DISP14_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X64Y15",
+      LOC => "SLICE_X66Y19",
       PATHPULSE => 694 ps
     )
     port map (
       I => STDISP3_0,
-      O => DISP14_CEINV_9674
+      O => DISP14_CEINV_9638
+    );
+  U156_XLXI_5_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"ACAC",
+      LOC => "SLICE_X66Y19"
+    )
+    port map (
+      ADR0 => U156_XLXN_2_0,
+      ADR1 => U156_XLXN_1_0,
+      ADR2 => ENCPSEL1_0,
+      ADR3 => VCC,
+      O => NPSELDISP2_pack_1
     );
   XLXN_2309_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y11",
+      LOC => "SLICE_X61Y2",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12688,28 +11168,16 @@ begin
     );
   XLXN_2309_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y11",
+      LOC => "SLICE_X61Y2",
       PATHPULSE => 694 ps
     )
     port map (
       I => XLXN_2304_pack_1,
       O => XLXN_2304
     );
-  U244_XLXI_5_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"FC0C",
-      LOC => "SLICE_X55Y11"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => U244_XLXN_1_0,
-      ADR2 => PLAYPOS1_0,
-      ADR3 => U244_XLXN_2_0,
-      O => XLXN_2304_pack_1
-    );
   U191_GE6_7_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y55",
+      LOC => "SLICE_X51Y48",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12718,28 +11186,16 @@ begin
     );
   U191_GE6_7_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y55",
+      LOC => "SLICE_X51Y48",
       PATHPULSE => 694 ps
     )
     port map (
       I => PT(6),
       O => PT_6_0
     );
-  U178_XLXI_116_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"FC0C",
-      LOC => "SLICE_X45Y55"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => P1PT(6),
-      ADR2 => STR2,
-      ADR3 => P2PT(6),
-      O => PT(6)
-    );
   M2_U197_GE2_3_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X58Y2",
+      LOC => "SLICE_X64Y12",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12748,49 +11204,61 @@ begin
     );
   M2_U197_GE2_3_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X58Y2",
+      LOC => "SLICE_X64Y12",
       PATHPULSE => 694 ps
     )
     port map (
       I => M2_U197_EQ_3_pack_1,
       O => M2_U197_EQ_3
     );
-  M2_U197_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"C939",
-      LOC => "SLICE_X58Y2"
-    )
-    port map (
-      ADR0 => DISP3,
-      ADR1 => M2_XLXN_1979,
-      ADR2 => M2_PD0PD1LT_0,
-      ADR3 => DISP7,
-      O => M2_U197_EQ_3_pack_1
-    );
   RD1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X67Y49",
+      LOC => "SLICE_X67Y48",
       PATHPULSE => 694 ps
     )
     port map (
       I => RD1,
       O => RD1_0
     );
-  U125_XLXI_115_I_36_38 : X_LUT4
+  M2_XLXN_1979_XUSED : X_BUF
     generic map(
-      INIT => X"EC4C",
-      LOC => "SLICE_X67Y49"
+      LOC => "SLICE_X67Y14",
+      PATHPULSE => 694 ps
     )
     port map (
-      ADR0 => STR2,
-      ADR1 => R0D1,
-      ADR2 => XLXN_1347,
-      ADR3 => TRD1,
-      O => RD1
+      I => M2_XLXN_1979,
+      O => M2_XLXN_1979_0
+    );
+  M2_XLXN_1979_YUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X67Y14",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => M2_PD2PD3LT_pack_1,
+      O => M2_PD2PD3LT
+    );
+  M2_U194_GTB_XUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X64Y14",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => M2_U194_GTB,
+      O => M2_U194_GTB_0
+    );
+  M2_U194_GTB_YUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X64Y14",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => M2_U194_GE2_3_pack_3,
+      O => M2_U194_GE2_3
     );
   M2_U194_LTB_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y3",
+      LOC => "SLICE_X67Y23",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12799,58 +11267,16 @@ begin
     );
   M2_U194_LTB_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y3",
+      LOC => "SLICE_X67Y23",
       PATHPULSE => 694 ps
     )
     port map (
       I => M2_U194_LE2_3_pack_3,
       O => M2_U194_LE2_3
     );
-  M2_U194_I_36_15 : X_LUT4
-    generic map(
-      INIT => X"0802",
-      LOC => "SLICE_X65Y3"
-    )
-    port map (
-      ADR0 => DISP14,
-      ADR1 => DISP11,
-      ADR2 => DISP10,
-      ADR3 => DISP15,
-      O => M2_U194_LE2_3_pack_3
-    );
-  M2_PD2PD3LT_XUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X62Y3",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => M2_PD2PD3LT,
-      O => M2_PD2PD3LT_0
-    );
-  M2_PD2PD3LT_YUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X62Y3",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => M2_U194_GTB_pack_1,
-      O => M2_U194_GTB
-    );
-  M2_U194_I_36_19 : X_LUT4
-    generic map(
-      INIT => X"BABA",
-      LOC => "SLICE_X62Y3"
-    )
-    port map (
-      ADR0 => M2_U194_GE2_3_0,
-      ADR1 => DISP15,
-      ADR2 => DISP11,
-      ADR3 => VCC,
-      O => M2_U194_GTB_pack_1
-    );
   U228_AB2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y45",
+      LOC => "SLICE_X53Y39",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12859,28 +11285,16 @@ begin
     );
   U228_AB2_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X52Y45",
+      LOC => "SLICE_X53Y39",
       PATHPULSE => 694 ps
     )
     port map (
       I => P2SELCD2_pack_1,
       O => P2SELCD2
     );
-  M4_U220_XLXI_116_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"3022",
-      LOC => "SLICE_X52Y45"
-    )
-    port map (
-      ADR0 => P2CODE2,
-      ADR1 => P2STR1,
-      ADR2 => P2CODE6,
-      ADR3 => P2STR0,
-      O => P2SELCD2_pack_1
-    );
   U159_AB2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y48",
+      LOC => "SLICE_X67Y40",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12889,49 +11303,25 @@ begin
     );
   U159_AB2_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y48",
+      LOC => "SLICE_X67Y40",
       PATHPULSE => 694 ps
     )
     port map (
       I => U82_XLXN_1,
       O => U82_XLXN_1_0
     );
-  U82_XLXI_1_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"E2E2",
-      LOC => "SLICE_X64Y48"
-    )
-    port map (
-      ADR0 => DISP6,
-      ADR1 => DISPSEL0,
-      ADR2 => P1PT(6),
-      ADR3 => VCC,
-      O => U82_XLXN_1
-    );
   M1_U127_AB2_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X53Y43",
+      LOC => "SLICE_X50Y34",
       PATHPULSE => 694 ps
     )
     port map (
       I => M1_U127_AB2,
       O => M1_U127_AB2_0
     );
-  M1_U127_I_36_33 : X_LUT4
-    generic map(
-      INIT => X"9999",
-      LOC => "SLICE_X53Y43"
-    )
-    port map (
-      ADR0 => M1_CODE2,
-      ADR1 => BRWD2_0,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => M1_U127_AB2
-    );
   M1_CDEQBRWD0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X54Y41",
+      LOC => "SLICE_X51Y34",
       PATHPULSE => 694 ps
     )
     port map (
@@ -12940,100 +11330,88 @@ begin
     );
   M1_CDEQBRWD0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X54Y41",
+      LOC => "SLICE_X51Y34",
       PATHPULSE => 694 ps
     )
     port map (
       I => M1_U127_AB0_pack_1,
       O => M1_U127_AB0
     );
-  M1_U127_I_36_43 : X_LUT4
-    generic map(
-      INIT => X"9999",
-      LOC => "SLICE_X54Y41"
-    )
-    port map (
-      ADR0 => M1_CODE0,
-      ADR1 => BRWD0,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => M1_U127_AB0_pack_1
-    );
   LRWDRDPOSSEL1_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X55Y9",
+      LOC => "SLICE_X52Y4",
       PATHPULSE => 694 ps
     )
     port map (
       I => P2STR1,
-      O => LRWDRDPOSSEL1_DXMUX_9937
+      O => LRWDRDPOSSEL1_DXMUX_9925
     );
   LRWDRDPOSSEL1_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X55Y9",
+      LOC => "SLICE_X52Y4",
       PATHPULSE => 694 ps
     )
     port map (
       I => P2STR0,
-      O => LRWDRDPOSSEL1_DYMUX_9928
+      O => LRWDRDPOSSEL1_DYMUX_9916
     );
   LRWDRDPOSSEL1_SRINV : X_BUF
     generic map(
-      LOC => "SLICE_X55Y9",
+      LOC => "SLICE_X52Y4",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLEARP2FFS_0,
-      O => LRWDRDPOSSEL1_SRINV_9926
+      O => LRWDRDPOSSEL1_SRINV_9914
     );
   LRWDRDPOSSEL1_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X55Y9",
+      LOC => "SLICE_X52Y4",
       PATHPULSE => 694 ps
     )
     port map (
       I => P2CLK,
-      O => LRWDRDPOSSEL1_CLKINV_9925
+      O => LRWDRDPOSSEL1_CLKINV_9913
     );
   LRWDRDPOSSEL1_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X55Y9",
+      LOC => "SLICE_X52Y4",
       PATHPULSE => 694 ps
     )
     port map (
       I => STNLRWDRD_0,
-      O => LRWDRDPOSSEL1_CEINV_9924
+      O => LRWDRDPOSSEL1_CEINV_9912
     );
   LRWDRDADD_DYMUX : X_BUF
     generic map(
-      LOC => "SLICE_X48Y15",
+      LOC => "SLICE_X52Y12",
       PATHPULSE => 694 ps
     )
     port map (
       I => P2STR2,
-      O => LRWDRDADD_DYMUX_9954
+      O => LRWDRDADD_DYMUX_9942
     );
   LRWDRDADD_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X48Y15",
+      LOC => "SLICE_X52Y12",
       PATHPULSE => 694 ps
     )
     port map (
       I => P2CLK,
-      O => LRWDRDADD_CLKINV_9951
+      O => LRWDRDADD_CLKINV_9939
     );
   LRWDRDADD_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X48Y15",
+      LOC => "SLICE_X52Y12",
       PATHPULSE => 694 ps
     )
     port map (
       I => STNLRWDRD_0,
-      O => LRWDRDADD_CEINV_9950
+      O => LRWDRDADD_CEINV_9938
     );
   U103_I_M23_M0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y69",
+      LOC => "SLICE_X66Y60",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13042,28 +11420,16 @@ begin
     );
   U103_I_M23_M0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y69",
+      LOC => "SLICE_X66Y60",
       PATHPULSE => 694 ps
     )
     port map (
       I => U103_I_M23_M1,
       O => U103_I_M23_M1_0
     );
-  U103_I_M23_I_36_30 : X_LUT4
-    generic map(
-      INIT => X"E400",
-      LOC => "SLICE_X55Y69"
-    )
-    port map (
-      ADR0 => DISPSEL0,
-      ADR1 => DISP14,
-      ADR2 => P2PT(6),
-      ADR3 => MC0,
-      O => U103_I_M23_M1
-    );
   U100_I_M01_M0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y64",
+      LOC => "SLICE_X54Y60",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13072,55 +11438,43 @@ begin
     );
   U100_I_M01_M0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y64",
+      LOC => "SLICE_X54Y60",
       PATHPULSE => 694 ps
     )
     port map (
       I => U85_XLXN_14_pack_1,
       O => U85_XLXN_14
     );
-  U85_XLXI_4_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"CCF0",
-      LOC => "SLICE_X55Y64"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => P2CODE1,
-      ADR2 => R1D1,
-      ADR3 => DISPSEL0,
-      O => U85_XLXN_14_pack_1
-    );
   LARGESTRWD_3_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X48Y30",
+      LOC => "SLICE_X51Y26",
       PATHPULSE => 694 ps
     )
     port map (
-      I => LARGESTRWD_3_FXMUX_10040,
-      O => LARGESTRWD_3_DXMUX_10041
+      I => LARGESTRWD_3_FXMUX_10028,
+      O => LARGESTRWD_3_DXMUX_10029
     );
   LARGESTRWD_3_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X48Y30",
+      LOC => "SLICE_X51Y26",
       PATHPULSE => 694 ps
     )
     port map (
-      I => LARGESTRWD_3_FXMUX_10040,
+      I => LARGESTRWD_3_FXMUX_10028,
       O => RWD_3_0
     );
   LARGESTRWD_3_FXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X48Y30",
+      LOC => "SLICE_X51Y26",
       PATHPULSE => 694 ps
     )
     port map (
       I => RWD_3_Q,
-      O => LARGESTRWD_3_FXMUX_10040
+      O => LARGESTRWD_3_FXMUX_10028
     );
   LARGESTRWD_3_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X48Y30",
+      LOC => "SLICE_X51Y26",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13129,25 +11483,25 @@ begin
     );
   LARGESTRWD_3_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X48Y30",
+      LOC => "SLICE_X51Y26",
       PATHPULSE => 694 ps
     )
     port map (
       I => P2CLK,
-      O => LARGESTRWD_3_CLKINV_10023
+      O => LARGESTRWD_3_CLKINV_10011
     );
   LARGESTRWD_3_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X48Y30",
+      LOC => "SLICE_X51Y26",
       PATHPULSE => 694 ps
     )
     port map (
       I => STNLRWDRD_0,
-      O => LARGESTRWD_3_CEINV_10022
+      O => LARGESTRWD_3_CEINV_10010
     );
   U103_I_M01_M1_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X54Y61",
+      LOC => "SLICE_X67Y58",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13156,49 +11510,25 @@ begin
     );
   U103_I_M01_M1_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X54Y61",
+      LOC => "SLICE_X67Y58",
       PATHPULSE => 694 ps
     )
     port map (
       I => U82_XLXN_2_pack_1,
       O => U82_XLXN_2
     );
-  U82_XLXI_2_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"FC0C",
-      LOC => "SLICE_X54Y61"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => R2D2,
-      ADR2 => DISPSEL0,
-      ADR3 => P2CODE6,
-      O => U82_XLXN_2_pack_1
-    );
   M2_XLXN_2016_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X64Y17",
+      LOC => "SLICE_X67Y25",
       PATHPULSE => 694 ps
     )
     port map (
       I => M2_XLXN_2016,
       O => M2_XLXN_2016_0
     );
-  M2_U196_XLXI_114_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"EE22",
-      LOC => "SLICE_X64Y17"
-    )
-    port map (
-      ADR0 => DISP8,
-      ADR1 => M2_PD2PD3LT_0,
-      ADR2 => VCC,
-      ADR3 => DISP12,
-      O => M2_XLXN_2016
-    );
   U183_EQ2_3_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y30",
+      LOC => "SLICE_X50Y28",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13207,28 +11537,34 @@ begin
     );
   U183_EQ2_3_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y30",
+      LOC => "SLICE_X50Y28",
       PATHPULSE => 694 ps
     )
     port map (
       I => U183_GE2_3_pack_3,
       O => U183_GE2_3
     );
-  U183_I_36_12 : X_LUT4
+  U191_GTB_XUSED : X_BUF
     generic map(
-      INIT => X"0900",
-      LOC => "SLICE_X45Y30"
+      LOC => "SLICE_X50Y55",
+      PATHPULSE => 694 ps
     )
     port map (
-      ADR0 => LARGESTRWD(3),
-      ADR1 => RWD_3_0,
-      ADR2 => LARGESTRWD(2),
-      ADR3 => RWD_2_0,
-      O => U183_GE2_3_pack_3
+      I => U191_GTB,
+      O => U191_GTB_0
+    );
+  U191_GTB_YUSED : X_BUF
+    generic map(
+      LOC => "SLICE_X50Y55",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => U191_GTC,
+      O => U191_GTC_0
     );
   U191_EQ2_3_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X44Y52",
+      LOC => "SLICE_X51Y52",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13237,28 +11573,16 @@ begin
     );
   U191_EQ2_3_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X44Y52",
+      LOC => "SLICE_X51Y52",
       PATHPULSE => 694 ps
     )
     port map (
       I => U191_GE2_3_pack_3,
       O => U191_GE2_3
     );
-  U191_I_36_12 : X_LUT4
-    generic map(
-      INIT => X"4100",
-      LOC => "SLICE_X44Y52"
-    )
-    port map (
-      ADR0 => P1PT(2),
-      ADR1 => P1PT(3),
-      ADR2 => P2PT(3),
-      ADR3 => P2PT(2),
-      O => U191_GE2_3_pack_3
-    );
   U191_GTA_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y53",
+      LOC => "SLICE_X50Y50",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13267,28 +11591,16 @@ begin
     );
   U191_GTA_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y53",
+      LOC => "SLICE_X50Y50",
       PATHPULSE => 694 ps
     )
     port map (
       I => U191_EQ6_7_pack_1,
       O => U191_EQ6_7
     );
-  U191_I_36_22 : X_LUT4
-    generic map(
-      INIT => X"0401",
-      LOC => "SLICE_X45Y53"
-    )
-    port map (
-      ADR0 => U191_LE6_7_0,
-      ADR1 => P2PT(7),
-      ADR2 => U191_GE6_7_0,
-      ADR3 => P1PT(7),
-      O => U191_EQ6_7_pack_1
-    );
   U191_EQ4_5_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y51",
+      LOC => "SLICE_X50Y54",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13297,28 +11609,16 @@ begin
     );
   U191_EQ4_5_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y51",
+      LOC => "SLICE_X50Y54",
       PATHPULSE => 694 ps
     )
     port map (
       I => U191_GE4_5_pack_3,
       O => U191_GE4_5
     );
-  U191_I_36_31 : X_LUT4
-    generic map(
-      INIT => X"0082",
-      LOC => "SLICE_X45Y51"
-    )
-    port map (
-      ADR0 => P2PT(4),
-      ADR1 => P2PT(5),
-      ADR2 => P1PT(5),
-      ADR3 => P1PT(4),
-      O => U191_GE4_5_pack_3
-    );
   XLXN_2274_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X48Y25",
+      LOC => "SLICE_X53Y15",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13327,28 +11627,16 @@ begin
     );
   XLXN_2274_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X48Y25",
+      LOC => "SLICE_X53Y15",
       PATHPULSE => 694 ps
     )
     port map (
       I => P2PTGTP1PT_pack_1,
       O => P2PTGTP1PT
     );
-  U191_I_36_40 : X_LUT4
-    generic map(
-      INIT => X"FFFE",
-      LOC => "SLICE_X48Y25"
-    )
-    port map (
-      ADR0 => U191_GTD_0,
-      ADR1 => U191_GTB_0,
-      ADR2 => U191_GTA_0,
-      ADR3 => U191_GTC_0,
-      O => P2PTGTP1PT_pack_1
-    );
   U170_XLXN_13_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y23",
+      LOC => "SLICE_X65Y20",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13357,28 +11645,16 @@ begin
     );
   U170_XLXN_13_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y23",
+      LOC => "SLICE_X65Y20",
       PATHPULSE => 694 ps
     )
     port map (
       I => EQ1_pack_1,
       O => EQ1
     );
-  U159_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"8000",
-      LOC => "SLICE_X65Y23"
-    )
-    port map (
-      ADR0 => U159_AB1_0,
-      ADR1 => U159_AB2_0,
-      ADR2 => U159_AB3_0,
-      ADR3 => U159_AB0_0,
-      O => EQ1_pack_1
-    );
   U183_GTC_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X43Y26",
+      LOC => "SLICE_X49Y28",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13387,28 +11663,16 @@ begin
     );
   U183_GTC_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X43Y26",
+      LOC => "SLICE_X49Y28",
       PATHPULSE => 694 ps
     )
     port map (
       I => U183_GT4_5_pack_1,
       O => U183_GT4_5
     );
-  U183_I_36_33 : X_LUT4
-    generic map(
-      INIT => X"2F02",
-      LOC => "SLICE_X43Y26"
-    )
-    port map (
-      ADR0 => RWD_4_0,
-      ADR1 => LARGESTRWD(4),
-      ADR2 => LARGESTRWD(5),
-      ADR3 => U173_XLXI_6_M1,
-      O => U183_GT4_5_pack_1
-    );
   TESTP2SEL0_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X51Y28",
+      LOC => "SLICE_X52Y28",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13417,58 +11681,34 @@ begin
     );
   TESTP2SEL0_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X51Y28",
+      LOC => "SLICE_X52Y28",
       PATHPULSE => 694 ps
     )
     port map (
       I => P2S4_pack_1,
       O => P2S4
     );
-  U271_I_36_33 : X_LUT4
-    generic map(
-      INIT => X"0002",
-      LOC => "SLICE_X51Y28"
-    )
-    port map (
-      ADR0 => P2STR2,
-      ADR1 => P2STR3,
-      ADR2 => P2STR1,
-      ADR3 => P2STR0,
-      O => P2S4_pack_1
-    );
   U191_GTD_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X44Y48",
+      LOC => "SLICE_X50Y41",
       PATHPULSE => 694 ps
     )
     port map (
       I => U191_GTD,
       O => U191_GTD_0
     );
-  U191_I_36_34 : X_LUT4
-    generic map(
-      INIT => X"08CE",
-      LOC => "SLICE_X44Y48"
-    )
-    port map (
-      ADR0 => P2PT(6),
-      ADR1 => P2PT(7),
-      ADR2 => P1PT(6),
-      ADR3 => P1PT(7),
-      O => U191_GTD
-    );
   Q_6_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X39Y62",
+      LOC => "SLICE_X43Y68",
       PATHPULSE => 694 ps
     )
     port map (
       I => U67_I_Q6_TQ,
-      O => Q_6_DXMUX_10315
+      O => Q_6_DXMUX_10327
     );
   Q_6_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X39Y62",
+      LOC => "SLICE_X43Y68",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13477,58 +11717,34 @@ begin
     );
   Q_6_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X39Y62",
+      LOC => "SLICE_X43Y68",
       PATHPULSE => 694 ps
     )
     port map (
       I => QA(15),
-      O => Q_6_CLKINV_10300
-    );
-  U67_I_36_10 : X_LUT4
-    generic map(
-      INIT => X"8000",
-      LOC => "SLICE_X39Y62"
-    )
-    port map (
-      ADR0 => U67_Q_2_Q,
-      ADR1 => Q_1_Q,
-      ADR2 => Q_3_Q,
-      ADR3 => Q_0_Q,
-      O => U67_T4_pack_2
+      O => Q_6_CLKINV_10312
     );
   U183_GE6_7_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X45Y28",
+      LOC => "SLICE_X48Y31",
       PATHPULSE => 694 ps
     )
     port map (
       I => U183_GE6_7,
       O => U183_GE6_7_0
     );
-  U183_I_36_29 : X_LUT4
-    generic map(
-      INIT => X"4444",
-      LOC => "SLICE_X45Y28"
-    )
-    port map (
-      ADR0 => LARGESTRWD(6),
-      ADR1 => RWD_6_Q,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => U183_GE6_7
-    );
   Q_7_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X38Y62",
+      LOC => "SLICE_X42Y68",
       PATHPULSE => 694 ps
     )
     port map (
       I => U67_I_Q7_TQ,
-      O => Q_7_DXMUX_10357
+      O => Q_7_DXMUX_10369
     );
   Q_7_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X38Y62",
+      LOC => "SLICE_X42Y68",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13537,28 +11753,16 @@ begin
     );
   Q_7_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X38Y62",
+      LOC => "SLICE_X42Y68",
       PATHPULSE => 694 ps
     )
     port map (
       I => QA(15),
-      O => Q_7_CLKINV_10340
-    );
-  U67_I_36_21 : X_LUT4
-    generic map(
-      INIT => X"8000",
-      LOC => "SLICE_X38Y62"
-    )
-    port map (
-      ADR0 => U67_Q_4_Q,
-      ADR1 => U67_T4,
-      ADR2 => Q_6_Q,
-      ADR3 => Q_5_Q,
-      O => U67_T7_pack_2
+      O => Q_7_CLKINV_10352
     );
   RWDGTRDLARGEST_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X43Y28",
+      LOC => "SLICE_X48Y28",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13567,49 +11771,16 @@ begin
     );
   RWDGTRDLARGEST_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X43Y28",
+      LOC => "SLICE_X48Y28",
       PATHPULSE => 694 ps
     )
     port map (
       I => U183_GTA_pack_1,
       O => U183_GTA
     );
-  U183_I_36_37 : X_LUT4
-    generic map(
-      INIT => X"8000",
-      LOC => "SLICE_X43Y28"
-    )
-    port map (
-      ADR0 => U183_EQ4_5,
-      ADR1 => U183_EQ2_3_0,
-      ADR2 => U183_EQ6_7_0,
-      ADR3 => U183_GT0_1_0,
-      O => U183_GTA_pack_1
-    );
-  U191_GTB_XUSED : X_BUF
-    generic map(
-      LOC => "SLICE_X45Y50",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => U191_GTB,
-      O => U191_GTB_0
-    );
-  U191_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"8080",
-      LOC => "SLICE_X45Y50"
-    )
-    port map (
-      ADR0 => U191_EQ4_5_0,
-      ADR1 => U191_EQ6_7,
-      ADR2 => U191_GT2_3_0,
-      ADR3 => VCC,
-      O => U191_GTB
-    );
   XLXN_197_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y80",
+      LOC => "SLICE_X54Y77",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13618,28 +11789,16 @@ begin
     );
   XLXN_197_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X55Y80",
+      LOC => "SLICE_X54Y77",
       PATHPULSE => 694 ps
     )
     port map (
       I => XLXN_199,
       O => XLXN_199_0
     );
-  U91_I_36_31 : X_LUT4
-    generic map(
-      INIT => X"00C4",
-      LOC => "SLICE_X55Y80"
-    )
-    port map (
-      ADR0 => LPTOVF,
-      ADR1 => MC1,
-      ADR2 => Q_7_Q,
-      ADR3 => MC0,
-      O => XLXN_199
-    );
   DISP15_DXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X65Y15",
+      LOC => "SLICE_X64Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13648,7 +11807,7 @@ begin
     );
   DISP15_XUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y15",
+      LOC => "SLICE_X64Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13657,7 +11816,7 @@ begin
     );
   DISP15_FXMUX : X_BUF
     generic map(
-      LOC => "SLICE_X65Y15",
+      LOC => "SLICE_X64Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13666,7 +11825,7 @@ begin
     );
   DISP15_YUSED : X_BUF
     generic map(
-      LOC => "SLICE_X65Y15",
+      LOC => "SLICE_X64Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13675,7 +11834,7 @@ begin
     );
   DISP15_CLKINV : X_BUF
     generic map(
-      LOC => "SLICE_X65Y15",
+      LOC => "SLICE_X64Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -13684,28 +11843,152 @@ begin
     );
   DISP15_CEINV : X_BUF
     generic map(
-      LOC => "SLICE_X65Y15",
+      LOC => "SLICE_X64Y21",
       PATHPULSE => 694 ps
     )
     port map (
       I => STDISP3_0,
       O => DISP15_CEINV_10433
     );
-  U181_I_36_228 : X_LUT4
+  U182_I_36_222 : X_LUT4
     generic map(
-      INIT => X"6666",
-      LOC => "SLICE_X47Y54"
+      INIT => X"33CC",
+      LOC => "SLICE_X51Y41"
     )
     port map (
-      ADR0 => PT_0_0,
-      ADR1 => TOTRWD(0),
+      ADR0 => VCC,
+      ADR1 => RWD_6_Q,
+      ADR2 => VCC,
+      ADR3 => CODERWD_6_0,
+      O => U182_I6
+    );
+  U288_I_36_240 : X_LUT4
+    generic map(
+      INIT => X"6666",
+      LOC => "SLICE_X67Y20"
+    )
+    port map (
+      ADR0 => DISP13,
+      ADR1 => RD1_0,
       ADR2 => VCC,
       ADR3 => VCC,
-      O => U181_I0
+      O => U288_I1
+    );
+  P1SEL3_NP2B_IFF_IMUX : X_BUF
+    generic map(
+      LOC => "IPAD112",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => P1SEL3_NP2B_INBUF,
+      O => P1SEL(3)
+    );
+  P1SEL2_NP2B_IFF_IMUX : X_BUF
+    generic map(
+      LOC => "IPAD108",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => P1SEL2_NP2B_INBUF,
+      O => P1SEL(2)
+    );
+  U100_I_M23_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"FAFA",
+      LOC => "SLICE_X66Y74"
+    )
+    port map (
+      ADR0 => U100_I_M23_M1_0,
+      ADR1 => VCC,
+      ADR2 => U100_I_M23_M0_0,
+      ADR3 => VCC,
+      O => U100_M23
+    );
+  U113_I_Q0 : X_FF
+    generic map(
+      LOC => "SLICE_X52Y20",
+      INIT => '0'
+    )
+    port map (
+      I => DISP12_DYMUX_5158,
+      CE => DISP12_CEINV_5147,
+      CLK => DISP12_CLKINV_5148,
+      SET => GND,
+      RST => DISP12_FFY_RSTAND_5164,
+      O => DISP12
+    );
+  DISP12_FFY_RSTAND : X_BUF
+    generic map(
+      LOC => "SLICE_X52Y20",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => RESET,
+      O => DISP12_FFY_RSTAND_5164
+    );
+  M4_U222_I_Q2 : X_FF
+    generic map(
+      LOC => "SLICE_X53Y27",
+      INIT => '0'
+    )
+    port map (
+      I => BRWDEQCD_DYMUX_5234,
+      CE => BRWDEQCD_CEINV_5224,
+      CLK => BRWDEQCD_CLKINV_5225,
+      SET => GND,
+      RST => BRWDEQCD_FFY_RSTAND_5240,
+      O => BRWDEQCD
+    );
+  BRWDEQCD_FFY_RSTAND : X_BUF
+    generic map(
+      LOC => "SLICE_X53Y27",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => CLEARP2FFS_0,
+      O => BRWDEQCD_FFY_RSTAND_5240
+    );
+  U119_I_Q2 : X_FF
+    generic map(
+      LOC => "SLICE_X44Y34",
+      INIT => '0'
+    )
+    port map (
+      I => RDC2_DXMUX_5380,
+      CE => VCC,
+      CLK => RDC2_CLKINV_5359,
+      SET => GND,
+      RST => GND,
+      O => RDC2
+    );
+  U181_I_36_229 : X_LUT4
+    generic map(
+      INIT => X"5A5A",
+      LOC => "SLICE_X50Y44"
+    )
+    port map (
+      ADR0 => PT_1_0,
+      ADR1 => VCC,
+      ADR2 => TOTRWD(1),
+      ADR3 => VCC,
+      O => U181_I1
+    );
+  U117_I_Q1 : X_FF
+    generic map(
+      LOC => "SLICE_X50Y44",
+      INIT => '0'
+    )
+    port map (
+      I => P1PT_0_DYMUX_3057,
+      CE => P1PT_0_CEINV_3040,
+      CLK => P1PT_0_CLKINV_3041,
+      SET => GND,
+      RST => P1PT_0_SRINV_3042,
+      O => P1PT(1)
     );
   U117_I_Q0 : X_FF
     generic map(
-      LOC => "SLICE_X47Y54",
+      LOC => "SLICE_X50Y44",
       INIT => '0'
     )
     port map (
@@ -13716,34 +11999,33 @@ begin
       RST => P1PT_0_SRINV_3042,
       O => P1PT(0)
     );
-  U117_I_Q3 : X_FF
+  U181_I_36_225 : X_LUT4
     generic map(
-      LOC => "SLICE_X47Y55",
-      INIT => '0'
+      INIT => X"6666",
+      LOC => "SLICE_X50Y45"
     )
     port map (
-      I => P1PT_2_DYMUX_3122,
-      CE => P1PT_2_CEINV_3100,
-      CLK => P1PT_2_CLKINV_3101,
-      SET => GND,
-      RST => P1PT_2_SRINV_3102,
-      O => P1PT(3)
+      ADR0 => TOTRWD(3),
+      ADR1 => PT_3_0,
+      ADR2 => VCC,
+      ADR3 => VCC,
+      O => U181_I3
     );
   U181_I_36_230 : X_LUT4
     generic map(
-      INIT => X"5A5A",
-      LOC => "SLICE_X47Y55"
+      INIT => X"6666",
+      LOC => "SLICE_X50Y45"
     )
     port map (
       ADR0 => PT_2_0,
-      ADR1 => VCC,
-      ADR2 => TOTRWD(2),
+      ADR1 => TOTRWD(2),
+      ADR2 => VCC,
       ADR3 => VCC,
       O => U181_I2
     );
   U117_I_Q2 : X_FF
     generic map(
-      LOC => "SLICE_X47Y55",
+      LOC => "SLICE_X50Y45",
       INIT => '0'
     )
     port map (
@@ -13754,9 +12036,21 @@ begin
       RST => P1PT_2_SRINV_3102,
       O => P1PT(2)
     );
+  U181_I_36_223 : X_LUT4
+    generic map(
+      INIT => X"3C3C",
+      LOC => "SLICE_X50Y46"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => PT_5_0,
+      ADR2 => TOTRWD(5),
+      ADR3 => VCC,
+      O => U181_I5
+    );
   U117_I_Q5 : X_FF
     generic map(
-      LOC => "SLICE_X47Y56",
+      LOC => "SLICE_X50Y46",
       INIT => '0'
     )
     port map (
@@ -13769,19 +12063,19 @@ begin
     );
   U181_I_36_224 : X_LUT4
     generic map(
-      INIT => X"6666",
-      LOC => "SLICE_X47Y56"
+      INIT => X"55AA",
+      LOC => "SLICE_X50Y46"
     )
     port map (
       ADR0 => PT_4_0,
-      ADR1 => TOTRWD(4),
+      ADR1 => VCC,
       ADR2 => VCC,
-      ADR3 => VCC,
+      ADR3 => TOTRWD(4),
       O => U181_I4
     );
   U117_I_Q4 : X_FF
     generic map(
-      LOC => "SLICE_X47Y56",
+      LOC => "SLICE_X50Y46",
       INIT => '0'
     )
     port map (
@@ -13792,9 +12086,21 @@ begin
       RST => P1PT_4_SRINV_3165,
       O => P1PT(4)
     );
+  U181_I_36_221 : X_LUT4
+    generic map(
+      INIT => X"6666",
+      LOC => "SLICE_X50Y47"
+    )
+    port map (
+      ADR0 => TOTRWD(7),
+      ADR1 => PT_7_0,
+      ADR2 => VCC,
+      ADR3 => VCC,
+      O => U181_I7
+    );
   U117_I_Q7 : X_FF
     generic map(
-      LOC => "SLICE_X47Y57",
+      LOC => "SLICE_X50Y47",
       INIT => '0'
     )
     port map (
@@ -13807,19 +12113,19 @@ begin
     );
   U181_I_36_222 : X_LUT4
     generic map(
-      INIT => X"5A5A",
-      LOC => "SLICE_X47Y57"
+      INIT => X"6666",
+      LOC => "SLICE_X50Y47"
     )
     port map (
-      ADR0 => PT_6_0,
-      ADR1 => VCC,
-      ADR2 => TOTRWD(6),
+      ADR0 => TOTRWD(6),
+      ADR1 => PT_6_0,
+      ADR2 => VCC,
       ADR3 => VCC,
       O => U181_I6
     );
   U117_I_Q6 : X_FF
     generic map(
-      LOC => "SLICE_X47Y57",
+      LOC => "SLICE_X50Y47",
       INIT => '0'
     )
     port map (
@@ -13830,10 +12136,22 @@ begin
       RST => P1PT_6_SRINV_3228,
       O => P1PT(6)
     );
+  U190_I_36_229 : X_LUT4
+    generic map(
+      INIT => X"33CC",
+      LOC => "SLICE_X51Y29"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => LARGESTRWD(1),
+      ADR2 => VCC,
+      ADR3 => P2PT(1),
+      O => U190_I1
+    );
   U190_I_36_228 : X_LUT4
     generic map(
       INIT => X"33CC",
-      LOC => "SLICE_X45Y32"
+      LOC => "SLICE_X51Y29"
     )
     port map (
       ADR0 => VCC,
@@ -13842,22 +12160,34 @@ begin
       ADR3 => P2PT(0),
       O => U190_I0
     );
-  U190_I_36_230 : X_LUT4
+  U190_I_36_225 : X_LUT4
     generic map(
-      INIT => X"6666",
-      LOC => "SLICE_X45Y33"
+      INIT => X"5A5A",
+      LOC => "SLICE_X51Y30"
     )
     port map (
-      ADR0 => LARGESTRWD(2),
-      ADR1 => P2PT(2),
+      ADR0 => LARGESTRWD(3),
+      ADR1 => VCC,
+      ADR2 => P2PT(3),
+      ADR3 => VCC,
+      O => U190_I3
+    );
+  U190_I_36_223 : X_LUT4
+    generic map(
+      INIT => X"6666",
+      LOC => "SLICE_X51Y31"
+    )
+    port map (
+      ADR0 => P2PT(5),
+      ADR1 => LARGESTRWD(5),
       ADR2 => VCC,
       ADR3 => VCC,
-      O => U190_I2
+      O => U190_I5
     );
   U190_I_36_224 : X_LUT4
     generic map(
       INIT => X"6666",
-      LOC => "SLICE_X45Y34"
+      LOC => "SLICE_X51Y31"
     )
     port map (
       ADR0 => LARGESTRWD(4),
@@ -13866,58 +12196,82 @@ begin
       ADR3 => VCC,
       O => U190_I4
     );
-  U190_I_36_222 : X_LUT4
+  U190_I_36_221 : X_LUT4
     generic map(
-      INIT => X"33CC",
-      LOC => "SLICE_X45Y35"
+      INIT => X"CCCC",
+      LOC => "SLICE_X51Y32"
     )
     port map (
       ADR0 => VCC,
-      ADR1 => LARGESTRWD(6),
+      ADR1 => P2PT(7),
       ADR2 => VCC,
-      ADR3 => P2PT(6),
-      O => U190_I6
+      ADR3 => VCC,
+      O => U190_I7
+    );
+  U148_I_36_240 : X_LUT4
+    generic map(
+      INIT => X"5A5A",
+      LOC => "SLICE_X65Y16"
+    )
+    port map (
+      ADR0 => RD1_0,
+      ADR1 => VCC,
+      ADR2 => DISP5,
+      ADR3 => VCC,
+      O => U148_I1
     );
   U148_I_36_239 : X_LUT4
     generic map(
-      INIT => X"5A5A",
-      LOC => "SLICE_X65Y18"
+      INIT => X"6666",
+      LOC => "SLICE_X65Y16"
     )
     port map (
-      ADR0 => RD0_0,
-      ADR1 => VCC,
-      ADR2 => DISP4,
+      ADR0 => DISP4,
+      ADR1 => RD0_0,
+      ADR2 => VCC,
       ADR3 => VCC,
       O => U148_I0
     );
   U148_I_36_241 : X_LUT4
     generic map(
-      INIT => X"6666",
-      LOC => "SLICE_X65Y19"
+      INIT => X"33CC",
+      LOC => "SLICE_X65Y17"
     )
     port map (
-      ADR0 => RD2_0,
-      ADR1 => DISP6,
+      ADR0 => VCC,
+      ADR1 => RD2_0,
       ADR2 => VCC,
-      ADR3 => VCC,
+      ADR3 => DISP6,
       O => U148_I2
     );
-  U182_I_36_228 : X_LUT4
+  U182_I_36_229 : X_LUT4
     generic map(
-      INIT => X"A6AA",
-      LOC => "SLICE_X45Y42"
+      INIT => X"C6CC",
+      LOC => "SLICE_X51Y38"
     )
     port map (
-      ADR0 => RWD_0_0,
-      ADR1 => M1_CODE0,
+      ADR0 => M1_CODE1,
+      ADR1 => RWD_1_Q,
       ADR2 => M1_ENCODERWDMUX_0,
       ADR3 => M1_CODERWDMUXSEL1_0,
-      O => U182_I0
+      O => U182_I1
+    );
+  U182_I_36_225 : X_LUT4
+    generic map(
+      INIT => X"6666",
+      LOC => "SLICE_X51Y39"
+    )
+    port map (
+      ADR0 => RWD_3_0,
+      ADR1 => CODERWD_3_0,
+      ADR2 => VCC,
+      ADR3 => VCC,
+      O => U182_I3
     );
   U182_I_36_230 : X_LUT4
     generic map(
       INIT => X"C6CC",
-      LOC => "SLICE_X45Y43"
+      LOC => "SLICE_X51Y39"
     )
     port map (
       ADR0 => M1_CODE2,
@@ -13926,10 +12280,22 @@ begin
       ADR3 => M1_CODERWDMUXSEL1_0,
       O => U182_I2
     );
+  U182_I_36_223 : X_LUT4
+    generic map(
+      INIT => X"6666",
+      LOC => "SLICE_X51Y40"
+    )
+    port map (
+      ADR0 => CODERWD_5_0,
+      ADR1 => U173_XLXI_6_M1,
+      ADR2 => VCC,
+      ADR3 => VCC,
+      O => U182_I5
+    );
   U182_I_36_224 : X_LUT4
     generic map(
       INIT => X"6666",
-      LOC => "SLICE_X45Y44"
+      LOC => "SLICE_X51Y40"
     )
     port map (
       ADR0 => RWD_4_0,
@@ -13938,46 +12304,58 @@ begin
       ADR3 => VCC,
       O => U182_I4
     );
-  U182_I_36_222 : X_LUT4
+  U151_I_36_240 : X_LUT4
     generic map(
       INIT => X"6666",
-      LOC => "SLICE_X45Y45"
+      LOC => "SLICE_X66Y20"
     )
     port map (
-      ADR0 => RWD_6_Q,
-      ADR1 => CODERWD_6_0,
+      ADR0 => RD1_0,
+      ADR1 => DISP9,
       ADR2 => VCC,
       ADR3 => VCC,
-      O => U182_I6
+      O => U151_I1
     );
   U151_I_36_239 : X_LUT4
     generic map(
-      INIT => X"6666",
-      LOC => "SLICE_X64Y10"
+      INIT => X"5A5A",
+      LOC => "SLICE_X66Y20"
     )
     port map (
-      ADR0 => DISP8,
-      ADR1 => RD0_0,
-      ADR2 => VCC,
+      ADR0 => RD0_0,
+      ADR1 => VCC,
+      ADR2 => DISP8,
       ADR3 => VCC,
       O => U151_I0
     );
-  U151_I_36_241 : X_LUT4
+  U151_I_36_242 : X_LUT4
     generic map(
-      INIT => X"3C3C",
-      LOC => "SLICE_X64Y11"
+      INIT => X"6666",
+      LOC => "SLICE_X66Y21"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => RD2_0,
-      ADR2 => DISP10,
+      ADR0 => RD3,
+      ADR1 => DISP11,
+      ADR2 => VCC,
+      ADR3 => VCC,
+      O => U151_I3
+    );
+  U151_I_36_241 : X_LUT4
+    generic map(
+      INIT => X"6666",
+      LOC => "SLICE_X66Y21"
+    )
+    port map (
+      ADR0 => RD2_0,
+      ADR1 => DISP10,
+      ADR2 => VCC,
       ADR3 => VCC,
       O => U151_I2
     );
   U288_I_36_239 : X_LUT4
     generic map(
       INIT => X"6666",
-      LOC => "SLICE_X64Y12"
+      LOC => "SLICE_X67Y20"
     )
     port map (
       ADR0 => RD0_0,
@@ -13986,10 +12364,22 @@ begin
       ADR3 => VCC,
       O => U288_I0
     );
+  U161_I_36_33 : X_LUT4
+    generic map(
+      INIT => X"CC33",
+      LOC => "SLICE_X67Y21"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => BRWD2_0,
+      ADR2 => VCC,
+      ADR3 => DISP14,
+      O => U161_AB2
+    );
   U288_I_36_241 : X_LUT4
     generic map(
       INIT => X"55AA",
-      LOC => "SLICE_X64Y13"
+      LOC => "SLICE_X67Y21"
     )
     port map (
       ADR0 => RD2_0,
@@ -14000,31 +12390,55 @@ begin
     );
   U149_I_36_239 : X_LUT4
     generic map(
-      INIT => X"6666",
-      LOC => "SLICE_X65Y20"
+      INIT => X"3C3C",
+      LOC => "SLICE_X67Y17"
     )
     port map (
-      ADR0 => RD0_0,
-      ADR1 => DISP0,
-      ADR2 => VCC,
+      ADR0 => VCC,
+      ADR1 => RD0_0,
+      ADR2 => DISP0,
       ADR3 => VCC,
       O => U149_I0
     );
-  U149_I_36_241 : X_LUT4
+  U149_I_36_242 : X_LUT4
     generic map(
-      INIT => X"6666",
-      LOC => "SLICE_X65Y21"
+      INIT => X"5A5A",
+      LOC => "SLICE_X67Y18"
     )
     port map (
-      ADR0 => DISP2,
+      ADR0 => RD3,
+      ADR1 => VCC,
+      ADR2 => DISP3,
+      ADR3 => VCC,
+      O => U149_I3
+    );
+  U149_I_36_241 : X_LUT4
+    generic map(
+      INIT => X"33CC",
+      LOC => "SLICE_X67Y18"
+    )
+    port map (
+      ADR0 => VCC,
       ADR1 => RD2_0,
       ADR2 => VCC,
-      ADR3 => VCC,
+      ADR3 => DISP2,
       O => U149_I2
+    );
+  U66_I_Q5_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"6A6A",
+      LOC => "SLICE_X24Y71"
+    )
+    port map (
+      ADR0 => U66_Q(5),
+      ADR1 => U66_T4,
+      ADR2 => U66_Q(4),
+      ADR3 => VCC,
+      O => U66_I_Q5_TQ
     );
   U66_I_Q5_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X19Y63",
+      LOC => "SLICE_X24Y71",
       INIT => '0'
     )
     port map (
@@ -14035,9 +12449,21 @@ begin
       RST => GND,
       O => U66_Q(5)
     );
+  U64_I_Q2_I_36_30_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"AAF2",
+      LOC => "SLICE_X67Y62"
+    )
+    port map (
+      ADR0 => U64_I_Q2_TQ_0,
+      ADR1 => S3S6COND_0,
+      ADR2 => S1S4S6COND,
+      ADR3 => LPTOVF,
+      O => U64_I_Q2_MD
+    );
   U64_I_Q2_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X64Y64",
+      LOC => "SLICE_X67Y62",
       INIT => '0'
     )
     port map (
@@ -14050,7 +12476,7 @@ begin
     );
   STR2_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X64Y64",
+      LOC => "SLICE_X67Y62",
       PATHPULSE => 694 ps
     )
     port map (
@@ -14059,19 +12485,31 @@ begin
     );
   U63 : X_LUT4
     generic map(
-      INIT => X"5544",
-      LOC => "SLICE_X64Y64"
+      INIT => X"00FC",
+      LOC => "SLICE_X67Y62"
     )
     port map (
-      ADR0 => LPTOVF,
-      ADR1 => S1S4S6COND,
-      ADR2 => VCC,
-      ADR3 => S3S6COND_0,
+      ADR0 => VCC,
+      ADR1 => S3S6COND_0,
+      ADR2 => S1S4S6COND,
+      ADR3 => LPTOVF,
       O => XLXN_474
+    );
+  U66_I_Q9_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"3CCC",
+      LOC => "SLICE_X26Y76"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => U66_Q(9),
+      ADR2 => U66_Q(8),
+      ADR3 => U66_T8,
+      O => U66_I_Q9_TQ
     );
   U66_I_Q9_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X20Y67",
+      LOC => "SLICE_X26Y76",
       INIT => '0'
     )
     port map (
@@ -14085,18 +12523,18 @@ begin
   U269_I_Q3_I_36_32 : X_LUT4
     generic map(
       INIT => X"6AAA",
-      LOC => "SLICE_X51Y22"
+      LOC => "SLICE_X52Y17"
     )
     port map (
       ADR0 => P2STR3,
       ADR1 => P2STR1,
-      ADR2 => P2STR2,
-      ADR3 => P2STR0,
+      ADR2 => P2STR0,
+      ADR3 => P2STR2,
       O => U269_I_Q3_TQ
     );
   U269_I_Q3_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X51Y22",
+      LOC => "SLICE_X52Y17",
       INIT => '0'
     )
     port map (
@@ -14109,7 +12547,7 @@ begin
     );
   P2STR3_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X51Y22",
+      LOC => "SLICE_X52Y17",
       PATHPULSE => 694 ps
     )
     port map (
@@ -14119,18 +12557,18 @@ begin
   U271_I_36_37 : X_LUT4
     generic map(
       INIT => X"0001",
-      LOC => "SLICE_X51Y22"
+      LOC => "SLICE_X52Y17"
     )
     port map (
       ADR0 => P2STR3,
       ADR1 => P2STR1,
-      ADR2 => P2STR2,
-      ADR3 => P2STR0,
+      ADR2 => P2STR0,
+      ADR3 => P2STR2,
       O => P2S0
     );
   U195_I_Q0_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X49Y56",
+      LOC => "SLICE_X51Y65",
       INIT => '0'
     )
     port map (
@@ -14143,16 +12581,28 @@ begin
     );
   U195_Q0_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X49Y56",
+      LOC => "SLICE_X51Y65",
       PATHPULSE => 694 ps
     )
     port map (
       I => RESET,
       O => U195_Q0_FFY_RSTAND_3970
     );
+  U67_I_Q1_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"55AA",
+      LOC => "SLICE_X42Y70"
+    )
+    port map (
+      ADR0 => Q_0_Q,
+      ADR1 => VCC,
+      ADR2 => VCC,
+      ADR3 => Q_1_Q,
+      O => U67_I_Q1_TQ
+    );
   U67_I_Q1_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X39Y65",
+      LOC => "SLICE_X42Y70",
       INIT => '0'
     )
     port map (
@@ -14163,9 +12613,21 @@ begin
       RST => GND,
       O => Q_1_Q
     );
+  U67_I_Q5_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"3FC0",
+      LOC => "SLICE_X44Y68"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => U67_Q_4_Q,
+      ADR2 => U67_T4,
+      ADR3 => Q_5_Q,
+      O => U67_I_Q5_TQ
+    );
   U67_I_Q5_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X38Y64",
+      LOC => "SLICE_X44Y68",
       INIT => '0'
     )
     port map (
@@ -14178,7 +12640,7 @@ begin
     );
   U86_I_Q0_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X55Y81",
+      LOC => "SLICE_X55Y87",
       INIT => '0'
     )
     port map (
@@ -14189,9 +12651,21 @@ begin
       RST => GND,
       O => MC0
     );
+  U66_I_Q2_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"5FA0",
+      LOC => "SLICE_X25Y75"
+    )
+    port map (
+      ADR0 => U66_Q(0),
+      ADR1 => VCC,
+      ADR2 => U66_Q(1),
+      ADR3 => U66_Q(2),
+      O => U66_I_Q2_TQ
+    );
   U66_I_Q2_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X18Y67",
+      LOC => "SLICE_X25Y75",
       INIT => '0'
     )
     port map (
@@ -14202,9 +12676,21 @@ begin
       RST => GND,
       O => U66_Q(2)
     );
+  U66_I_Q12_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"33CC",
+      LOC => "SLICE_X29Y75"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => U66_Q(12),
+      ADR2 => VCC,
+      ADR3 => U66_T12,
+      O => U66_I_Q12_TQ
+    );
   U66_I_Q12_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X24Y67",
+      LOC => "SLICE_X29Y75",
       INIT => '0'
     )
     port map (
@@ -14217,7 +12703,7 @@ begin
     );
   U269_I_Q0_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X50Y23",
+      LOC => "SLICE_X53Y8",
       INIT => '0'
     )
     port map (
@@ -14230,7 +12716,7 @@ begin
     );
   P2STR0_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X50Y23",
+      LOC => "SLICE_X53Y8",
       PATHPULSE => 694 ps
     )
     port map (
@@ -14239,19 +12725,19 @@ begin
     );
   U195_I_Q1_I_36_32 : X_LUT4
     generic map(
-      INIT => X"6666",
-      LOC => "SLICE_X51Y56"
+      INIT => X"55AA",
+      LOC => "SLICE_X50Y65"
     )
     port map (
-      ADR0 => U195_Q1,
-      ADR1 => U195_Q0,
+      ADR0 => U195_Q0,
+      ADR1 => VCC,
       ADR2 => VCC,
-      ADR3 => VCC,
+      ADR3 => U195_Q1,
       O => U195_I_Q1_TQ
     );
   U195_I_Q1_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X51Y56",
+      LOC => "SLICE_X50Y65",
       INIT => '0'
     )
     port map (
@@ -14264,7 +12750,7 @@ begin
     );
   U195_Q1_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X51Y56",
+      LOC => "SLICE_X50Y65",
       PATHPULSE => 694 ps
     )
     port map (
@@ -14273,19 +12759,31 @@ begin
     );
   U195_I_36_37 : X_LUT4
     generic map(
-      INIT => X"8888",
-      LOC => "SLICE_X51Y56"
+      INIT => X"AA00",
+      LOC => "SLICE_X50Y65"
     )
     port map (
-      ADR0 => U195_Q1,
-      ADR1 => U195_Q0,
+      ADR0 => U195_Q0,
+      ADR1 => VCC,
       ADR2 => VCC,
-      ADR3 => VCC,
+      ADR3 => U195_Q1,
       O => INITIALPLAYS
+    );
+  U67_I_Q2_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"7788",
+      LOC => "SLICE_X42Y69"
+    )
+    port map (
+      ADR0 => Q_0_Q,
+      ADR1 => Q_1_Q,
+      ADR2 => VCC,
+      ADR3 => U67_Q_2_Q,
+      O => U67_I_Q2_TQ
     );
   U67_I_Q2_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X38Y63",
+      LOC => "SLICE_X42Y69",
       INIT => '0'
     )
     port map (
@@ -14296,9 +12794,21 @@ begin
       RST => GND,
       O => U67_Q_2_Q
     );
+  U86_I_Q1_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"55AA",
+      LOC => "SLICE_X55Y89"
+    )
+    port map (
+      ADR0 => MC1,
+      ADR1 => VCC,
+      ADR2 => VCC,
+      ADR3 => MC0,
+      O => U86_I_Q1_TQ
+    );
   U86_I_Q1_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X55Y83",
+      LOC => "SLICE_X55Y89",
       INIT => '0'
     )
     port map (
@@ -14311,19 +12821,31 @@ begin
     );
   U91_I_36_33 : X_LUT4
     generic map(
-      INIT => X"0501",
-      LOC => "SLICE_X55Y83"
+      INIT => X"0405",
+      LOC => "SLICE_X55Y89"
     )
     port map (
       ADR0 => MC1,
-      ADR1 => LPTOVF,
+      ADR1 => Q_7_Q,
       ADR2 => MC0,
-      ADR3 => Q_7_Q,
+      ADR3 => LPTOVF,
       O => INT_NET3
+    );
+  U66_I_Q3_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"7F80",
+      LOC => "SLICE_X25Y73"
+    )
+    port map (
+      ADR0 => U66_Q(0),
+      ADR1 => U66_Q(2),
+      ADR2 => U66_Q(1),
+      ADR3 => U66_Q(3),
+      O => U66_I_Q3_TQ
     );
   U66_I_Q3_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X19Y64",
+      LOC => "SLICE_X25Y73",
       INIT => '0'
     )
     port map (
@@ -14334,9 +12856,21 @@ begin
       RST => GND,
       O => U66_Q(3)
     );
+  U64_I_Q0_I_36_30_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"7273",
+      LOC => "SLICE_X66Y61"
+    )
+    port map (
+      ADR0 => LPTOVF,
+      ADR1 => STR0,
+      ADR2 => S3S6COND_0,
+      ADR3 => S1S4S6COND,
+      O => U64_I_Q0_MD
+    );
   U64_I_Q0_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X64Y65",
+      LOC => "SLICE_X66Y61",
       INIT => '0'
     )
     port map (
@@ -14349,7 +12883,7 @@ begin
     );
   STR0_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X64Y65",
+      LOC => "SLICE_X66Y61",
       PATHPULSE => 694 ps
     )
     port map (
@@ -14358,19 +12892,31 @@ begin
     );
   U65_I_36_35 : X_LUT4
     generic map(
-      INIT => X"0044",
-      LOC => "SLICE_X64Y65"
+      INIT => X"0300",
+      LOC => "SLICE_X66Y61"
     )
     port map (
-      ADR0 => STR2,
-      ADR1 => STR1,
-      ADR2 => VCC,
-      ADR3 => STR0,
+      ADR0 => VCC,
+      ADR1 => STR0,
+      ADR2 => STR2,
+      ADR3 => STR1,
       O => S2
+    );
+  U66_I_Q13_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"3CF0",
+      LOC => "SLICE_X27Y75"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => U66_Q(12),
+      ADR2 => U66_Q(13),
+      ADR3 => U66_T12,
+      O => U66_I_Q13_TQ
     );
   U66_I_Q13_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X24Y66",
+      LOC => "SLICE_X27Y75",
       INIT => '0'
     )
     port map (
@@ -14384,7 +12930,7 @@ begin
   U269_I_Q1_I_36_32 : X_LUT4
     generic map(
       INIT => X"0FF0",
-      LOC => "SLICE_X52Y13"
+      LOC => "SLICE_X55Y13"
     )
     port map (
       ADR0 => VCC,
@@ -14395,7 +12941,7 @@ begin
     );
   U269_I_Q1_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X52Y13",
+      LOC => "SLICE_X55Y13",
       INIT => '0'
     )
     port map (
@@ -14408,7 +12954,7 @@ begin
     );
   P2STR1_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X52Y13",
+      LOC => "SLICE_X55Y13",
       PATHPULSE => 694 ps
     )
     port map (
@@ -14418,7 +12964,7 @@ begin
   U266 : X_LUT4
     generic map(
       INIT => X"0300",
-      LOC => "SLICE_X52Y13"
+      LOC => "SLICE_X55Y13"
     )
     port map (
       ADR0 => VCC,
@@ -14427,9 +12973,21 @@ begin
       ADR3 => P2STR1,
       O => TESTP2SEL2
     );
+  U67_I_Q3_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"6AAA",
+      LOC => "SLICE_X44Y69"
+    )
+    port map (
+      ADR0 => Q_3_Q,
+      ADR1 => Q_1_Q,
+      ADR2 => Q_0_Q,
+      ADR3 => U67_Q_2_Q,
+      O => U67_I_Q3_TQ
+    );
   U67_I_Q3_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X39Y63",
+      LOC => "SLICE_X44Y69",
       INIT => '0'
     )
     port map (
@@ -14442,7 +13000,7 @@ begin
     );
   U6_I_Q0_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X54Y66",
+      LOC => "SLICE_X54Y68",
       INIT => '0'
     )
     port map (
@@ -14455,7 +13013,7 @@ begin
     );
   U6_Q0_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X54Y66",
+      LOC => "SLICE_X54Y68",
       PATHPULSE => 694 ps
     )
     port map (
@@ -14464,7 +13022,7 @@ begin
     );
   U66_I_Q0_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X19Y65",
+      LOC => "SLICE_X24Y74",
       INIT => '0'
     )
     port map (
@@ -14475,9 +13033,21 @@ begin
       RST => GND,
       O => U66_Q(0)
     );
+  U66_I_Q4_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"3C3C",
+      LOC => "SLICE_X25Y71"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => U66_Q(4),
+      ADR2 => U66_T4,
+      ADR3 => VCC,
+      O => U66_I_Q4_TQ
+    );
   U66_I_Q4_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X18Y62",
+      LOC => "SLICE_X25Y71",
       INIT => '0'
     )
     port map (
@@ -14488,9 +13058,21 @@ begin
       RST => GND,
       O => U66_Q(4)
     );
+  U64_I_Q1_I_36_30_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"DE12",
+      LOC => "SLICE_X67Y61"
+    )
+    port map (
+      ADR0 => STR1,
+      ADR1 => XLXN_474_0,
+      ADR2 => STR0,
+      ADR3 => S4P2SKIP_0,
+      O => U64_I_Q1_MD
+    );
   U64_I_Q1_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X65Y64",
+      LOC => "SLICE_X67Y61",
       INIT => '0'
     )
     port map (
@@ -14503,7 +13085,7 @@ begin
     );
   STR1_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X65Y64",
+      LOC => "SLICE_X67Y61",
       PATHPULSE => 694 ps
     )
     port map (
@@ -14512,19 +13094,31 @@ begin
     );
   U65_I_36_32 : X_LUT4
     generic map(
-      INIT => X"0A00",
-      LOC => "SLICE_X65Y64"
+      INIT => X"4040",
+      LOC => "SLICE_X67Y61"
     )
     port map (
-      ADR0 => STR0,
-      ADR1 => VCC,
-      ADR2 => STR1,
-      ADR3 => STR2,
+      ADR0 => STR1,
+      ADR1 => STR2,
+      ADR2 => STR0,
+      ADR3 => VCC,
       O => S5
+    );
+  U66_I_Q8_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"0FF0",
+      LOC => "SLICE_X26Y77"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => VCC,
+      ADR2 => U66_Q(8),
+      ADR3 => U66_T8,
+      O => U66_I_Q8_TQ
     );
   U66_I_Q8_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X20Y66",
+      LOC => "SLICE_X26Y77",
       INIT => '0'
     )
     port map (
@@ -14535,9 +13129,21 @@ begin
       RST => GND,
       O => U66_Q(8)
     );
+  U66_I_Q10_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"7F80",
+      LOC => "SLICE_X27Y77"
+    )
+    port map (
+      ADR0 => U66_T8,
+      ADR1 => U66_Q(8),
+      ADR2 => U66_Q(9),
+      ADR3 => U66_Q(10),
+      O => U66_I_Q10_TQ
+    );
   U66_I_Q10_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X23Y66",
+      LOC => "SLICE_X27Y77",
       INIT => '0'
     )
     port map (
@@ -14548,9 +13154,21 @@ begin
       RST => GND,
       O => U66_Q(10)
     );
+  U66_I_Q14_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"7F80",
+      LOC => "SLICE_X26Y75"
+    )
+    port map (
+      ADR0 => U66_T12,
+      ADR1 => U66_Q(13),
+      ADR2 => U66_Q(12),
+      ADR3 => U66_Q(14),
+      O => U66_I_Q14_TQ
+    );
   U66_I_Q14_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X25Y66",
+      LOC => "SLICE_X26Y75",
       INIT => '0'
     )
     port map (
@@ -14563,19 +13181,19 @@ begin
     );
   U269_I_Q2_I_36_32 : X_LUT4
     generic map(
-      INIT => X"7788",
-      LOC => "SLICE_X53Y13"
+      INIT => X"3FC0",
+      LOC => "SLICE_X54Y3"
     )
     port map (
-      ADR0 => P2STR1,
-      ADR1 => P2STR0,
-      ADR2 => VCC,
+      ADR0 => VCC,
+      ADR1 => P2STR1,
+      ADR2 => P2STR0,
       ADR3 => P2STR2,
       O => U269_I_Q2_TQ
     );
   U269_I_Q2_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X53Y13",
+      LOC => "SLICE_X54Y3",
       INIT => '0'
     )
     port map (
@@ -14588,7 +13206,7 @@ begin
     );
   P2STR2_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X53Y13",
+      LOC => "SLICE_X54Y3",
       PATHPULSE => 694 ps
     )
     port map (
@@ -14597,19 +13215,19 @@ begin
     );
   U265 : X_LUT4
     generic map(
-      INIT => X"0808",
-      LOC => "SLICE_X53Y13"
+      INIT => X"3000",
+      LOC => "SLICE_X54Y3"
     )
     port map (
-      ADR0 => P2STR1,
-      ADR1 => P2STR0,
-      ADR2 => P2STR3,
-      ADR3 => VCC,
+      ADR0 => VCC,
+      ADR1 => P2STR3,
+      ADR2 => P2STR0,
+      ADR3 => P2STR1,
       O => TESTP2SEL3
     );
   U67_I_Q0_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X41Y65",
+      LOC => "SLICE_X42Y72",
       INIT => '0'
     )
     port map (
@@ -14620,9 +13238,21 @@ begin
       RST => GND,
       O => Q_0_Q
     );
+  U67_I_Q4_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"0FF0",
+      LOC => "SLICE_X43Y69"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => VCC,
+      ADR2 => U67_T4,
+      ADR3 => U67_Q_4_Q,
+      O => U67_I_Q4_TQ
+    );
   U67_I_Q4_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X40Y64",
+      LOC => "SLICE_X43Y69",
       INIT => '0'
     )
     port map (
@@ -14635,19 +13265,19 @@ begin
     );
   U6_I_Q1_I_36_32 : X_LUT4
     generic map(
-      INIT => X"55AA",
-      LOC => "SLICE_X54Y69"
+      INIT => X"0FF0",
+      LOC => "SLICE_X55Y69"
     )
     port map (
-      ADR0 => U6_Q0,
+      ADR0 => VCC,
       ADR1 => VCC,
-      ADR2 => VCC,
+      ADR2 => U6_Q0,
       ADR3 => U6_Q1,
       O => U6_I_Q1_TQ
     );
   U6_I_Q1_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X54Y69",
+      LOC => "SLICE_X55Y69",
       INIT => '0'
     )
     port map (
@@ -14660,7 +13290,7 @@ begin
     );
   U6_Q1_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X54Y69",
+      LOC => "SLICE_X55Y69",
       PATHPULSE => 694 ps
     )
     port map (
@@ -14669,19 +13299,31 @@ begin
     );
   U4 : X_LUT4
     generic map(
-      INIT => X"8800",
-      LOC => "SLICE_X54Y69"
+      INIT => X"A000",
+      LOC => "SLICE_X55Y69"
     )
     port map (
       ADR0 => U6_Q0,
-      ADR1 => S0,
-      ADR2 => VCC,
+      ADR1 => VCC,
+      ADR2 => S0,
       ADR3 => U6_Q1,
       O => GETCODE
     );
+  U66_I_Q1_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"3C3C",
+      LOC => "SLICE_X25Y70"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => U66_Q(0),
+      ADR2 => U66_Q(1),
+      ADR3 => VCC,
+      O => U66_I_Q1_TQ
+    );
   U66_I_Q1_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X19Y67",
+      LOC => "SLICE_X25Y70",
       INIT => '0'
     )
     port map (
@@ -14692,22 +13334,86 @@ begin
       RST => GND,
       O => U66_Q(1)
     );
-  U112_I_M23_I_36_31 : X_LUT4
+  U112_I_M45_I_36_31 : X_LUT4
     generic map(
-      INIT => X"000F",
-      LOC => "SLICE_X67Y25"
+      INIT => X"0033",
+      LOC => "SLICE_X67Y32"
     )
     port map (
       ADR0 => VCC,
-      ADR1 => VCC,
-      ADR2 => P1SEL(0),
-      ADR3 => P1SEL(1),
+      ADR1 => P1SEL(1),
+      ADR2 => VCC,
+      ADR3 => P1SEL(0),
+      O => U112_I_M45_M0
+    );
+  U112_I_M01_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"33CC",
+      LOC => "SLICE_X67Y33"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => P1SEL(1),
+      ADR2 => VCC,
+      ADR3 => P1SEL(0),
+      O => U112_M01
+    );
+  U112_I_M23_I_36_31 : X_LUT4
+    generic map(
+      INIT => X"0033",
+      LOC => "SLICE_X67Y33"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => P1SEL(1),
+      ADR2 => VCC,
+      ADR3 => P1SEL(0),
       O => U112_I_M23_M0
+    );
+  U72 : X_FF
+    generic map(
+      LOC => "IPAD68",
+      INIT => '0'
+    )
+    port map (
+      I => P2PLAY_NP2B_IFF_IDDRIN_MUX_4637,
+      CE => VCC,
+      CLK => P2PLAY_NP2B_IFF_ICLK1INV_4639,
+      SET => GND,
+      RST => GND,
+      O => XLXN_10484
+    );
+  P2PLAY_NP2B_IFF_IDDRIN_MUX : X_BUF
+    generic map(
+      LOC => "IPAD68",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => P2PLAY_NP2B_INBUF,
+      O => P2PLAY_NP2B_IFF_IDDRIN_MUX_4637
+    );
+  P2PLAY_NP2B_IFF_ICLK1INV : X_BUF
+    generic map(
+      LOC => "IPAD68",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => RDCLK,
+      O => P2PLAY_NP2B_IFF_ICLK1INV_4639
+    );
+  SHPTS_NP2B_IFF_IMUX : X_BUF
+    generic map(
+      LOC => "IPAD59",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => SHPTS_NP2B_INBUF,
+      O => SHPTS
     );
   LUT1_U66_I_36_14 : X_LUT4
     generic map(
       INIT => X"8000",
-      LOC => "SLICE_X18Y65"
+      LOC => "SLICE_X24Y73"
     )
     port map (
       ADR0 => U66_Q(5),
@@ -14719,286 +13425,102 @@ begin
   LUT1_U66_I_36_29 : X_LUT4
     generic map(
       INIT => X"8000",
-      LOC => "SLICE_X23Y67"
+      LOC => "SLICE_X26Y74"
     )
     port map (
-      ADR0 => U66_Q(10),
-      ADR1 => U66_Q(9),
-      ADR2 => U66_T8,
-      ADR3 => U66_Q(8),
+      ADR0 => U66_Q(8),
+      ADR1 => U66_Q(10),
+      ADR2 => U66_Q(9),
+      ADR3 => U66_T8,
       O => LUT1_U66_I_36_29_OUT
     );
-  U100_I_M23_I_36_38 : X_LUT4
+  U100_I_M01_I_36_38 : X_LUT4
     generic map(
-      INIT => X"FFCC",
-      LOC => "SLICE_X64Y62"
+      INIT => X"EEEE",
+      LOC => "SLICE_X66Y74"
+    )
+    port map (
+      ADR0 => U100_I_M01_M1_0,
+      ADR1 => U100_I_M01_M0_0,
+      ADR2 => VCC,
+      ADR3 => VCC,
+      O => U100_M01
+    );
+  U101_I_M01_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"FCFC",
+      LOC => "SLICE_X64Y83"
     )
     port map (
       ADR0 => VCC,
-      ADR1 => U100_I_M23_M1_0,
-      ADR2 => VCC,
-      ADR3 => U100_I_M23_M0_0,
-      O => U100_M23
+      ADR1 => U101_I_M01_M1_0,
+      ADR2 => U101_I_M01_M0_0,
+      ADR3 => VCC,
+      O => U101_M01
     );
   U101_I_M23_I_36_38 : X_LUT4
     generic map(
       INIT => X"FAFA",
-      LOC => "SLICE_X64Y75"
+      LOC => "SLICE_X64Y83"
     )
     port map (
-      ADR0 => U101_I_M23_M0_0,
+      ADR0 => U101_I_M23_M1_0,
       ADR1 => VCC,
-      ADR2 => U101_I_M23_M1_0,
+      ADR2 => U101_I_M23_M0_0,
       ADR3 => VCC,
       O => U101_M23
     );
-  U102_I_M23_I_36_38 : X_LUT4
+  U102_I_M01_I_36_38 : X_LUT4
     generic map(
-      INIT => X"FFCC",
-      LOC => "SLICE_X54Y71"
+      INIT => X"FFAA",
+      LOC => "SLICE_X59Y89"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => U102_I_M23_M0_0,
+      ADR0 => U102_I_M01_M1_0,
+      ADR1 => VCC,
       ADR2 => VCC,
-      ADR3 => U102_I_M23_M1_0,
+      ADR3 => U102_I_M01_M0_0,
+      O => U102_M01
+    );
+  U102_I_M23_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"FFAA",
+      LOC => "SLICE_X59Y89"
+    )
+    port map (
+      ADR0 => U102_I_M23_M1_0,
+      ADR1 => VCC,
+      ADR2 => VCC,
+      ADR3 => U102_I_M23_M0_0,
       O => U102_M23
+    );
+  U103_I_M01_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"EEEE",
+      LOC => "SLICE_X65Y64"
+    )
+    port map (
+      ADR0 => U103_I_M01_M0_0,
+      ADR1 => U103_I_M01_M1_0,
+      ADR2 => VCC,
+      ADR3 => VCC,
+      O => U103_M01
     );
   U103_I_M23_I_36_38 : X_LUT4
     generic map(
-      INIT => X"FAFA",
-      LOC => "SLICE_X59Y88"
+      INIT => X"FFF0",
+      LOC => "SLICE_X65Y64"
     )
     port map (
-      ADR0 => U103_I_M23_M1_0,
+      ADR0 => VCC,
       ADR1 => VCC,
-      ADR2 => U103_I_M23_M0_0,
-      ADR3 => VCC,
+      ADR2 => U103_I_M23_M1_0,
+      ADR3 => U103_I_M23_M0_0,
       O => U103_M23
-    );
-  U155_I_M23_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"CCAA",
-      LOC => "SLICE_X64Y22"
-    )
-    port map (
-      ADR0 => PD2PRD,
-      ADR1 => PD3PRD_0,
-      ADR2 => VCC,
-      ADR3 => ENCPSEL0,
-      O => U155_M23
-    );
-  U69_I_Q0 : X_FF
-    generic map(
-      LOC => "SLICE_X55Y41",
-      INIT => '0'
-    )
-    port map (
-      I => LPSEL0_DYMUX_5504,
-      CE => LPSEL0_CEINV_5493,
-      CLK => LPSEL0_CLKINV_5494,
-      SET => GND,
-      RST => LPSEL0_FFY_RSTAND_5510,
-      O => LPSEL0
-    );
-  LPSEL0_FFY_RSTAND : X_BUF
-    generic map(
-      LOC => "SLICE_X55Y41",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => CLFF_0,
-      O => LPSEL0_FFY_RSTAND_5510
-    );
-  M1_U133 : X_LUT4
-    generic map(
-      INIT => X"1555",
-      LOC => "SLICE_X55Y41"
-    )
-    port map (
-      ADR0 => M1_XLXN_1539_0,
-      ADR1 => S2ORS5_0,
-      ADR2 => M1_CDEQBRWD0_0,
-      ADR3 => PSEL0,
-      O => M1_ENCODERWDMUX
-    );
-  U69_I_Q2 : X_FF
-    generic map(
-      LOC => "SLICE_X67Y22",
-      INIT => '0'
-    )
-    port map (
-      I => LPSEL2_DYMUX_5542,
-      CE => LPSEL2_CEINV_5531,
-      CLK => LPSEL2_CLKINV_5532,
-      SET => GND,
-      RST => LPSEL2_FFY_RSTAND_5548,
-      O => LPSEL2
-    );
-  LPSEL2_FFY_RSTAND : X_BUF
-    generic map(
-      LOC => "SLICE_X67Y22",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => CLFF_0,
-      O => LPSEL2_FFY_RSTAND_5548
-    );
-  U154 : X_LUT4
-    generic map(
-      INIT => X"FECE",
-      LOC => "SLICE_X67Y22"
-    )
-    port map (
-      ADR0 => P1SEL(2),
-      ADR1 => PSEL3_0,
-      ADR2 => STR2,
-      ADR3 => P2SEL2,
-      O => ENCPSEL1
-    );
-  U173_XLXI_6_I_36_30 : X_LUT4
-    generic map(
-      INIT => X"B800",
-      LOC => "SLICE_X43Y27"
-    )
-    port map (
-      ADR0 => BRWD2_0,
-      ADR1 => NSD0,
-      ADR2 => BRWD3_0,
-      ADR3 => U171_I_36_111_O,
-      O => U173_XLXI_6_M1_pack_2
-    );
-  U185_I_Q5 : X_FF
-    generic map(
-      LOC => "SLICE_X43Y27",
-      INIT => '0'
-    )
-    port map (
-      I => LARGESTRWD_5_DYMUX_5581,
-      CE => LARGESTRWD_5_CEINV_5571,
-      CLK => LARGESTRWD_5_CLKINV_5572,
-      SET => GND,
-      RST => LARGESTRWD_5_FFY_RSTAND_5587,
-      O => LARGESTRWD(5)
-    );
-  LARGESTRWD_5_FFY_RSTAND : X_BUF
-    generic map(
-      LOC => "SLICE_X43Y27",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => CLEARP2FFS_0,
-      O => LARGESTRWD_5_FFY_RSTAND_5587
-    );
-  U183_I_36_31 : X_LUT4
-    generic map(
-      INIT => X"2002",
-      LOC => "SLICE_X43Y27"
-    )
-    port map (
-      ADR0 => RWD_4_0,
-      ADR1 => LARGESTRWD(4),
-      ADR2 => LARGESTRWD(5),
-      ADR3 => U173_XLXI_6_M1,
-      O => U183_GE4_5
-    );
-  U172 : X_LUT4
-    generic map(
-      INIT => X"A000",
-      LOC => "SLICE_X43Y29"
-    )
-    port map (
-      ADR0 => BRWD3_0,
-      ADR1 => VCC,
-      ADR2 => NSD0,
-      ADR3 => U171_I_36_111_O,
-      O => RWD_6_pack_2
-    );
-  U185_I_Q6 : X_FF
-    generic map(
-      LOC => "SLICE_X43Y29",
-      INIT => '0'
-    )
-    port map (
-      I => LARGESTRWD_6_DYMUX_5618,
-      CE => LARGESTRWD_6_CEINV_5607,
-      CLK => LARGESTRWD_6_CLKINV_5608,
-      SET => GND,
-      RST => LARGESTRWD_6_FFY_RSTAND_5624,
-      O => LARGESTRWD(6)
-    );
-  LARGESTRWD_6_FFY_RSTAND : X_BUF
-    generic map(
-      LOC => "SLICE_X43Y29",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => CLEARP2FFS_0,
-      O => LARGESTRWD_6_FFY_RSTAND_5624
-    );
-  U183_I_36_22 : X_LUT4
-    generic map(
-      INIT => X"AA55",
-      LOC => "SLICE_X43Y29"
-    )
-    port map (
-      ADR0 => LARGESTRWD(6),
-      ADR1 => VCC,
-      ADR2 => VCC,
-      ADR3 => RWD_6_Q,
-      O => U183_EQ6_7
-    );
-  U57 : X_LUT4
-    generic map(
-      INIT => X"2244",
-      LOC => "SLICE_X65Y62"
-    )
-    port map (
-      ADR0 => STR2,
-      ADR1 => STR1,
-      ADR2 => VCC,
-      ADR3 => STR0,
-      O => S2ORS5
-    );
-  U191_I_36_30 : X_LUT4
-    generic map(
-      INIT => X"2100",
-      LOC => "SLICE_X44Y57"
-    )
-    port map (
-      ADR0 => P1PT(7),
-      ADR1 => P2PT(6),
-      ADR2 => P2PT(7),
-      ADR3 => P1PT(6),
-      O => U191_LE6_7
-    );
-  U109 : X_LUT4
-    generic map(
-      INIT => X"0D84",
-      LOC => "SLICE_X67Y76"
-    )
-    port map (
-      ADR0 => KSBUS(2),
-      ADR1 => KSBUS(0),
-      ADR2 => KSBUS(3),
-      ADR3 => KSBUS(1),
-      O => SBUS(1)
-    );
-  U108 : X_LUT4
-    generic map(
-      INIT => X"0C4E",
-      LOC => "SLICE_X67Y77"
-    )
-    port map (
-      ADR0 => KSBUS(2),
-      ADR1 => KSBUS(0),
-      ADR2 => KSBUS(3),
-      ADR3 => KSBUS(1),
-      O => SBUS(2)
     );
   U68 : X_FF
     generic map(
-      LOC => "SLICE_X64Y22",
+      LOC => "SLICE_X64Y20",
       INIT => '0'
     )
     port map (
@@ -15011,40 +13533,76 @@ begin
     );
   LPDPRD_FFX_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X64Y22",
+      LOC => "SLICE_X64Y20",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLFF_0,
       O => LPDPRD_FFX_RSTAND_5045
     );
-  U169_I_M23_I_36_38 : X_LUT4
+  U169_I_M01_I_36_38 : X_LUT4
     generic map(
-      INIT => X"CFC0",
-      LOC => "SLICE_X54Y18"
+      INIT => X"AAF0",
+      LOC => "SLICE_X54Y19"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => EQ2_0,
+      ADR0 => EQ0_0,
+      ADR1 => VCC,
+      ADR2 => EQ1,
+      ADR3 => ENCPSEL0,
+      O => U169_M01
+    );
+  U169_I_M23_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"AFA0",
+      LOC => "SLICE_X54Y19"
+    )
+    port map (
+      ADR0 => EQ2_0,
+      ADR1 => VCC,
       ADR2 => ENCPSEL0,
       ADR3 => EQ3_0,
       O => U169_M23
     );
+  LUT0_M4_U210 : X_LUT4
+    generic map(
+      INIT => X"FFFE",
+      LOC => "SLICE_X49Y39"
+    )
+    port map (
+      ADR0 => CODERWD_4_0,
+      ADR1 => CODERWD_5_0,
+      ADR2 => CODERWD_3_0,
+      ADR3 => CODERWD_6_0,
+      O => LUT0_M4_U210_OUT
+    );
+  M1_u125 : X_LUT4
+    generic map(
+      INIT => X"AAAB",
+      LOC => "SLICE_X48Y43"
+    )
+    port map (
+      ADR0 => R2D1,
+      ADR1 => R2D0,
+      ADR2 => R1D3,
+      ADR3 => RDC3,
+      O => M1_XLXN_1467
+    );
   M1_U122 : X_LUT4
     generic map(
       INIT => X"FF01",
-      LOC => "SLICE_X53Y42"
+      LOC => "SLICE_X51Y42"
     )
     port map (
-      ADR0 => RDC1,
+      ADR0 => R1D0,
       ADR1 => R2D2,
-      ADR2 => R1D0,
+      ADR2 => RDC1,
       ADR3 => R1D1,
       O => M1_XLXN_1433
     );
   M1_U123_I_Q0 : X_FF
     generic map(
-      LOC => "SLICE_X53Y42",
+      LOC => "SLICE_X51Y42",
       INIT => '0'
     )
     port map (
@@ -15057,7 +13615,7 @@ begin
     );
   M1_U123_I_Q1 : X_FF
     generic map(
-      LOC => "SLICE_X53Y42",
+      LOC => "SLICE_X51Y42",
       INIT => '0'
     )
     port map (
@@ -15068,55 +13626,34 @@ begin
       RST => M1_CODE1_SRINV_5109,
       O => M1_CODE1
     );
-  U113_I_Q0 : X_FF
+  U158_XLXI_114_I_36_38 : X_LUT4
     generic map(
-      LOC => "SLICE_X52Y19",
+      INIT => X"CCAA",
+      LOC => "SLICE_X52Y20"
+    )
+    port map (
+      ADR0 => RD0_0,
+      ADR1 => NPSELDISP0_0,
+      ADR2 => VCC,
+      ADR3 => ADD_0,
+      O => BRWD0_pack_1
+    );
+  U119_I_Q3 : X_FF
+    generic map(
+      LOC => "SLICE_X45Y35",
       INIT => '0'
     )
     port map (
-      I => DISP12_DYMUX_5158,
-      CE => DISP12_CEINV_5147,
-      CLK => DISP12_CLKINV_5148,
+      I => RDC3_DYMUX_5398,
+      CE => VCC,
+      CLK => RDC3_CLKINV_5390,
       SET => GND,
-      RST => DISP12_FFY_RSTAND_5164,
-      O => DISP12
-    );
-  DISP12_FFY_RSTAND : X_BUF
-    generic map(
-      LOC => "SLICE_X52Y19",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => RESET,
-      O => DISP12_FFY_RSTAND_5164
-    );
-  U174_XLXI_6_I_36_30 : X_LUT4
-    generic map(
-      INIT => X"C088",
-      LOC => "SLICE_X52Y19"
-    )
-    port map (
-      ADR0 => BRWD1_0,
-      ADR1 => U171_I_36_111_O,
-      ADR2 => BRWD0,
-      ADR3 => NSD0,
-      O => U174_XLXI_6_M1
-    );
-  M1_u125 : X_LUT4
-    generic map(
-      INIT => X"CCCD",
-      LOC => "SLICE_X51Y43"
-    )
-    port map (
-      ADR0 => R2D0,
-      ADR1 => R2D1,
-      ADR2 => R1D3,
-      ADR3 => RDC3,
-      O => M1_XLXN_1467
+      RST => GND,
+      O => RDC3
     );
   M1_U126_I_Q0 : X_FF
     generic map(
-      LOC => "SLICE_X51Y43",
+      LOC => "SLICE_X48Y43",
       INIT => '0'
     )
     port map (
@@ -15129,7 +13666,7 @@ begin
     );
   M1_U126_I_Q1 : X_FF
     generic map(
-      LOC => "SLICE_X51Y43",
+      LOC => "SLICE_X48Y43",
       INIT => '0'
     )
     port map (
@@ -15143,212 +13680,30 @@ begin
   M4_U221_I_36_32 : X_LUT4
     generic map(
       INIT => X"8000",
-      LOC => "SLICE_X52Y35"
+      LOC => "SLICE_X53Y27"
     )
     port map (
-      ADR0 => M4_U221_AB1_0,
-      ADR1 => M4_U221_AB0_0,
-      ADR2 => M4_U221_AB2_0,
-      ADR3 => M4_U221_AB3_0,
+      ADR0 => M4_U221_AB0_0,
+      ADR1 => M4_U221_AB2_0,
+      ADR2 => M4_U221_AB3_0,
+      ADR3 => M4_U221_AB1_0,
       O => DIGEQCD_pack_2
-    );
-  M4_U222_I_Q2 : X_FF
-    generic map(
-      LOC => "SLICE_X52Y35",
-      INIT => '0'
-    )
-    port map (
-      I => BRWDEQCD_DYMUX_5234,
-      CE => BRWDEQCD_CEINV_5224,
-      CLK => BRWDEQCD_CLKINV_5225,
-      SET => GND,
-      RST => BRWDEQCD_FFY_RSTAND_5240,
-      O => BRWDEQCD
-    );
-  BRWDEQCD_FFY_RSTAND : X_BUF
-    generic map(
-      LOC => "SLICE_X52Y35",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => CLEARP2FFS_0,
-      O => BRWDEQCD_FFY_RSTAND_5240
-    );
-  U258 : X_LUT4
-    generic map(
-      INIT => X"0080",
-      LOC => "SLICE_X52Y35"
-    )
-    port map (
-      ADR0 => S4,
-      ADR1 => CODEKNOWN_0,
-      ADR2 => DIGEQCD,
-      ADR3 => P2STR3,
-      O => STDIGEQCD_pack_1
     );
   U49 : X_LUT4
     generic map(
-      INIT => X"FFCC",
-      LOC => "SLICE_X64Y58"
+      INIT => X"FAFA",
+      LOC => "SLICE_X65Y60"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => U171_I_36_111_O,
-      ADR2 => VCC,
-      ADR3 => NSD0,
-      O => CRNTADJ
-    );
-  U185_I_Q2 : X_FF
-    generic map(
-      LOC => "SLICE_X47Y31",
-      INIT => '0'
-    )
-    port map (
-      I => LARGESTRWD_2_DXMUX_7327,
-      CE => LARGESTRWD_2_CEINV_7309,
-      CLK => LARGESTRWD_2_CLKINV_7310,
-      SET => GND,
-      RST => LARGESTRWD_2_FFX_RSTAND_7333,
-      O => LARGESTRWD(2)
-    );
-  LARGESTRWD_2_FFX_RSTAND : X_BUF
-    generic map(
-      LOC => "SLICE_X47Y31",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => CLEARP2FFS_0,
-      O => LARGESTRWD_2_FFX_RSTAND_7333
-    );
-  M1_U129_I_36_42 : X_LUT4
-    generic map(
-      INIT => X"A5A5",
-      LOC => "SLICE_X64Y32"
-    )
-    port map (
-      ADR0 => DISP1,
+      ADR0 => NSD0,
       ADR1 => VCC,
-      ADR2 => M1_CODE1,
+      ADR2 => U171_I_36_111_O,
       ADR3 => VCC,
-      O => M1_U129_AB1
-    );
-  U156_XLXI_2_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"F0AA",
-      LOC => "SLICE_X64Y14"
-    )
-    port map (
-      ADR0 => NPDISP10,
-      ADR1 => VCC,
-      ADR2 => NPDISP14,
-      ADR3 => ENCPSEL0,
-      O => U156_XLXN_2
-    );
-  M1_U123_I_Q2 : X_FF
-    generic map(
-      LOC => "SLICE_X51Y42",
-      INIT => '0'
-    )
-    port map (
-      I => M1_CODE3_DYMUX_7394,
-      CE => M1_CODE3_CEINV_7390,
-      CLK => M1_CODE3_CLKINV_7391,
-      SET => GND,
-      RST => M1_CODE3_SRINV_7392,
-      O => M1_CODE2
-    );
-  M1_U123_I_Q3 : X_FF
-    generic map(
-      LOC => "SLICE_X51Y42",
-      INIT => '0'
-    )
-    port map (
-      I => M1_CODE3_DXMUX_7403,
-      CE => M1_CODE3_CEINV_7390,
-      CLK => M1_CODE3_CLKINV_7391,
-      SET => GND,
-      RST => M1_CODE3_SRINV_7392,
-      O => M1_CODE3
-    );
-  U156_XLXI_1_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"AACC",
-      LOC => "SLICE_X64Y16"
-    )
-    port map (
-      ADR0 => NPDISP6,
-      ADR1 => NPDISP2,
-      ADR2 => VCC,
-      ADR3 => ENCPSEL0,
-      O => U156_XLXN_1
-    );
-  U120_I_Q0 : X_FF
-    generic map(
-      LOC => "SLICE_X53Y59",
-      INIT => '0'
-    )
-    port map (
-      I => R2D1_DYMUX_7446,
-      CE => R2D1_CEINV_7442,
-      CLK => R2D1_CLKINV_7443,
-      SET => GND,
-      RST => R2D1_SRINV_7444,
-      O => R2D0
-    );
-  U120_I_Q1 : X_FF
-    generic map(
-      LOC => "SLICE_X53Y59",
-      INIT => '0'
-    )
-    port map (
-      I => R2D1_DXMUX_7455,
-      CE => R2D1_CEINV_7442,
-      CLK => R2D1_CLKINV_7443,
-      SET => GND,
-      RST => R2D1_SRINV_7444,
-      O => R2D1
-    );
-  U120_I_Q2 : X_FF
-    generic map(
-      LOC => "SLICE_X50Y44",
-      INIT => '0'
-    )
-    port map (
-      I => R2D3_DYMUX_7474,
-      CE => R2D3_CEINV_7470,
-      CLK => R2D3_CLKINV_7471,
-      SET => GND,
-      RST => R2D3_SRINV_7472,
-      O => R2D2
-    );
-  U120_I_Q3 : X_FF
-    generic map(
-      LOC => "SLICE_X50Y44",
-      INIT => '0'
-    )
-    port map (
-      I => R2D3_DXMUX_7483,
-      CE => R2D3_CEINV_7470,
-      CLK => R2D3_CLKINV_7471,
-      SET => GND,
-      RST => R2D3_SRINV_7472,
-      O => R2D3
-    );
-  M1_U136 : X_LUT4
-    generic map(
-      INIT => X"F888",
-      LOC => "SLICE_X53Y40"
-    )
-    port map (
-      ADR0 => M1_XLXN_1538_0,
-      ADR1 => M1_CDEQPD1_0,
-      ADR2 => M1_CDEQPD0,
-      ADR3 => M1_XLXN_1539_0,
-      O => M1_CODERWDMUXSEL1
+      O => CRNTADJ
     );
   U50 : X_FF
     generic map(
-      LOC => "SLICE_X64Y58",
+      LOC => "SLICE_X65Y60",
       INIT => '0'
     )
     port map (
@@ -15361,7 +13716,7 @@ begin
     );
   LP1NSD_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X64Y58",
+      LOC => "SLICE_X65Y60",
       PATHPULSE => 694 ps
     )
     port map (
@@ -15370,19 +13725,31 @@ begin
     );
   U186_I_36_45 : X_LUT4
     generic map(
-      INIT => X"4D44",
-      LOC => "SLICE_X64Y58"
+      INIT => X"20F2",
+      LOC => "SLICE_X65Y60"
     )
     port map (
-      ADR0 => LARGESTNSD1,
-      ADR1 => U171_I_36_111_O,
-      ADR2 => LARGESTNSD0,
-      ADR3 => NSD0,
+      ADR0 => NSD0,
+      ADR1 => LARGESTNSD0,
+      ADR2 => U171_I_36_111_O,
+      ADR3 => LARGESTNSD1,
       O => NSDGTLARGEST
+    );
+  U41 : X_LUT4
+    generic map(
+      INIT => X"FEFE",
+      LOC => "SLICE_X54Y61"
+    )
+    port map (
+      ADR0 => S4P2SKIP_0,
+      ADR1 => S0,
+      ADR2 => NEXTPLAY,
+      ADR3 => VCC,
+      O => CLRTOPLAY
     );
   U43 : X_FF
     generic map(
-      LOC => "SLICE_X65Y66",
+      LOC => "SLICE_X54Y61",
       INIT => '0'
     )
     port map (
@@ -15395,40 +13762,28 @@ begin
     );
   CLPXNSDFF_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X65Y66",
+      LOC => "SLICE_X54Y61",
       PATHPULSE => 694 ps
     )
     port map (
       I => INT_NET11,
       O => CLPXNSDFF_FFY_RSTAND_5315
     );
-  U32 : X_LUT4
-    generic map(
-      INIT => X"0B0A",
-      LOC => "SLICE_X65Y66"
-    )
-    port map (
-      ADR0 => CLRSHFTREG_0,
-      ADR1 => S0,
-      ADR2 => LPTOVF,
-      ADR3 => NEXTPLAY,
-      O => GRD
-    );
   U180 : X_LUT4
     generic map(
-      INIT => X"FFCC",
-      LOC => "SLICE_X46Y57"
+      INIT => X"EEEE",
+      LOC => "SLICE_X51Y46"
     )
     port map (
-      ADR0 => VCC,
+      ADR0 => XLXN_1802,
       ADR1 => RWDCOT,
       ADR2 => VCC,
-      ADR3 => XLXN_1802,
+      ADR3 => VCC,
       O => PTOVF
     );
   U71 : X_FF
     generic map(
-      LOC => "SLICE_X46Y57",
+      LOC => "SLICE_X51Y46",
       INIT => '0'
     )
     port map (
@@ -15441,7 +13796,7 @@ begin
     );
   LPTOVF_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X46Y57",
+      LOC => "SLICE_X51Y46",
       PATHPULSE => 694 ps
     )
     port map (
@@ -15450,7 +13805,7 @@ begin
     );
   U119_I_Q1 : X_FF
     generic map(
-      LOC => "SLICE_X41Y33",
+      LOC => "SLICE_X44Y34",
       INIT => '0'
     )
     port map (
@@ -15461,59 +13816,57 @@ begin
       RST => GND,
       O => RDC1
     );
-  U119_I_36_78 : X_LUT4
+  U119_I_36_86 : X_LUT4
     generic map(
-      INIT => X"6A6A",
-      LOC => "SLICE_X41Y33"
+      INIT => X"B4B4",
+      LOC => "SLICE_X44Y34"
     )
     port map (
-      ADR0 => RDC2,
+      ADR0 => RDC3,
       ADR1 => U119_Q0,
       ADR2 => RDC1,
       ADR3 => VCC,
+      O => U119_D1
+    );
+  U119_I_36_78 : X_LUT4
+    generic map(
+      INIT => X"3FC0",
+      LOC => "SLICE_X44Y34"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => U119_Q0,
+      ADR2 => RDC1,
+      ADR3 => RDC2,
       O => U119_D2
     );
-  U119_I_Q2 : X_FF
+  U172 : X_LUT4
     generic map(
-      LOC => "SLICE_X41Y33",
-      INIT => '0'
+      INIT => X"C000",
+      LOC => "SLICE_X49Y33"
     )
     port map (
-      I => RDC2_DXMUX_5380,
-      CE => VCC,
-      CLK => RDC2_CLKINV_5359,
-      SET => GND,
-      RST => GND,
-      O => RDC2
-    );
-  U119_I_Q3 : X_FF
-    generic map(
-      LOC => "SLICE_X40Y31",
-      INIT => '0'
-    )
-    port map (
-      I => RDC3_DYMUX_5398,
-      CE => VCC,
-      CLK => RDC3_CLKINV_5390,
-      SET => GND,
-      RST => GND,
-      O => RDC3
+      ADR0 => VCC,
+      ADR1 => BRWD3_0,
+      ADR2 => NSD0,
+      ADR3 => U171_I_36_111_O,
+      O => RWD_6_pack_2
     );
   U177 : X_LUT4
     generic map(
-      INIT => X"1100",
-      LOC => "SLICE_X44Y32"
+      INIT => X"0404",
+      LOC => "SLICE_X52Y32"
     )
     port map (
-      ADR0 => U171_I_36_111_O,
-      ADR1 => NSD0,
-      ADR2 => VCC,
-      ADR3 => BRWD0,
+      ADR0 => NSD0,
+      ADR1 => BRWD0,
+      ADR2 => U171_I_36_111_O,
+      ADR3 => VCC,
       O => RWD_0_Q
     );
   U185_I_Q0 : X_FF
     generic map(
-      LOC => "SLICE_X44Y32",
+      LOC => "SLICE_X52Y32",
       INIT => '0'
     )
     port map (
@@ -15526,7 +13879,7 @@ begin
     );
   LARGESTRWD_0_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X44Y32",
+      LOC => "SLICE_X52Y32",
       PATHPULSE => 694 ps
     )
     port map (
@@ -15535,89 +13888,325 @@ begin
     );
   M4_U221_I_36_43 : X_LUT4
     generic map(
-      INIT => X"AA55",
-      LOC => "SLICE_X44Y32"
+      INIT => X"CC33",
+      LOC => "SLICE_X52Y32"
     )
     port map (
-      ADR0 => P2SELCD0_0,
-      ADR1 => VCC,
+      ADR0 => VCC,
+      ADR1 => P2SELCD0_0,
       ADR2 => VCC,
       ADR3 => BRWD0,
       O => M4_U221_AB0
     );
   U176_I_36_38 : X_LUT4
     generic map(
-      INIT => X"5410",
-      LOC => "SLICE_X44Y33"
+      INIT => X"00E4",
+      LOC => "SLICE_X53Y28"
     )
     port map (
-      ADR0 => U171_I_36_111_O,
-      ADR1 => NSD0,
-      ADR2 => BRWD1_0,
-      ADR3 => BRWD0,
+      ADR0 => NSD0,
+      ADR1 => BRWD1_0,
+      ADR2 => BRWD0,
+      ADR3 => U171_I_36_111_O,
       O => RWD_1_pack_2
     );
-  U185_I_Q1 : X_FF
+  U183_I_36_8 : X_LUT4
     generic map(
-      LOC => "SLICE_X44Y33",
+      INIT => X"20F2",
+      LOC => "SLICE_X53Y28"
+    )
+    port map (
+      ADR0 => RWD_0_0,
+      ADR1 => LARGESTRWD(0),
+      ADR2 => RWD_1_Q,
+      ADR3 => LARGESTRWD(1),
+      O => U183_GT0_1
+    );
+  U152_XLXI_114_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"FA50",
+      LOC => "SLICE_X54Y43"
+    )
+    port map (
+      ADR0 => STR2,
+      ADR1 => VCC,
+      ADR2 => P1SEL(0),
+      ADR3 => P2SEL0,
+      O => PSEL0_pack_2
+    );
+  U69_I_Q0 : X_FF
+    generic map(
+      LOC => "SLICE_X54Y43",
       INIT => '0'
     )
     port map (
-      I => LARGESTRWD_1_DYMUX_5465,
-      CE => LARGESTRWD_1_CEINV_5455,
-      CLK => LARGESTRWD_1_CLKINV_5456,
+      I => LPSEL0_DYMUX_5504,
+      CE => LPSEL0_CEINV_5493,
+      CLK => LPSEL0_CLKINV_5494,
       SET => GND,
-      RST => LARGESTRWD_1_FFY_RSTAND_5471,
-      O => LARGESTRWD(1)
+      RST => LPSEL0_FFY_RSTAND_5510,
+      O => LPSEL0
     );
-  LARGESTRWD_1_FFY_RSTAND : X_BUF
+  LPSEL0_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X44Y33",
+      LOC => "SLICE_X54Y43",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => CLFF_0,
+      O => LPSEL0_FFY_RSTAND_5510
+    );
+  M1_U133 : X_LUT4
+    generic map(
+      INIT => X"1333",
+      LOC => "SLICE_X54Y43"
+    )
+    port map (
+      ADR0 => S2ORS5_0,
+      ADR1 => M1_XLXN_1539_0,
+      ADR2 => M1_CDEQBRWD0_0,
+      ADR3 => PSEL0,
+      O => M1_ENCODERWDMUX
+    );
+  U152_XLXI_116_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"CCF0",
+      LOC => "SLICE_X65Y12"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => P2SEL2,
+      ADR2 => P1SEL(2),
+      ADR3 => STR2,
+      O => PSEL2
+    );
+  U154 : X_LUT4
+    generic map(
+      INIT => X"FFD8",
+      LOC => "SLICE_X65Y12"
+    )
+    port map (
+      ADR0 => STR2,
+      ADR1 => P2SEL2,
+      ADR2 => P1SEL(2),
+      ADR3 => PSEL3_0,
+      O => ENCPSEL1
+    );
+  U173_XLXI_6_I_36_30 : X_LUT4
+    generic map(
+      INIT => X"E200",
+      LOC => "SLICE_X49Y26"
+    )
+    port map (
+      ADR0 => BRWD3_0,
+      ADR1 => NSD0,
+      ADR2 => BRWD2_0,
+      ADR3 => U171_I_36_111_O,
+      O => U173_XLXI_6_M1_pack_2
+    );
+  U185_I_Q5 : X_FF
+    generic map(
+      LOC => "SLICE_X49Y26",
+      INIT => '0'
+    )
+    port map (
+      I => LARGESTRWD_5_DYMUX_5581,
+      CE => LARGESTRWD_5_CEINV_5571,
+      CLK => LARGESTRWD_5_CLKINV_5572,
+      SET => GND,
+      RST => LARGESTRWD_5_FFY_RSTAND_5587,
+      O => LARGESTRWD(5)
+    );
+  LARGESTRWD_5_FFY_RSTAND : X_BUF
+    generic map(
+      LOC => "SLICE_X49Y26",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLEARP2FFS_0,
-      O => LARGESTRWD_1_FFY_RSTAND_5471
+      O => LARGESTRWD_5_FFY_RSTAND_5587
     );
-  U183_I_36_8 : X_LUT4
+  U183_I_36_31 : X_LUT4
     generic map(
-      INIT => X"7130",
-      LOC => "SLICE_X44Y33"
+      INIT => X"2100",
+      LOC => "SLICE_X49Y26"
     )
     port map (
-      ADR0 => LARGESTRWD(0),
-      ADR1 => LARGESTRWD(1),
-      ADR2 => RWD_1_Q,
-      ADR3 => RWD_0_0,
-      O => U183_GT0_1
+      ADR0 => LARGESTRWD(5),
+      ADR1 => LARGESTRWD(4),
+      ADR2 => U173_XLXI_6_M1,
+      ADR3 => RWD_4_0,
+      O => U183_GE4_5
     );
-  U107 : X_LUT4
+  U185_I_Q6 : X_FF
     generic map(
-      INIT => X"A158",
-      LOC => "SLICE_X66Y77"
+      LOC => "SLICE_X49Y33",
+      INIT => '0'
+    )
+    port map (
+      I => LARGESTRWD_6_DYMUX_5618,
+      CE => LARGESTRWD_6_CEINV_5607,
+      CLK => LARGESTRWD_6_CLKINV_5608,
+      SET => GND,
+      RST => LARGESTRWD_6_FFY_RSTAND_5624,
+      O => LARGESTRWD(6)
+    );
+  LARGESTRWD_6_FFY_RSTAND : X_BUF
+    generic map(
+      LOC => "SLICE_X49Y33",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => CLEARP2FFS_0,
+      O => LARGESTRWD_6_FFY_RSTAND_5624
+    );
+  U183_I_36_22 : X_LUT4
+    generic map(
+      INIT => X"CC33",
+      LOC => "SLICE_X49Y33"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => LARGESTRWD(6),
+      ADR2 => VCC,
+      ADR3 => RWD_6_Q,
+      O => U183_EQ6_7
+    );
+  U109 : X_LUT4
+    generic map(
+      INIT => X"3910",
+      LOC => "SLICE_X64Y79"
+    )
+    port map (
+      ADR0 => KSBUS(2),
+      ADR1 => KSBUS(3),
+      ADR2 => KSBUS(1),
+      ADR3 => KSBUS(0),
+      O => SBUS(1)
+    );
+  U64_I_Q2_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"66CC",
+      LOC => "SLICE_X66Y62"
+    )
+    port map (
+      ADR0 => STR0,
+      ADR1 => STR2,
+      ADR2 => VCC,
+      ADR3 => STR1,
+      O => U64_I_Q2_TQ
+    );
+  U57 : X_LUT4
+    generic map(
+      INIT => X"1188",
+      LOC => "SLICE_X66Y62"
+    )
+    port map (
+      ADR0 => STR0,
+      ADR1 => STR2,
+      ADR2 => VCC,
+      ADR3 => STR1,
+      O => S2ORS5
+    );
+  U178_XLXI_117_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"F3C0",
+      LOC => "SLICE_X50Y52"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => STR2,
+      ADR2 => P2PT(7),
+      ADR3 => P1PT(7),
+      O => PT(7)
+    );
+  U191_I_36_30 : X_LUT4
+    generic map(
+      INIT => X"4004",
+      LOC => "SLICE_X50Y52"
+    )
+    port map (
+      ADR0 => P2PT(6),
+      ADR1 => P1PT(6),
+      ADR2 => P2PT(7),
+      ADR3 => P1PT(7),
+      O => U191_LE6_7
+    );
+  U104 : X_LUT4
+    generic map(
+      INIT => X"2182",
+      LOC => "SLICE_X65Y79"
+    )
+    port map (
+      ADR0 => KSBUS(0),
+      ADR1 => KSBUS(1),
+      ADR2 => KSBUS(3),
+      ADR3 => KSBUS(2),
+      O => SBUS(6)
+    );
+  U108 : X_LUT4
+    generic map(
+      INIT => X"0B2A",
+      LOC => "SLICE_X65Y79"
+    )
+    port map (
+      ADR0 => KSBUS(0),
+      ADR1 => KSBUS(1),
+      ADR2 => KSBUS(3),
+      ADR3 => KSBUS(2),
+      O => SBUS(2)
+    );
+  U105 : X_LUT4
+    generic map(
+      INIT => X"B680",
+      LOC => "SLICE_X65Y85"
     )
     port map (
       ADR0 => KSBUS(1),
-      ADR1 => KSBUS(3),
-      ADR2 => KSBUS(0),
+      ADR1 => KSBUS(0),
+      ADR2 => KSBUS(3),
+      ADR3 => KSBUS(2),
+      O => SBUS(5)
+    );
+  U107 : X_LUT4
+    generic map(
+      INIT => X"8964",
+      LOC => "SLICE_X65Y85"
+    )
+    port map (
+      ADR0 => KSBUS(1),
+      ADR1 => KSBUS(0),
+      ADR2 => KSBUS(3),
       ADR3 => KSBUS(2),
       O => SBUS(3)
     );
-  U125_XLXI_116_I_36_38 : X_LUT4
+  U106 : X_LUT4
     generic map(
-      INIT => X"F780",
-      LOC => "SLICE_X55Y25"
+      INIT => X"8908",
+      LOC => "SLICE_X64Y85"
     )
     port map (
-      ADR0 => XLXN_1347,
-      ADR1 => STR2,
-      ADR2 => TRD2,
-      ADR3 => R0D2,
-      O => RD2
+      ADR0 => KSBUS(2),
+      ADR1 => KSBUS(3),
+      ADR2 => KSBUS(0),
+      ADR3 => KSBUS(1),
+      O => SBUS(4)
+    );
+  U123 : X_LUT4
+    generic map(
+      INIT => X"FFFE",
+      LOC => "SLICE_X66Y34"
+    )
+    port map (
+      ADR0 => P1SEL(0),
+      ADR1 => P1SEL(2),
+      ADR2 => P1SEL(1),
+      ADR3 => P1SEL(3),
+      O => XLXN_1347_pack_1
     );
   U188_I_Q1 : X_FF
     generic map(
-      LOC => "SLICE_X52Y10",
+      LOC => "SLICE_X55Y12",
       INIT => '0'
     )
     port map (
@@ -15630,7 +14219,7 @@ begin
     );
   U188_I_Q2 : X_FF
     generic map(
-      LOC => "SLICE_X52Y10",
+      LOC => "SLICE_X55Y12",
       INIT => '0'
     )
     port map (
@@ -15641,21 +14230,33 @@ begin
       RST => LNSDPOSSEL1_SRINV_5800,
       O => LNSDPOSSEL1
     );
-  U236 : X_LUT4
+  U230 : X_LUT4
     generic map(
-      INIT => X"CCDC",
-      LOC => "SLICE_X52Y21"
+      INIT => X"FA00",
+      LOC => "SLICE_X53Y9"
     )
     port map (
-      ADR0 => LRGRWDWINSGAME,
-      ADR1 => XLXN_2274_0,
-      ADR2 => LADJCODE,
-      ADR3 => BRWDEQCD,
+      ADR0 => LARGESTNSD1,
+      ADR1 => VCC,
+      ADR2 => LARGESTNSD0,
+      ADR3 => XLXN_2186,
+      O => LADJCODE_pack_1
+    );
+  U236 : X_LUT4
+    generic map(
+      INIT => X"ABAA",
+      LOC => "SLICE_X53Y9"
+    )
+    port map (
+      ADR0 => XLXN_2274_0,
+      ADR1 => LRGRWDWINSGAME,
+      ADR2 => BRWDEQCD,
+      ADR3 => LADJCODE,
       O => ACTION1
     );
   U188_I_Q3 : X_FF
     generic map(
-      LOC => "SLICE_X53Y11",
+      LOC => "SLICE_X54Y14",
       INIT => '0'
     )
     port map (
@@ -15668,77 +14269,149 @@ begin
     );
   LNSDADD_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X53Y11",
+      LOC => "SLICE_X54Y14",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLEARP2FFS_0,
       O => LNSDADD_FFY_RSTAND_5858
     );
-  U52 : X_LUT4
+  U231 : X_LUT4
     generic map(
-      INIT => X"0C00",
-      LOC => "SLICE_X53Y28"
+      INIT => X"FFFE",
+      LOC => "SLICE_X55Y15"
     )
     port map (
-      ADR0 => VCC,
+      ADR0 => PLAYPOS1_0,
+      ADR1 => PLAYPOS0,
+      ADR2 => ACTION0_0,
+      ADR3 => ACTION4_0,
+      O => RDPLAYABLE_pack_1
+    );
+  U52 : X_LUT4
+    generic map(
+      INIT => X"0088",
+      LOC => "SLICE_X55Y15"
+    )
+    port map (
+      ADR0 => S4,
       ADR1 => P2STR3,
-      ADR2 => RDPLAYABLE,
-      ADR3 => S4,
+      ADR2 => VCC,
+      ADR3 => RDPLAYABLE,
       O => S4P2SKIP
     );
-  U242 : X_LUT4
+  U240 : X_LUT4
     generic map(
-      INIT => X"0A0A",
-      LOC => "SLICE_X53Y20"
+      INIT => X"0011",
+      LOC => "SLICE_X55Y9"
     )
     port map (
       ADR0 => BRWDEQCD,
-      ADR1 => VCC,
-      ADR2 => LRGRWDWINSGAME,
+      ADR1 => LRGRWDWINSGAME,
+      ADR2 => VCC,
+      ADR3 => LADJCODE,
+      O => NOWCNRD
+    );
+  U242 : X_LUT4
+    generic map(
+      INIT => X"2222",
+      LOC => "SLICE_X55Y9"
+    )
+    port map (
+      ADR0 => BRWDEQCD,
+      ADR1 => LRGRWDWINSGAME,
+      ADR2 => VCC,
       ADR3 => VCC,
       O => ACTION4
     );
-  U157_XLXI_1_I_36_8 : X_LUT4
+  U153 : X_LUT4
     generic map(
-      INIT => X"F0AA",
-      LOC => "SLICE_X66Y14"
+      INIT => X"FFB8",
+      LOC => "SLICE_X64Y17"
     )
     port map (
-      ADR0 => NPDISP0,
+      ADR0 => P2SEL1,
+      ADR1 => STR2,
+      ADR2 => P1SEL(1),
+      ADR3 => PSEL3_0,
+      O => ENCPSEL0_pack_1
+    );
+  U157_XLXI_1_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"AFA0",
+      LOC => "SLICE_X64Y17"
+    )
+    port map (
+      ADR0 => NPDISP4,
       ADR1 => VCC,
-      ADR2 => NPDISP4,
-      ADR3 => ENCPSEL0,
+      ADR2 => ENCPSEL0,
+      ADR3 => NPDISP0,
       O => U157_XLXN_1
     );
   U244_XLXI_1_I_36_8 : X_LUT4
     generic map(
-      INIT => X"FA0A",
-      LOC => "SLICE_X53Y10"
+      INIT => X"ACAC",
+      LOC => "SLICE_X55Y8"
     )
     port map (
-      ADR0 => LRWDRDPOSSEL0,
-      ADR1 => VCC,
+      ADR0 => LNSDPOSSEL0,
+      ADR1 => LRWDRDPOSSEL0,
       ADR2 => PLAYPOS0,
-      ADR3 => LNSDPOSSEL0,
+      ADR3 => VCC,
       O => U244_XLXN_1
+    );
+  U183_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"0090",
+      LOC => "SLICE_X49Y29"
+    )
+    port map (
+      ADR0 => LARGESTRWD(5),
+      ADR1 => U173_XLXI_6_M1,
+      ADR2 => LARGESTRWD(4),
+      ADR3 => RWD_4_0,
+      O => U183_LE4_5
+    );
+  U241 : X_LUT4
+    generic map(
+      INIT => X"0008",
+      LOC => "SLICE_X52Y14"
+    )
+    port map (
+      ADR0 => P2PTGTP1PT,
+      ADR1 => PLAYONLRGSTDISP_0,
+      ADR2 => ADJ_0,
+      ADR3 => INITPLAYONZERODISP_0,
+      O => XLXN_2277_pack_2
     );
   U232 : X_LUT4
     generic map(
-      INIT => X"CCC0",
-      LOC => "SLICE_X48Y22"
+      INIT => X"F0C0",
+      LOC => "SLICE_X52Y14"
     )
     port map (
       ADR0 => VCC,
-      ADR1 => NOWCNRD_0,
-      ADR2 => INITPLAYONZERODISP_0,
+      ADR1 => INITPLAYONZERODISP_0,
+      ADR2 => NOWCNRD_0,
       ADR3 => XLXN_2277,
       O => PLAYPOS1
+    );
+  U250 : X_LUT4
+    generic map(
+      INIT => X"CECC",
+      LOC => "SLICE_X64Y13"
+    )
+    port map (
+      ADR0 => XLXN_2310_0,
+      ADR1 => TESTP2SEL2_0,
+      ADR2 => XLXN_2309_0,
+      ADR3 => P2STR3,
+      O => P2SEL2_pack_1
     );
   U14 : X_LUT4
     generic map(
       INIT => X"A820",
-      LOC => "SLICE_X54Y12"
+      LOC => "SLICE_X64Y13"
     )
     port map (
       ADR0 => S2ORS5_0,
@@ -15747,21 +14420,45 @@ begin
       ADR3 => P2SEL2,
       O => STDISP2
     );
+  U234 : X_LUT4
+    generic map(
+      INIT => X"F1F0",
+      LOC => "SLICE_X52Y13"
+    )
+    port map (
+      ADR0 => INITPLAYONZERODISP_0,
+      ADR1 => P2PTGTP1PT,
+      ADR2 => LRGRWDWINSGAME,
+      ADR3 => NOWCNRD_0,
+      O => ACTION0
+    );
+  U251 : X_LUT4
+    generic map(
+      INIT => X"ECCC",
+      LOC => "SLICE_X64Y5"
+    )
+    port map (
+      ADR0 => XLXN_2310_0,
+      ADR1 => TESTP2SEL3_0,
+      ADR2 => XLXN_2309_0,
+      ADR3 => P2STR3,
+      O => P2SEL3_pack_1
+    );
   U152_XLXI_117_I_36_38 : X_LUT4
     generic map(
-      INIT => X"F0AA",
-      LOC => "SLICE_X55Y22"
+      INIT => X"E2E2",
+      LOC => "SLICE_X64Y5"
     )
     port map (
       ADR0 => P1SEL(3),
-      ADR1 => VCC,
+      ADR1 => STR2,
       ADR2 => P2SEL3,
-      ADR3 => STR2,
+      ADR3 => VCC,
       O => PSEL3
     );
   U69_I_Q3 : X_FF
     generic map(
-      LOC => "SLICE_X55Y22",
+      LOC => "SLICE_X64Y5",
       INIT => '0'
     )
     port map (
@@ -15774,64 +14471,76 @@ begin
     );
   LPSEL3_FFX_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X55Y22",
+      LOC => "SLICE_X64Y5",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLFF_0,
       O => LPSEL3_FFX_RSTAND_6053
     );
+  U263 : X_LUT4
+    generic map(
+      INIT => X"000A",
+      LOC => "SLICE_X53Y38"
+    )
+    port map (
+      ADR0 => P2STR0,
+      ADR1 => VCC,
+      ADR2 => P2STR1,
+      ADR3 => P2STR3,
+      O => TESTP2SEL1
+    );
   M4_U220_XLXI_114_I_36_38 : X_LUT4
     generic map(
-      INIT => X"00AC",
-      LOC => "SLICE_X50Y40"
+      INIT => X"0E04",
+      LOC => "SLICE_X53Y38"
     )
     port map (
-      ADR0 => P2CODE4,
+      ADR0 => P2STR0,
       ADR1 => P2CODE0,
-      ADR2 => P2STR0,
-      ADR3 => P2STR1,
+      ADR2 => P2STR1,
+      ADR3 => P2CODE4,
       O => P2SELCD0
     );
-  M4_U211 : X_LUT4
+  U248 : X_LUT4
     generic map(
-      INIT => X"C840",
-      LOC => "SLICE_X54Y40"
+      INIT => X"F1F0",
+      LOC => "SLICE_X55Y35"
     )
     port map (
-      ADR0 => STR2,
-      ADR1 => M4_DUMMY_2,
-      ADR2 => P1SEL(0),
-      ADR3 => P2SEL0,
-      O => M4_STCODE0
+      ADR0 => XLXN_2309_0,
+      ADR1 => XLXN_2310_0,
+      ADR2 => TESTP2SEL0_0,
+      ADR3 => P2STR3,
+      O => P2SEL0_pack_1
     );
-  U183_I_36_32 : X_LUT4
+  U249 : X_LUT4
     generic map(
-      INIT => X"0090",
-      LOC => "SLICE_X42Y27"
+      INIT => X"AEAA",
+      LOC => "SLICE_X64Y16"
     )
     port map (
-      ADR0 => U173_XLXI_6_M1,
-      ADR1 => LARGESTRWD(5),
-      ADR2 => LARGESTRWD(4),
-      ADR3 => RWD_4_0,
-      O => U183_LE4_5
+      ADR0 => TESTP2SEL1_0,
+      ADR1 => XLXN_2309_0,
+      ADR2 => XLXN_2310_0,
+      ADR3 => P2STR3,
+      O => P2SEL1_pack_1
     );
   U152_XLXI_115_I_36_38 : X_LUT4
     generic map(
-      INIT => X"EE22",
-      LOC => "SLICE_X54Y20"
+      INIT => X"FC30",
+      LOC => "SLICE_X64Y16"
     )
     port map (
-      ADR0 => P1SEL(1),
+      ADR0 => VCC,
       ADR1 => STR2,
-      ADR2 => VCC,
+      ADR2 => P1SEL(1),
       ADR3 => P2SEL1,
       O => PSEL1
     );
   U69_I_Q1 : X_FF
     generic map(
-      LOC => "SLICE_X54Y20",
+      LOC => "SLICE_X64Y16",
       INIT => '0'
     )
     port map (
@@ -15844,196 +14553,124 @@ begin
     );
   LPSEL1_FFX_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X54Y20",
+      LOC => "SLICE_X64Y16",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLFF_0,
       O => LPSEL1_FFX_RSTAND_6164
     );
+  U193 : X_LUT4
+    generic map(
+      INIT => X"8888",
+      LOC => "SLICE_X53Y16"
+    )
+    port map (
+      ADR0 => RDNOTZERO,
+      ADR1 => LRGRWDLTEIGHT_0,
+      ADR2 => VCC,
+      ADR3 => VCC,
+      O => PLAYONLRGSTDISP
+    );
+  U259 : X_LUT4
+    generic map(
+      INIT => X"5040",
+      LOC => "SLICE_X53Y18"
+    )
+    port map (
+      ADR0 => P2STR3,
+      ADR1 => P2S0_0,
+      ADR2 => S4,
+      ADR3 => NSDGTLARGEST_0,
+      O => STNLNSD
+    );
   U268 : X_LUT4
     generic map(
-      INIT => X"0C0C",
-      LOC => "SLICE_X53Y22"
+      INIT => X"00F0",
+      LOC => "SLICE_X53Y18"
     )
     port map (
       ADR0 => VCC,
-      ADR1 => S4,
-      ADR2 => P2STR3,
-      ADR3 => VCC,
+      ADR1 => VCC,
+      ADR2 => S4,
+      ADR3 => P2STR3,
       O => XLXN_2072
+    );
+  U283 : X_LUT4
+    generic map(
+      INIT => X"C33C",
+      LOC => "SLICE_X67Y22"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => RD3,
+      ADR2 => U288_C2O,
+      ADR3 => DISP15,
+      O => NPDISP15_pack_1
     );
   U156_XLXI_4_I_36_8 : X_LUT4
     generic map(
-      INIT => X"F3C0",
-      LOC => "SLICE_X65Y12"
+      INIT => X"E4E4",
+      LOC => "SLICE_X67Y22"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => ENCPSEL0,
+      ADR0 => ENCPSEL0,
+      ADR1 => NPDISP11,
       ADR2 => NPDISP15,
-      ADR3 => NPDISP11,
+      ADR3 => VCC,
       O => U156_XLXN_14
     );
-  M2_U194_I_36_5 : X_LUT4
-    generic map(
-      INIT => X"30B2",
-      LOC => "SLICE_X65Y11"
-    )
-    port map (
-      ADR0 => DISP12,
-      ADR1 => DISP9,
-      ADR2 => DISP13,
-      ADR3 => DISP8,
-      O => M2_U194_LT0_1
-    );
-  M2_U194_I_36_14 : X_LUT4
-    generic map(
-      INIT => X"0084",
-      LOC => "SLICE_X64Y8"
-    )
-    port map (
-      ADR0 => DISP15,
-      ADR1 => DISP10,
-      ADR2 => DISP11,
-      ADR3 => DISP14,
-      O => M2_U194_GE2_3
-    );
-  U289 : X_LUT4
+  U196 : X_LUT4
     generic map(
       INIT => X"FFFE",
-      LOC => "SLICE_X64Y23"
+      LOC => "SLICE_X52Y16"
     )
     port map (
-      ADR0 => XLXN_11412,
-      ADR1 => XLXN_11463_0,
-      ADR2 => XLXN_11411,
-      ADR3 => XLXN_11472_0,
-      O => APOSZERO
-    );
-  M1_U132 : X_LUT4
-    generic map(
-      INIT => X"A000",
-      LOC => "SLICE_X50Y41"
-    )
-    port map (
-      ADR0 => S2ORS5_0,
-      ADR1 => VCC,
-      ADR2 => M1_CDEQBRWD1,
-      ADR3 => PSEL1_0,
-      O => M1_XLXN_1539
-    );
-  M1_U130_I_36_33 : X_LUT4
-    generic map(
-      INIT => X"AA55",
-      LOC => "SLICE_X49Y41"
-    )
-    port map (
-      ADR0 => M1_CODE6,
-      ADR1 => VCC,
-      ADR2 => VCC,
-      ADR3 => DISP6,
-      O => M1_U130_AB2
-    );
-  M1_U130_I_36_42 : X_LUT4
-    generic map(
-      INIT => X"9999",
-      LOC => "SLICE_X48Y40"
-    )
-    port map (
-      ADR0 => M1_CODE5,
-      ADR1 => DISP5,
-      ADR2 => VCC,
-      ADR3 => VCC,
-      O => M1_U130_AB1
-    );
-  M4_U221_I_36_34 : X_LUT4
-    generic map(
-      INIT => X"AA55",
-      LOC => "SLICE_X51Y38"
-    )
-    port map (
-      ADR0 => P2SELCD3,
-      ADR1 => VCC,
-      ADR2 => VCC,
-      ADR3 => BRWD3_0,
-      O => M4_U221_AB3
-    );
-  M1_U137_XLXI_115_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"3120",
-      LOC => "SLICE_X48Y42"
-    )
-    port map (
-      ADR0 => M1_CODERWDMUXSEL1_0,
-      ADR1 => M1_ENCODERWDMUX_0,
-      ADR2 => M1_CODE4,
-      ADR3 => BRWD1_0,
-      O => CODERWD(4)
-    );
-  U191_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"30B2",
-      LOC => "SLICE_X46Y53"
-    )
-    port map (
-      ADR0 => P2PT(0),
-      ADR1 => P1PT(1),
-      ADR2 => P2PT(1),
-      ADR3 => P1PT(0),
-      O => U191_GT0_1
-    );
-  M1_U138 : X_LUT4
-    generic map(
-      INIT => X"3000",
-      LOC => "SLICE_X46Y43"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => M1_ENCODERWDMUX_0,
-      ADR2 => M1_CODE7,
-      ADR3 => M1_CODERWDMUXSEL1_0,
-      O => CODERWD(7)
-    );
-  U101_I_M01_I_36_30 : X_LUT4
-    generic map(
-      INIT => X"A088",
-      LOC => "SLICE_X67Y70"
-    )
-    port map (
-      ADR0 => MC0,
-      ADR1 => U83_XLXN_1_0,
-      ADR2 => U83_XLXN_2,
-      ADR3 => DISPSEL1_0,
-      O => U101_I_M01_M1
-    );
-  U100_I_M23_I_36_31 : X_LUT4
-    generic map(
-      INIT => X"0C0A",
-      LOC => "SLICE_X64Y53"
-    )
-    port map (
-      ADR0 => DISP9,
-      ADR1 => P2PT(1),
-      ADR2 => MC0,
-      ADR3 => DISPSEL0,
-      O => U100_I_M23_M0
+      ADR0 => RD0_0,
+      ADR1 => RD2_0,
+      ADR2 => RD1_0,
+      ADR3 => RD3,
+      O => RDNOTZERO_pack_1
     );
   U197 : X_LUT4
     generic map(
-      INIT => X"1000",
-      LOC => "SLICE_X53Y25"
+      INIT => X"0400",
+      LOC => "SLICE_X52Y16"
     )
     port map (
-      ADR0 => INITIALPLAYS_0,
-      ADR1 => ADJ_0,
-      ADR2 => APOSZERO_0,
+      ADR0 => ADJ_0,
+      ADR1 => APOSZERO_0,
+      ADR2 => INITIALPLAYS_0,
       ADR3 => RDNOTZERO,
       O => INITPLAYONZERODISP
     );
+  U189 : X_LUT4
+    generic map(
+      INIT => X"FFCC",
+      LOC => "SLICE_X52Y11"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => LARGESTNSD0,
+      ADR2 => VCC,
+      ADR3 => LARGESTNSD1,
+      O => ADJ
+    );
+  U170_XLXI_6_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"D8D8",
+      LOC => "SLICE_X52Y18"
+    )
+    port map (
+      ADR0 => ENCPSEL1_0,
+      ADR1 => U170_XLXN_14_0,
+      ADR2 => U170_XLXN_13_0,
+      ADR3 => VCC,
+      O => UNENCNSD1_pack_2
+    );
   U188_I_Q0 : X_FF
     generic map(
-      LOC => "SLICE_X52Y20",
+      LOC => "SLICE_X52Y18",
       INIT => '0'
     )
     port map (
@@ -16047,7 +14684,7 @@ begin
   U171_I_36_239 : X_LUT4
     generic map(
       INIT => X"33CC",
-      LOC => "SLICE_X52Y20"
+      LOC => "SLICE_X52Y18"
     )
     port map (
       ADR0 => VCC,
@@ -16058,7 +14695,7 @@ begin
     );
   U187 : X_FF
     generic map(
-      LOC => "SLICE_X52Y20",
+      LOC => "SLICE_X52Y18",
       INIT => '0'
     )
     port map (
@@ -16069,106 +14706,406 @@ begin
       RST => LARGESTNSD0_SRINV_6279,
       O => LARGESTNSD0
     );
-  U159_I_36_43 : X_LUT4
+  U83_XLXI_1_I_36_8 : X_LUT4
     generic map(
-      INIT => X"CC33",
-      LOC => "SLICE_X64Y40"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => DISP4,
-      ADR2 => VCC,
-      ADR3 => BRWD0,
-      O => U159_AB0
-    );
-  M2_U193_I_36_5 : X_LUT4
-    generic map(
-      INIT => X"20F2",
-      LOC => "SLICE_X65Y22"
+      INIT => X"F0AA",
+      LOC => "SLICE_X52Y23"
     )
     port map (
       ADR0 => DISP4,
-      ADR1 => DISP0,
-      ADR2 => DISP5,
-      ADR3 => DISP1,
+      ADR1 => VCC,
+      ADR2 => P1PT(4),
+      ADR3 => DISPSEL0,
+      O => U83_XLXN_1
+    );
+  U159_I_36_43 : X_LUT4
+    generic map(
+      INIT => X"A5A5",
+      LOC => "SLICE_X52Y23"
+    )
+    port map (
+      ADR0 => DISP4,
+      ADR1 => VCC,
+      ADR2 => BRWD0,
+      ADR3 => VCC,
+      O => U159_AB0
+    );
+  M2_U195_XLXI_114_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"EE22",
+      LOC => "SLICE_X64Y26"
+    )
+    port map (
+      ADR0 => DISP0,
+      ADR1 => M2_PD0PD1LT,
+      ADR2 => VCC,
+      ADR3 => DISP4,
+      O => M2_XLXN_1977
+    );
+  M2_U193_I_36_5 : X_LUT4
+    generic map(
+      INIT => X"4D0C",
+      LOC => "SLICE_X64Y26"
+    )
+    port map (
+      ADR0 => DISP0,
+      ADR1 => DISP5,
+      ADR2 => DISP1,
+      ADR3 => DISP4,
       O => M2_U193_LT0_1
+    );
+  M4_U220_XLXI_117_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"2230",
+      LOC => "SLICE_X52Y38"
+    )
+    port map (
+      ADR0 => P2CODE7,
+      ADR1 => P2STR1,
+      ADR2 => P2CODE3,
+      ADR3 => P2STR0,
+      O => P2SELCD3_pack_1
     );
   U228_I_36_34 : X_LUT4
     generic map(
-      INIT => X"A5A5",
-      LOC => "SLICE_X50Y45"
+      INIT => X"CC33",
+      LOC => "SLICE_X52Y38"
     )
     port map (
-      ADR0 => R1D3,
-      ADR1 => VCC,
-      ADR2 => P2SELCD3,
-      ADR3 => VCC,
+      ADR0 => VCC,
+      ADR1 => R1D3,
+      ADR2 => VCC,
+      ADR3 => P2SELCD3,
       O => U228_AB3
     );
-  M1_U130_I_36_34 : X_LUT4
+  U82_XLXI_3_I_36_8 : X_LUT4
     generic map(
-      INIT => X"CC33",
-      LOC => "SLICE_X49Y43"
+      INIT => X"FC0C",
+      LOC => "SLICE_X50Y51"
     )
     port map (
       ADR0 => VCC,
       ADR1 => DISP7,
+      ADR2 => DISPSEL0,
+      ADR3 => P1PT(7),
+      O => U82_XLXN_13
+    );
+  M1_U130_I_36_34 : X_LUT4
+    generic map(
+      INIT => X"9999",
+      LOC => "SLICE_X50Y51"
+    )
+    port map (
+      ADR0 => M1_CODE7,
+      ADR1 => DISP7,
       ADR2 => VCC,
-      ADR3 => M1_CODE7,
+      ADR3 => VCC,
       O => M1_U130_AB3
     );
-  U170_XLXI_4_I_36_8 : X_LUT4
+  U156_XLXI_3_I_36_8 : X_LUT4
     generic map(
-      INIT => X"A0AA",
-      LOC => "SLICE_X64Y18"
-    )
-    port map (
-      ADR0 => EQ1,
-      ADR1 => VCC,
-      ADR2 => EQ2_0,
-      ADR3 => ENCPSEL0,
-      O => U170_XLXN_14
-    );
-  U253_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"0E02",
-      LOC => "SLICE_X52Y11"
-    )
-    port map (
-      ADR0 => LRWDRDADD,
-      ADR1 => PLAYPOS0,
-      ADR2 => PLAYPOS1_0,
-      ADR3 => LNSDADD,
-      O => XLXN_2346
-    );
-  U290 : X_LUT4
-    generic map(
-      INIT => X"CCFC",
-      LOC => "SLICE_X64Y21"
+      INIT => X"FC0C",
+      LOC => "SLICE_X65Y18"
     )
     port map (
       ADR0 => VCC,
-      ADR1 => XLXN_11463_0,
-      ADR2 => XLXN_11412,
-      ADR3 => XLXN_11472_0,
-      O => ZERODISP0
+      ADR1 => NPDISP3,
+      ADR2 => ENCPSEL0,
+      ADR3 => NPDISP7,
+      O => U156_XLXN_13
+    );
+  U170_XLXI_4_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"C0F0",
+      LOC => "SLICE_X65Y18"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => EQ2_0,
+      ADR2 => EQ1,
+      ADR3 => ENCPSEL0,
+      O => U170_XLXN_14
+    );
+  U244_XLXI_3_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"ACAC",
+      LOC => "SLICE_X54Y15"
+    )
+    port map (
+      ADR0 => LNSDPOSSEL1,
+      ADR1 => LRWDRDPOSSEL1,
+      ADR2 => PLAYPOS0,
+      ADR3 => VCC,
+      O => U244_XLXN_13
+    );
+  U253_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"0D08",
+      LOC => "SLICE_X54Y15"
+    )
+    port map (
+      ADR0 => PLAYPOS0,
+      ADR1 => LNSDADD,
+      ADR2 => PLAYPOS1_0,
+      ADR3 => LRWDRDADD,
+      O => XLXN_2346
+    );
+  M1_U128_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"8000",
+      LOC => "SLICE_X50Y40"
+    )
+    port map (
+      ADR0 => M1_U128_AB2_0,
+      ADR1 => M1_U128_AB1_0,
+      ADR2 => M1_U128_AB3_0,
+      ADR3 => M1_U128_AB0_0,
+      O => M1_CDEQBRWD1_pack_1
+    );
+  M1_U132 : X_LUT4
+    generic map(
+      INIT => X"A000",
+      LOC => "SLICE_X50Y40"
+    )
+    port map (
+      ADR0 => PSEL1_0,
+      ADR1 => VCC,
+      ADR2 => S2ORS5_0,
+      ADR3 => M1_CDEQBRWD1,
+      O => M1_XLXN_1539
+    );
+  M1_U128_I_36_33 : X_LUT4
+    generic map(
+      INIT => X"C3C3",
+      LOC => "SLICE_X48Y41"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => M1_CODE6,
+      ADR2 => BRWD2_0,
+      ADR3 => VCC,
+      O => M1_U128_AB2
+    );
+  M1_U130_I_36_33 : X_LUT4
+    generic map(
+      INIT => X"C3C3",
+      LOC => "SLICE_X48Y41"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => M1_CODE6,
+      ADR2 => DISP6,
+      ADR3 => VCC,
+      O => M1_U130_AB2
+    );
+  M1_U128_I_36_42 : X_LUT4
+    generic map(
+      INIT => X"9999",
+      LOC => "SLICE_X51Y43"
+    )
+    port map (
+      ADR0 => BRWD1_0,
+      ADR1 => M1_CODE5,
+      ADR2 => VCC,
+      ADR3 => VCC,
+      O => M1_U128_AB1
+    );
+  M1_U130_I_36_42 : X_LUT4
+    generic map(
+      INIT => X"CC33",
+      LOC => "SLICE_X51Y43"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => M1_CODE5,
+      ADR2 => VCC,
+      ADR3 => DISP5,
+      O => M1_U130_AB1
+    );
+  M1_U128_I_36_34 : X_LUT4
+    generic map(
+      INIT => X"CC33",
+      LOC => "SLICE_X49Y36"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => BRWD3_0,
+      ADR2 => VCC,
+      ADR3 => M1_CODE7,
+      O => M1_U128_AB3
+    );
+  M4_U221_I_36_34 : X_LUT4
+    generic map(
+      INIT => X"CC33",
+      LOC => "SLICE_X49Y36"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => BRWD3_0,
+      ADR2 => VCC,
+      ADR3 => P2SELCD3,
+      O => M4_U221_AB3
+    );
+  M1_U128_I_36_43 : X_LUT4
+    generic map(
+      INIT => X"F00F",
+      LOC => "SLICE_X49Y40"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => VCC,
+      ADR2 => M1_CODE4,
+      ADR3 => BRWD0,
+      O => M1_U128_AB0
+    );
+  M1_U137_XLXI_115_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"3022",
+      LOC => "SLICE_X49Y40"
+    )
+    port map (
+      ADR0 => BRWD1_0,
+      ADR1 => M1_ENCODERWDMUX_0,
+      ADR2 => M1_CODE4,
+      ADR3 => M1_CODERWDMUXSEL1_0,
+      O => CODERWD(4)
+    );
+  U179_XLXI_114_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"EE44",
+      LOC => "SLICE_X51Y49"
+    )
+    port map (
+      ADR0 => STR2,
+      ADR1 => P1PT(0),
+      ADR2 => VCC,
+      ADR3 => P2PT(0),
+      O => PT(0)
+    );
+  U191_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"7150",
+      LOC => "SLICE_X51Y49"
+    )
+    port map (
+      ADR0 => P1PT(1),
+      ADR1 => P1PT(0),
+      ADR2 => P2PT(1),
+      ADR3 => P2PT(0),
+      O => U191_GT0_1
+    );
+  M1_U137_XLXI_114_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"5140",
+      LOC => "SLICE_X49Y38"
+    )
+    port map (
+      ADR0 => M1_ENCODERWDMUX_0,
+      ADR1 => M1_CODERWDMUXSEL1_0,
+      ADR2 => M1_CODE3,
+      ADR3 => BRWD0,
+      O => CODERWD(3)
+    );
+  M1_U138 : X_LUT4
+    generic map(
+      INIT => X"0C00",
+      LOC => "SLICE_X49Y38"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => M1_CODERWDMUXSEL1_0,
+      ADR2 => M1_ENCODERWDMUX_0,
+      ADR3 => M1_CODE7,
+      O => CODERWD(7)
+    );
+  U83_XLXI_2_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"FA50",
+      LOC => "SLICE_X53Y57"
+    )
+    port map (
+      ADR0 => DISPSEL0,
+      ADR1 => VCC,
+      ADR2 => R2D0,
+      ADR3 => P2CODE4,
+      O => U83_XLXN_2_pack_1
+    );
+  U101_I_M01_I_36_30 : X_LUT4
+    generic map(
+      INIT => X"E020",
+      LOC => "SLICE_X53Y57"
+    )
+    port map (
+      ADR0 => U83_XLXN_1_0,
+      ADR1 => DISPSEL1_0,
+      ADR2 => MC0,
+      ADR3 => U83_XLXN_2,
+      O => U101_I_M01_M1
+    );
+  U100_I_M23_I_36_30 : X_LUT4
+    generic map(
+      INIT => X"88C0",
+      LOC => "SLICE_X66Y71"
+    )
+    port map (
+      ADR0 => P2PT(5),
+      ADR1 => MC0,
+      ADR2 => DISP13,
+      ADR3 => DISPSEL0,
+      O => U100_I_M23_M1
+    );
+  U100_I_M23_I_36_31 : X_LUT4
+    generic map(
+      INIT => X"0E02",
+      LOC => "SLICE_X66Y71"
+    )
+    port map (
+      ADR0 => DISP9,
+      ADR1 => DISPSEL0,
+      ADR2 => MC0,
+      ADR3 => P2PT(1),
+      O => U100_I_M23_M0
+    );
+  M1_U131 : X_LUT4
+    generic map(
+      INIT => X"A000",
+      LOC => "SLICE_X54Y42"
+    )
+    port map (
+      ADR0 => S2ORS5_0,
+      ADR1 => VCC,
+      ADR2 => M1_CDEQBRWD0_0,
+      ADR3 => PSEL0,
+      O => M1_XLXN_1538
     );
   U16 : X_LUT4
     generic map(
-      INIT => X"C808",
-      LOC => "SLICE_X64Y41"
+      INIT => X"E040",
+      LOC => "SLICE_X54Y42"
     )
     port map (
-      ADR0 => P1SEL(0),
-      ADR1 => S2ORS5_0,
-      ADR2 => STR2,
+      ADR0 => STR2,
+      ADR1 => P1SEL(0),
+      ADR2 => S2ORS5_0,
       ADR3 => P2SEL0,
       O => STDISP0
+    );
+  U82_XLXI_4_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"AAF0",
+      LOC => "SLICE_X54Y62"
+    )
+    port map (
+      ADR0 => P2CODE7,
+      ADR1 => VCC,
+      ADR2 => R2D3,
+      ADR3 => DISPSEL0,
+      O => U82_XLXN_14_pack_1
     );
   U102_I_M01_I_36_30 : X_LUT4
     generic map(
       INIT => X"E020",
-      LOC => "SLICE_X50Y54"
+      LOC => "SLICE_X54Y62"
     )
     port map (
       ADR0 => U82_XLXN_13_0,
@@ -16177,412 +15114,378 @@ begin
       ADR3 => U82_XLXN_14,
       O => U102_I_M01_M1
     );
-  U157_XLXI_5_I_36_38 : X_LUT4
+  U157_XLXI_2_I_36_8 : X_LUT4
     generic map(
-      INIT => X"FC0C",
-      LOC => "SLICE_X66Y12"
+      INIT => X"AACC",
+      LOC => "SLICE_X65Y19"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => U157_XLXN_1_0,
-      ADR2 => ENCPSEL1_0,
+      ADR0 => NPDISP12,
+      ADR1 => NPDISP8,
+      ADR2 => VCC,
+      ADR3 => ENCPSEL0,
+      O => U157_XLXN_2_pack_1
+    );
+  U157_XLXI_5_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"EE22",
+      LOC => "SLICE_X65Y19"
+    )
+    port map (
+      ADR0 => U157_XLXN_1_0,
+      ADR1 => ENCPSEL1_0,
+      ADR2 => VCC,
       ADR3 => U157_XLXN_2,
       O => NPSELDISP0
     );
-  U173_XLXI_5_I_36_38 : X_LUT4
+  U173_XLXI_2_I_36_8 : X_LUT4
     generic map(
-      INIT => X"EA40",
-      LOC => "SLICE_X42Y32"
+      INIT => X"AAF0",
+      LOC => "SLICE_X51Y33"
     )
     port map (
-      ADR0 => U171_I_36_111_O,
+      ADR0 => BRWD1_0,
+      ADR1 => VCC,
+      ADR2 => BRWD2_0,
+      ADR3 => NSD0,
+      O => U173_XLXN_2_pack_2
+    );
+  U173_XLXI_5_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"F808",
+      LOC => "SLICE_X51Y33"
+    )
+    port map (
+      ADR0 => BRWD3_0,
       ADR1 => NSD0,
-      ADR2 => BRWD3_0,
+      ADR2 => U171_I_36_111_O,
       ADR3 => U173_XLXN_2,
       O => RWD_4_Q
     );
   U185_I_Q4 : X_FF
     generic map(
-      LOC => "SLICE_X42Y32",
+      LOC => "SLICE_X51Y33",
       INIT => '0'
     )
     port map (
-      I => LARGESTRWD_4_DXMUX_6878,
-      CE => LARGESTRWD_4_CEINV_6860,
-      CLK => LARGESTRWD_4_CLKINV_6861,
+      I => LARGESTRWD_4_DXMUX_6782,
+      CE => LARGESTRWD_4_CEINV_6764,
+      CLK => LARGESTRWD_4_CLKINV_6765,
       SET => GND,
-      RST => LARGESTRWD_4_FFX_RSTAND_6884,
+      RST => LARGESTRWD_4_FFX_RSTAND_6788,
       O => LARGESTRWD(4)
     );
   LARGESTRWD_4_FFX_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X42Y32",
+      LOC => "SLICE_X51Y33",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLEARP2FFS_0,
-      O => LARGESTRWD_4_FFX_RSTAND_6884
+      O => LARGESTRWD_4_FFX_RSTAND_6788
     );
-  M4_U221_I_36_33 : X_LUT4
+  U160_I_36_33 : X_LUT4
     generic map(
       INIT => X"CC33",
-      LOC => "SLICE_X53Y34"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => P2SELCD2,
-      ADR2 => VCC,
-      ADR3 => BRWD2_0,
-      O => M4_U221_AB2
-    );
-  M4_U221_I_36_42 : X_LUT4
-    generic map(
-      INIT => X"CC33",
-      LOC => "SLICE_X52Y34"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => BRWD1_0,
-      ADR2 => VCC,
-      ADR3 => P2SELCD1,
-      O => M4_U221_AB1
-    );
-  M1_U127_I_36_34 : X_LUT4
-    generic map(
-      INIT => X"C3C3",
-      LOC => "SLICE_X54Y31"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => BRWD3_0,
-      ADR2 => M1_CODE3,
-      ADR3 => VCC,
-      O => M1_U127_AB3
-    );
-  U160_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"8000",
-      LOC => "SLICE_X52Y31"
-    )
-    port map (
-      ADR0 => U160_AB0,
-      ADR1 => U160_AB3_0,
-      ADR2 => U160_AB2_0,
-      ADR3 => U160_AB1_0,
-      O => EQ0
-    );
-  U42 : X_LUT4
-    generic map(
-      INIT => X"0033",
-      LOC => "SLICE_X64Y68"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => LP2NSD,
-      ADR2 => VCC,
-      ADR3 => LP1NSD,
-      O => INT_NET11
-    );
-  U246 : X_LUT4
-    generic map(
-      INIT => X"3120",
-      LOC => "SLICE_X55Y10"
-    )
-    port map (
-      ADR0 => PLAYPOS1_0,
-      ADR1 => ACTION4_0,
-      ADR2 => U244_XLXN_14,
-      ADR3 => U244_XLXN_13_0,
-      O => XLXN_2310
-    );
-  U228_I_36_43 : X_LUT4
-    generic map(
-      INIT => X"AA55",
-      LOC => "SLICE_X50Y43"
-    )
-    port map (
-      ADR0 => P2SELCD0_0,
-      ADR1 => VCC,
-      ADR2 => VCC,
-      ADR3 => R1D0,
-      O => U228_AB0_pack_1
-    );
-  U100_I_M01_I_36_31 : X_LUT4
-    generic map(
-      INIT => X"00E2",
-      LOC => "SLICE_X55Y64"
-    )
-    port map (
-      ADR0 => U85_XLXN_13_0,
-      ADR1 => DISPSEL1_0,
-      ADR2 => U85_XLXN_14,
-      ADR3 => MC0,
-      O => U100_I_M01_M0
-    );
-  U174_XLXI_6_I_36_31 : X_LUT4
-    generic map(
-      INIT => X"00D8",
-      LOC => "SLICE_X48Y30"
-    )
-    port map (
-      ADR0 => NSD0,
-      ADR1 => BRWD2_0,
-      ADR2 => BRWD3_0,
-      ADR3 => U171_I_36_111_O,
-      O => U174_XLXI_6_M0_pack_1
-    );
-  U174_XLXI_6_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"FFCC",
-      LOC => "SLICE_X48Y30"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => U174_XLXI_6_M0,
-      ADR2 => VCC,
-      ADR3 => U174_XLXI_6_M1_0,
-      O => RWD_3_Q
-    );
-  U185_I_Q3 : X_FF
-    generic map(
-      LOC => "SLICE_X48Y30",
-      INIT => '0'
-    )
-    port map (
-      I => LARGESTRWD_3_DXMUX_10041,
-      CE => LARGESTRWD_3_CEINV_10022,
-      CLK => LARGESTRWD_3_CLKINV_10023,
-      SET => GND,
-      RST => LARGESTRWD_3_FFX_RSTAND_10047,
-      O => LARGESTRWD(3)
-    );
-  LARGESTRWD_3_FFX_RSTAND : X_BUF
-    generic map(
-      LOC => "SLICE_X48Y30",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => CLEARP2FFS_0,
-      O => LARGESTRWD_3_FFX_RSTAND_10047
-    );
-  U103_I_M01_I_36_30 : X_LUT4
-    generic map(
-      INIT => X"E400",
-      LOC => "SLICE_X54Y61"
-    )
-    port map (
-      ADR0 => DISPSEL1_0,
-      ADR1 => U82_XLXN_1_0,
-      ADR2 => U82_XLXN_2,
-      ADR3 => MC0,
-      O => U103_I_M01_M1
-    );
-  U183_I_36_39 : X_LUT4
-    generic map(
-      INIT => X"0201",
-      LOC => "SLICE_X45Y30"
-    )
-    port map (
-      ADR0 => LARGESTRWD(3),
-      ADR1 => U183_LE2_3_0,
-      ADR2 => U183_GE2_3,
-      ADR3 => RWD_3_0,
-      O => U183_EQ2_3
-    );
-  U191_I_36_39 : X_LUT4
-    generic map(
-      INIT => X"0009",
-      LOC => "SLICE_X44Y52"
-    )
-    port map (
-      ADR0 => P2PT(3),
-      ADR1 => P1PT(3),
-      ADR2 => U191_LE2_3_0,
-      ADR3 => U191_GE2_3,
-      O => U191_EQ2_3
-    );
-  U191_I_36_37 : X_LUT4
-    generic map(
-      INIT => X"8000",
-      LOC => "SLICE_X45Y53"
-    )
-    port map (
-      ADR0 => U191_EQ4_5_0,
-      ADR1 => U191_GT0_1_0,
-      ADR2 => U191_EQ2_3_0,
-      ADR3 => U191_EQ6_7,
-      O => U191_GTA
-    );
-  U191_I_36_4 : X_LUT4
-    generic map(
-      INIT => X"0041",
-      LOC => "SLICE_X45Y51"
-    )
-    port map (
-      ADR0 => U191_LE4_5_0,
-      ADR1 => P2PT(5),
-      ADR2 => P1PT(5),
-      ADR3 => U191_GE4_5,
-      O => U191_EQ4_5
-    );
-  U237 : X_LUT4
-    generic map(
-      INIT => X"4000",
-      LOC => "SLICE_X48Y25"
-    )
-    port map (
-      ADR0 => INITPLAYONZERODISP_0,
-      ADR1 => P2PTGTP1PT,
-      ADR2 => NOWCNRD_0,
-      ADR3 => ADJ_0,
-      O => XLXN_2274
-    );
-  U170_XLXI_3_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"EE00",
-      LOC => "SLICE_X65Y23"
-    )
-    port map (
-      ADR0 => ENCPSEL0,
-      ADR1 => EQ1,
-      ADR2 => VCC,
-      ADR3 => EQ2_0,
-      O => U170_XLXN_13
-    );
-  U183_I_36_20 : X_LUT4
-    generic map(
-      INIT => X"A050",
-      LOC => "SLICE_X43Y26"
-    )
-    port map (
-      ADR0 => RWD_6_Q,
-      ADR1 => VCC,
-      ADR2 => U183_GT4_5,
-      ADR3 => LARGESTRWD(6),
-      O => U183_GTC
-    );
-  U228_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"8000",
-      LOC => "SLICE_X50Y43"
-    )
-    port map (
-      ADR0 => U228_AB1_0,
-      ADR1 => U228_AB3_0,
-      ADR2 => U228_AB0,
-      ADR3 => U228_AB2_0,
-      O => ADJCODE
-    );
-  U229 : X_FF
-    generic map(
-      LOC => "SLICE_X50Y43",
-      INIT => '0'
-    )
-    port map (
-      I => XLXN_2186_DXMUX_7060,
-      CE => XLXN_2186_CEINV_7041,
-      CLK => XLXN_2186_CLKINV_7042,
-      SET => GND,
-      RST => XLXN_2186_FFX_RSTAND_7066,
-      O => XLXN_2186
-    );
-  XLXN_2186_FFX_RSTAND : X_BUF
-    generic map(
-      LOC => "SLICE_X50Y43",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => CLEARP2FFS_0,
-      O => XLXN_2186_FFX_RSTAND_7066
-    );
-  U85_XLXI_1_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"CCAA",
-      LOC => "SLICE_X53Y77"
-    )
-    port map (
-      ADR0 => DISP0,
-      ADR1 => P1PT(0),
-      ADR2 => VCC,
-      ADR3 => DISPSEL0,
-      O => U85_XLXN_1
-    );
-  M2_U197_I_36_5 : X_LUT4
-    generic map(
-      INIT => X"2F02",
-      LOC => "SLICE_X65Y16"
-    )
-    port map (
-      ADR0 => M2_XLXN_2016_0,
-      ADR1 => M2_XLXN_1977_0,
-      ADR2 => M2_XLXN_2001_0,
-      ADR3 => M2_XLXN_2014,
-      O => M2_U197_LT0_1
-    );
-  U244_XLXI_2_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"CFC0",
-      LOC => "SLICE_X54Y9"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => LRGDISPPOS0,
-      ADR2 => PLAYPOS0,
-      ADR3 => ZERODISP0_0,
-      O => U244_XLXN_2
-    );
-  U191_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"0090",
-      LOC => "SLICE_X44Y50"
-    )
-    port map (
-      ADR0 => P1PT(5),
-      ADR1 => P2PT(5),
-      ADR2 => P1PT(4),
-      ADR3 => P2PT(4),
-      O => U191_LE4_5
-    );
-  U287 : X_LUT4
-    generic map(
-      INIT => X"EE88",
-      LOC => "SLICE_X64Y24"
-    )
-    port map (
-      ADR0 => DISP15,
-      ADR1 => U288_C2O,
-      ADR2 => VCC,
-      ADR3 => RD3,
-      O => PD3PRD
-    );
-  U15 : X_LUT4
-    generic map(
-      INIT => X"E200",
-      LOC => "SLICE_X64Y36"
-    )
-    port map (
-      ADR0 => P1SEL(1),
-      ADR1 => STR2,
-      ADR2 => P2SEL1,
-      ADR3 => S2ORS5_0,
-      O => STDISP1
-    );
-  M1_U129_I_36_33 : X_LUT4
-    generic map(
-      INIT => X"CC33",
-      LOC => "SLICE_X52Y43"
+      LOC => "SLICE_X52Y27"
     )
     port map (
       ADR0 => VCC,
       ADR1 => DISP2,
       ADR2 => VCC,
-      ADR3 => M1_CODE2,
-      O => M1_U129_AB2
+      ADR3 => BRWD2_0,
+      O => U160_AB2
+    );
+  M4_U221_I_36_33 : X_LUT4
+    generic map(
+      INIT => X"F00F",
+      LOC => "SLICE_X52Y27"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => VCC,
+      ADR2 => P2SELCD2,
+      ADR3 => BRWD2_0,
+      O => M4_U221_AB2
+    );
+  U160_I_36_42 : X_LUT4
+    generic map(
+      INIT => X"A5A5",
+      LOC => "SLICE_X52Y26"
+    )
+    port map (
+      ADR0 => DISP1,
+      ADR1 => VCC,
+      ADR2 => BRWD1_0,
+      ADR3 => VCC,
+      O => U160_AB1
+    );
+  M4_U221_I_36_42 : X_LUT4
+    generic map(
+      INIT => X"9999",
+      LOC => "SLICE_X52Y26"
+    )
+    port map (
+      ADR0 => BRWD1_0,
+      ADR1 => P2SELCD1,
+      ADR2 => VCC,
+      ADR3 => VCC,
+      O => M4_U221_AB1
+    );
+  U160_I_36_34 : X_LUT4
+    generic map(
+      INIT => X"9999",
+      LOC => "SLICE_X50Y33"
+    )
+    port map (
+      ADR0 => BRWD3_0,
+      ADR1 => DISP3,
+      ADR2 => VCC,
+      ADR3 => VCC,
+      O => U160_AB3
+    );
+  M1_U127_I_36_34 : X_LUT4
+    generic map(
+      INIT => X"AA55",
+      LOC => "SLICE_X50Y33"
+    )
+    port map (
+      ADR0 => BRWD3_0,
+      ADR1 => VCC,
+      ADR2 => VCC,
+      ADR3 => M1_CODE3,
+      O => M1_U127_AB3
+    );
+  U160_I_36_43 : X_LUT4
+    generic map(
+      INIT => X"C3C3",
+      LOC => "SLICE_X48Y26"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => BRWD0,
+      ADR2 => DISP0,
+      ADR3 => VCC,
+      O => U160_AB0_pack_1
+    );
+  U160_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"8000",
+      LOC => "SLICE_X48Y26"
+    )
+    port map (
+      ADR0 => U160_AB3_0,
+      ADR1 => U160_AB1_0,
+      ADR2 => U160_AB2_0,
+      ADR3 => U160_AB0,
+      O => EQ0
+    );
+  U1 : X_LUT4
+    generic map(
+      INIT => X"FF80",
+      LOC => "SLICE_X55Y63"
+    )
+    port map (
+      ADR0 => LP2NSD,
+      ADR1 => S6,
+      ADR2 => P2PLAYSYNCH_0,
+      ADR3 => S1,
+      O => CLEARP2FFS
+    );
+  U42 : X_LUT4
+    generic map(
+      INIT => X"0055",
+      LOC => "SLICE_X55Y63"
+    )
+    port map (
+      ADR0 => LP1NSD,
+      ADR1 => VCC,
+      ADR2 => VCC,
+      ADR3 => LP2NSD,
+      O => INT_NET11
+    );
+  U244_XLXI_4_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"888B",
+      LOC => "SLICE_X55Y14"
+    )
+    port map (
+      ADR0 => LRGDISPPOS1_0,
+      ADR1 => PLAYPOS0,
+      ADR2 => M3_POS0ZERO,
+      ADR3 => M3_POS1ZERO_0,
+      O => U244_XLXN_14_pack_1
+    );
+  U246 : X_LUT4
+    generic map(
+      INIT => X"00E4",
+      LOC => "SLICE_X55Y14"
+    )
+    port map (
+      ADR0 => PLAYPOS1_0,
+      ADR1 => U244_XLXN_13_0,
+      ADR2 => U244_XLXN_14,
+      ADR3 => ACTION4_0,
+      O => XLXN_2310
+    );
+  U228_I_36_43 : X_LUT4
+    generic map(
+      INIT => X"F00F",
+      LOC => "SLICE_X52Y36"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => VCC,
+      ADR2 => P2SELCD0_0,
+      ADR3 => R1D0,
+      O => U228_AB0_pack_1
+    );
+  U228_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"8000",
+      LOC => "SLICE_X52Y36"
+    )
+    port map (
+      ADR0 => U228_AB2_0,
+      ADR1 => U228_AB3_0,
+      ADR2 => U228_AB1_0,
+      ADR3 => U228_AB0,
+      O => ADJCODE
+    );
+  U229 : X_FF
+    generic map(
+      LOC => "SLICE_X52Y36",
+      INIT => '0'
+    )
+    port map (
+      I => XLXN_2186_DXMUX_6964,
+      CE => XLXN_2186_CEINV_6945,
+      CLK => XLXN_2186_CLKINV_6946,
+      SET => GND,
+      RST => XLXN_2186_FFX_RSTAND_6970,
+      O => XLXN_2186
+    );
+  XLXN_2186_FFX_RSTAND : X_BUF
+    generic map(
+      LOC => "SLICE_X52Y36",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => CLEARP2FFS_0,
+      O => XLXN_2186_FFX_RSTAND_6970
+    );
+  U8 : X_LUT4
+    generic map(
+      INIT => X"FF00",
+      LOC => "SLICE_X53Y74"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => VCC,
+      ADR2 => VCC,
+      ADR3 => SHPTS,
+      O => DISPSEL0_pack_1
+    );
+  U85_XLXI_1_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"CACA",
+      LOC => "SLICE_X53Y74"
+    )
+    port map (
+      ADR0 => DISP0,
+      ADR1 => P1PT(0),
+      ADR2 => DISPSEL0,
+      ADR3 => VCC,
+      O => U85_XLXN_1
+    );
+  M2_U196_XLXI_115_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"FC0C",
+      LOC => "SLICE_X66Y25"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => DISP9,
+      ADR2 => M2_PD2PD3LT,
+      ADR3 => DISP13,
+      O => M2_XLXN_2014_pack_1
+    );
+  M2_U197_I_36_5 : X_LUT4
+    generic map(
+      INIT => X"2B22",
+      LOC => "SLICE_X66Y25"
+    )
+    port map (
+      ADR0 => M2_XLXN_2014,
+      ADR1 => M2_XLXN_2001_0,
+      ADR2 => M2_XLXN_1977_0,
+      ADR3 => M2_XLXN_2016_0,
+      O => M2_U197_LT0_1
+    );
+  M2_U200 : X_LUT4
+    generic map(
+      INIT => X"E2E2",
+      LOC => "SLICE_X61Y3"
+    )
+    port map (
+      ADR0 => M2_PD0PD1LT,
+      ADR1 => LRGDISPPOS1_0,
+      ADR2 => M2_PD2PD3LT,
+      ADR3 => VCC,
+      O => LRGDISPPOS0_pack_1
+    );
+  U244_XLXI_2_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"EE22",
+      LOC => "SLICE_X61Y3"
+    )
+    port map (
+      ADR0 => ZERODISP0_0,
+      ADR1 => PLAYPOS0,
+      ADR2 => VCC,
+      ADR3 => LRGDISPPOS0,
+      O => U244_XLXN_2
+    );
+  U178_XLXI_114_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"BB88",
+      LOC => "SLICE_X51Y55"
+    )
+    port map (
+      ADR0 => P2PT(4),
+      ADR1 => STR2,
+      ADR2 => VCC,
+      ADR3 => P1PT(4),
+      O => PT(4)
+    );
+  U191_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"4100",
+      LOC => "SLICE_X51Y55"
+    )
+    port map (
+      ADR0 => P2PT(4),
+      ADR1 => P1PT(5),
+      ADR2 => P2PT(5),
+      ADR3 => P1PT(4),
+      O => U191_LE4_5
+    );
+  M3_U201 : X_LUT4
+    generic map(
+      INIT => X"0001",
+      LOC => "SLICE_X64Y19"
+    )
+    port map (
+      ADR0 => DISP6,
+      ADR1 => DISP5,
+      ADR2 => DISP7,
+      ADR3 => DISP4,
+      O => M3_POS1ZERO
     );
   U159_I_36_42 : X_LUT4
     generic map(
       INIT => X"CC33",
-      LOC => "SLICE_X65Y41"
+      LOC => "SLICE_X64Y19"
     )
     port map (
       ADR0 => VCC,
@@ -16591,45 +15494,289 @@ begin
       ADR3 => BRWD1_0,
       O => U159_AB1
     );
-  U174_XLXI_5_I_36_38 : X_LUT4
+  M3_U202 : X_LUT4
     generic map(
-      INIT => X"3B08",
-      LOC => "SLICE_X47Y31"
+      INIT => X"0001",
+      LOC => "SLICE_X66Y15"
     )
     port map (
-      ADR0 => BRWD0,
-      ADR1 => U171_I_36_111_O,
-      ADR2 => NSD0,
-      ADR3 => U174_XLXN_1,
-      O => RWD_2_Q
-    );
-  M2_U195_XLXI_117_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"DD88",
-      LOC => "SLICE_X55Y21"
-    )
-    port map (
-      ADR0 => M2_PD0PD1LT_0,
-      ADR1 => DISP7,
-      ADR2 => VCC,
+      ADR0 => DISP2,
+      ADR1 => DISP0,
+      ADR2 => DISP1,
       ADR3 => DISP3,
-      O => M2_XLXN_1999
+      O => M3_POS0ZERO_pack_1
     );
-  U85_XLXI_3_I_36_8 : X_LUT4
+  M3_U205 : X_LUT4
     generic map(
-      INIT => X"CCF0",
-      LOC => "SLICE_X53Y55"
+      INIT => X"FFFE",
+      LOC => "SLICE_X66Y15"
+    )
+    port map (
+      ADR0 => M3_POS3ZERO_0,
+      ADR1 => M3_POS2ZERO,
+      ADR2 => M3_POS0ZERO,
+      ADR3 => M3_POS1ZERO_0,
+      O => APOSZERO
+    );
+  M3_U203 : X_LUT4
+    generic map(
+      INIT => X"0001",
+      LOC => "SLICE_X67Y15"
+    )
+    port map (
+      ADR0 => DISP15,
+      ADR1 => DISP13,
+      ADR2 => DISP12,
+      ADR3 => DISP14,
+      O => M3_POS3ZERO
+    );
+  M2_U194_I_36_5 : X_LUT4
+    generic map(
+      INIT => X"4D44",
+      LOC => "SLICE_X67Y15"
+    )
+    port map (
+      ADR0 => DISP9,
+      ADR1 => DISP13,
+      ADR2 => DISP8,
+      ADR3 => DISP12,
+      O => M2_U194_LT0_1
+    );
+  M3_U204 : X_LUT4
+    generic map(
+      INIT => X"0001",
+      LOC => "SLICE_X67Y13"
+    )
+    port map (
+      ADR0 => DISP9,
+      ADR1 => DISP10,
+      ADR2 => DISP11,
+      ADR3 => DISP8,
+      O => M3_POS2ZERO_pack_1
+    );
+  M3_U209 : X_LUT4
+    generic map(
+      INIT => X"0C0F",
+      LOC => "SLICE_X67Y13"
     )
     port map (
       ADR0 => VCC,
-      ADR1 => P1PT(1),
-      ADR2 => DISP1,
+      ADR1 => M3_POS1ZERO_0,
+      ADR2 => M3_POS0ZERO,
+      ADR3 => M3_POS2ZERO,
+      O => ZERODISP0
+    );
+  U125_XLXI_117_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"ACCC",
+      LOC => "SLICE_X66Y35"
+    )
+    port map (
+      ADR0 => TRD3,
+      ADR1 => R0D3,
+      ADR2 => STR2,
+      ADR3 => XLXN_1347,
+      O => RD3_pack_1
+    );
+  U287 : X_LUT4
+    generic map(
+      INIT => X"FAA0",
+      LOC => "SLICE_X66Y35"
+    )
+    port map (
+      ADR0 => DISP15,
+      ADR1 => VCC,
+      ADR2 => RD3,
+      ADR3 => U288_C2O,
+      O => PD3PRD
+    );
+  M4_U212 : X_LUT4
+    generic map(
+      INIT => X"D800",
+      LOC => "SLICE_X54Y37"
+    )
+    port map (
+      ADR0 => STR2,
+      ADR1 => P2SEL1,
+      ADR2 => P1SEL(1),
+      ADR3 => M4_DUMMY_2,
+      O => M4_STCODE1
+    );
+  U15 : X_LUT4
+    generic map(
+      INIT => X"D800",
+      LOC => "SLICE_X54Y37"
+    )
+    port map (
+      ADR0 => STR2,
+      ADR1 => P2SEL1,
+      ADR2 => P1SEL(1),
+      ADR3 => S2ORS5_0,
+      O => STDISP1
+    );
+  U84_XLXI_1_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"E4E4",
+      LOC => "SLICE_X52Y42"
+    )
+    port map (
+      ADR0 => DISPSEL0,
+      ADR1 => DISP2,
+      ADR2 => P1PT(2),
+      ADR3 => VCC,
+      O => U84_XLXN_1
+    );
+  M1_U129_I_36_33 : X_LUT4
+    generic map(
+      INIT => X"CC33",
+      LOC => "SLICE_X52Y42"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => DISP2,
+      ADR2 => VCC,
+      ADR3 => M1_CODE2,
+      O => M1_U129_AB2
+    );
+  M4_U214 : X_LUT4
+    generic map(
+      INIT => X"FFFE",
+      LOC => "SLICE_X52Y41"
+    )
+    port map (
+      ADR0 => P2CODE0,
+      ADR1 => P2CODE2,
+      ADR2 => P2CODE3,
+      ADR3 => P2CODE1,
+      O => M4_CODEPOS0
+    );
+  U156_XLXI_1_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"DD88",
+      LOC => "SLICE_X64Y18"
+    )
+    port map (
+      ADR0 => ENCPSEL0,
+      ADR1 => NPDISP6,
+      ADR2 => VCC,
+      ADR3 => NPDISP2,
+      O => U156_XLXN_1
+    );
+  U120_I_Q0 : X_FF
+    generic map(
+      LOC => "SLICE_X50Y53",
+      INIT => '0'
+    )
+    port map (
+      I => R2D1_DYMUX_7446,
+      CE => R2D1_CEINV_7442,
+      CLK => R2D1_CLKINV_7443,
+      SET => GND,
+      RST => R2D1_SRINV_7444,
+      O => R2D0
+    );
+  U120_I_Q1 : X_FF
+    generic map(
+      LOC => "SLICE_X50Y53",
+      INIT => '0'
+    )
+    port map (
+      I => R2D1_DXMUX_7455,
+      CE => R2D1_CEINV_7442,
+      CLK => R2D1_CLKINV_7443,
+      SET => GND,
+      RST => R2D1_SRINV_7444,
+      O => R2D1
+    );
+  U120_I_Q2 : X_FF
+    generic map(
+      LOC => "SLICE_X53Y47",
+      INIT => '0'
+    )
+    port map (
+      I => R2D3_DYMUX_7474,
+      CE => R2D3_CEINV_7470,
+      CLK => R2D3_CLKINV_7471,
+      SET => GND,
+      RST => R2D3_SRINV_7472,
+      O => R2D2
+    );
+  U120_I_Q3 : X_FF
+    generic map(
+      LOC => "SLICE_X53Y47",
+      INIT => '0'
+    )
+    port map (
+      I => R2D3_DXMUX_7483,
+      CE => R2D3_CEINV_7470,
+      CLK => R2D3_CLKINV_7471,
+      SET => GND,
+      RST => R2D3_SRINV_7472,
+      O => R2D3
+    );
+  M1_U129_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"8000",
+      LOC => "SLICE_X52Y43"
+    )
+    port map (
+      ADR0 => M1_U129_AB2_0,
+      ADR1 => M1_U129_AB3_0,
+      ADR2 => M1_U129_AB1_0,
+      ADR3 => M1_U129_AB0_0,
+      O => M1_CDEQPD0_pack_1
+    );
+  M1_U136 : X_LUT4
+    generic map(
+      INIT => X"ECA0",
+      LOC => "SLICE_X52Y43"
+    )
+    port map (
+      ADR0 => M1_XLXN_1539_0,
+      ADR1 => M1_CDEQPD1_0,
+      ADR2 => M1_CDEQPD0,
+      ADR3 => M1_XLXN_1538_0,
+      O => M1_CODERWDMUXSEL1
+    );
+  M1_U129_I_36_34 : X_LUT4
+    generic map(
+      INIT => X"CC33",
+      LOC => "SLICE_X52Y33"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => DISP3,
+      ADR2 => VCC,
+      ADR3 => M1_CODE3,
+      O => M1_U129_AB3
+    );
+  U179_XLXI_115_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"F5A0",
+      LOC => "SLICE_X53Y49"
+    )
+    port map (
+      ADR0 => STR2,
+      ADR1 => VCC,
+      ADR2 => P2PT(1),
+      ADR3 => P1PT(1),
+      O => PT(1)
+    );
+  U85_XLXI_3_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"F0AA",
+      LOC => "SLICE_X53Y49"
+    )
+    port map (
+      ADR0 => DISP1,
+      ADR1 => VCC,
+      ADR2 => P1PT(1),
       ADR3 => DISPSEL0,
       O => U85_XLXN_13
     );
   U121_I_Q0 : X_FF
     generic map(
-      LOC => "SLICE_X52Y51",
+      LOC => "SLICE_X52Y61",
       INIT => '0'
     )
     port map (
@@ -16642,7 +15789,7 @@ begin
     );
   U121_I_Q1 : X_FF
     generic map(
-      LOC => "SLICE_X52Y51",
+      LOC => "SLICE_X52Y61",
       INIT => '0'
     )
     port map (
@@ -16655,7 +15802,7 @@ begin
     );
   U121_I_Q2 : X_FF
     generic map(
-      LOC => "SLICE_X52Y52",
+      LOC => "SLICE_X55Y52",
       INIT => '0'
     )
     port map (
@@ -16668,7 +15815,7 @@ begin
     );
   U121_I_Q3 : X_FF
     generic map(
-      LOC => "SLICE_X52Y52",
+      LOC => "SLICE_X55Y52",
       INIT => '0'
     )
     port map (
@@ -16679,45 +15826,69 @@ begin
       RST => R1D3_SRINV_7612,
       O => R1D3
     );
-  U103_I_M01_I_36_31 : X_LUT4
+  U84_XLXI_2_I_36_8 : X_LUT4
     generic map(
-      INIT => X"5404",
-      LOC => "SLICE_X53Y63"
+      INIT => X"EE44",
+      LOC => "SLICE_X55Y61"
     )
     port map (
-      ADR0 => MC0,
-      ADR1 => U84_XLXN_1_0,
-      ADR2 => DISPSEL1_0,
+      ADR0 => DISPSEL0,
+      ADR1 => R1D2,
+      ADR2 => VCC,
+      ADR3 => P2CODE2,
+      O => U84_XLXN_2_pack_1
+    );
+  U103_I_M01_I_36_31 : X_LUT4
+    generic map(
+      INIT => X"0E02",
+      LOC => "SLICE_X55Y61"
+    )
+    port map (
+      ADR0 => U84_XLXN_1_0,
+      ADR1 => DISPSEL1_0,
+      ADR2 => MC0,
       ADR3 => U84_XLXN_2,
       O => U103_I_M01_M0
     );
-  U101_I_M23_I_36_31 : X_LUT4
+  U101_I_M23_I_36_30 : X_LUT4
     generic map(
-      INIT => X"2230",
+      INIT => X"C0A0",
       LOC => "SLICE_X64Y73"
     )
     port map (
-      ADR0 => P2PT(0),
-      ADR1 => MC0,
-      ADR2 => DISP8,
+      ADR0 => DISP12,
+      ADR1 => P2PT(4),
+      ADR2 => MC0,
       ADR3 => DISPSEL0,
-      O => U101_I_M23_M0
+      O => U101_I_M23_M1
+    );
+  U83_XLXI_4_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"F5A0",
+      LOC => "SLICE_X55Y59"
+    )
+    port map (
+      ADR0 => DISPSEL0,
+      ADR1 => VCC,
+      ADR2 => P2CODE5,
+      ADR3 => R2D1,
+      O => U83_XLXN_14_pack_1
     );
   U100_I_M01_I_36_30 : X_LUT4
     generic map(
-      INIT => X"A808",
-      LOC => "SLICE_X65Y57"
+      INIT => X"E040",
+      LOC => "SLICE_X55Y59"
     )
     port map (
-      ADR0 => MC0,
+      ADR0 => DISPSEL1_0,
       ADR1 => U83_XLXN_13_0,
-      ADR2 => DISPSEL1_0,
+      ADR2 => MC0,
       ADR3 => U83_XLXN_14,
       O => U100_I_M01_M1
     );
   M1_U126_I_Q2 : X_FF
     generic map(
-      LOC => "SLICE_X49Y42",
+      LOC => "SLICE_X49Y41",
       INIT => '0'
     )
     port map (
@@ -16730,7 +15901,7 @@ begin
     );
   M1_U126_I_Q3 : X_FF
     generic map(
-      LOC => "SLICE_X49Y42",
+      LOC => "SLICE_X49Y41",
       INIT => '0'
     )
     port map (
@@ -16743,7 +15914,7 @@ begin
     );
   U114_I_Q0 : X_FF
     generic map(
-      LOC => "SLICE_X64Y9",
+      LOC => "SLICE_X66Y13",
       INIT => '0'
     )
     port map (
@@ -16756,7 +15927,7 @@ begin
     );
   U114_I_Q1 : X_FF
     generic map(
-      LOC => "SLICE_X64Y9",
+      LOC => "SLICE_X66Y13",
       INIT => '0'
     )
     port map (
@@ -16769,7 +15940,7 @@ begin
     );
   U122_I_Q0 : X_FF
     generic map(
-      LOC => "SLICE_X64Y50",
+      LOC => "SLICE_X53Y48",
       INIT => '0'
     )
     port map (
@@ -16780,22 +15951,21 @@ begin
       RST => R0D1_SRINV_7768,
       O => R0D0
     );
-  U122_I_Q1 : X_FF
+  U10 : X_LUT4
     generic map(
-      LOC => "SLICE_X64Y50",
-      INIT => '0'
+      INIT => X"A0E0",
+      LOC => "SLICE_X65Y69"
     )
     port map (
-      I => R0D1_DXMUX_7779,
-      CE => R0D1_CEINV_7766,
-      CLK => R0D1_CLKINV_7767,
-      SET => GND,
-      RST => R0D1_SRINV_7768,
-      O => R0D1
+      ADR0 => S1,
+      ADR1 => S3,
+      ADR2 => P1PLAY,
+      ADR3 => LP1NSD,
+      O => SHNXRDS_pack_2
     );
   U114_I_Q2 : X_FF
     generic map(
-      LOC => "SLICE_X64Y6",
+      LOC => "SLICE_X65Y21",
       INIT => '0'
     )
     port map (
@@ -16808,7 +15978,7 @@ begin
     );
   U114_I_Q3 : X_FF
     generic map(
-      LOC => "SLICE_X64Y6",
+      LOC => "SLICE_X65Y21",
       INIT => '0'
     )
     port map (
@@ -16821,7 +15991,7 @@ begin
     );
   U122_I_Q2 : X_FF
     generic map(
-      LOC => "SLICE_X52Y44",
+      LOC => "SLICE_X55Y38",
       INIT => '0'
     )
     port map (
@@ -16832,22 +16002,9 @@ begin
       RST => R0D3_SRINV_7824,
       O => R0D2
     );
-  U122_I_Q3 : X_FF
-    generic map(
-      LOC => "SLICE_X52Y44",
-      INIT => '0'
-    )
-    port map (
-      I => R0D3_DXMUX_7835,
-      CE => R0D3_CEINV_7822,
-      CLK => R0D3_CLKINV_7823,
-      SET => GND,
-      RST => R0D3_SRINV_7824,
-      O => R0D3
-    );
   M4_U213_I_Q0 : X_FF
     generic map(
-      LOC => "SLICE_X52Y47",
+      LOC => "SLICE_X54Y40",
       INIT => '0'
     )
     port map (
@@ -16860,7 +16017,7 @@ begin
     );
   M4_U213_I_Q1 : X_FF
     generic map(
-      LOC => "SLICE_X52Y47",
+      LOC => "SLICE_X54Y40",
       INIT => '0'
     )
     port map (
@@ -16873,7 +16030,7 @@ begin
     );
   M4_U213_I_Q2 : X_FF
     generic map(
-      LOC => "SLICE_X53Y46",
+      LOC => "SLICE_X55Y41",
       INIT => '0'
     )
     port map (
@@ -16886,7 +16043,7 @@ begin
     );
   M4_U213_I_Q3 : X_FF
     generic map(
-      LOC => "SLICE_X53Y46",
+      LOC => "SLICE_X55Y41",
       INIT => '0'
     )
     port map (
@@ -16897,127 +16054,189 @@ begin
       RST => P2CODE3_SRINV_7880,
       O => P2CODE3
     );
-  M1_U127_I_36_42 : X_LUT4
+  U157_XLXI_4_I_36_8 : X_LUT4
     generic map(
-      INIT => X"C3C3",
-      LOC => "SLICE_X64Y33"
+      INIT => X"DD88",
+      LOC => "SLICE_X66Y16"
+    )
+    port map (
+      ADR0 => ENCPSEL0,
+      ADR1 => NPDISP13,
+      ADR2 => VCC,
+      ADR3 => NPDISP9,
+      O => U157_XLXN_14
+    );
+  U161_I_36_42 : X_LUT4
+    generic map(
+      INIT => X"CC33",
+      LOC => "SLICE_X64Y32"
     )
     port map (
       ADR0 => VCC,
-      ADR1 => BRWD1_0,
-      ADR2 => M1_CODE1,
-      ADR3 => VCC,
+      ADR1 => DISP13,
+      ADR2 => VCC,
+      ADR3 => BRWD1_0,
+      O => U161_AB1
+    );
+  M1_U127_I_36_42 : X_LUT4
+    generic map(
+      INIT => X"CC33",
+      LOC => "SLICE_X64Y32"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => M1_CODE1,
+      ADR2 => VCC,
+      ADR3 => BRWD1_0,
       O => M1_U127_AB1
+    );
+  U161_I_36_34 : X_LUT4
+    generic map(
+      INIT => X"AA55",
+      LOC => "SLICE_X66Y22"
+    )
+    port map (
+      ADR0 => DISP15,
+      ADR1 => VCC,
+      ADR2 => VCC,
+      ADR3 => BRWD3_0,
+      O => U161_AB3
     );
   U159_I_36_34 : X_LUT4
     generic map(
-      INIT => X"C3C3",
-      LOC => "SLICE_X65Y24"
+      INIT => X"CC33",
+      LOC => "SLICE_X66Y22"
     )
     port map (
       ADR0 => VCC,
       ADR1 => DISP7,
-      ADR2 => BRWD3_0,
-      ADR3 => VCC,
+      ADR2 => VCC,
+      ADR3 => BRWD3_0,
       O => U159_AB3
+    );
+  U161_I_36_43 : X_LUT4
+    generic map(
+      INIT => X"A5A5",
+      LOC => "SLICE_X66Y23"
+    )
+    port map (
+      ADR0 => BRWD0,
+      ADR1 => VCC,
+      ADR2 => DISP12,
+      ADR3 => VCC,
+      O => U161_AB0_pack_1
     );
   U161_I_36_32 : X_LUT4
     generic map(
       INIT => X"8000",
-      LOC => "SLICE_X65Y17"
+      LOC => "SLICE_X66Y23"
     )
     port map (
-      ADR0 => U161_AB3_0,
-      ADR1 => U161_AB1_0,
-      ADR2 => U161_AB2_0,
-      ADR3 => U161_AB0,
+      ADR0 => U161_AB2_0,
+      ADR1 => U161_AB3_0,
+      ADR2 => U161_AB0,
+      ADR3 => U161_AB1_0,
       O => EQ3
+    );
+  U183_I_36_4 : X_LUT4
+    generic map(
+      INIT => X"0041",
+      LOC => "SLICE_X48Y29"
+    )
+    port map (
+      ADR0 => U183_GE4_5_0,
+      ADR1 => LARGESTRWD(5),
+      ADR2 => U173_XLXI_6_M1,
+      ADR3 => U183_LE4_5_0,
+      O => U183_EQ4_5_pack_1
     );
   U183_I_36_38 : X_LUT4
     generic map(
-      INIT => X"8400",
-      LOC => "SLICE_X42Y28"
+      INIT => X"8040",
+      LOC => "SLICE_X48Y29"
     )
     port map (
       ADR0 => RWD_6_Q,
       ADR1 => U183_GT2_3_0,
-      ADR2 => LARGESTRWD(6),
-      ADR3 => U183_EQ4_5,
+      ADR2 => U183_EQ4_5,
+      ADR3 => LARGESTRWD(6),
       O => U183_GTB
     );
   U157_XLXI_6_I_36_38 : X_LUT4
     generic map(
-      INIT => X"BB88",
-      LOC => "SLICE_X65Y14"
+      INIT => X"AACC",
+      LOC => "SLICE_X66Y17"
     )
     port map (
       ADR0 => U157_XLXN_14_0,
-      ADR1 => ENCPSEL1_0,
+      ADR1 => U157_XLXN_13_0,
       ADR2 => VCC,
-      ADR3 => U157_XLXN_13_0,
+      ADR3 => ENCPSEL1_0,
       O => NPSELDISP1_pack_1
     );
   U158_XLXI_115_I_36_38 : X_LUT4
     generic map(
-      INIT => X"AFA0",
-      LOC => "SLICE_X65Y14"
+      INIT => X"E4E4",
+      LOC => "SLICE_X66Y17"
     )
     port map (
-      ADR0 => NPSELDISP1,
-      ADR1 => VCC,
-      ADR2 => ADD_0,
-      ADR3 => RD1_0,
+      ADR0 => ADD_0,
+      ADR1 => RD1_0,
+      ADR2 => NPSELDISP1,
+      ADR3 => VCC,
       O => BRWD1
     );
-  U113_I_Q1 : X_FF
+  U183_I_36_7 : X_LUT4
     generic map(
-      LOC => "SLICE_X65Y14",
-      INIT => '0'
+      INIT => X"2B22",
+      LOC => "SLICE_X50Y29"
     )
     port map (
-      I => DISP13_DXMUX_8038,
-      CE => DISP13_CEINV_8019,
-      CLK => DISP13_CLKINV_8020,
-      SET => GND,
-      RST => DISP13_FFX_RSTAND_8044,
-      O => DISP13
-    );
-  DISP13_FFX_RSTAND : X_BUF
-    generic map(
-      LOC => "SLICE_X65Y14",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => RESET,
-      O => DISP13_FFX_RSTAND_8044
+      ADR0 => RWD_3_0,
+      ADR1 => LARGESTRWD(3),
+      ADR2 => LARGESTRWD(2),
+      ADR3 => RWD_2_0,
+      O => U183_GT2_3
     );
   U183_I_36_11 : X_LUT4
     generic map(
-      INIT => X"2010",
-      LOC => "SLICE_X46Y30"
+      INIT => X"0082",
+      LOC => "SLICE_X50Y29"
     )
     port map (
-      ADR0 => LARGESTRWD(3),
-      ADR1 => RWD_2_0,
-      ADR2 => LARGESTRWD(2),
-      ADR3 => RWD_3_0,
+      ADR0 => LARGESTRWD(2),
+      ADR1 => LARGESTRWD(3),
+      ADR2 => RWD_3_0,
+      ADR3 => RWD_2_0,
       O => U183_LE2_3
     );
-  U191_I_36_11 : X_LUT4
+  U191_I_36_7 : X_LUT4
     generic map(
-      INIT => X"4100",
-      LOC => "SLICE_X45Y52"
+      INIT => X"0C8E",
+      LOC => "SLICE_X51Y53"
     )
     port map (
       ADR0 => P2PT(2),
       ADR1 => P2PT(3),
       ADR2 => P1PT(3),
       ADR3 => P1PT(2),
+      O => U191_GT2_3
+    );
+  U191_I_36_11 : X_LUT4
+    generic map(
+      INIT => X"2100",
+      LOC => "SLICE_X51Y53"
+    )
+    port map (
+      ADR0 => P1PT(3),
+      ADR1 => P2PT(2),
+      ADR2 => P2PT(3),
+      ADR3 => P1PT(2),
       O => U191_LE2_3
     );
   U115_I_Q0 : X_FF
     generic map(
-      LOC => "SLICE_X64Y37",
+      LOC => "SLICE_X64Y36",
       INIT => '0'
     )
     port map (
@@ -17028,34 +16247,33 @@ begin
       RST => DISP5_SRINV_8103,
       O => DISP4
     );
-  U115_I_Q1 : X_FF
+  U65_I_36_31 : X_LUT4
     generic map(
-      LOC => "SLICE_X64Y37",
-      INIT => '0'
+      INIT => X"00A0",
+      LOC => "SLICE_X67Y63"
     )
     port map (
-      I => DISP5_DXMUX_8114,
-      CE => DISP5_CEINV_8101,
-      CLK => DISP5_CLKINV_8102,
-      SET => GND,
-      RST => DISP5_SRINV_8103,
-      O => DISP5
+      ADR0 => STR1,
+      ADR1 => VCC,
+      ADR2 => STR2,
+      ADR3 => STR0,
+      O => S6_pack_1
     );
   U54 : X_LUT4
     generic map(
-      INIT => X"C000",
-      LOC => "SLICE_X64Y70"
+      INIT => X"8800",
+      LOC => "SLICE_X67Y63"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => P2PLAYSYNCH_0,
-      ADR2 => LP2NSD,
+      ADR0 => P2PLAYSYNCH_0,
+      ADR1 => LP2NSD,
+      ADR2 => VCC,
       ADR3 => S6,
       O => S6P2PLAYSYNCHADJ
     );
   U115_I_Q2 : X_FF
     generic map(
-      LOC => "SLICE_X65Y36",
+      LOC => "SLICE_X67Y36",
       INIT => '0'
     )
     port map (
@@ -17068,7 +16286,7 @@ begin
     );
   U115_I_Q3 : X_FF
     generic map(
-      LOC => "SLICE_X65Y36",
+      LOC => "SLICE_X67Y36",
       INIT => '0'
     )
     port map (
@@ -17081,20 +16299,32 @@ begin
     );
   U7 : X_LUT4
     generic map(
-      INIT => X"F8F8",
-      LOC => "SLICE_X64Y77"
+      INIT => X"FFC0",
+      LOC => "SLICE_X65Y69"
     )
     port map (
-      ADR0 => SHPTS,
-      ADR1 => P1PLAY,
-      ADR2 => SHNXRDS,
-      ADR3 => VCC,
+      ADR0 => VCC,
+      ADR1 => SHPTS,
+      ADR2 => P1PLAY,
+      ADR3 => SHNXRDS,
       O => DISPSEL1
+    );
+  M2_U196_XLXI_116_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"AAF0",
+      LOC => "SLICE_X66Y12"
+    )
+    port map (
+      ADR0 => DISP14,
+      ADR1 => VCC,
+      ADR2 => DISP10,
+      ADR3 => M2_PD2PD3LT,
+      O => M2_XLXN_2012
     );
   U162_I_36_33 : X_LUT4
     generic map(
       INIT => X"CC33",
-      LOC => "SLICE_X65Y7"
+      LOC => "SLICE_X66Y12"
     )
     port map (
       ADR0 => VCC,
@@ -17103,45 +16333,57 @@ begin
       ADR3 => DISP10,
       O => U162_AB2
     );
+  U65_I_36_33 : X_LUT4
+    generic map(
+      INIT => X"0300",
+      LOC => "SLICE_X53Y29"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => STR0,
+      ADR2 => STR1,
+      ADR3 => STR2,
+      O => S4_pack_1
+    );
   U261 : X_LUT4
     generic map(
       INIT => X"5040",
-      LOC => "SLICE_X48Y29"
+      LOC => "SLICE_X53Y29"
     )
     port map (
       ADR0 => P2STR3,
-      ADR1 => RWDGTRDLARGEST_0,
+      ADR1 => P2S0_0,
       ADR2 => S4,
-      ADR3 => P2S0_0,
+      ADR3 => RWDGTRDLARGEST_0,
       O => STNLRWDRD
     );
-  U47 : X_LUT4
+  U13 : X_LUT4
     generic map(
-      INIT => X"00C0",
-      LOC => "SLICE_X64Y69"
+      INIT => X"88C0",
+      LOC => "SLICE_X53Y30"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => P2PLAYSYNCH_0,
-      ADR2 => S3,
-      ADR3 => LP1NSD,
-      O => S3P2PLAYSYNCH
+      ADR0 => P2SEL3,
+      ADR1 => S2ORS5_0,
+      ADR2 => P1SEL(3),
+      ADR3 => STR2,
+      O => STDISP3
     );
   U179_XLXI_116_I_36_38 : X_LUT4
     generic map(
-      INIT => X"FC0C",
-      LOC => "SLICE_X52Y32"
+      INIT => X"B8B8",
+      LOC => "SLICE_X53Y30"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => P1PT(2),
-      ADR2 => STR2,
-      ADR3 => P2PT(2),
+      ADR0 => P2PT(2),
+      ADR1 => STR2,
+      ADR2 => P1PT(2),
+      ADR3 => VCC,
       O => PT(2)
     );
   U21 : X_FF
     generic map(
-      LOC => "SLICE_X50Y47",
+      LOC => "SLICE_X51Y50",
       INIT => '0'
     )
     port map (
@@ -17154,17 +16396,29 @@ begin
     );
   XLXN_11102_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X50Y47",
+      LOC => "SLICE_X51Y50",
       PATHPULSE => 694 ps
     )
     port map (
       I => S1,
       O => XLXN_11102_FFY_RSTAND_8306
     );
+  U65_I_36_36 : X_LUT4
+    generic map(
+      INIT => X"0300",
+      LOC => "SLICE_X67Y49"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => STR1,
+      ADR2 => STR2,
+      ADR3 => STR0,
+      O => S1_pack_1
+    );
   U25 : X_LUT4
     generic map(
       INIT => X"CC00",
-      LOC => "SLICE_X65Y49"
+      LOC => "SLICE_X67Y49"
     )
     port map (
       ADR0 => VCC,
@@ -17175,7 +16429,7 @@ begin
     );
   M4_U222_I_Q0 : X_FF
     generic map(
-      LOC => "SLICE_X53Y12",
+      LOC => "SLICE_X54Y5",
       INIT => '0'
     )
     port map (
@@ -17188,40 +16442,64 @@ begin
     );
   DIGEQCDPOSSEL0_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X53Y12",
+      LOC => "SLICE_X54Y5",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLEARP2FFS_0,
       O => DIGEQCDPOSSEL0_FFY_RSTAND_8359
     );
+  U65_I_36_37 : X_LUT4
+    generic map(
+      INIT => X"0101",
+      LOC => "SLICE_X55Y68"
+    )
+    port map (
+      ADR0 => STR0,
+      ADR1 => STR1,
+      ADR2 => STR2,
+      ADR3 => VCC,
+      O => S0_pack_1
+    );
   U5 : X_LUT4
     generic map(
-      INIT => X"4C00",
-      LOC => "SLICE_X55Y71"
+      INIT => X"40C0",
+      LOC => "SLICE_X55Y68"
     )
     port map (
       ADR0 => U6_Q0,
       ADR1 => P1PLAYSYNCH_0,
-      ADR2 => U6_Q1,
-      ADR3 => S0,
+      ADR2 => S0,
+      ADR3 => U6_Q1,
       O => CLRSHFTREG
+    );
+  U31 : X_LUT4
+    generic map(
+      INIT => X"F888",
+      LOC => "SLICE_X66Y49"
+    )
+    port map (
+      ADR0 => S4P2PLAYED_0,
+      ADR1 => P2ADD_0,
+      ADR2 => P1ADD,
+      ADR3 => S1P1PLAYED_0,
+      O => INT_NET10
     );
   U125_XLXI_114_I_36_38 : X_LUT4
     generic map(
-      INIT => X"DF80",
-      LOC => "SLICE_X65Y48"
+      INIT => X"E2AA",
+      LOC => "SLICE_X66Y49"
     )
     port map (
-      ADR0 => XLXN_1347,
-      ADR1 => P1ADD,
-      ADR2 => STR2,
-      ADR3 => R0D0,
+      ADR0 => R0D0,
+      ADR1 => STR2,
+      ADR2 => P1ADD,
+      ADR3 => XLXN_1347,
       O => RD0
     );
   M4_U222_I_Q1 : X_FF
     generic map(
-      LOC => "SLICE_X53Y15",
+      LOC => "SLICE_X55Y16",
       INIT => '0'
     )
     port map (
@@ -17234,29 +16512,53 @@ begin
     );
   DIGEQCDADD_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X53Y15",
+      LOC => "SLICE_X55Y16",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLEARP2FFS_0,
       O => DIGEQCDADD_FFY_RSTAND_8424
     );
-  U2 : X_LUT4
+  U40 : X_LUT4
     generic map(
-      INIT => X"0F0A",
-      LOC => "SLICE_X65Y67"
+      INIT => X"FFFE",
+      LOC => "SLICE_X66Y65"
     )
     port map (
-      ADR0 => S0,
-      ADR1 => VCC,
-      ADR2 => LPTOVF,
-      ADR3 => NEXTPLAY,
+      ADR0 => S6P2PLAYSYNCHADJ_0,
+      ADR1 => S1P1SKIP_0,
+      ADR2 => S3P2PLAYSYNCH_0,
+      ADR3 => S3S6COND_0,
+      O => NEXTPLAY_pack_1
+    );
+  U2 : X_LUT4
+    generic map(
+      INIT => X"5454",
+      LOC => "SLICE_X66Y65"
+    )
+    port map (
+      ADR0 => LPTOVF,
+      ADR1 => S0,
+      ADR2 => NEXTPLAY,
+      ADR3 => VCC,
       O => CLFF
+    );
+  U24 : X_LUT4
+    generic map(
+      INIT => X"FFEA",
+      LOC => "SLICE_X67Y43"
+    )
+    port map (
+      ADR0 => XLXN_9714_0,
+      ADR1 => P2ADD_0,
+      ADR2 => S4,
+      ADR3 => XLXN_151_0,
+      O => XLXN_9551_pack_1
     );
   U23 : X_LUT4
     generic map(
       INIT => X"0F00",
-      LOC => "SLICE_X64Y46"
+      LOC => "SLICE_X67Y43"
     )
     port map (
       ADR0 => VCC,
@@ -17265,46 +16567,70 @@ begin
       ADR3 => XLXN_9551,
       O => ADD
     );
-  U70 : X_LUT4
+  U18 : X_LUT4
     generic map(
-      INIT => X"FFAA",
-      LOC => "SLICE_X48Y56"
+      INIT => X"0200",
+      LOC => "SLICE_X51Y64"
     )
     port map (
-      ADR0 => STP2PT,
-      ADR1 => VCC,
-      ADR2 => VCC,
-      ADR3 => STP1PT,
-      O => XLXN_74
+      ADR0 => STR0,
+      ADR1 => STR1,
+      ADR2 => LPTOVF,
+      ADR3 => STR2,
+      O => STP2PT_pack_1
     );
   U194 : X_LUT4
     generic map(
-      INIT => X"3F00",
-      LOC => "SLICE_X49Y57"
+      INIT => X"50F0",
+      LOC => "SLICE_X51Y64"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => U195_Q1,
-      ADR2 => U195_Q0,
-      ADR3 => STP2PT,
+      ADR0 => U195_Q1,
+      ADR1 => VCC,
+      ADR2 => STP2PT,
+      ADR3 => U195_Q0,
       O => XLXN_2029
+    );
+  U170_XLXI_2_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"C040",
+      LOC => "SLICE_X55Y18"
+    )
+    port map (
+      ADR0 => ENCPSEL0,
+      ADR1 => EQ1,
+      ADR2 => EQ0_0,
+      ADR3 => EQ2_0,
+      O => U170_XLXN_2_pack_1
     );
   U170_XLXI_5_I_36_38 : X_LUT4
     generic map(
-      INIT => X"E2E2",
-      LOC => "SLICE_X64Y19"
+      INIT => X"B8B8",
+      LOC => "SLICE_X55Y18"
     )
     port map (
-      ADR0 => U170_XLXN_1_0,
+      ADR0 => U170_XLXN_2,
       ADR1 => ENCPSEL1_0,
-      ADR2 => U170_XLXN_2,
+      ADR2 => U170_XLXN_1_0,
       ADR3 => VCC,
       O => UNENCNSD0
+    );
+  U51 : X_LUT4
+    generic map(
+      INIT => X"8800",
+      LOC => "SLICE_X67Y46"
+    )
+    port map (
+      ADR0 => RDPLAYABLE,
+      ADR1 => P2STR3,
+      ADR2 => VCC,
+      ADR3 => S4,
+      O => S4P2PLAYED
     );
   U27 : X_LUT4
     generic map(
       INIT => X"0030",
-      LOC => "SLICE_X65Y46"
+      LOC => "SLICE_X67Y46"
     )
     port map (
       ADR0 => VCC,
@@ -17315,7 +16641,7 @@ begin
     );
   U19 : X_FF
     generic map(
-      LOC => "SLICE_X51Y47",
+      LOC => "SLICE_X49Y50",
       INIT => '0'
     )
     port map (
@@ -17328,7 +16654,7 @@ begin
     );
   U20 : X_FF
     generic map(
-      LOC => "SLICE_X51Y47",
+      LOC => "SLICE_X49Y50",
       INIT => '0'
     )
     port map (
@@ -17339,10 +16665,22 @@ begin
       RST => XLXN_10478_SRINV_8577,
       O => XLXN_10478
     );
+  U44 : X_LUT4
+    generic map(
+      INIT => X"8000",
+      LOC => "SLICE_X66Y69"
+    )
+    port map (
+      ADR0 => S0,
+      ADR1 => U6_Q1,
+      ADR2 => U6_Q0,
+      ADR3 => P1PLAYSYNCH_0,
+      O => S0P1PLAYSYNCH_pack_1
+    );
   U56 : X_LUT4
     generic map(
       INIT => X"FFFE",
-      LOC => "SLICE_X55Y68"
+      LOC => "SLICE_X66Y69"
     )
     port map (
       ADR0 => S3P2PLAYSYNCH_0,
@@ -17353,7 +16691,7 @@ begin
     );
   U28 : X_FF
     generic map(
-      LOC => "SLICE_X64Y49",
+      LOC => "SLICE_X66Y48",
       INIT => '0'
     )
     port map (
@@ -17366,52 +16704,100 @@ begin
     );
   XLXN_156_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X64Y49",
+      LOC => "SLICE_X66Y48",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLPXNSDFF_GYMUX_5309,
       O => XLXN_156_FFY_RSTAND_8633
     );
+  U61 : X_LUT4
+    generic map(
+      INIT => X"FFF8",
+      LOC => "SLICE_X67Y65"
+    )
+    port map (
+      ADR0 => P2PLAYSYNCH_0,
+      ADR1 => S1,
+      ADR2 => S4P2SKIP_0,
+      ADR3 => S6P2PLAYSYNCHADJ_0,
+      O => S1S4S6COND_pack_1
+    );
   U62 : X_LUT4
     generic map(
-      INIT => X"FFF0",
-      LOC => "SLICE_X64Y67"
+      INIT => X"FFAA",
+      LOC => "SLICE_X67Y65"
+    )
+    port map (
+      ADR0 => S3S6COND_0,
+      ADR1 => VCC,
+      ADR2 => VCC,
+      ADR3 => S1S4S6COND,
+      O => CENLD
+    );
+  U45 : X_LUT4
+    generic map(
+      INIT => X"CC00",
+      LOC => "SLICE_X67Y66"
     )
     port map (
       ADR0 => VCC,
-      ADR1 => VCC,
-      ADR2 => S1S4S6COND,
-      ADR3 => S3S6COND_0,
-      O => CENLD
+      ADR1 => S1,
+      ADR2 => VCC,
+      ADR3 => P1PLAYED,
+      O => S1P1PLAYED
     );
   U46 : X_LUT4
     generic map(
-      INIT => X"0080",
-      LOC => "SLICE_X66Y65"
+      INIT => X"4000",
+      LOC => "SLICE_X67Y66"
     )
     port map (
-      ADR0 => XLXN_10484,
-      ADR1 => XLXN_10482,
-      ADR2 => S1,
-      ADR3 => XLXN_10495,
+      ADR0 => XLXN_10495,
+      ADR1 => S1,
+      ADR2 => XLXN_10482,
+      ADR3 => XLXN_10484,
       O => S1P1SKIP
+    );
+  U37 : X_LUT4
+    generic map(
+      INIT => X"AA00",
+      LOC => "SLICE_X65Y41"
+    )
+    port map (
+      ADR0 => LPDPRD,
+      ADR1 => VCC,
+      ADR2 => VCC,
+      ADR3 => ADD_0,
+      O => INT_NET2
+    );
+  U38 : X_LUT4
+    generic map(
+      INIT => X"0302",
+      LOC => "SLICE_X64Y74"
+    )
+    port map (
+      ADR0 => S6,
+      ADR1 => LPTOVF,
+      ADR2 => SHPTS,
+      ADR3 => S3,
+      O => INT_NET1
     );
   U91_I_36_30 : X_LUT4
     generic map(
-      INIT => X"8808",
-      LOC => "SLICE_X65Y78"
+      INIT => X"A200",
+      LOC => "SLICE_X64Y74"
     )
     port map (
       ADR0 => MC1,
-      ADR1 => MC0,
-      ADR2 => LPTOVF,
-      ADR3 => Q_7_Q,
+      ADR1 => LPTOVF,
+      ADR2 => Q_7_Q,
+      ADR3 => MC0,
       O => XLXN_201
     );
   U55 : X_FF
     generic map(
-      LOC => "SLICE_X67Y66",
+      LOC => "SLICE_X67Y60",
       INIT => '0'
     )
     port map (
@@ -17424,28 +16810,40 @@ begin
     );
   LP2NSD_FFY_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X67Y66",
+      LOC => "SLICE_X67Y60",
       PATHPULSE => 694 ps
     )
     port map (
       I => CLPXNSDFF,
       O => LP2NSD_FFY_RSTAND_8734
     );
-  U60 : X_LUT4
+  U48 : X_LUT4
     generic map(
-      INIT => X"FF40",
-      LOC => "SLICE_X65Y69"
+      INIT => X"8800",
+      LOC => "SLICE_X67Y68"
     )
     port map (
-      ADR0 => LP2NSD,
+      ADR0 => S3,
       ADR1 => P1PLAYSYNCH_0,
-      ADR2 => S6,
-      ADR3 => S3P1PLAYSYNCHADJ,
+      ADR2 => VCC,
+      ADR3 => LP1NSD,
+      O => S3P1PLAYSYNCHADJ_pack_2
+    );
+  U60 : X_LUT4
+    generic map(
+      INIT => X"F2F0",
+      LOC => "SLICE_X67Y68"
+    )
+    port map (
+      ADR0 => P1PLAYSYNCH_0,
+      ADR1 => LP2NSD,
+      ADR2 => S3P1PLAYSYNCHADJ,
+      ADR3 => S6,
       O => S3S6COND
     );
   U73 : X_FF
     generic map(
-      LOC => "SLICE_X66Y64",
+      LOC => "SLICE_X66Y66",
       INIT => '0'
     )
     port map (
@@ -17458,7 +16856,7 @@ begin
     );
   U74 : X_FF
     generic map(
-      LOC => "SLICE_X67Y65",
+      LOC => "SLICE_X66Y67",
       INIT => '0'
     )
     port map (
@@ -17469,776 +16867,654 @@ begin
       RST => GND,
       O => XLXN_10495
     );
+  U75 : X_LUT4
+    generic map(
+      INIT => X"4400",
+      LOC => "SLICE_X67Y67"
+    )
+    port map (
+      ADR0 => XLXN_10495,
+      ADR1 => XLXN_10484,
+      ADR2 => VCC,
+      ADR3 => XLXN_10482,
+      O => P2PLAYSYNCH
+    );
+  U59 : X_LUT4
+    generic map(
+      INIT => X"3332",
+      LOC => "SLICE_X67Y64"
+    )
+    port map (
+      ADR0 => XLXN_460_0,
+      ADR1 => LPTOVF,
+      ADR2 => S2ORS5_0,
+      ADR3 => CENLD_0,
+      O => CLKEN_pack_2
+    );
   U64_I_36_120 : X_LUT4
     generic map(
-      INIT => X"FF54",
-      LOC => "SLICE_X64Y66"
+      INIT => X"F3F2",
+      LOC => "SLICE_X67Y64"
     )
     port map (
-      ADR0 => LPTOVF,
-      ADR1 => S3S6COND_0,
-      ADR2 => S1S4S6COND,
-      ADR3 => CLKEN,
+      ADR0 => S3S6COND_0,
+      ADR1 => LPTOVF,
+      ADR2 => CLKEN,
+      ADR3 => S1S4S6COND,
       O => U64_OR_CE_L
-    );
-  U191_I_36_20 : X_LUT4
-    generic map(
-      INIT => X"88A8",
-      LOC => "SLICE_X47Y51"
-    )
-    port map (
-      ADR0 => U191_EQ6_7,
-      ADR1 => U191_GE4_5,
-      ADR2 => P2PT(5),
-      ADR3 => P1PT(5),
-      O => U191_GTC
     );
   U76 : X_FF
     generic map(
-      LOC => "SLICE_X55Y76",
+      LOC => "SLICE_X54Y70",
       INIT => '0'
     )
     port map (
-      I => XLXN_10962_DYMUX_8843,
+      I => XLXN_10962_DYMUX_8819,
       CE => VCC,
-      CLK => XLXN_10962_CLKINV_8841,
+      CLK => XLXN_10962_CLKINV_8817,
       SET => GND,
       RST => GND,
       O => XLXN_10962
     );
   U77 : X_FF
     generic map(
-      LOC => "SLICE_X54Y75",
+      LOC => "SLICE_X54Y71",
       INIT => '0'
     )
     port map (
-      I => XLXN_10958_DYMUX_8852,
+      I => XLXN_10958_DYMUX_8828,
       CE => VCC,
-      CLK => XLXN_10958_CLKINV_8850,
+      CLK => XLXN_10958_CLKINV_8826,
       SET => GND,
       RST => GND,
       O => XLXN_10958
     );
   U78 : X_FF
     generic map(
-      LOC => "SLICE_X54Y74",
+      LOC => "SLICE_X55Y70",
       INIT => '0'
     )
     port map (
-      I => XLXN_10960_DYMUX_8861,
+      I => XLXN_10960_DYMUX_8837,
       CE => VCC,
-      CLK => XLXN_10960_CLKINV_8859,
+      CLK => XLXN_10960_CLKINV_8835,
       SET => GND,
       RST => GND,
       O => XLXN_10960
     );
-  U99 : X_LUT4
+  U95 : X_LUT4
     generic map(
       INIT => X"3F0F",
-      LOC => "SLICE_X64Y78"
+      LOC => "SLICE_X65Y74"
     )
     port map (
       ADR0 => VCC,
       ADR1 => INT_NET0,
-      ADR2 => XLXN_201_0,
-      ADR3 => LPSEL3,
+      ADR2 => XLXN_197_0,
+      ADR3 => LPSEL1,
+      O => DISPEN(1)
+    );
+  U99 : X_LUT4
+    generic map(
+      INIT => X"30FF",
+      LOC => "SLICE_X65Y74"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => INT_NET0,
+      ADR2 => LPSEL3,
+      ADR3 => XLXN_201_0,
       O => DISPEN(3)
+    );
+  U79 : X_LUT4
+    generic map(
+      INIT => X"0088",
+      LOC => "SLICE_X55Y71"
+    )
+    port map (
+      ADR0 => XLXN_10962,
+      ADR1 => XLXN_10958,
+      ADR2 => VCC,
+      ADR3 => XLXN_10960,
+      O => P1PLAYSYNCH
+    );
+  U97 : X_LUT4
+    generic map(
+      INIT => X"2F2F",
+      LOC => "SLICE_X64Y76"
+    )
+    port map (
+      ADR0 => LPSEL2,
+      ADR1 => INT_NET0,
+      ADR2 => XLXN_199_0,
+      ADR3 => VCC,
+      O => DISPEN(2)
+    );
+  U89 : X_LUT4
+    generic map(
+      INIT => X"E4FF",
+      LOC => "SLICE_X64Y75"
+    )
+    port map (
+      ADR0 => INT_NET2_0,
+      ADR1 => Q_7_Q,
+      ADR2 => Q_5_Q,
+      ADR3 => INT_NET1_0,
+      O => INT_NET0_pack_1
     );
   U93 : X_LUT4
     generic map(
-      INIT => X"5D5D",
-      LOC => "SLICE_X55Y72"
+      INIT => X"5F55",
+      LOC => "SLICE_X64Y75"
     )
     port map (
       ADR0 => INT_NET3_0,
-      ADR1 => LPSEL0,
+      ADR1 => VCC,
       ADR2 => INT_NET0,
-      ADR3 => VCC,
+      ADR3 => LPSEL0,
       O => DISPEN(0)
     );
   U116_I_Q0 : X_FF
     generic map(
-      LOC => "SLICE_X64Y30",
+      LOC => "SLICE_X65Y43",
       INIT => '0'
     )
     port map (
-      I => DISP1_DYMUX_8948,
-      CE => DISP1_CEINV_8944,
-      CLK => DISP1_CLKINV_8945,
+      I => DISP1_DYMUX_8924,
+      CE => DISP1_CEINV_8920,
+      CLK => DISP1_CLKINV_8921,
       SET => GND,
-      RST => DISP1_SRINV_8946,
+      RST => DISP1_SRINV_8922,
       O => DISP0
     );
   U116_I_Q1 : X_FF
     generic map(
-      LOC => "SLICE_X64Y30",
+      LOC => "SLICE_X65Y43",
       INIT => '0'
     )
     port map (
-      I => DISP1_DXMUX_8957,
-      CE => DISP1_CEINV_8944,
-      CLK => DISP1_CLKINV_8945,
+      I => DISP1_DXMUX_8933,
+      CE => DISP1_CEINV_8920,
+      CLK => DISP1_CLKINV_8921,
       SET => GND,
-      RST => DISP1_SRINV_8946,
+      RST => DISP1_SRINV_8922,
       O => DISP1
     );
   U116_I_Q2 : X_FF
     generic map(
-      LOC => "SLICE_X64Y34",
+      LOC => "SLICE_X67Y35",
       INIT => '0'
     )
     port map (
-      I => DISP3_DYMUX_8976,
-      CE => DISP3_CEINV_8972,
-      CLK => DISP3_CLKINV_8973,
+      I => DISP3_DYMUX_8952,
+      CE => DISP3_CEINV_8948,
+      CLK => DISP3_CLKINV_8949,
       SET => GND,
-      RST => DISP3_SRINV_8974,
+      RST => DISP3_SRINV_8950,
       O => DISP2
     );
   U116_I_Q3 : X_FF
     generic map(
-      LOC => "SLICE_X64Y34",
+      LOC => "SLICE_X67Y35",
       INIT => '0'
     )
     port map (
-      I => DISP3_DXMUX_8985,
-      CE => DISP3_CEINV_8972,
-      CLK => DISP3_CLKINV_8973,
+      I => DISP3_DXMUX_8961,
+      CE => DISP3_CEINV_8948,
+      CLK => DISP3_CLKINV_8949,
       SET => GND,
-      RST => DISP3_SRINV_8974,
+      RST => DISP3_SRINV_8950,
       O => DISP3
     );
   M4_U215_I_Q0 : X_FF
     generic map(
-      LOC => "SLICE_X54Y47",
+      LOC => "SLICE_X55Y40",
       INIT => '0'
     )
     port map (
-      I => P2CODE5_DYMUX_9004,
-      CE => P2CODE5_CEINV_9000,
-      CLK => P2CODE5_CLKINV_9001,
+      I => P2CODE5_DYMUX_8980,
+      CE => P2CODE5_CEINV_8976,
+      CLK => P2CODE5_CLKINV_8977,
       SET => GND,
-      RST => P2CODE5_SRINV_9002,
+      RST => P2CODE5_SRINV_8978,
       O => P2CODE4
     );
   M4_U215_I_Q1 : X_FF
     generic map(
-      LOC => "SLICE_X54Y47",
+      LOC => "SLICE_X55Y40",
       INIT => '0'
     )
     port map (
-      I => P2CODE5_DXMUX_9013,
-      CE => P2CODE5_CEINV_9000,
-      CLK => P2CODE5_CLKINV_9001,
+      I => P2CODE5_DXMUX_8989,
+      CE => P2CODE5_CEINV_8976,
+      CLK => P2CODE5_CLKINV_8977,
       SET => GND,
-      RST => P2CODE5_SRINV_9002,
+      RST => P2CODE5_SRINV_8978,
       O => P2CODE5
     );
   M4_U215_I_Q2 : X_FF
     generic map(
-      LOC => "SLICE_X54Y46",
+      LOC => "SLICE_X55Y43",
       INIT => '0'
     )
     port map (
-      I => P2CODE7_DYMUX_9032,
-      CE => P2CODE7_CEINV_9028,
-      CLK => P2CODE7_CLKINV_9029,
+      I => P2CODE7_DYMUX_9008,
+      CE => P2CODE7_CEINV_9004,
+      CLK => P2CODE7_CLKINV_9005,
       SET => GND,
-      RST => P2CODE7_SRINV_9030,
+      RST => P2CODE7_SRINV_9006,
       O => P2CODE6
     );
   M4_U215_I_Q3 : X_FF
     generic map(
-      LOC => "SLICE_X54Y46",
+      LOC => "SLICE_X55Y43",
       INIT => '0'
     )
     port map (
-      I => P2CODE7_DXMUX_9041,
-      CE => P2CODE7_CEINV_9028,
-      CLK => P2CODE7_CLKINV_9029,
+      I => P2CODE7_DXMUX_9017,
+      CE => P2CODE7_CEINV_9004,
+      CLK => P2CODE7_CLKINV_9005,
       SET => GND,
-      RST => P2CODE7_SRINV_9030,
+      RST => P2CODE7_SRINV_9006,
       O => P2CODE7
-    );
-  M2_U195_XLXI_116_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"E4E4",
-      LOC => "SLICE_X64Y20"
-    )
-    port map (
-      ADR0 => M2_PD0PD1LT_0,
-      ADR1 => DISP2,
-      ADR2 => DISP6,
-      ADR3 => VCC,
-      O => M2_XLXN_2000
-    );
-  M2_U193_I_36_20 : X_LUT4
-    generic map(
-      INIT => X"FF30",
-      LOC => "SLICE_X66Y20"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => DISP3,
-      ADR2 => DISP7,
-      ADR3 => M2_U193_LE2_3,
-      O => M2_U193_LTB
     );
   M2_U193_I_36_11 : X_LUT4
     generic map(
-      INIT => X"AEAE",
-      LOC => "SLICE_X66Y21"
+      INIT => X"FF44",
+      LOC => "SLICE_X67Y27"
     )
     port map (
-      ADR0 => M2_U193_LTB_0,
+      ADR0 => M2_U193_GTB_0,
       ADR1 => M2_U193_LT0_1_0,
-      ADR2 => M2_U193_GTB,
-      ADR3 => VCC,
-      O => M2_PD0PD1LT
+      ADR2 => VCC,
+      ADR3 => M2_U193_LTB_0,
+      O => M2_PD0PD1LT_pack_1
+    );
+  M2_U195_XLXI_116_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"CCAA",
+      LOC => "SLICE_X67Y27"
+    )
+    port map (
+      ADR0 => DISP2,
+      ADR1 => DISP6,
+      ADR2 => VCC,
+      ADR3 => M2_PD0PD1LT,
+      O => M2_XLXN_2000
+    );
+  M2_U193_I_36_14 : X_LUT4
+    generic map(
+      INIT => X"2100",
+      LOC => "SLICE_X67Y31"
+    )
+    port map (
+      ADR0 => DISP3,
+      ADR1 => DISP6,
+      ADR2 => DISP7,
+      ADR3 => DISP2,
+      O => M2_U193_GE2_3_pack_3
+    );
+  M2_U193_I_36_19 : X_LUT4
+    generic map(
+      INIT => X"FF0A",
+      LOC => "SLICE_X67Y31"
+    )
+    port map (
+      ADR0 => DISP3,
+      ADR1 => VCC,
+      ADR2 => DISP7,
+      ADR3 => M2_U193_GE2_3,
+      O => M2_U193_GTB
+    );
+  M2_U193_I_36_15 : X_LUT4
+    generic map(
+      INIT => X"0082",
+      LOC => "SLICE_X66Y26"
+    )
+    port map (
+      ADR0 => DISP6,
+      ADR1 => DISP3,
+      ADR2 => DISP7,
+      ADR3 => DISP2,
+      O => M2_U193_LE2_3_pack_3
+    );
+  M2_U193_I_36_20 : X_LUT4
+    generic map(
+      INIT => X"FF22",
+      LOC => "SLICE_X66Y26"
+    )
+    port map (
+      ADR0 => DISP7,
+      ADR1 => DISP3,
+      ADR2 => VCC,
+      ADR3 => M2_U193_LE2_3,
+      O => M2_U193_LTB
+    );
+  U84_XLXI_3_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"F0AA",
+      LOC => "SLICE_X51Y54"
+    )
+    port map (
+      ADR0 => DISP3,
+      ADR1 => VCC,
+      ADR2 => P1PT(3),
+      ADR3 => DISPSEL0,
+      O => U84_XLXN_13
     );
   U179_XLXI_117_I_36_38 : X_LUT4
     generic map(
-      INIT => X"CFC0",
-      LOC => "SLICE_X46Y54"
+      INIT => X"B8B8",
+      LOC => "SLICE_X51Y54"
+    )
+    port map (
+      ADR0 => P2PT(3),
+      ADR1 => STR2,
+      ADR2 => P1PT(3),
+      ADR3 => VCC,
+      O => PT(3)
+    );
+  M2_U197_I_36_20 : X_LUT4
+    generic map(
+      INIT => X"CCFC",
+      LOC => "SLICE_X64Y15"
     )
     port map (
       ADR0 => VCC,
-      ADR1 => P2PT(3),
-      ADR2 => STR2,
-      ADR3 => P1PT(3),
-      O => PT(3)
+      ADR1 => M2_U197_LE2_3_0,
+      ADR2 => M2_XLXN_1979_0,
+      ADR3 => M2_XLXN_1999_0,
+      O => M2_U197_LTB
+    );
+  M2_U197_I_36_15 : X_LUT4
+    generic map(
+      INIT => X"0088",
+      LOC => "SLICE_X65Y13"
+    )
+    port map (
+      ADR0 => M2_U197_EQ_3,
+      ADR1 => M2_XLXN_2012_0,
+      ADR2 => VCC,
+      ADR3 => M2_XLXN_2000_0,
+      O => M2_U197_LE2_3
+    );
+  M2_U197_I_36_19 : X_LUT4
+    generic map(
+      INIT => X"CCEE",
+      LOC => "SLICE_X65Y14"
+    )
+    port map (
+      ADR0 => M2_XLXN_1999_0,
+      ADR1 => M2_U197_GE2_3_0,
+      ADR2 => VCC,
+      ADR3 => M2_XLXN_1979_0,
+      O => M2_U197_GTB_pack_1
     );
   M2_U197_I_36_11 : X_LUT4
     generic map(
-      INIT => X"F0FC",
-      LOC => "SLICE_X57Y3"
+      INIT => X"AFAA",
+      LOC => "SLICE_X65Y14"
     )
     port map (
-      ADR0 => VCC,
-      ADR1 => M2_U197_LT0_1_0,
-      ADR2 => M2_U197_LTB_0,
-      ADR3 => M2_U197_GTB,
+      ADR0 => M2_U197_LTB_0,
+      ADR1 => VCC,
+      ADR2 => M2_U197_GTB,
+      ADR3 => M2_U197_LT0_1_0,
       O => LRGDISPPOS1
+    );
+  M4_U220_XLXI_115_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"2230",
+      LOC => "SLICE_X52Y39"
+    )
+    port map (
+      ADR0 => P2CODE5,
+      ADR1 => P2STR1,
+      ADR2 => P2CODE1,
+      ADR3 => P2STR0,
+      O => P2SELCD1_pack_1
     );
   U228_I_36_42 : X_LUT4
     generic map(
-      INIT => X"F00F",
-      LOC => "SLICE_X52Y46"
+      INIT => X"A5A5",
+      LOC => "SLICE_X52Y39"
     )
     port map (
-      ADR0 => VCC,
+      ADR0 => R1D1,
       ADR1 => VCC,
-      ADR2 => R1D1,
-      ADR3 => P2SELCD1,
+      ADR2 => P2SELCD1,
+      ADR3 => VCC,
       O => U228_AB1
     );
   U118_I_Q0 : X_FF
     generic map(
-      LOC => "SLICE_X46Y55",
+      LOC => "SLICE_X49Y45",
       INIT => '0'
     )
     port map (
-      I => P2PT_1_DYMUX_9216,
-      CE => P2PT_1_CEINV_9212,
-      CLK => P2PT_1_CLKINV_9213,
+      I => P2PT_1_DYMUX_9204,
+      CE => P2PT_1_CEINV_9200,
+      CLK => P2PT_1_CLKINV_9201,
       SET => GND,
-      RST => P2PT_1_SRINV_9214,
+      RST => P2PT_1_SRINV_9202,
       O => P2PT(0)
     );
   U118_I_Q1 : X_FF
     generic map(
-      LOC => "SLICE_X46Y55",
+      LOC => "SLICE_X49Y45",
       INIT => '0'
     )
     port map (
-      I => P2PT_1_DXMUX_9225,
-      CE => P2PT_1_CEINV_9212,
-      CLK => P2PT_1_CLKINV_9213,
+      I => P2PT_1_DXMUX_9213,
+      CE => P2PT_1_CEINV_9200,
+      CLK => P2PT_1_CLKINV_9201,
       SET => GND,
-      RST => P2PT_1_SRINV_9214,
+      RST => P2PT_1_SRINV_9202,
       O => P2PT(1)
     );
   U118_I_Q2 : X_FF
     generic map(
-      LOC => "SLICE_X45Y54",
+      LOC => "SLICE_X51Y45",
       INIT => '0'
     )
     port map (
-      I => P2PT_3_DYMUX_9244,
-      CE => P2PT_3_CEINV_9240,
-      CLK => P2PT_3_CLKINV_9241,
+      I => P2PT_3_DYMUX_9232,
+      CE => P2PT_3_CEINV_9228,
+      CLK => P2PT_3_CLKINV_9229,
       SET => GND,
-      RST => P2PT_3_SRINV_9242,
+      RST => P2PT_3_SRINV_9230,
       O => P2PT(2)
-    );
-  U191_I_36_29 : X_LUT4
-    generic map(
-      INIT => X"2010",
-      LOC => "SLICE_X45Y55"
-    )
-    port map (
-      ADR0 => P1PT(7),
-      ADR1 => P1PT(6),
-      ADR2 => P2PT(6),
-      ADR3 => P2PT(7),
-      O => U191_GE6_7
-    );
-  M2_U197_I_36_14 : X_LUT4
-    generic map(
-      INIT => X"2200",
-      LOC => "SLICE_X58Y2"
-    )
-    port map (
-      ADR0 => M2_XLXN_2000_0,
-      ADR1 => M2_XLXN_2012_0,
-      ADR2 => VCC,
-      ADR3 => M2_U197_EQ_3,
-      O => M2_U197_GE2_3
-    );
-  M2_U194_I_36_20 : X_LUT4
-    generic map(
-      INIT => X"FF30",
-      LOC => "SLICE_X65Y3"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => DISP11,
-      ADR2 => DISP15,
-      ADR3 => M2_U194_LE2_3,
-      O => M2_U194_LTB
-    );
-  M2_U194_I_36_11 : X_LUT4
-    generic map(
-      INIT => X"CFCC",
-      LOC => "SLICE_X62Y3"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => M2_U194_LTB_0,
-      ADR2 => M2_U194_GTB,
-      ADR3 => M2_U194_LT0_1_0,
-      O => M2_PD2PD3LT
-    );
-  U228_I_36_33 : X_LUT4
-    generic map(
-      INIT => X"A5A5",
-      LOC => "SLICE_X52Y45"
-    )
-    port map (
-      ADR0 => R1D2,
-      ADR1 => VCC,
-      ADR2 => P2SELCD2,
-      ADR3 => VCC,
-      O => U228_AB2
-    );
-  U159_I_36_33 : X_LUT4
-    generic map(
-      INIT => X"AA55",
-      LOC => "SLICE_X64Y48"
-    )
-    port map (
-      ADR0 => DISP6,
-      ADR1 => VCC,
-      ADR2 => VCC,
-      ADR3 => BRWD2_0,
-      O => U159_AB2
-    );
-  M1_U127_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"8000",
-      LOC => "SLICE_X54Y41"
-    )
-    port map (
-      ADR0 => M1_U127_AB0,
-      ADR1 => M1_U127_AB3_0,
-      ADR2 => M1_U127_AB2_0,
-      ADR3 => M1_U127_AB1_0,
-      O => M1_CDEQBRWD0
-    );
-  U184_I_Q0 : X_FF
-    generic map(
-      LOC => "SLICE_X55Y9",
-      INIT => '0'
-    )
-    port map (
-      I => LRWDRDPOSSEL1_DYMUX_9928,
-      CE => LRWDRDPOSSEL1_CEINV_9924,
-      CLK => LRWDRDPOSSEL1_CLKINV_9925,
-      SET => GND,
-      RST => LRWDRDPOSSEL1_SRINV_9926,
-      O => LRWDRDPOSSEL0
-    );
-  U184_I_Q1 : X_FF
-    generic map(
-      LOC => "SLICE_X55Y9",
-      INIT => '0'
-    )
-    port map (
-      I => LRWDRDPOSSEL1_DXMUX_9937,
-      CE => LRWDRDPOSSEL1_CEINV_9924,
-      CLK => LRWDRDPOSSEL1_CLKINV_9925,
-      SET => GND,
-      RST => LRWDRDPOSSEL1_SRINV_9926,
-      O => LRWDRDPOSSEL1
-    );
-  U184_I_Q2 : X_FF
-    generic map(
-      LOC => "SLICE_X48Y15",
-      INIT => '0'
-    )
-    port map (
-      I => LRWDRDADD_DYMUX_9954,
-      CE => LRWDRDADD_CEINV_9950,
-      CLK => LRWDRDADD_CLKINV_9951,
-      SET => GND,
-      RST => LRWDRDADD_FFY_RSTAND_9960,
-      O => LRWDRDADD
-    );
-  LRWDRDADD_FFY_RSTAND : X_BUF
-    generic map(
-      LOC => "SLICE_X48Y15",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => CLEARP2FFS_0,
-      O => LRWDRDADD_FFY_RSTAND_9960
-    );
-  U103_I_M23_I_36_31 : X_LUT4
-    generic map(
-      INIT => X"0E04",
-      LOC => "SLICE_X55Y69"
-    )
-    port map (
-      ADR0 => DISPSEL0,
-      ADR1 => DISP10,
-      ADR2 => MC0,
-      ADR3 => P2PT(2),
-      O => U103_I_M23_M0
-    );
-  U162_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"8000",
-      LOC => "SLICE_X63Y1"
-    )
-    port map (
-      ADR0 => U162_AB1_0,
-      ADR1 => U162_AB3_0,
-      ADR2 => U162_AB2_0,
-      ADR3 => U162_AB0,
-      O => EQ2
-    );
-  U66_I_Q6_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"6CCC",
-      LOC => "SLICE_X18Y64"
-    )
-    port map (
-      ADR0 => U66_Q(5),
-      ADR1 => U66_Q(6),
-      ADR2 => U66_Q(4),
-      ADR3 => U66_T4,
-      O => U66_I_Q6_TQ
-    );
-  U66_I_Q6_I_36_35 : X_FF
-    generic map(
-      LOC => "SLICE_X18Y64",
-      INIT => '0'
-    )
-    port map (
-      I => U66_Q_6_DXMUX_9520,
-      CE => VCC,
-      CLK => U66_Q_6_CLKINV_9505,
-      SET => GND,
-      RST => GND,
-      O => U66_Q(6)
-    );
-  U66_I_Q7_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"33CC",
-      LOC => "SLICE_X18Y66"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => U66_Q(7),
-      ADR2 => VCC,
-      ADR3 => U66_T7,
-      O => U66_I_Q7_TQ
-    );
-  U66_I_Q7_I_36_35 : X_FF
-    generic map(
-      LOC => "SLICE_X18Y66",
-      INIT => '0'
-    )
-    port map (
-      I => U66_Q_7_DXMUX_9550,
-      CE => VCC,
-      CLK => U66_Q_7_CLKINV_9533,
-      SET => GND,
-      RST => GND,
-      O => U66_Q(7)
-    );
-  U255 : X_LUT4
-    generic map(
-      INIT => X"FAFA",
-      LOC => "SLICE_X53Y14"
-    )
-    port map (
-      ADR0 => P2STR2,
-      ADR1 => VCC,
-      ADR2 => XLXN_2340,
-      ADR3 => VCC,
-      O => P2ADD
-    );
-  M2_U197_I_36_20 : X_LUT4
-    generic map(
-      INIT => X"FF50",
-      LOC => "SLICE_X58Y3"
-    )
-    port map (
-      ADR0 => M2_XLXN_1999_0,
-      ADR1 => VCC,
-      ADR2 => M2_XLXN_1979,
-      ADR3 => M2_U197_LE2_3_0,
-      O => M2_U197_LTB
-    );
-  U66_I_Q15_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"5A5A",
-      LOC => "SLICE_X22Y67"
-    )
-    port map (
-      ADR0 => QA(15),
-      ADR1 => VCC,
-      ADR2 => U66_T15,
-      ADR3 => VCC,
-      O => U66_I_Q15_TQ
-    );
-  U66_I_Q15_I_36_35 : X_FF
-    generic map(
-      LOC => "SLICE_X22Y67",
-      INIT => '0'
-    )
-    port map (
-      I => QA_15_DXMUX_9628,
-      CE => VCC,
-      CLK => QA_15_CLKINV_9611,
-      SET => GND,
-      RST => GND,
-      O => QA(15)
-    );
-  U66_I_Q11_I_36_32 : X_LUT4
-    generic map(
-      INIT => X"33CC",
-      LOC => "SLICE_X22Y66"
-    )
-    port map (
-      ADR0 => VCC,
-      ADR1 => U66_Q(11),
-      ADR2 => VCC,
-      ADR3 => U66_T11,
-      O => U66_I_Q11_TQ
-    );
-  U66_I_Q11_I_36_35 : X_FF
-    generic map(
-      LOC => "SLICE_X22Y66",
-      INIT => '0'
-    )
-    port map (
-      I => U66_Q_11_DXMUX_9658,
-      CE => VCC,
-      CLK => U66_Q_11_CLKINV_9641,
-      SET => GND,
-      RST => GND,
-      O => U66_Q(11)
-    );
-  U156_XLXI_5_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"ACAC",
-      LOC => "SLICE_X64Y15"
-    )
-    port map (
-      ADR0 => U156_XLXN_2_0,
-      ADR1 => U156_XLXN_1_0,
-      ADR2 => ENCPSEL1_0,
-      ADR3 => VCC,
-      O => NPSELDISP2_pack_1
-    );
-  U158_XLXI_116_I_36_38 : X_LUT4
-    generic map(
-      INIT => X"E2E2",
-      LOC => "SLICE_X64Y15"
-    )
-    port map (
-      ADR0 => RD2_0,
-      ADR1 => ADD_0,
-      ADR2 => NPSELDISP2,
-      ADR3 => VCC,
-      O => BRWD2
-    );
-  U113_I_Q2 : X_FF
-    generic map(
-      LOC => "SLICE_X64Y15",
-      INIT => '0'
-    )
-    port map (
-      I => DISP14_DXMUX_9693,
-      CE => DISP14_CEINV_9674,
-      CLK => DISP14_CLKINV_9675,
-      SET => GND,
-      RST => DISP14_FFX_RSTAND_9699,
-      O => DISP14
-    );
-  DISP14_FFX_RSTAND : X_BUF
-    generic map(
-      LOC => "SLICE_X64Y15",
-      PATHPULSE => 694 ps
-    )
-    port map (
-      I => RESET,
-      O => DISP14_FFX_RSTAND_9699
-    );
-  U245_I_36_8 : X_LUT4
-    generic map(
-      INIT => X"EF40",
-      LOC => "SLICE_X55Y11"
-    )
-    port map (
-      ADR0 => LRGRWDWINSGAME,
-      ADR1 => DIGEQCDPOSSEL0,
-      ADR2 => BRWDEQCD,
-      ADR3 => XLXN_2304,
-      O => XLXN_2309
     );
   U118_I_Q3 : X_FF
     generic map(
-      LOC => "SLICE_X45Y54",
+      LOC => "SLICE_X51Y45",
       INIT => '0'
     )
     port map (
-      I => P2PT_3_DXMUX_9253,
-      CE => P2PT_3_CEINV_9240,
-      CLK => P2PT_3_CLKINV_9241,
+      I => P2PT_3_DXMUX_9241,
+      CE => P2PT_3_CEINV_9228,
+      CLK => P2PT_3_CLKINV_9229,
       SET => GND,
-      RST => P2PT_3_SRINV_9242,
+      RST => P2PT_3_SRINV_9230,
       O => P2PT(3)
     );
   U118_I_Q4 : X_FF
     generic map(
-      LOC => "SLICE_X46Y56",
+      LOC => "SLICE_X50Y48",
       INIT => '0'
     )
     port map (
-      I => P2PT_5_DYMUX_9272,
-      CE => P2PT_5_CEINV_9268,
-      CLK => P2PT_5_CLKINV_9269,
+      I => P2PT_5_DYMUX_9260,
+      CE => P2PT_5_CEINV_9256,
+      CLK => P2PT_5_CLKINV_9257,
       SET => GND,
-      RST => P2PT_5_SRINV_9270,
+      RST => P2PT_5_SRINV_9258,
       O => P2PT(4)
     );
   U118_I_Q5 : X_FF
     generic map(
-      LOC => "SLICE_X46Y56",
+      LOC => "SLICE_X50Y48",
       INIT => '0'
     )
     port map (
-      I => P2PT_5_DXMUX_9281,
-      CE => P2PT_5_CEINV_9268,
-      CLK => P2PT_5_CLKINV_9269,
+      I => P2PT_5_DXMUX_9269,
+      CE => P2PT_5_CEINV_9256,
+      CLK => P2PT_5_CLKINV_9257,
       SET => GND,
-      RST => P2PT_5_SRINV_9270,
+      RST => P2PT_5_SRINV_9258,
       O => P2PT(5)
     );
   U118_I_Q6 : X_FF
     generic map(
-      LOC => "SLICE_X47Y58",
+      LOC => "SLICE_X51Y47",
       INIT => '0'
     )
     port map (
-      I => P2PT_7_DYMUX_9300,
-      CE => P2PT_7_CEINV_9296,
-      CLK => P2PT_7_CLKINV_9297,
+      I => P2PT_7_DYMUX_9288,
+      CE => P2PT_7_CEINV_9284,
+      CLK => P2PT_7_CLKINV_9285,
       SET => GND,
-      RST => P2PT_7_SRINV_9298,
+      RST => P2PT_7_SRINV_9286,
       O => P2PT(6)
     );
   U118_I_Q7 : X_FF
     generic map(
-      LOC => "SLICE_X47Y58",
+      LOC => "SLICE_X51Y47",
       INIT => '0'
     )
     port map (
-      I => P2PT_7_DXMUX_9309,
-      CE => P2PT_7_CEINV_9296,
-      CLK => P2PT_7_CLKINV_9297,
+      I => P2PT_7_DXMUX_9297,
+      CE => P2PT_7_CEINV_9284,
+      CLK => P2PT_7_CLKINV_9285,
       SET => GND,
-      RST => P2PT_7_SRINV_9298,
+      RST => P2PT_7_SRINV_9286,
       O => P2PT(7)
     );
   U119_I_Q0 : X_FF
     generic map(
-      LOC => "SLICE_X41Y30",
+      LOC => "SLICE_X45Y37",
       INIT => '0'
     )
     port map (
-      I => U119_Q0_DYMUX_9322,
+      I => U119_Q0_DYMUX_9310,
       CE => VCC,
-      CLK => U119_Q0_CLKINV_9320,
+      CLK => U119_Q0_CLKINV_9308,
       SET => GND,
       RST => GND,
       O => U119_Q0
     );
+  M1_U130_I_36_43 : X_LUT4
+    generic map(
+      INIT => X"CC33",
+      LOC => "SLICE_X50Y43"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => M1_CODE4,
+      ADR2 => VCC,
+      ADR3 => DISP4,
+      O => M1_U130_AB0_pack_1
+    );
   M1_U130_I_36_32 : X_LUT4
     generic map(
       INIT => X"8000",
-      LOC => "SLICE_X49Y40"
+      LOC => "SLICE_X50Y43"
     )
     port map (
-      ADR0 => M1_U130_AB2_0,
-      ADR1 => M1_U130_AB0,
-      ADR2 => M1_U130_AB3_0,
+      ADR0 => M1_U130_AB3_0,
+      ADR1 => M1_U130_AB2_0,
+      ADR2 => M1_U130_AB0,
       ADR3 => M1_U130_AB1_0,
       O => M1_CDEQPD1
     );
-  M1_U137_XLXI_117_I_36_38 : X_LUT4
+  M1_U137_XLXI_116_I_36_38 : X_LUT4
     generic map(
-      INIT => X"5044",
-      LOC => "SLICE_X48Y43"
+      INIT => X"3210",
+      LOC => "SLICE_X48Y40"
     )
     port map (
-      ADR0 => M1_ENCODERWDMUX_0,
-      ADR1 => BRWD3_0,
-      ADR2 => M1_CODE6,
+      ADR0 => M1_CODERWDMUXSEL1_0,
+      ADR1 => M1_ENCODERWDMUX_0,
+      ADR2 => BRWD2_0,
+      ADR3 => M1_CODE5,
+      O => CODERWD(5)
+    );
+  M1_U137_XLXI_117_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"0C0A",
+      LOC => "SLICE_X48Y40"
+    )
+    port map (
+      ADR0 => BRWD3_0,
+      ADR1 => M1_CODE6,
+      ADR2 => M1_ENCODERWDMUX_0,
       ADR3 => M1_CODERWDMUXSEL1_0,
       O => CODERWD(6)
     );
-  U101_I_M01_I_36_31 : X_LUT4
+  U85_XLXI_2_I_36_8 : X_LUT4
     generic map(
-      INIT => X"00E2",
-      LOC => "SLICE_X53Y76"
+      INIT => X"F0CC",
+      LOC => "SLICE_X55Y72"
     )
     port map (
-      ADR0 => U85_XLXN_1_0,
-      ADR1 => DISPSEL1_0,
+      ADR0 => VCC,
+      ADR1 => R1D0,
+      ADR2 => P2CODE0,
+      ADR3 => DISPSEL0,
+      O => U85_XLXN_2_pack_1
+    );
+  U101_I_M01_I_36_31 : X_LUT4
+    generic map(
+      INIT => X"5044",
+      LOC => "SLICE_X55Y72"
+    )
+    port map (
+      ADR0 => MC0,
+      ADR1 => U85_XLXN_1_0,
       ADR2 => U85_XLXN_2,
-      ADR3 => MC0,
+      ADR3 => DISPSEL1_0,
       O => U101_I_M01_M0
+    );
+  U102_I_M23_I_36_30 : X_LUT4
+    generic map(
+      INIT => X"A820",
+      LOC => "SLICE_X58Y88"
+    )
+    port map (
+      ADR0 => MC0,
+      ADR1 => DISPSEL0,
+      ADR2 => DISP15,
+      ADR3 => P2PT(7),
+      O => U102_I_M23_M1
     );
   U102_I_M23_I_36_31 : X_LUT4
     generic map(
-      INIT => X"3120",
-      LOC => "SLICE_X52Y67"
+      INIT => X"5404",
+      LOC => "SLICE_X58Y88"
+    )
+    port map (
+      ADR0 => MC0,
+      ADR1 => DISP11,
+      ADR2 => DISPSEL0,
+      ADR3 => P2PT(3),
+      O => U102_I_M23_M0
+    );
+  U84_XLXI_4_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"E4E4",
+      LOC => "SLICE_X55Y58"
     )
     port map (
       ADR0 => DISPSEL0,
-      ADR1 => MC0,
-      ADR2 => P2PT(3),
-      ADR3 => DISP11,
-      O => U102_I_M23_M0
+      ADR1 => R1D3,
+      ADR2 => P2CODE3,
+      ADR3 => VCC,
+      O => U84_XLXN_14_pack_1
     );
   U102_I_M01_I_36_31 : X_LUT4
     generic map(
       INIT => X"00E4",
-      LOC => "SLICE_X53Y56"
+      LOC => "SLICE_X55Y58"
     )
     port map (
       ADR0 => DISPSEL1_0,
@@ -18247,22 +17523,738 @@ begin
       ADR3 => MC0,
       O => U102_I_M01_M0
     );
+  U162_I_36_42 : X_LUT4
+    generic map(
+      INIT => X"AA55",
+      LOC => "SLICE_X55Y31"
+    )
+    port map (
+      ADR0 => DISP9,
+      ADR1 => VCC,
+      ADR2 => VCC,
+      ADR3 => BRWD1_0,
+      O => U162_AB1
+    );
+  U162_I_36_34 : X_LUT4
+    generic map(
+      INIT => X"9999",
+      LOC => "SLICE_X67Y16"
+    )
+    port map (
+      ADR0 => BRWD3_0,
+      ADR1 => DISP11,
+      ADR2 => VCC,
+      ADR3 => VCC,
+      O => U162_AB3
+    );
+  U162_I_36_43 : X_LUT4
+    generic map(
+      INIT => X"CC33",
+      LOC => "SLICE_X66Y14"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => DISP8,
+      ADR2 => VCC,
+      ADR3 => BRWD0,
+      O => U162_AB0_pack_1
+    );
+  U162_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"8000",
+      LOC => "SLICE_X66Y14"
+    )
+    port map (
+      ADR0 => U162_AB2_0,
+      ADR1 => U162_AB1_0,
+      ADR2 => U162_AB3_0,
+      ADR3 => U162_AB0,
+      O => EQ2
+    );
+  U113_I_Q2 : X_FF
+    generic map(
+      LOC => "SLICE_X66Y19",
+      INIT => '0'
+    )
+    port map (
+      I => DISP14_DXMUX_9657,
+      CE => DISP14_CEINV_9638,
+      CLK => DISP14_CLKINV_9639,
+      SET => GND,
+      RST => DISP14_FFX_RSTAND_9663,
+      O => DISP14
+    );
+  DISP14_FFX_RSTAND : X_BUF
+    generic map(
+      LOC => "SLICE_X66Y19",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => RESET,
+      O => DISP14_FFX_RSTAND_9663
+    );
+  U244_XLXI_5_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"BB88",
+      LOC => "SLICE_X61Y2"
+    )
+    port map (
+      ADR0 => U244_XLXN_2_0,
+      ADR1 => PLAYPOS1_0,
+      ADR2 => VCC,
+      ADR3 => U244_XLXN_1_0,
+      O => XLXN_2304_pack_1
+    );
+  U245_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"F4B0",
+      LOC => "SLICE_X61Y2"
+    )
+    port map (
+      ADR0 => LRGRWDWINSGAME,
+      ADR1 => BRWDEQCD,
+      ADR2 => XLXN_2304,
+      ADR3 => DIGEQCDPOSSEL0,
+      O => XLXN_2309
+    );
+  U178_XLXI_116_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"DD88",
+      LOC => "SLICE_X51Y48"
+    )
+    port map (
+      ADR0 => STR2,
+      ADR1 => P2PT(6),
+      ADR2 => VCC,
+      ADR3 => P1PT(6),
+      O => PT(6)
+    );
+  U191_I_36_29 : X_LUT4
+    generic map(
+      INIT => X"2100",
+      LOC => "SLICE_X51Y48"
+    )
+    port map (
+      ADR0 => P1PT(7),
+      ADR1 => P1PT(6),
+      ADR2 => P2PT(7),
+      ADR3 => P2PT(6),
+      O => U191_GE6_7
+    );
+  M2_U197_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"A965",
+      LOC => "SLICE_X64Y12"
+    )
+    port map (
+      ADR0 => M2_XLXN_1979_0,
+      ADR1 => M2_PD0PD1LT,
+      ADR2 => DISP3,
+      ADR3 => DISP7,
+      O => M2_U197_EQ_3_pack_1
+    );
+  M2_U197_I_36_14 : X_LUT4
+    generic map(
+      INIT => X"0A00",
+      LOC => "SLICE_X64Y12"
+    )
+    port map (
+      ADR0 => M2_XLXN_2000_0,
+      ADR1 => VCC,
+      ADR2 => M2_XLXN_2012_0,
+      ADR3 => M2_U197_EQ_3,
+      O => M2_U197_GE2_3
+    );
+  U125_XLXI_115_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"EC4C",
+      LOC => "SLICE_X67Y48"
+    )
+    port map (
+      ADR0 => XLXN_1347,
+      ADR1 => R0D1,
+      ADR2 => STR2,
+      ADR3 => TRD1,
+      O => RD1
+    );
+  M2_U194_I_36_11 : X_LUT4
+    generic map(
+      INIT => X"FF22",
+      LOC => "SLICE_X67Y14"
+    )
+    port map (
+      ADR0 => M2_U194_LT0_1_0,
+      ADR1 => M2_U194_GTB_0,
+      ADR2 => VCC,
+      ADR3 => M2_U194_LTB_0,
+      O => M2_PD2PD3LT_pack_1
+    );
+  M2_U196_XLXI_117_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"FC0C",
+      LOC => "SLICE_X67Y14"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => DISP11,
+      ADR2 => M2_PD2PD3LT,
+      ADR3 => DISP15,
+      O => M2_XLXN_1979
+    );
+  M2_U194_I_36_14 : X_LUT4
+    generic map(
+      INIT => X"4100",
+      LOC => "SLICE_X64Y14"
+    )
+    port map (
+      ADR0 => DISP14,
+      ADR1 => DISP15,
+      ADR2 => DISP11,
+      ADR3 => DISP10,
+      O => M2_U194_GE2_3_pack_3
+    );
+  M2_U194_I_36_19 : X_LUT4
+    generic map(
+      INIT => X"FF50",
+      LOC => "SLICE_X64Y14"
+    )
+    port map (
+      ADR0 => DISP15,
+      ADR1 => VCC,
+      ADR2 => DISP11,
+      ADR3 => M2_U194_GE2_3,
+      O => M2_U194_GTB
+    );
+  M2_U194_I_36_15 : X_LUT4
+    generic map(
+      INIT => X"0804",
+      LOC => "SLICE_X67Y23"
+    )
+    port map (
+      ADR0 => DISP11,
+      ADR1 => DISP14,
+      ADR2 => DISP10,
+      ADR3 => DISP15,
+      O => M2_U194_LE2_3_pack_3
+    );
+  M2_U194_I_36_20 : X_LUT4
+    generic map(
+      INIT => X"FF0C",
+      LOC => "SLICE_X67Y23"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => DISP15,
+      ADR2 => DISP11,
+      ADR3 => M2_U194_LE2_3,
+      O => M2_U194_LTB
+    );
+  M4_U220_XLXI_116_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"3210",
+      LOC => "SLICE_X53Y39"
+    )
+    port map (
+      ADR0 => P2STR0,
+      ADR1 => P2STR1,
+      ADR2 => P2CODE2,
+      ADR3 => P2CODE6,
+      O => P2SELCD2_pack_1
+    );
+  U228_I_36_33 : X_LUT4
+    generic map(
+      INIT => X"CC33",
+      LOC => "SLICE_X53Y39"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => R1D2,
+      ADR2 => VCC,
+      ADR3 => P2SELCD2,
+      O => U228_AB2
+    );
+  U82_XLXI_1_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"CCAA",
+      LOC => "SLICE_X67Y40"
+    )
+    port map (
+      ADR0 => DISP6,
+      ADR1 => P1PT(6),
+      ADR2 => VCC,
+      ADR3 => DISPSEL0,
+      O => U82_XLXN_1
+    );
+  U159_I_36_33 : X_LUT4
+    generic map(
+      INIT => X"A5A5",
+      LOC => "SLICE_X67Y40"
+    )
+    port map (
+      ADR0 => DISP6,
+      ADR1 => VCC,
+      ADR2 => BRWD2_0,
+      ADR3 => VCC,
+      O => U159_AB2
+    );
+  M1_U127_I_36_33 : X_LUT4
+    generic map(
+      INIT => X"9999",
+      LOC => "SLICE_X50Y34"
+    )
+    port map (
+      ADR0 => M1_CODE2,
+      ADR1 => BRWD2_0,
+      ADR2 => VCC,
+      ADR3 => VCC,
+      O => M1_U127_AB2
+    );
+  M1_U127_I_36_43 : X_LUT4
+    generic map(
+      INIT => X"C3C3",
+      LOC => "SLICE_X51Y34"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => M1_CODE0,
+      ADR2 => BRWD0,
+      ADR3 => VCC,
+      O => M1_U127_AB0_pack_1
+    );
+  M1_U127_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"8000",
+      LOC => "SLICE_X51Y34"
+    )
+    port map (
+      ADR0 => M1_U127_AB1_0,
+      ADR1 => M1_U127_AB3_0,
+      ADR2 => M1_U127_AB0,
+      ADR3 => M1_U127_AB2_0,
+      O => M1_CDEQBRWD0
+    );
+  U184_I_Q0 : X_FF
+    generic map(
+      LOC => "SLICE_X52Y4",
+      INIT => '0'
+    )
+    port map (
+      I => LRWDRDPOSSEL1_DYMUX_9916,
+      CE => LRWDRDPOSSEL1_CEINV_9912,
+      CLK => LRWDRDPOSSEL1_CLKINV_9913,
+      SET => GND,
+      RST => LRWDRDPOSSEL1_SRINV_9914,
+      O => LRWDRDPOSSEL0
+    );
+  U184_I_Q1 : X_FF
+    generic map(
+      LOC => "SLICE_X52Y4",
+      INIT => '0'
+    )
+    port map (
+      I => LRWDRDPOSSEL1_DXMUX_9925,
+      CE => LRWDRDPOSSEL1_CEINV_9912,
+      CLK => LRWDRDPOSSEL1_CLKINV_9913,
+      SET => GND,
+      RST => LRWDRDPOSSEL1_SRINV_9914,
+      O => LRWDRDPOSSEL1
+    );
+  U184_I_Q2 : X_FF
+    generic map(
+      LOC => "SLICE_X52Y12",
+      INIT => '0'
+    )
+    port map (
+      I => LRWDRDADD_DYMUX_9942,
+      CE => LRWDRDADD_CEINV_9938,
+      CLK => LRWDRDADD_CLKINV_9939,
+      SET => GND,
+      RST => LRWDRDADD_FFY_RSTAND_9948,
+      O => LRWDRDADD
+    );
+  LRWDRDADD_FFY_RSTAND : X_BUF
+    generic map(
+      LOC => "SLICE_X52Y12",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => CLEARP2FFS_0,
+      O => LRWDRDADD_FFY_RSTAND_9948
+    );
+  U103_I_M23_I_36_30 : X_LUT4
+    generic map(
+      INIT => X"B080",
+      LOC => "SLICE_X66Y60"
+    )
+    port map (
+      ADR0 => P2PT(6),
+      ADR1 => DISPSEL0,
+      ADR2 => MC0,
+      ADR3 => DISP14,
+      O => U103_I_M23_M1
+    );
+  U103_I_M23_I_36_31 : X_LUT4
+    generic map(
+      INIT => X"0D08",
+      LOC => "SLICE_X66Y60"
+    )
+    port map (
+      ADR0 => DISPSEL0,
+      ADR1 => P2PT(2),
+      ADR2 => MC0,
+      ADR3 => DISP10,
+      O => U103_I_M23_M0
+    );
+  U85_XLXI_4_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"AACC",
+      LOC => "SLICE_X54Y60"
+    )
+    port map (
+      ADR0 => P2CODE1,
+      ADR1 => R1D1,
+      ADR2 => VCC,
+      ADR3 => DISPSEL0,
+      O => U85_XLXN_14_pack_1
+    );
+  U100_I_M01_I_36_31 : X_LUT4
+    generic map(
+      INIT => X"3210",
+      LOC => "SLICE_X54Y60"
+    )
+    port map (
+      ADR0 => DISPSEL1_0,
+      ADR1 => MC0,
+      ADR2 => U85_XLXN_13_0,
+      ADR3 => U85_XLXN_14,
+      O => U100_I_M01_M0
+    );
+  U174_XLXI_6_I_36_31 : X_LUT4
+    generic map(
+      INIT => X"00E2",
+      LOC => "SLICE_X51Y26"
+    )
+    port map (
+      ADR0 => BRWD3_0,
+      ADR1 => NSD0,
+      ADR2 => BRWD2_0,
+      ADR3 => U171_I_36_111_O,
+      O => U174_XLXI_6_M0_pack_1
+    );
+  U174_XLXI_6_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"FFF0",
+      LOC => "SLICE_X51Y26"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => VCC,
+      ADR2 => U174_XLXI_6_M0,
+      ADR3 => U174_XLXI_6_M1_0,
+      O => RWD_3_Q
+    );
+  U185_I_Q3 : X_FF
+    generic map(
+      LOC => "SLICE_X51Y26",
+      INIT => '0'
+    )
+    port map (
+      I => LARGESTRWD_3_DXMUX_10029,
+      CE => LARGESTRWD_3_CEINV_10010,
+      CLK => LARGESTRWD_3_CLKINV_10011,
+      SET => GND,
+      RST => LARGESTRWD_3_FFX_RSTAND_10035,
+      O => LARGESTRWD(3)
+    );
+  LARGESTRWD_3_FFX_RSTAND : X_BUF
+    generic map(
+      LOC => "SLICE_X51Y26",
+      PATHPULSE => 694 ps
+    )
+    port map (
+      I => CLEARP2FFS_0,
+      O => LARGESTRWD_3_FFX_RSTAND_10035
+    );
+  U82_XLXI_2_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"F3C0",
+      LOC => "SLICE_X67Y58"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => DISPSEL0,
+      ADR2 => P2CODE6,
+      ADR3 => R2D2,
+      O => U82_XLXN_2_pack_1
+    );
+  U103_I_M01_I_36_30 : X_LUT4
+    generic map(
+      INIT => X"A088",
+      LOC => "SLICE_X67Y58"
+    )
+    port map (
+      ADR0 => MC0,
+      ADR1 => U82_XLXN_1_0,
+      ADR2 => U82_XLXN_2,
+      ADR3 => DISPSEL1_0,
+      O => U103_I_M01_M1
+    );
+  M2_U196_XLXI_114_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"CFC0",
+      LOC => "SLICE_X67Y25"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => DISP12,
+      ADR2 => M2_PD2PD3LT,
+      ADR3 => DISP8,
+      O => M2_XLXN_2016
+    );
+  U183_I_36_12 : X_LUT4
+    generic map(
+      INIT => X"0090",
+      LOC => "SLICE_X50Y28"
+    )
+    port map (
+      ADR0 => RWD_3_0,
+      ADR1 => LARGESTRWD(3),
+      ADR2 => RWD_2_0,
+      ADR3 => LARGESTRWD(2),
+      O => U183_GE2_3_pack_3
+    );
+  U183_I_36_39 : X_LUT4
+    generic map(
+      INIT => X"0021",
+      LOC => "SLICE_X50Y28"
+    )
+    port map (
+      ADR0 => RWD_3_0,
+      ADR1 => U183_LE2_3_0,
+      ADR2 => LARGESTRWD(3),
+      ADR3 => U183_GE2_3,
+      O => U183_EQ2_3
+    );
+  U191_I_36_20 : X_LUT4
+    generic map(
+      INIT => X"CC40",
+      LOC => "SLICE_X50Y55"
+    )
+    port map (
+      ADR0 => P1PT(5),
+      ADR1 => U191_EQ6_7,
+      ADR2 => P2PT(5),
+      ADR3 => U191_GE4_5,
+      O => U191_GTC
+    );
+  U191_I_36_38 : X_LUT4
+    generic map(
+      INIT => X"8080",
+      LOC => "SLICE_X50Y55"
+    )
+    port map (
+      ADR0 => U191_EQ4_5_0,
+      ADR1 => U191_EQ6_7,
+      ADR2 => U191_GT2_3_0,
+      ADR3 => VCC,
+      O => U191_GTB
+    );
+  U191_I_36_12 : X_LUT4
+    generic map(
+      INIT => X"0084",
+      LOC => "SLICE_X51Y52"
+    )
+    port map (
+      ADR0 => P2PT(3),
+      ADR1 => P2PT(2),
+      ADR2 => P1PT(3),
+      ADR3 => P1PT(2),
+      O => U191_GE2_3_pack_3
+    );
+  U191_I_36_39 : X_LUT4
+    generic map(
+      INIT => X"0041",
+      LOC => "SLICE_X51Y52"
+    )
+    port map (
+      ADR0 => U191_LE2_3_0,
+      ADR1 => P2PT(3),
+      ADR2 => P1PT(3),
+      ADR3 => U191_GE2_3,
+      O => U191_EQ2_3
+    );
+  U191_I_36_22 : X_LUT4
+    generic map(
+      INIT => X"0201",
+      LOC => "SLICE_X50Y50"
+    )
+    port map (
+      ADR0 => P2PT(7),
+      ADR1 => U191_LE6_7_0,
+      ADR2 => U191_GE6_7_0,
+      ADR3 => P1PT(7),
+      O => U191_EQ6_7_pack_1
+    );
+  U191_I_36_37 : X_LUT4
+    generic map(
+      INIT => X"8000",
+      LOC => "SLICE_X50Y50"
+    )
+    port map (
+      ADR0 => U191_GT0_1_0,
+      ADR1 => U191_EQ4_5_0,
+      ADR2 => U191_EQ6_7,
+      ADR3 => U191_EQ2_3_0,
+      O => U191_GTA
+    );
+  U191_I_36_31 : X_LUT4
+    generic map(
+      INIT => X"4100",
+      LOC => "SLICE_X50Y54"
+    )
+    port map (
+      ADR0 => P1PT(4),
+      ADR1 => P2PT(5),
+      ADR2 => P1PT(5),
+      ADR3 => P2PT(4),
+      O => U191_GE4_5_pack_3
+    );
+  U191_I_36_4 : X_LUT4
+    generic map(
+      INIT => X"0021",
+      LOC => "SLICE_X50Y54"
+    )
+    port map (
+      ADR0 => P2PT(5),
+      ADR1 => U191_LE4_5_0,
+      ADR2 => P1PT(5),
+      ADR3 => U191_GE4_5,
+      O => U191_EQ4_5
+    );
+  U191_I_36_40 : X_LUT4
+    generic map(
+      INIT => X"FFFE",
+      LOC => "SLICE_X53Y15"
+    )
+    port map (
+      ADR0 => U191_GTD_0,
+      ADR1 => U191_GTB_0,
+      ADR2 => U191_GTA_0,
+      ADR3 => U191_GTC_0,
+      O => P2PTGTP1PT_pack_1
+    );
+  U237 : X_LUT4
+    generic map(
+      INIT => X"4000",
+      LOC => "SLICE_X53Y15"
+    )
+    port map (
+      ADR0 => INITPLAYONZERODISP_0,
+      ADR1 => NOWCNRD_0,
+      ADR2 => ADJ_0,
+      ADR3 => P2PTGTP1PT,
+      O => XLXN_2274
+    );
+  U159_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"8000",
+      LOC => "SLICE_X65Y20"
+    )
+    port map (
+      ADR0 => U159_AB2_0,
+      ADR1 => U159_AB3_0,
+      ADR2 => U159_AB1_0,
+      ADR3 => U159_AB0_0,
+      O => EQ1_pack_1
+    );
+  U170_XLXI_3_I_36_8 : X_LUT4
+    generic map(
+      INIT => X"CCC0",
+      LOC => "SLICE_X65Y20"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => EQ2_0,
+      ADR2 => EQ1,
+      ADR3 => ENCPSEL0,
+      O => U170_XLXN_13
+    );
+  U183_I_36_33 : X_LUT4
+    generic map(
+      INIT => X"4D44",
+      LOC => "SLICE_X49Y28"
+    )
+    port map (
+      ADR0 => LARGESTRWD(5),
+      ADR1 => U173_XLXI_6_M1,
+      ADR2 => LARGESTRWD(4),
+      ADR3 => RWD_4_0,
+      O => U183_GT4_5_pack_1
+    );
+  U183_I_36_20 : X_LUT4
+    generic map(
+      INIT => X"C030",
+      LOC => "SLICE_X49Y28"
+    )
+    port map (
+      ADR0 => VCC,
+      ADR1 => LARGESTRWD(6),
+      ADR2 => U183_GT4_5,
+      ADR3 => RWD_6_Q,
+      O => U183_GTC
+    );
+  U271_I_36_33 : X_LUT4
+    generic map(
+      INIT => X"0002",
+      LOC => "SLICE_X52Y28"
+    )
+    port map (
+      ADR0 => P2STR2,
+      ADR1 => P2STR1,
+      ADR2 => P2STR0,
+      ADR3 => P2STR3,
+      O => P2S4_pack_1
+    );
   U264 : X_LUT4
     generic map(
-      INIT => X"FAFA",
-      LOC => "SLICE_X51Y28"
+      INIT => X"FFAA",
+      LOC => "SLICE_X52Y28"
     )
     port map (
       ADR0 => P2S0_0,
       ADR1 => VCC,
-      ADR2 => P2S4,
-      ADR3 => VCC,
+      ADR2 => VCC,
+      ADR3 => P2S4,
       O => TESTP2SEL0
+    );
+  U191_I_36_34 : X_LUT4
+    generic map(
+      INIT => X"20BA",
+      LOC => "SLICE_X50Y41"
+    )
+    port map (
+      ADR0 => P2PT(7),
+      ADR1 => P1PT(6),
+      ADR2 => P2PT(6),
+      ADR3 => P1PT(7),
+      O => U191_GTD
+    );
+  U67_I_36_10 : X_LUT4
+    generic map(
+      INIT => X"8000",
+      LOC => "SLICE_X43Y68"
+    )
+    port map (
+      ADR0 => Q_1_Q,
+      ADR1 => U67_Q_2_Q,
+      ADR2 => Q_3_Q,
+      ADR3 => Q_0_Q,
+      O => U67_T4_pack_2
     );
   U67_I_Q6_I_36_32 : X_LUT4
     generic map(
       INIT => X"6CCC",
-      LOC => "SLICE_X39Y62"
+      LOC => "SLICE_X43Y68"
     )
     port map (
       ADR0 => Q_5_Q,
@@ -18273,21 +18265,45 @@ begin
     );
   U67_I_Q6_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X39Y62",
+      LOC => "SLICE_X43Y68",
       INIT => '0'
     )
     port map (
-      I => Q_6_DXMUX_10315,
+      I => Q_6_DXMUX_10327,
       CE => VCC,
-      CLK => Q_6_CLKINV_10300,
+      CLK => Q_6_CLKINV_10312,
       SET => GND,
       RST => GND,
       O => Q_6_Q
     );
+  U183_I_36_29 : X_LUT4
+    generic map(
+      INIT => X"0A0A",
+      LOC => "SLICE_X48Y31"
+    )
+    port map (
+      ADR0 => RWD_6_Q,
+      ADR1 => VCC,
+      ADR2 => LARGESTRWD(6),
+      ADR3 => VCC,
+      O => U183_GE6_7
+    );
+  U67_I_36_21 : X_LUT4
+    generic map(
+      INIT => X"8000",
+      LOC => "SLICE_X42Y68"
+    )
+    port map (
+      ADR0 => U67_Q_4_Q,
+      ADR1 => U67_T4,
+      ADR2 => Q_6_Q,
+      ADR3 => Q_5_Q,
+      O => U67_T7_pack_2
+    );
   U67_I_Q7_I_36_32 : X_LUT4
     generic map(
       INIT => X"33CC",
-      LOC => "SLICE_X38Y62"
+      LOC => "SLICE_X42Y68"
     )
     port map (
       ADR0 => VCC,
@@ -18298,68 +18314,92 @@ begin
     );
   U67_I_Q7_I_36_35 : X_FF
     generic map(
-      LOC => "SLICE_X38Y62",
+      LOC => "SLICE_X42Y68",
       INIT => '0'
     )
     port map (
-      I => Q_7_DXMUX_10357,
+      I => Q_7_DXMUX_10369,
       CE => VCC,
-      CLK => Q_7_CLKINV_10340,
+      CLK => Q_7_CLKINV_10352,
       SET => GND,
       RST => GND,
       O => Q_7_Q
     );
+  U183_I_36_37 : X_LUT4
+    generic map(
+      INIT => X"8000",
+      LOC => "SLICE_X48Y28"
+    )
+    port map (
+      ADR0 => U183_GT0_1_0,
+      ADR1 => U183_EQ2_3_0,
+      ADR2 => U183_EQ4_5,
+      ADR3 => U183_EQ6_7_0,
+      O => U183_GTA_pack_1
+    );
   U183_I_36_40 : X_LUT4
     generic map(
       INIT => X"FFFE",
-      LOC => "SLICE_X43Y28"
+      LOC => "SLICE_X48Y28"
     )
     port map (
-      ADR0 => U183_GTC_0,
-      ADR1 => U183_GE6_7_0,
-      ADR2 => U183_GTA,
-      ADR3 => U183_GTB_0,
+      ADR0 => U183_GE6_7_0,
+      ADR1 => U183_GTB_0,
+      ADR2 => U183_GTC_0,
+      ADR3 => U183_GTA,
       O => RWDGTRDLARGEST
     );
-  U91_I_36_32 : X_LUT4
+  U91_I_36_31 : X_LUT4
     generic map(
-      INIT => X"3100",
-      LOC => "SLICE_X55Y80"
+      INIT => X"0D00",
+      LOC => "SLICE_X54Y77"
     )
     port map (
       ADR0 => LPTOVF,
-      ADR1 => MC1,
-      ADR2 => Q_7_Q,
-      ADR3 => MC0,
+      ADR1 => Q_7_Q,
+      ADR2 => MC0,
+      ADR3 => MC1,
+      O => XLXN_199
+    );
+  U91_I_36_32 : X_LUT4
+    generic map(
+      INIT => X"00D0",
+      LOC => "SLICE_X54Y77"
+    )
+    port map (
+      ADR0 => LPTOVF,
+      ADR1 => Q_7_Q,
+      ADR2 => MC0,
+      ADR3 => MC1,
       O => XLXN_197
     );
   U156_XLXI_6_I_36_38 : X_LUT4
     generic map(
-      INIT => X"EE22",
-      LOC => "SLICE_X65Y15"
+      INIT => X"F0CC",
+      LOC => "SLICE_X64Y21"
     )
     port map (
-      ADR0 => U156_XLXN_13_0,
-      ADR1 => ENCPSEL1_0,
-      ADR2 => VCC,
-      ADR3 => U156_XLXN_14_0,
+      ADR0 => VCC,
+      ADR1 => U156_XLXN_13_0,
+      ADR2 => U156_XLXN_14_0,
+      ADR3 => ENCPSEL1_0,
       O => NPSELDISP3_pack_1
     );
   U158_XLXI_117_I_36_38 : X_LUT4
     generic map(
-      INIT => X"FA0A",
-      LOC => "SLICE_X65Y15"
+      INIT => X"F0CC",
+      LOC => "SLICE_X64Y21"
     )
     port map (
-      ADR0 => RD3,
-      ADR1 => VCC,
-      ADR2 => ADD_0,
-      ADR3 => NPSELDISP3,
+      ADR0 => VCC,
+      ADR1 => RD3,
+      ADR2 => NPSELDISP3,
+      ADR3 => ADD_0,
       O => BRWD3
     );
   U113_I_Q3 : X_FF
     generic map(
-      LOC => "SLICE_X65Y15",
+      LOC => "SLICE_X64Y21",
       INIT => '0'
     )
     port map (
@@ -18372,7 +18412,7 @@ begin
     );
   DISP15_FFX_RSTAND : X_BUF
     generic map(
-      LOC => "SLICE_X65Y15",
+      LOC => "SLICE_X64Y21",
       PATHPULSE => 694 ps
     )
     port map (
@@ -18382,7 +18422,7 @@ begin
   P1PLAYED_F_X_LUT4 : X_LUT4
     generic map(
       INIT => X"0000",
-      LOC => "SLICE_X67Y24"
+      LOC => "SLICE_X67Y32"
     )
     port map (
       ADR0 => VCC,
@@ -18565,7 +18605,7 @@ begin
   U66_T8_G_X_LUT4 : X_LUT4
     generic map(
       INIT => X"0000",
-      LOC => "SLICE_X18Y65"
+      LOC => "SLICE_X24Y73"
     )
     port map (
       ADR0 => VCC,
@@ -18577,7 +18617,7 @@ begin
   U66_T12_G_X_LUT4 : X_LUT4
     generic map(
       INIT => X"0000",
-      LOC => "SLICE_X23Y67"
+      LOC => "SLICE_X26Y74"
     )
     port map (
       ADR0 => VCC,
@@ -18589,7 +18629,7 @@ begin
   M4_DUMMY_2_F_X_LUT4 : X_LUT4
     generic map(
       INIT => X"FFFF",
-      LOC => "SLICE_X47Y42"
+      LOC => "SLICE_X49Y39"
     )
     port map (
       ADR0 => VCC,
@@ -18598,13 +18638,13 @@ begin
       ADR3 => VCC,
       O => M4_DUMMY_2_F
     );
-  NlwBlock_ppm_GND : X_ZERO
-    port map (
-      O => GND
-    );
   NlwBlock_ppm_VCC : X_ONE
     port map (
       O => VCC
+    );
+  NlwBlock_ppm_GND : X_ZERO
+    port map (
+      O => GND
     );
   NlwBlockROC : X_ROC
     generic map (ROC_WIDTH => 100 ns)

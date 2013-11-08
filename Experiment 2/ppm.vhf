@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 12.4
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ppm.vhf
--- /___/   /\     Timestamp : 10/16/2013 19:53:02
+-- /___/   /\     Timestamp : 11/01/2013 13:26:05
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.vhf" -w "D:/SkyDrive/Poly/Fall 13/CS2204/Term Project/Lab 5 - Exp1_2/Ppm/ppm.sch"
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.vhf" -w "C:/Users/Benson/SkyDrive/Poly/Fall 13/CS2204/teamgold.git/Experiment 2/ppm.sch"
 --Design Name: ppm
 --Device: spartan3e
 --Purpose:
@@ -671,8 +671,8 @@ architecture BEHAVIORAL of M4_1E_MXILINX_ppm is
    end component;
    attribute BOX_TYPE of MUXF5 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_M01 : label is "I_M01_1";
-   attribute HU_SET of I_M23 : label is "I_M23_0";
+   attribute HU_SET of I_M01 : label is "I_M01_11";
+   attribute HU_SET of I_M23 : label is "I_M23_10";
 begin
    I_M01 : M2_1E_MXILINX_ppm
       port map (D0=>D0,
@@ -751,12 +751,12 @@ architecture BEHAVIORAL of X74_153_MUSER_ppm is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_2";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_3";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_4";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_5";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_6";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_7";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_12";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_13";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_14";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_15";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_16";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_17";
 begin
    XLXI_1 : M2_1_MXILINX_ppm
       port map (D0=>I1C0,
@@ -849,10 +849,10 @@ architecture BEHAVIORAL of u74_157_MUSER_ppm is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_114 : label is "XLXI_114_8";
-   attribute HU_SET of XLXI_115 : label is "XLXI_115_9";
-   attribute HU_SET of XLXI_116 : label is "XLXI_116_10";
-   attribute HU_SET of XLXI_117 : label is "XLXI_117_11";
+   attribute HU_SET of XLXI_114 : label is "XLXI_114_18";
+   attribute HU_SET of XLXI_115 : label is "XLXI_115_19";
+   attribute HU_SET of XLXI_116 : label is "XLXI_116_20";
+   attribute HU_SET of XLXI_117 : label is "XLXI_117_21";
 begin
    XLXI_114 : M2_1E_MXILINX_ppm
       port map (D0=>A1,
@@ -1167,22 +1167,22 @@ architecture BEHAVIORAL of CB16CE_MXILINX_ppm is
    end component;
    attribute BOX_TYPE of AND5 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_13";
-   attribute HU_SET of I_Q1 : label is "I_Q1_12";
-   attribute HU_SET of I_Q2 : label is "I_Q2_15";
-   attribute HU_SET of I_Q3 : label is "I_Q3_14";
-   attribute HU_SET of I_Q4 : label is "I_Q4_19";
-   attribute HU_SET of I_Q5 : label is "I_Q5_18";
-   attribute HU_SET of I_Q6 : label is "I_Q6_17";
-   attribute HU_SET of I_Q7 : label is "I_Q7_16";
-   attribute HU_SET of I_Q8 : label is "I_Q8_20";
-   attribute HU_SET of I_Q9 : label is "I_Q9_21";
-   attribute HU_SET of I_Q10 : label is "I_Q10_22";
-   attribute HU_SET of I_Q11 : label is "I_Q11_23";
-   attribute HU_SET of I_Q12 : label is "I_Q12_24";
-   attribute HU_SET of I_Q13 : label is "I_Q13_25";
-   attribute HU_SET of I_Q14 : label is "I_Q14_26";
-   attribute HU_SET of I_Q15 : label is "I_Q15_27";
+   attribute HU_SET of I_Q0 : label is "I_Q0_23";
+   attribute HU_SET of I_Q1 : label is "I_Q1_22";
+   attribute HU_SET of I_Q2 : label is "I_Q2_25";
+   attribute HU_SET of I_Q3 : label is "I_Q3_24";
+   attribute HU_SET of I_Q4 : label is "I_Q4_29";
+   attribute HU_SET of I_Q5 : label is "I_Q5_28";
+   attribute HU_SET of I_Q6 : label is "I_Q6_27";
+   attribute HU_SET of I_Q7 : label is "I_Q7_26";
+   attribute HU_SET of I_Q8 : label is "I_Q8_30";
+   attribute HU_SET of I_Q9 : label is "I_Q9_31";
+   attribute HU_SET of I_Q10 : label is "I_Q10_32";
+   attribute HU_SET of I_Q11 : label is "I_Q11_33";
+   attribute HU_SET of I_Q12 : label is "I_Q12_34";
+   attribute HU_SET of I_Q13 : label is "I_Q13_35";
+   attribute HU_SET of I_Q14 : label is "I_Q14_36";
+   attribute HU_SET of I_Q15 : label is "I_Q15_37";
 begin
    Q(15 downto 0) <= Q_DUMMY(15 downto 0);
    TC <= TC_DUMMY;
@@ -1450,8 +1450,8 @@ architecture BEHAVIORAL of CB2CE_MXILINX_ppm is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_28";
-   attribute HU_SET of I_Q1 : label is "I_Q1_29";
+   attribute HU_SET of I_Q0 : label is "I_Q0_38";
+   attribute HU_SET of I_Q1 : label is "I_Q1_39";
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;
@@ -2013,10 +2013,10 @@ architecture BEHAVIORAL of CB4CE_MXILINX_ppm is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_30";
-   attribute HU_SET of I_Q1 : label is "I_Q1_31";
-   attribute HU_SET of I_Q2 : label is "I_Q2_32";
-   attribute HU_SET of I_Q3 : label is "I_Q3_33";
+   attribute HU_SET of I_Q0 : label is "I_Q0_40";
+   attribute HU_SET of I_Q1 : label is "I_Q1_41";
+   attribute HU_SET of I_Q2 : label is "I_Q2_42";
+   attribute HU_SET of I_Q3 : label is "I_Q3_43";
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;
@@ -2570,7 +2570,7 @@ architecture BEHAVIORAL of FTCLEX_MXILINX_ppm is
    end component;
    attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
    
-   attribute HU_SET of I_36_30 : label is "I_36_30_34";
+   attribute HU_SET of I_36_30 : label is "I_36_30_44";
    attribute RLOC of I_36_35 : label is "X0Y0";
 begin
    Q <= Q_DUMMY;
@@ -2679,10 +2679,10 @@ architecture BEHAVIORAL of CB4CLE_MXILINX_ppm is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_35";
-   attribute HU_SET of I_Q1 : label is "I_Q1_36";
-   attribute HU_SET of I_Q2 : label is "I_Q2_37";
-   attribute HU_SET of I_Q3 : label is "I_Q3_38";
+   attribute HU_SET of I_Q0 : label is "I_Q0_45";
+   attribute HU_SET of I_Q1 : label is "I_Q1_46";
+   attribute HU_SET of I_Q2 : label is "I_Q2_47";
+   attribute HU_SET of I_Q3 : label is "I_Q3_48";
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;
@@ -2815,10 +2815,10 @@ architecture BEHAVIORAL of M8_1E_MXILINX_ppm is
    end component;
    attribute BOX_TYPE of MUXF6 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_M01 : label is "I_M01_42";
-   attribute HU_SET of I_M23 : label is "I_M23_41";
-   attribute HU_SET of I_M45 : label is "I_M45_40";
-   attribute HU_SET of I_M67 : label is "I_M67_39";
+   attribute HU_SET of I_M01 : label is "I_M01_52";
+   attribute HU_SET of I_M23 : label is "I_M23_51";
+   attribute HU_SET of I_M45 : label is "I_M45_50";
+   attribute HU_SET of I_M67 : label is "I_M67_49";
 begin
    I_M01 : M2_1E_MXILINX_ppm
       port map (D0=>D0,
@@ -3883,18 +3883,18 @@ architecture BEHAVIORAL of ppm is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of U6 : label is "U6_78";
-   attribute HU_SET of U64 : label is "U64_47";
-   attribute HU_SET of U65 : label is "U65_48";
-   attribute HU_SET of U66 : label is "U66_79";
-   attribute HU_SET of U67 : label is "U67_80";
-   attribute HU_SET of U69 : label is "U69_81";
-   attribute HU_SET of U86 : label is "U86_49";
-   attribute HU_SET of U91 : label is "U91_50";
-   attribute HU_SET of U100 : label is "U100_55";
-   attribute HU_SET of U101 : label is "U101_54";
-   attribute HU_SET of U102 : label is "U102_53";
-   attribute HU_SET of U103 : label is "U103_52";
+   attribute HU_SET of U6 : label is "U6_88";
+   attribute HU_SET of U64 : label is "U64_57";
+   attribute HU_SET of U65 : label is "U65_58";
+   attribute HU_SET of U66 : label is "U66_89";
+   attribute HU_SET of U67 : label is "U67_90";
+   attribute HU_SET of U69 : label is "U69_91";
+   attribute HU_SET of U86 : label is "U86_59";
+   attribute HU_SET of U91 : label is "U91_60";
+   attribute HU_SET of U100 : label is "U100_65";
+   attribute HU_SET of U101 : label is "U101_64";
+   attribute HU_SET of U102 : label is "U102_63";
+   attribute HU_SET of U103 : label is "U103_62";
    attribute INIT of U104 : label is "2812";
    attribute INIT of U105 : label is "D860";
    attribute INIT of U106 : label is "D004";
@@ -3902,49 +3902,49 @@ architecture BEHAVIORAL of ppm is
    attribute INIT of U108 : label is "02BA";
    attribute INIT of U109 : label is "208E";
    attribute INIT of U110 : label is "1083";
-   attribute HU_SET of U112 : label is "U112_43";
-   attribute HU_SET of U113 : label is "U113_63";
-   attribute HU_SET of U114 : label is "U114_64";
-   attribute HU_SET of U115 : label is "U115_65";
-   attribute HU_SET of U116 : label is "U116_66";
-   attribute HU_SET of U117 : label is "U117_60";
-   attribute HU_SET of U118 : label is "U118_61";
-   attribute HU_SET of U119 : label is "U119_59";
-   attribute HU_SET of U120 : label is "U120_58";
-   attribute HU_SET of U121 : label is "U121_57";
-   attribute HU_SET of U122 : label is "U122_56";
-   attribute HU_SET of U148 : label is "U148_84";
-   attribute HU_SET of U149 : label is "U149_83";
-   attribute HU_SET of U151 : label is "U151_82";
-   attribute HU_SET of U155 : label is "U155_62";
-   attribute HU_SET of U159 : label is "U159_87";
-   attribute HU_SET of U160 : label is "U160_88";
-   attribute HU_SET of U161 : label is "U161_86";
-   attribute HU_SET of U162 : label is "U162_85";
-   attribute HU_SET of U169 : label is "U169_90";
-   attribute HU_SET of U171 : label is "U171_91";
-   attribute HU_SET of U176 : label is "U176_89";
-   attribute HU_SET of U181 : label is "U181_93";
-   attribute HU_SET of U182 : label is "U182_92";
-   attribute HU_SET of U183 : label is "U183_44";
-   attribute HU_SET of U184 : label is "U184_45";
-   attribute HU_SET of U185 : label is "U185_46";
-   attribute HU_SET of U186 : label is "U186_67";
-   attribute HU_SET of U188 : label is "U188_68";
-   attribute HU_SET of U190 : label is "U190_75";
-   attribute HU_SET of U191 : label is "U191_76";
-   attribute HU_SET of U195 : label is "U195_71";
-   attribute HU_SET of U228 : label is "U228_77";
-   attribute HU_SET of U245 : label is "U245_74";
-   attribute HU_SET of U247 : label is "U247_51";
-   attribute HU_SET of U253 : label is "U253_73";
-   attribute HU_SET of U254 : label is "U254_72";
-   attribute HU_SET of U269 : label is "U269_69";
-   attribute HU_SET of U271 : label is "U271_70";
-   attribute HU_SET of U272 : label is "U272_94";
-   attribute HU_SET of U273 : label is "U273_95";
-   attribute HU_SET of U274 : label is "U274_96";
-   attribute HU_SET of U288 : label is "U288_97";
+   attribute HU_SET of U112 : label is "U112_53";
+   attribute HU_SET of U113 : label is "U113_73";
+   attribute HU_SET of U114 : label is "U114_74";
+   attribute HU_SET of U115 : label is "U115_75";
+   attribute HU_SET of U116 : label is "U116_76";
+   attribute HU_SET of U117 : label is "U117_70";
+   attribute HU_SET of U118 : label is "U118_71";
+   attribute HU_SET of U119 : label is "U119_69";
+   attribute HU_SET of U120 : label is "U120_68";
+   attribute HU_SET of U121 : label is "U121_67";
+   attribute HU_SET of U122 : label is "U122_66";
+   attribute HU_SET of U148 : label is "U148_94";
+   attribute HU_SET of U149 : label is "U149_93";
+   attribute HU_SET of U151 : label is "U151_92";
+   attribute HU_SET of U155 : label is "U155_72";
+   attribute HU_SET of U159 : label is "U159_97";
+   attribute HU_SET of U160 : label is "U160_98";
+   attribute HU_SET of U161 : label is "U161_96";
+   attribute HU_SET of U162 : label is "U162_95";
+   attribute HU_SET of U169 : label is "U169_100";
+   attribute HU_SET of U171 : label is "U171_101";
+   attribute HU_SET of U176 : label is "U176_99";
+   attribute HU_SET of U181 : label is "U181_103";
+   attribute HU_SET of U182 : label is "U182_102";
+   attribute HU_SET of U183 : label is "U183_54";
+   attribute HU_SET of U184 : label is "U184_55";
+   attribute HU_SET of U185 : label is "U185_56";
+   attribute HU_SET of U186 : label is "U186_77";
+   attribute HU_SET of U188 : label is "U188_78";
+   attribute HU_SET of U190 : label is "U190_85";
+   attribute HU_SET of U191 : label is "U191_86";
+   attribute HU_SET of U195 : label is "U195_81";
+   attribute HU_SET of U228 : label is "U228_87";
+   attribute HU_SET of U245 : label is "U245_84";
+   attribute HU_SET of U247 : label is "U247_61";
+   attribute HU_SET of U253 : label is "U253_83";
+   attribute HU_SET of U254 : label is "U254_82";
+   attribute HU_SET of U269 : label is "U269_79";
+   attribute HU_SET of U271 : label is "U271_80";
+   attribute HU_SET of U272 : label is "U272_104";
+   attribute HU_SET of U273 : label is "U273_105";
+   attribute HU_SET of U274 : label is "U274_106";
+   attribute HU_SET of U288 : label is "U288_107";
 begin
    ADD_BUF : OBUF
       port map (I=>ADD,
